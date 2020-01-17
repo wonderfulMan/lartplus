@@ -12,6 +12,9 @@
         "Vue",
         "cli"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "author": "wonderfulMan",
     "license": "MIT",
     "bugs": {

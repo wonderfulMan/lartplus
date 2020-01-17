@@ -1,6 +1,6 @@
 {
   "name": "@hAo/cli",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.0",
   "description": "构建hAo-cli生态",
   "repository": {
     "type": "git",
@@ -12,13 +12,13 @@
     "Vue",
     "cli"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "wonderfulMan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wonderfulMan/@hAo/cli/issues"
   },
-  "homepage": "https://github.com/wonderfulMan/hAo-cli",
-  "dependencies": {
-    "@hAo/cli-shared-utils": "^0.0.1-alpha.0"
-  }
+  "homepage": "https://github.com/wonderfulMan/hAo-cli"
 }
