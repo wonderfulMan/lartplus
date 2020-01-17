@@ -1,0 +1,21 @@
+{
+  "name": "@hAo/cli-service",
+  "version": "0.0.0",
+  "description": "构建hAo-cli生态",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wonderfulMan/hAo-cli.git"
+  },
+  "keywords": [
+    "hAo",
+    "react",
+    "Vue",
+    "cli"
+  ],
+  "author": "wonderfulMan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wonderfulMan/@hAo/cli-service/issues"
+  },
+  "homepage": "https://github.com/wonderfulMan/hAo-cli"
+}

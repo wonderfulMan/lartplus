@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "build:package": "${bin} ts-node --files ./script/buildPackage.ts",
+    "lint": "${bin} eslint --fix script/*.ts",
+    "dev:ts-watch": "${bin} ts-node-dev --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.7",
+    "eslint": "^6.8.0",
+    "juicer": "^0.6.15",
+    "lerna": "^3.20.2",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2"
+  }
+}
