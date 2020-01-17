@@ -1,7 +1,7 @@
 {
-  "name": "@hAo/cli",
-  "version": "0.0.3-alpha.0",
-  "description": "构建hAo-cli生态",
+  "name": "@lartplus/cli",
+  "version": "0.0.0",
+  "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
     "url": "git@github.com:wonderfulMan/hAo-cli.git"
@@ -18,8 +18,7 @@
   "author": "wonderfulMan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wonderfulMan/@hAo/cli/issues"
+    "url": "https://github.com/wonderfulMan/@lartplus/cli/issues"
   },
-  "homepage": "https://github.com/wonderfulMan/hAo-cli",
-  "gitHead": "47334a6aadd8da5140272f6ea22adb2e90e16998"
+  "homepage": "https://github.com/wonderfulMan/hAo-cli"
 }

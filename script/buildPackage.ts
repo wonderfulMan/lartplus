@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-16 20:54:52
- * @LastEditTime : 2020-01-16 23:17:08
+ * @LastEditTime : 2020-01-17 14:15:51
  */
 import fs from 'fs'
 import path from 'path'
@@ -33,9 +33,9 @@ files.forEach(pkg => {
         if (!hasPackageJson) {
 
             const packageJson = {
-                packagename: `@hAo/${pkg}`,
+                packagename: `@lartplus/${pkg}`,
                 version: baseVersion,
-                description: `构建hAo-cli生态`
+                description: `构建lartplus-cli生态`
             }
             const packageTemplate = fs.readFileSync(packageTemplatePath, { encoding: "utf-8" })
             const content = JSON.parse(juicer(packageTemplate, packageJson))
