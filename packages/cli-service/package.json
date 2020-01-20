@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/wonderfulMan/@lartplus/cli-service/issues"
   },
-  "homepage": "https://github.com/wonderfulMan/hAo-cli"
+  "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "dependencies": {
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
+  }
 }

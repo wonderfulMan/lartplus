@@ -6,6 +6,11 @@
     "type": "git",
     "url": "git@github.com:wonderfulMan/hAo-cli.git"
   },
+  "main": "./dist/index.js",
+  "types": "./src/typings/global.d.ts",
+  "scripts": {
+    "build": "$(npm bin)/tsc -w"
+  },
   "keywords": [
     "hAo",
     "react",
@@ -20,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/wonderfulMan/@lartplus/cli-shared-utils/issues"
   },
-  "homepage": "https://github.com/wonderfulMan/hAo-cli"
+  "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "dependencies": {
+    "@types/figlet": "^1.2.0",
+    "commander": "^4.1.0",
+    "figlet": "^1.2.4",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
+  }
 }

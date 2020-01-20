@@ -6,13 +6,19 @@
     "type": "git",
     "url": "git@github.com:wonderfulMan/hAo-cli.git"
   },
-  "bin": "./bin/hao.ts",
+  "scripts": {
+    "watch": "${npm bin}/ts-node-dev src",
+    "build": "$(npm bin)/tsc -w"
+  },
   "keywords": [
     "hAo",
     "react",
     "Vue",
     "cli"
   ],
+  "bin": {
+    "hao-service": "./dist/bin.js"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -21,5 +27,11 @@
   "bugs": {
     "url": "https://github.com/wonderfulMan/@lartplus/cli/issues"
   },
-  "homepage": "https://github.com/wonderfulMan/hAo-cli"
+  "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "dependencies": {
+    "@lartplus/cli-shared-utils": "^0.0.4-alpha.0",
+    "@types/node": "^13.1.8",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
+  }
 }
