@@ -1,12 +1,14 @@
 {
-  "name": "@lartplus/cli",
-  "version": "0.0.4-alpha.0",
+  "name": "@lartplus/test",
+  "version": "0.0.0",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
     "url": "git@github.com:wonderfulMan/hAo-cli.git"
   },
-  "bin": "./bin/hao.ts",
+  "scripts": {
+    "dev": "$(npm bin)/hao-service create"
+  },
   "keywords": [
     "hAo",
     "react",
@@ -19,7 +21,11 @@
   "author": "wonderfulMan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wonderfulMan/@lartplus/cli/issues"
+    "url": "https://github.com/wonderfulMan/@lartplus/test/issues"
   },
-  "homepage": "https://github.com/wonderfulMan/hAo-cli"
+  "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "dependencies": {
+    "@lartplus/cli": "^0.0.0",
+    "typescript": "^3.7.5"
+  }
 }
