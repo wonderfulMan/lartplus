@@ -17,7 +17,7 @@
     "cli"
   ],
   "bin": {
-    "hao-service": "./dist/bin.js"
+    "hao-c": "./dist/bin.js"
   },
   "publishConfig": {
     "access": "public"

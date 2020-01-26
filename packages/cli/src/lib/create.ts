@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:52:09
- * @LastEditTime : 2020-01-26 14:05:53
+ * @LastEditTime : 2020-01-26 15:34:12
  */
 
 import path from 'path'
@@ -73,6 +73,8 @@ async function create(projectName: string, _options?: commander.Option): Promise
             if (action === 'overwrite') {
                 notice.warn(["正在删除当前目录下的所有文件夹"])
                 fs.removeSync(targetDir)
+            } else {
+                return
             }
         }
     }
