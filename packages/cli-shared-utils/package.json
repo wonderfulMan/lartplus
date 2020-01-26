@@ -28,9 +28,17 @@
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
     "@types/figlet": "^1.2.0",
+    "@types/fs-extra": "^8.0.1",
+    "@types/inquirer": "^6.5.0",
+    "@types/validate-npm-package-name": "^3.0.0",
+    "chalk": "^3.0.0",
     "commander": "^4.1.0",
     "figlet": "^1.2.4",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^7.0.3",
+    "juicer": "^0.6.15",
     "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "validate-npm-package-name": "^3.0.0"
   }
 }

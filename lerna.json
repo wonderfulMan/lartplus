@@ -4,6 +4,9 @@
     "packages/*"
   ],
   "npmClient": "yarn",
+  "npmClientArgs": [
+    "--production"
+  ],
   "command": {
     "publish": {
       "ignoreChanges": [
