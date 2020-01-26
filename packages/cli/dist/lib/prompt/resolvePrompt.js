@@ -83,7 +83,6 @@ var ResolvePrompt = /** @class */ (function () {
                     case 0: return [4 /*yield*/, cli_shared_utils_1.inquirer.prompt(this.getAllPresetsApi())];
                     case 1:
                         answers = _a.sent();
-                        console.log(answers);
                         return [2 /*return*/, answers];
                 }
             });
