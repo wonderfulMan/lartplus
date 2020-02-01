@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/test",
-  "version": "0.0.10-alpha.0",
+  "version": "0.0.11-alpha.0",
   "description": "构建lartplus-cli生态",
   "scripts": {
     "create": "$(npm bin)/lartplus create ."
