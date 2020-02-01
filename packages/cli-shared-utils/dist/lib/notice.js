@@ -18,7 +18,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 15:57:42
- * @LastEditTime : 2020-01-21 13:25:43
+ * @LastEditTime : 2020-02-01 19:25:30
  */
 var chalk_1 = __importDefault(require("chalk"));
 var warnLogger = console.warn;
@@ -34,6 +34,9 @@ var notice = {
     },
     success: function (strs) {
         normalLogger(chalk_1["default"].black.bgGreen(" SUCCESS: ") + chalk_1["default"].whiteBright(" " + strs.map(function (it) { return it; }).join('/n')));
+    },
+    done: function (strs) {
+        normalLogger(chalk_1["default"].black.bgGreen(" DONE: ") + chalk_1["default"].whiteBright(" " + strs.map(function (it) { return it; }).join('/n')));
     }
 };
 exports["default"] = __assign(__assign({}, notice), { warnLogger: warnLogger,

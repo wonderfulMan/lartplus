@@ -1,17 +1,10 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-20 14:22:01
+ * @LastEditTime : 2020-02-01 22:43:42
+ */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -61,38 +54,43 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-01-20 14:22:01
- * @LastEditTime : 2020-02-01 15:51:55
- */
-var events_1 = __importDefault(require("events"));
 require("reflect-metadata");
 var typedi_1 = require("typedi");
 var cli_generator_1 = __importDefault(require("@lartplus/cli-generator"));
 var resolvePrompt_1 = __importDefault(require("./prompt/resolvePrompt"));
-var Creator = /** @class */ (function (_super) {
-    __extends(Creator, _super);
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var Creator = /** @class */ (function () {
     function Creator() {
-        return _super.call(this) || this;
     }
     Creator.prototype.create = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var _a, gen;
+            var _a;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
-                        this.emit('create-start');
                         _a = this;
                         return [4 /*yield*/, this.resolvePrompt.executePrompt()];
                     case 1:
                         _a.promptFeature = _b.sent();
-                        gen = new cli_generator_1["default"]();
-                        gen.create(this.targetDir, this.promptFeature);
+                        this.generator = new cli_generator_1["default"](this.targetDir, this.projectName, this.promptFeature);
+                        this.projectCreateEventListener();
+                        cli_shared_utils_1.clearConsole();
+                        this.generator
+                            .create();
                         return [2 /*return*/];
                 }
             });
+        });
+    };
+    /**
+     * @description 项目生成监听generator对象事件
+     */
+    Creator.prototype.projectCreateEventListener = function () {
+        this.generator.on('gen_package_start', function () {
+            cli_shared_utils_1.notice.done(['开始生成package.json文件']);
+        });
+        this.generator.on('gen_package_end', function () {
+            cli_shared_utils_1.notice.done(['开始生成package.json文件成功！']);
         });
     };
     __decorate([
@@ -108,9 +106,8 @@ var Creator = /** @class */ (function (_super) {
         __metadata("design:type", resolvePrompt_1["default"])
     ], Creator.prototype, "resolvePrompt");
     Creator = __decorate([
-        typedi_1.Service(),
-        __metadata("design:paramtypes", [])
+        typedi_1.Service()
     ], Creator);
     return Creator;
-}(events_1["default"].EventEmitter));
+}());
 exports["default"] = Creator;

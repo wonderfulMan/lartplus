@@ -7,7 +7,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 15:52:10
- * @LastEditTime : 2020-01-20 16:37:34
+ * @LastEditTime : 2020-02-01 18:14:17
  */
 var validate_npm_package_name_1 = __importDefault(require("validate-npm-package-name"));
 var notice_1 = __importDefault(require("./notice"));

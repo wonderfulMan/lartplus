@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-02-01 15:25:11
+ * @LastEditTime : 2020-02-01 18:14:43
  */
 
 
@@ -38,10 +38,11 @@ declare module '@lartplus/cli-shared-utils' {
     import inquirer from 'inquirer'
     import fs from 'fs-extra'
     import juicer from 'juicer'
-    
+
     const notice: typeof import('../lib/notice').default
     const validateProjectName: typeof import('../lib/validateProjectName').default
     const exit: typeof import('../lib/exit').default
+    const clearConsole: typeof import('../lib/clear').default
 
     export {
         commander,
@@ -51,7 +52,8 @@ declare module '@lartplus/cli-shared-utils' {
         notice,
         validateProjectName,
         exit,
-        juicer
+        juicer,
+        clearConsole
     }
 
 }

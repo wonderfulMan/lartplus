@@ -1,13 +1,13 @@
 {
-    "currentFrameWork": "${frameWork}",
+    "name": "${projectName}",
     "scripts": {
         {@each scripts as value, key}
-            "${value}": "${item}"
+            "${key}": $${value}
         {@/each}
     },
-    "devDependencies": {
-        {@each dps as value, key}
-            "${value}": "${item}"
+    "dependencies": {
+        {@each dependencies as value, key}
+            "${key}": $${value}
         {@/each}
     }
 }

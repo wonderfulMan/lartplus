@@ -7,7 +7,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:23:02
- * @LastEditTime : 2020-01-21 11:06:45
+ * @LastEditTime : 2020-02-01 18:15:19
  */
 var figlet_1 = __importDefault(require("figlet"));
 exports.figlet = figlet_1["default"];
@@ -23,3 +23,5 @@ var notice_1 = __importDefault(require("./lib/notice"));
 exports.notice = notice_1["default"];
 var validateProjectName_1 = __importDefault(require("./lib/validateProjectName"));
 exports.validateProjectName = validateProjectName_1["default"];
+var clear_1 = __importDefault(require("./lib/clear"));
+exports.clearConsole = clear_1["default"];

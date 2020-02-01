@@ -32,9 +32,13 @@
     "@lartplus/cli-generator": "^0.0.9-alpha.0",
     "@lartplus/cli-shared-utils": "^0.0.8-alpha.0",
     "@types/node": "^13.1.8",
+    "execa": "^4.0.0",
     "reflect-metadata": "^0.1.13",
     "ts-node-dev": "^1.0.0-pre.44",
     "typedi": "^0.8.0",
     "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.44"
   }
 }
