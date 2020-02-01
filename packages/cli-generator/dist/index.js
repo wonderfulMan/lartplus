@@ -13,7 +13,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-02-01 15:54:28
+ * @LastEditTime : 2020-02-01 16:19:10
  */
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
@@ -36,19 +36,20 @@ var Generator = /** @class */ (function () {
     Generator.prototype.create = function (targetDir, answers) {
         var pkgTemplate = fs_1["default"].readFileSync(PKG_TPM_PATH, { encoding: "utf-8" });
         var dps = {
-            "@lartplus/cli-service": "^0.0.6-alpha.0"
+            "@lartplus/cli-service": "^0.0.8-alpha.0"
         };
         var scripts = {
             "dev": "lartplus-cli-service dev",
             "build": "lartplus-cli-service build",
             "lint": "lartplus-cli-service lint"
         };
+        console.log(pkgTemplate);
         var content = JSON.parse(cli_shared_utils_1.juicer(pkgTemplate, {
             frameWork: answers.frameWork,
             dps: dps,
             scripts: scripts
         }));
-        fs_1["default"].writeFileSync(targetDir, JSON.stringify(content, null, 2));
+        fs_1["default"].writeFileSync(targetDir + "/package.json", JSON.stringify(content, null, 2));
         return;
     };
     Generator = __decorate([
