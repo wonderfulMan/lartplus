@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "scripts": {
+    "dev": "lartplus-cli-service dev",
+    "build": "lartplus-cli-service build",
+    "lint": "lartplus-cli-service lint"
+  },
+  "dependencies": {
+    "@lartplus/cli-service": "^0.0.8-alpha.0"
+  }
+}
