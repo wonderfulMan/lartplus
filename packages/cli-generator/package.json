@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-generator",
-  "version": "0.0.8-alpha.0",
+  "version": "0.0.9-alpha.0",
   "description": "构建lartplus-cli生态",
   "scripts": {
     "watch": "${npm bin}/ts-node-dev src",
