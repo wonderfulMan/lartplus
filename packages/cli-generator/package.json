@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-generator",
-  "version": "0.0.0",
+  "version": "0.0.8-alpha.0",
   "description": "构建lartplus-cli生态",
   "scripts": {
     "watch": "${npm bin}/ts-node-dev src",
@@ -32,7 +32,7 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "@lartplus/cli-shared-utils": "^0.0.6-alpha.0",
+    "@lartplus/cli-shared-utils": "^0.0.8-alpha.0",
     "reflect-metadata": "^0.1.13",
     "typedi": "^0.8.0"
   }
