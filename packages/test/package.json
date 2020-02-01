@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/test",
-  "version": "0.0.9-alpha.0",
+  "version": "0.0.10-alpha.0",
   "description": "构建lartplus-cli生态",
   "scripts": {
     "create": "$(npm bin)/lartplus create ."
@@ -31,8 +31,8 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "@lartplus/cli": "^0.0.9-alpha.0",
-    "@lartplus/cli-shared-utils": "^0.0.8-alpha.0",
+    "@lartplus/cli": "^0.0.10-alpha.0",
+    "@lartplus/cli-shared-utils": "^0.0.10-alpha.0",
     "reflect-metadata": "^0.1.13",
     "typedi": "^0.8.0"
   }
