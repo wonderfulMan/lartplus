@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-01-21 11:21:09
+ * @LastEditTime : 2020-02-01 15:25:11
  */
 
 
@@ -11,8 +11,26 @@ declare module "juicer" {
 
     export = juicer
 }
+type PresetType = {
+    frameWork: string;
+    useConfigFile: boolean;
+    plugins: { [key: string]: string };
+    stylePreprocessor: string;
+    router: boolean;
+    status: string;
+}
 
+type HaorcType = {
+    presets: Array<PresetType>;
+}
 
+type PresetsAnswers = {
+    feature: "pwa" | "linter" | "typescript";
+    frameWork: 'vue' | 'react';
+    packageManger: 'yarn' | 'npm';
+    createPresetsFile: boolean;
+    createFilename: string;
+}
 declare module '@lartplus/cli-shared-utils' {
 
     import commander from 'commander'

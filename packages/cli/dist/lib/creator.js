@@ -65,11 +65,12 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:22:01
- * @LastEditTime : 2020-01-26 15:27:30
+ * @LastEditTime : 2020-02-01 15:51:55
  */
 var events_1 = __importDefault(require("events"));
 require("reflect-metadata");
 var typedi_1 = require("typedi");
+var cli_generator_1 = __importDefault(require("@lartplus/cli-generator"));
 var resolvePrompt_1 = __importDefault(require("./prompt/resolvePrompt"));
 var Creator = /** @class */ (function (_super) {
     __extends(Creator, _super);
@@ -78,7 +79,7 @@ var Creator = /** @class */ (function (_super) {
     }
     Creator.prototype.create = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var _a;
+            var _a, gen;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
@@ -87,7 +88,8 @@ var Creator = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.resolvePrompt.executePrompt()];
                     case 1:
                         _a.promptFeature = _b.sent();
-                        console.log(this.promptFeature);
+                        gen = new cli_generator_1["default"]();
+                        gen.create(this.targetDir, this.promptFeature);
                         return [2 /*return*/];
                 }
             });

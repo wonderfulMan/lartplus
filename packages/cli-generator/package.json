@@ -1,40 +1,39 @@
 {
-  "name": "@lartplus/cli",
-  "version": "0.0.7-alpha.0",
+  "name": "@lartplus/cli-generator",
+  "version": "0.0.0",
   "description": "构建lartplus-cli生态",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:wonderfulMan/hAo-cli.git"
-  },
   "scripts": {
     "watch": "${npm bin}/ts-node-dev src",
     "build": "$(npm bin)/tsc -w"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wonderfulMan/hAo-cli.git"
+  },
+  "main": "./dist/index.js",
+  "types": "./src/typings/global.d.ts",
   "keywords": [
     "hAo",
     "react",
     "Vue",
     "cli"
   ],
-  "bin": {
-    "lartplus": "./dist/bin.js"
-  },
   "publishConfig": {
     "access": "public"
   },
   "author": "wonderfulMan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wonderfulMan/@lartplus/cli/issues"
+    "url": "https://github.com/wonderfulMan/@lartplus/cli-generator/issues"
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
-  "dependencies": {
-    "@lartplus/cli-generator": "^0.0.0",
-    "@lartplus/cli-shared-utils": "^0.0.6-alpha.0",
-    "@types/node": "^13.1.8",
-    "reflect-metadata": "^0.1.13",
+  "devDependencies": {
     "ts-node-dev": "^1.0.0-pre.44",
-    "typedi": "^0.8.0",
     "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@lartplus/cli-shared-utils": "^0.0.6-alpha.0",
+    "reflect-metadata": "^0.1.13",
+    "typedi": "^0.8.0"
   }
 }

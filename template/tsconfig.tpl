@@ -9,16 +9,18 @@
       "experimentalDecorators": true,
       "resolveJsonModule": true,
       "esModuleInterop": true,
+      "outDir": "./dist",
       "allowJs": true,
       "lib": [
         "esnext",
         "dom"
-      ],
-      "typeRoots": [
-        "./node_modules",
-        "./typings"
       ]
     },
-    "exclude": ["./node_modules"],
-    "include": ["./typings", "./src"]
+    "exclude": [
+      "./node_modules"
+    ],
+    "include": [
+      "./typings",
+      "./src"
+    ]
   }
