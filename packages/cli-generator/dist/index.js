@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-03-22 17:59:47
+ * @LastEditTime : 2020-03-22 18:01:59
  */
 var events_1 = require("events");
 var execa_1 = __importDefault(require("execa"));
@@ -117,7 +117,8 @@ var Generator = /** @class */ (function (_super) {
                     "build": "\"$(npm bin)/lartplus-service build\",",
                     "lint": "\"$(npm bin)/lartplus-service lint\",",
                     "create:components": "\"$(npm bin)/lartplus-service new components\",",
-                    "create:page": "\"$(npm bin)/lartplus-service new page\""
+                    "create:page": "\"$(npm bin)/lartplus-service new page\",",
+                    "create:model": "\"$(npm bin)/lartplus-service new model\""
                 };
                 content = JSON.parse(cli_shared_utils_1.Juice(pkgTemplate, {
                     projectName: this.projectName,
