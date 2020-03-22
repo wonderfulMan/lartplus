@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:22:01
- * @LastEditTime : 2020-03-22 16:54:48
+ * @LastEditTime : 2020-03-22 17:43:05
  */
 
 import 'reflect-metadata'
@@ -10,7 +10,7 @@ import { Service, Inject } from 'typedi'
 
 import Generator from '@lartplus/cli-generator'
 import ResolvePrompt from './prompt/resolvePrompt';
-import { clearConsole, notice } from '@lartplus/cli-shared-utils';
+import { clearConsole, notice, ora, chalk } from '@lartplus/cli-shared-utils';
 
 @Service()
 export default class Creator {
@@ -47,6 +47,9 @@ export default class Creator {
      */
     public projectCreateEventListener(): void {
 
+        const or = ora({
+            text: 'download dependencies...'
+        })
         this.generator.on('gen_package_start', function () {
             notice.done(['开始生成package.json文件'])
         })
@@ -57,11 +60,16 @@ export default class Creator {
         })
 
         this.generator.on('resolve_dependencies_start', function () {
-            notice.normalLogger()
+            or.start()
+            notice.normalLogger('\n')
             notice.done(['开始下载依赖'])
         })
 
         this.generator.on('resolve_dependencies_end', function () {
+            or.stopAndPersist({
+                symbol: chalk.green('✔'),
+                text: 'success'
+            })
             notice.normalLogger()
             notice.done(['下载依赖完毕！'])
         })

@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-03-22 16:02:26
+ * @LastEditTime : 2020-03-22 17:01:09
  */
 
 
@@ -47,7 +47,8 @@ declare module '@lartplus/cli-shared-utils' {
     import fs from 'fs-extra'
     import Juice from 'juicer'
     import { validate, ValidationSchema, registerSchema } from 'class-validator';
-
+    import ora from 'ora'
+    import chalk from 'chalk'
     const notice: typeof import('../lib/notice').default
     const validateProjectName: typeof import('../lib/validateProjectName').default
     const exit: typeof import('../lib/exit').default
@@ -71,7 +72,9 @@ declare module '@lartplus/cli-shared-utils' {
         validate,
         ValidationSchema,
         registerSchema,
-        compileTemplate
+        compileTemplate,
+        ora,
+        chalk
     }
 
 }

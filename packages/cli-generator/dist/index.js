@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-03-22 16:54:19
+ * @LastEditTime : 2020-03-22 17:50:08
  */
 var events_1 = require("events");
 var execa_1 = __importDefault(require("execa"));
@@ -84,13 +84,14 @@ var Generator = /** @class */ (function (_super) {
                     case 0: return [4 /*yield*/, this.genPkgFile()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); })];
                     case 1:
                         _a.sent();
-                        return [4 /*yield*/, this.generatorProjectConfigFile()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); })
-                            // await this.resolvePkgDependencies()
-                            //     .catch(err => notice.error([err]))
-                            // await this.generatorProjectDir()
-                            //     .catch(err => notice.error([err]))
-                        ];
+                        return [4 /*yield*/, this.generatorProjectConfigFile()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); })];
                     case 2:
+                        _a.sent();
+                        return [4 /*yield*/, this.resolvePkgDependencies()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); })];
+                    case 3:
+                        _a.sent();
+                        return [4 /*yield*/, this.generatorProjectDir()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); })];
+                    case 4:
                         _a.sent();
                         return [2 /*return*/];
                 }
@@ -112,16 +113,18 @@ var Generator = /** @class */ (function (_super) {
                     "@lartplus/cli-service": "\"^0.0.10-alpha.0\""
                 };
                 scripts = {
-                    "dev": "\"lartplus-cli-service dev\",",
-                    "build": "\"lartplus-cli-service build\",",
-                    "lint": "\"lartplus-cli-service lint\""
+                    "dev": "\"$(npm bin)/lartplus-service dev\",",
+                    "build": "\"$(npm bin)/lartplus-service build\",",
+                    "lint": "\"$(npm bin)/lartplus-service lint\",",
+                    "create:components": "\"$(npm bin)/lartplus-service new components\",",
+                    "create:page": "\"$(npm bin)/lartplus-service new page\""
                 };
                 content = JSON.parse(cli_shared_utils_1.Juice(pkgTemplate, {
                     projectName: this.projectName,
                     scripts: scripts,
                     dependencies: dependencies
                 }));
-                packagePath = this.targetDir + "/project/package.json";
+                packagePath = this.targetDir + "/package.json";
                 // test path add project
                 fs_1["default"].writeFileSync(packagePath, JSON.stringify(content, null, 2));
                 this.emit('gen_package_end');
@@ -140,11 +143,11 @@ var Generator = /** @class */ (function (_super) {
                 switch (_a.label) {
                     case 0:
                         child = execa_1["default"](this.answers.packageManger, ['install'], {
-                            cwd: this.targetDir + '/project',
+                            cwd: this.targetDir,
                             stdio: 'inherit'
                         });
                         this.emit('resolve_dependencies_start');
-                        return [4 /*yield*/, child.then(function () { return _this.emit('resolve_dependencies_end'); })["catch"](function (error) { return Promise.reject(error); })];
+                        return [4 /*yield*/, child.then(function () { return setTimeout(function () { return _this.emit('resolve_dependencies_end'); }, 5000); })["catch"](function (error) { return Promise.reject(error); })];
                     case 1:
                         _a.sent();
                         return [2 /*return*/];
@@ -161,7 +164,7 @@ var Generator = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        srcPath = this.targetDir + '/project' + '/src';
+                        srcPath = this.targetDir + '/src';
                         pagePath = srcPath + '/page';
                         routerPath = srcPath + '/router';
                         componentPath = srcPath + '/components';

@@ -1,9 +1,11 @@
 {
   "name": "test",
   "scripts": {
-    "dev": "lartplus-cli-service dev",
-    "build": "lartplus-cli-service build",
-    "lint": "lartplus-cli-service lint"
+    "dev": "$(npm bin)/lartplus-service dev",
+    "build": "$(npm bin)/lartplus-service build",
+    "lint": "$(npm bin)/lartplus-service lint",
+    "create:components": "$(npm bin)/lartplus-service new components",
+    "create:page": "$(npm bin)/lartplus-service new page"
   },
   "dependencies": {
     "@lartplus/cli-service": "^0.0.10-alpha.0"

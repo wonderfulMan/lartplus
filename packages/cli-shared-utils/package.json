@@ -43,9 +43,8 @@
     "juicer": "^0.6.15",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.5",
-    "validate-npm-package-name": "^3.0.0"
-  },
-  "devDependencies": {
-    "ts-node-dev": "^1.0.0-pre.44"
+    "validate-npm-package-name": "^3.0.0",
+    "@types/ora": "^3.2.0",
+    "ora": "^4.0.3"
   }
 }

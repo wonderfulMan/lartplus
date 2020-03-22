@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:22:01
- * @LastEditTime : 2020-03-22 16:54:48
+ * @LastEditTime : 2020-03-22 17:43:05
  */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -85,6 +85,9 @@ var Creator = /** @class */ (function () {
      * @description 项目生成监听generator对象事件
      */
     Creator.prototype.projectCreateEventListener = function () {
+        var or = cli_shared_utils_1.ora({
+            text: 'download dependencies...'
+        });
         this.generator.on('gen_package_start', function () {
             cli_shared_utils_1.notice.done(['开始生成package.json文件']);
         });
@@ -93,10 +96,15 @@ var Creator = /** @class */ (function () {
             cli_shared_utils_1.notice.done(['开始生成package.json文件成功！']);
         });
         this.generator.on('resolve_dependencies_start', function () {
-            cli_shared_utils_1.notice.normalLogger();
+            or.start();
+            cli_shared_utils_1.notice.normalLogger('\n');
             cli_shared_utils_1.notice.done(['开始下载依赖']);
         });
         this.generator.on('resolve_dependencies_end', function () {
+            or.stopAndPersist({
+                symbol: cli_shared_utils_1.chalk.green('✔'),
+                text: 'success'
+            });
             cli_shared_utils_1.notice.normalLogger();
             cli_shared_utils_1.notice.done(['下载依赖完毕！']);
         });

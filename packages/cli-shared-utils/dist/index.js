@@ -7,7 +7,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:23:02
- * @LastEditTime : 2020-03-20 18:06:25
+ * @LastEditTime : 2020-03-22 17:00:54
  */
 var fs_extra_1 = __importDefault(require("fs-extra"));
 exports.fs = fs_extra_1["default"];
@@ -34,3 +34,7 @@ exports.registerSchema = class_validator_1.registerSchema;
 exports.validate = class_validator_1.validate;
 var compileTemplate_1 = require("./lib/compileTemplate");
 exports.compileTemplate = compileTemplate_1.compileTemplate;
+var ora_1 = __importDefault(require("ora"));
+exports.ora = ora_1["default"];
+var chalk_1 = __importDefault(require("chalk"));
+exports.chalk = chalk_1["default"];
