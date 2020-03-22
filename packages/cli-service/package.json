@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-service",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "构建lartplus-cli生态",
   "scripts": {
     "build": "$(npm bin)/tsc -w"
@@ -32,7 +32,7 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "@lartplus/cli-shared-utils": "^0.0.13"
+    "@lartplus/cli-shared-utils": "^0.0.14"
   },
   "gitHead": "4508260e582a68cd72fe0670ac265212bb56d3fe"
 }
