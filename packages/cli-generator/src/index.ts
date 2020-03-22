@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-03-22 17:50:08
+ * @LastEditTime : 2020-03-22 17:59:47
  */
 import { EventEmitter } from 'events'
 import execa from 'execa'
@@ -58,7 +58,7 @@ export default class Generator extends EventEmitter {
 
         const pkgTemplate = fs.readFileSync(PKG_TPM_PATH, { encoding: "utf-8" })
         const dependencies = {
-            "@lartplus/cli-service": "\"^0.0.10-alpha.0\""
+            "@lartplus/cli-service": "\"^0.0.11\""
         }
         const scripts = {
             "dev": "\"$(npm bin)/lartplus-service dev\",",
