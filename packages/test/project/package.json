@@ -10,5 +10,6 @@
   "dependencies": {
     "@lartplus/cli-service": "^0.0.10-alpha.0"
   },
-  "version": "0.0.12"
+  "version": "0.0.12",
+  "gitHead": "ce522829254b0c493cb2840e47ae481d14ef1feb"
 }

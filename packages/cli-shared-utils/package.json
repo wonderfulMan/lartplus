@@ -46,5 +46,6 @@
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.5",
     "validate-npm-package-name": "^3.0.0"
-  }
+  },
+  "gitHead": "ce522829254b0c493cb2840e47ae481d14ef1feb"
 }

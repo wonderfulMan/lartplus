@@ -34,5 +34,6 @@
   },
   "dependencies": {
     "@lartplus/cli": "^0.0.12"
-  }
+  },
+  "gitHead": "ce522829254b0c493cb2840e47ae481d14ef1feb"
 }
