@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:22:01
- * @LastEditTime : 2020-02-01 22:43:42
+ * @LastEditTime : 2020-03-22 16:54:48
  */
 
 import 'reflect-metadata'
@@ -38,11 +38,7 @@ export default class Creator {
 
         clearConsole()
 
-        this.generator
-            .create()
-
-
-        
+        this.generator.create()
 
     }
 
@@ -56,8 +52,40 @@ export default class Creator {
         })
 
         this.generator.on('gen_package_end', function () {
+            notice.normalLogger()
             notice.done(['开始生成package.json文件成功！'])
         })
+
+        this.generator.on('resolve_dependencies_start', function () {
+            notice.normalLogger()
+            notice.done(['开始下载依赖'])
+        })
+
+        this.generator.on('resolve_dependencies_end', function () {
+            notice.normalLogger()
+            notice.done(['下载依赖完毕！'])
+        })
+
+        this.generator.on('gen_dir_start', function () {
+            notice.normalLogger()
+            notice.done(['开始生成项目文件夹'])
+        })
+
+        this.generator.on('gen_dir_end', function () {
+            notice.normalLogger()
+            notice.done(['生成项目文件夹成功！'])
+        })
+
+        this.generator.on('gen_configFile_start', function () {
+            notice.normalLogger()
+            notice.done(['开始生成项目配置文件'])
+        })
+        this.generator.on('gen_configFile_end', function () {
+            notice.normalLogger()
+            notice.done(['生成项目配置文件成功！'])
+        })
     }
+
+
 
 }

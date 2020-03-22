@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-02-01 23:39:54
+ * @LastEditTime : 2020-03-22 16:54:19
  */
 var events_1 = require("events");
 var execa_1 = __importDefault(require("execa"));
@@ -75,17 +75,27 @@ var Generator = /** @class */ (function (_super) {
         return _this;
     }
     /**
-     * 初始化生成配置
-     */
-    Generator.prototype.init = function () {
-        return;
-    };
-    /**
      * 创建文件
      */
     Generator.prototype.create = function () {
-        this.genPkgFile()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); });
-        this.resolvePkgDependencies();
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.genPkgFile()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); })];
+                    case 1:
+                        _a.sent();
+                        return [4 /*yield*/, this.generatorProjectConfigFile()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); })
+                            // await this.resolvePkgDependencies()
+                            //     .catch(err => notice.error([err]))
+                            // await this.generatorProjectDir()
+                            //     .catch(err => notice.error([err]))
+                        ];
+                    case 2:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
     };
     /**
      * @description 生成package.json依赖
@@ -94,39 +104,111 @@ var Generator = /** @class */ (function (_super) {
      */
     Generator.prototype.genPkgFile = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var pkgTemplate, dependencies, scripts, content;
+            var pkgTemplate, dependencies, scripts, content, packagePath;
             return __generator(this, function (_a) {
                 this.emit('gen_package_start');
                 pkgTemplate = fs_1["default"].readFileSync(PKG_TPM_PATH, { encoding: "utf-8" });
                 dependencies = {
-                    "@lartplus/cli-service": "\"^0.0.8-alpha.0\""
+                    "@lartplus/cli-service": "\"^0.0.10-alpha.0\""
                 };
                 scripts = {
                     "dev": "\"lartplus-cli-service dev\",",
                     "build": "\"lartplus-cli-service build\",",
                     "lint": "\"lartplus-cli-service lint\""
                 };
-                content = JSON.parse(cli_shared_utils_1.juicer(pkgTemplate, {
+                content = JSON.parse(cli_shared_utils_1.Juice(pkgTemplate, {
                     projectName: this.projectName,
                     scripts: scripts,
                     dependencies: dependencies
                 }));
-                fs_1["default"].writeFileSync(this.targetDir + "/test/package.json", JSON.stringify(content, null, 2));
+                packagePath = this.targetDir + "/project/package.json";
+                // test path add project
+                fs_1["default"].writeFileSync(packagePath, JSON.stringify(content, null, 2));
                 this.emit('gen_package_end');
                 return [2 /*return*/];
             });
         });
     };
     /**
-     *
+     * @description 下载依赖
      */
     Generator.prototype.resolvePkgDependencies = function () {
-        var _a;
-        var child = execa_1["default"](this.answers.packageManger, ['install'], {
-            cwd: this.targetDir + '/test'
+        return __awaiter(this, void 0, void 0, function () {
+            var child;
+            var _this = this;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        child = execa_1["default"](this.answers.packageManger, ['install'], {
+                            cwd: this.targetDir + '/project',
+                            stdio: 'inherit'
+                        });
+                        this.emit('resolve_dependencies_start');
+                        return [4 /*yield*/, child.then(function () { return _this.emit('resolve_dependencies_end'); })["catch"](function (error) { return Promise.reject(error); })];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
         });
-        (_a = child.stdout) === null || _a === void 0 ? void 0 : _a.on('data', function (buffer) {
-            console.log(buffer.toString());
+    };
+    /**
+     * @description 生成项目目录
+     */
+    Generator.prototype.generatorProjectDir = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var srcPath, pagePath, routerPath, componentPath, dirPaths, _i, dirPaths_1, dirPath;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        srcPath = this.targetDir + '/project' + '/src';
+                        pagePath = srcPath + '/page';
+                        routerPath = srcPath + '/router';
+                        componentPath = srcPath + '/components';
+                        dirPaths = [srcPath, pagePath, routerPath, componentPath];
+                        this.emit('gen_dir_start');
+                        _i = 0, dirPaths_1 = dirPaths;
+                        _a.label = 1;
+                    case 1:
+                        if (!(_i < dirPaths_1.length)) return [3 /*break*/, 4];
+                        dirPath = dirPaths_1[_i];
+                        return [4 /*yield*/, fs_1["default"].mkdirSync(dirPath)];
+                    case 2:
+                        _a.sent();
+                        _a.label = 3;
+                    case 3:
+                        _i++;
+                        return [3 /*break*/, 1];
+                    case 4:
+                        this.emit('gen_dir_end');
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * @description 生成配置文件到目标项目根目录
+     */
+    Generator.prototype.generatorProjectConfigFile = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var templatePath, templateData, targetPath;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        this.emit('gen_configFile_start');
+                        templatePath = path_1["default"].resolve(__dirname, '../template/lartplus.config.tpl');
+                        templateData = {
+                            framework: this.answers.framework,
+                            typescript: this.answers.feature.some(function (it) { return it === 'typescript'; })
+                        };
+                        targetPath = process.cwd() + "/lartplus.config.js";
+                        return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, templateData, targetPath, false)];
+                    case 1:
+                        _a.sent();
+                        this.emit('gen_configFile_end');
+                        return [2 /*return*/];
+                }
+            });
         });
     };
     return Generator;

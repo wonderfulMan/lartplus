@@ -2,12 +2,11 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:52:09
- * @LastEditTime : 2020-01-26 15:34:12
+ * @LastEditTime : 2020-03-20 15:29:02
  */
 
 import path from 'path'
 import {
-    commander,
     figlet,
     notice,
     validateProjectName,
@@ -17,7 +16,7 @@ import {
 import { Container } from 'typedi'
 import Creator from './creator';
 
-type CreateParams = [string, commander.Option]
+type CreateParams = [string]
 
 function creatCommdanerText(content: string): void {
     const handler = figlet.textSync(
@@ -30,7 +29,7 @@ function creatCommdanerText(content: string): void {
 }
 
 
-async function create(projectName: string, _options?: commander.Option): Promise<void> {
+async function create(projectName: string): Promise<void> {
 
     creatCommdanerText('lartplus/cli')
 
@@ -53,9 +52,7 @@ async function create(projectName: string, _options?: commander.Option): Promise
                 message: "您确定要在当前文件下创建？"
             })
 
-            if (!ok) {
-                return
-            }
+            if (!ok) return
         } else {
             // 如果不是
             const { action } = await inquirer.prompt({
@@ -89,4 +86,4 @@ async function create(projectName: string, _options?: commander.Option): Promise
 
 }
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default (...args: CreateParams): Promise<void> => create(...args).catch((error: any) => notice.error([error]))
+export default async (...args: CreateParams): Promise<void> => create(...args).catch((error: any) => notice.error([error]))

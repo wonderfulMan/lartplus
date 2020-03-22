@@ -9,7 +9,7 @@
     "main": "./dist/index.js",
     "types": "./src/typings/global.d.ts",
     "scripts": {
-        "watch": "${npm bin}/ts-node-dev src",
+        "watch": "$(npm bin)/ts-node-dev src",
         "build": "$(npm bin)/tsc -w"
     },
     "keywords": [

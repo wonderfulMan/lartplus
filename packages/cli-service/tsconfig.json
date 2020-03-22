@@ -14,13 +14,12 @@
     "lib": [
       "esnext",
       "dom"
-    ]
+    ],
   },
   "exclude": [
     "./node_modules"
   ],
   "include": [
-    "./typings",
-    "./src"
+    "src", "typings"
   ]
 }

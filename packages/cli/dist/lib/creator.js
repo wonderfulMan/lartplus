@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:22:01
- * @LastEditTime : 2020-02-01 22:43:42
+ * @LastEditTime : 2020-03-22 16:54:48
  */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -75,8 +75,7 @@ var Creator = /** @class */ (function () {
                         this.generator = new cli_generator_1["default"](this.targetDir, this.projectName, this.promptFeature);
                         this.projectCreateEventListener();
                         cli_shared_utils_1.clearConsole();
-                        this.generator
-                            .create();
+                        this.generator.create();
                         return [2 /*return*/];
                 }
             });
@@ -90,7 +89,32 @@ var Creator = /** @class */ (function () {
             cli_shared_utils_1.notice.done(['开始生成package.json文件']);
         });
         this.generator.on('gen_package_end', function () {
+            cli_shared_utils_1.notice.normalLogger();
             cli_shared_utils_1.notice.done(['开始生成package.json文件成功！']);
+        });
+        this.generator.on('resolve_dependencies_start', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['开始下载依赖']);
+        });
+        this.generator.on('resolve_dependencies_end', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['下载依赖完毕！']);
+        });
+        this.generator.on('gen_dir_start', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['开始生成项目文件夹']);
+        });
+        this.generator.on('gen_dir_end', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['生成项目文件夹成功！']);
+        });
+        this.generator.on('gen_configFile_start', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['开始生成项目配置文件']);
+        });
+        this.generator.on('gen_configFile_end', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['生成项目配置文件成功！']);
         });
     };
     __decorate([

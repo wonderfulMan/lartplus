@@ -1,16 +1,17 @@
 {
-  "name": "@lartplus/test",
-  "version": "0.0.9-alpha.0",
+  "name": "@lartplus/test-service",
+  "version": "0.0.0",
   "description": "构建lartplus-cli生态",
-  "scripts": {
-    "create": "$(npm bin)/lartplus create ."
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:wonderfulMan/hAo-cli.git"
   },
   "main": "./dist/index.js",
   "types": "./src/typings/global.d.ts",
+  "scripts": {
+    "create": "$(npm bin)/lartplus-service new components",
+    "build": "$(npm bin)/tsc -w"
+  },
   "keywords": [
     "hAo",
     "react",
@@ -23,7 +24,7 @@
   "author": "wonderfulMan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wonderfulMan/@lartplus/cli-generator/issues"
+    "url": "https://github.com/wonderfulMan/@lartplus/test-service/issues"
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "devDependencies": {
@@ -31,9 +32,6 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "@lartplus/cli": "^0.0.9-alpha.0",
-    "@lartplus/cli-shared-utils": "^0.0.8-alpha.0",
-    "reflect-metadata": "^0.1.13",
-    "typedi": "^0.8.0"
+    "@lartplus/cli-service": "^0.0.10-alpha.0"
   }
 }

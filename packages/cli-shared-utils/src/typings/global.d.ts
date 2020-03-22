@@ -2,17 +2,22 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-02-01 18:14:43
+ * @LastEditTime : 2020-03-22 16:02:26
  */
 
 
 declare module "juicer" {
-    const juicer: Function
+    const Juice: Function;
+    interface Juice {
+        set: Function;
+        compile: Function;
+    }
 
-    export = juicer
+    export default Juice
 }
+
 type PresetType = {
-    frameWork: string;
+    framework: string;
     useConfigFile: boolean;
     plugins: { [key: string]: string };
     stylePreprocessor: string;
@@ -23,10 +28,13 @@ type PresetType = {
 type HaorcType = {
     presets: Array<PresetType>;
 }
-
+type ConfigFileInterface = {
+    framework: "vue" | "react";
+    typescript?: boolean;
+}
 type PresetsAnswers = {
-    feature: "pwa" | "linter" | "typescript";
-    frameWork: 'vue' | 'react';
+    feature: Array<"pwa" | "linter" | "typescript">;
+    framework: 'vue' | 'react';
     packageManger: 'yarn' | 'npm';
     createPresetsFile: boolean;
     createFilename: string;
@@ -37,12 +45,16 @@ declare module '@lartplus/cli-shared-utils' {
     import figlet from 'figlet'
     import inquirer from 'inquirer'
     import fs from 'fs-extra'
-    import juicer from 'juicer'
+    import Juice from 'juicer'
+    import { validate, ValidationSchema, registerSchema } from 'class-validator';
 
     const notice: typeof import('../lib/notice').default
     const validateProjectName: typeof import('../lib/validateProjectName').default
     const exit: typeof import('../lib/exit').default
     const clearConsole: typeof import('../lib/clear').default
+    const checkNodeVersion: typeof import('../lib/checkNodeVersion').default
+    const getPackageVersion: typeof import('../lib/getPackageVersion').default
+    const compileTemplate: (templatePath: string, templateData: unknown, targetPath: string, isRenderJson: boolean) => Promise<void>
 
     export {
         commander,
@@ -52,8 +64,14 @@ declare module '@lartplus/cli-shared-utils' {
         notice,
         validateProjectName,
         exit,
-        juicer,
-        clearConsole
+        Juice,
+        clearConsole,
+        checkNodeVersion,
+        getPackageVersion,
+        validate,
+        ValidationSchema,
+        registerSchema,
+        compileTemplate
     }
 
 }

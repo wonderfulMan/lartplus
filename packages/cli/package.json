@@ -7,7 +7,7 @@
     "url": "git@github.com:wonderfulMan/hAo-cli.git"
   },
   "scripts": {
-    "watch": "${npm bin}/ts-node-dev src",
+    "watch": "$(npm bin)/ts-node-dev src",
     "build": "$(npm bin)/tsc -w"
   },
   "keywords": [
@@ -40,5 +40,8 @@
   },
   "devDependencies": {
     "ts-node-dev": "^1.0.0-pre.44"
+  },
+  "engines": {
+    "node": ">=8.9"
   }
 }

@@ -2,6 +2,9 @@
   "name": "@lartplus/cli-service",
   "version": "0.0.10-alpha.0",
   "description": "构建lartplus-cli生态",
+  "scripts": {
+    "build": "$(npm bin)/tsc -w"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:wonderfulMan/hAo-cli.git"
@@ -12,6 +15,9 @@
     "Vue",
     "cli"
   ],
+  "bin": {
+    "lartplus-service": "./dist/bin.js"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -24,5 +30,8 @@
   "devDependencies": {
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@lartplus/cli-shared-utils": "^0.0.10-alpha.0"
   }
 }

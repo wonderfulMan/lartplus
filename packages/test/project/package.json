@@ -6,6 +6,6 @@
     "lint": "lartplus-cli-service lint"
   },
   "dependencies": {
-    "@lartplus/cli-service": "^0.0.8-alpha.0"
+    "@lartplus/cli-service": "^0.0.10-alpha.0"
   }
 }

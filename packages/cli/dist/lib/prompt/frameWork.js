@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-21 13:27:38
- * @LastEditTime : 2020-01-26 14:06:08
+ * @LastEditTime : 2020-03-20 15:54:52
  */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -18,7 +18,7 @@ var FrameWorkPrompt = /** @class */ (function () {
     }
     FrameWorkPrompt.prototype.config = function () {
         return {
-            name: 'frameWork',
+            name: 'framework',
             message: '选择开发框架:',
             type: 'list',
             choices: [

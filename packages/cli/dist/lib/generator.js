@@ -7,7 +7,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-21 10:53:08
- * @LastEditTime : 2020-02-01 15:15:14
+ * @LastEditTime : 2020-03-21 12:55:36
  */
 var path_1 = __importDefault(require("path"));
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
@@ -25,7 +25,7 @@ var Generator = /** @class */ (function () {
     Generator.prototype.createPresetTemplate = function (presets) {
         var tplPath = path_1["default"].resolve(__dirname, '../../template/preset.tpl');
         var presetsTpl = cli_shared_utils_1.fs.readFileSync(tplPath, { encoding: "utf-8" });
-        return JSON.parse(cli_shared_utils_1.juicer(presetsTpl, presets));
+        return JSON.parse(cli_shared_utils_1.Juice(presetsTpl, presets));
     };
     /**
      * 生成.haorc文件
@@ -40,7 +40,7 @@ var Generator = /** @class */ (function () {
         else {
             var tplPath = path_1["default"].resolve(__dirname, '../../template/haorc.tpl');
             var haorcTpl = cli_shared_utils_1.fs.readFileSync(tplPath, { encoding: "utf-8" });
-            var content = JSON.parse(cli_shared_utils_1.juicer(haorcTpl, presets));
+            var content = JSON.parse(cli_shared_utils_1.Juice(haorcTpl, presets));
             cli_shared_utils_1.fs.writeFileSync(content, JSON.stringify(content, null, 2));
         }
     };

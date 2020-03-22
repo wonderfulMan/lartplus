@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:52:09
- * @LastEditTime : 2020-01-26 15:34:12
+ * @LastEditTime : 2020-03-20 15:29:02
  */
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -55,7 +55,7 @@ function creatCommdanerText(content) {
     });
     cli_shared_utils_1.notice.normalLogger.call(Object.create(null), handler);
 }
-function create(projectName, _options) {
+function create(projectName) {
     return __awaiter(this, void 0, void 0, function () {
         var cwd, isCurrent, name, targetDir, hasTargetDir, ok, action, creator;
         return __generator(this, function (_a) {
@@ -81,9 +81,8 @@ function create(projectName, _options) {
                         })];
                 case 1:
                     ok = (_a.sent()).ok;
-                    if (!ok) {
+                    if (!ok)
                         return [2 /*return*/];
-                    }
                     return [3 /*break*/, 4];
                 case 2: return [4 /*yield*/, cli_shared_utils_1.inquirer.prompt({
                         name: 'action',
@@ -125,5 +124,7 @@ exports["default"] = (function () {
     for (var _i = 0; _i < arguments.length; _i++) {
         args[_i] = arguments[_i];
     }
-    return create.apply(void 0, args)["catch"](function (error) { return cli_shared_utils_1.notice.error([error]); });
+    return __awaiter(void 0, void 0, void 0, function () { return __generator(this, function (_a) {
+        return [2 /*return*/, create.apply(void 0, args)["catch"](function (error) { return cli_shared_utils_1.notice.error([error]); })];
+    }); });
 });
