@@ -1,0 +1,40 @@
+{
+  "name": "@lartplus/test-service",
+  "version": "0.0.0",
+  "description": "构建lartplus-cli生态",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wonderfulMan/hAo-cli.git"
+  },
+  "main": "./dist/index.js",
+  "types": "./src/typings/global.d.ts",
+  "scripts": {
+    "watch": "$(npm bin)/ts-node-dev src",
+    "build": "$(npm bin)/tsc -w",
+    "dev": "$(npm bin)/lartplus-service start dev --env development",
+    "builds": "$(npm bin)/lartplus-service start dev --env builds"
+  },
+  "keywords": [
+    "hAo",
+    "react",
+    "Vue",
+    "cli"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "wonderfulMan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wonderfulMan/@lartplus/test-service/issues"
+  },
+  "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@lartplus/cli-service": "^0.0.15",
+    "@types/html-minifier-terser": "^5.0.0"
+  }
+}
