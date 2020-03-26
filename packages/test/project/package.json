@@ -1,0 +1,15 @@
+{
+  "name": "project",
+  "scripts": {
+    "dev": "$(npm bin)/lartplus-service dev",
+    "build": "$(npm bin)/lartplus-service build",
+    "lint": "$(npm bin)/lartplus-service lint",
+    "create:components": "$(npm bin)/lartplus-service new components",
+    "create:page": "$(npm bin)/lartplus-service new page",
+    "create:model": "$(npm bin)/lartplus-service new model"
+  },
+  "dependencies": {
+    "@lartplus/cli-service": "^0.0.15",
+    "@lartplus/cli-babel": "^0.0.15"
+  }
+}

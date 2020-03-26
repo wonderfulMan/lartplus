@@ -55,7 +55,7 @@ var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-18 14:52:27
- * @LastEditTime : 2020-03-21 12:53:59
+ * @LastEditTime : 2020-03-26 18:42:55
  */
 var CreateFile = /** @class */ (function (_super) {
     __extends(CreateFile, _super);
@@ -97,23 +97,24 @@ var CreateFile = /** @class */ (function (_super) {
         var writeDir = this.workDirPath + "/" + this.filePath;
         var writeFile = writeDir + "/index." + suffix;
         var template = cli_shared_utils_1.fs.readFileSync(tplPath, { encoding: "utf-8" });
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         cli_shared_utils_1.Juice.set('strip', false);
         var content = cli_shared_utils_1.Juice(template, { moduleName: moduleName });
         cli_shared_utils_1.fs.writeFileSync(writeFile, content);
     };
     CreateFile.prototype.mkDirByTarget = function (dir) {
         return __awaiter(this, void 0, void 0, function () {
-            var arr, dirs, baseDir, i, l;
+            var arr, dirs, baseDir;
             return __generator(this, function (_a) {
                 arr = dir.split('/');
                 dirs = arr[0];
                 baseDir = this.workDirPath + "/" + this.fileTypeName;
-                for (i = 0, l = arr.length; i < l; i++) {
+                arr.forEach(function (it) {
                     if (!cli_shared_utils_1.fs.existsSync(baseDir + "/" + dirs)) {
                         cli_shared_utils_1.fs.mkdirSync(baseDir + "/" + dirs);
                     }
-                    dirs = dirs + '/' + arr[i];
-                }
+                    dirs = dirs + '/' + it;
+                });
                 return [2 /*return*/];
             });
         });

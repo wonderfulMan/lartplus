@@ -1,0 +1,50 @@
+Arguments: 
+  /Users/hao/.nvm/versions/node/v10.15.0/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js install
+
+PATH: 
+  /var/folders/82/mdwndn2d0f983jm466jcc4qm0000gn/T/yarn--1585226397352-0.18430325020500193:/Users/hao/Desktop/gitProject/lartplus/packages/test/node_modules/.bin:/Users/hao/.config/yarn/link/node_modules/.bin:/Users/hao/Desktop/gitProject/lartplus/packages/test/node_modules/.bin:/Users/hao/.config/yarn/link/node_modules/.bin:/Users/hao/.nvm/versions/node/v10.15.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/Users/hao/.nvm/versions/node/v10.15.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/hao/.nvm/versions/node/v10.15.0/bin/node_modules/npm/bin/node-gyp-bin:/Users/hao/.cargo/bin:/Users/hao/flutterDev/flutter/bin:/Users/hao/golib/bin:/Users/hao/.nvm/versions/node/v10.15.0/bin:/Users/hao/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.15.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@lartplus%2fcli-babel: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:66255:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:129397:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:130369:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:130291:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1094:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "project",
+    "scripts": {
+      "dev": "$(npm bin)/lartplus-service dev",
+      "build": "$(npm bin)/lartplus-service build",
+      "lint": "$(npm bin)/lartplus-service lint",
+      "create:components": "$(npm bin)/lartplus-service new components",
+      "create:page": "$(npm bin)/lartplus-service new page",
+      "create:model": "$(npm bin)/lartplus-service new model"
+    },
+    "dependencies": {
+      "@lartplus/cli-service": "^0.0.15",
+      "@lartplus/cli-babel": "^0.0.15"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -2,49 +2,62 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-03-23 16:20:00
+ * @LastEditTime : 2020-03-26 20:48:22
  */
 import { EventEmitter } from 'events'
 import execa from 'execa'
 import fs from 'fs'
 import path from 'path'
-import { Juice, notice, compileTemplate } from '@lartplus/cli-shared-utils'
+import { getBabelConfig, babelConfigType } from '@lartplus/cli-babel';
+import { Juice, notice, compileTemplate, PresetsAnswers, ConfigFileInterface } from '@lartplus/cli-shared-utils'
 import 'reflect-metadata'
 
 const PKG_TPM_PATH = path.resolve(__dirname, '../template/package.tpl')
 
-
+const catchErrorAndExit = (err: string): void => {
+    notice.error([err]);
+    process.exit(0)
+}
 export default class Generator extends EventEmitter {
-
 
     private targetDir: string;
     private projectName: string;
     private answers: PresetsAnswers;
-
+    private babelConfig: babelConfigType;
 
     constructor(targetDir: string, projectName: string, answers: PresetsAnswers) {
         super()
         this.targetDir = targetDir
         this.projectName = projectName
         this.answers = answers
+        this.babelConfig = getBabelConfig(this.answers.framework);
+
     }
 
     /**
      * 创建文件
      */
     public async create(): Promise<void> {
+        await this.innerCreate()
+            .catch(catchErrorAndExit);
+    }
 
-        await this.genPkgFile()
-            .catch(err => notice.error([err]))
+    private async innerCreate(): Promise<void> {
+        await this.genProjectName();
+        await this.genPkgFile();
+        await this.resolvePkgDependencies();
+        await this.generatorProjectDir();
+        await this.generatorProjectConfigFile();
+        await this.generatorBabelConfigFile();
+    }
 
-        await this.generatorProjectConfigFile()
-            .catch(err => notice.error([err]))
-
-        await this.resolvePkgDependencies()
-            .catch(err => notice.error([err]))
-
-        await this.generatorProjectDir()
-            .catch(err => notice.error([err]))
+    private async genProjectName(): Promise<void> {
+        const has = fs.existsSync(this.targetDir);
+        if (!has) {
+            fs.mkdirSync(this.targetDir);
+        } else {
+            Promise.reject('请确认目录是否已经存在！')
+        }
     }
 
     /**
@@ -52,13 +65,14 @@ export default class Generator extends EventEmitter {
      * @param targetDir 当前cli生成文件夏商文路径
      * @param answers cli选项
      */
-    public async genPkgFile(): Promise<void> {
+    private async genPkgFile(): Promise<void> {
 
         this.emit('gen_package_start')
 
         const pkgTemplate = fs.readFileSync(PKG_TPM_PATH, { encoding: "utf-8" })
         const dependencies = {
-            "@lartplus/cli-service": "\"^0.0.14\""
+            "@lartplus/cli-service": "\"^0.0.15\",",
+            "@lartplus/cli-babel": "\"^0.0.15\""
         }
         const scripts = {
             "dev": "\"$(npm bin)/lartplus-service dev\",",
@@ -84,55 +98,87 @@ export default class Generator extends EventEmitter {
     /**
      * @description 下载依赖
      */
-    public async resolvePkgDependencies(): Promise<void> {
+    private async resolvePkgDependencies(): Promise<void> {
 
         // test path add project
         const child = execa(this.answers.packageManger, ['install'], {
             cwd: this.targetDir,
             stdio: 'inherit'
-        })
+        });
 
-        this.emit('resolve_dependencies_start')
+        this.emit('resolve_dependencies_start');
 
-        await child.then(() => setTimeout(() => this.emit('resolve_dependencies_end'), 5000))
-            .catch((error) => Promise.reject(error))
+        await child.then(() => this.emit('resolve_dependencies_end'))
+            .catch((error) => Promise.reject(error));
+        
     }
 
     /**
      * @description 生成项目目录
      */
-    public async generatorProjectDir(): Promise<void> {
+    private async generatorProjectDir(): Promise<void> {
 
         const srcPath = this.targetDir + '/src'
         const pagePath = srcPath + '/page'
         const routerPath = srcPath + '/router'
         const componentPath = srcPath + '/components'
-
         const dirPaths = [srcPath, pagePath, routerPath, componentPath]
 
         this.emit('gen_dir_start')
-
         for (const dirPath of dirPaths) {
             await fs.mkdirSync(dirPath)
         }
-
         this.emit('gen_dir_end')
-
     }
 
     /**
      * @description 生成配置文件到目标项目根目录
      */
-    public async generatorProjectConfigFile(): Promise<void> {
+    private async generatorProjectConfigFile(): Promise<void> {
+
         this.emit('gen_configFile_start')
         const templatePath: string = path.resolve(__dirname, '../template/lartplus.config.tpl')
         const templateData: ConfigFileInterface = {
             framework: this.answers.framework,
             typescript: this.answers.feature.some(it => it === 'typescript'),
         }
-        const targetPath = `${process.cwd()}/lartplus.config.js`
-        await compileTemplate(templatePath, templateData, targetPath, false)
-        this.emit('gen_configFile_end')
+        const targetPath = `${this.targetDir}/lartplus.config.js`;
+        await compileTemplate(templatePath, templateData, targetPath, false);
+        this.emit('gen_configFile_end');
+    }
+
+    private async generatorBabelConfigFile(): Promise<void> {
+
+        this.emit('gen_babel_start');
+        const { presets, plugins } = this.babelConfig;
+        const templatePath: string = path.resolve(__dirname, '../template/babel.config.tpl');
+        const templateData = {
+            presets: JSON.stringify(presets),
+            plugins: JSON.stringify(plugins),
+        }
+        const targetPath = `${this.targetDir}/babel.config.js`;
+        await compileTemplate(templatePath, templateData, targetPath, false);
+        this.emit('gen_babel_end');
+
+    }
+
+    private parseBabelDependencies(): Array<string> {
+        const dep: Array<string> = [];
+        this.babelConfig.presets.forEach(it => {
+            dep.push(
+                Array.isArray(it) 
+                ? it[0]
+                : it
+            );
+        });
+        this.babelConfig.plugins.forEach(it => {
+            dep.push(
+                Array.isArray(it) 
+                ? it[0]
+                : it
+            );
+        })
+        return dep;
     }
 
 }

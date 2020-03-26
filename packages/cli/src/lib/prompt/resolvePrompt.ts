@@ -3,11 +3,11 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-21 13:49:53
- * @LastEditTime : 2020-01-26 14:43:41
+ * @LastEditTime : 2020-03-26 17:25:38
  */
 
 import { Service, Inject } from "typedi";
-import { inquirer } from "@lartplus/cli-shared-utils";
+import { inquirer, PresetsAnswers } from "@lartplus/cli-shared-utils";
 import FrameWorkPrompt from "./frameWork";
 import FeaturePresets from "./featurePresets";
 import EslintConfig from "./eslintConfig";

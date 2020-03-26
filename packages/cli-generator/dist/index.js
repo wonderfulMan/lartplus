@@ -56,15 +56,20 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-03-23 16:20:00
+ * @LastEditTime : 2020-03-26 20:48:22
  */
 var events_1 = require("events");
 var execa_1 = __importDefault(require("execa"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
+var cli_babel_1 = require("@lartplus/cli-babel");
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 require("reflect-metadata");
 var PKG_TPM_PATH = path_1["default"].resolve(__dirname, '../template/package.tpl');
+var catchErrorAndExit = function (err) {
+    cli_shared_utils_1.notice.error([err]);
+    process.exit(0);
+};
 var Generator = /** @class */ (function (_super) {
     __extends(Generator, _super);
     function Generator(targetDir, projectName, answers) {
@@ -72,6 +77,7 @@ var Generator = /** @class */ (function (_super) {
         _this.targetDir = targetDir;
         _this.projectName = projectName;
         _this.answers = answers;
+        _this.babelConfig = cli_babel_1.getBabelConfig(_this.answers.framework);
         return _this;
     }
     /**
@@ -81,20 +87,53 @@ var Generator = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.genPkgFile()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); })];
+                    case 0: return [4 /*yield*/, this.innerCreate()["catch"](catchErrorAndExit)];
                     case 1:
-                        _a.sent();
-                        return [4 /*yield*/, this.generatorProjectConfigFile()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); })];
-                    case 2:
-                        _a.sent();
-                        return [4 /*yield*/, this.resolvePkgDependencies()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); })];
-                    case 3:
-                        _a.sent();
-                        return [4 /*yield*/, this.generatorProjectDir()["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); })];
-                    case 4:
                         _a.sent();
                         return [2 /*return*/];
                 }
+            });
+        });
+    };
+    Generator.prototype.innerCreate = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.genProjectName()];
+                    case 1:
+                        _a.sent();
+                        return [4 /*yield*/, this.genPkgFile()];
+                    case 2:
+                        _a.sent();
+                        return [4 /*yield*/, this.resolvePkgDependencies()];
+                    case 3:
+                        _a.sent();
+                        return [4 /*yield*/, this.generatorProjectDir()];
+                    case 4:
+                        _a.sent();
+                        return [4 /*yield*/, this.generatorProjectConfigFile()];
+                    case 5:
+                        _a.sent();
+                        return [4 /*yield*/, this.generatorBabelConfigFile()];
+                    case 6:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    Generator.prototype.genProjectName = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var has;
+            return __generator(this, function (_a) {
+                has = fs_1["default"].existsSync(this.targetDir);
+                if (!has) {
+                    fs_1["default"].mkdirSync(this.targetDir);
+                }
+                else {
+                    Promise.reject('请确认目录是否已经存在！');
+                }
+                return [2 /*return*/];
             });
         });
     };
@@ -110,7 +149,8 @@ var Generator = /** @class */ (function (_super) {
                 this.emit('gen_package_start');
                 pkgTemplate = fs_1["default"].readFileSync(PKG_TPM_PATH, { encoding: "utf-8" });
                 dependencies = {
-                    "@lartplus/cli-service": "\"^0.0.14\""
+                    "@lartplus/cli-service": "\"^0.0.15\",",
+                    "@lartplus/cli-babel": "\"^0.0.15\""
                 };
                 scripts = {
                     "dev": "\"$(npm bin)/lartplus-service dev\",",
@@ -148,7 +188,7 @@ var Generator = /** @class */ (function (_super) {
                             stdio: 'inherit'
                         });
                         this.emit('resolve_dependencies_start');
-                        return [4 /*yield*/, child.then(function () { return setTimeout(function () { return _this.emit('resolve_dependencies_end'); }, 5000); })["catch"](function (error) { return Promise.reject(error); })];
+                        return [4 /*yield*/, child.then(function () { return _this.emit('resolve_dependencies_end'); })["catch"](function (error) { return Promise.reject(error); })];
                     case 1:
                         _a.sent();
                         return [2 /*return*/];
@@ -205,7 +245,7 @@ var Generator = /** @class */ (function (_super) {
                             framework: this.answers.framework,
                             typescript: this.answers.feature.some(function (it) { return it === 'typescript'; })
                         };
-                        targetPath = process.cwd() + "/lartplus.config.js";
+                        targetPath = this.targetDir + "/lartplus.config.js";
                         return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, templateData, targetPath, false)];
                     case 1:
                         _a.sent();
@@ -214,6 +254,43 @@ var Generator = /** @class */ (function (_super) {
                 }
             });
         });
+    };
+    Generator.prototype.generatorBabelConfigFile = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var _a, presets, plugins, templatePath, templateData, targetPath;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        this.emit('gen_babel_start');
+                        _a = this.babelConfig, presets = _a.presets, plugins = _a.plugins;
+                        templatePath = path_1["default"].resolve(__dirname, '../template/babel.config.tpl');
+                        templateData = {
+                            presets: JSON.stringify(presets),
+                            plugins: JSON.stringify(plugins)
+                        };
+                        targetPath = this.targetDir + "/babel.config.js";
+                        return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, templateData, targetPath, false)];
+                    case 1:
+                        _b.sent();
+                        this.emit('gen_babel_end');
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    Generator.prototype.parseBabelDependencies = function () {
+        var dep = [];
+        this.babelConfig.presets.forEach(function (it) {
+            dep.push(Array.isArray(it)
+                ? it[0]
+                : it);
+        });
+        this.babelConfig.plugins.forEach(function (it) {
+            dep.push(Array.isArray(it)
+                ? it[0]
+                : it);
+        });
+        return dep;
     };
     return Generator;
 }(events_1.EventEmitter));

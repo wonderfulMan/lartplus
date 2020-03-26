@@ -2,10 +2,10 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-18 15:39:11
- * @LastEditTime : 2020-03-20 17:50:41
+ * @LastEditTime : 2020-03-26 17:20:04
  */
 import { CONFIG_FILE_NAME } from "../config"
-import { fs, notice } from "@lartplus/cli-shared-utils"
+import { fs, notice, ConfigFileInterface } from "@lartplus/cli-shared-utils"
 import { validataConfigFile } from './validateConfigFile'
 
 

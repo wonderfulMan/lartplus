@@ -29,10 +29,22 @@
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "devDependencies": {
     "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@lartplus/cli-shared-utils": "^0.0.15"
+    "@lartplus/cli-shared-utils": "^0.0.15",
+    "@types/friendly-errors-webpack-plugin": "^0.1.2",
+    "@types/html-minifier-terser": "^5.0.0",
+    "@types/html-webpack-plugin": "^3.2.2",
+    "@types/webpack": "^4.41.8",
+    "@types/webpack-chain": "^5.2.0",
+    "@types/webpack-dev-server": "^3.10.1",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^4.0.1",
+    "portfinder": "^1.0.25",
+    "webpack": "^4.42.1",
+    "webpack-chain": "^6.4.0",
+    "webpack-dev-server": "^3.10.3"
   },
   "gitHead": "4508260e582a68cd72fe0670ac265212bb56d3fe"
 }

@@ -8,7 +8,8 @@ import {
     validate,
     ValidationSchema,
     registerSchema,
-    notice
+    notice,
+    ConfigFileInterface
 } from '@lartplus/cli-shared-utils'
 
 

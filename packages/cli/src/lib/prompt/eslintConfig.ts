@@ -2,10 +2,10 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-26 13:31:35
- * @LastEditTime : 2020-01-26 13:52:00
+ * @LastEditTime : 2020-03-26 17:25:27
  */
 import { Service } from 'typedi'
-import { inquirer } from "@lartplus/cli-shared-utils";
+import { inquirer, PresetsAnswers } from "@lartplus/cli-shared-utils";
 
 
 @Service()

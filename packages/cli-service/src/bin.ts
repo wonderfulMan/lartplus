@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-17 15:05:30
- * @LastEditTime : 2020-03-20 14:55:16
+ * @LastEditTime : 2020-03-26 16:47:17
  */
 import {
     commander,
@@ -13,6 +13,9 @@ import {
 
 import { readConfigFile } from './lib/readConfigFile'
 import { createComponents } from './lib/createComponents'
+import { compile } from './lib/compile/compile'
+
+
 async function initSevice(): Promise<void> {
 
     const program = new commander.Command()
@@ -20,13 +23,12 @@ async function initSevice(): Promise<void> {
     const cliVersion = getPackageVersion('cli-service', __dirname + '/../')
 
 
-    const context = await readConfigFile()
+    const configFile = await readConfigFile()
 
     process.env.LARTPLUS_CONTEXT = JSON.stringify({
-        ...context,
+        configFile,
         cwdPath: process.cwd(),
-        workDir: 'src',
-        typescript: true
+        workDir: 'src'
     })
 
     const contextJson = JSON.parse(process.env.LARTPLUS_CONTEXT)
@@ -49,7 +51,14 @@ async function initSevice(): Promise<void> {
                     notice.error(['暂不支持components/page以外的文件创建'])
                     break;
             }
-            // create(name)
+        })
+
+    program
+        .command('start <action>')
+        .description('开发模式/打包模式/测试模式')
+        .option('-e --env [env]')
+        .action((action: 'dev' | 'build', cmd) => {
+            compile({ mode: action, cutsomEnv: cmd.env }, contextJson);
         })
 
     program.parse(process.argv)

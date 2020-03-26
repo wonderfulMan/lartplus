@@ -1,16 +1,5 @@
 #!/usr/bin/env node
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -52,14 +41,15 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-17 15:05:30
- * @LastEditTime : 2020-03-20 14:55:16
+ * @LastEditTime : 2020-03-26 16:47:17
  */
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var readConfigFile_1 = require("./lib/readConfigFile");
 var createComponents_1 = require("./lib/createComponents");
+var compile_1 = require("./lib/compile/compile");
 function initSevice() {
     return __awaiter(this, void 0, void 0, function () {
-        var program, cliVersion, context, contextJson;
+        var program, cliVersion, configFile, contextJson;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -67,8 +57,12 @@ function initSevice() {
                     cliVersion = cli_shared_utils_1.getPackageVersion('cli-service', __dirname + '/../');
                     return [4 /*yield*/, readConfigFile_1.readConfigFile()];
                 case 1:
-                    context = _a.sent();
-                    process.env.LARTPLUS_CONTEXT = JSON.stringify(__assign(__assign({}, context), { cwdPath: process.cwd(), workDir: 'src', typescript: true }));
+                    configFile = _a.sent();
+                    process.env.LARTPLUS_CONTEXT = JSON.stringify({
+                        configFile: configFile,
+                        cwdPath: process.cwd(),
+                        workDir: 'src'
+                    });
                     contextJson = JSON.parse(process.env.LARTPLUS_CONTEXT);
                     program.version(cliVersion)
                         .usage('<command> 选项');
@@ -87,7 +81,13 @@ function initSevice() {
                                 cli_shared_utils_1.notice.error(['暂不支持components/page以外的文件创建']);
                                 break;
                         }
-                        // create(name)
+                    });
+                    program
+                        .command('start <action>')
+                        .description('开发模式/打包模式/测试模式')
+                        .option('-e --env [env]')
+                        .action(function (action, cmd) {
+                        compile_1.compile({ mode: action, cutsomEnv: cmd.env }, contextJson);
                     });
                     program.parse(process.argv);
                     return [2 /*return*/];

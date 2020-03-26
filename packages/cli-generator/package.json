@@ -28,8 +28,10 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
+    "@lartplus/cli-babel": "^0.0.15",
     "@lartplus/cli-shared-utils": "^0.0.15",
     "@types/execa": "^2.0.0",
+    "@types/html-minifier-terser": "^5.0.0",
     "execa": "^4.0.0",
     "reflect-metadata": "^0.1.13",
     "typedi": "^0.8.0",

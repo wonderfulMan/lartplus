@@ -1,0 +1,33 @@
+{
+  "name": "@lartplus/test",
+  "version": "0.0.0",
+  "description": "构建lartplus-cli生态测试包",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wonderfulMan/hAo-cli.git"
+  },
+  "main": "./dist/index.js",
+  "types": "./src/typings/global.d.ts",
+  "scripts": {
+    "create": "$(npm bin)/lartplus create"
+  },
+  "keywords": [
+    "hAo",
+    "react",
+    "Vue",
+    "cli"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "wonderfulMan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wonderfulMan/@lartplus/test-service/issues"
+  },
+  "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "dependencies": {
+    "@lartplus/cli": "^0.0.15",
+    "@lartplus/cli-babel": "^0.0.15"
+  }
+}

@@ -2,9 +2,8 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-03-22 17:01:09
+ * @LastEditTime : 2020-03-26 17:19:07
  */
-
 
 declare module "juicer" {
     const Juice: Function;
@@ -16,28 +15,10 @@ declare module "juicer" {
     export default Juice
 }
 
-type PresetType = {
-    framework: string;
-    useConfigFile: boolean;
-    plugins: { [key: string]: string };
-    stylePreprocessor: string;
-    router: boolean;
-    status: string;
-}
-
-type HaorcType = {
-    presets: Array<PresetType>;
-}
-type ConfigFileInterface = {
-    framework: "vue" | "react";
-    typescript?: boolean;
-}
-type PresetsAnswers = {
-    feature: Array<"pwa" | "linter" | "typescript">;
-    framework: 'vue' | 'react';
-    packageManger: 'yarn' | 'npm';
-    createPresetsFile: boolean;
-    createFilename: string;
+declare namespace NodeJS {
+    interface ProcessEnv {
+        LARTPLUS_CONTEXT: string;
+    }
 }
 declare module '@lartplus/cli-shared-utils' {
 
@@ -56,6 +37,45 @@ declare module '@lartplus/cli-shared-utils' {
     const checkNodeVersion: typeof import('../lib/checkNodeVersion').default
     const getPackageVersion: typeof import('../lib/getPackageVersion').default
     const compileTemplate: (templatePath: string, templateData: unknown, targetPath: string, isRenderJson: boolean) => Promise<void>
+
+    export type PresetType = {
+        framework: string;
+        useConfigFile: boolean;
+        plugins: { [key: string]: string };
+        stylePreprocessor: string;
+        router: boolean;
+        status: string;
+    }
+    
+    export type HaorcType = {
+        presets: Array<PresetType>;
+    }
+    
+    export type ConfigFileEnv = { [key: string]: string }
+    
+    
+    export type ConfigFileInterface = {
+        framework: "vue" | "react";
+        typescript?: boolean;
+        env?: { [key: string]: ConfigFileEnv };
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        serverConfig?: import('webpack-dev-server').Configuration;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        webpackChain?: (chain: import('webpack-chain')) => void;
+    }
+    export type PresetsAnswers = {
+        feature: Array<"pwa" | "linter" | "typescript">;
+        framework: 'vue' | 'react';
+        packageManger: 'yarn' | 'npm';
+        createPresetsFile: boolean;
+        createFilename: string;
+    }
+    
+    export interface ContextInterface {
+        cwdPath: string;
+        workDir: string;
+        configFile: ConfigFileInterface;
+    }
 
     export {
         commander,

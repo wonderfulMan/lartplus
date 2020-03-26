@@ -6,7 +6,7 @@
  */
 import path from 'path'
 import {
-    fs, notice, Juice
+    fs, notice, Juice, PresetType
 } from '@lartplus/cli-shared-utils'
 
 import os from 'os';

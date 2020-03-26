@@ -3,10 +3,10 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-26 14:12:44
- * @LastEditTime : 2020-01-26 14:43:17
+ * @LastEditTime : 2020-03-26 17:25:19
  */
 import { Service } from "typedi";
-import { inquirer } from "@lartplus/cli-shared-utils";
+import { inquirer, PresetsAnswers } from "@lartplus/cli-shared-utils";
 
 @Service()
 class CreateFilename {

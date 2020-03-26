@@ -5,7 +5,7 @@
  * @LastEditTime : 2020-01-26 14:31:38
  */
 import { Service } from "typedi";
-import { inquirer } from "@lartplus/cli-shared-utils";
+import { inquirer, PresetsAnswers } from "@lartplus/cli-shared-utils";
 
 @Service()
 class CreatePresetsFile {

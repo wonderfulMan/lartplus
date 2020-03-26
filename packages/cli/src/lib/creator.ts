@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:22:01
- * @LastEditTime : 2020-03-22 17:43:05
+ * @LastEditTime : 2020-03-26 19:50:21
  */
 
 import 'reflect-metadata'
@@ -10,7 +10,7 @@ import { Service, Inject } from 'typedi'
 
 import Generator from '@lartplus/cli-generator'
 import ResolvePrompt from './prompt/resolvePrompt';
-import { clearConsole, notice, ora, chalk } from '@lartplus/cli-shared-utils';
+import { clearConsole, notice, ora, chalk, PresetsAnswers } from '@lartplus/cli-shared-utils';
 
 @Service()
 export default class Creator {
@@ -30,16 +30,16 @@ export default class Creator {
 
     async create(): Promise<void> {
 
-        this.promptFeature = await this.resolvePrompt.executePrompt()
+        this.promptFeature = await this.resolvePrompt.executePrompt();
 
-        this.generator = new Generator(this.targetDir, this.projectName, this.promptFeature)
-
-        this.projectCreateEventListener()
-
-        clearConsole()
-
-        this.generator.create()
-
+        this.generator = new Generator(
+            this.targetDir,
+            this.projectName,
+            this.promptFeature
+        );
+        this.projectCreateEventListener();
+        clearConsole();
+        this.generator.create();
     }
 
     /**
@@ -91,6 +91,14 @@ export default class Creator {
         this.generator.on('gen_configFile_end', function () {
             notice.normalLogger()
             notice.done(['生成项目配置文件成功！'])
+        })
+        this.generator.on('gen_babel_end', function() {
+            notice.normalLogger()
+            notice.done(['开始生成babel配置文件'])
+        })
+        this.generator.on('gen_babel_start', function() {
+            notice.normalLogger()
+            notice.done(['babel配置文件生成成功！'])
         })
     }
 
