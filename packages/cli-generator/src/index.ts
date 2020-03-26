@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-03-26 20:48:22
+ * @LastEditTime : 2020-03-26 20:51:52
  */
 import { EventEmitter } from 'events'
 import execa from 'execa'
