@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-03-26 20:51:52
+ * @LastEditTime : 2020-03-26 20:57:08
  */
 import { EventEmitter } from 'events'
 import execa from 'execa'
@@ -157,6 +157,9 @@ export default class Generator extends EventEmitter {
             plugins: JSON.stringify(plugins),
         }
         const targetPath = `${this.targetDir}/babel.config.js`;
+        
+
+        
         await compileTemplate(templatePath, templateData, targetPath, false);
         this.emit('gen_babel_end');
 
