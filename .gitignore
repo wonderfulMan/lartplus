@@ -1,9 +1,2 @@
 node_modules
-
-src/
-
-packages/cli-service/src/
-
-packages/cli-babel/src/
-
-packages/cli-shared-utils/src/
+*.ts
