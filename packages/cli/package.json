@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli-generator": "^0.0.16",
-    "@lartplus/cli-shared-utils": "^0.0.16",
+    "@lartplus/cli-generator": "^0.0.17",
+    "@lartplus/cli-shared-utils": "^0.0.17",
     "@types/html-minifier-terser": "^5.0.0",
     "@types/node": "^13.1.8",
     "execa": "^4.0.0",
@@ -38,8 +38,8 @@
     "typedi": "^0.8.0"
   },
   "devDependencies": {
-    "typescript": "^3.7.5",
-    "ts-node-dev": "^1.0.0-pre.44"
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
   },
   "engines": {
     "node": ">=8.9"
