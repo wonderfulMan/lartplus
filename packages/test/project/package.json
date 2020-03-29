@@ -9,7 +9,16 @@
     "create:model": "$(npm bin)/lartplus-service new model"
   },
   "dependencies": {
-    "@lartplus/cli-service": "^0.0.15",
-    "@lartplus/cli-babel": "^0.0.15"
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0",
+    "@lartplus/cli-prettier": "^0.0.16",
+    "@lartplus/cli-eslint-vue": "^0.0.16",
+    "@lartplus/cli-service": "^0.0.16",
+    "@lartplus/cli-babel": "^0.0.16",
+    "@lartplus/cli-service-vue": "^0.0.16"
   }
 }

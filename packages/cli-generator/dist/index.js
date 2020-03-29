@@ -56,7 +56,13 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-03-27 09:47:32
+ * @LastEditTime : 2020-03-29 17:31:27
+ */
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-02-01 14:58:57
+ * @LastEditTime : 2020-03-27 14:02:40
  */
 var events_1 = require("events");
 var execa_1 = __importDefault(require("execa"));
@@ -64,8 +70,8 @@ var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var cli_babel_1 = require("@lartplus/cli-babel");
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
-require("reflect-metadata");
-var PKG_TPM_PATH = path_1["default"].resolve(__dirname, '../template/package.tpl');
+var resolvedPackage_1 = require("./lib/resolvedPackage");
+var FILE_TPM_PATH = path_1["default"].resolve(__dirname, '../template');
 var catchErrorAndExit = function (err) {
     cli_shared_utils_1.notice.error([err]);
     process.exit(0);
@@ -105,17 +111,13 @@ var Generator = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.genPkgFile()];
                     case 2:
                         _a.sent();
-                        return [4 /*yield*/, this.resolvePkgDependencies()];
-                    case 3:
-                        _a.sent();
-                        return [4 /*yield*/, this.generatorProjectDir()];
-                    case 4:
-                        _a.sent();
+                        // await this.resolvePkgDependencies();
                         return [4 /*yield*/, this.generatorProjectConfigFile()];
-                    case 5:
+                    case 3:
+                        // await this.resolvePkgDependencies();
                         _a.sent();
                         return [4 /*yield*/, this.generatorBabelConfigFile()];
-                    case 6:
+                    case 4:
                         _a.sent();
                         return [2 /*return*/];
                 }
@@ -144,32 +146,19 @@ var Generator = /** @class */ (function (_super) {
      */
     Generator.prototype.genPkgFile = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var pkgTemplate, dependencies, scripts, content, packagePath;
+            var templatePath, targetPath;
             return __generator(this, function (_a) {
-                this.emit('gen_package_start');
-                pkgTemplate = fs_1["default"].readFileSync(PKG_TPM_PATH, { encoding: "utf-8" });
-                dependencies = {
-                    "@lartplus/cli-service": "\"^0.0.16\",",
-                    "@lartplus/cli-babel": "\"^0.0.16\""
-                };
-                scripts = {
-                    "dev": "\"$(npm bin)/lartplus-service dev\",",
-                    "build": "\"$(npm bin)/lartplus-service build\",",
-                    "lint": "\"$(npm bin)/lartplus-service lint\",",
-                    "create:components": "\"$(npm bin)/lartplus-service new components\",",
-                    "create:page": "\"$(npm bin)/lartplus-service new page\",",
-                    "create:model": "\"$(npm bin)/lartplus-service new model\""
-                };
-                content = JSON.parse(cli_shared_utils_1.Juice(pkgTemplate, {
-                    projectName: this.projectName,
-                    scripts: scripts,
-                    dependencies: dependencies
-                }));
-                packagePath = this.targetDir + "/package.json";
-                // test path add project
-                fs_1["default"].writeFileSync(packagePath, JSON.stringify(content, null, 2));
-                this.emit('gen_package_end');
-                return [2 /*return*/];
+                switch (_a.label) {
+                    case 0:
+                        this.emit('gen_package_start');
+                        templatePath = FILE_TPM_PATH + '/package.tpl';
+                        targetPath = this.targetDir + "/package.json";
+                        return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, resolvedPackage_1.resolvedPackage(this.answers, this.projectName), targetPath, true)];
+                    case 1:
+                        _a.sent();
+                        this.emit('gen_package_end');
+                        return [2 /*return*/];
+                }
             });
         });
     };
@@ -197,40 +186,6 @@ var Generator = /** @class */ (function (_super) {
         });
     };
     /**
-     * @description 生成项目目录
-     */
-    Generator.prototype.generatorProjectDir = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var srcPath, pagePath, routerPath, componentPath, dirPaths, _i, dirPaths_1, dirPath;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        srcPath = this.targetDir + '/src';
-                        pagePath = srcPath + '/page';
-                        routerPath = srcPath + '/router';
-                        componentPath = srcPath + '/components';
-                        dirPaths = [srcPath, pagePath, routerPath, componentPath];
-                        this.emit('gen_dir_start');
-                        _i = 0, dirPaths_1 = dirPaths;
-                        _a.label = 1;
-                    case 1:
-                        if (!(_i < dirPaths_1.length)) return [3 /*break*/, 4];
-                        dirPath = dirPaths_1[_i];
-                        return [4 /*yield*/, fs_1["default"].mkdirSync(dirPath)];
-                    case 2:
-                        _a.sent();
-                        _a.label = 3;
-                    case 3:
-                        _i++;
-                        return [3 /*break*/, 1];
-                    case 4:
-                        this.emit('gen_dir_end');
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    /**
      * @description 生成配置文件到目标项目根目录
      */
     Generator.prototype.generatorProjectConfigFile = function () {
@@ -240,7 +195,7 @@ var Generator = /** @class */ (function (_super) {
                 switch (_a.label) {
                     case 0:
                         this.emit('gen_configFile_start');
-                        templatePath = path_1["default"].resolve(__dirname, '../template/lartplus.config.tpl');
+                        templatePath = FILE_TPM_PATH + '/lartplus.config.tpl';
                         templateData = {
                             framework: this.answers.framework,
                             typescript: this.answers.feature.some(function (it) { return it === 'typescript'; })

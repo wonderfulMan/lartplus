@@ -35,11 +35,10 @@
     "@types/node": "^13.1.8",
     "execa": "^4.0.0",
     "reflect-metadata": "^0.1.13",
-    "ts-node-dev": "^1.0.0-pre.44",
-    "typedi": "^0.8.0",
-    "typescript": "^3.7.5"
+    "typedi": "^0.8.0"
   },
   "devDependencies": {
+    "typescript": "^3.7.5",
     "ts-node-dev": "^1.0.0-pre.44"
   },
   "engines": {

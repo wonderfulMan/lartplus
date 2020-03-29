@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:22:01
- * @LastEditTime : 2020-03-26 19:50:21
+ * @LastEditTime : 2020-03-27 13:32:58
  */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -123,14 +123,6 @@ var Creator = /** @class */ (function () {
         this.generator.on('gen_configFile_end', function () {
             cli_shared_utils_1.notice.normalLogger();
             cli_shared_utils_1.notice.done(['生成项目配置文件成功！']);
-        });
-        this.generator.on('gen_babel_end', function () {
-            cli_shared_utils_1.notice.normalLogger();
-            cli_shared_utils_1.notice.done(['开始生成babel配置文件']);
-        });
-        this.generator.on('gen_babel_start', function () {
-            cli_shared_utils_1.notice.normalLogger();
-            cli_shared_utils_1.notice.done(['babel配置文件生成成功！']);
         });
     };
     __decorate([

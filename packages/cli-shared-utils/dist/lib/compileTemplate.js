@@ -43,7 +43,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-20 17:03:05
- * @LastEditTime : 2020-03-22 16:53:19
+ * @LastEditTime : 2020-03-28 17:48:44
  */
 var fs_extra_1 = __importDefault(require("fs-extra"));
 var juicer_1 = __importDefault(require("juicer"));
@@ -59,6 +59,7 @@ function compileTemplate(templatePath, templateData, targetPath, isRenderJson) {
                 fs_extra_1["default"].writeFileSync(targetPath, isRenderJson ? JSON.stringify(JSON.parse(content), null, 2) : content);
             }
             catch (error) {
+                console.log(11);
                 notice_1["default"].error([error]);
                 process.exit(0);
             }

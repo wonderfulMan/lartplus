@@ -10,7 +10,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-26 13:31:35
- * @LastEditTime : 2020-03-26 17:25:27
+ * @LastEditTime : 2020-03-29 17:27:10
  */
 var typedi_1 = require("typedi");
 var EslintConfig = /** @class */ (function () {
@@ -18,23 +18,22 @@ var EslintConfig = /** @class */ (function () {
     }
     EslintConfig.prototype.config = function () {
         return {
-            name: 'eslint',
+            name: 'eslintConfig',
             message: "eslint格式化与配置",
             type: 'list',
             when: function (answers) { return answers.feature.includes('linter'); },
             choices: [
                 {
                     name: 'ESLint + Airbnb config + Prettier',
-                    value: 'Airbnb'
+                    value: 'airbnb'
                 },
                 {
                     name: 'ESLint + Standard config + Prettier',
-                    value: 'Standard'
+                    value: 'standard'
                 },
                 {
                     name: 'ESLint + Prettier',
-                    value: 'prettier',
-                    short: 'Prettier'
+                    value: ''
                 }
             ]
         };

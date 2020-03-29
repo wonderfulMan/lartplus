@@ -45,7 +45,6 @@
     "juicer": "^0.6.15",
     "ora": "^4.0.3",
     "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.7.5",
     "validate-npm-package-name": "^3.0.0"
   },
   "gitHead": "4508260e582a68cd72fe0670ac265212bb56d3fe",
@@ -53,6 +52,7 @@
     "@types/webpack": "^4.41.8",
     "@types/webpack-chain": "^5.2.0",
     "@types/webpack-dev-server": "^3.10.1",
+    "typescript": "^3.7.5",
     "ts-node-dev": "^1.0.0-pre.44"
   }
 }
