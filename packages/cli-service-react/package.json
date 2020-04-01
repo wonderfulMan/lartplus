@@ -30,8 +30,5 @@
   "devDependencies": {
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.5"
-  },
-  "dependencies": {
-    "@types/html-minifier-terser": "^5.0.0"
   }
 }

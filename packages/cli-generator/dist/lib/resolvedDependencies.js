@@ -35,13 +35,12 @@ exports.resolveDependencies = function (answers) {
     var dependencies = {};
     if (utils_1.getFrameworkName(answers) === 'react') {
         dependencies["react"] = "\"^16.13.1\",";
-        dependencies["@hot-loader/react-dom"] = "\"^16.10.2\"";
+        dependencies["@hot-loader/react-dom"] = "\"^16.10.2\",";
         dependencies["react-router-dom"] = "\"^5.1.2\"";
     }
     else {
         dependencies["vue"] = "\"^2.6.11\",";
         dependencies["vue-router"] = "\"^3.1.6\"";
     }
-    console.log(devDependencies);
     return { dependencies: dependencies, devDependencies: devDependencies };
 };

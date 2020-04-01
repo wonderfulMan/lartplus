@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-03-29 17:31:27
+ * @LastEditTime : 2020-04-01 21:58:28
  */
 /*
  * @Author: hAo
@@ -71,6 +71,7 @@ var path_1 = __importDefault(require("path"));
 var cli_babel_1 = require("@lartplus/cli-babel");
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var resolvedPackage_1 = require("./lib/resolvedPackage");
+var utils_1 = require("./utils");
 var FILE_TPM_PATH = path_1["default"].resolve(__dirname, '../template');
 var catchErrorAndExit = function (err) {
     cli_shared_utils_1.notice.error([err]);
@@ -111,13 +112,17 @@ var Generator = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.genPkgFile()];
                     case 2:
                         _a.sent();
-                        // await this.resolvePkgDependencies();
-                        return [4 /*yield*/, this.generatorProjectConfigFile()];
+                        return [4 /*yield*/, this.resolvePkgDependencies()];
                     case 3:
-                        // await this.resolvePkgDependencies();
+                        _a.sent();
+                        return [4 /*yield*/, this.generatorProjectConfigFile()];
+                    case 4:
                         _a.sent();
                         return [4 /*yield*/, this.generatorBabelConfigFile()];
-                    case 4:
+                    case 5:
+                        _a.sent();
+                        return [4 /*yield*/, this.genProjectSubject()];
+                    case 6:
                         _a.sent();
                         return [2 /*return*/];
                 }
@@ -246,6 +251,18 @@ var Generator = /** @class */ (function (_super) {
                 : it);
         });
         return dep;
+    };
+    Generator.prototype.genProjectSubject = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var hello;
+            return __generator(this, function (_a) {
+                if (utils_1.getFrameworkName(this.answers) === 'react') {
+                    hello = require('@lartplus/cli-service-react').hello;
+                    console.log(hello);
+                }
+                return [2 /*return*/];
+            });
+        });
     };
     return Generator;
 }(events_1.EventEmitter));

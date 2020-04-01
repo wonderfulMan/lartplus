@@ -1,3 +1,9 @@
+/*
+ * @Author: hAo
+ * @LastEditors: hAo
+ * @Date: 2020-03-20 17:03:06
+ * @LastEditTime: 2020-04-01 21:55:01
+ */
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -59,7 +65,6 @@ function compileTemplate(templatePath, templateData, targetPath, isRenderJson) {
                 fs_extra_1["default"].writeFileSync(targetPath, isRenderJson ? JSON.stringify(JSON.parse(content), null, 2) : content);
             }
             catch (error) {
-                console.log(11);
                 notice_1["default"].error([error]);
                 process.exit(0);
             }
