@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-04-01 21:58:28
+ * @LastEditTime : 2020-04-08 11:16:53
  */
 /*
  * @Author: hAo
@@ -254,10 +254,12 @@ var Generator = /** @class */ (function (_super) {
     };
     Generator.prototype.genProjectSubject = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var hello;
+            var modulePath, hello;
             return __generator(this, function (_a) {
                 if (utils_1.getFrameworkName(this.answers) === 'react') {
-                    hello = require('@lartplus/cli-service-react').hello;
+                    console.log(this.targetDir + "/node_modules/@lartplus/cli-service-react");
+                    modulePath = this.targetDir + "/node_modules/@lartplus/cli-service-react";
+                    hello = require(modulePath).hello;
                     console.log(hello);
                 }
                 return [2 /*return*/];
