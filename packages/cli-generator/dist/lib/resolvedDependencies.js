@@ -23,7 +23,7 @@ exports.resolveDependencies = function (answers) {
             devDependencies['eslint-config-standard'] = "\"^14.1.0\",";
         }
         if (isTypescript) {
-            devDependencies["@lartplus/cli-typescript-eslint"] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
+            devDependencies["@lartplus/cli-eslint-typescript"] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
         }
         devDependencies["@lartplus/cli-prettier"] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
         devDependencies["@lartplus/cli-eslint-" + framework] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
