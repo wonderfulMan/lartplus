@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-service",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "构建lartplus-cli生态",
   "scripts": {
     "build": "$(npm bin)/tsc -w"
@@ -32,7 +32,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@lartplus/cli-shared-utils": "^0.0.22",
+    "@lartplus/cli-shared-utils": "^0.0.23",
     "@types/friendly-errors-webpack-plugin": "^0.1.2",
     "@types/html-minifier-terser": "^5.0.0",
     "@types/html-webpack-plugin": "^3.2.2",
