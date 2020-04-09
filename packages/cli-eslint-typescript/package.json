@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-typescript-eslint",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
