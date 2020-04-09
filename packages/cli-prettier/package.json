@@ -24,5 +24,6 @@
   "dependencies": {
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2"
-  }
+  },
+  "gitHead": "49da863f63f6f7fc2a91ca8f01104099bbfdaa72"
 }

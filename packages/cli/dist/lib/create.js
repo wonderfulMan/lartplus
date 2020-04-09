@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:52:09
- * @LastEditTime : 2020-03-20 15:29:02
+ * @LastEditTime : 2020-04-09 16:10:58
  */
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -101,6 +101,7 @@ function create(projectName) {
                     if (action === 'overwrite') {
                         cli_shared_utils_1.notice.warn(["正在删除当前目录下的所有文件夹"]);
                         cli_shared_utils_1.fs.removeSync(targetDir);
+                        cli_shared_utils_1.notice.success(["删除成功"]);
                     }
                     else {
                         return [2 /*return*/];

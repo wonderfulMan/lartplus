@@ -47,7 +47,7 @@
     "ts-node-dev": "^1.0.0-pre.44",
     "validate-npm-package-name": "^3.0.0"
   },
-  "gitHead": "4508260e582a68cd72fe0670ac265212bb56d3fe",
+  "gitHead": "49da863f63f6f7fc2a91ca8f01104099bbfdaa72",
   "devDependencies": {
     "@types/webpack": "^4.41.8",
     "@types/webpack-chain": "^5.2.0",

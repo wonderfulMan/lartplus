@@ -25,5 +25,6 @@
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
     "eslint-plugin-typescript": "^0.14.0"
-  }
+  },
+  "gitHead": "49da863f63f6f7fc2a91ca8f01104099bbfdaa72"
 }

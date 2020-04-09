@@ -36,5 +36,6 @@
   "dependencies": {
     "@lartplus/cli-service": "^0.0.23",
     "@types/html-minifier-terser": "^5.0.0"
-  }
+  },
+  "gitHead": "49da863f63f6f7fc2a91ca8f01104099bbfdaa72"
 }
