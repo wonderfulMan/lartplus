@@ -31,12 +31,12 @@
     "@lartplus/cli-babel": "^0.0.21",
     "@lartplus/cli-shared-utils": "^0.0.21",
     "@types/execa": "^2.0.0",
-    "@types/html-minifier-terser": "^5.0.0",
     "execa": "^4.0.0",
     "reflect-metadata": "^0.1.13",
     "typedi": "^0.8.0"
   },
   "devDependencies": {
+    "npm-api": "^1.0.0",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.5"
   },
