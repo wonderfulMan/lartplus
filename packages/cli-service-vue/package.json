@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-service-vue",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -32,6 +32,6 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "@lartplus/cli-shared-utils": "^0.0.19"
+    "@lartplus/cli-shared-utils": "^0.0.20"
   }
 }
