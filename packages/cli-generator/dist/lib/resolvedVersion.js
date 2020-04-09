@@ -4,6 +4,6 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-28 17:30:13
- * @LastEditTime : 2020-04-09 16:04:46
+ * @LastEditTime : 2020-04-09 16:07:38
  */
-exports.lartplusCliVesion = "^0.0.22";
+exports.lartplusCliVesion = "^0.0.23";
