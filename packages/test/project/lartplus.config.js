@@ -1,4 +1,4 @@
 module.exports = {
     "framework": "react",
-    "typescript": true
+    "typescript": false
 }
