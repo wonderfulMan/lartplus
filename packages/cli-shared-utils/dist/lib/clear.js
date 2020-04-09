@@ -7,7 +7,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 18:08:55
- * @LastEditTime : 2020-02-01 18:10:06
+ * @LastEditTime : 2020-04-08 15:47:02
  */
 var readline_1 = __importDefault(require("readline"));
 function clearConsole() {
@@ -18,4 +18,4 @@ function clearConsole() {
         readline_1["default"].clearScreenDown(process.stdout);
     }
 }
-exports["default"] = clearConsole;
+exports.clearConsole = clearConsole;

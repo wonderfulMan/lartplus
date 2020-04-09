@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:22:01
- * @LastEditTime : 2020-03-27 13:32:58
+ * @LastEditTime : 2020-04-08 18:04:46
  */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -110,11 +110,11 @@ var Creator = /** @class */ (function () {
         });
         this.generator.on('gen_dir_start', function () {
             cli_shared_utils_1.notice.normalLogger();
-            cli_shared_utils_1.notice.done(['开始生成项目文件夹']);
+            cli_shared_utils_1.notice.done(['开始生成项目文件']);
         });
         this.generator.on('gen_dir_end', function () {
             cli_shared_utils_1.notice.normalLogger();
-            cli_shared_utils_1.notice.done(['生成项目文件夹成功！']);
+            cli_shared_utils_1.notice.done(['生成项目文件成功！']);
         });
         this.generator.on('gen_configFile_start', function () {
             cli_shared_utils_1.notice.normalLogger();

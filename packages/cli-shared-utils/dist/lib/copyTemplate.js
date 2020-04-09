@@ -42,29 +42,47 @@ exports.__esModule = true;
 /*
  * @Author: hAo
  * @LastEditors  : hAo
- * @Date: 2020-03-20 17:03:05
- * @LastEditTime : 2020-04-08 15:54:07
+ * @Date: 2020-04-08 14:36:45
+ * @LastEditTime : 2020-04-08 17:53:37
  */
 var fs_extra_1 = __importDefault(require("fs-extra"));
-var juicer_1 = __importDefault(require("juicer"));
 var notice_1 = require("./notice");
-function compileTemplate(templatePath, templateData, targetPath, isRenderJson) {
-    return __awaiter(this, void 0, void 0, function () {
-        var template, content;
-        return __generator(this, function (_a) {
-            template = fs_extra_1["default"].readFileSync(templatePath, { encoding: "utf-8" });
-            juicer_1["default"].set('strip', false);
-            content = juicer_1["default"](template, templateData || {});
-            try {
-                fs_extra_1["default"].writeFileSync(targetPath, isRenderJson ? JSON.stringify(JSON.parse(content), null, 2) : content);
-            }
-            catch (error) {
-                console.log(11);
-                notice_1.notice.error([error]);
-                process.exit(0);
-            }
-            return [2 /*return*/];
-        });
+var mkDirDiff = function (to) {
+    try {
+        if (!fs_extra_1["default"].statSync(to)) {
+            fs_extra_1["default"].mkdirSync(to);
+        }
+    }
+    catch (err) {
+        notice_1.notice.error([err]);
+        process.exit(0);
+    }
+};
+exports.copyTemplate = function (to, from) { return __awaiter(void 0, void 0, void 0, function () {
+    var all;
+    return __generator(this, function (_a) {
+        try {
+            all = fs_extra_1["default"].readdirSync(from);
+            all.forEach(function (dir) {
+                var formPath = from + '/' + dir;
+                var toPath = to + '/' + dir;
+                var stat = fs_extra_1["default"].statSync(formPath);
+                if (stat.isDirectory()) {
+                    mkDirDiff(toPath);
+                    exports.copyTemplate(toPath, formPath);
+                }
+                else {
+                    console.log('file');
+                    var fsRead = fs_extra_1["default"].createReadStream(formPath);
+                    var fsWrite = fs_extra_1["default"].createWriteStream(toPath);
+                    fsRead.pipe(fsWrite);
+                }
+            });
+        }
+        catch (err) {
+            notice_1.notice.error([err]);
+            process.exit(0);
+        }
+        return [2 /*return*/];
     });
-}
-exports.compileTemplate = compileTemplate;
+}); };

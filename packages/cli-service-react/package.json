@@ -29,6 +29,9 @@
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "devDependencies": {
     "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@lartplus/cli-shared-utils": "^0.0.19"
   }
 }

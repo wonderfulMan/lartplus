@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-04-08 11:16:53
+ * @LastEditTime : 2020-04-08 18:06:20
  */
 /*
  * @Author: hAo
@@ -241,27 +241,25 @@ var Generator = /** @class */ (function (_super) {
     Generator.prototype.parseBabelDependencies = function () {
         var dep = [];
         this.babelConfig.presets.forEach(function (it) {
-            dep.push(Array.isArray(it)
-                ? it[0]
-                : it);
+            dep.push(Array.isArray(it) ? it[0] : it);
         });
         this.babelConfig.plugins.forEach(function (it) {
-            dep.push(Array.isArray(it)
-                ? it[0]
-                : it);
+            dep.push(Array.isArray(it) ? it[0] : it);
         });
         return dep;
     };
     Generator.prototype.genProjectSubject = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var modulePath, hello;
+            var modulePath, ServiceClass, serviceClass;
             return __generator(this, function (_a) {
-                if (utils_1.getFrameworkName(this.answers) === 'react') {
-                    console.log(this.targetDir + "/node_modules/@lartplus/cli-service-react");
-                    modulePath = this.targetDir + "/node_modules/@lartplus/cli-service-react";
-                    hello = require(modulePath).hello;
-                    console.log(hello);
-                }
+                this.emit('gen_dir_start');
+                modulePath = this.targetDir + "/node_modules/@lartplus/cli-service-" + utils_1.getFrameworkName(this.answers);
+                ServiceClass = require(modulePath).getServiceInstanceClass;
+                serviceClass = new ServiceClass();
+                serviceClass
+                    .choiseTemplateType()
+                    .insertTemplateToTarget(this.targetDir);
+                this.emit('gen_dir_end');
                 return [2 /*return*/];
             });
         });
