@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-04-10 19:19:06
+ * @LastEditTime : 2020-04-10 19:46:06
  */
 /*
  * @Author: hAo
@@ -256,9 +256,7 @@ var Generator = /** @class */ (function (_super) {
                 modulePath = this.targetDir + "/node_modules/@lartplus/cli-service-" + utils_1.getFrameworkName(this.answers);
                 ServiceClass = require(modulePath)["default"];
                 serviceClass = new ServiceClass(this.answers);
-                serviceClass
-                    .choiseTemplateType()
-                    .insertTemplateToTarget(this.targetDir);
+                serviceClass.insertTemplateToTarget(this.targetDir);
                 this.emit('gen_dir_end');
                 return [2 /*return*/];
             });
