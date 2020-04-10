@@ -2,10 +2,10 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-24 10:19:01
- * @LastEditTime : 2020-03-24 21:59:11
+ * @LastEditTime : 2020-04-10 17:37:49
  */
 module.exports = {
-    framework: 'react',
+    framework: 'vue',
     typescript: true,
     env: {
         development: {
