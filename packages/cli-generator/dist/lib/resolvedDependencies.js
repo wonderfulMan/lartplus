@@ -41,7 +41,7 @@ exports.resolveDependencies = function (answers) {
     else {
         if (isTypescript) {
             dependencies["vue-class-component"] = "\"^7.2.3\",";
-            dependencies["vue-class-component"] = "\"^8.4.1\",";
+            dependencies["vue-property-decorator"] = "\"^8.3.0\",";
         }
         dependencies["vue"] = "\"^2.6.11\",";
         dependencies["vue-router"] = "\"^3.1.6\"";
