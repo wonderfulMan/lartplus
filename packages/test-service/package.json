@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/test-service",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
-    "@lartplus/cli-service": "^0.0.28",
+    "@lartplus/cli-service": "^0.0.29",
     "cli-service": "^0.0.2"
   },
   "gitHead": "49da863f63f6f7fc2a91ca8f01104099bbfdaa72"
