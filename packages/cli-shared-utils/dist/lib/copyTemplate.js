@@ -43,7 +43,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-04-08 14:36:45
- * @LastEditTime : 2020-04-08 17:53:37
+ * @LastEditTime : 2020-04-10 19:56:40
  */
 var fs_extra_1 = __importDefault(require("fs-extra"));
 var notice_1 = require("./notice");
@@ -61,6 +61,7 @@ var mkDirDiff = function (to) {
 exports.copyTemplate = function (to, from) { return __awaiter(void 0, void 0, void 0, function () {
     var all;
     return __generator(this, function (_a) {
+        console.log(from);
         try {
             all = fs_extra_1["default"].readdirSync(from);
             all.forEach(function (dir) {
