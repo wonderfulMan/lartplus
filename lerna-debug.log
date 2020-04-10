@@ -1,12 +1,10 @@
 0 silly argv { _: [ 'add' ],
-0 silly argv   D: true,
-0 silly argv   dev: true,
 0 silly argv   scope: '@lartplus/cli-service',
 0 silly argv   globs: [],
 0 silly argv   lernaVersion: '3.20.2',
 0 silly argv   '$0': '/usr/local/bin/lerna',
-0 silly argv   pkg: 'FriendlyErrorsWebpackPlugin' }
+0 silly argv   pkg: '@lartpuls/cli-shared-utils' }
 1 notice cli v3.20.2
 2 verbose rootPath /Users/hao/Desktop/gitProject/lartplus
-3 error Error: 404 Not Found - GET https://registry.yarnpkg.com/FriendlyErrorsWebpackPlugin - Not found
+3 error Error: 404 Not Found - GET https://registry.yarnpkg.com/@lartpuls%2fcli-shared-utils - Not found
 3 error     at res.buffer.catch.then.body (/Users/hao/Desktop/gitProject/lartplus/node_modules/@evocateur/npm-registry-fetch/check-response.js:104:15)

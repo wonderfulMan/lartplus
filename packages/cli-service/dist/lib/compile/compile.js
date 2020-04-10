@@ -3,8 +3,19 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-24 10:23:15
- * @LastEditTime : 2020-03-26 17:20:43
+ * @LastEditTime : 2020-04-10 10:49:47
  */
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -57,7 +68,7 @@ var validate = function (mode) {
     return true;
 };
 var compile = function (rest, context) { return __awaiter(void 0, void 0, void 0, function () {
-    var mode, verify, env, entries, template, entriesMap, chain, config, webpackChainCallback;
+    var mode, verify, env, entries, template, entriesMap, mergeContext, chain, config, webpackChainCallback;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -74,9 +85,10 @@ var compile = function (rest, context) { return __awaiter(void 0, void 0, void 0
             case 3:
                 template = _a.sent();
                 entriesMap = parseMerge_1.parseMerge(entries, template);
-                chain = new generatorChainConfig_1.GeneratorChainConfig(context, entriesMap, env, mode);
+                mergeContext = __assign(__assign({}, context), { env: env, mode: mode });
+                chain = new generatorChainConfig_1.GeneratorChainConfig(mergeContext, entriesMap);
                 config = chain.generatorBaseConfig();
-                webpackChainCallback = context.configFile.webpackChain;
+                webpackChainCallback = mergeContext.configFile.webpackChain;
                 if (!(webpackChainCallback && typeof webpackChainCallback === 'function')) return [3 /*break*/, 5];
                 return [4 /*yield*/, webpackChainCallback(config)];
             case 4:
@@ -84,7 +96,7 @@ var compile = function (rest, context) { return __awaiter(void 0, void 0, void 0
                 _a.label = 5;
             case 5:
                 if (mode === 'dev') {
-                    server_1.startServer(config, context, mode, entriesMap);
+                    server_1.startServer(config, mergeContext, entriesMap);
                 }
                 _a.label = 6;
             case 6: return [2 /*return*/];

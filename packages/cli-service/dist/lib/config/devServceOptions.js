@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-26 15:18:18
- * @LastEditTime : 2020-03-26 17:21:35
+ * @LastEditTime : 2020-04-10 10:51:31
  */
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -77,7 +77,7 @@ exports.getNetworkPort = function () { return __awaiter(void 0, void 0, void 0, 
         }
     });
 }); };
-exports.getDevServerOptions = function (context, mode, entriesMap) { return __awaiter(void 0, void 0, void 0, function () {
+exports.getDevServerOptions = function (context, entriesMap) { return __awaiter(void 0, void 0, void 0, function () {
     var host, port;
     return __generator(this, function (_a) {
         switch (_a.label) {

@@ -44,11 +44,11 @@ var friendly_errors_webpack_plugin_1 = __importDefault(require("friendly-errors-
 var webpack_dev_server_1 = __importDefault(require("webpack-dev-server"));
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var devServceOptions_1 = require("../config/devServceOptions");
-var startServer = function (config, context, mode, entriesMap) { return __awaiter(void 0, void 0, void 0, function () {
+var startServer = function (config, context, entriesMap) { return __awaiter(void 0, void 0, void 0, function () {
     var serverOptions, devServer;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, devServceOptions_1.getDevServerOptions(context, mode, entriesMap)];
+            case 0: return [4 /*yield*/, devServceOptions_1.getDevServerOptions(context, entriesMap)];
             case 1:
                 serverOptions = _a.sent();
                 config
@@ -67,6 +67,8 @@ var startServer = function (config, context, mode, entriesMap) { return __awaite
                 ])
                     .end();
                 devServer = new webpack_dev_server_1["default"](webpack_1["default"](config.toConfig()), serverOptions);
+                // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+                // @ts-ignore
                 devServer.listen(serverOptions.port, serverOptions.host, function (err) {
                     if (err)
                         throw err;

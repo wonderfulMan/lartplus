@@ -21,6 +21,7 @@
   ],
   "include": [
     "./typings",
-    "./src"
+    "./src",
+    "./node_modules/@types"
   ]
 }

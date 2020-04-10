@@ -7,11 +7,12 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-24 14:34:36
- * @LastEditTime : 2020-03-27 13:35:06
+ * @LastEditTime : 2020-04-10 17:21:05
  */
 var webpack_chain_1 = __importDefault(require("webpack-chain"));
 var html_webpack_plugin_1 = __importDefault(require("html-webpack-plugin"));
 var htmlPluginFilename_1 = require("./htmlPluginFilename");
+var createVue_1 = require("./createVue");
 var GeneratorChainConfig = /** @class */ (function () {
     /**
      * @description 构造器
@@ -20,13 +21,14 @@ var GeneratorChainConfig = /** @class */ (function () {
      * @param env 环境变量对象
      * @param mode 启动模式
      */
-    function GeneratorChainConfig(context, entries, env, mode) {
+    function GeneratorChainConfig(context, entries) {
         this.configChain = new webpack_chain_1["default"]();
         this.context = context;
         this.entries = entries;
-        this.env = env;
-        this.mode = mode;
     }
+    /**
+     * @description 转换entries对象给htmlplugin使用
+     */
     GeneratorChainConfig.prototype.setTemplateConfig = function () {
         return this.entries.map(function (it) {
             var config = require(it.filePath).templateConfig;
@@ -43,7 +45,7 @@ var GeneratorChainConfig = /** @class */ (function () {
         var _this = this;
         var templateConfigList = this.setTemplateConfig();
         this.entries.forEach(function (entry, index) {
-            entry.htmlFilenamePath = htmlPluginFilename_1.htmlPluginFilename(_this.mode, entry, templateConfigList[index]);
+            entry.htmlFilenamePath = htmlPluginFilename_1.htmlPluginFilename(_this.context.mode, entry, templateConfigList[index]);
             _this.configChain
                 .plugin("html-plugin-" + entry.appName)
                 .use(html_webpack_plugin_1["default"], [
@@ -71,6 +73,15 @@ var GeneratorChainConfig = /** @class */ (function () {
         this.configChain.end();
     };
     /**
+     * @description 设置rules
+     */
+    GeneratorChainConfig.prototype.setFrameworkRelatedToChain = function () {
+        if (this.context.configFile.framework === 'vue') {
+            var createStyle = new createVue_1.CreateVueConfig(this.context, this.configChain);
+            createStyle.buildAll();
+        }
+    };
+    /**
      * @description 设置全局变量
      * @param framework
      */
@@ -79,7 +90,7 @@ var GeneratorChainConfig = /** @class */ (function () {
         var DefinePlugin = require('webpack/lib/DefinePlugin');
         this.configChain
             .plugin('defineGlobal')
-            .use(DefinePlugin, [{ 'process.env': this.env }]);
+            .use(DefinePlugin, [{ 'process.env': this.context.env }]);
     };
     /**
      * @description 设置输出目录
@@ -110,7 +121,7 @@ var GeneratorChainConfig = /** @class */ (function () {
      * @description 切换webpack模式
      */
     GeneratorChainConfig.prototype.switchWebpackMode = function () {
-        this.configChain.mode(this.mode === 'dev' ? "development" : "production");
+        this.configChain.mode(this.context.mode === 'dev' ? "development" : "production");
     };
     /**
      * 设置通用插件
@@ -127,8 +138,9 @@ var GeneratorChainConfig = /** @class */ (function () {
         this.setOutputToChain();
         this.switchWebpackMode();
         this.setTemplateToChain();
+        this.setFrameworkRelatedToChain();
         this.setGlobalPlugins();
-        // console.log(JSON.stringify(this.configChain.toConfig()))
+        console.log(JSON.stringify(this.configChain.toConfig()));
         return this.configChain;
     };
     return GeneratorChainConfig;

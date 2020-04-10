@@ -41,11 +41,11 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-17 15:05:30
- * @LastEditTime : 2020-03-26 16:47:17
+ * @LastEditTime : 2020-04-10 10:47:04
  */
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var readConfigFile_1 = require("./lib/readConfigFile");
-var createComponents_1 = require("./lib/createComponents");
+var createComponents_1 = require("./lib/create/createComponents");
 var compile_1 = require("./lib/compile/compile");
 function initSevice() {
     return __awaiter(this, void 0, void 0, function () {
