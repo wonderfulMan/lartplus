@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-shared-utils",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -49,7 +49,6 @@
   },
   "gitHead": "49da863f63f6f7fc2a91ca8f01104099bbfdaa72",
   "devDependencies": {
-
     "@types/webpack": "^4.41.8",
     "@types/webpack-chain": "^5.2.0",
     "@types/webpack-dev-server": "^3.10.1",
