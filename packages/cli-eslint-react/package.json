@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-eslint-react",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
