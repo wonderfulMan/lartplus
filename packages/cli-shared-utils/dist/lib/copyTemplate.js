@@ -43,13 +43,13 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-04-08 14:36:45
- * @LastEditTime : 2020-04-10 19:56:40
+ * @LastEditTime : 2020-04-13 13:40:53
  */
 var fs_extra_1 = __importDefault(require("fs-extra"));
 var notice_1 = require("./notice");
 var mkDirDiff = function (to) {
     try {
-        if (!fs_extra_1["default"].statSync(to)) {
+        if (!fs_extra_1["default"].existsSync(to)) {
             fs_extra_1["default"].mkdirSync(to);
         }
     }
@@ -61,7 +61,6 @@ var mkDirDiff = function (to) {
 exports.copyTemplate = function (to, from) { return __awaiter(void 0, void 0, void 0, function () {
     var all;
     return __generator(this, function (_a) {
-        console.log(from);
         try {
             all = fs_extra_1["default"].readdirSync(from);
             all.forEach(function (dir) {
