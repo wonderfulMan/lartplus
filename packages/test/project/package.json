@@ -9,12 +9,16 @@
     "create:model": "$(npm bin)/lartplus-service new model"
   },
   "dependencies": {
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.3.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {
+    "typescript": "^3.7.5",
     "eslint": "^6.5.1",
     "eslint-config-standard": "^14.1.0",
+    "@lartplus/cli-eslint-typescript": "^0.0.30",
     "@lartplus/cli-prettier": "^0.0.30",
     "@lartplus/cli-eslint-vue": "^0.0.30",
     "@lartplus/cli-service": "^0.0.30",
