@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var language_1 = require("./language");
 var CreateStyleVueRules = /** @class */ (function () {
     function CreateStyleVueRules(context, chain) {
         this.context = context;
@@ -52,7 +53,7 @@ var CreateStyleVueRules = /** @class */ (function () {
         var normalRule = baseRule.oneOf('normal');
         this.apploaders(normalRule, false, loader, loaderOptions);
         // 外部文件 模块
-        var normalModuleRule = baseRule.oneOf('normal-modules').test(/\.module\.\w+$/);
+        var normalModuleRule = baseRule.oneOf('normal-modules').test(language_1.language.MODULES);
         this.apploaders(normalModuleRule, true, loader, loaderOptions);
     };
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -97,12 +98,12 @@ var CreateStyleVueRules = /** @class */ (function () {
         }
     };
     CreateStyleVueRules.prototype.buildStyle = function () {
-        this.createRules('css', '/\.css$/');
-        this.createRules('less', '/\.less$/', 'less-loader');
-        this.createRules('stylus', '/\.styl(us)?$/', 'stylus-loader');
-        this.createRules('postcss', '/\.p(ost)?css$/');
-        this.createRules('sass', '/\.sass$/', 'sass-loader');
-        this.createRules('scss', '/\.scss$/', 'sass-loader');
+        this.createRules('css', language_1.language.CSS);
+        this.createRules('less', language_1.language.LESS, 'less-loader');
+        this.createRules('stylus', language_1.language.STYLUS, 'stylus-loader');
+        this.createRules('postcss', language_1.language.POST);
+        this.createRules('sass', language_1.language.SASS, 'sass-loader');
+        this.createRules('scss', language_1.language.SCSS, 'sass-loader');
     };
     return CreateStyleVueRules;
 }());

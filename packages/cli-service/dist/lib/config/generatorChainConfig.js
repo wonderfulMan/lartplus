@@ -7,12 +7,13 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-24 14:34:36
- * @LastEditTime : 2020-04-10 17:21:05
+ * @LastEditTime : 2020-04-13 19:19:07
  */
 var webpack_chain_1 = __importDefault(require("webpack-chain"));
 var html_webpack_plugin_1 = __importDefault(require("html-webpack-plugin"));
 var htmlPluginFilename_1 = require("./htmlPluginFilename");
-var createVue_1 = require("./createVue");
+var createVueConfig_1 = require("./createVueConfig");
+var createScript_1 = require("./createScript");
 var GeneratorChainConfig = /** @class */ (function () {
     /**
      * @description 构造器
@@ -77,9 +78,11 @@ var GeneratorChainConfig = /** @class */ (function () {
      */
     GeneratorChainConfig.prototype.setFrameworkRelatedToChain = function () {
         if (this.context.configFile.framework === 'vue') {
-            var createStyle = new createVue_1.CreateVueConfig(this.context, this.configChain);
+            var createStyle = new createVueConfig_1.CreateVueConfig(this.context, this.configChain);
             createStyle.buildAll();
         }
+        var createScript = new createScript_1.CreateScript(this.context, this.configChain);
+        createScript.buildAll();
     };
     /**
      * @description 设置全局变量

@@ -26,16 +26,15 @@
     "url": "https://github.com/wonderfulMan/@lartplus/cli-service/issues"
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
-  "devDependencies": {
-    "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.8.3"
-  },
   "dependencies": {
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3",
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
     "@lartplus/cli-shared-utils": "^0.0.32",
     "babel-loader": "^8.1.0",
     "core-js": "3",

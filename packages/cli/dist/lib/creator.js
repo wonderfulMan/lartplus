@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 14:22:01
- * @LastEditTime : 2020-04-08 18:04:46
+ * @LastEditTime : 2020-04-14 15:06:37
  */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -94,9 +94,9 @@ var Creator = /** @class */ (function () {
         this.generator.on('gen_package_end', function () {
             cli_shared_utils_1.notice.normalLogger();
             cli_shared_utils_1.notice.done(['开始生成package.json文件成功！']);
+            or.start();
         });
         this.generator.on('resolve_dependencies_start', function () {
-            or.start();
             cli_shared_utils_1.notice.normalLogger('\n');
             cli_shared_utils_1.notice.done(['开始下载依赖']);
         });
@@ -123,6 +123,14 @@ var Creator = /** @class */ (function () {
         this.generator.on('gen_configFile_end', function () {
             cli_shared_utils_1.notice.normalLogger();
             cli_shared_utils_1.notice.done(['生成项目配置文件成功！']);
+        });
+        this.generator.on('gen_typescriptConfig_start', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['开始生成tsconfig.json']);
+        });
+        this.generator.on('gen_typescriptConfig_end', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['生成tsconfig.json成功！']);
         });
     };
     __decorate([

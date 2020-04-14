@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-04-10 20:03:24
+ * @LastEditTime : 2020-04-14 15:05:17
  */
 /*
  * @Author: hAo
@@ -84,7 +84,7 @@ var Generator = /** @class */ (function (_super) {
         _this.targetDir = targetDir;
         _this.projectName = projectName;
         _this.answers = answers;
-        _this.babelConfig = cli_babel_1.getBabelConfig(_this.answers.framework);
+        _this.babelConfig = cli_babel_1.getBabelConfig(_this.answers);
         return _this;
     }
     /**
@@ -259,6 +259,31 @@ var Generator = /** @class */ (function (_super) {
                 serviceClass.insertTemplateToTarget(this.targetDir);
                 this.emit('gen_dir_end');
                 return [2 /*return*/];
+            });
+        });
+    };
+    Generator.prototype.genProjectTypescriptConfig = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var templatePath, include, targetPath;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        this.emit('gen_typescriptConfig_start');
+                        if (!this.answers.feature.includes('typescript')) return [3 /*break*/, 2];
+                        templatePath = path_1["default"].resolve(__dirname, '../template/tsconfig.json.tpl');
+                        include = ['src/**/*.jsx', 'src/**/*.ts', 'src/**/*.tsx'];
+                        if (this.answers.framework === 'vue') {
+                            include.push('src/**/*.vue');
+                        }
+                        targetPath = this.targetDir + "/tsconfig.json";
+                        return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, { include: include }, targetPath, false)];
+                    case 1:
+                        _a.sent();
+                        _a.label = 2;
+                    case 2:
+                        this.emit('gen_typescriptConfig_end');
+                        return [2 /*return*/];
+                }
             });
         });
     };
