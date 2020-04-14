@@ -4,13 +4,11 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-26 15:01:29
- * @LastEditTime : 2020-03-26 15:42:41
+ * @LastEditTime : 2020-04-14 17:47:50
  */
 var htmlPluginFilename = function (mode, entriesMapItem, templateConfig) {
-    var userConfigBaseFilename = entriesMapItem.appName + "/" + templateConfig.filename;
+    // const userConfigBaseFilename = `${entriesMapItem.appName}/${templateConfig.filename}`;
     var innerbaseFilename = entriesMapItem.appName + "/index.html";
-    return templateConfig.filename
-        ? userConfigBaseFilename
-        : innerbaseFilename;
+    return innerbaseFilename;
 };
 exports.htmlPluginFilename = htmlPluginFilename;

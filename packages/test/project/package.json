@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "$(npm bin)/lartplus-service start dev",
     "build": "$(npm bin)/lartplus-service start build",
-    "lint": "$(npm bin)/lartplus-service start lint",
+    "lint": "$(npm bin)/lartplus-service lint",
     "create:components": "$(npm bin)/lartplus-service new components",
     "create:page": "$(npm bin)/lartplus-service new page",
     "create:model": "$(npm bin)/lartplus-service new model"
@@ -15,10 +15,10 @@
   "devDependencies": {
     "eslint": "^6.5.1",
     "eslint-config-standard": "^14.1.0",
-    "@lartplus/cli-prettier": "^0.0.32",
-    "@lartplus/cli-eslint-vue": "^0.0.32",
-    "@lartplus/cli-service": "^0.0.32",
-    "@lartplus/cli-babel": "^0.0.32",
-    "@lartplus/cli-service-vue": "^0.0.32"
+    "@lartplus/cli-prettier": "^0.0.33",
+    "@lartplus/cli-eslint-vue": "^0.0.33",
+    "@lartplus/cli-service": "^0.0.33",
+    "@lartplus/cli-babel": "^0.0.33",
+    "@lartplus/cli-service-vue": "^0.0.33"
   }
 }

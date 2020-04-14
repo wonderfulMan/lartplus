@@ -402,6 +402,13 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
 
+"@babel/plugin-syntax-typescript@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-typescript/-/plugin-syntax-typescript-7.8.3.tgz#c1f659dda97711a569cef75275f7e15dcaa6cabc"
+  integrity sha512-GO1MQ/SGGGoiEXY0e0bSpHimJvxqB7lktLLIq2pv8xG7WZ8IMEle74jIe1FhprHBWjwjZtXHkycDLZXIWM5Wfg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+
 "@babel/plugin-transform-arrow-functions@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-arrow-functions/-/plugin-transform-arrow-functions-7.8.3.tgz#82776c2ed0cd9e1a49956daeb896024c9473b8b6"
@@ -638,6 +645,15 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
 
+"@babel/plugin-transform-typescript@^7.9.0":
+  version "7.9.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.9.4.tgz#4bb4dde4f10bbf2d787fce9707fb09b483e33359"
+  integrity sha512-yeWeUkKx2auDbSxRe8MusAG+n4m9BFY/v+lPjmQDgOFX5qnySkUY5oXzkp6FwPdsYqnKay6lorXYdC0n3bZO7w==
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/plugin-syntax-typescript" "^7.8.3"
+
 "@babel/plugin-transform-unicode-regex@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-unicode-regex/-/plugin-transform-unicode-regex-7.8.3.tgz#0cef36e3ba73e5c57273effb182f46b91a1ecaad"
@@ -723,6 +739,14 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
+"@babel/preset-typescript@^7.9.0":
+  version "7.9.0"
+  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.9.0.tgz#87705a72b1f0d59df21c179f7c3d2ef4b16ce192"
+  integrity sha512-S4cueFnGrIbvYJgwsVFKdvOmpiL0XGw9MFW9D0vgRys5g36PBhZRL8NX8Gr2akz8XRtzq6HuDXPD/1nniagNUg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/plugin-transform-typescript" "^7.9.0"
+
 "@babel/runtime@^7.8.4":
   version "7.9.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.2.tgz#d90df0583a3a252f09aaa619665367bae518db06"
@@ -803,51 +827,54 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@lartplus/cli-babel@^0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.32.tgz#6921e86b98ebaf77d54bad899172f6e2811982c3"
-  integrity sha512-GVTBs6fC8Gv75yBp+fG0TBd+b9owYaseaweXu0zVdZ0Z0F+4Qr2N1aGMJTtEI0QVxTVL4f4BFgxUvPJWFST3DA==
+"@lartplus/cli-babel@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.33.tgz#2c2a4072aa7751b49881182ab7d71e6be6be5dab"
+  integrity sha512-IOj2Nrb2OvyrgSoTVFKjfGdoTqDQoC9o0KIIBqujc9El5wW8RqJWS7dnWl2ZT7JRXMVOyNvIdegxPcDGW7+ErA==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/plugin-proposal-class-properties" "^7.8.3"
     "@babel/plugin-proposal-object-rest-spread" "^7.9.0"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@babel/preset-env" "^7.9.0"
-    "@lartplus/cli-shared-utils" "^0.0.32"
+    "@babel/preset-typescript" "^7.9.0"
+    "@lartplus/cli-shared-utils" "^0.0.33"
     babel-loader "^8.1.0"
     core-js "3"
     corejs "^1.0.0"
+    ts-node-dev "^1.0.0-pre.44"
+    typescript "^3.8.3"
 
-"@lartplus/cli-eslint-vue@^0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-vue/-/cli-eslint-vue-0.0.32.tgz#881231ce6f44bf8b0e7c739fabfa3ef985342d96"
-  integrity sha512-B4jDwLVwDbkLqeIAMnyzVClRCmQ7IHFc6sk9SOh2XjYrf3YnFOVotDcWPtfIQcRLXCLh/cfcIKLl1pgE7Wp2Rw==
+"@lartplus/cli-eslint-vue@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-vue/-/cli-eslint-vue-0.0.33.tgz#0004d3be72ffef8b7da88d5d210dd649a563eebd"
+  integrity sha512-TPk2AvMo+TvEmNW5pylkTe2ynARmk/ogxOjJbC/qfvNSrzNw/onp/gh9ovicUfKKDLT9qyagqnl/2VOpOjzM2Q==
 
-"@lartplus/cli-prettier@^0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-prettier/-/cli-prettier-0.0.32.tgz#9d2fedc37f4ab9fef5fe380c977c281bdd95917b"
-  integrity sha512-3+LkSRd9R4VsKEkqGVPeYEVcrXtWoOHpEar4Csz9KZjivuDzd0+Q0IWz1zSFDUsTcKJR/jbuJh0B3xukqWgmnA==
+"@lartplus/cli-prettier@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-prettier/-/cli-prettier-0.0.33.tgz#bfdb4f57c5248287115ee0854b2748e6aa2681a6"
+  integrity sha512-zxXhODxDtzDOviw/9OZAEenahg1jl0cIc0vYsQhtChEBNGqDUQHLzXCkaaSeWkiwaUdBRy5fAOLiQWlxY7MiLg==
   dependencies:
     eslint-config-prettier "^6.10.1"
     eslint-plugin-prettier "^3.1.2"
 
-"@lartplus/cli-service-vue@^0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-service-vue/-/cli-service-vue-0.0.32.tgz#94529350d098172ff353030c6265c1e3af64a5cc"
-  integrity sha512-FFAv4YUVTmwEOXWREj/hDXQZxAlkcjYqfRtqZBU2mspBW8TB0RWAfrAPmUMTpKhF3ao6u0OrwOVZlbsfzXu1mA==
+"@lartplus/cli-service-vue@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-service-vue/-/cli-service-vue-0.0.33.tgz#461065e361851ba65aa8f9241e2c5c64963d3d26"
+  integrity sha512-uWandRhElI9SE3qlU685PoDraxoFGP6BbEDm7sNInWVVUwLMtVvZr0KaO5Ma86KiSKhYX0oWk50CZATV5MAtlg==
   dependencies:
-    "@lartplus/cli-shared-utils" "^0.0.32"
+    "@lartplus/cli-shared-utils" "^0.0.33"
     vue-loader "^15.9.1"
     vue-style-loader "^4.1.2"
     vue-template-compiler "^2.6.11"
 
-"@lartplus/cli-service@^0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-service/-/cli-service-0.0.32.tgz#a6e8bc1b1655e437e81abe491f47d0404e7d4a45"
-  integrity sha512-Bmb0eddTK87rAJJtXgEQIbr4I3Gr6lqDnI/02q1iA/d9dGtr27+shCVO1Mt3CBLVY3KrKiOK8dvfz80tay+y4A==
+"@lartplus/cli-service@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-service/-/cli-service-0.0.33.tgz#1cd43c56f2cc94c943921d0841da58588ecb473e"
+  integrity sha512-qRp/bZWAw3tMu/dMn2JU6rSkJvmKdlxvfmBh8zRMJxi6VvMbteepUEWTH1ewc2LJDRPvZmVHnZdzyMreWCSmsA==
   dependencies:
-    "@lartplus/cli-service-vue" "^0.0.32"
-    "@lartplus/cli-shared-utils" "^0.0.32"
+    "@lartplus/cli-service-vue" "^0.0.33"
+    "@lartplus/cli-shared-utils" "^0.0.33"
     "@types/friendly-errors-webpack-plugin" "^0.1.2"
     "@types/html-minifier-terser" "^5.0.0"
     "@types/html-webpack-plugin" "^3.2.2"
@@ -867,10 +894,10 @@
     webpack-chain "^6.4.0"
     webpack-dev-server "^3.10.3"
 
-"@lartplus/cli-shared-utils@^0.0.32":
-  version "0.0.32"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.32.tgz#f5976cc51e0aab6a33774235668700a677c815d9"
-  integrity sha512-Vk1jPIPYiDH1rz8cKRsRaV12bhferq57SmQm8Yt88zY2VXM94UT71jw7wrAkM9J7FD40LCs1aXDwsvyYoJjXiQ==
+"@lartplus/cli-shared-utils@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.33.tgz#229287fe973ac7485b9fa8ada1933e21e5b2813f"
+  integrity sha512-CFBUXjh36Yv+6zYab3186ry7i7PWHtN+r5a7zZ1R5j4TItr19LSTx97cBzMREEFAtVEfKaw+wCG1CDW13Wy4RA==
   dependencies:
     "@hapi/joi" "^17.1.1"
     "@types/figlet" "^1.2.0"
@@ -1168,9 +1195,9 @@
     "@types/node" "*"
 
 "@types/uglify-js@*":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@types/uglify-js/-/uglify-js-3.0.5.tgz#2c70d5c68f6e002e3b2e4f849adc5f162546f633"
-  integrity sha512-L7EbSkhSaWBpkl+PZAEAqZTqtTeIsq7s/oX/q0LNnxxJoRVKQE0T81XDVyaxjiiKQwiV2vhVeYRqxdRNqGOGJw==
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/@types/uglify-js/-/uglify-js-3.9.0.tgz#4490a140ca82aa855ad68093829e7fd6ae94ea87"
+  integrity sha512-3ZcoyPYHVOCcLpnfZwD47KFLr8W/mpUcgjpf1M4Q78TMJIw7KMAHSjiCLJp1z3ZrBR9pTLbe191O0TldFK5zcw==
   dependencies:
     source-map "^0.6.1"
 
@@ -2866,9 +2893,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.390:
-  version "1.3.403"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.403.tgz#c8bab4e2e72bf78bc28bad1cc355c061f9cc1918"
-  integrity sha512-JaoxV4RzdBAZOnsF4dAlZ2ijJW72MbqO5lNfOBHUWiBQl3Rwe+mk2RCUMrRI3rSClLJ8HSNQNqcry12H+0ZjFw==
+  version "1.3.404"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.404.tgz#8efc21dc57b284b0bb9473430c1cebb5c4c1e600"
+  integrity sha512-G7XYSpNXv/GhFLgjGyBJAs9LjLHBWhsvjf6VI/VbptG9KiABHSItETTgDe1LDjbHA5P/Rn2MMDKOvhewM+w2Cg==
 
 elliptic@^6.0.0:
   version "6.5.2"
@@ -3091,9 +3118,9 @@ esprima@^4.0.0:
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
 
 esquery@^1.0.1:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/esquery/-/esquery-1.2.0.tgz#a010a519c0288f2530b3404124bfb5f02e9797fe"
-  integrity sha512-weltsSqdeWIX9G2qQZz7KlTRJdkkOCTPgLYJUz1Hacf48R4YOwGPHO3+ORfWedqJKbq5WQmsgK90n+pFLIKt/Q==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/esquery/-/esquery-1.2.1.tgz#105239e215c5aa480369c7794d74b8b5914c19d4"
+  integrity sha512-/IcAXa9GWOX9BUIb/Tz2QrrAWFWzWGrFIeLeMRwtiuwg9qTFhSYemsi9DixwrFFqVbhBZ47vGcxEnu5mbPqbig==
   dependencies:
     estraverse "^5.0.0"
 

@@ -7,7 +7,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-24 14:34:36
- * @LastEditTime : 2020-04-13 19:19:07
+ * @LastEditTime : 2020-04-14 17:09:34
  */
 var webpack_chain_1 = __importDefault(require("webpack-chain"));
 var html_webpack_plugin_1 = __importDefault(require("html-webpack-plugin"));
@@ -28,30 +28,33 @@ var GeneratorChainConfig = /** @class */ (function () {
         this.entries = entries;
     }
     /**
-     * @description 转换entries对象给htmlplugin使用
+     * @description 转换entries对象给htmlplugin使用 需要寻找新方法
      */
-    GeneratorChainConfig.prototype.setTemplateConfig = function () {
-        return this.entries.map(function (it) {
-            var config = require(it.filePath).templateConfig;
-            return {
-                title: config.title,
-                filename: config.filename
-            };
-        });
-    };
+    // public async setTemplateConfig(): Promise<TemplateConfigList> {
+    //     const result: TemplateConfigList = [];
+    //     for (const entry of this.entries) {
+    //         // eslint-disable-next-line @typescript-eslint/no-var-requires
+    //         const config = require(entry.filePath);
+    //         console.log(config)
+    //         // const templateConfig: TemplateConfig = config.templateConfig;
+    //         // result.push({
+    //         //     title: templateConfig.title,
+    //         //     filename: templateConfig.filename
+    //         // });
+    //     }
+    //     return result
+    // }
     /**
      * @description 设置模版文件到webpack
      */
     GeneratorChainConfig.prototype.setTemplateToChain = function () {
         var _this = this;
-        var templateConfigList = this.setTemplateConfig();
         this.entries.forEach(function (entry, index) {
-            entry.htmlFilenamePath = htmlPluginFilename_1.htmlPluginFilename(_this.context.mode, entry, templateConfigList[index]);
+            entry.htmlFilenamePath = htmlPluginFilename_1.htmlPluginFilename(_this.context.mode, entry);
             _this.configChain
                 .plugin("html-plugin-" + entry.appName)
                 .use(html_webpack_plugin_1["default"], [
                 {
-                    title: templateConfigList[index].title,
                     template: entry.templatePath,
                     filename: entry.htmlFilenamePath,
                     chunks: [entry.appName]
@@ -142,8 +145,8 @@ var GeneratorChainConfig = /** @class */ (function () {
         this.switchWebpackMode();
         this.setTemplateToChain();
         this.setFrameworkRelatedToChain();
-        this.setGlobalPlugins();
-        console.log(JSON.stringify(this.configChain.toConfig()));
+        // this.setGlobalPlugins();
+        // console.log(JSON.stringify(this.configChain.toConfig()))
         return this.configChain;
     };
     return GeneratorChainConfig;
