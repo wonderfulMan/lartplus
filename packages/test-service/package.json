@@ -12,7 +12,8 @@
     "watch": "$(npm bin)/ts-node-dev src",
     "build": "$(npm bin)/tsc -w",
     "dev": "$(npm bin)/lartplus-service start dev --env development",
-    "builds": "$(npm bin)/lartplus-service start dev --env builds"
+    "builds": "$(npm bin)/lartplus-service start dev --env builds",
+    "webpack-defaults": "webpack-defaults"
   },
   "keywords": [
     "hAo",
@@ -30,11 +31,14 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
+    "@lartplus/cli-babel": "^0.0.39",
     "@lartplus/cli-service": "^0.0.39",
+    "@lartplus/cli-service-vue": "^0.0.39",
     "cli-service": "^0.0.2",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.1"
   },
   "gitHead": "49da863f63f6f7fc2a91ca8f01104099bbfdaa72"
 }

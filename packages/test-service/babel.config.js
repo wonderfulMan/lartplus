@@ -1,14 +1,8 @@
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-04-14 15:12:30
- * @LastEditTime : 2020-04-14 19:14:40
- */
-module.exports = function(api) {
-    console.log(1);
+module.exports = (api) => {
     api.cache(true);
+    console.log(11)
     return {
-        presets: [["@babel/preset-env",{"corejs":3,"useBuiltIns":"usage"}]],
-        plugins: ["@babel/plugin-proposal-object-rest-spread","@babel/plugin-syntax-dynamic-import","@babel/plugin-proposal-class-properties"]
+        presets: [["@babel/preset-env",{"corejs":3,"modules":false,"useBuiltIns":"usage"}],"@babel/preset-typescript"],
+        plugins: ["@babel/plugin-proposal-object-rest-spread","@babel/plugin-syntax-dynamic-import",["@babel/plugin-proposal-decorators",{"legacy":true}],["@babel/plugin-proposal-class-properties",{"loose":true}]]
     }
 }

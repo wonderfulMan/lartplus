@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-04-13 15:03:19
- * @LastEditTime : 2020-04-15 14:09:19
+ * @LastEditTime : 2020-04-15 16:11:26
  */
 exports.__esModule = true;
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
@@ -17,6 +17,10 @@ var CreateScript = /** @class */ (function () {
         this.chain.module
             .rule('javascript')
             .test(language_1.language.JS)
+            .set('exclude', [
+            /\bcore-js\b/,
+            /\bwebpack\/buildin\b/
+        ])
             .use('js-babel-loader')
             .loader(cli_shared_utils_1.maybeLoader('babel-loader'));
         this.chain.plugin('vue-loader-plugin')
@@ -26,11 +30,19 @@ var CreateScript = /** @class */ (function () {
         this.chain.module
             .rule('typescript')
             .test(language_1.language.TS)
+            .set('exclude', [
+            /\bcore-js\b/,
+            /\bwebpack\/buildin\b/
+        ])
             .use('ts-babel-loader')
             .loader(cli_shared_utils_1.maybeLoader('babel-loader'));
         this.chain.module
             .rule('tsx')
             .test(language_1.language.TSX)
+            .set('exclude', [
+            /\bcore-js\b/,
+            /\bwebpack\/buildin\b/
+        ])
             .use('tsx-babel-loader')
             .loader(cli_shared_utils_1.maybeLoader('babel-loader'));
     };
