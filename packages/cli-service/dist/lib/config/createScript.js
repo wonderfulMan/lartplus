@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-04-13 15:03:19
- * @LastEditTime : 2020-04-15 17:46:34
+ * @LastEditTime : 2020-04-16 00:28:45
  */
 exports.__esModule = true;
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
@@ -13,38 +13,36 @@ var CreateScript = /** @class */ (function () {
         this.context = context;
         this.chain = chain;
     }
+    CreateScript.prototype.applyLoaders = function (rules, lang, loader, name) {
+        rules
+            .test(lang)
+            .use(name)
+            .loader(cli_shared_utils_1.maybeLoader(loader));
+    };
     CreateScript.prototype.setJavascript = function () {
-        this.chain.module
+        var jsModule = this.chain.module
             .rule('javascript')
             .exclude
             .add(/\bcore-js\b/)
             .add(/\bwebpack\/buildin\b/)
-            .end()
-            .test(language_1.language.JS)
-            .use('js-babel-loader')
-            .loader(cli_shared_utils_1.maybeLoader('babel-loader'));
-        this.chain.plugin('vue-loader-plugin')
-            .use(cli_shared_utils_1.maybeLoader('vue-loader/lib/plugin'));
+            .end();
+        this.applyLoaders(jsModule, language_1.language.JS, 'babel-loader', 'js-babel-loader');
     };
     CreateScript.prototype.setTypescript = function () {
-        this.chain.module
+        var typescriptModule = this.chain.module
             .rule('typescript')
             .exclude
             .add(/\bcore-js\b/)
             .add(/\bwebpack\/buildin\b/)
-            .end()
-            .test(language_1.language.TS)
-            .use('ts-babel-loader')
-            .loader(cli_shared_utils_1.maybeLoader('babel-loader'));
-        this.chain.module
+            .end();
+        this.applyLoaders(typescriptModule, language_1.language.TS, 'babel-loader', 'ts-babel-loader');
+        var tsxModule = this.chain.module
             .rule('tsx')
             .exclude
             .add(/\bcore-js\b/)
             .add(/\bwebpack\/buildin\b/)
-            .end()
-            .test(language_1.language.TSX)
-            .use('tsx-babel-loader')
-            .loader(cli_shared_utils_1.maybeLoader('babel-loader'));
+            .end();
+        this.applyLoaders(tsxModule, language_1.language.TSX, 'babel-loader', 'tsx-babel-loader');
     };
     CreateScript.prototype.buildAll = function () {
         this.setJavascript();

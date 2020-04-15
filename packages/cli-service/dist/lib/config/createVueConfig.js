@@ -18,6 +18,8 @@ var CreateVueConfig = /** @class */ (function () {
             .test(language_1.language.VUE)
             .use('vue-loader')
             .loader(cli_shared_utils_1.maybeLoader('vue-loader'));
+        this.chain.plugin('vue-loader-plugin')
+            .use(cli_shared_utils_1.maybeLoader('vue-loader/lib/plugin'));
     };
     CreateVueConfig.prototype.buildAll = function () {
         this.setStyle();
