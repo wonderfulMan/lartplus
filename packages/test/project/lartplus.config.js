@@ -1,4 +1,4 @@
 module.exports = {
-    "framework": "react",
+    "framework": "vue",
     "typescript": true
 }
