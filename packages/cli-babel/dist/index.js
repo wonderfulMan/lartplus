@@ -3,18 +3,22 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-26 16:32:42
- * @LastEditTime : 2020-04-15 10:54:19
+ * @LastEditTime : 2020-04-15 11:06:39
  */
 exports.__esModule = true;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 var plugins = [
     "@babel/plugin-proposal-object-rest-spread",
     "@babel/plugin-syntax-dynamic-import",
-    "@babel/plugin-proposal-class-properties",
     [
         "@babel/plugin-proposal-decorators",
         {
             "legacy": true
+        }
+    ],
+    ["@babel/plugin-proposal-class-properties",
+        {
+            "loose": true
         }
     ]
 ];

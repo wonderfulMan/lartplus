@@ -43,7 +43,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-04-08 14:36:45
- * @LastEditTime : 2020-04-13 13:40:53
+ * @LastEditTime : 2020-04-13 14:59:29
  */
 var fs_extra_1 = __importDefault(require("fs-extra"));
 var notice_1 = require("./notice");
@@ -72,7 +72,6 @@ exports.copyTemplate = function (to, from) { return __awaiter(void 0, void 0, vo
                     exports.copyTemplate(toPath, formPath);
                 }
                 else {
-                    console.log('file');
                     var fsRead = fs_extra_1["default"].createReadStream(formPath);
                     var fsWrite = fs_extra_1["default"].createWriteStream(toPath);
                     fsRead.pipe(fsWrite);

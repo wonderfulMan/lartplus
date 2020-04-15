@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-04-15 10:48:47
+ * @LastEditTime : 2020-04-15 11:13:51
  */
 /*
  * @Author: hAo
@@ -279,7 +279,7 @@ var Generator = /** @class */ (function (_super) {
                             include.push('src/**/*.vue');
                         }
                         targetPath = this.targetDir + "/tsconfig.json";
-                        return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, { include: include }, targetPath, false)];
+                        return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, { include: include }, targetPath, true)];
                     case 1:
                         _a.sent();
                         this.emit('gen_typescriptConfig_end');

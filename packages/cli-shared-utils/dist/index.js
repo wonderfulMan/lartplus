@@ -7,7 +7,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:23:02
- * @LastEditTime : 2020-04-10 15:04:02
+ * @LastEditTime : 2020-04-13 19:15:04
  */
 var fs_extra_1 = __importDefault(require("fs-extra"));
 exports.fs = fs_extra_1["default"];
@@ -42,3 +42,8 @@ var copyTemplate_1 = require("./lib/copyTemplate");
 exports.copyTemplate = copyTemplate_1.copyTemplate;
 var maybeLoader_1 = require("./lib/maybeLoader");
 exports.maybeLoader = maybeLoader_1.maybeLoader;
+var answerGet_1 = require("./lib/answerGet");
+exports.hasTypescript = answerGet_1.hasTypescript;
+exports.getFrameworkName = answerGet_1.getFrameworkName;
+exports.getEslintConfig = answerGet_1.getEslintConfig;
+exports.hasEslint = answerGet_1.hasEslint;
