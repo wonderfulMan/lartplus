@@ -2,6 +2,7 @@
 exports.__esModule = true;
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var createCss_1 = require("./createCss");
+var language_1 = require("./language");
 var CreateVueConfig = /** @class */ (function () {
     function CreateVueConfig(context, chain) {
         this.context = context;
@@ -14,7 +15,7 @@ var CreateVueConfig = /** @class */ (function () {
     CreateVueConfig.prototype.setVueFile = function () {
         this.chain.module
             .rule('vue')
-            .test('/\.vue/')
+            .test(language_1.language.VUE)
             .use('vue-loader')
             .loader(cli_shared_utils_1.maybeLoader('vue-loader'));
     };
