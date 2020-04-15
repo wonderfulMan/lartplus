@@ -7,7 +7,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-24 14:34:36
- * @LastEditTime : 2020-04-14 17:09:34
+ * @LastEditTime : 2020-04-15 09:28:26
  */
 var webpack_chain_1 = __importDefault(require("webpack-chain"));
 var html_webpack_plugin_1 = __importDefault(require("html-webpack-plugin"));
@@ -145,8 +145,10 @@ var GeneratorChainConfig = /** @class */ (function () {
         this.switchWebpackMode();
         this.setTemplateToChain();
         this.setFrameworkRelatedToChain();
-        // this.setGlobalPlugins();
-        // console.log(JSON.stringify(this.configChain.toConfig()))
+        this.setGlobalPlugins();
+        console.log('=====');
+        console.log(JSON.stringify(this.configChain.toConfig()));
+        console.log('=====');
         return this.configChain;
     };
     return GeneratorChainConfig;

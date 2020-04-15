@@ -6,7 +6,7 @@ var language_1 = require("./language");
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-04-13 15:03:19
- * @LastEditTime : 2020-04-14 15:12:11
+ * @LastEditTime : 2020-04-15 09:27:27
  */
 var CreateScript = /** @class */ (function () {
     function CreateScript(context, chain) {
@@ -18,12 +18,10 @@ var CreateScript = /** @class */ (function () {
             .rule(language_1.language.JS)
             .use('js-babel-loader')
             .loader(cli_shared_utils_1.maybeLoader('babel-loader'));
+        this.chain.plugin('vue-loader-plugin')
+            .use(cli_shared_utils_1.maybeLoader('vue-loader/lib/plugin'));
     };
     CreateScript.prototype.setTypescript = function () {
-        // const babelTypescriptOptions = {
-        //     allExtensions: false,
-        //     allowNamespaces: true,
-        // }
         this.chain.module
             .rule(language_1.language.TS)
             .use('ts-babel-loader')
