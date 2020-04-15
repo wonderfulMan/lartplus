@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/test-service",
-  "version": "0.0.43",
+  "version": "0.0.44",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -31,9 +31,9 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli-babel": "^0.0.43",
-    "@lartplus/cli-service": "^0.0.43",
-    "@lartplus/cli-service-vue": "^0.0.43",
+    "@lartplus/cli-babel": "^0.0.44",
+    "@lartplus/cli-service": "^0.0.44",
+    "@lartplus/cli-service-vue": "^0.0.44",
     "cli-service": "^0.0.2",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.5",
