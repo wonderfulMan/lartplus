@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-04-15 13:25:36
+ * @LastEditTime : 2020-04-15 19:24:33
  */
 /*
  * @Author: hAo
@@ -220,14 +220,15 @@ var Generator = /** @class */ (function (_super) {
     };
     Generator.prototype.generatorBabelConfigFile = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var _a, presets, plugins, templatePath, templateData, targetPath;
+            var _a, presets, plugins, sourceType, templatePath, templateData, targetPath;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         this.emit('gen_babel_start');
-                        _a = this.babelConfig, presets = _a.presets, plugins = _a.plugins;
+                        _a = this.babelConfig, presets = _a.presets, plugins = _a.plugins, sourceType = _a.sourceType;
                         templatePath = path_1["default"].resolve(__dirname, '../template/babel.config.tpl');
                         templateData = {
+                            sourceType: sourceType,
                             presets: JSON.stringify(presets),
                             plugins: JSON.stringify(plugins)
                         };
