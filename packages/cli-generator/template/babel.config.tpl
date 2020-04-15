@@ -1,7 +1,7 @@
 module.exports = (api) => {
     api.cache(true);
     return {
-        sourceType: ${sourceType},
+        sourceType: $${sourceType},
         presets: $${presets},
         plugins: $${plugins}
     }

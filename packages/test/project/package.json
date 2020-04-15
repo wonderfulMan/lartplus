@@ -18,11 +18,11 @@
     "typescript": "^3.7.5",
     "eslint": "^6.5.1",
     "eslint-config-standard": "^14.1.0",
-    "@lartplus/cli-eslint-typescript": "^0.0.42",
-    "@lartplus/cli-prettier": "^0.0.42",
-    "@lartplus/cli-eslint-vue": "^0.0.42",
-    "@lartplus/cli-service": "^0.0.42",
-    "@lartplus/cli-babel": "^0.0.42",
-    "@lartplus/cli-service-vue": "^0.0.42"
+    "@lartplus/cli-eslint-typescript": "^0.0.44",
+    "@lartplus/cli-prettier": "^0.0.44",
+    "@lartplus/cli-eslint-vue": "^0.0.44",
+    "@lartplus/cli-service": "^0.0.44",
+    "@lartplus/cli-babel": "^0.0.44",
+    "@lartplus/cli-service-vue": "^0.0.44"
   }
 }
