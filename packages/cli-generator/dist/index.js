@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-04-14 15:05:17
+ * @LastEditTime : 2020-04-15 10:48:47
  */
 /*
  * @Author: hAo
@@ -121,8 +121,11 @@ var Generator = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.generatorBabelConfigFile()];
                     case 5:
                         _a.sent();
-                        return [4 /*yield*/, this.genProjectSubject()];
+                        return [4 /*yield*/, this.genProjectTypescriptConfig()];
                     case 6:
+                        _a.sent();
+                        return [4 /*yield*/, this.genProjectSubject()];
+                    case 7:
                         _a.sent();
                         return [2 /*return*/];
                 }
@@ -268,8 +271,8 @@ var Generator = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        this.emit('gen_typescriptConfig_start');
                         if (!this.answers.feature.includes('typescript')) return [3 /*break*/, 2];
+                        this.emit('gen_typescriptConfig_start');
                         templatePath = path_1["default"].resolve(__dirname, '../template/tsconfig.json.tpl');
                         include = ['src/**/*.jsx', 'src/**/*.ts', 'src/**/*.tsx'];
                         if (this.answers.framework === 'vue') {
@@ -279,10 +282,9 @@ var Generator = /** @class */ (function (_super) {
                         return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, { include: include }, targetPath, false)];
                     case 1:
                         _a.sent();
-                        _a.label = 2;
-                    case 2:
                         this.emit('gen_typescriptConfig_end');
-                        return [2 /*return*/];
+                        _a.label = 2;
+                    case 2: return [2 /*return*/];
                 }
             });
         });
