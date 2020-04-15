@@ -1,13 +1,13 @@
 "use strict";
-exports.__esModule = true;
-var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
-var language_1 = require("./language");
 /*
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-04-13 15:03:19
- * @LastEditTime : 2020-04-15 09:31:38
+ * @LastEditTime : 2020-04-15 14:09:19
  */
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var language_1 = require("./language");
 var CreateScript = /** @class */ (function () {
     function CreateScript(context, chain) {
         this.context = context;

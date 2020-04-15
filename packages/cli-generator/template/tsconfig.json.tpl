@@ -26,7 +26,7 @@
       "scripthost"
     ]
   },
-  "include": ${include},
+  "include": $${include},
   "exclude": [
     "node_modules"
   ]

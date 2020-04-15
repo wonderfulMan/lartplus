@@ -843,10 +843,10 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@lartplus/cli-babel@^0.0.37":
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.37.tgz#eb060075e273d891befa9f69512c51cc74348239"
-  integrity sha512-SlkOiBZL3WW8JCLjlUtfgKFRHeMMLtysMrkNQJHDZTgvxoKM9d2x+IFyTBjPTof3QlV55t20m0NEq5MldetRZQ==
+"@lartplus/cli-babel@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.38.tgz#fdc62c6dd5851b1c11126b45e2db99fb6c77c9ad"
+  integrity sha512-RyogK23kxpDtuUOgCWHuQGBBaJjCGeVhq2fhHJdXRAXB3mngrkVTcoZAQQe3gns+sgQqmDvCyhws2Uy2Hef12g==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/plugin-proposal-class-properties" "^7.8.3"
@@ -855,52 +855,52 @@
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@babel/preset-env" "^7.9.0"
     "@babel/preset-typescript" "^7.9.0"
-    "@lartplus/cli-shared-utils" "^0.0.37"
+    "@lartplus/cli-shared-utils" "^0.0.38"
     babel-loader "^8.1.0"
     core-js "3"
     corejs "^1.0.0"
     ts-node-dev "^1.0.0-pre.44"
     typescript "^3.8.3"
 
-"@lartplus/cli-eslint-typescript@^0.0.37":
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-typescript/-/cli-eslint-typescript-0.0.37.tgz#0f45c7d17266235ec0ff2697e65b62299d8711d2"
-  integrity sha512-TgsV7Hgl3+z8VFU/5rL8sxk4+MkgpdGOIaI7ilpBHL8AvYfIuN2Gtuk1Ikje353xBvYkmq9xxG+GxQb62iO3dw==
+"@lartplus/cli-eslint-typescript@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-typescript/-/cli-eslint-typescript-0.0.38.tgz#9ad06e9db56fdab6c1b5b92069827feed0df03e0"
+  integrity sha512-WrDmqNJVzoHJN8pj0JNj22V5kBLvz/kwSf9wZFe015o0s8JW6eDVNYGejqRtfVjAnRD7xTF60nqIVa7C3Zuv0g==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.25.0"
     "@typescript-eslint/parser" "^2.25.0"
     eslint-plugin-typescript "^0.14.0"
 
-"@lartplus/cli-eslint-vue@^0.0.37":
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-vue/-/cli-eslint-vue-0.0.37.tgz#bd7e1bb146c19afba65ccfc4bdeac963fc981bca"
-  integrity sha512-Wkh3aLmCrva7y7K+4ZETHIhBt7YVcdwX05JgVdYT0A8RUd836/KDWpmy+y5kKRslbvEh+8zeVyIWDruMQaD6CQ==
+"@lartplus/cli-eslint-vue@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-vue/-/cli-eslint-vue-0.0.38.tgz#123f4509056bd34d96375f0a878f99d9e84e6dd3"
+  integrity sha512-pmRcQ2uic1w50y3Ham3wgWFPnuq5Mk1cDjnk8LNIvLFriEr1xhBY2Q6cee6Zl5Gotde8TBFFa8kYIufq9lBXIQ==
 
-"@lartplus/cli-prettier@^0.0.37":
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-prettier/-/cli-prettier-0.0.37.tgz#4127491d11ff4d34a44a6e6314fa6affc58ee9ad"
-  integrity sha512-0LZXHUyP1YuImyv/buXqaf/wHVqJZ4Raf1HWjCiNjTPoEaCH1qPG1q/SawcfDYPsPJou1ZHe7VJ/5uCs6WyMaA==
+"@lartplus/cli-prettier@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-prettier/-/cli-prettier-0.0.38.tgz#74e5e375afd2ee5bd1127c7bdbc46a05c02586fd"
+  integrity sha512-nLWLKLQhe9M48Fejok6wHlj986X3gjwyferDTMIgmL0gkmFk5HdEx2Jqr7vxQXKvk7GfHP8mkICE4aCCdrTUYQ==
   dependencies:
     eslint-config-prettier "^6.10.1"
     eslint-plugin-prettier "^3.1.2"
 
-"@lartplus/cli-service-vue@^0.0.37":
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-service-vue/-/cli-service-vue-0.0.37.tgz#5dea2f625cc75b3d79b6982fdf5e2fd9a9b70c07"
-  integrity sha512-aaJWK4End1fNlmXiOWiXjM4uowjaxno/mMZiKlevePDOqwKhzHm9yj8nGXSQErlueGXgbAeqT4s57flT2RjC7A==
+"@lartplus/cli-service-vue@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-service-vue/-/cli-service-vue-0.0.38.tgz#8cb063928a4ead47470b31574172445b35a4f558"
+  integrity sha512-+OEDWI0n1mn0zNCjb3BUQpDpbvgHdAZ/XyhAWtFSB7cOSf047sixGgHGbm9OTrDO0VfFcTHBsBnk3dD90i6P6g==
   dependencies:
-    "@lartplus/cli-shared-utils" "^0.0.37"
+    "@lartplus/cli-shared-utils" "^0.0.38"
     vue-loader "^15.9.1"
     vue-style-loader "^4.1.2"
     vue-template-compiler "^2.6.11"
 
-"@lartplus/cli-service@^0.0.37":
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-service/-/cli-service-0.0.37.tgz#df21c3891b56aab14f653c278746882946b0602b"
-  integrity sha512-2iQOX6ELnfml30rbQy4fn5ASDCGuSAEYCLG4Z/B+L4YredxS1dmDMeTiTMuJ7hUfBVm+ttHZRfO/fP5GSqS/QA==
+"@lartplus/cli-service@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-service/-/cli-service-0.0.38.tgz#69bf6200982b5963dc90e466ba71c4893c65ff21"
+  integrity sha512-imi4BJ5Zk4jSYJhXLwCfZ6XG7wkA1F0B5FpkY/IAfk2VqtmG1gsoiEKNBZjDG4a4o5OFU77adlc129hBI+nK8A==
   dependencies:
-    "@lartplus/cli-service-vue" "^0.0.37"
-    "@lartplus/cli-shared-utils" "^0.0.37"
+    "@lartplus/cli-service-vue" "^0.0.38"
+    "@lartplus/cli-shared-utils" "^0.0.38"
     "@types/friendly-errors-webpack-plugin" "^0.1.2"
     "@types/html-minifier-terser" "^5.0.0"
     "@types/html-webpack-plugin" "^3.2.2"
@@ -920,10 +920,10 @@
     webpack-chain "^6.4.0"
     webpack-dev-server "^3.10.3"
 
-"@lartplus/cli-shared-utils@^0.0.37":
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.37.tgz#8897767fcce9eabfc25b8b69642a914e2dfd35ce"
-  integrity sha512-Atql+NgkZR+xvVTfPgHOlqjCJS/QkRadIjeQhep/2IWDtRHl+P0yT2f/50CgDw3bziCF4SbArLuQ0Qbq1Ahkig==
+"@lartplus/cli-shared-utils@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.38.tgz#3f9ce35676482a486c356d84cc6fb8b84c39d5f9"
+  integrity sha512-Uihli5H3AIY/F+n8CR7G3FWQcdgycXiL/fdE5DPySviSCDIW9OABWYOjW9Dv2bVFsZMZRKbOXKZZcYuPlkjxWw==
   dependencies:
     "@hapi/joi" "^17.1.1"
     "@types/figlet" "^1.2.0"
@@ -1006,9 +1006,9 @@
   integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
 
 "@types/express-serve-static-core@*":
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.4.tgz#157c79c2d28b632d6418497c57c93185e392e444"
-  integrity sha512-dPs6CaRWxsfHbYDVU51VjEJaUJEcli4UI0fFMT4oWmgCvHj+j7oIxz5MLHVL0Rv++N004c21ylJNdWQvPkkb5w==
+  version "4.17.5"
+  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.5.tgz#a00ac7dadd746ae82477443e4d480a6a93ea083c"
+  integrity sha512-578YH5Lt88AKoADy0b2jQGwJtrBxezXtVe/MBqWXKZpqx91SnC0pVkVCcxcytz3lWW+cHBYDi3Ysh0WXc+rAYw==
   dependencies:
     "@types/node" "*"
     "@types/range-parser" "*"
@@ -2084,9 +2084,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001038:
-  version "1.0.30001041"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001041.tgz#c2ea138dafc6fe03877921ddcddd4a02a14daf76"
-  integrity sha512-fqDtRCApddNrQuBxBS7kEiSGdBsgO4wiVw4G/IClfqzfhW45MbTumfN4cuUJGTM0YGFNn97DCXPJ683PS6zwvA==
+  version "1.0.30001042"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001042.tgz#c91ec21ec2d270bd76dbc2ce261260c292b8c93c"
+  integrity sha512-igMQ4dlqnf4tWv0xjaaE02op9AJ2oQzXKjWf4EuAHFN694Uo9/EfPVIPJcmn2WkU9RqozCxx5e2KPcVClHDbDw==
 
 chalk@^1.1.3:
   version "1.1.3"
@@ -2972,9 +2972,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.390:
-  version "1.3.406"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.406.tgz#d4b8f8c9f7405dddbbb646d6b15042cd7c1e6e61"
-  integrity sha512-bx8vBZoEbhsMmwEZIj2twzfhFoKKZlSLQiENhqgc5/FdAj4/UHEzAri42OTSFA5+0agLR03ReTvIms2dfZ7/Ew==
+  version "1.3.407"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.407.tgz#361dbfc92a3d1b0b097b77221256271967e04c0e"
+  integrity sha512-ayDQgkwCLHq0AVmsU10t2H/8X9lq3nb1CRV9rWYsc2nTTbFMvh4Aaau48Ao0iW/L+Q8Y9bgbJ5iHyPse7DGMJw==
 
 elliptic@^6.0.0:
   version "6.5.2"
