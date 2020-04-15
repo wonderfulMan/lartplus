@@ -43,6 +43,7 @@ exports.getBabelConfig = function (answers) {
         presets.push('@babel/preset-typescript');
     }
     return {
+        sourceType: "unambiguous",
         presets: presets,
         plugins: plugins
     };
