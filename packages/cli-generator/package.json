@@ -36,7 +36,6 @@
     "typedi": "^0.8.0"
   },
   "devDependencies": {
-    "npm-api": "^1.0.0",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.5"
   },
