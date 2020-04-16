@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-service-react",
-  "version": "0.0.50",
+  "version": "0.0.51",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -32,7 +32,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@lartplus/cli-shared-utils": "^0.0.50"
+    "@lartplus/cli-shared-utils": "^0.0.51"
   },
   "gitHead": "b265c5046ccf25e43f630c8acf69f4398a388220"
 }
