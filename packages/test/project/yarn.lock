@@ -843,10 +843,10 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@lartplus/cli-babel@^0.0.49":
-  version "0.0.49"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.49.tgz#39b0504c29876301fb843057ae48e4587b699da5"
-  integrity sha512-EAolwLbCRduzqhhPfGH/ot0c5r3u8uTbvBlpXBt4DlCSfQIoi6PHNRsF11+WXFv/+x4LrfJP1rCihpAraFs5gg==
+"@lartplus/cli-babel@^0.0.50":
+  version "0.0.50"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.50.tgz#44f32d2db9f22a0ba16c283249b80bfd7fc4c04d"
+  integrity sha512-VSdrQW0jDcCS5XjpGlZoD44r4gES46YwbN6V0CjjLZjqnQf9lFNDFj2uRHYsTapHJWdMtax9bX3iyeX2m+jKVw==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/plugin-proposal-class-properties" "^7.8.3"
@@ -855,52 +855,52 @@
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@babel/preset-env" "^7.9.0"
     "@babel/preset-typescript" "^7.9.0"
-    "@lartplus/cli-shared-utils" "^0.0.49"
+    "@lartplus/cli-shared-utils" "^0.0.50"
     babel-loader "^8.1.0"
     core-js "3"
     corejs "^1.0.0"
     ts-node-dev "^1.0.0-pre.44"
     typescript "^3.8.3"
 
-"@lartplus/cli-eslint-typescript@^0.0.49":
-  version "0.0.49"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-typescript/-/cli-eslint-typescript-0.0.49.tgz#5ff0eec899636539c3ab4e680e382036444ff449"
-  integrity sha512-Q3MHdbLlFoSiHReFT4PdfcmCBdOw6X2Wz3vHGd9acvbGuSx5nIWSzCNOQivYpTEbjkViuw8mMuLBVTZ8ylZXsg==
+"@lartplus/cli-eslint-typescript@^0.0.50":
+  version "0.0.50"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-typescript/-/cli-eslint-typescript-0.0.50.tgz#332bc773d37da304ca71b437463710f90ffeaedc"
+  integrity sha512-5BZRAjTzSJQ/oc+lc2itbG55d4qsxFHl7n3pYYT5CKoRtUicNBG7y1pAKO2Hf9eKUV0xfbh4c7fZp08pppe6yw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.25.0"
     "@typescript-eslint/parser" "^2.25.0"
     eslint-plugin-typescript "^0.14.0"
 
-"@lartplus/cli-eslint-vue@^0.0.49":
-  version "0.0.49"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-vue/-/cli-eslint-vue-0.0.49.tgz#900eb5e1f12f053db3323ebef3327a4034c7e1ca"
-  integrity sha512-+lTu+n7EYF72QSLBb5BjOKlqsde7cCVmRfgJpxKWE9ubxA2fcz9A7rQaxX9aX2f98wK+dkVq8r+UAPD818hB+w==
+"@lartplus/cli-eslint-vue@^0.0.50":
+  version "0.0.50"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-vue/-/cli-eslint-vue-0.0.50.tgz#acdd301b289fa3115ff124039804380cf0a573fd"
+  integrity sha512-EYWv3hV6NuhBO3qRHNcIhs62ydzVLdr9Ft0aDJIHpMZG7C1ckMTNxVNCo1t5Qg4/od8rRWpSBrEV7OomigP3RA==
 
-"@lartplus/cli-prettier@^0.0.49":
-  version "0.0.49"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-prettier/-/cli-prettier-0.0.49.tgz#71de312295eebef99bd3b93d882275eb23ab94e7"
-  integrity sha512-mrWkRwncwjrPpTZgU+l7cHKVDRn/HJ68cfryFDn3RLRyG83wEFj6IEuiF/FP9c2RRtFK4v3bx9Ak/m2KuHSMMQ==
+"@lartplus/cli-prettier@^0.0.50":
+  version "0.0.50"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-prettier/-/cli-prettier-0.0.50.tgz#774bf6862e87e933183b71803f4f1df3978c2e8a"
+  integrity sha512-k4A8lZy1Ufb9y4H+n8Vt8cHTIFuznKyhQsQsZWQYjiOc6cm40iKW9CFqrdgsK4MPkehhxHrcH47vG/RmM6tJxg==
   dependencies:
     eslint-config-prettier "^6.10.1"
     eslint-plugin-prettier "^3.1.2"
 
-"@lartplus/cli-service-vue@^0.0.49":
-  version "0.0.49"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-service-vue/-/cli-service-vue-0.0.49.tgz#fdcec882ae4136b7761191868507bc59b53da6a2"
-  integrity sha512-jKwb54nWg4bZp6/IAVzHAIFv2pnx7Pa5/f9nmqxqQ8tTMEB4EVV1xNZV5H0fK3e+omSpaZENo/8Wdci1gKTzQw==
+"@lartplus/cli-service-vue@^0.0.50":
+  version "0.0.50"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-service-vue/-/cli-service-vue-0.0.50.tgz#cedb1579d92f00f09e95e18d728dcd0ddf8e2421"
+  integrity sha512-8rCLnGg1LEvcuHOE9xTxwpc10quahkZLqExQUXjg7ZAhozuOFo/VaVoG9KvxUVng8CKhcZsHmXCjFuVs0eHWPw==
   dependencies:
-    "@lartplus/cli-shared-utils" "^0.0.49"
+    "@lartplus/cli-shared-utils" "^0.0.50"
     vue-loader "^15.9.1"
     vue-style-loader "^4.1.2"
     vue-template-compiler "^2.6.11"
 
-"@lartplus/cli-service@^0.0.49":
-  version "0.0.49"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-service/-/cli-service-0.0.49.tgz#17b84d7d801ffc250f5f6b07e6ea4ed6e02798e5"
-  integrity sha512-1qtWh2FCJ+ROyz2nXWs7mrOF6VT1YO9x9kNC7uEQmhdnipa0kqNvhUDmio6CKMSwiE5nE8/gSmXfj0udTAtUuA==
+"@lartplus/cli-service@^0.0.50":
+  version "0.0.50"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-service/-/cli-service-0.0.50.tgz#5c0e68a97d543482b62e28d3f733dc6c4cdef909"
+  integrity sha512-NcHrN1VLtVh95fJxnLJjZc+hQ3o+Wal2kwH++fKyRCWOt/bjtuSjUxuwyLJb9JvyzkGqTo3KGrPr2PC5j17jTQ==
   dependencies:
-    "@lartplus/cli-service-vue" "^0.0.49"
-    "@lartplus/cli-shared-utils" "^0.0.49"
+    "@lartplus/cli-service-vue" "^0.0.50"
+    "@lartplus/cli-shared-utils" "^0.0.50"
     "@types/friendly-errors-webpack-plugin" "^0.1.2"
     "@types/html-minifier-terser" "^5.0.0"
     "@types/html-webpack-plugin" "^3.2.2"
@@ -920,10 +920,10 @@
     webpack-chain "^6.4.0"
     webpack-dev-server "^3.10.3"
 
-"@lartplus/cli-shared-utils@^0.0.49":
-  version "0.0.49"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.49.tgz#c34636a964a046b95111cd7eb749d8b593d99f1a"
-  integrity sha512-ctDBXFpdKw3Bvc33AJDbHNavXUvKcRCWtTqzdey3EYuD42QW9V/hoxQqN8f/v3NBt4i0iF1W8moiMU0fDoJwyA==
+"@lartplus/cli-shared-utils@^0.0.50":
+  version "0.0.50"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.50.tgz#77e704dbf070b25fca311dbaa076462730bca294"
+  integrity sha512-lOA5haHOorQbh8+VyuT6syj+9XP5ld3vD3dzG2MYDia0Ql3JupI+Oe/EepQeAcQYR9PZ9kX6SNZxDvfKOR5sbg==
   dependencies:
     "@hapi/joi" "^17.1.1"
     "@types/figlet" "^1.2.0"
@@ -2972,9 +2972,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.390:
-  version "1.3.408"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.408.tgz#e6a3a2b8f87c875dfd6e16501abe7a28f079bbb3"
-  integrity sha512-vn1zWIxIdyl0MR72lr81/7kHYTRlDRjJT4ocp8dtb85VhH46J3lNqDMEBljAKPKgguqjK0+WAbf3IL6ZKw72kQ==
+  version "1.3.409"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.409.tgz#c9a4380ff0ad3e26cd1b4b4cef800d17c46aec7e"
+  integrity sha512-CB2HUXiMsaVYY5VvcpELhDShiTRhI2FfN7CuacEZ5mDmMFuSG/ZVm8HoSya0+S61RvUd3TjIjFSKywqHZpRPzQ==
 
 elliptic@^6.0.0:
   version "6.5.2"

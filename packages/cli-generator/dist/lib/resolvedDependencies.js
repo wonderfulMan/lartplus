@@ -30,6 +30,7 @@ exports.resolveDependencies = function (answers) {
     }
     devDependencies["@lartplus/cli-service"] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
     devDependencies["@lartplus/cli-babel"] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
+    devDependencies["@lartplus/cli-babel-" + utils_1.getFrameworkName(answers)] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
     devDependencies["@lartplus/cli-service-" + utils_1.getFrameworkName(answers)] = "\"" + resolvedVersion_1.lartplusCliVesion + "\"";
     // 上线依赖
     var dependencies = {};

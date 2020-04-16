@@ -1,0 +1,36 @@
+{
+  "name": "@lartplus/cli-babel-vue",
+  "version": "0.0.0",
+  "description": "构建lartplus-cli生态",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wonderfulMan/hAo-cli.git"
+  },
+  "main": "./dist/index.js",
+  "types": "./typings/index.d.ts",
+  "scripts": {
+    "watch": "$(npm bin)/ts-node-dev src",
+    "build": "$(npm bin)/tsc -w"
+  },
+  "keywords": [
+    "hAo",
+    "react",
+    "Vue",
+    "cli"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "wonderfulMan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wonderfulMan/@lartplus/cli-babel-vue/issues"
+  },
+  "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "dependencies": {
+    "@lartplus/cli-shared-utils": "^0.0.50",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "@vue/babel-plugin-transform-vue-jsx": "^1.1.2",
+    "typescript": "^3.8.3"
+  }
+}

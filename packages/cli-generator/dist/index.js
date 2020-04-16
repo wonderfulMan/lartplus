@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-04-16 10:25:05
+ * @LastEditTime : 2020-04-17 00:03:02
  */
 /*
  * @Author: hAo
@@ -220,19 +220,21 @@ var Generator = /** @class */ (function (_super) {
     };
     Generator.prototype.generatorBabelConfigFile = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var _a, presets, plugins, sourceType, templatePath, templateData, targetPath;
+            var modulePath, frameworkBabelModule, _a, presets, plugins, sourceType, templatePath, targetPath, templateData;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
                         this.emit('gen_babel_start');
-                        _a = this.babelConfig, presets = _a.presets, plugins = _a.plugins, sourceType = _a.sourceType;
+                        modulePath = this.targetDir + "/node_modules/@lartplus/cli-babel-" + this.answers.framework;
+                        frameworkBabelModule = require(modulePath).install;
+                        _a = frameworkBabelModule(this.babelConfig), presets = _a.presets, plugins = _a.plugins, sourceType = _a.sourceType;
                         templatePath = path_1["default"].resolve(__dirname, '../template/babel.config.tpl');
+                        targetPath = this.targetDir + "/babel.config.js";
                         templateData = {
                             sourceType: sourceType,
                             presets: JSON.stringify(presets),
                             plugins: JSON.stringify(plugins)
                         };
-                        targetPath = this.targetDir + "/babel.config.js";
                         return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, templateData, targetPath, false)];
                     case 1:
                         _b.sent();

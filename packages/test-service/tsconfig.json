@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "jsx": "react",
+    "strict": true,
     "module": "commonjs",
     "sourceMap": false,
     "declaration": false,

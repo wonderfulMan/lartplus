@@ -3,6 +3,12 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-26 16:32:42
+ * @LastEditTime : 2020-04-17 00:03:30
+ */
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-26 16:32:42
  * @LastEditTime : 2020-04-15 11:06:39
  */
 exports.__esModule = true;
@@ -36,9 +42,6 @@ var presets = [
 exports.getBabelConfig = function (answers) {
     var filename = 'babel.config.js';
     var cwd = process.env.LARTPLUS_CONTEXT;
-    if (answers.framework === 'react') {
-        presets.push('@babel/prest-react');
-    }
     if (answers.feature.includes('typescript')) {
         presets.push('@babel/preset-typescript');
     }
