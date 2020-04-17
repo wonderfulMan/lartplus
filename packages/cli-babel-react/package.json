@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-babel-react",
-  "version": "0.0.52",
+  "version": "0.0.53",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@babel/preset-react": "^7.9.4",
-    "@lartplus/cli-shared-utils": "^0.0.52",
+    "@lartplus/cli-shared-utils": "^0.0.53",
     "typescript": "^3.8.3"
   }
 }
