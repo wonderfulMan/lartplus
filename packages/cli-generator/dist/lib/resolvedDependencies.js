@@ -12,6 +12,7 @@ exports.resolveDependencies = function (answers) {
     // 如果是typescript
     if (isTypescript) {
         devDependencies["typescript"] = "\"^3.7.5\",";
+        devDependencies["@lartplus/cli-babel-typescript"] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
     }
     // 判断eslint规则
     if (isEslint) {

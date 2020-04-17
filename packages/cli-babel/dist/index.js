@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-26 16:32:42
- * @LastEditTime : 2020-04-17 00:03:30
+ * @LastEditTime : 2020-04-17 17:35:54
  */
 /*
  * @Author: hAo
@@ -12,6 +12,7 @@
  * @LastEditTime : 2020-04-15 11:06:39
  */
 exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 var plugins = [
     "@babel/plugin-proposal-object-rest-spread",
@@ -39,15 +40,18 @@ var presets = [
         }
     ]
 ];
-exports.getBabelConfig = function (answers) {
-    var filename = 'babel.config.js';
-    var cwd = process.env.LARTPLUS_CONTEXT;
-    if (answers.feature.includes('typescript')) {
-        presets.push('@babel/preset-typescript');
-    }
-    return {
+function getBabelConfig() {
+    var babelConfig = {
         sourceType: "unambiguous",
-        presets: presets,
-        plugins: plugins
+        presets: [],
+        plugins: []
     };
-};
+    plugins.forEach(function (plugin) {
+        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'plugins', Array.isArray(plugin) ? plugins[0] : plugins, Array.isArray(plugin) ? plugins[1] : null);
+    });
+    presets.forEach(function (preset) {
+        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'presets', Array.isArray(preset) ? plugins[0] : plugins, Array.isArray(preset) ? plugins[1] : null);
+    });
+    return babelConfig;
+}
+exports.getBabelConfig = getBabelConfig;

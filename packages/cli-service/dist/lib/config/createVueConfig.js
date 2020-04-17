@@ -17,7 +17,12 @@ var CreateVueConfig = /** @class */ (function () {
             .rule('vue')
             .test(language_1.language.VUE)
             .use('vue-loader')
-            .loader(cli_shared_utils_1.maybeLoader('vue-loader'));
+            .loader(cli_shared_utils_1.maybeLoader('vue-loader'))
+            .options({
+            compilerOptions: {
+                preserveWhitespace: false
+            }
+        });
         this.chain.plugin('vue-loader-plugin')
             .use(cli_shared_utils_1.maybeLoader('vue-loader/lib/plugin'));
     };

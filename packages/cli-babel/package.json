@@ -20,7 +20,7 @@
   },
   "author": "wonderfulMan",
   "license": "MIT",
-  "types": "./src/typings/index.d.ts",
+  "types": "./typings/index.d.ts",
   "main": "./dist/index.js",
   "bugs": {
     "url": "https://github.com/wonderfulMan/@lartplus/cli-service/issues"
