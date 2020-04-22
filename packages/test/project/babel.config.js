@@ -1,37 +1,57 @@
 /*
  * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-04-17 00:28:51
- * @LastEditTime : 2020-04-17 10:33:08
+ * @LastEditors: hAo
+ * @Date: 2020-04-17 17:52:23
+ * @LastEditTime: 2020-04-17 17:54:34
  */
 module.exports = (api) => {
     api.cache(true);
     return {
         sourceType: "unambiguous",
         presets: [
-            [
-                "@babel/preset-env", {
-                    "corejs": 3,
-                    "modules": false,
-                    "useBuiltIns": "usage"
-                }
+            ["@babel/plugin-proposal-object-rest-spread",
+                "@babel/plugin-syntax-dynamic-import"
             ],
-            "@babel/preset-typescript"
+            [
+                "@babel/preset-typescript",
+                {
+                    "allExtensions": true,
+                    "isTSX": true
+                }
+            ]
         ],
         plugins: [
-            "@babel/plugin-proposal-object-rest-spread",
-            "@babel/plugin-syntax-dynamic-import",
             [
-                "@babel/plugin-proposal-decorators",
-                {
-                    "legacy": true
-                }
+                [
+                    "@babel/plugin-proposal-object-rest-spread",
+                    "@babel/plugin-syntax-dynamic-import",
+                    ["@babel/plugin-proposal-decorators", {
+                        "legacy": true
+                    }],
+                    ["@babel/plugin-proposal-class-properties", {
+                        "loose": true
+                    }]
+                ]
             ],
             [
-                "@babel/plugin-proposal-class-properties",
-                {
-                    "loose": true
-                }
+                [
+                    "@babel/plugin-proposal-object-rest-spread",
+                    "@babel/plugin-syntax-dynamic-import",
+                    ["@babel/plugin-proposal-decorators", {
+                        "legacy": true
+                    }],
+                    ["@babel/plugin-proposal-class-properties", {
+                        "loose": true
+                    }]
+                ]
+            ],
+            [
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/plugin-syntax-dynamic-import"
+            ],
+            [
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/plugin-syntax-dynamic-import"
             ],
             "@vue/transform-vue-jsx"
         ]
