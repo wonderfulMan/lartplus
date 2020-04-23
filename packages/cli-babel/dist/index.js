@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-26 16:32:42
- * @LastEditTime : 2020-04-22 11:19:53
+ * @LastEditTime : 2020-04-23 10:12:00
  */
 /*
  * @Author: hAo
@@ -47,10 +47,10 @@ function getBabelConfig() {
         plugins: []
     };
     plugins.forEach(function (plugin) {
-        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'plugins', Array.isArray(plugin) ? plugins[0] : plugins, Array.isArray(plugin) ? plugins[1] : null);
+        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'plugins', Array.isArray(plugin) ? plugin[0] : plugin, Array.isArray(plugin) ? plugin[1] : null);
     });
     presets.forEach(function (preset) {
-        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'presets', Array.isArray(preset) ? plugins[0] : plugins, Array.isArray(preset) ? plugins[1] : null);
+        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'presets', Array.isArray(preset) ? preset[0] : preset, Array.isArray(preset) ? preset[1] : null);
     });
     return babelConfig;
 }
