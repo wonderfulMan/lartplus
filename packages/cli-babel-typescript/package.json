@@ -31,5 +31,6 @@
     "@babel/preset-typescript": "^7.9.0",
     "@lartplus/cli-shared-utils": "^0.0.55",
     "typescript": "^3.7.5"
-  }
+  },
+  "gitHead": "df1bf18d2011050d57c1f25c7d2e2225578def14"
 }
