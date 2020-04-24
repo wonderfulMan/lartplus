@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-babel-typescript",
-  "version": "0.0.56",
+  "version": "0.0.57",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
     "@babel/preset-typescript": "^7.9.0",
-    "@lartplus/cli-shared-utils": "^0.0.56"
+    "@lartplus/cli-shared-utils": "^0.0.57"
   },
   "gitHead": "472568d2d02d90e76803de4c1414197123605271"
 }
