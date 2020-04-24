@@ -1,0 +1,41 @@
+{
+  "name": "@lartplus/cli",
+  "version": "0.0.56",
+  "description": "构建lartplus-cli生态",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wonderfulMan/hAo-cli.git"
+  },
+  "scripts": {
+    "build":  "../../../node_modules/.bin/tsc -w"
+  },
+  "keywords": [
+    "hAo",
+    "react",
+    "Vue",
+    "cli"
+  ],
+  "bin": {
+    "lartplus": "./dist/bin.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "wonderfulMan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wonderfulMan/@lartplus/cli/issues"
+  },
+  "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "dependencies": {
+    "@lartplus/cli-generator": "^0.0.56",
+    "@lartplus/cli-shared-utils": "^0.0.56",
+    "@types/node": "^13.1.8",
+    "reflect-metadata": "^0.1.13",
+    "typedi": "^0.8.0"
+  },
+  "engines": {
+    "node": ">=8.9"
+  },
+  "gitHead": "472568d2d02d90e76803de4c1414197123605271"
+}

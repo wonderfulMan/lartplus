@@ -1,0 +1,29 @@
+{
+  "name": "@lartplus/cli-prettier",
+  "version": "0.0.56",
+  "description": "构建lartplus-cli生态",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wonderfulMan/hAo-cli.git"
+  },
+  "keywords": [
+    "hAo",
+    "react",
+    "Vue",
+    "cli"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "wonderfulMan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wonderfulMan/@lartplus/cli-prettier/issues"
+  },
+  "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "dependencies": {
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2"
+  },
+  "gitHead": "472568d2d02d90e76803de4c1414197123605271"
+}

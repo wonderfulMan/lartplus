@@ -9,8 +9,7 @@
     "main": "./dist/index.js",
     "types": "./src/typings/global.d.ts",
     "scripts": {
-        "watch": "$(npm bin)/ts-node-dev src",
-        "build": "$(npm bin)/tsc -w"
+        "build": "../../../node_modules/.bin/tsc -w"
     },
     "keywords": [
         "hAo",
@@ -28,7 +27,6 @@
     },
     "homepage": "https://github.com/wonderfulMan/hAo-cli",
     "devDependencies": {
-        "ts-node-dev": "^1.0.0-pre.44",
         "typescript": "^3.7.5"
     }
 }

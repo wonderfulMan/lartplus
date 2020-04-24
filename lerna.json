@@ -1,7 +1,9 @@
 {
   "version": "0.0.56",
   "packages": [
-    "packages/*"
+    "packages/common/*", 
+    "packages/react/*", 
+    "packages/vue/*"
   ],
   "npmClient": "yarn",
   "npmClientArgs": [

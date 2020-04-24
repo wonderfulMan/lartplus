@@ -1,0 +1,42 @@
+{
+  "name": "@lartplus/cli-babel",
+  "version": "0.0.56",
+  "description": "构建lartplus-cli生态",
+  "scripts": {
+    "build": "../../../node_modules/.bin/tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wonderfulMan/hAo-cli.git"
+  },
+  "keywords": [
+    "hAo",
+    "react",
+    "Vue",
+    "cli"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "wonderfulMan",
+  "license": "MIT",
+  "types": "./typings/index.d.ts",
+  "main": "./dist/index.js",
+  "bugs": {
+    "url": "https://github.com/wonderfulMan/@lartplus/cli-service/issues"
+  },
+  "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "@lartplus/cli-shared-utils": "^0.0.56",
+    "babel-loader": "^8.1.0",
+    "core-js": "3",
+    "corejs": "^1.0.0"
+  },
+  "gitHead": "472568d2d02d90e76803de4c1414197123605271"
+}
