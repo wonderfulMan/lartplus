@@ -819,10 +819,10 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@lartplus/cli-babel@^0.0.66":
-  version "0.0.66"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.66.tgz#3563450f4b7eb0c9d29eae31adfb330b73766d74"
-  integrity sha512-d59WJuNAPfEO/7deSvLQ0K8KZmOP/UMG8i/PcjwElI7ri4rP6XXV7rhiIe+xPc8labsxLKtWHDektKlyK/Jpfg==
+"@lartplus/cli-babel@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.67.tgz#779671e78469397b8bbd919551209a4c5abdebd3"
+  integrity sha512-veKOa5b6NfRpTK5Pax/6s6U2nS2VNlavrd48SoeQuJdvI04MaK7Y7ccptWCMqABfzuCHOvvRgBX/keQ6oQnfSw==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/plugin-proposal-class-properties" "^7.8.3"
@@ -830,24 +830,24 @@
     "@babel/plugin-proposal-object-rest-spread" "^7.9.0"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@babel/preset-env" "^7.9.0"
-    "@lartplus/cli-shared-utils" "^0.0.66"
+    "@lartplus/cli-shared-utils" "^0.0.67"
     babel-loader "^8.1.0"
     core-js "3"
 
-"@lartplus/cli-generator@^0.0.66":
-  version "0.0.66"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-generator/-/cli-generator-0.0.66.tgz#01ef890c2ef51cd825343d8cfcc783906974b439"
-  integrity sha512-dfw9sIOpA7HJM0wThpf77ktd7BEyPpI1VT79AN6ip6mFhm176cEv+X/oCCTqb5OhpIgQ1IB8yCos11DlNFY4wQ==
+"@lartplus/cli-generator@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-generator/-/cli-generator-0.0.67.tgz#e6760e4942fe715591639cd219ee4d7b64ca2d45"
+  integrity sha512-C4pVhZiLA2RxUnJwB4t7jt4RwLqjHxW91TF57bZbjQ6rJV3Jg9rNWbcCFvxKijZ7TMgaNslRCDZZ3kLmdyuBxA==
   dependencies:
-    "@lartplus/cli-babel" "^0.0.66"
-    "@lartplus/cli-shared-utils" "^0.0.66"
+    "@lartplus/cli-babel" "^0.0.67"
+    "@lartplus/cli-shared-utils" "^0.0.67"
     "@types/execa" "^2.0.0"
     execa "^4.0.0"
 
-"@lartplus/cli-shared-utils@^0.0.66":
-  version "0.0.66"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.66.tgz#de79b916caec41de09de56aca6163ebd3ede2118"
-  integrity sha512-inU91tX60BRSueqnxaSiQDhiPrlQ5SFAL6Bh/YcsCPMKIws5ISLq8ZeUjutQow/I7hsF/HYhOYBVaOI50grlpA==
+"@lartplus/cli-shared-utils@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.67.tgz#d51e96c9f9ffb18579d8645c3f1a9608fd2eda07"
+  integrity sha512-A/2IsTT+YapGJ5N77wsRGsjmnXVtnDf5qMMdh/u1P4Lrf1Pp/3B4VPkhyeBrg6Zh0KZYrXwroCVAbOZ9ULA5wQ==
   dependencies:
     "@hapi/joi" "^17.1.1"
     "@types/execa" "^2.0.0"
@@ -873,13 +873,13 @@
     validate-npm-package-name "^3.0.0"
     webpack-chain "^6.4.0"
 
-"@lartplus/cli@^0.0.66":
-  version "0.0.66"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli/-/cli-0.0.66.tgz#e1c9585981533b9d451e30ff5bc2de46199dd894"
-  integrity sha512-qsl9MkuGqDnKhVxnKI1LDmHDItP1Tb2fivtRXJk4mapAEX/st3N64lrxkWKfoaNyhmVPYvkNRhDsGxxfDWFwgw==
+"@lartplus/cli@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli/-/cli-0.0.67.tgz#9b9ef2c7ddaaa2aa1e75e7be9dd5ef1140392e10"
+  integrity sha512-66EfQfV8x8KtyIX+SmAoTZFU4GIU5dY9s+VJSQghJWk9jv+CGCO54n0UsNsxdkczCAzr8ZtbmtDxpVteIkgyDQ==
   dependencies:
-    "@lartplus/cli-generator" "^0.0.66"
-    "@lartplus/cli-shared-utils" "^0.0.66"
+    "@lartplus/cli-generator" "^0.0.67"
+    "@lartplus/cli-shared-utils" "^0.0.67"
     "@types/node" "^13.1.8"
     reflect-metadata "^0.1.13"
     typedi "^0.8.0"
