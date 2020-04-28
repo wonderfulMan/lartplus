@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-shared-utils",
-  "version": "0.0.67",
+  "version": "0.0.68",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
