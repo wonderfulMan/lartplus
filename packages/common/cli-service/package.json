@@ -23,11 +23,6 @@
   },
   "author": "wonderfulMan",
   "license": "MIT",
-  "files": [
-    "./dist",
-    "./typings",
-    "./template"
-  ],
   "bugs": {
     "url": "https://github.com/wonderfulMan/@lartplus/cli-service/issues"
   },

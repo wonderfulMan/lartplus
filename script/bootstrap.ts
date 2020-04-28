@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-16 20:54:52
- * @LastEditTime : 2020-04-24 10:23:54
+ * @LastEditTime : 2020-04-28 16:32:50
  */
 import fs from 'fs';
 import path from 'path';
@@ -10,16 +10,23 @@ import juicer from 'juicer';
 
 const baseDir = path.resolve(__dirname, '../packages/');
 const files = fs.readdirSync(baseDir);
-const packageTemplatePath = path.resolve(__dirname, '../template/package.tpl');
-const tsconfigTemplatePath = path.resolve(__dirname, '../template/tsconfig.tpl');
 const baseVersion = '0.0.0';
 
-function createFileExcutor(pkgPath: string): Function {
+function createFileExcutorByJucier(pkgPath: string): Function {
+    // eslint-disable-next-line @typescript-eslint/no-inferrable-types
     return (tplPath: string, filename: string, tplData?: object): void => {
         const template = fs.readFileSync(tplPath, { encoding: "utf-8" });
-        const content = JSON.parse(juicer(template, tplData || {}));
         const writeFile = `${pkgPath}/${filename}`;
+        const content = JSON.parse(juicer(template, tplData || {}));
         fs.writeFileSync(writeFile, JSON.stringify(content, null, 2));
+    }
+}
+
+function createFileExcutorByFs(pkgPath: string) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return (filename: string, tplData?: any): void => {
+        const writeFile = `${pkgPath}/${filename}`;
+        fs.writeFileSync(writeFile, tplData);
     }
 }
 
@@ -55,20 +62,26 @@ packageDir.forEach(pkg => {
         if (isDir) {
             const pkgFile = fs.readdirSync(pkgPath);
             const hasPackageJson = pkgFile.includes('package.json');
-            const hasTsConfig = pkg.includes('tsconfig.json');
-            const createFileInsertPkg = createFileExcutor(pkgPath);
-
+            const hasNpmignore = pkgFile.includes('.npmignore');
+            const hasTsConfig = pkgFile.includes('tsconfig.json');
+            const createFileInsertPkgByJuicer = createFileExcutorByJucier(pkgPath);
+            const createFileInsertPkgByFs = createFileExcutorByFs(pkgPath);
             if (!hasPackageJson) {
+                const packageTemplatePath = path.resolve(__dirname, '../template/package.tpl');
                 const packageJson = {
                     packagename: `@lartplus/${pkg.split('/')[1]}`,
                     version: baseVersion,
                     description: `构建lartplus-cli生态`
                 };
-                createFileInsertPkg(packageTemplatePath, 'package.json', packageJson);
+                createFileInsertPkgByJuicer(packageTemplatePath, 'package.json', packageJson);
+            }
+            if (!hasNpmignore) {
+                createFileInsertPkgByFs('.npmignore', 'src');
             }
 
             if (!hasTsConfig) {
-                createFileInsertPkg(tsconfigTemplatePath, 'tsconfig.json');
+                const tsconfigTemplatePath = path.resolve(__dirname, '../template/tsconfig.tpl');
+                createFileInsertPkgByJuicer(tsconfigTemplatePath, 'tsconfig.json');
             }
 
         }
