@@ -1,9 +1,10 @@
 {
   "version": "0.0.63",
+  "useWorkspaces": true,
   "packages": [
-    "packages/common/*",
-    "packages/react/*",
-    "packages/vue/*"
+    "packages/common/cli*",
+    "packages/react/cli*",
+    "packages/vue/cli*"
   ],
   "npmClient": "yarn",
   "npmClientArgs": [
@@ -13,7 +14,9 @@
     "publish": {
       "ignoreChanges": [
         "node_modules",
-        "**/.ts"
+        "common/cli*/src/**/*/.ts",
+        "vue/cli*/src/**/*/.ts",
+        "react/cli*/src/**/*/.ts"
       ]
     }
   }

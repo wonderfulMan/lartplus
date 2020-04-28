@@ -850,27 +850,27 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@lartplus/cli-babel-typescript@^0.0.61":
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel-typescript/-/cli-babel-typescript-0.0.61.tgz#e248ebdd06fd61a562fc44cad0b785e3db02498f"
-  integrity sha512-6FpwY3dfJbBoI//2GfFHcOlHV4zgX5vSZVNFMQUCqg8LYHO1xP1Z8pNqCybMX9Ey1vp1xPNsu2l8NcBHlhemNA==
+"@lartplus/cli-babel-typescript@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel-typescript/-/cli-babel-typescript-0.0.63.tgz#52f003090d11d55faf1e42520500d8242d57c284"
+  integrity sha512-JoJpNA8W571CyH9GH8kYuMagfjaXjU/ioOcLKQc++kTvKF6uQ4Py3fVcjs96q5o/kcKazX2vNnGs30c1YjEGoA==
   dependencies:
     "@babel/preset-typescript" "^7.9.0"
-    "@lartplus/cli-shared-utils" "^0.0.61"
+    "@lartplus/cli-shared-utils" "^0.0.63"
 
-"@lartplus/cli-babel-vue@^0.0.61":
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel-vue/-/cli-babel-vue-0.0.61.tgz#fe160a6f30f869210ec106d01edda73d73d143ce"
-  integrity sha512-9Azx/AjpX6x5Kwrv8AcujYSx/iep3FGG+B41C5Jr4CksT8kyvTEDp/qfCu3Qzg2UA4dTGyqRQTP+OinU40JbCw==
+"@lartplus/cli-babel-vue@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel-vue/-/cli-babel-vue-0.0.63.tgz#37bcfaf4004128aab9e5519ce82e8ef902f87a61"
+  integrity sha512-WAKHVq/Kv15u9I04Y+a6ntJCUd1j2wEvQM/yVdONCrY5PZQhlIMq71TMfOWEGwX9EyTOT5lTeZs24wtxZRySdQ==
   dependencies:
-    "@lartplus/cli-shared-utils" "^0.0.61"
+    "@lartplus/cli-shared-utils" "^0.0.63"
     "@vue/babel-helper-vue-jsx-merge-props" "^1.0.0"
     "@vue/babel-plugin-transform-vue-jsx" "^1.1.2"
 
-"@lartplus/cli-babel@^0.0.61":
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.61.tgz#2197fe854ad226181f118733aee59156f3d6f5c2"
-  integrity sha512-gywXgyX3ykgT7yu1QL/wkLMTREDW+y9ReWPMNytIcMTVyXLjRuaxzGkoe3TYbFbN79dhtDmMpO9YyQUgAonL1Q==
+"@lartplus/cli-babel@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.63.tgz#b073a4154f4d220cdbd39b4bfa59546ae3dd8f7b"
+  integrity sha512-YjksOYkqA+LE2+nzFH7+NtJhhpQPbgaF/y9JL9gRfU13lIXxrzjqi3tWk2Xo6aV9q3gcjaiuybrMYyGexGEVBg==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/plugin-proposal-class-properties" "^7.8.3"
@@ -878,63 +878,59 @@
     "@babel/plugin-proposal-object-rest-spread" "^7.9.0"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@babel/preset-env" "^7.9.0"
-    "@lartplus/cli-shared-utils" "^0.0.61"
+    "@lartplus/cli-shared-utils" "^0.0.63"
     babel-loader "^8.1.0"
     core-js "3"
 
-"@lartplus/cli-config@^0.0.61":
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-config/-/cli-config-0.0.61.tgz#82f91c8bad9e8bfb3b162f2c2e62034f9df076ef"
-  integrity sha512-WZ/oQL6PNfq0rcGpboOfSxULIifa5GbfFup3oP3x+DzJrOnpxVyWe4YHCJXT0eZpcRlX4VsGhtZPd+C3adut+g==
+"@lartplus/cli-config@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-config/-/cli-config-0.0.63.tgz#ad7cd371e5dc8c1d3cc2405f90bcf44e8deb4847"
+  integrity sha512-mnfcd7x2aa1brOPcR57ya6YI1jONHAKlkuH0dNzKQV24DmHx7Ed6y790fa7XCx9pxq15dx4EguBVxUr1FDO41w==
 
-"@lartplus/cli-eslint-typescript@^0.0.61":
-  version "0.0.56"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-typescript/-/cli-eslint-typescript-0.0.56.tgz#2e4bc5dffa2dc53919016e48b5a9c88bedefa348"
-  integrity sha512-3qd6owe/UrKTcPQOT1i4LJ9NtBRd80BpmiBDl7ZatdzO+ukw+9CcVJ+AUmT0WUm1DX54i52QYDsR4EN7CU5tlg==
+"@lartplus/cli-eslint-typescript@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-typescript/-/cli-eslint-typescript-0.0.63.tgz#fc43db14394b7682d24ebeff37766b2ff8aa66dc"
+  integrity sha512-5IV2lGSql1LF7xPWYbEd76x/dSeoR874xtpxYeiJSAJglHd71fYkiKin0Jfr1eUi3WTi99pg2WMxpeByunlGVw==
+
+"@lartplus/cli-eslint-vue@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-vue/-/cli-eslint-vue-0.0.63.tgz#dd926ec479303b99311b37afa787155f1ec2c27d"
+  integrity sha512-QtUXj3/JXlu+FNVJ7rYrVN9TVXgJuE7ayZHR9INXXsiCPHcSqPddeChe7ORO7lDYAlikiedG46ns1IOY2Dp5Qw==
+
+"@lartplus/cli-generator-vue@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-generator-vue/-/cli-generator-vue-0.0.63.tgz#4b3c4c5d9d7cfef868debfbc0935bfb281e3aa99"
+  integrity sha512-v37N5HFBTXz22VYFt8uXaNgxyGS7aeuvq7SREKEMZDM4ahVaiSvstJ6jXd3gwHzuliG3utoQSYj4fkKZDKy68w==
   dependencies:
-    "@typescript-eslint/eslint-plugin" "^2.25.0"
-    "@typescript-eslint/parser" "^2.25.0"
-    eslint-plugin-typescript "^0.14.0"
+    "@lartplus/cli-shared-utils" "^0.0.63"
 
-"@lartplus/cli-eslint-vue@^0.0.61":
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-vue/-/cli-eslint-vue-0.0.61.tgz#c66d2007075d119dd8d4af0db3dd2bf361996811"
-  integrity sha512-GykgcJyXU+rNRnOBba8YxJDVN7TuAjfns9a8A4qXQvVgnWwHKxEYRfjiaeaZ6BNVgkWWxITZoP42TJvmSPh3bA==
-
-"@lartplus/cli-generator-vue@^0.0.61":
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-generator-vue/-/cli-generator-vue-0.0.61.tgz#22216d4f60f805e6864131325f7b0893d8553fce"
-  integrity sha512-+hRTGL9DaRG5iRexCpERQEEMAF3+9XdWL3YlQB7MeyfhPvkQqUw8hI0ICjVHGZaSojzcbCZ/6qKC8b2pMhBfwQ==
-  dependencies:
-    "@lartplus/cli-shared-utils" "^0.0.61"
-
-"@lartplus/cli-prettier@^0.0.61":
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-prettier/-/cli-prettier-0.0.61.tgz#fa23e7037e9f3b71b26cae29748f09c72f7cb21a"
-  integrity sha512-z24NHW5YR0mo/aRZwhPxtbE0NtrZe9cBH33XQNOhJmseKZCDODhsB905kAoGeJe23DnSreC7We3Fyk0qfKzyrw==
+"@lartplus/cli-prettier@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-prettier/-/cli-prettier-0.0.63.tgz#c72db5a0959851af3e0061415c745c7e5b66481d"
+  integrity sha512-nAizCNxFpj5pjicvLdU5eq71PtHcld2gUiO2LXFEE8o+Qt1JQsewJFK8LRxryxZ2fH4BKSDyTJjz9haXdgR2KQ==
   dependencies:
     eslint-config-prettier "^6.10.1"
     eslint-plugin-prettier "^3.1.2"
 
-"@lartplus/cli-service-vue@^0.0.61":
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-service-vue/-/cli-service-vue-0.0.61.tgz#336afe62be56da4bb306aab90648928e913d4907"
-  integrity sha512-TEedzdm937G2PxZ62Vq/n2hVPtnJkAONkfsa8oNODeq80XS89gwR+jJmm35rn7NhELetCC+FdzgJ+OexsdKLPQ==
+"@lartplus/cli-service-vue@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-service-vue/-/cli-service-vue-0.0.63.tgz#6e2edc5e8f2c29f63f824e614b031ec577eefce9"
+  integrity sha512-N2boh18Vwt7BIalcXPKvz5at3A7ggoCxzPvDHOfxyR6so8cIpejCVgm4dxkPol6KXKdzgdjmH2/veBzXWsx7QA==
   dependencies:
-    "@lartplus/cli-config" "^0.0.61"
-    "@lartplus/cli-shared-utils" "^0.0.61"
+    "@lartplus/cli-config" "^0.0.63"
+    "@lartplus/cli-shared-utils" "^0.0.63"
     vue-loader "^15.9.1"
     vue-style-loader "^4.1.2"
     vue-template-compiler "^2.6.11"
 
-"@lartplus/cli-service@^0.0.61":
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-service/-/cli-service-0.0.61.tgz#9b00e7e89015f515a517e17bcf021092c6cdb02a"
-  integrity sha512-1EsbdgnSBXNFXMzdbnZh7bA8y4bI1YmwDDx7tIO1VM4VD4CaIqIWmMTsGXRWdKBb5DyV9OAXKqEWUGR2QH1uJg==
+"@lartplus/cli-service@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-service/-/cli-service-0.0.63.tgz#a31e0255c518b860577c2c48ac007ab371521a13"
+  integrity sha512-ZTbVdfM7xR7+Bj5XrObv+nIpu56K6cn1zI7WGJWSFheE4a/vXeik4WMMKDluENF5NbKr4Xp7Ll4nIqQaLDEp9Q==
   dependencies:
-    "@lartplus/cli-config" "^0.0.61"
-    "@lartplus/cli-service-vue" "^0.0.61"
-    "@lartplus/cli-shared-utils" "^0.0.61"
+    "@lartplus/cli-config" "^0.0.63"
+    "@lartplus/cli-service-vue" "^0.0.63"
+    "@lartplus/cli-shared-utils" "^0.0.63"
     "@types/friendly-errors-webpack-plugin" "^0.1.2"
     "@types/html-webpack-plugin" "^3.2.2"
     "@types/webpack" "^4.41.8"
@@ -952,10 +948,10 @@
     webpack-chain "^6.4.0"
     webpack-dev-server "^3.10.3"
 
-"@lartplus/cli-shared-utils@^0.0.61":
-  version "0.0.61"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.61.tgz#cd0f851ea64bae2c1ea038354fe295896c89d090"
-  integrity sha512-94R+gCfBULK8rCh3VGhOAR1HaOQsdypTo6QG5O2i8fXYvaex+EbkQm5JHoZVxUjEUVwQ3YsFvmTGjUjjbW71Qw==
+"@lartplus/cli-shared-utils@^0.0.63":
+  version "0.0.63"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.63.tgz#0b4aed96e22c20c1acd71e892802305b3ae386a1"
+  integrity sha512-cix4kAN+3ObKcjphQ8aD03PS3GcheCotjcb+6n3qP+6S0qEcmkPYqw+gQtdRF6awhtx0xgw2VwbUMvhNiHAnvQ==
   dependencies:
     "@hapi/joi" "^17.1.1"
     "@types/execa" "^2.0.0"
@@ -1030,11 +1026,6 @@
   integrity sha512-2+FrkXY4zllzTNfJth7jOqEHC+enpLeGslEhpnTAkg21GkRrWV4SsAtqchtT4YS9/nODBU2/ZfsBY2X4J/dX7A==
   dependencies:
     "@types/node" "*"
-
-"@types/eslint-visitor-keys@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
-  integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
 "@types/events@*":
   version "3.0.0"
@@ -1166,11 +1157,6 @@
   version "14.3.4"
   resolved "https://registry.yarnpkg.com/@types/joi/-/joi-14.3.4.tgz#eed1e14cbb07716079c814138831a520a725a1e0"
   integrity sha512-1TQNDJvIKlgYXGNIABfgFp9y0FziDpuGrd799Q5RcnsDu+krD+eeW/0Fs5PHARvWWFelOhIG2OPCo6KbadBM4A==
-
-"@types/json-schema@^7.0.3":
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.4.tgz#38fd73ddfd9b55abb1e1b2ed578cb55bd7b7d339"
-  integrity sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
 
 "@types/mime-db@*":
   version "1.43.0"
@@ -1328,49 +1314,6 @@
     "@types/uglify-js" "*"
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
-
-"@typescript-eslint/eslint-plugin@^2.25.0":
-  version "2.30.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.30.0.tgz#312a37e80542a764d96e8ad88a105316cdcd7b05"
-  integrity sha512-PGejii0qIZ9Q40RB2jIHyUpRWs1GJuHP1pkoCiaeicfwO9z7Fx03NQzupuyzAmv+q9/gFNHu7lo1ByMXe8PNyg==
-  dependencies:
-    "@typescript-eslint/experimental-utils" "2.30.0"
-    functional-red-black-tree "^1.0.1"
-    regexpp "^3.0.0"
-    tsutils "^3.17.1"
-
-"@typescript-eslint/experimental-utils@2.30.0":
-  version "2.30.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-2.30.0.tgz#9845e868c01f3aed66472c561d4b6bac44809dd0"
-  integrity sha512-L3/tS9t+hAHksy8xuorhOzhdefN0ERPDWmR9CclsIGOUqGKy6tqc/P+SoXeJRye5gazkuPO0cK9MQRnolykzkA==
-  dependencies:
-    "@types/json-schema" "^7.0.3"
-    "@typescript-eslint/typescript-estree" "2.30.0"
-    eslint-scope "^5.0.0"
-    eslint-utils "^2.0.0"
-
-"@typescript-eslint/parser@^2.25.0":
-  version "2.30.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-2.30.0.tgz#7681c305a6f4341ae2579f5e3a75846c29eee9ce"
-  integrity sha512-9kDOxzp0K85UnpmPJqUzdWaCNorYYgk1yZmf4IKzpeTlSAclnFsrLjfwD9mQExctLoLoGAUXq1co+fbr+3HeFw==
-  dependencies:
-    "@types/eslint-visitor-keys" "^1.0.0"
-    "@typescript-eslint/experimental-utils" "2.30.0"
-    "@typescript-eslint/typescript-estree" "2.30.0"
-    eslint-visitor-keys "^1.1.0"
-
-"@typescript-eslint/typescript-estree@2.30.0":
-  version "2.30.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-2.30.0.tgz#1b8e848b55144270255ffbfe4c63291f8f766615"
-  integrity sha512-nI5WOechrA0qAhnr+DzqwmqHsx7Ulr/+0H7bWCcClDhhWkSyZR5BmTvnBEyONwJCTWHfc5PAQExX24VD26IAVw==
-  dependencies:
-    debug "^4.1.1"
-    eslint-visitor-keys "^1.1.0"
-    glob "^7.1.6"
-    is-glob "^4.0.1"
-    lodash "^4.17.15"
-    semver "^6.3.0"
-    tsutils "^3.17.1"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
   version "1.0.0"
@@ -3175,13 +3118,6 @@ eslint-plugin-prettier@^3.1.2:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-typescript@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-typescript/-/eslint-plugin-typescript-0.14.0.tgz#068549c3f4c7f3f85d88d398c29fa96bf500884c"
-  integrity sha512-2u1WnnDF2mkWWgU1lFQ2RjypUlmRoBEvQN02y9u+IL12mjWlkKFGEBnVsjs9Y8190bfPQCvWly1c2rYYUSOxWw==
-  dependencies:
-    requireindex "~1.1.0"
-
 eslint-scope@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-4.0.3.tgz#ca03833310f6889a3264781aa82e63eb9cfe7848"
@@ -3202,13 +3138,6 @@ eslint-utils@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.3.tgz#74fec7c54d0776b6f67e0251040b5806564e981f"
   integrity sha512-fbBN5W2xdY45KulGXmLHZ3c3FHfVYmKg0IrAKGOkT/464PQsx2UeIzfz1RmEci+KLm1bBaAzZAh8+/E+XAeZ8Q==
-  dependencies:
-    eslint-visitor-keys "^1.1.0"
-
-eslint-utils@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-2.0.0.tgz#7be1cc70f27a72a76cd14aa698bcabed6890e1cd"
-  integrity sha512-0HCPuJv+7Wv1bACm8y5/ECVfYdfsAm9xmVb7saeFlxjPYALefjhbYoCkBjPdPzGH8wWyTpAez82Fh3VKYEZ8OA==
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
@@ -3757,7 +3686,7 @@ glob-parent@^5.0.0:
   dependencies:
     is-glob "^4.0.1"
 
-glob@^7.0.3, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6:
+glob@^7.0.3, glob@^7.1.3, glob@^7.1.4:
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   integrity sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
@@ -6374,11 +6303,6 @@ regexpp@^2.0.1:
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
   integrity sha512-lv0M6+TkDVniA3aD1Eg0DVpfU/booSu7Eev3TDO/mZKHBfVjgCGTV4t4buppESEYDtkArYFOxTJWv6S5C+iaNw==
 
-regexpp@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-3.1.0.tgz#206d0ad0a5648cffbdb8ae46438f3dc51c9f78e2"
-  integrity sha512-ZOIzd8yVsQQA7j8GCSlPGXwg5PfmA1mrq0JP4nGhh54LaKN3xdai/vHUDu74pKwV8OxseMS65u2NImosQcSD0Q==
-
 regexpu-core@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/regexpu-core/-/regexpu-core-4.7.0.tgz#fcbf458c50431b0bb7b45d6967b8192d91f3d938"
@@ -6450,11 +6374,6 @@ require-main-filename@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
   integrity sha1-l/cXtp1IeE9fUmpsWqj/3aBVpNE=
-
-requireindex@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.1.0.tgz#e5404b81557ef75db6e49c5a72004893fe03e162"
-  integrity sha1-5UBLgVV+91225JxacgBIk/4D4WI=
 
 requires-port@^1.0.0:
   version "1.0.0"
@@ -7389,17 +7308,10 @@ tsconfig@^7.0.0:
     strip-bom "^3.0.0"
     strip-json-comments "^2.0.0"
 
-tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.10.0, tslib@^1.9.0:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
   integrity sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
-
-tsutils@^3.17.1:
-  version "3.17.1"
-  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-3.17.1.tgz#ed719917f11ca0dee586272b2ac49e015a2dd759"
-  integrity sha512-kzeQ5B8H3w60nFY2g8cJIuH7JDpsALXySGtwGJ0p2LSjLgay3NdIpqq5SoOBe46bKDW2iq25irHCr8wjomUS2g==
-  dependencies:
-    tslib "^1.8.1"
 
 tty-browserify@0.0.0:
   version "0.0.0"
