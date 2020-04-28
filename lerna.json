@@ -12,7 +12,8 @@
   "command": {
     "publish": {
       "ignoreChanges": [
-        "node_modules"
+        "node_modules",
+        "**/.ts"
       ]
     }
   }
