@@ -35,8 +35,7 @@
     "@babel/preset-env": "^7.9.0",
     "@lartplus/cli-shared-utils": "^0.0.57",
     "babel-loader": "^8.1.0",
-    "core-js": "3",
-    "corejs": "^1.0.0"
+    "core-js": "3"
   },
-  "gitHead": "472568d2d02d90e76803de4c1414197123605271"
+  "gitHead": "9f8b7d03ab9f8139323cbd4981abf2ba641809f6"
 }
