@@ -15,9 +15,9 @@
     "publish": {
       "ignoreChanges": [
         "node_modules",
-        "common/cli*/src/**/*/.ts",
-        "vue/cli*/src/**/*/.ts",
-        "react/cli*/src/**/*/.ts"
+        "common/cli*/src",
+        "vue/cli*/src",
+        "react/cli*/src"
       ]
     }
   }

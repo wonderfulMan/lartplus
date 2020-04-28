@@ -18,16 +18,16 @@
   },
   "devDependencies": {
     "typescript": "^3.7.5",
-    "@lartplus/cli-babel-typescript": "^0.0.63",
+    "@lartplus/cli-babel-typescript": "^0.0.64",
     "eslint": "^6.5.1",
     "eslint-config-standard": "^14.1.0",
-    "@lartplus/cli-eslint-typescript": "^0.0.63",
-    "@lartplus/cli-prettier": "^0.0.63",
-    "@lartplus/cli-eslint-vue": "^0.0.63",
-    "@lartplus/cli-service": "^0.0.63",
-    "@lartplus/cli-babel": "^0.0.63",
-    "@lartplus/cli-generator-vue": "^0.0.63",
-    "@lartplus/cli-babel-vue": "^0.0.63",
-    "@lartplus/cli-service-vue": "^0.0.63"
+    "@lartplus/cli-eslint-typescript": "^0.0.64",
+    "@lartplus/cli-prettier": "^0.0.64",
+    "@lartplus/cli-eslint-vue": "^0.0.64",
+    "@lartplus/cli-service": "^0.0.64",
+    "@lartplus/cli-babel": "^0.0.64",
+    "@lartplus/cli-generator-vue": "^0.0.64",
+    "@lartplus/cli-babel-vue": "^0.0.64",
+    "@lartplus/cli-service-vue": "^0.0.64"
   }
 }
