@@ -7,7 +7,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@lartplus/cli": "^0.0.59",
+    "@lartplus/cli": "^0.0.60",
     "global": "^4.4.0"
   }
 }
