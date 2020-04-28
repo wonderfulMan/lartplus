@@ -15,6 +15,10 @@
     "Vue",
     "cli"
   ],
+  "files": [
+    "./dist",
+    "./typings"
+  ],
   "publishConfig": {
     "access": "public"
   },

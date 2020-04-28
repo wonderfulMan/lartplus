@@ -15,6 +15,11 @@
     "Vue",
     "cli"
   ],
+  "files": [
+    "./dist",
+    "./typings",
+    "./template"
+  ],
   "bin": {
     "lartplus": "./dist/bin.js"
   },

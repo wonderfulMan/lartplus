@@ -6,4 +6,4 @@ exports.__esModule = true;
  * @Date: 2020-03-28 17:30:13
  * @LastEditTime : 2020-04-28 13:53:06
  */
-exports.lartplusCliVesion = "^0.0.65";
+exports.lartplusCliVesion = "^0.0.66";
