@@ -6,6 +6,11 @@
     "lint": "${bin} eslint --fix script/*.ts",
     "dev:ts-watch": "${bin} ts-node-dev --watch"
   },
+  "workspaces": [
+    "packages/common/*",
+    "packages/vue/*",
+    "packages/react/*"
+  ],
   "devDependencies": {
     "@types/node": "^13.1.7",
     "eslint": "^6.8.0",

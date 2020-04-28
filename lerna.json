@@ -1,6 +1,7 @@
 {
   "version": "0.0.63",
   "useWorkspaces": true,
+  "private": true,
   "packages": [
     "packages/common/cli*",
     "packages/react/cli*",
