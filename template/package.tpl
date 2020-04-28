@@ -25,8 +25,5 @@
     "bugs": {
         "url": "https://github.com/wonderfulMan/${packagename}/issues"
     },
-    "homepage": "https://github.com/wonderfulMan/hAo-cli",
-    "devDependencies": {
-        "typescript": "^3.7.5"
-    }
+    "homepage": "https://github.com/wonderfulMan/hAo-cli"
 }
