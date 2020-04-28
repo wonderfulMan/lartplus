@@ -16,9 +16,9 @@
     "cli"
   ],
   "files": [
-    "./dist",
-    "./typings",
-    "./template"
+    "./dist/*",
+    "./typings/*",
+    "./template/*"
   ],
   "bin": {
     "lartplus": "./dist/bin.js"
