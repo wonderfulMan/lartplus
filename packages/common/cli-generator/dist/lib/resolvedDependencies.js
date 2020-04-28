@@ -31,11 +31,12 @@ exports.resolveDependencies = function (answers) {
     }
     devDependencies["@lartplus/cli-service"] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
     devDependencies["@lartplus/cli-babel"] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
-    devDependencies["@lartplus/cli-babel-" + utils_1.getFrameworkName(answers)] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
-    devDependencies["@lartplus/cli-service-" + utils_1.getFrameworkName(answers)] = "\"" + resolvedVersion_1.lartplusCliVesion + "\"";
+    devDependencies["@lartplus/cli-generator-" + framework] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
+    devDependencies["@lartplus/cli-babel-" + framework] = "\"" + resolvedVersion_1.lartplusCliVesion + "\",";
+    devDependencies["@lartplus/cli-service-" + framework] = "\"" + resolvedVersion_1.lartplusCliVesion + "\"";
     // 上线依赖
     var dependencies = {};
-    if (utils_1.getFrameworkName(answers) === 'react') {
+    if (framework === 'react') {
         dependencies["react"] = "\"^16.13.1\",";
         dependencies["@hot-loader/react-dom"] = "\"^16.10.2\",";
         dependencies["react-router-dom"] = "\"^5.1.2\"";
