@@ -56,7 +56,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-04-24 14:45:27
+ * @LastEditTime : 2020-05-02 14:45:55
  */
 /*
  * @Author: hAo
@@ -84,6 +84,7 @@ var Generator = /** @class */ (function (_super) {
         _this.projectName = projectName;
         _this.answers = answers;
         _this.babelConfig = cli_babel_1.getBabelConfig();
+        _this.lartplusRequirePath = _this.targetDir + "/node_modules/@lartplus";
         return _this;
     }
     /**
@@ -227,11 +228,11 @@ var Generator = /** @class */ (function (_super) {
                 switch (_b.label) {
                     case 0:
                         this.emit('gen_babel_start');
-                        modulePath = this.targetDir + "/node_modules/@lartplus/cli-babel-" + this.answers.framework;
+                        modulePath = this.lartplusRequirePath + "/cli-babel-" + this.answers.framework;
                         frameworkBabelModule = require(modulePath).install;
                         this.babelConfig = frameworkBabelModule(this.babelConfig);
                         if (cli_shared_utils_1.hasTypescript(this.answers)) {
-                            modulePath_1 = this.targetDir + "/node_modules/@lartplus/cli-babel-typescript";
+                            modulePath_1 = this.lartplusRequirePath + "/cli-babel-typescript";
                             typescriptBabelModule = require(modulePath_1).install;
                             this.babelConfig = typescriptBabelModule(this.babelConfig);
                         }
@@ -254,13 +255,12 @@ var Generator = /** @class */ (function (_super) {
     };
     Generator.prototype.genProjectSubject = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var modulePath, ServiceClass, serviceClass;
+            var modulePath, genTemplateToTarget;
             return __generator(this, function (_a) {
                 this.emit('gen_dir_start');
-                modulePath = this.targetDir + "/node_modules/@lartplus/cli-generator-" + utils_1.getFrameworkName(this.answers);
-                ServiceClass = require(modulePath)["default"];
-                serviceClass = new ServiceClass(this.answers);
-                serviceClass.insertTemplateToTarget(this.targetDir);
+                modulePath = this.lartplusRequirePath + "/cli-generator-" + utils_1.getFrameworkName(this.answers);
+                genTemplateToTarget = require(modulePath).genTemplateToTarget;
+                genTemplateToTarget(this.answers, this.targetDir);
                 this.emit('gen_dir_end');
                 return [2 /*return*/];
             });

@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-04-28 11:13:09
+ * @LastEditTime : 2020-05-02 15:11:17
  */
 declare namespace NodeJS {
     interface ProcessEnv {
@@ -36,16 +36,16 @@ declare module '@lartplus/cli-shared-utils' {
         registerSchema
     } from 'class-validator';
 
-    const notice: typeof import('../dist/lib/notice').notice;
-    const validateProjectName: typeof import('../dist/lib/validateProjectName').validateProjectName;
-    const exit: typeof import('../dist/lib/exit').exit;
-    const clearConsole: typeof import('../dist/lib/clear').clearConsole;
-    const checkNodeVersion: typeof import('../dist/lib/checkNodeVersion').checkNodeVersion;
-    const getPackageVersion: typeof import('../dist/lib/getPackageVersion').getPackageVersion;
+    const notice: typeof import('../src/lib/notice').notice;
+    const validateProjectName: typeof import('../src/lib/validateProjectName').validateProjectName;
+    const exit: typeof import('../src/lib/exit').exit;
+    const clearConsole: typeof import('../src/lib/clear').clearConsole;
+    const checkNodeVersion: typeof import('../src/lib/checkNodeVersion').checkNodeVersion;
+    const getPackageVersion: typeof import('../src/lib/getPackageVersion').getPackageVersion;
     const compileTemplate: (templatePath: string, templateData: unknown, targetPath: string, isRenderJson: boolean) => Promise<void>;
-    const copyTemplate: typeof import('../dist/lib/copyTemplate').copyTemplate;
-    const maybeLoader: typeof import('../dist/lib/maybeLoader').maybeLoader;
-    const applyBabelConfig: typeof import('../dist/lib/applyBabelconfig').applyBabelConfig;
+    const copyTemplate: typeof import('../src/lib/copyTemplate').copyTemplate;
+    const maybeLoader: typeof import('../src/lib/maybeLoader').maybeLoader;
+    const applyBabelConfig: typeof import('../src/lib/applyBabelconfig').applyBabelConfig;
 
     function hasTypescript(arg: PresetsAnswers): boolean;
     function hasTypescript(arg: ConfigFileInterface): boolean;
@@ -88,6 +88,7 @@ declare module '@lartplus/cli-shared-utils' {
         cssSouceMap?: boolean; // 是否开启css sourceMap
         cssFileNameWithHash?: boolean; // css文件抽离后是否加上hash指纹
         webpackChain?: (chain: import('webpack-chain')) => void; // webpackChain对象
+        linter?: boolean;
     }
 
     export type PresetsAnswers = {
