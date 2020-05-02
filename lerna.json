@@ -14,10 +14,7 @@
   "command": {
     "publish": {
       "ignoreChanges": [
-        "node_modules",
-        "common/cli*/src",
-        "vue/cli*/src",
-        "react/cli*/src"
+        "node_modules"
       ]
     }
   }
