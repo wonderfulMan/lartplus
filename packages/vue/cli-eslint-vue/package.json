@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-eslint-vue",
-  "version": "0.0.78",
+  "version": "0.0.79",
   "description": "构建lartplus-cli生态",
   "scripts": {
     "build": "../../../node_modules/.bin/tsc -w"
@@ -28,6 +28,6 @@
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "gitHead": "9f8b7d03ab9f8139323cbd4981abf2ba641809f6",
   "dependencies": {
-    "@lartplus/cli-shared-utils": "^0.0.78"
+    "@lartplus/cli-shared-utils": "^0.0.79"
   }
 }
