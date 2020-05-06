@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-05-02 15:11:17
+ * @LastEditTime : 2020-05-06 10:05:09
  */
 declare namespace NodeJS {
     interface ProcessEnv {
@@ -46,6 +46,11 @@ declare module '@lartplus/cli-shared-utils' {
     const copyTemplate: typeof import('../src/lib/copyTemplate').copyTemplate;
     const maybeLoader: typeof import('../src/lib/maybeLoader').maybeLoader;
     const applyBabelConfig: typeof import('../src/lib/applyBabelconfig').applyBabelConfig;
+    function getCliModule(
+        targetPath: string,
+        presets: string,
+        framework: string
+    ): string;
 
     function hasTypescript(arg: PresetsAnswers): boolean;
     function hasTypescript(arg: ConfigFileInterface): boolean;
@@ -95,7 +100,7 @@ declare module '@lartplus/cli-shared-utils' {
         feature: Array<"pwa" | "linter" | "typescript">;
         framework: 'vue' | 'react';
         packageManger: 'yarn' | 'npm';
-        eslintConfig: 'airbnb' | 'standard' | '';
+        eslintConfig: 'airbnb' | 'standard' | 'prettier';
         createPresetsFile: boolean;
         createFilename: string;
     }
@@ -142,6 +147,7 @@ declare module '@lartplus/cli-shared-utils' {
         getEslintConfig,
         hasEslint,
         applyBabelConfig,
+        getCliModule,
         ConfigChain
     }
 

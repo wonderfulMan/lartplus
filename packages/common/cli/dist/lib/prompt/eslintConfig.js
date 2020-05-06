@@ -10,7 +10,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-26 13:31:35
- * @LastEditTime : 2020-03-29 17:27:10
+ * @LastEditTime : 2020-05-02 17:02:26
  */
 var typedi_1 = require("typedi");
 var EslintConfig = /** @class */ (function () {
@@ -33,7 +33,7 @@ var EslintConfig = /** @class */ (function () {
                 },
                 {
                     name: 'ESLint + Prettier',
-                    value: ''
+                    value: 'prettier'
                 }
             ]
         };

@@ -12,6 +12,17 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -56,7 +67,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-05-02 14:45:55
+ * @LastEditTime : 2020-05-06 13:29:21
  */
 /*
  * @Author: hAo
@@ -109,7 +120,7 @@ var Generator = /** @class */ (function (_super) {
                     case 0: return [4 /*yield*/, this.genProjectName()];
                     case 1:
                         _a.sent();
-                        return [4 /*yield*/, this.genPkgFile()];
+                        return [4 /*yield*/, this.genPkgFile(JSON.stringify(resolvedPackage_1.resolvedPackage(this.answers, this.projectName, this.targetDir), null, 2))];
                     case 2:
                         _a.sent();
                         return [4 /*yield*/, this.resolvePkgDependencies()];
@@ -121,11 +132,14 @@ var Generator = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.generatorBabelConfigFile()];
                     case 5:
                         _a.sent();
-                        return [4 /*yield*/, this.genProjectTypescriptConfig()];
+                        return [4 /*yield*/, this.generatorEslintConfig()];
                     case 6:
                         _a.sent();
-                        return [4 /*yield*/, this.genProjectSubject()];
+                        return [4 /*yield*/, this.genProjectTypescriptConfig()];
                     case 7:
+                        _a.sent();
+                        return [4 /*yield*/, this.genProjectSubject()];
+                    case 8:
                         _a.sent();
                         return [2 /*return*/];
                 }
@@ -152,21 +166,15 @@ var Generator = /** @class */ (function (_super) {
      * @param targetDir 当前cli生成文件夏商文路径
      * @param answers cli选项
      */
-    Generator.prototype.genPkgFile = function () {
+    Generator.prototype.genPkgFile = function (json) {
         return __awaiter(this, void 0, void 0, function () {
-            var templatePath, targetPath;
+            var targetPath;
             return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        this.emit('gen_package_start');
-                        templatePath = FILE_TPM_PATH + '/package.tpl';
-                        targetPath = this.targetDir + "/package.json";
-                        return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, resolvedPackage_1.resolvedPackage(this.answers, this.projectName), targetPath, true)];
-                    case 1:
-                        _a.sent();
-                        this.emit('gen_package_end');
-                        return [2 /*return*/];
-                }
+                this.emit('gen_package_start');
+                targetPath = this.targetDir + "/package.json";
+                fs_1["default"].writeFileSync(targetPath, json);
+                this.emit('gen_package_end');
+                return [2 /*return*/];
             });
         });
     };
@@ -228,11 +236,11 @@ var Generator = /** @class */ (function (_super) {
                 switch (_b.label) {
                     case 0:
                         this.emit('gen_babel_start');
-                        modulePath = this.lartplusRequirePath + "/cli-babel-" + this.answers.framework;
+                        modulePath = cli_shared_utils_1.getCliModule(this.lartplusRequirePath, 'babel', this.answers.framework);
                         frameworkBabelModule = require(modulePath).install;
                         this.babelConfig = frameworkBabelModule(this.babelConfig);
                         if (cli_shared_utils_1.hasTypescript(this.answers)) {
-                            modulePath_1 = this.lartplusRequirePath + "/cli-babel-typescript";
+                            modulePath_1 = cli_shared_utils_1.getCliModule(this.lartplusRequirePath, 'babel', 'typescript');
                             typescriptBabelModule = require(modulePath_1).install;
                             this.babelConfig = typescriptBabelModule(this.babelConfig);
                         }
@@ -253,12 +261,47 @@ var Generator = /** @class */ (function (_super) {
             });
         });
     };
+    /**
+     * @description 调用cli-eslint生成配置文件以及调用
+     */
+    Generator.prototype.generatorEslintConfig = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var modulePath, eslintDeps, requireJson;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (!this.answers.feature.includes('linter')) return [3 /*break*/, 3];
+                        modulePath = cli_shared_utils_1.getCliModule(this.lartplusRequirePath, 'eslint', utils_1.getFrameworkName(this.answers));
+                        ;
+                        eslintDeps = require(modulePath).getDeps;
+                        requireJson = require(this.targetDir + "/package.json");
+                        if (!requireJson) return [3 /*break*/, 3];
+                        requireJson.devDependencies = __assign(__assign({}, requireJson.devDependencies), eslintDeps());
+                        // 重新生成
+                        return [4 /*yield*/, this.genPkgFile(JSON.stringify(requireJson, null, 2))
+                            // 继续下载依赖
+                        ];
+                    case 1:
+                        // 重新生成
+                        _a.sent();
+                        // 继续下载依赖
+                        return [4 /*yield*/, this.resolvePkgDependencies()];
+                    case 2:
+                        // 继续下载依赖
+                        _a.sent();
+                        _a.label = 3;
+                    case 3: return [2 /*return*/];
+                }
+            });
+        });
+    };
     Generator.prototype.genProjectSubject = function () {
         return __awaiter(this, void 0, void 0, function () {
             var modulePath, genTemplateToTarget;
             return __generator(this, function (_a) {
                 this.emit('gen_dir_start');
-                modulePath = this.lartplusRequirePath + "/cli-generator-" + utils_1.getFrameworkName(this.answers);
+                modulePath = cli_shared_utils_1.getCliModule(this.lartplusRequirePath, 'generator', utils_1.getFrameworkName(this.answers));
+                ;
                 genTemplateToTarget = require(modulePath).genTemplateToTarget;
                 genTemplateToTarget(this.answers, this.targetDir);
                 this.emit('gen_dir_end');

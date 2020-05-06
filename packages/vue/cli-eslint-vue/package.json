@@ -2,6 +2,11 @@
   "name": "@lartplus/cli-eslint-vue",
   "version": "0.0.75",
   "description": "构建lartplus-cli生态",
+  "scripts": {
+    "build": "../../../node_modules/.bin/tsc -w"
+  },
+  "main": "./dist/index.js",
+  "types": "./typings/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:wonderfulMan/hAo-cli.git"
@@ -21,5 +26,8 @@
     "url": "https://github.com/wonderfulMan/@lartplus/cli-eslint-vue/issues"
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
-  "gitHead": "9f8b7d03ab9f8139323cbd4981abf2ba641809f6"
+  "gitHead": "9f8b7d03ab9f8139323cbd4981abf2ba641809f6",
+  "dependencies": {
+    "@lartplus/cli-shared-utils": "^0.0.75"
+  }
 }

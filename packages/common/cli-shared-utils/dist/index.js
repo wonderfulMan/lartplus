@@ -7,7 +7,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:23:02
- * @LastEditTime : 2020-04-28 11:06:15
+ * @LastEditTime : 2020-05-06 10:07:28
  */
 var fs_extra_1 = __importDefault(require("fs-extra"));
 exports.fs = fs_extra_1["default"];
@@ -25,6 +25,8 @@ var juicer_1 = __importDefault(require("juicer"));
 exports.Juice = juicer_1["default"];
 var execa_1 = __importDefault(require("execa"));
 exports.execa = execa_1["default"];
+var webpack_chain_1 = __importDefault(require("webpack-chain"));
+exports.ConfigChain = webpack_chain_1["default"];
 var notice_1 = require("./lib/notice");
 exports.notice = notice_1.notice;
 var validateProjectName_1 = require("./lib/validateProjectName");
@@ -46,8 +48,8 @@ var maybeLoader_1 = require("./lib/maybeLoader");
 exports.maybeLoader = maybeLoader_1.maybeLoader;
 var applyBabelconfig_1 = require("./lib/applyBabelconfig");
 exports.applyBabelConfig = applyBabelconfig_1.applyBabelConfig;
-var webpack_chain_1 = __importDefault(require("webpack-chain"));
-exports.ConfigChain = webpack_chain_1["default"];
+var getCliModule_1 = require("./lib/getCliModule");
+exports.getCliModule = getCliModule_1.getCliModule;
 var answerGet_1 = require("./lib/answerGet");
 exports.hasTypescript = answerGet_1.hasTypescript;
 exports.getFrameworkName = answerGet_1.getFrameworkName;
