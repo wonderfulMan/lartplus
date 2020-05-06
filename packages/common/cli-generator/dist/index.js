@@ -67,7 +67,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-05-06 13:41:02
+ * @LastEditTime : 2020-05-06 16:14:43
  */
 /*
  * @Author: hAo
@@ -132,7 +132,7 @@ var Generator = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.generatorBabelConfigFile()];
                     case 5:
                         _a.sent();
-                        return [4 /*yield*/, this.generatorEslintConfig()];
+                        return [4 /*yield*/, this.resolvedAndGeneratorEslintConfig()];
                     case 6:
                         _a.sent();
                         return [4 /*yield*/, this.genProjectTypescriptConfig()];
@@ -264,33 +264,47 @@ var Generator = /** @class */ (function (_super) {
     /**
      * @description 调用cli-eslint生成配置文件以及调用
      */
-    Generator.prototype.generatorEslintConfig = function () {
+    Generator.prototype.resolvedAndGeneratorEslintConfig = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var modulePath, eslintDeps, requireJson;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
+            var EslintModulePath, _a, exportGetDeps, genEslintRcFile, requireJson, eslintRc, eslintRctargetPath, prettierModulePath, genPrettierRcFile, prettierRc, prettierRctargetPath;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
                     case 0:
-                        if (!this.answers.feature.includes('linter')) return [3 /*break*/, 3];
-                        modulePath = cli_shared_utils_1.getCliModule(this.lartplusRequirePath, 'eslint', utils_1.getFrameworkName(this.answers));
+                        if (!this.answers.feature.includes('linter')) return [3 /*break*/, 5];
+                        EslintModulePath = cli_shared_utils_1.getCliModule(this.lartplusRequirePath, 'eslint', utils_1.getFrameworkName(this.answers));
                         ;
-                        eslintDeps = require(modulePath).getDeps;
+                        _a = require(EslintModulePath), exportGetDeps = _a.exportGetDeps, genEslintRcFile = _a.genEslintRcFile;
                         requireJson = require(this.targetDir + "/package.json");
-                        if (!requireJson) return [3 /*break*/, 3];
-                        requireJson.devDependencies = __assign(__assign({}, requireJson.devDependencies), eslintDeps(this.answers));
+                        if (!requireJson) return [3 /*break*/, 5];
+                        requireJson.devDependencies = __assign(__assign({}, requireJson.devDependencies), exportGetDeps(this.answers));
                         // 重新生成
                         return [4 /*yield*/, this.genPkgFile(JSON.stringify(requireJson, null, 2))
                             // 继续下载依赖
                         ];
                     case 1:
                         // 重新生成
-                        _a.sent();
+                        _b.sent();
                         // 继续下载依赖
                         return [4 /*yield*/, this.resolvePkgDependencies()];
                     case 2:
                         // 继续下载依赖
-                        _a.sent();
-                        _a.label = 3;
-                    case 3: return [2 /*return*/];
+                        _b.sent();
+                        eslintRc = genEslintRcFile(this.answers);
+                        if (!eslintRc) return [3 /*break*/, 5];
+                        eslintRctargetPath = this.targetDir + "/.eslintrc.js";
+                        return [4 /*yield*/, fs_1["default"].writeFileSync(eslintRctargetPath, JSON.stringify(eslintRc))];
+                    case 3:
+                        _b.sent();
+                        prettierModulePath = cli_shared_utils_1.getCliModule(this.lartplusRequirePath, 'prettier', utils_1.getFrameworkName(this.answers));
+                        genPrettierRcFile = require(prettierModulePath).genPrettierRcFile;
+                        prettierRc = genPrettierRcFile(this.answers);
+                        if (!prettierRc) return [3 /*break*/, 5];
+                        prettierRctargetPath = this.targetDir + "/.prettierrc.js";
+                        return [4 /*yield*/, fs_1["default"].writeFileSync(prettierRctargetPath, JSON.stringify(prettierRc))];
+                    case 4:
+                        _b.sent();
+                        _b.label = 5;
+                    case 5: return [2 /*return*/];
                 }
             });
         });

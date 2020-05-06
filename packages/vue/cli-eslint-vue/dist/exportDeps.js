@@ -4,7 +4,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-02 16:49:18
- * @LastEditTime : 2020-05-02 17:21:29
+ * @LastEditTime : 2020-05-06 15:40:04
  */
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var DEV_DEPENDENCIES = {
@@ -34,7 +34,7 @@ var DEV_DEPENDENCIES = {
         '@typescript-eslint/parser': '^2.26.0'
     }
 };
-exports.getDeps = function (answers) {
+exports.exportGetDeps = function (answers) {
     var presets = answers.eslintConfig;
     var deps = Object.assign({}, DEV_DEPENDENCIES.base, DEV_DEPENDENCIES.prettier, DEV_DEPENDENCIES[presets]);
     if (cli_shared_utils_1.hasTypescript(answers)) {
