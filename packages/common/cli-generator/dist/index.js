@@ -67,7 +67,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-05-06 16:14:43
+ * @LastEditTime : 2020-05-06 16:37:57
  */
 /*
  * @Author: hAo
@@ -292,7 +292,7 @@ var Generator = /** @class */ (function (_super) {
                         eslintRc = genEslintRcFile(this.answers);
                         if (!eslintRc) return [3 /*break*/, 5];
                         eslintRctargetPath = this.targetDir + "/.eslintrc.js";
-                        return [4 /*yield*/, fs_1["default"].writeFileSync(eslintRctargetPath, JSON.stringify(eslintRc))];
+                        return [4 /*yield*/, fs_1["default"].writeFileSync(eslintRctargetPath, 'module.exports:' + JSON.stringify(eslintRc, null, 2))];
                     case 3:
                         _b.sent();
                         prettierModulePath = cli_shared_utils_1.getCliModule(this.lartplusRequirePath, 'prettier', utils_1.getFrameworkName(this.answers));
@@ -300,7 +300,7 @@ var Generator = /** @class */ (function (_super) {
                         prettierRc = genPrettierRcFile(this.answers);
                         if (!prettierRc) return [3 /*break*/, 5];
                         prettierRctargetPath = this.targetDir + "/.prettierrc.js";
-                        return [4 /*yield*/, fs_1["default"].writeFileSync(prettierRctargetPath, JSON.stringify(prettierRc))];
+                        return [4 /*yield*/, fs_1["default"].writeFileSync(prettierRctargetPath, 'module.exports:' + JSON.stringify(prettierRc, null, 2))];
                     case 4:
                         _b.sent();
                         _b.label = 5;

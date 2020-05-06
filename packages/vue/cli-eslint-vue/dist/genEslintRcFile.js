@@ -5,7 +5,7 @@ var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-06 14:30:37
- * @LastEditTime : 2020-05-06 16:04:17
+ * @LastEditTime : 2020-05-06 16:34:59
  */
 var baseFile = {
     root: true,
