@@ -11,7 +11,8 @@ var DEV_DEPENDENCIES = {
     vue: {
         "@lartplus/cli-generator-vue": LARTPLUS_VERSION_STR,
         "@lartplus/cli-service-vue": LARTPLUS_VERSION_STR,
-        "@lartplus/cli-babel-vue": LARTPLUS_VERSION_STR
+        "@lartplus/cli-babel-vue": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-prettier-vue": LARTPLUS_VERSION_STR
     },
     react: {
         "@lartplus/cli-generator-react": LARTPLUS_VERSION_STR,
