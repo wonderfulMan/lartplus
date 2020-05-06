@@ -67,7 +67,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-05-06 13:29:21
+ * @LastEditTime : 2020-05-06 13:41:02
  */
 /*
  * @Author: hAo
@@ -276,7 +276,7 @@ var Generator = /** @class */ (function (_super) {
                         eslintDeps = require(modulePath).getDeps;
                         requireJson = require(this.targetDir + "/package.json");
                         if (!requireJson) return [3 /*break*/, 3];
-                        requireJson.devDependencies = __assign(__assign({}, requireJson.devDependencies), eslintDeps());
+                        requireJson.devDependencies = __assign(__assign({}, requireJson.devDependencies), eslintDeps(this.answers));
                         // 重新生成
                         return [4 /*yield*/, this.genPkgFile(JSON.stringify(requireJson, null, 2))
                             // 继续下载依赖
