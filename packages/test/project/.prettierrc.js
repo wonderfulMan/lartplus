@@ -1,4 +1,4 @@
-module.exports:{
+module.exports = {
   "printWidth": 120,
   "tabWidth": 4,
   "singleQuote": true,
@@ -7,5 +7,5 @@ module.exports:{
   "bracketSpacing": true,
   "jsxBracketSameLine": true,
   "arrowParens": "always",
-  "parser": "typescript"
+  "parser": "babel"
 }
