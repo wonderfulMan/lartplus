@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-babel-vue",
-  "version": "0.0.90",
+  "version": "0.0.91",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli-shared-utils": "^0.0.90",
+    "@lartplus/cli-shared-utils": "^0.0.91",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
     "@vue/babel-plugin-transform-vue-jsx": "^1.1.2"
   },
