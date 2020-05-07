@@ -850,27 +850,27 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@lartplus/cli-babel-typescript@0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel-typescript/-/cli-babel-typescript-0.0.85.tgz#9f596d84c70cef3bd8a79d9fb169723af1e8dfd0"
-  integrity sha512-TuWu9NqbmvBrR2bYEOCGDAdVOZhC+dba3rdoSsJXRPeTJ15bIl+IdUogSJZgBsY726GAEGqqYZ46nrKUNDBxig==
+"@lartplus/cli-babel-typescript@0.0.87":
+  version "0.0.87"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel-typescript/-/cli-babel-typescript-0.0.87.tgz#51202dbcfa5c022f517f215648f75064bfbcc62d"
+  integrity sha512-XO/RvQKN8zDhJY1v6o7tIlNVu1ZcFsoqYR9jBp/E93ZsxPGqJR1R2PnrQwKZ3PZSymaHcIxJ8RCIMbLC8Eb/uw==
   dependencies:
     "@babel/preset-typescript" "^7.9.0"
-    "@lartplus/cli-shared-utils" "^0.0.85"
+    "@lartplus/cli-shared-utils" "^0.0.87"
 
-"@lartplus/cli-babel-vue@0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel-vue/-/cli-babel-vue-0.0.85.tgz#aefee19561bb2a728025cf627f7a6746619df0ad"
-  integrity sha512-ft1L0slJwXFTJZBZQECHSYpq1tSNToNMUKlH5TEhMfGaTbIohO/aWsoBX+YUMKY3pJ7fQqLofZyIuldtgRwyVA==
+"@lartplus/cli-babel-vue@0.0.87":
+  version "0.0.87"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel-vue/-/cli-babel-vue-0.0.87.tgz#c10727e4ea0864abf480e84ce767e6bb6bd932a5"
+  integrity sha512-amzgiDoyIkq0c3Z+0fGXYVWyO3PZI2EvrHAji4nRiOoWDroseJ3RvTbxCORUjHgCJrrvQlOi3lmxwjFTiMcuPg==
   dependencies:
-    "@lartplus/cli-shared-utils" "^0.0.85"
+    "@lartplus/cli-shared-utils" "^0.0.87"
     "@vue/babel-helper-vue-jsx-merge-props" "^1.0.0"
     "@vue/babel-plugin-transform-vue-jsx" "^1.1.2"
 
-"@lartplus/cli-babel@0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.85.tgz#5c62fc95eb50c92b4a06890d5a7c13cca6ca6c4e"
-  integrity sha512-DRcs0MQC2i3U3hy6KSJuGCpP+VmU5nqEXyaz9RAh+ipcHdnHdPS3pa/5dyY1Bz7kFyuKy8tEUwTQ56kMoGqkKA==
+"@lartplus/cli-babel@0.0.87":
+  version "0.0.87"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-babel/-/cli-babel-0.0.87.tgz#f5f3bb7aa82649d5cd0a3de94202dfa49c93b392"
+  integrity sha512-FQZWYvAnpKM9bXwIZIgRo9WNjv5L8v+gQezvLJ/uEG66XaCwA0bmzvjQXyH4pbyjvNo64QZYl97vP/o9BUq7gw==
   dependencies:
     "@babel/core" "^7.9.0"
     "@babel/plugin-proposal-class-properties" "^7.8.3"
@@ -878,57 +878,57 @@
     "@babel/plugin-proposal-object-rest-spread" "^7.9.0"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@babel/preset-env" "^7.9.0"
-    "@lartplus/cli-shared-utils" "^0.0.85"
+    "@lartplus/cli-shared-utils" "^0.0.87"
     babel-loader "^8.1.0"
     core-js "3"
 
-"@lartplus/cli-config@^0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-config/-/cli-config-0.0.85.tgz#d75fcc717f2295a0759bb79b515a92cd1ac1ec88"
-  integrity sha512-dR6LHOroxaL8cK0QbIdgLAA9gNqVYBhTIGxNw2+8pU7OeJ0ikkdNEDSCe7WL+HgYY55iq6pl0vcCE4Ovq2FFSQ==
+"@lartplus/cli-config@^0.0.87":
+  version "0.0.87"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-config/-/cli-config-0.0.87.tgz#3997955bb0e391db37332d9cc327167b935f7841"
+  integrity sha512-wD06cUlx72Nsc57EsCdmlRb26/8ZUPZkcpoAJPyLiqKI6cik6dzvlUmGzJK6Wfqib8dUyU4/N98bQYZKs48eow==
 
-"@lartplus/cli-eslint-vue@0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-vue/-/cli-eslint-vue-0.0.85.tgz#cb3741e8ec6d80bea900e47e73204f3092f47024"
-  integrity sha512-KgvH6K8cTuXhwr+LKgO4aKEy1TFM/LR0SuIfwL4tGrVyo6XtOmjCMM3Pj9iEJCIqz/d9/5fRjXiizvCTkgBaew==
+"@lartplus/cli-eslint-vue@0.0.87":
+  version "0.0.87"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-eslint-vue/-/cli-eslint-vue-0.0.87.tgz#ccd41638ede71985a463a3a06144d71490f88295"
+  integrity sha512-2xMHRVrkgnO7oZP2KdTPf4laAvmKxa+4ytx3WiISAUAtuCxZhBL1cWCRPRQfHSKxQNnUnOqyOieDQOkbDjXMWg==
   dependencies:
-    "@lartplus/cli-shared-utils" "^0.0.85"
+    "@lartplus/cli-shared-utils" "^0.0.87"
     eslint-friendly-formatter "^4.0.1"
     eslint-loader "^4.0.2"
 
-"@lartplus/cli-generator-vue@0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-generator-vue/-/cli-generator-vue-0.0.85.tgz#d218e7e7b0d87cbd4c35b769b46da78f4a6c1d94"
-  integrity sha512-0OxyiZAaLjupUyyyS//g++hGNGQ6IetN1sbCq+F3VzFDgYxW9SnJq7RwfQNvy/cBYdOZJFoPuW+uHtDi2CkKQA==
+"@lartplus/cli-generator-vue@0.0.87":
+  version "0.0.87"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-generator-vue/-/cli-generator-vue-0.0.87.tgz#4912b744f14ec08e4232e4cf7c204a62010cea7d"
+  integrity sha512-avlmLO49Uml9ztXzx4YIbk4Z8Vpq7f3kMvUKRL/X55BeKrSqd9tpighfXTTUtWXrIaud47RSg+4J8rMeONT5dw==
   dependencies:
-    "@lartplus/cli-shared-utils" "^0.0.85"
+    "@lartplus/cli-shared-utils" "^0.0.87"
 
-"@lartplus/cli-prettier-vue@0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-prettier-vue/-/cli-prettier-vue-0.0.85.tgz#23a364a166294eff9d4feec0ad7deaf6b2a83462"
-  integrity sha512-0ciWRWswNYBUkplz2lMhTSMut3X5ZVP5dgQjjSY8zl1oOMr/itSguuijk+ehkqnKVibnyAqos4pOoN9kJU5h0Q==
+"@lartplus/cli-prettier-vue@0.0.87":
+  version "0.0.87"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-prettier-vue/-/cli-prettier-vue-0.0.87.tgz#62c4d4de131712976d6eb7306d27d5cc5dc59408"
+  integrity sha512-ghyFwbloxW8bM9AvYIfaX1kdkE8fpHXRxpPJPzW9vfE8fLZCd/TN5QbGHm2ltP2LiPtdpjwjaHZyW5faNhrIyA==
   dependencies:
-    "@lartplus/cli-shared-utils" "^0.0.85"
+    "@lartplus/cli-shared-utils" "^0.0.87"
 
-"@lartplus/cli-service-vue@0.0.85", "@lartplus/cli-service-vue@^0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-service-vue/-/cli-service-vue-0.0.85.tgz#f931c48251a952232f530964aac1b9a88de64e29"
-  integrity sha512-D2oMzrYJygVDI6KvYZRY5uRjkIg64t6Ld6YFE42/aL6kx9i3N7T3dEbS/1hh+WRKH2sPQFy2qWUOdL9rEE2Edw==
+"@lartplus/cli-service-vue@0.0.87", "@lartplus/cli-service-vue@^0.0.87":
+  version "0.0.87"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-service-vue/-/cli-service-vue-0.0.87.tgz#bb6e54f03e3ff1251ea814d2b448fa348724f269"
+  integrity sha512-ldiNZEANMvIzhP1k7JKztpVm2qv9rNct4X9sj/EKd4GzyZDD+vDZTk5zLdm7ic+xCCFpY9Wx37twEkTCR0hXNw==
   dependencies:
-    "@lartplus/cli-config" "^0.0.85"
-    "@lartplus/cli-shared-utils" "^0.0.85"
+    "@lartplus/cli-config" "^0.0.87"
+    "@lartplus/cli-shared-utils" "^0.0.87"
     vue-loader "^15.9.1"
     vue-style-loader "^4.1.2"
     vue-template-compiler "^2.6.11"
 
-"@lartplus/cli-service@0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-service/-/cli-service-0.0.85.tgz#8645e30b80da7a0b4518e030de71f2a792d66088"
-  integrity sha512-0rB508QRywMhySZjwefStBmQ0oCazFPqV82SwceVkkEcQeMTVuIhEJiERJtd0Y8WjT6MqBH9ej8rQqnxc/z3sg==
+"@lartplus/cli-service@0.0.87":
+  version "0.0.87"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-service/-/cli-service-0.0.87.tgz#dcebab3129a3f82d1073729aea1636e238ebc47c"
+  integrity sha512-bVXFePA2bPtbuT9N3DoHlPkrWFJJ8e6xfBNZgdiyz0jz6Y4xYYIQYHCB6dE3G77oz6C2Oit70jW+JYzR1CrCTA==
   dependencies:
-    "@lartplus/cli-config" "^0.0.85"
-    "@lartplus/cli-service-vue" "^0.0.85"
-    "@lartplus/cli-shared-utils" "^0.0.85"
+    "@lartplus/cli-config" "^0.0.87"
+    "@lartplus/cli-service-vue" "^0.0.87"
+    "@lartplus/cli-shared-utils" "^0.0.87"
     "@types/friendly-errors-webpack-plugin" "^0.1.2"
     "@types/html-webpack-plugin" "^3.2.2"
     "@types/webpack" "^4.41.8"
@@ -946,10 +946,10 @@
     webpack-chain "^6.4.0"
     webpack-dev-server "^3.10.3"
 
-"@lartplus/cli-shared-utils@^0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.85.tgz#837a337087678962790d3c9c5fc94d5fb1602bc2"
-  integrity sha512-ara0EOXtoQcepDoKY1B7wrBwNZxIe0pcKyeAT5837LoJV3OGlU4lJ/v/njnbuyF1G2CB/IYH6GhvosZTU9YQxw==
+"@lartplus/cli-shared-utils@^0.0.87":
+  version "0.0.87"
+  resolved "https://registry.yarnpkg.com/@lartplus/cli-shared-utils/-/cli-shared-utils-0.0.87.tgz#2361bb4209fc2bd5f16789c481a02f9277ba3b97"
+  integrity sha512-XoKq3gSmO8FL/gCG2pASXVeU5qTWRzQFZVd5lJJ7Hj+j93DsU6E3B9BHBOrf0cplFM+gpaGJ9y4F3Idei8Np0Q==
   dependencies:
     "@hapi/joi" "^17.1.1"
     "@types/execa" "^2.0.0"

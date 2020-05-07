@@ -65,9 +65,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 exports.__esModule = true;
 /*
  * @Author: hAo
- * @LastEditors: hAo
+ * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime: 2020-05-07 19:34:15
+ * @LastEditTime : 2020-05-07 19:40:51
  */
 /*
  * @Author: hAo
@@ -259,7 +259,7 @@ var Generator = /** @class */ (function (_super) {
                             presets: JSON.stringify(presets, null, 2),
                             plugins: JSON.stringify(plugins, null, 2)
                         };
-                        return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, templateData, targetPath, false)];
+                        return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, JSON.stringify(templateData), targetPath, false)];
                     case 1:
                         _b.sent();
                         this.emit('gen_babel_end');
