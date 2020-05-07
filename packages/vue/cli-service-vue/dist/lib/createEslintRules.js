@@ -6,7 +6,7 @@ var cli_config_1 = require("@lartplus/cli-config");
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-06 16:42:57
- * @LastEditTime : 2020-05-07 10:52:27
+ * @LastEditTime : 2020-05-07 11:16:53
  */
 var CreateEslintRules = /** @class */ (function () {
     function CreateEslintRules(context, chain) {
@@ -16,7 +16,7 @@ var CreateEslintRules = /** @class */ (function () {
     CreateEslintRules.prototype.createRules = function () {
         var _a = this.context, cwdPath = _a.cwdPath, configFile = _a.configFile;
         var framework = configFile.framework, lintOnSave = configFile.lintOnSave;
-        var eslintModulePath = cli_shared_utils_1.getCliModule(cwdPath, 'eslint', framework);
+        var eslintModulePath = cli_shared_utils_1.getCliModule(cli_config_1.PATHS.getLartPlusModulePath(cwdPath), 'eslint', framework);
         var exportExtensions = require(eslintModulePath).exportExtensions;
         var emitWarning = lintOnSave === true || lintOnSave === 'warning';
         var emitError = lintOnSave === 'error';

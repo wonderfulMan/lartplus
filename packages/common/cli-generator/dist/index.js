@@ -67,7 +67,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-05-06 16:42:33
+ * @LastEditTime : 2020-05-07 13:28:06
  */
 /*
  * @Author: hAo
@@ -80,6 +80,7 @@ var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var cli_babel_1 = require("@lartplus/cli-babel");
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_config_1 = require("@lartplus/cli-config");
 var resolvedPackage_1 = require("./lib/resolvedPackage");
 var utils_1 = require("./utils");
 var FILE_TPM_PATH = path_1["default"].resolve(__dirname, '../template');
@@ -95,7 +96,7 @@ var Generator = /** @class */ (function (_super) {
         _this.projectName = projectName;
         _this.answers = answers;
         _this.babelConfig = cli_babel_1.getBabelConfig();
-        _this.lartplusRequirePath = _this.targetDir + "/node_modules/@lartplus";
+        _this.lartplusRequirePath = cli_config_1.PATHS.getLartPlusModulePath(_this.targetDir);
         return _this;
     }
     /**
@@ -171,7 +172,7 @@ var Generator = /** @class */ (function (_super) {
             var targetPath;
             return __generator(this, function (_a) {
                 this.emit('gen_package_start');
-                targetPath = this.targetDir + "/package.json";
+                targetPath = cli_config_1.PATHS.getProjectPackagePath(this.targetDir);
                 fs_1["default"].writeFileSync(targetPath, json);
                 this.emit('gen_package_end');
                 return [2 /*return*/];
@@ -216,7 +217,7 @@ var Generator = /** @class */ (function (_super) {
                             framework: this.answers.framework,
                             typescript: this.answers.feature.some(function (it) { return it === 'typescript'; })
                         };
-                        targetPath = this.targetDir + "/lartplus.config.js";
+                        targetPath = cli_config_1.PATHS.getLartPlusFilePath(this.targetDir);
                         return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, templateData, targetPath, false)];
                     case 1:
                         _a.sent();
@@ -246,7 +247,7 @@ var Generator = /** @class */ (function (_super) {
                         }
                         _a = this.babelConfig, sourceType = _a.sourceType, presets = _a.presets, plugins = _a.plugins;
                         templatePath = path_1["default"].resolve(__dirname, '../template/babel.config.tpl');
-                        targetPath = this.targetDir + "/babel.config.js";
+                        targetPath = cli_config_1.PATHS.getBableConfigFilePath(this.targetDir);
                         templateData = {
                             sourceType: sourceType,
                             presets: JSON.stringify(presets),
@@ -274,7 +275,7 @@ var Generator = /** @class */ (function (_super) {
                         EslintModulePath = cli_shared_utils_1.getCliModule(this.lartplusRequirePath, 'eslint', utils_1.getFrameworkName(this.answers));
                         ;
                         _a = require(EslintModulePath), exportGetDeps = _a.exportGetDeps, genEslintRcFile = _a.genEslintRcFile;
-                        requireJson = require(this.targetDir + "/package.json");
+                        requireJson = require(cli_config_1.PATHS.getProjectPackagePath(this.targetDir));
                         if (!requireJson) return [3 /*break*/, 5];
                         requireJson.devDependencies = __assign(__assign({}, requireJson.devDependencies), exportGetDeps(this.answers));
                         // 重新生成
@@ -291,7 +292,7 @@ var Generator = /** @class */ (function (_super) {
                         _b.sent();
                         eslintRc = genEslintRcFile(this.answers);
                         if (!eslintRc) return [3 /*break*/, 5];
-                        eslintRctargetPath = this.targetDir + "/.eslintrc.js";
+                        eslintRctargetPath = cli_config_1.PATHS.getEslintRcPath(this.targetDir);
                         return [4 /*yield*/, fs_1["default"].writeFileSync(eslintRctargetPath, 'module.exports = ' + JSON.stringify(eslintRc, null, 2))];
                     case 3:
                         _b.sent();
@@ -299,7 +300,7 @@ var Generator = /** @class */ (function (_super) {
                         genPrettierRcFile = require(prettierModulePath).genPrettierRcFile;
                         prettierRc = genPrettierRcFile(this.answers);
                         if (!prettierRc) return [3 /*break*/, 5];
-                        prettierRctargetPath = this.targetDir + "/.prettierrc.js";
+                        prettierRctargetPath = cli_config_1.PATHS.getPrettierRcPath(this.targetDir);
                         return [4 /*yield*/, fs_1["default"].writeFileSync(prettierRctargetPath, 'module.exports = ' + JSON.stringify(prettierRc, null, 2))];
                     case 4:
                         _b.sent();
@@ -336,7 +337,7 @@ var Generator = /** @class */ (function (_super) {
                         if (this.answers.framework === 'vue') {
                             include.push('src/**/*.vue');
                         }
-                        targetPath = this.targetDir + "/tsconfig.json";
+                        targetPath = cli_config_1.PATHS.getProjectTsconfigFilePath(this.targetDir);
                         return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, { include: JSON.stringify(include) }, targetPath, false)];
                     case 1:
                         _a.sent();
