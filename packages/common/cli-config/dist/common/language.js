@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-04-13 15:17:37
- * @LastEditTime : 2020-04-24 13:45:36
+ * @LastEditTime : 2020-05-06 17:15:42
  */
 exports.__esModule = true;
 exports.LANGUAGE_TYPE = {
@@ -17,5 +17,6 @@ exports.LANGUAGE_TYPE = {
     SCSS: /\.scss&/,
     POST: /\.p(ost)?css$/,
     MODULES: /\.module\.\w+$/,
-    TSX: /\.tsx$/
+    TSX: /\.tsx$/,
+    ESLINT: /\.(vue|(j|t)sx?)$/
 };

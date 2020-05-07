@@ -4,11 +4,12 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-04-10 17:15:48
- * @LastEditTime : 2020-04-24 14:07:03
+ * @LastEditTime : 2020-05-06 16:47:30
  */
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var cli_config_1 = require("@lartplus/cli-config");
 var createCss_1 = require("./createCss");
+var createEslintRules_1 = require("./createEslintRules");
 var CreateVueConfig = /** @class */ (function () {
     function CreateVueConfig(context, chain) {
         this.context = context;
@@ -17,6 +18,10 @@ var CreateVueConfig = /** @class */ (function () {
     CreateVueConfig.prototype.setStyle = function () {
         var createCss = new createCss_1.CreateStyleVueRules(this.context, this.chain);
         createCss.buildStyle();
+    };
+    CreateVueConfig.prototype.setEslint = function () {
+        var createEslint = new createEslintRules_1.CreateEslintRules(this.context, this.chain);
+        createEslint.buildLint();
     };
     CreateVueConfig.prototype.setVueFile = function () {
         this.chain.module
@@ -34,6 +39,7 @@ var CreateVueConfig = /** @class */ (function () {
     };
     CreateVueConfig.prototype.buildAll = function () {
         this.setStyle();
+        this.setEslint();
         this.setVueFile();
     };
     return CreateVueConfig;
