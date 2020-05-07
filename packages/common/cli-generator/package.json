@@ -29,9 +29,7 @@
   "dependencies": {
     "@lartplus/cli-babel": "^0.0.83",
     "@lartplus/cli-config": "^0.0.83",
-    "@lartplus/cli-shared-utils": "^0.0.83",
-    "@types/execa": "^2.0.0",
-    "execa": "^4.0.0"
+    "@lartplus/cli-shared-utils": "^0.0.83"
   },
   "gitHead": "9f8b7d03ab9f8139323cbd4981abf2ba641809f6"
 }

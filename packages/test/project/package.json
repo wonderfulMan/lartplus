@@ -1,0 +1,43 @@
+{
+  "name": "project",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "$(npm bin)/lartplus-service start dev",
+    "build": "$(npm bin)/lartplus-service start build",
+    "lint": "$(npm bin)/lartplus-service start lint",
+    "create:components": "$(npm bin)/lartplus-service new components",
+    "create:page": "$(npm bin)/lartplus-service new page",
+    "create:model": "$(npm bin)/lartplus-service new model"
+  },
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.3.0"
+  },
+  "devDependencies": {
+    "@lartplus/cli-service": "^0.0.83",
+    "@lartplus/cli-babel": "^0.0.83",
+    "@lartplus/cli-generator-vue": "^0.0.83",
+    "@lartplus/cli-service-vue": "^0.0.83",
+    "@lartplus/cli-babel-vue": "^0.0.83",
+    "@lartplus/cli-prettier-vue": "^0.0.83",
+    "typescript": "^3.7.5",
+    "@lartplus/cli-babel-typescript": "^0.0.83",
+    "@lartplus/cli-eslint-vue": "^0.0.83",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0"
+  }
+}

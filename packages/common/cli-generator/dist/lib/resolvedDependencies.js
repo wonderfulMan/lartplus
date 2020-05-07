@@ -2,7 +2,7 @@
 exports.__esModule = true;
 var utils_1 = require("../utils");
 var resolvedVersion_1 = require("./resolvedVersion");
-var LARTPLUS_VERSION_STR = resolvedVersion_1.lartplusCliVesion;
+var LARTPLUS_VERSION_STR = resolvedVersion_1.getLartplusCliVesion();
 var DEV_DEPENDENCIES = {
     base: {
         "@lartplus/cli-service": LARTPLUS_VERSION_STR,
