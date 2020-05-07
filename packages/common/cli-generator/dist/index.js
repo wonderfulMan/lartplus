@@ -67,7 +67,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-05-07 13:28:06
+ * @LastEditTime : 2020-05-07 16:04:49
  */
 /*
  * @Author: hAo
@@ -250,10 +250,10 @@ var Generator = /** @class */ (function (_super) {
                         targetPath = cli_config_1.PATHS.getBableConfigFilePath(this.targetDir);
                         templateData = {
                             sourceType: sourceType,
-                            presets: JSON.stringify(presets),
-                            plugins: JSON.stringify(plugins)
+                            presets: presets,
+                            plugins: plugins
                         };
-                        return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, templateData, targetPath, false)];
+                        return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, JSON.stringify(templateData, null, 2), targetPath, false)];
                     case 1:
                         _b.sent();
                         this.emit('gen_babel_end');

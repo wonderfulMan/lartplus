@@ -7,12 +7,13 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-24 14:34:36
- * @LastEditTime : 2020-04-24 14:33:27
+ * @LastEditTime : 2020-05-07 15:45:18
  */
 var html_webpack_plugin_1 = __importDefault(require("html-webpack-plugin"));
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var htmlPluginFilename_1 = require("./htmlPluginFilename");
 var createScript_1 = require("./createScript");
+var cli_config_1 = require("@lartplus/cli-config");
 var GeneratorChainConfig = /** @class */ (function () {
     /**
      * @description 构造器
@@ -62,7 +63,8 @@ var GeneratorChainConfig = /** @class */ (function () {
      * @description 设置rules
      */
     GeneratorChainConfig.prototype.setFrameworkRelatedToChain = function () {
-        var modulePath = this.context.cwdPath + "/node_modules/@lartplus/cli-service-" + cli_shared_utils_1.getFrameworkName(this.context.configFile);
+        var _a = this.context, cwdPath = _a.cwdPath, configFile = _a.configFile;
+        var modulePath = cli_shared_utils_1.getCliModule(cli_config_1.PATHS.getLartPlusModulePath(cwdPath), 'service', cli_shared_utils_1.getFrameworkName(configFile));
         var FrameWorkService = require(modulePath).CreateVueConfig;
         var frameworkService = new FrameWorkService(this.context, this.configChain);
         frameworkService.buildAll();

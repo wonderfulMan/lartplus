@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-05-06 17:46:39
+ * @LastEditTime : 2020-05-07 15:29:10
  */
 declare namespace NodeJS {
     interface ProcessEnv {
@@ -55,8 +55,8 @@ declare module '@lartplus/cli-shared-utils' {
     function hasTypescript(arg: PresetsAnswers): boolean;
     function hasTypescript(arg: ConfigFileInterface): boolean;
 
-    function getFrameworkName(arg: PresetsAnswers): boolean;
-    function getFrameworkName(arg: ConfigFileInterface): boolean;
+    function getFrameworkName(arg: PresetsAnswers): string;
+    function getFrameworkName(arg: ConfigFileInterface): string;
 
 
     function getEslintConfig(arg: PresetsAnswers): boolean;
