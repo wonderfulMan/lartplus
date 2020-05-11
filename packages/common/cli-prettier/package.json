@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-prettier",
-  "version": "0.0.91",
+  "version": "0.0.92",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
