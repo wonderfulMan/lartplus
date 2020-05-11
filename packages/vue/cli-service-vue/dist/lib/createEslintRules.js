@@ -6,7 +6,7 @@ var cli_config_1 = require("@lartplus/cli-config");
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-06 16:42:57
- * @LastEditTime : 2020-05-07 11:16:53
+ * @LastEditTime : 2020-05-11 14:41:43
  */
 var CreateEslintRules = /** @class */ (function () {
     function CreateEslintRules(context, chain) {
@@ -20,10 +20,12 @@ var CreateEslintRules = /** @class */ (function () {
         var exportExtensions = require(eslintModulePath).exportExtensions;
         var emitWarning = lintOnSave === true || lintOnSave === 'warning';
         var emitError = lintOnSave === 'error';
-        console.log(cli_shared_utils_1.maybeLoader('eslint'));
         this.chain.module
             .rule('eslint')
             .pre()
+            .exclude
+            .add(/node_modules/)
+            .end()
             .test(cli_config_1.LANGUAGE_TYPE.ESLINT)
             .use('eslint-loader')
             .loader(cli_shared_utils_1.maybeLoader('eslint-loader'))
