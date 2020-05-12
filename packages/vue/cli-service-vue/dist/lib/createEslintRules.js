@@ -1,12 +1,16 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 exports.__esModule = true;
+var hash_sum_1 = __importDefault(require("hash-sum"));
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var cli_config_1 = require("@lartplus/cli-config");
 /*
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-06 16:42:57
- * @LastEditTime : 2020-05-11 15:48:04
+ * @LastEditTime : 2020-05-12 15:41:28
  */
 var CreateEslintRules = /** @class */ (function () {
     function CreateEslintRules(context, chain) {
@@ -30,12 +34,14 @@ var CreateEslintRules = /** @class */ (function () {
             .use('eslint-loader')
             .loader(cli_shared_utils_1.maybeLoader('eslint-loader'))
             .options({
-            cache: true,
             fix: true,
+            cache: true,
+            cacheIdentifier: hash_sum_1["default"](new Date),
             extensions: exportExtensions(this.context.configFile.typescript),
             emitWarning: emitWarning,
             emitError: emitError,
-            formatter: require('eslint-friendly-formatter')
+            formatter: require('eslint-friendly-formatter'),
+            eslintPath: cli_shared_utils_1.maybeLoader('eslint')
         });
     };
     CreateEslintRules.prototype.buildLint = function () {

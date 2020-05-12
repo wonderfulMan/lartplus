@@ -29,6 +29,7 @@
   "gitHead": "9f8b7d03ab9f8139323cbd4981abf2ba641809f6",
   "dependencies": {
     "@lartplus/cli-shared-utils": "^0.0.94",
+    "@types/hash-sum": "^1.0.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^4.0.2"
   }

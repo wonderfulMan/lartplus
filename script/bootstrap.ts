@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-16 20:54:52
- * @LastEditTime : 2020-05-06 13:34:17
+ * @LastEditTime : 2020-05-12 16:32:52
  */
 import fs from 'fs';
 import path from 'path';
@@ -76,7 +76,7 @@ packageDir.forEach(pkg => {
                 createFileInsertPkgByJuicer(packageTemplatePath, 'package.json', packageJson);
             }
             if (!hasNpmignore) {
-                createFileInsertPkgByFs('.npmignore', './src/*');
+                createFileInsertPkgByFs('.npmignore', 'src');
             }
 
             if (!hasTsConfig) {

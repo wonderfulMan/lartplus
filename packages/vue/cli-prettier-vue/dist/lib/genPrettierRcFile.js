@@ -10,8 +10,7 @@ exports.genPrettierRcFile = function (answers) {
             trailingComma: 'es5',
             bracketSpacing: true,
             jsxBracketSameLine: true,
-            arrowParens: 'always',
-            parser: answers.feature.includes('typescript') ? 'typescript' : 'babel'
+            arrowParens: 'always'
         };
     }
 };
