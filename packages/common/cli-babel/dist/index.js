@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-26 16:32:42
- * @LastEditTime : 2020-04-23 10:12:00
+ * @LastEditTime : 2020-05-13 20:33:36
  */
 /*
  * @Author: hAo
@@ -40,7 +40,7 @@ var presets = [
         }
     ]
 ];
-function getBabelConfig() {
+function install() {
     var babelConfig = {
         sourceType: "unambiguous",
         presets: [],
@@ -54,4 +54,4 @@ function getBabelConfig() {
     });
     return babelConfig;
 }
-exports.getBabelConfig = getBabelConfig;
+exports.install = install;
