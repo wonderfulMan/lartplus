@@ -1,5 +1,5 @@
 {
-  "name": "@lartplus/cli-mobile",
+  "name": "@lartplus/cli-postcss",
   "version": "0.0.97",
   "description": "构建lartplus-cli生态",
   "repository": {
@@ -23,7 +23,7 @@
   "author": "wonderfulMan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wonderfulMan/@lartplus/cli-mobile/issues"
+    "url": "https://github.com/wonderfulMan/@lartplus/cli-postcss/issues"
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli"
 }
