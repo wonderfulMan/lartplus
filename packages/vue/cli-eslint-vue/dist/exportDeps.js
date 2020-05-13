@@ -4,7 +4,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-02 16:49:18
- * @LastEditTime : 2020-05-06 15:40:04
+ * @LastEditTime : 2020-05-13 09:12:01
  */
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var DEV_DEPENDENCIES = {
@@ -30,7 +30,7 @@ var DEV_DEPENDENCIES = {
     },
     "typescript": {
         '@vue/eslint-config-typescript': '^5.0.2',
-        '@typescript-eslint/eslint-plugin': '^2.26.0',
+        '@typescript-eslint/eslint-plugin': '^2.33.0',
         '@typescript-eslint/parser': '^2.26.0'
     }
 };

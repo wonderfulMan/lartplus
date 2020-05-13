@@ -5,7 +5,7 @@ var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-06 14:30:37
- * @LastEditTime : 2020-05-06 17:10:52
+ * @LastEditTime : 2020-05-12 17:16:50
  */
 var baseFile = {
     // parser: 'babel-eslint',

@@ -10,7 +10,7 @@ var cli_config_1 = require("@lartplus/cli-config");
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-06 16:42:57
- * @LastEditTime : 2020-05-12 15:41:28
+ * @LastEditTime : 2020-05-13 09:12:24
  */
 var CreateEslintRules = /** @class */ (function () {
     function CreateEslintRules(context, chain) {
@@ -36,11 +36,10 @@ var CreateEslintRules = /** @class */ (function () {
             .options({
             fix: true,
             cache: true,
-            cacheIdentifier: hash_sum_1["default"](new Date),
+            cacheIdentifier: hash_sum_1["default"](new Date()),
             extensions: exportExtensions(this.context.configFile.typescript),
             emitWarning: emitWarning,
             emitError: emitError,
-            formatter: require('eslint-friendly-formatter'),
             eslintPath: cli_shared_utils_1.maybeLoader('eslint')
         });
     };
