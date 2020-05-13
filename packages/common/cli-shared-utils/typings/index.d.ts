@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-05-07 15:29:10
+ * @LastEditTime : 2020-05-13 09:43:47
  */
 declare namespace NodeJS {
     interface ProcessEnv {
@@ -66,6 +66,8 @@ declare module '@lartplus/cli-shared-utils' {
     function hasEslint(arg: PresetsAnswers): boolean;
     function hasEslint(arg: ConfigFileInterface): boolean;
 
+    function hasMobile(arg: PresetsAnswers): boolean;
+    
     export type PresetType = {
         framework: string;
         useConfigFile: boolean;
@@ -98,7 +100,7 @@ declare module '@lartplus/cli-shared-utils' {
     }
 
     export type PresetsAnswers = {
-        feature: Array<"pwa" | "linter" | "typescript">;
+        feature: Array<"pwa" | "linter" | "typescript" | "mobile">;
         framework: 'vue' | 'react';
         packageManger: 'yarn' | 'npm';
         eslintConfig: 'airbnb' | 'standard' | 'prettier';
@@ -147,6 +149,7 @@ declare module '@lartplus/cli-shared-utils' {
         getFrameworkName,
         getEslintConfig,
         hasEslint,
+        hasMobile,
         applyBabelConfig,
         getCliModule,
         ConfigChain

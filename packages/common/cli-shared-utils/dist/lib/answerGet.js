@@ -18,3 +18,6 @@ exports.hasEslint = function (answers) {
         return answers.linter || false;
     }
 };
+exports.hasMobile = function (answers) {
+    return answers.feature.includes('mobile');
+};

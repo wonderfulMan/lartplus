@@ -1,5 +1,12 @@
 "use strict";
 exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-28 17:22:08
+ * @LastEditTime : 2020-05-13 10:10:18
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var utils_1 = require("../utils");
 var resolvedVersion_1 = require("./resolvedVersion");
 var LARTPLUS_VERSION_STR = resolvedVersion_1.getLartplusCliVesion();
@@ -28,6 +35,9 @@ var DEV_DEPENDENCIES = {
     },
     reactEslint: {
         "@lartplus/cli-eslint-react": LARTPLUS_VERSION_STR
+    },
+    mobile: {
+        "@lartplus/cli-postcss": LARTPLUS_VERSION_STR
     }
 };
 var DEPENDENCIES = {
@@ -45,6 +55,7 @@ exports.resolveDependencies = function (answers, targetPath) {
     var framework = utils_1.getFrameworkName(answers);
     var isTypescript = utils_1.hasTypescript(answers);
     var isEslint = utils_1.hasEslint(answers);
+    var isMobile = cli_shared_utils_1.hasMobile(answers);
     // 开发依赖
     var devDependencies = Object.assign({}, DEV_DEPENDENCIES.base, DEV_DEPENDENCIES[framework]);
     // 上线依赖
@@ -63,6 +74,9 @@ exports.resolveDependencies = function (answers, targetPath) {
         Object.assign(devDependencies, framework === 'vue'
             ? DEV_DEPENDENCIES.vueEslint
             : DEV_DEPENDENCIES.reactEslint);
+    }
+    if (isMobile) {
+        Object.assign(devDependencies, DEV_DEPENDENCIES.mobile);
     }
     return { dependencies: dependencies, devDependencies: devDependencies };
 };

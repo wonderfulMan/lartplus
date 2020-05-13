@@ -16,12 +16,13 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-26 13:15:53
- * @LastEditTime : 2020-01-26 14:09:36
+ * @LastEditTime : 2020-05-13 09:40:24
  */
 var typedi_1 = require("typedi");
 var pwa_1 = __importDefault(require("./pwa"));
 var linter_1 = __importDefault(require("./linter"));
 var TypescriptSupport_1 = __importDefault(require("./TypescriptSupport"));
+var mobile_1 = __importDefault(require("./mobile"));
 var FeaturePresets = /** @class */ (function () {
     function FeaturePresets() {
     }
@@ -34,6 +35,7 @@ var FeaturePresets = /** @class */ (function () {
                 this.pwa.choices(),
                 this.linter.choices(),
                 this.typescriptConfig.choices(),
+                this.mobile.choices()
             ]
         };
     };
@@ -49,6 +51,10 @@ var FeaturePresets = /** @class */ (function () {
         typedi_1.Inject(),
         __metadata("design:type", TypescriptSupport_1["default"])
     ], FeaturePresets.prototype, "typescriptConfig");
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", mobile_1["default"])
+    ], FeaturePresets.prototype, "mobile");
     FeaturePresets = __decorate([
         typedi_1.Service()
     ], FeaturePresets);
