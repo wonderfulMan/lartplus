@@ -51,19 +51,19 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-13 16:28:52
- * @LastEditTime : 2020-05-13 20:48:43
+ * @LastEditTime : 2020-05-13 20:51:39
  */
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var cli_config_1 = require("@lartplus/cli-config");
 var genPkgFile_1 = require("./genPkgFile");
 var resolvedInstallDependencies_1 = require("../resolve/resolvedInstallDependencies");
-exports.genEslintByLartplus = function (generator) { return __awaiter(void 0, void 0, void 0, function () {
-    var EslintModulePath, _a, exportGetDeps, genEslintRcFile, requireJson, eslintRc, eslintRctargetPath;
+exports.genPostcssByLartplus = function (generator) { return __awaiter(void 0, void 0, void 0, function () {
+    var PostCssModulePath, _a, genPostcssConfigFile, exportGetDeps, requireJson, postcssConfig, postcssConfigTargetPath;
     return __generator(this, function (_b) {
         switch (_b.label) {
             case 0:
-                EslintModulePath = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'eslint', cli_shared_utils_1.getFrameworkName(generator.answers));
-                _a = require(EslintModulePath), exportGetDeps = _a.exportGetDeps, genEslintRcFile = _a.genEslintRcFile;
+                PostCssModulePath = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'postcss');
+                _a = require(PostCssModulePath), genPostcssConfigFile = _a.genPostcssConfigFile, exportGetDeps = _a.exportGetDeps;
                 requireJson = cli_shared_utils_1.hasPackageJson(generator.targetDir);
                 if (!(requireJson && typeof requireJson != 'boolean')) return [3 /*break*/, 4];
                 requireJson.devDependencies = __assign(__assign({}, requireJson.devDependencies), exportGetDeps(generator.answers));
@@ -79,10 +79,10 @@ exports.genEslintByLartplus = function (generator) { return __awaiter(void 0, vo
             case 2:
                 // 继续下载依赖
                 _b.sent();
-                eslintRc = genEslintRcFile(generator.answers);
-                if (!eslintRc) return [3 /*break*/, 4];
-                eslintRctargetPath = cli_config_1.PATHS.getEslintRcPath(generator.targetDir);
-                return [4 /*yield*/, cli_shared_utils_1.fs.writeFileSync(eslintRctargetPath, 'module.exports = ' + JSON.stringify(eslintRc, null, 2))];
+                postcssConfig = genPostcssConfigFile(generator.answers);
+                if (!postcssConfig) return [3 /*break*/, 4];
+                postcssConfigTargetPath = cli_config_1.PATHS.getPostcssConfigFilePath(generator.targetDir);
+                return [4 /*yield*/, cli_shared_utils_1.fs.writeFileSync(postcssConfigTargetPath, 'module.exports = ' + JSON.stringify(postcssConfig, null, 2))];
             case 3:
                 _b.sent();
                 _b.label = 4;

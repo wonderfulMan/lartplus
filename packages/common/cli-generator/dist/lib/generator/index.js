@@ -4,7 +4,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-13 17:43:07
- * @LastEditTime : 2020-05-13 17:54:25
+ * @LastEditTime : 2020-05-13 20:49:13
  */
 var genProjectName_1 = require("./genProjectName");
 exports.genProjectName = genProjectName_1.genProjectName;
@@ -20,3 +20,7 @@ var genProjectSubject_1 = require("./genProjectSubject");
 exports.genProjectSubject = genProjectSubject_1.genProjectSubject;
 var genProjectTypescriptConfig_1 = require("./genProjectTypescriptConfig");
 exports.genProjectTypescriptConfig = genProjectTypescriptConfig_1.genProjectTypescriptConfig;
+var genPostcssByLartplus_1 = require("./genPostcssByLartplus");
+exports.genPostcssByLartplus = genPostcssByLartplus_1.genPostcssByLartplus;
+var genPrettierRcFile_1 = require("./genPrettierRcFile");
+exports.genPrettierRcFile = genPrettierRcFile_1.genPrettierRcFile;

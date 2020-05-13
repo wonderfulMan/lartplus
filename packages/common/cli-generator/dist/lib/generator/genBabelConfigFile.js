@@ -1,9 +1,9 @@
 "use strict";
 /*
  * @Author: hAo
- * @LastEditors: hAo
+ * @LastEditors  : hAo
  * @Date: 2020-05-13 17:49:03
- * @LastEditTime: 2020-05-13 17:51:30
+ * @LastEditTime : 2020-05-13 20:37:55
  */
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -50,17 +50,20 @@ var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var cli_config_1 = require("@lartplus/cli-config");
 function genBabelConfigFile(generator) {
     return __awaiter(this, void 0, void 0, function () {
-        var modulePath, frameworkBabelModule, modulePath_1, typescriptBabelModule, _a, sourceType, presets, plugins, templatePath, targetPath, templateData;
+        var moduleBabelPath, frameworkBabelModule, moduleBabelPathByFramework, frameworkBabelModuleByFramework, modulePath, typescriptBabelModule, _a, sourceType, presets, plugins, templatePath, targetPath, templateData;
         return __generator(this, function (_b) {
             switch (_b.label) {
                 case 0:
                     generator.emit('gen_babel_start');
-                    modulePath = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'babel', generator.answers.framework);
-                    frameworkBabelModule = require(modulePath).install;
-                    generator.babelConfig = frameworkBabelModule(generator.babelConfig);
+                    moduleBabelPath = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'babel');
+                    frameworkBabelModule = require(moduleBabelPath).install;
+                    generator.babelConfig = frameworkBabelModule();
+                    moduleBabelPathByFramework = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'babel', generator.answers.framework);
+                    frameworkBabelModuleByFramework = require(moduleBabelPathByFramework).install;
+                    generator.babelConfig = frameworkBabelModuleByFramework(generator.babelConfig);
                     if (cli_shared_utils_1.hasTypescript(generator.answers)) {
-                        modulePath_1 = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'babel', 'typescript');
-                        typescriptBabelModule = require(modulePath_1).install;
+                        modulePath = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'babel', 'typescript');
+                        typescriptBabelModule = require(modulePath).install;
                         generator.babelConfig = typescriptBabelModule(generator.babelConfig);
                     }
                     _a = generator.babelConfig, sourceType = _a.sourceType, presets = _a.presets, plugins = _a.plugins;

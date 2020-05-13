@@ -53,12 +53,11 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-02-01 14:58:57
- * @LastEditTime : 2020-05-13 20:25:01
+ * @LastEditTime : 2020-05-13 20:34:29
  */
 var events_1 = require("events");
-var cli_babel_1 = require("@lartplus/cli-babel");
-var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var cli_config_1 = require("@lartplus/cli-config");
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var generator_1 = require("./lib/generator");
 var resolve_1 = require("./lib/resolve");
 var catchErrorAndExit = function (err) {
@@ -72,18 +71,15 @@ var Generator = /** @class */ (function (_super) {
         _this.targetDir = targetDir;
         _this.projectName = projectName;
         _this.answers = answers;
-        _this.babelConfig = cli_babel_1.getBabelConfig();
+        _this.babelConfig = {};
         _this.lartplusRequirePath = cli_config_1.PATHS.getLartPlusModulePath(_this.targetDir);
         return _this;
     }
-    /**
-     * 创建文件
-     */
     Generator.prototype.create = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.innerCreate()["catch"](catchErrorAndExit)];
+                    case 0: return [4 /*yield*/, this.buildGenerator()["catch"](catchErrorAndExit)];
                     case 1:
                         _a.sent();
                         return [2 /*return*/];
@@ -91,7 +87,7 @@ var Generator = /** @class */ (function (_super) {
             });
         });
     };
-    Generator.prototype.innerCreate = function () {
+    Generator.prototype.buildGenerator = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {

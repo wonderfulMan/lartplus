@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-05-13 09:43:47
+ * @LastEditTime : 2020-05-13 17:35:57
  */
 declare namespace NodeJS {
     interface ProcessEnv {
@@ -49,9 +49,9 @@ declare module '@lartplus/cli-shared-utils' {
     function getCliModule(
         targetPath: string,
         presets: string,
-        framework: string
+        framework?: string
     ): string;
-
+    function hasPackageJson(targetPath: string): boolean | KeyMap;
     function hasTypescript(arg: PresetsAnswers): boolean;
     function hasTypescript(arg: ConfigFileInterface): boolean;
 
@@ -67,7 +67,7 @@ declare module '@lartplus/cli-shared-utils' {
     function hasEslint(arg: ConfigFileInterface): boolean;
 
     function hasMobile(arg: PresetsAnswers): boolean;
-    
+
     export type PresetType = {
         framework: string;
         useConfigFile: boolean;
@@ -152,6 +152,7 @@ declare module '@lartplus/cli-shared-utils' {
         hasMobile,
         applyBabelConfig,
         getCliModule,
+        hasPackageJson,
         ConfigChain
     }
 

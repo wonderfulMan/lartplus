@@ -28,6 +28,7 @@
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
+    "@lartplus/cli-config": "^0.0.98",
     "@types/execa": "^2.0.0",
     "@types/figlet": "^1.2.0",
     "@types/fs-extra": "^8.0.1",

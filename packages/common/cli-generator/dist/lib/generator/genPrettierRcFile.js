@@ -1,10 +1,4 @@
 "use strict";
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-05-13 18:06:16
- * @LastEditTime : 2020-05-13 20:49:28
- */
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -42,18 +36,26 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 exports.__esModule = true;
-var generator_1 = require("../generator");
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
-function resolvedAndGeneratorByLartplus(generator) {
+var cli_config_1 = require("@lartplus/cli-config");
+function genPrettierRcFile(generator) {
     return __awaiter(this, void 0, void 0, function () {
+        var prettierModulePath, genPrettierRcFile, prettierRc, prettierRctargetPath;
         return __generator(this, function (_a) {
-            if (cli_shared_utils_1.hasEslint(generator.answers)) {
-                generator_1.genEslintByLartplus(generator);
-                generator_1.genPrettierRcFile(generator);
+            switch (_a.label) {
+                case 0:
+                    prettierModulePath = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'prettier', cli_shared_utils_1.getFrameworkName(generator.answers));
+                    genPrettierRcFile = require(prettierModulePath).genPrettierRcFile;
+                    prettierRc = genPrettierRcFile(generator.answers);
+                    if (!prettierRc) return [3 /*break*/, 2];
+                    prettierRctargetPath = cli_config_1.PATHS.getPrettierRcPath(generator.targetDir);
+                    return [4 /*yield*/, cli_shared_utils_1.fs.writeFileSync(prettierRctargetPath, 'module.exports = ' + JSON.stringify(prettierRc, null, 2))];
+                case 1:
+                    _a.sent();
+                    _a.label = 2;
+                case 2: return [2 /*return*/];
             }
-            generator_1.genPostcssByLartplus(generator);
-            return [2 /*return*/];
         });
     });
 }
-exports.resolvedAndGeneratorByLartplus = resolvedAndGeneratorByLartplus;
+exports.genPrettierRcFile = genPrettierRcFile;

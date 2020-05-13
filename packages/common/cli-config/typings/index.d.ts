@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-04-24 13:39:09
- * @LastEditTime : 2020-05-07 13:17:20
+ * @LastEditTime : 2020-05-13 20:51:13
  */
 declare module '@lartplus/cli-config' {
 
@@ -31,6 +31,7 @@ declare module '@lartplus/cli-config' {
         getLartPlusFilePath: PATHS_FUNC,
         getBableConfigFilePath: PATHS_FUNC,
         getProjectPackagePath: PATHS_FUNC,
-        getProjectTsconfigFilePath: PATHS_FUNC
+        getProjectTsconfigFilePath: PATHS_FUNC,
+        getPostcssConfigFilePath: PATHS_FUNC
     }
 }
