@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-shared-utils",
-  "version": "0.0.101",
+  "version": "0.0.102",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
-    "@lartplus/cli-config": "^0.0.101",
+    "@lartplus/cli-config": "^0.0.102",
     "@types/execa": "^2.0.0",
     "@types/figlet": "^1.2.0",
     "@types/fs-extra": "^8.0.1",
