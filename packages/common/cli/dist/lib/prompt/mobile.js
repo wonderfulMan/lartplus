@@ -8,7 +8,7 @@ var Mobile = /** @class */ (function () {
             name: 'mobile（是否移动端项目）',
             value: 'mobile',
             short: 'mobile',
-            checked: true
+            checked: false
         };
     };
     return Mobile;

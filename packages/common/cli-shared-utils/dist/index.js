@@ -7,7 +7,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:23:02
- * @LastEditTime : 2020-05-06 10:07:28
+ * @LastEditTime : 2020-05-14 10:53:57
  */
 var fs_extra_1 = __importDefault(require("fs-extra"));
 exports.fs = fs_extra_1["default"];
@@ -55,3 +55,4 @@ exports.hasTypescript = answerGet_1.hasTypescript;
 exports.getFrameworkName = answerGet_1.getFrameworkName;
 exports.getEslintConfig = answerGet_1.getEslintConfig;
 exports.hasEslint = answerGet_1.hasEslint;
+exports.hasMobile = answerGet_1.hasMobile;

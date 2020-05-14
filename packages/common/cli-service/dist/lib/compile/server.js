@@ -67,8 +67,6 @@ var startServer = function (config, context, entriesMap) { return __awaiter(void
                 ])
                     .end();
                 devServer = new webpack_dev_server_1["default"](webpack_1["default"](config.toConfig()), serverOptions);
-                // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-                // @ts-ignore
                 devServer.listen(serverOptions.port, serverOptions.host, function (err) {
                     if (err)
                         throw err;

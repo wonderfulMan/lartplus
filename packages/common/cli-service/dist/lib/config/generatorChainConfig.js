@@ -7,7 +7,7 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-03-24 14:34:36
- * @LastEditTime : 2020-05-07 15:45:18
+ * @LastEditTime : 2020-05-14 10:40:17
  */
 var html_webpack_plugin_1 = __importDefault(require("html-webpack-plugin"));
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");

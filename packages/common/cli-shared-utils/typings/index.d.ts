@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-05-13 17:35:57
+ * @LastEditTime : 2020-05-14 10:35:01
  */
 declare namespace NodeJS {
     interface ProcessEnv {
@@ -95,8 +95,8 @@ declare module '@lartplus/cli-shared-utils' {
         cssSouceMap?: boolean; // 是否开启css sourceMap
         cssFileNameWithHash?: boolean; // css文件抽离后是否加上hash指纹
         webpackChain?: (chain: import('webpack-chain')) => void; // webpackChain对象
-        linter?: boolean;
-        lintOnSave?: boolean | 'warning' | 'error'
+        linter?: boolean; //是否开启lint
+        lintOnSave?: boolean | 'warning' | 'error' //是否保存时进行lint检查
     }
 
     export type PresetsAnswers = {
