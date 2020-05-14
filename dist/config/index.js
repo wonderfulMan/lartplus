@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0,exports.CONFIG_FILE_NAME="lartplus.config",exports.GET_HTML_WEBPACK_PLUGIN_FILENAME=function(e){return"dev"===e?"FICTITIOUS":""};

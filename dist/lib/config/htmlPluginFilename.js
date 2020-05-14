@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0;var htmlPluginFilename=function(e,l,n){return l.appName+"/index.html"};exports.htmlPluginFilename=htmlPluginFilename;

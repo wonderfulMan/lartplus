@@ -1,0 +1,1 @@
+"use strict";function resolvedLartplusCliVersion(){return require("../../../package.json").version}exports.__esModule=!0,exports.resolvedLartplusCliVersion=resolvedLartplusCliVersion;

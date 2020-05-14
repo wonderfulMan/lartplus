@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0;var createFile_abstract_1=require("./createFile.abstract");exports.CreateFileInterface=createFile_abstract_1.CreateFileInterface;

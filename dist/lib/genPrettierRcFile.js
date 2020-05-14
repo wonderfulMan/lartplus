@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0,exports.genPrettierRcFile=function(e){if(e.feature.includes("linter"))return{printWidth:120,tabWidth:4,singleQuote:!0,semi:!0,trailingComma:"es5",bracketSpacing:!0,jsxBracketSameLine:!0,arrowParens:"always"}};

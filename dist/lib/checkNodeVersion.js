@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0;var notice_1=require("./notice");function checkNodeVersion(e){var o=e.replace(/\>=/,""),r=process.versions.node,c=+o.split(".")[0];return!(+r.split(".")[0]<=c)||(notice_1.notice.error(["node版本必须大于"+o+"以上"]),!1)}exports.checkNodeVersion=checkNodeVersion;

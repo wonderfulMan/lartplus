@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0;var Mobile=function(){function e(){}return e.prototype.choices=function(){return{name:"mobile（是否移动端项目）",value:"mobile",short:"mobile",checked:!1}},e}();exports.default=Mobile;

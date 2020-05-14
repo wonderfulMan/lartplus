@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0,exports.LANGUAGE_TYPE={JS:/\.js$/,TS:/\.ts$/,VUE:/\.vue$/,CSS:/\.css$/,LESS:/\.less$/,STYLUS:/\.styl(us)?$/,SASS:/\.sass$/,SCSS:/\.scss&/,POST:/\.p(ost)?css$/,MODULES:/\.module\.\w+$/,TSX:/\.tsx$/,ESLINT:/\.(vue|(j|t)sx?)$/};

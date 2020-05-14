@@ -4,7 +4,9 @@
   "scripts": {
     "init": "${bin} ts-node --files ./script/bootstrap.ts",
     "lint": "${bin} eslint --fix script/*.ts",
-    "dev:ts-watch": "${bin} ts-node-dev --watch"
+    "dev:ts-watch": "${bin} ts-node-dev --watch",
+    "gulp:build": "./node_modules/.bin/gulp build",
+    "git": "git add . && git commit -m 'test' && git push"
   },
   "workspaces": [
     "packages/common/*",
@@ -12,7 +14,7 @@
     "packages/react/*"
   ],
   "devDependencies": {
-    "@types/node": "^13.1.7",
+    "@types/node": "^13.13.6",
     "eslint": "^6.8.0",
     "eslint-plugin-node": "^11.0.0",
     "juicer": "^0.6.15",
@@ -26,7 +28,10 @@
     "@typescript-eslint/eslint-plugin": "^2.16.0",
     "@typescript-eslint/parser": "^2.16.0",
     "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-prettier": "^3.1.2"
+    "eslint-plugin-prettier": "^3.1.2",
+    "gulp": "^4.0.2",
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "gulp-uglify": "^3.0.2"
   },
   "version": "1.0.0",
   "main": "index.js",

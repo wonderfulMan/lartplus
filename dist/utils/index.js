@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0,exports.hasTypescript=function(e){return e.feature.includes("typescript")},exports.getFrameworkName=function(e){return e.framework},exports.getEslintConfig=function(e){return e.eslintConfig},exports.hasEslint=function(e){return e.feature.includes("linter")};

@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0;var Linter=function(){function e(){}return e.prototype.choices=function(){return{name:"Linter / formatter",value:"linter",short:"linter",checked:!0}},e}();exports.default=Linter;

@@ -1,0 +1,1 @@
+"use strict";var __importDefault=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};exports.__esModule=!0;var path_1=__importDefault(require("path"));function getPackageVersion(e,t,r){return void 0===r&&(r="@lartplus"),r+"/"+e+" "+require(path_1.default.resolve(t,"package.json")).version}exports.getPackageVersion=getPackageVersion;

@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0;var cli_shared_utils_1=require("@lartplus/cli-shared-utils");function genProjectName(e){cli_shared_utils_1.fs.existsSync(e.targetDir)?Promise.reject("请确认目录是否已经存在！"):cli_shared_utils_1.fs.mkdirSync(e.targetDir)}exports.genProjectName=genProjectName;

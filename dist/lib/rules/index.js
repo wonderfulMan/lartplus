@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0;var style_rules_1=require("./style.rules");exports.rulesSettingList=[style_rules_1.CreateStyleVueRules];

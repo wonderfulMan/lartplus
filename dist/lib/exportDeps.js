@@ -1,0 +1,1 @@
+"use strict";var DEV_DEPENDENCIES={"vue-class-component":"^7.2.3","vue-property-decorator":"^8.3.0"};

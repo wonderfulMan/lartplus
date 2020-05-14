@@ -1,0 +1,1 @@
+"use strict";exports.__esModule=!0;var baseExtensions=[".js",".jsx",".vue"];function exportExtensions(s){return s?baseExtensions.concat(".ts",".tsx"):baseExtensions}exports.exportExtensions=exportExtensions;
