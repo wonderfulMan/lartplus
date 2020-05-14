@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-config",
-  "version": "0.0.105",
+  "version": "0.0.106",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
