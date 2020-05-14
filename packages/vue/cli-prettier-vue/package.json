@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-prettier-vue",
-  "version": "0.0.99",
+  "version": "0.0.100",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli-shared-utils": "^0.0.99"
+    "@lartplus/cli-shared-utils": "^0.0.100"
   }
 }
