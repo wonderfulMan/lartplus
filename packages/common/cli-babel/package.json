@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-babel",
-  "version": "0.0.100",
+  "version": "0.0.101",
   "description": "构建lartplus-cli生态",
   "scripts": {
     "build": "../../../node_modules/.bin/tsc -w"
@@ -33,7 +33,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.9.0",
-    "@lartplus/cli-shared-utils": "^0.0.100",
+    "@lartplus/cli-shared-utils": "^0.0.101",
     "babel-loader": "^8.1.0",
     "core-js": "3"
   },
