@@ -26,7 +26,7 @@
     "url": "https://github.com/wonderfulMan/@lartplus/cli-eslint-vue/issues"
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
-  "gitHead": "9f8b7d03ab9f8139323cbd4981abf2ba641809f6",
+  "gitHead": "5b9feda3940a029564728eca5e20257ddf651888",
   "dependencies": {
     "@lartplus/cli-shared-utils": "^0.0.101",
     "@types/hash-sum": "^1.0.0",

@@ -52,5 +52,5 @@
     "validate-npm-package-name": "^3.0.0",
     "webpack-chain": "^6.4.0"
   },
-  "gitHead": "9f8b7d03ab9f8139323cbd4981abf2ba641809f6"
+  "gitHead": "5b9feda3940a029564728eca5e20257ddf651888"
 }
