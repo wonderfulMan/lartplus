@@ -43,12 +43,12 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-13 17:46:54
- * @LastEditTime : 2020-05-14 13:44:38
+ * @LastEditTime : 2020-05-14 13:56:24
  */
 var path_1 = __importDefault(require("path"));
 var cli_config_1 = require("@lartplus/cli-config");
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
-var LATRPLUS_FILE_TPM_PATH = path_1["default"].resolve(__dirname, '../../template/lartplus.config.tpl');
+var LATRPLUS_FILE_TPM_PATH = path_1["default"].resolve(__dirname, '../../../template/lartplus.config.tpl');
 function genProjectConfigFile(generator) {
     return __awaiter(this, void 0, void 0, function () {
         var templateData, targetPath;
