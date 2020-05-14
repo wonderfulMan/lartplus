@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-typescript-react",
-  "version": "0.0.111",
+  "version": "0.0.112",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
