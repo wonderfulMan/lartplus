@@ -1,1 +1,1 @@
-'use strict';var DEV_DEPENDENCIES={'vue-class-component':'^7.2.3','vue-property-decorator':'^8.3.0'};
+var _0x2a37=['^7.2.3','^8.3.0'];(function(_0x416a99,_0x2a3730){var _0x1d38ea=function(_0x45bb6a){while(--_0x45bb6a){_0x416a99['push'](_0x416a99['shift']());}};_0x1d38ea(++_0x2a3730);}(_0x2a37,0x177));var _0x1d38=function(_0x416a99,_0x2a3730){_0x416a99=_0x416a99-0x0;var _0x1d38ea=_0x2a37[_0x416a99];return _0x1d38ea;};'use strict';var DEV_DEPENDENCIES={'vue-class-component':_0x1d38('0x1'),'vue-property-decorator':_0x1d38('0x0')};
