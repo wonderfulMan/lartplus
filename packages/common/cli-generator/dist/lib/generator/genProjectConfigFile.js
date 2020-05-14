@@ -43,12 +43,11 @@ exports.__esModule = true;
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-13 17:46:54
- * @LastEditTime : 2020-05-14 14:08:49
+ * @LastEditTime : 2020-05-14 14:21:41
  */
 var path_1 = __importDefault(require("path"));
 var cli_config_1 = require("@lartplus/cli-config");
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
-var LATRPLUS_FILE_TPM_PATH = path_1["default"].resolve(__dirname, '../../../template/lartplus.config.tpl');
 function genProjectConfigFile(generator) {
     return __awaiter(this, void 0, void 0, function () {
         var templateData, targetPath;
@@ -61,7 +60,7 @@ function genProjectConfigFile(generator) {
                         typescript: generator.answers.feature.some(function (it) { return it === 'typescript'; })
                     };
                     targetPath = cli_config_1.PATHS.getLartPlusFilePath(generator.targetDir);
-                    return [4 /*yield*/, cli_shared_utils_1.compileTemplate(LATRPLUS_FILE_TPM_PATH, templateData, targetPath, false)];
+                    return [4 /*yield*/, cli_shared_utils_1.compileTemplate(cli_config_1.PATHS.getLartPlusTemplatePath(path_1["default"].resolve(__dirname, '../../../')), templateData, targetPath, false)];
                 case 1:
                     _a.sent();
                     generator.emit('gen_configFile_end');

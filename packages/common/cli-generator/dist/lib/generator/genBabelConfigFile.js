@@ -3,7 +3,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-05-13 17:49:03
- * @LastEditTime : 2020-05-14 10:33:01
+ * @LastEditTime : 2020-05-14 14:21:14
  */
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -50,7 +50,7 @@ var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var cli_config_1 = require("@lartplus/cli-config");
 function genBabelConfigFile(generator) {
     return __awaiter(this, void 0, void 0, function () {
-        var moduleBabelPath, frameworkBabelModule, moduleBabelPathByFramework, frameworkBabelModuleByFramework, modulePath, typescriptBabelModule, _a, sourceType, presets, plugins, templatePath, targetPath, templateData;
+        var moduleBabelPath, frameworkBabelModule, moduleBabelPathByFramework, frameworkBabelModuleByFramework, modulePath, typescriptBabelModule, _a, sourceType, presets, plugins, targetPath, templateData;
         return __generator(this, function (_b) {
             switch (_b.label) {
                 case 0:
@@ -67,14 +67,13 @@ function genBabelConfigFile(generator) {
                         generator.babelConfig = typescriptBabelModule(generator.babelConfig);
                     }
                     _a = generator.babelConfig, sourceType = _a.sourceType, presets = _a.presets, plugins = _a.plugins;
-                    templatePath = path_1["default"].resolve(__dirname, '../template/babel.config.tpl');
                     targetPath = cli_config_1.PATHS.getBableConfigFilePath(generator.targetDir);
                     templateData = {
                         sourceType: sourceType,
                         presets: JSON.stringify(presets, null, 2),
                         plugins: JSON.stringify(plugins, null, 2)
                     };
-                    return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, templateData, targetPath, false)];
+                    return [4 /*yield*/, cli_shared_utils_1.compileTemplate(cli_config_1.PATHS.getLartPlusBabelTemplatePath(path_1["default"].resolve(__dirname, '../../../')), templateData, targetPath, false)];
                 case 1:
                     _b.sent();
                     generator.emit('gen_babel_end');

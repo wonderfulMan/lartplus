@@ -1,9 +1,9 @@
 "use strict";
 /*
  * @Author: hAo
- * @LastEditors: hAo
+ * @LastEditors  : hAo
  * @Date: 2020-05-13 17:54:04
- * @LastEditTime: 2020-05-13 17:55:19
+ * @LastEditTime : 2020-05-14 14:22:14
  */
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -50,19 +50,18 @@ var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 var cli_config_1 = require("@lartplus/cli-config");
 function genProjectTypescriptConfig(generator) {
     return __awaiter(this, void 0, void 0, function () {
-        var templatePath, include, targetPath;
+        var include, targetPath;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     if (!generator.answers.feature.includes('typescript')) return [3 /*break*/, 2];
                     generator.emit('gen_typescriptConfig_start');
-                    templatePath = path_1["default"].resolve(__dirname, '../template/tsconfig.json.tpl');
                     include = ['src/**/*.jsx', 'src/**/*.ts', 'src/**/*.tsx'];
                     if (generator.answers.framework === 'vue') {
                         include.push('src/**/*.vue');
                     }
                     targetPath = cli_config_1.PATHS.getProjectTsconfigFilePath(generator.targetDir);
-                    return [4 /*yield*/, cli_shared_utils_1.compileTemplate(templatePath, { include: JSON.stringify(include) }, targetPath, false)];
+                    return [4 /*yield*/, cli_shared_utils_1.compileTemplate(cli_config_1.PATHS.getLartPlusTsconfigTemplatePath(path_1["default"].resolve(__dirname, '../../../')), { include: JSON.stringify(include) }, targetPath, false)];
                 case 1:
                     _a.sent();
                     generator.emit('gen_typescriptConfig_end');
