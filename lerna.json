@@ -4,8 +4,7 @@
   "private": true,
   "packages": [
     "packages/common/cli*",
-    "packages/react/cli*",
-    "packages/vue/cli*"
+    "packages/react/cli*"
   ],
   "npmClient": "yarn",
   "npmClientArgs": [
