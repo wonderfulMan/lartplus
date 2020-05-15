@@ -1,10 +1,11 @@
 {
-  "version": "0.1.4",
+  "version": "0.1.1",
   "useWorkspaces": true,
   "private": true,
   "packages": [
     "packages/common/cli*",
-    "packages/react/cli*"
+    "packages/react/cli*",
+    "packages/vue/cli*"
   ],
   "npmClient": "yarn",
   "npmClientArgs": [
