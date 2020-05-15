@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-generator-vue",
-  "version": "0.0.117",
+  "version": "0.0.118",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli-shared-utils": "^0.0.117"
+    "@lartplus/cli-shared-utils": "^0.0.118"
   },
   "gitHead": "38f671758f78f221550b6de9bd6a5ef06f7dd62c"
 }
