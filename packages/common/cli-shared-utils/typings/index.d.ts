@@ -2,7 +2,7 @@
  * @Author: hAo
  * @LastEditors  : hAo
  * @Date: 2020-01-20 13:35:30
- * @LastEditTime : 2020-05-14 10:35:01
+ * @LastEditTime : 2020-05-15 13:29:35
  */
 declare namespace NodeJS {
     interface ProcessEnv {
@@ -46,6 +46,9 @@ declare module '@lartplus/cli-shared-utils' {
     const copyTemplate: typeof import('../src/lib/copyTemplate').copyTemplate;
     const maybeLoader: typeof import('../src/lib/maybeLoader').maybeLoader;
     const applyBabelConfig: typeof import('../src/lib/applyBabelconfig').applyBabelConfig;
+
+    function getPackageModule(packageName: string): boolean;
+
     function getCliModule(
         targetPath: string,
         presets: string,
@@ -153,7 +156,8 @@ declare module '@lartplus/cli-shared-utils' {
         applyBabelConfig,
         getCliModule,
         hasPackageJson,
-        ConfigChain
+        ConfigChain,
+        getPackageModule
     }
 
 }

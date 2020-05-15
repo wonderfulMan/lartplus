@@ -5,5 +5,5 @@
  * @LastEditTime : 2020-05-13 16:22:02
  */
 declare module '@lartplus/cli-eslint-vue' {
-    export const getDeps: typeof import('../src/exportGetDeps');
+    export const getDeps: typeof import('../src/lib/exportGetDeps');
 }
