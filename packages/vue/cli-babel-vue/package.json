@@ -30,5 +30,6 @@
     "@lartplus/cli-shared-utils": "^0.1.0",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
     "@vue/babel-plugin-transform-vue-jsx": "^1.1.2"
-  }
+  },
+  "gitHead": "2c03539506341dfd8a69480b6ce62309559f74bc"
 }

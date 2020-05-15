@@ -36,5 +36,6 @@
     "@lartplus/cli-shared-utils": "^0.1.0",
     "babel-loader": "^8.1.0",
     "core-js": "3"
-  }
+  },
+  "gitHead": "2c03539506341dfd8a69480b6ce62309559f74bc"
 }
