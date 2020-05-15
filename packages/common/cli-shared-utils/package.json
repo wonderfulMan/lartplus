@@ -51,6 +51,5 @@
     "ts-node-dev": "^1.0.0-pre.44",
     "validate-npm-package-name": "^3.0.0",
     "webpack-chain": "^6.4.0"
-  },
-  "gitHead": "156b7a557a5a19ec5d6d35041a6ac58a2a1eaf39"
+  }
 }

@@ -28,6 +28,5 @@
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
     "@lartplus/cli-shared-utils": "^0.0.119"
-  },
-  "gitHead": "156b7a557a5a19ec5d6d35041a6ac58a2a1eaf39"
+  }
 }

@@ -34,6 +34,5 @@
     "vue-loader": "^15.9.1",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.11"
-  },
-  "gitHead": "156b7a557a5a19ec5d6d35041a6ac58a2a1eaf39"
+  }
 }
