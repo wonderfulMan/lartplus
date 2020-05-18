@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-service-react",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli-shared-utils": "^0.2.5"
+    "@lartplus/cli-shared-utils": "^0.2.6"
   },
   "gitHead": "64f3d2ad82ab8ab92dc9e8579764e9bdb192e34e"
 }
