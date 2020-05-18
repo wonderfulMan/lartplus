@@ -1,1 +1,107 @@
-var _0x5ab5=['Generator\x20is\x20already\x20executing.','../config/generatorChainConfig','../parse/parseTemplate','compile','parseTemplate','then','return','startServer','apply','length','assign','目前只支持dev/build模式','generatorBaseConfig','push','../parse/parseMerge','done','configFile','pop','sent','parseEnv','call','throw','parseMerge','__generator','../parse/parseEnv','next','dev','value','__esModule','trys','parseEntries','@lartplus/cli-shared-utils','ops','function','webpackChain','error','label','GeneratorChainConfig','build'];(function(_0x443396,_0x5ab546){var _0x145334=function(_0x4beb80){while(--_0x4beb80){_0x443396['push'](_0x443396['shift']());}};_0x145334(++_0x5ab546);}(_0x5ab5,0x182));var _0x1453=function(_0x443396,_0x5ab546){_0x443396=_0x443396-0x0;var _0x145334=_0x5ab5[_0x443396];return _0x145334;};'use strict';var __assign=this&&this['__assign']||function(){return(__assign=Object[_0x1453('0xe')]||function(_0x2749b1){for(var _0x16cf31,_0x31a85a=0x1,_0x1d4c32=arguments[_0x1453('0xd')];_0x31a85a<_0x1d4c32;_0x31a85a++)for(var _0x14b38b in _0x16cf31=arguments[_0x31a85a])Object['prototype']['hasOwnProperty'][_0x1453('0x18')](_0x16cf31,_0x14b38b)&&(_0x2749b1[_0x14b38b]=_0x16cf31[_0x14b38b]);return _0x2749b1;})[_0x1453('0xc')](this,arguments);},__awaiter=this&&this['__awaiter']||function(_0x2ad324,_0x531615,_0x365656,_0x11b5d7){return new(_0x365656=_0x365656||Promise)(function(_0x6f216b,_0x587f49){function _0x31db1d(_0x1456be){try{_0x1628e9(_0x11b5d7[_0x1453('0x1d')](_0x1456be));}catch(_0x197a95){_0x587f49(_0x197a95);}}function _0x42908b(_0x59600e){try{_0x1628e9(_0x11b5d7[_0x1453('0x19')](_0x59600e));}catch(_0x55cef9){_0x587f49(_0x55cef9);}}function _0x1628e9(_0x2c2fba){var _0x479321;_0x2c2fba[_0x1453('0x13')]?_0x6f216b(_0x2c2fba['value']):((_0x479321=_0x2c2fba[_0x1453('0x1f')])instanceof _0x365656?_0x479321:new _0x365656(function(_0x3eab7b){_0x3eab7b(_0x479321);}))[_0x1453('0x9')](_0x31db1d,_0x42908b);}_0x1628e9((_0x11b5d7=_0x11b5d7[_0x1453('0xc')](_0x2ad324,_0x531615||[]))[_0x1453('0x1d')]());});},__generator=this&&this[_0x1453('0x1b')]||function(_0x1b9d32,_0x2c5c09){var _0x5a773c,_0x418108,_0x4a81a6,_0x21d014={'label':0x0,'sent':function(){if(0x1&_0x4a81a6[0x0])throw _0x4a81a6[0x1];return _0x4a81a6[0x1];},'trys':[],'ops':[]},_0xb72922={'next':_0x39fe1f(0x0),'throw':_0x39fe1f(0x1),'return':_0x39fe1f(0x2)};return _0x1453('0x25')==typeof Symbol&&(_0xb72922[Symbol['iterator']]=function(){return this;}),_0xb72922;function _0x39fe1f(_0x27aea2){return function(_0x13d1a9){return function(_0x17331a){if(_0x5a773c)throw new TypeError(_0x1453('0x4'));for(;_0x21d014;)try{if(_0x5a773c=0x1,_0x418108&&(_0x4a81a6=0x2&_0x17331a[0x0]?_0x418108[_0x1453('0xa')]:_0x17331a[0x0]?_0x418108[_0x1453('0x19')]||((_0x4a81a6=_0x418108['return'])&&_0x4a81a6['call'](_0x418108),0x0):_0x418108[_0x1453('0x1d')])&&!(_0x4a81a6=_0x4a81a6[_0x1453('0x18')](_0x418108,_0x17331a[0x1]))['done'])return _0x4a81a6;switch(_0x418108=0x0,_0x4a81a6&&(_0x17331a=[0x2&_0x17331a[0x0],_0x4a81a6[_0x1453('0x1f')]]),_0x17331a[0x0]){case 0x0:case 0x1:_0x4a81a6=_0x17331a;break;case 0x4:return _0x21d014[_0x1453('0x1')]++,{'value':_0x17331a[0x1],'done':!0x1};case 0x5:_0x21d014[_0x1453('0x1')]++,_0x418108=_0x17331a[0x1],_0x17331a=[0x0];continue;case 0x7:_0x17331a=_0x21d014[_0x1453('0x24')]['pop'](),_0x21d014[_0x1453('0x21')][_0x1453('0x15')]();continue;default:if(!(_0x4a81a6=0x0<(_0x4a81a6=_0x21d014[_0x1453('0x21')])[_0x1453('0xd')]&&_0x4a81a6[_0x4a81a6[_0x1453('0xd')]-0x1])&&(0x6===_0x17331a[0x0]||0x2===_0x17331a[0x0])){_0x21d014=0x0;continue;}if(0x3===_0x17331a[0x0]&&(!_0x4a81a6||_0x17331a[0x1]>_0x4a81a6[0x0]&&_0x17331a[0x1]<_0x4a81a6[0x3])){_0x21d014[_0x1453('0x1')]=_0x17331a[0x1];break;}if(0x6===_0x17331a[0x0]&&_0x21d014[_0x1453('0x1')]<_0x4a81a6[0x1]){_0x21d014['label']=_0x4a81a6[0x1],_0x4a81a6=_0x17331a;break;}if(_0x4a81a6&&_0x21d014['label']<_0x4a81a6[0x2]){_0x21d014[_0x1453('0x1')]=_0x4a81a6[0x2],_0x21d014[_0x1453('0x24')][_0x1453('0x11')](_0x17331a);break;}_0x4a81a6[0x2]&&_0x21d014[_0x1453('0x24')][_0x1453('0x15')](),_0x21d014[_0x1453('0x21')][_0x1453('0x15')]();continue;}_0x17331a=_0x2c5c09[_0x1453('0x18')](_0x1b9d32,_0x21d014);}catch(_0x538e12){_0x17331a=[0x6,_0x538e12],_0x418108=0x0;}finally{_0x5a773c=_0x4a81a6=0x0;}if(0x5&_0x17331a[0x0])throw _0x17331a[0x1];return{'value':_0x17331a[0x0]?_0x17331a[0x1]:void 0x0,'done':!0x0};}([_0x27aea2,_0x13d1a9]);};}};exports[_0x1453('0x20')]=!0x0;var cli_shared_utils_1=require(_0x1453('0x23')),parseEntries_1=require('../parse/parseEntries'),parseEnv_1=require(_0x1453('0x1c')),parseTemplate_1=require(_0x1453('0x6')),parseMerge_1=require(_0x1453('0x12')),generatorChainConfig_1=require(_0x1453('0x5')),server_1=require('./server'),validate=function(_0x4ad773){return'dev'==_0x4ad773||_0x1453('0x3')==_0x4ad773||(cli_shared_utils_1['notice'][_0x1453('0x0')]([_0x1453('0xf')]),!0x1);},compile=function(_0x8d863e,_0x431213){return __awaiter(void 0x0,void 0x0,void 0x0,function(){var _0x155293,_0xe44105,_0x338f40,_0x12b779,_0x524e48,_0x10ce59,_0x4a0fe9,_0x36e954,_0x5b988b;return __generator(this,function(_0x48f5f3){switch(_0x48f5f3[_0x1453('0x1')]){case 0x0:return _0x155293=_0x8d863e['mode'],validate(_0x155293)?[0x4,parseEnv_1[_0x1453('0x17')](_0x8d863e,_0x431213)]:[0x3,0x6];case 0x1:return _0xe44105=_0x48f5f3[_0x1453('0x16')](),[0x4,parseEntries_1[_0x1453('0x22')](_0x431213)];case 0x2:return _0x338f40=_0x48f5f3[_0x1453('0x16')](),[0x4,parseTemplate_1[_0x1453('0x8')](_0x431213,_0x338f40)];case 0x3:return _0x12b779=_0x48f5f3['sent'](),_0x524e48=parseMerge_1[_0x1453('0x1a')](_0x338f40,_0x12b779),_0x10ce59=__assign(__assign({},_0x431213),{'env':_0xe44105,'mode':_0x155293}),_0x4a0fe9=new generatorChainConfig_1[(_0x1453('0x2'))](_0x10ce59,_0x524e48),_0x36e954=_0x4a0fe9[_0x1453('0x10')](),(_0x5b988b=_0x10ce59[_0x1453('0x14')][_0x1453('0x26')])&&_0x1453('0x25')==typeof _0x5b988b?[0x4,_0x5b988b(_0x36e954)]:[0x3,0x5];case 0x4:_0x48f5f3[_0x1453('0x16')](),_0x48f5f3['label']=0x5;case 0x5:_0x1453('0x1e')===_0x155293&&server_1[_0x1453('0xb')](_0x36e954,_0x10ce59,_0x524e48),_0x48f5f3[_0x1453('0x1')]=0x6;case 0x6:return[0x2];}});});};exports[_0x1453('0x7')]=compile;
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-24 10:23:15
+ * @LastEditTime : 2020-05-18 10:34:21
+ */
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var parseEntries_1 = require("../parse/parseEntries");
+var parseEnv_1 = require("../parse/parseEnv");
+var parseTemplate_1 = require("../parse/parseTemplate");
+var parseMerge_1 = require("../parse/parseMerge");
+var generatorChainConfig_1 = require("../config/generatorChainConfig");
+var server_1 = require("./server");
+var validate = function (mode) {
+    if (mode != 'dev' && mode != 'build') {
+        cli_shared_utils_1.notice.error(['目前只支持dev/build模式']);
+        return false;
+    }
+    return true;
+};
+var compile = function (rest, context) { return __awaiter(void 0, void 0, void 0, function () {
+    var mode, verify, env, entries, template, entriesMap, mergeContext, chain, config, webpackChainCallback;
+    var _a;
+    return __generator(this, function (_b) {
+        switch (_b.label) {
+            case 0:
+                mode = rest.mode;
+                verify = validate(mode);
+                if (!verify) return [3 /*break*/, 6];
+                return [4 /*yield*/, parseEnv_1.parseEnv(rest, context)];
+            case 1:
+                env = _b.sent();
+                return [4 /*yield*/, parseEntries_1.parseEntries(context)];
+            case 2:
+                entries = _b.sent();
+                return [4 /*yield*/, parseTemplate_1.parseTemplate(context, entries)];
+            case 3:
+                template = _b.sent();
+                entriesMap = parseMerge_1.parseMerge(entries, template);
+                mergeContext = __assign(__assign({}, context), { env: env, mode: mode });
+                chain = new generatorChainConfig_1.GeneratorChainConfig(mergeContext, entriesMap);
+                config = chain.generatorBaseConfig();
+                webpackChainCallback = (_a = mergeContext.configFile) === null || _a === void 0 ? void 0 : _a.webpackChain;
+                if (!(webpackChainCallback && typeof webpackChainCallback === 'function')) return [3 /*break*/, 5];
+                return [4 /*yield*/, webpackChainCallback(config)];
+            case 4:
+                _b.sent();
+                _b.label = 5;
+            case 5:
+                if (mode === 'dev') {
+                    server_1.startServer(config, mergeContext, entriesMap);
+                }
+                _b.label = 6;
+            case 6: return [2 /*return*/];
+        }
+    });
+}); };
+exports.compile = compile;

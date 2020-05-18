@@ -1,1 +1,101 @@
-var _0x34a9=['map','localhost','none','internal','127.0.0.1','assign','__generator','Google\x20Chrome','getDevServerOptions','pop','configFile','address','value','default','__importDefault','function','__esModule','ops','throw','htmlFilenamePath','networkInterfaces','Generator\x20is\x20already\x20executing.','next','sent','length','iterator','label','IPv4','call','getNetworkPort','serverConfig','apply','__awaiter','trys','basePort','done','portfinder','getNetworkIp','return'];(function(_0x4ba2c1,_0x34a9f3){var _0x82ed1e=function(_0x470c84){while(--_0x470c84){_0x4ba2c1['push'](_0x4ba2c1['shift']());}};_0x82ed1e(++_0x34a9f3);}(_0x34a9,0x1a2));var _0x82ed=function(_0x4ba2c1,_0x34a9f3){_0x4ba2c1=_0x4ba2c1-0x0;var _0x82ed1e=_0x34a9[_0x4ba2c1];return _0x82ed1e;};'use strict';var __awaiter=this&&this[_0x82ed('0x4')]||function(_0x500a61,_0x8bde,_0x450d80,_0x44c3f0){return new(_0x450d80=_0x450d80||Promise)(function(_0x515631,_0xdcebaf){function _0x2068e2(_0x4a26c3){try{_0x4bebd8(_0x44c3f0[_0x82ed('0x21')](_0x4a26c3));}catch(_0x3c469c){_0xdcebaf(_0x3c469c);}}function _0x28aa7a(_0x3d6c85){try{_0x4bebd8(_0x44c3f0[_0x82ed('0x1d')](_0x3d6c85));}catch(_0x1236ad){_0xdcebaf(_0x1236ad);}}function _0x4bebd8(_0x1612cc){var _0x425184;_0x1612cc[_0x82ed('0x7')]?_0x515631(_0x1612cc['value']):((_0x425184=_0x1612cc[_0x82ed('0x17')])instanceof _0x450d80?_0x425184:new _0x450d80(function(_0x4b8291){_0x4b8291(_0x425184);}))['then'](_0x2068e2,_0x28aa7a);}_0x4bebd8((_0x44c3f0=_0x44c3f0[_0x82ed('0x3')](_0x500a61,_0x8bde||[]))['next']());});},__generator=this&&this[_0x82ed('0x11')]||function(_0x5e71de,_0x285161){var _0x101ed3,_0x5dbc8c,_0x180240,_0x67de0a={'label':0x0,'sent':function(){if(0x1&_0x180240[0x0])throw _0x180240[0x1];return _0x180240[0x1];},'trys':[],'ops':[]},_0x10bbae={'next':_0x2560f6(0x0),'throw':_0x2560f6(0x1),'return':_0x2560f6(0x2)};return _0x82ed('0x1a')==typeof Symbol&&(_0x10bbae[Symbol[_0x82ed('0x24')]]=function(){return this;}),_0x10bbae;function _0x2560f6(_0xe6ad04){return function(_0x5b695b){return function(_0x57a2fd){if(_0x101ed3)throw new TypeError(_0x82ed('0x20'));for(;_0x67de0a;)try{if(_0x101ed3=0x1,_0x5dbc8c&&(_0x180240=0x2&_0x57a2fd[0x0]?_0x5dbc8c[_0x82ed('0xa')]:_0x57a2fd[0x0]?_0x5dbc8c[_0x82ed('0x1d')]||((_0x180240=_0x5dbc8c[_0x82ed('0xa')])&&_0x180240[_0x82ed('0x0')](_0x5dbc8c),0x0):_0x5dbc8c[_0x82ed('0x21')])&&!(_0x180240=_0x180240[_0x82ed('0x0')](_0x5dbc8c,_0x57a2fd[0x1]))['done'])return _0x180240;switch(_0x5dbc8c=0x0,_0x180240&&(_0x57a2fd=[0x2&_0x57a2fd[0x0],_0x180240[_0x82ed('0x17')]]),_0x57a2fd[0x0]){case 0x0:case 0x1:_0x180240=_0x57a2fd;break;case 0x4:return _0x67de0a[_0x82ed('0x25')]++,{'value':_0x57a2fd[0x1],'done':!0x1};case 0x5:_0x67de0a[_0x82ed('0x25')]++,_0x5dbc8c=_0x57a2fd[0x1],_0x57a2fd=[0x0];continue;case 0x7:_0x57a2fd=_0x67de0a[_0x82ed('0x1c')][_0x82ed('0x14')](),_0x67de0a[_0x82ed('0x5')][_0x82ed('0x14')]();continue;default:if(!(_0x180240=0x0<(_0x180240=_0x67de0a[_0x82ed('0x5')])[_0x82ed('0x23')]&&_0x180240[_0x180240['length']-0x1])&&(0x6===_0x57a2fd[0x0]||0x2===_0x57a2fd[0x0])){_0x67de0a=0x0;continue;}if(0x3===_0x57a2fd[0x0]&&(!_0x180240||_0x57a2fd[0x1]>_0x180240[0x0]&&_0x57a2fd[0x1]<_0x180240[0x3])){_0x67de0a['label']=_0x57a2fd[0x1];break;}if(0x6===_0x57a2fd[0x0]&&_0x67de0a[_0x82ed('0x25')]<_0x180240[0x1]){_0x67de0a[_0x82ed('0x25')]=_0x180240[0x1],_0x180240=_0x57a2fd;break;}if(_0x180240&&_0x67de0a[_0x82ed('0x25')]<_0x180240[0x2]){_0x67de0a['label']=_0x180240[0x2],_0x67de0a[_0x82ed('0x1c')]['push'](_0x57a2fd);break;}_0x180240[0x2]&&_0x67de0a[_0x82ed('0x1c')][_0x82ed('0x14')](),_0x67de0a[_0x82ed('0x5')][_0x82ed('0x14')]();continue;}_0x57a2fd=_0x285161[_0x82ed('0x0')](_0x5e71de,_0x67de0a);}catch(_0x11b04a){_0x57a2fd=[0x6,_0x11b04a],_0x5dbc8c=0x0;}finally{_0x101ed3=_0x180240=0x0;}if(0x5&_0x57a2fd[0x0])throw _0x57a2fd[0x1];return{'value':_0x57a2fd[0x0]?_0x57a2fd[0x1]:void 0x0,'done':!0x0};}([_0xe6ad04,_0x5b695b]);};}},__importDefault=this&&this[_0x82ed('0x19')]||function(_0x1063fd){return _0x1063fd&&_0x1063fd[_0x82ed('0x1b')]?_0x1063fd:{'default':_0x1063fd};};exports[_0x82ed('0x1b')]=!0x0;var os_1=__importDefault(require('os')),portfinder_1=__importDefault(require(_0x82ed('0x8')));exports[_0x82ed('0x9')]=function(){var _0x4c094a='';try{var _0x3b4552=os_1[_0x82ed('0x18')][_0x82ed('0x1f')]();for(var _0x6a8d33 in _0x3b4552)for(var _0x2884aa=_0x3b4552[_0x6a8d33],_0x4b5af6=0x0;_0x4b5af6<_0x2884aa['length'];_0x4b5af6++){var _0x489408=_0x2884aa[_0x4b5af6];_0x82ed('0x26')!==_0x489408['family']||_0x82ed('0xf')===_0x489408[_0x82ed('0x16')]||_0x489408[_0x82ed('0xe')]||(_0x4c094a=_0x489408[_0x82ed('0x16')]);}}catch(_0x5ad4fa){_0x4c094a=_0x82ed('0xc');}return _0x4c094a;},exports[_0x82ed('0x1')]=function(){return __awaiter(void 0x0,void 0x0,void 0x0,function(){return __generator(this,function(_0x1592bb){switch(_0x1592bb[_0x82ed('0x25')]){case 0x0:return portfinder_1['default'][_0x82ed('0x6')]=0x1f90,[0x4,portfinder_1['default']['getPortPromise']({'port':0xbb8,'stopPort':0x2328})];case 0x1:return[0x2,_0x1592bb[_0x82ed('0x22')]()];}});});},exports[_0x82ed('0x13')]=function(_0x495aee,_0x37f121){return __awaiter(void 0x0,void 0x0,void 0x0,function(){var _0x1053a4,_0xf057e7;return __generator(this,function(_0x422506){switch(_0x422506[_0x82ed('0x25')]){case 0x0:return _0x1053a4=exports[_0x82ed('0x9')](),[0x4,exports[_0x82ed('0x1')]()];case 0x1:return _0xf057e7=_0x422506['sent'](),[0x2,Object[_0x82ed('0x10')]({'host':_0x1053a4,'port':_0xf057e7,'quiet':!0x0,'clientLogLevel':_0x82ed('0xd'),'contentBase':'./','openPage':_0x37f121[_0x82ed('0xb')](function(_0x4d9ffd){return _0x4d9ffd[_0x82ed('0x1e')];}),'open':_0x82ed('0x12')},_0x495aee[_0x82ed('0x15')][_0x82ed('0x2')])];}});});};
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-26 15:18:18
+ * @LastEditTime : 2020-05-18 10:31:34
+ */
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var os_1 = __importDefault(require("os"));
+var portfinder_1 = __importDefault(require("portfinder"));
+exports.getNetworkIp = function () {
+    var needHost = ''; // 打开的host
+    try {
+        // 获得网络接口列表
+        var network = os_1["default"].networkInterfaces();
+        for (var dev in network) {
+            var iface = network[dev];
+            for (var i = 0; i < iface.length; i++) {
+                var alias = iface[i];
+                if (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal) {
+                    needHost = alias.address;
+                }
+            }
+        }
+    }
+    catch (e) {
+        needHost = 'localhost';
+    }
+    return needHost;
+};
+exports.getNetworkPort = function () { return __awaiter(void 0, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                portfinder_1["default"].basePort = 8080;
+                return [4 /*yield*/, portfinder_1["default"].getPortPromise({ port: 3000, stopPort: 9000 })];
+            case 1: return [2 /*return*/, _a.sent()];
+        }
+    });
+}); };
+exports.getDevServerOptions = function (context, entriesMap) { return __awaiter(void 0, void 0, void 0, function () {
+    var host, port;
+    var _a;
+    return __generator(this, function (_b) {
+        switch (_b.label) {
+            case 0:
+                host = exports.getNetworkIp();
+                return [4 /*yield*/, exports.getNetworkPort()];
+            case 1:
+                port = _b.sent();
+                return [2 /*return*/, Object.assign({
+                        host: host,
+                        port: port,
+                        quiet: true,
+                        clientLogLevel: 'none',
+                        contentBase: "./",
+                        openPage: entriesMap.map(function (it) { return it.htmlFilenamePath; }),
+                        open: 'Google Chrome'
+                    }, (_a = context.configFile) === null || _a === void 0 ? void 0 : _a.serverConfig)];
+        }
+    });
+}); };

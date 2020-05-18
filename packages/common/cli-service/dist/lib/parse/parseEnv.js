@@ -1,1 +1,34 @@
-var _0x15bc=['indexOf','__esModule','parseEnv','length','env','stringify','propertyIsEnumerable','hasOwnProperty','entries','prototype','cutsomEnv','getOwnPropertySymbols','mode','call','\x27development\x27','function','dev'];(function(_0x22166b,_0x15bce6){var _0x2b3d9e=function(_0x5a8928){while(--_0x5a8928){_0x22166b['push'](_0x22166b['shift']());}};_0x2b3d9e(++_0x15bce6);}(_0x15bc,0xf3));var _0x2b3d=function(_0x22166b,_0x15bce6){_0x22166b=_0x22166b-0x0;var _0x2b3d9e=_0x15bc[_0x22166b];return _0x2b3d9e;};'use strict';var __rest=this&&this['__rest']||function(_0x201ee2,_0x3272cf){var _0x293303={};for(var _0x2b3ab0 in _0x201ee2)Object['prototype'][_0x2b3d('0x2')][_0x2b3d('0x8')](_0x201ee2,_0x2b3ab0)&&_0x3272cf[_0x2b3d('0xc')](_0x2b3ab0)<0x0&&(_0x293303[_0x2b3ab0]=_0x201ee2[_0x2b3ab0]);if(null!=_0x201ee2&&_0x2b3d('0xa')==typeof Object[_0x2b3d('0x6')])for(var _0x5acad2=0x0,_0x2b3ab0=Object[_0x2b3d('0x6')](_0x201ee2);_0x5acad2<_0x2b3ab0[_0x2b3d('0xf')];_0x5acad2++)_0x3272cf[_0x2b3d('0xc')](_0x2b3ab0[_0x5acad2])<0x0&&Object[_0x2b3d('0x4')][_0x2b3d('0x1')][_0x2b3d('0x8')](_0x201ee2,_0x2b3ab0[_0x5acad2])&&(_0x293303[_0x2b3ab0[_0x5acad2]]=_0x201ee2[_0x2b3ab0[_0x5acad2]]);return _0x293303;};exports[_0x2b3d('0xd')]=!0x0;var parseEnv=function(_0x4fc694,_0x5d74d7){var _0x1290fc,_0x132259=_0x4fc694[_0x2b3d('0x7')],_0x57435d=_0x4fc694[_0x2b3d('0x5')],_0x4c5f13=_0x5d74d7['configFile'][_0x2b3d('0x10')],_0x53b82b={};return _0x4c5f13&&_0x57435d&&(_0x1290fc=__rest(_0x4c5f13,[]),Object[_0x2b3d('0x3')](_0x1290fc)['map'](function(_0x54a940){var _0x1fd49b=_0x54a940[0x0],_0x2b548e=_0x54a940[0x1];_0x1fd49b===_0x57435d&&(_0x53b82b=_0x2b548e);})),{'NODE_ENV':_0x2b3d('0xb')===_0x132259?_0x2b3d('0x9'):'\x27production\x27','CUSTOM_ENV':JSON[_0x2b3d('0x0')](_0x53b82b)};};exports[_0x2b3d('0xe')]=parseEnv;
+"use strict";
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+exports.__esModule = true;
+var parseEnv = function (rest, context) {
+    var _a;
+    var mode = rest.mode, cutsomEnv = rest.cutsomEnv;
+    var env = (_a = context.configFile) === null || _a === void 0 ? void 0 : _a.env;
+    var result = {};
+    if (env && cutsomEnv) {
+        var envKey = __rest(env, []);
+        Object.entries(envKey)
+            .map(function (_a) {
+            var key = _a[0], value = _a[1];
+            if (key === cutsomEnv) {
+                result = value;
+            }
+        });
+    }
+    return {
+        NODE_ENV: mode === 'dev' ? "'development'" : "'production'",
+        CUSTOM_ENV: JSON.stringify(result)
+    };
+};
+exports.parseEnv = parseEnv;
