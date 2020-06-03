@@ -1,0 +1,9 @@
+{
+    "name": "test-outer",
+    "version": "1.0.0",
+    "scripts": {
+      "test": "../common/cli/dist/bin.js create project"
+    },
+    "main": "index.js",
+    "license": "MIT"
+  }
