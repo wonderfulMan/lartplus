@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-service-vue",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli-config": "^0.2.9",
-    "@lartplus/cli-shared-utils": "^0.2.9",
+    "@lartplus/cli-config": "^0.2.10",
+    "@lartplus/cli-shared-utils": "^0.2.10",
     "@types/hash-sum": "^1.0.0",
     "hash-sum": "^2.0.0",
     "vue-loader": "^15.9.1",

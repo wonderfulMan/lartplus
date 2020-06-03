@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-service",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "构建lartplus-cli生态",
   "scripts": {
     "build": "../../../node_modules/.bin/tsc -w"
@@ -28,9 +28,9 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli-config": "^0.2.9",
-    "@lartplus/cli-service-vue": "^0.2.9",
-    "@lartplus/cli-shared-utils": "^0.2.9",
+    "@lartplus/cli-config": "^0.2.10",
+    "@lartplus/cli-service-vue": "^0.2.10",
+    "@lartplus/cli-shared-utils": "^0.2.10",
     "@types/friendly-errors-webpack-plugin": "^0.1.2",
     "@types/html-webpack-plugin": "^3.2.2",
     "@types/webpack": "^4.41.8",
