@@ -1,2 +1,29 @@
 #!/usr/bin/env node
-var _0x24f0=['创建个application','commander','action','checkNodeVersion','@lartplus/cli\x20','exit','__esModule','version','./lib/create','Command','usage','parse','description','argv','default','create\x20<app-name>','command'];(function(_0x4a73f8,_0x24f005){var _0x33ca20=function(_0x2483d3){while(--_0x2483d3){_0x4a73f8['push'](_0x4a73f8['shift']());}};_0x33ca20(++_0x24f005);}(_0x24f0,0x19d));var _0x33ca=function(_0x4a73f8,_0x24f005){_0x4a73f8=_0x4a73f8-0x0;var _0x33ca20=_0x24f0[_0x4a73f8];return _0x33ca20;};'use strict';exports[_0x33ca('0x1')]=!0x0;var cli_shared_utils_1=require('@lartplus/cli-shared-utils');function init(){cli_shared_utils_1[_0x33ca('0xf')](''+require('../package')['engines']['node'])||process[_0x33ca('0x0')](0x0);var _0x5a3c2c=new cli_shared_utils_1[(_0x33ca('0xd'))][(_0x33ca('0x4'))](),_0x2f4943=_0x33ca('0x10')+require('../package')[_0x33ca('0x2')];_0x5a3c2c['version'](_0x2f4943)[_0x33ca('0x5')]('<command>\x20选项'),_0x5a3c2c[_0x33ca('0xb')](_0x33ca('0xa'))[_0x33ca('0x7')](_0x33ca('0xc'))[_0x33ca('0xe')](function(_0x2f905b,_0x2248f9){(0x0,require(_0x33ca('0x3'))[_0x33ca('0x9')])(_0x2f905b,_0x2248f9);}),_0x5a3c2c[_0x33ca('0x6')](process[_0x33ca('0x8')]);}init();
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-17 09:52:45
+ * @LastEditTime : 2020-03-20 15:40:10
+ */
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+function init() {
+    var canRun = cli_shared_utils_1.checkNodeVersion("" + require('../package').engines.node);
+    if (!canRun)
+        process.exit(0);
+    var program = new cli_shared_utils_1.commander.Command();
+    var cliVersion = "@lartplus/cli " + require('../package').version;
+    program
+        .version(cliVersion)
+        .usage('<command> 选项');
+    program
+        .command('create <app-name>')
+        .description('创建个application')
+        .action(function (name, cmd) {
+        var create = require('./lib/create')["default"];
+        create(name, cmd);
+    });
+    program.parse(process.argv);
+}
+init();
