@@ -51,7 +51,7 @@ if (files.length < 0) {
 }
 
 const packageDir = files
-    .map(file => mapFilesByTarget(baseDir, file, ['react', 'vue', 'common']))
+    .map(file => mapFilesByTarget(baseDir, file, ['react', 'vue', 'common', 'test-outer']))
     .reduce((total: Array<string>, curV: Array<string> | string) => reduceFiles(total, curV), [])
 
 packageDir.forEach(pkg => {

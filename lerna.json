@@ -3,7 +3,7 @@
   "useWorkspaces": true,
   "private": true,
   "packages": [
-    "packages/test-outer/local"
+    "packages/test-outer/*"
   ],
   "npmClient": "yarn",
   "npmClientArgs": [
