@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/wonderfulMan/@lartplus/test-run/issues"
   },
-  "homepage": "https://github.com/wonderfulMan/hAo-cli"
+  "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "dependencies": {
+    "@lartplus/cli": "^0.2.15"
+  }
 }
