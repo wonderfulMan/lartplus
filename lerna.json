@@ -3,10 +3,10 @@
   "useWorkspaces": true,
   "private": true,
   "packages": [
+    "packages/test/*",
     "packages/common/cli*",
     "packages/react/cli*",
-    "packages/vue/cli*",
-    "packages/test-inner"
+    "packages/vue/cli*"
   ],
   "npmClient": "yarn",
   "npmClientArgs": [
