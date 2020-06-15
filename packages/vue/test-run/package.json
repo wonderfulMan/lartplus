@@ -1,6 +1,6 @@
 {
   "name": "test-run",
-  "version": "0.0.1",
+  "version": "0.2.18",
   "private": true,
   "scripts": {
     "dev": "$(npm bin)/lartplus-service start dev",
@@ -15,11 +15,11 @@
     "vue-router": "^3.1.6"
   },
   "devDependencies": {
-    "@lartplus/cli-service": "0.2.17",
-    "@lartplus/cli-generator-vue": "0.2.17",
-    "@lartplus/cli-service-vue": "0.2.17",
-    "@lartplus/cli-babel-vue": "0.2.17",
-    "@lartplus/cli-prettier-vue": "0.2.17",
-    "@lartplus/cli-eslint-vue": "0.2.17"
+    "@lartplus/cli-babel-vue": "^0.2.18",
+    "@lartplus/cli-eslint-vue": "^0.2.18",
+    "@lartplus/cli-generator-vue": "^0.2.18",
+    "@lartplus/cli-prettier-vue": "^0.2.18",
+    "@lartplus/cli-service": "^0.2.18",
+    "@lartplus/cli-service-vue": "^0.2.18"
   }
 }
