@@ -1,34 +1,25 @@
 {
-  "name": "@lartplus/test-run",
-  "version": "0.2.17",
-  "description": "构建lartplus-cli生态",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:wonderfulMan/hAo-cli.git"
-  },
-  "main": "./dist/index.js",
-  "types": "./src/typings/global.d.ts",
+  "name": "test-run",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "create": "./node_modules/.bin/lartplus create project"
+    "dev": "$(npm bin)/lartplus-service start dev",
+    "build": "$(npm bin)/lartplus-service start build",
+    "lint": "$(npm bin)/lartplus-service start lint",
+    "create:components": "$(npm bin)/lartplus-service new components",
+    "create:page": "$(npm bin)/lartplus-service new page",
+    "create:model": "$(npm bin)/lartplus-service new model"
   },
-  "keywords": [
-    "hAo",
-    "react",
-    "Vue",
-    "cli"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "author": "wonderfulMan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wonderfulMan/@lartplus/test-run/issues"
-  },
-  "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli": "^0.2.17",
-    "@lartplus/cli-babel": "^0.2.17",
-    "@lartplus/cli-postcss": "^0.2.17"
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6"
+  },
+  "devDependencies": {
+    "@lartplus/cli-service": "0.2.17",
+    "@lartplus/cli-generator-vue": "0.2.17",
+    "@lartplus/cli-service-vue": "0.2.17",
+    "@lartplus/cli-babel-vue": "0.2.17",
+    "@lartplus/cli-prettier-vue": "0.2.17",
+    "@lartplus/cli-eslint-vue": "0.2.17"
   }
 }
