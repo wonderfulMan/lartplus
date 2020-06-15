@@ -1,15 +1,1 @@
-"use strict";
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-05-06 17:19:43
- * @LastEditTime : 2020-05-06 17:21:27
- */
-exports.__esModule = true;
-var baseExtensions = ['.js', '.jsx', '.vue'];
-function exportExtensions(hasTypescript) {
-    return hasTypescript
-        ? baseExtensions.concat('.ts', '.tsx')
-        : baseExtensions;
-}
-exports.exportExtensions = exportExtensions;
+var _0x4891=['.ts','.jsx','concat','.tsx','.js'];(function(_0xa5a59a,_0x4891f9){var _0x446040=function(_0x4bf97a){while(--_0x4bf97a){_0xa5a59a['push'](_0xa5a59a['shift']());}};_0x446040(++_0x4891f9);}(_0x4891,0x8f));var _0x4460=function(_0xa5a59a,_0x4891f9){_0xa5a59a=_0xa5a59a-0x0;var _0x446040=_0x4891[_0xa5a59a];return _0x446040;};'use strict';exports['__esModule']=!0x0;var baseExtensions=[_0x4460('0x1'),_0x4460('0x3'),'.vue'];function exportExtensions(_0x31969f){return _0x31969f?baseExtensions[_0x4460('0x4')](_0x4460('0x2'),_0x4460('0x0')):baseExtensions;}exports['exportExtensions']=exportExtensions;

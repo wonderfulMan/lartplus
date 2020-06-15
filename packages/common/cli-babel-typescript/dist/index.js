@@ -1,17 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-04-16 19:50:41
- * @LastEditTime : 2020-04-17 17:31:58
- */
-var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
-function install(babelConfig) {
-    return cli_shared_utils_1.applyBabelConfig(babelConfig, 'presets', '@babel/preset-typescript', {
-        allExtensions: true,
-        isTSX: true
-    });
-}
-exports.install = install;
-;
+var _0x2941=['install','@lartplus/cli-shared-utils','@babel/preset-typescript','applyBabelConfig','__esModule','presets'];(function(_0x1056e5,_0x294189){var _0x580341=function(_0x33e72c){while(--_0x33e72c){_0x1056e5['push'](_0x1056e5['shift']());}};_0x580341(++_0x294189);}(_0x2941,0xa8));var _0x5803=function(_0x1056e5,_0x294189){_0x1056e5=_0x1056e5-0x0;var _0x580341=_0x2941[_0x1056e5];return _0x580341;};'use strict';exports[_0x5803('0x4')]=!0x0;var cli_shared_utils_1=require(_0x5803('0x1'));function install(_0x113847){return cli_shared_utils_1[_0x5803('0x3')](_0x113847,_0x5803('0x5'),_0x5803('0x2'),{'allExtensions':!0x0,'isTSX':!0x0});}exports[_0x5803('0x0')]=install;

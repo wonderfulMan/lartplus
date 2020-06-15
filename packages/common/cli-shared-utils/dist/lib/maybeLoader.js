@@ -1,17 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors: hAo
- * @Date: 2020-04-10 15:03:01
- * @LastEditTime: 2020-04-10 15:03:49
- */
-function maybeLoader(loader) {
-    try {
-        return require.resolve(loader);
-    }
-    catch (error) {
-        return loader;
-    }
-}
-exports.maybeLoader = maybeLoader;
+var _0x5ad2=['resolve','maybeLoader','__esModule'];(function(_0x59b027,_0x5ad283){var _0x45b7e2=function(_0x175037){while(--_0x175037){_0x59b027['push'](_0x59b027['shift']());}};_0x45b7e2(++_0x5ad283);}(_0x5ad2,0x1dd));var _0x45b7=function(_0x59b027,_0x5ad283){_0x59b027=_0x59b027-0x0;var _0x45b7e2=_0x5ad2[_0x59b027];return _0x45b7e2;};'use strict';function maybeLoader(_0x409818){try{return require[_0x45b7('0x0')](_0x409818);}catch(_0x356e4c){return _0x409818;}}exports[_0x45b7('0x2')]=!0x0,exports[_0x45b7('0x1')]=maybeLoader;

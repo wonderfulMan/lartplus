@@ -1,12 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-01-20 16:17:06
- * @LastEditTime : 2020-04-08 15:47:10
- */
-function exit(code) {
-    process.exit(code);
-}
-exports.exit = exit;
+var _0x5df1=['exit'];(function(_0x23a5ce,_0x5df1cc){var _0x56f6ec=function(_0x432cfa){while(--_0x432cfa){_0x23a5ce['push'](_0x23a5ce['shift']());}};_0x56f6ec(++_0x5df1cc);}(_0x5df1,0xf9));var _0x56f6=function(_0x23a5ce,_0x5df1cc){_0x23a5ce=_0x23a5ce-0x0;var _0x56f6ec=_0x5df1[_0x23a5ce];return _0x56f6ec;};'use strict';function exit(_0x58bd7b){process[_0x56f6('0x0')](_0x58bd7b);}exports['__esModule']=!0x0,exports[_0x56f6('0x0')]=exit;

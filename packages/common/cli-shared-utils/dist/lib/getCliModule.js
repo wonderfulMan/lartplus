@@ -1,13 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-05-06 10:03:06
- * @LastEditTime : 2020-05-13 16:26:56
- */
-function getCliModule(targetPath, presets, framework) {
-    var baseStr = targetPath + "/cli-" + presets;
-    return framework ? baseStr + "-" + framework : baseStr;
-}
-exports.getCliModule = getCliModule;
+var _0x3823=['getCliModule','__esModule'];(function(_0x5d2a9c,_0x3823c5){var _0x4f4ad8=function(_0x519ec4){while(--_0x519ec4){_0x5d2a9c['push'](_0x5d2a9c['shift']());}};_0x4f4ad8(++_0x3823c5);}(_0x3823,0x1eb));var _0x4f4a=function(_0x5d2a9c,_0x3823c5){_0x5d2a9c=_0x5d2a9c-0x0;var _0x4f4ad8=_0x3823[_0x5d2a9c];return _0x4f4ad8;};'use strict';function getCliModule(_0x3c6b07,_0xbd38f1,_0xcf3828){var _0x114df0=_0x3c6b07+'/cli-'+_0xbd38f1;return _0xcf3828?_0x114df0+'-'+_0xcf3828:_0x114df0;}exports[_0x4f4a('0x0')]=!0x0,exports[_0x4f4a('0x1')]=getCliModule;

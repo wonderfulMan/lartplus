@@ -1,18 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-05-15 11:13:06
- * @LastEditTime : 2020-05-15 13:31:00
- */
-function getPackageModule(string) {
-    try {
-        var requireJson = require(process.cwd() + "/package.json");
-        return requireJson.devDependencies[packageName] || false;
-    }
-    catch (error) {
-        return false;
-    }
-}
-exports.getPackageModule = getPackageModule;
+var _0x31f5=['/package.json','cwd','devDependencies','getPackageModule'];(function(_0xd2101e,_0x31f538){var _0x506bda=function(_0x276e11){while(--_0x276e11){_0xd2101e['push'](_0xd2101e['shift']());}};_0x506bda(++_0x31f538);}(_0x31f5,0x9b));var _0x506b=function(_0xd2101e,_0x31f538){_0xd2101e=_0xd2101e-0x0;var _0x506bda=_0x31f5[_0xd2101e];return _0x506bda;};'use strict';function getPackageModule(_0x37a424){try{return require(process[_0x506b('0x2')]()+_0x506b('0x1'))[_0x506b('0x3')][packageName]||!0x1;}catch(_0x3e9319){return!0x1;}}exports['__esModule']=!0x0,exports[_0x506b('0x0')]=getPackageModule;

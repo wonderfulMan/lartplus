@@ -1,14 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-03-18 14:53:14
- * @LastEditTime : 2020-03-19 13:35:03
- */
-var CreateFileInterface = /** @class */ (function () {
-    function CreateFileInterface() {
-    }
-    return CreateFileInterface;
-}());
-exports.CreateFileInterface = CreateFileInterface;
+var _0x5b4f=['__esModule','CreateFileInterface'];(function(_0x3f7cc7,_0x5b4f4a){var _0x524173=function(_0x201e02){while(--_0x201e02){_0x3f7cc7['push'](_0x3f7cc7['shift']());}};_0x524173(++_0x5b4f4a);}(_0x5b4f,0x16e));var _0x5241=function(_0x3f7cc7,_0x5b4f4a){_0x3f7cc7=_0x3f7cc7-0x0;var _0x524173=_0x5b4f[_0x3f7cc7];return _0x524173;};'use strict';exports[_0x5241('0x0')]=!0x0;var CreateFileInterface=function(){};exports[_0x5241('0x1')]=CreateFileInterface;

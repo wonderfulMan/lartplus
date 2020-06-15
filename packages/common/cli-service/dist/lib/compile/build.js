@@ -1,12 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-03-24 10:11:12
- * @LastEditTime : 2020-03-24 10:12:29
- */
-var buildCompileHandler = function () {
-    return;
-};
-exports.buildCompileHandler = buildCompileHandler;
+var _0x3230=['buildCompileHandler','__esModule'];(function(_0x47327b,_0x32308f){var _0x18f058=function(_0x3e8d19){while(--_0x3e8d19){_0x47327b['push'](_0x47327b['shift']());}};_0x18f058(++_0x32308f);}(_0x3230,0x18f));var _0x18f0=function(_0x47327b,_0x32308f){_0x47327b=_0x47327b-0x0;var _0x18f058=_0x3230[_0x47327b];return _0x18f058;};'use strict';exports[_0x18f0('0x0')]=!0x0;var buildCompileHandler=function(){};exports[_0x18f0('0x1')]=buildCompileHandler;

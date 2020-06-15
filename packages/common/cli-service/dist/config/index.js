@@ -1,13 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-03-18 15:53:33
- * @LastEditTime : 2020-03-26 15:16:40
- */
-exports.CONFIG_FILE_NAME = 'lartplus.config';
-// html-webpack-plugin 设置根目录
-exports.GET_HTML_WEBPACK_PLUGIN_FILENAME = function (mode) {
-    return mode === 'dev' ? 'FICTITIOUS' : '';
-};
+var _0x894e=['FICTITIOUS','CONFIG_FILE_NAME','GET_HTML_WEBPACK_PLUGIN_FILENAME','lartplus.config','__esModule'];(function(_0x37cc9c,_0x894e4c){var _0x5d3009=function(_0x258c28){while(--_0x258c28){_0x37cc9c['push'](_0x37cc9c['shift']());}};_0x5d3009(++_0x894e4c);}(_0x894e,0x14e));var _0x5d30=function(_0x37cc9c,_0x894e4c){_0x37cc9c=_0x37cc9c-0x0;var _0x5d3009=_0x894e[_0x37cc9c];return _0x5d3009;};'use strict';exports[_0x5d30('0x0')]=!0x0,exports[_0x5d30('0x2')]=_0x5d30('0x4'),exports[_0x5d30('0x3')]=function(_0x207fc3){return'dev'===_0x207fc3?_0x5d30('0x1'):'';};

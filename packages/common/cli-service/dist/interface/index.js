@@ -1,10 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-03-18 14:59:50
- * @LastEditTime : 2020-03-26 16:44:42
- */
-var createFile_abstract_1 = require("./createFile.abstract");
-exports.CreateFileInterface = createFile_abstract_1.CreateFileInterface;
+var _0x5150=['__esModule','CreateFileInterface'];(function(_0x4f58d0,_0x515052){var _0x37bb9f=function(_0xfb4c28){while(--_0xfb4c28){_0x4f58d0['push'](_0x4f58d0['shift']());}};_0x37bb9f(++_0x515052);}(_0x5150,0x1b1));var _0x37bb=function(_0x4f58d0,_0x515052){_0x4f58d0=_0x4f58d0-0x0;var _0x37bb9f=_0x5150[_0x4f58d0];return _0x37bb9f;};'use strict';exports[_0x37bb('0x1')]=!0x0;var createFile_abstract_1=require('./createFile.abstract');exports['CreateFileInterface']=createFile_abstract_1[_0x37bb('0x0')];

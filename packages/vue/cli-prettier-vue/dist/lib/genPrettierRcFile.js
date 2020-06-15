@@ -1,16 +1,1 @@
-"use strict";
-exports.__esModule = true;
-exports.genPrettierRcFile = function (answers) {
-    if (answers.feature.includes('linter')) {
-        return {
-            printWidth: 120,
-            tabWidth: 4,
-            singleQuote: true,
-            semi: true,
-            trailingComma: 'es5',
-            bracketSpacing: true,
-            jsxBracketSameLine: true,
-            arrowParens: 'always'
-        };
-    }
-};
+var _0x48cd=['includes','linter','feature','__esModule'];(function(_0x33841a,_0x48cde6){var _0x5dbd3f=function(_0x3bf349){while(--_0x3bf349){_0x33841a['push'](_0x33841a['shift']());}};_0x5dbd3f(++_0x48cde6);}(_0x48cd,0x13c));var _0x5dbd=function(_0x33841a,_0x48cde6){_0x33841a=_0x33841a-0x0;var _0x5dbd3f=_0x48cd[_0x33841a];return _0x5dbd3f;};'use strict';exports[_0x5dbd('0x3')]=!0x0,exports['genPrettierRcFile']=function(_0x54c838){if(_0x54c838[_0x5dbd('0x2')][_0x5dbd('0x0')](_0x5dbd('0x1')))return{'printWidth':0x78,'tabWidth':0x4,'singleQuote':!0x0,'semi':!0x0,'trailingComma':'es5','bracketSpacing':!0x0,'jsxBracketSameLine':!0x0,'arrowParens':'always'};};
