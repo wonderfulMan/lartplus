@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-typescript-vue",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
