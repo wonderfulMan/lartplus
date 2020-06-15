@@ -1,1 +1,74 @@
-var _0x24f9=['0xe','0x14','0x6','hasEslint','\x22^16.10.2\x22,','^3.1.6','0xd','0xb','reactEslint','./resolvedLartplusCliVersion','0x5','__esModule','0x12','base','assign','^2.6.11','0x11','0x13','getFrameworkName','0x9','typescript','mobile','\x22^16.13.1\x22,','0x1','resolvedLartplusCliVersion','0x2','@lartplus/cli-shared-utils','0xf','push','0x3','0xc','0x0','0x10','^8.3.0'];(function(_0x1332c5,_0x24f9f6){var _0x1a103a=function(_0x4bd16d){while(--_0x4bd16d){_0x1332c5['push'](_0x1332c5['shift']());}};_0x1a103a(++_0x24f9f6);}(_0x24f9,0xb4));var _0x1a10=function(_0x1332c5,_0x24f9f6){_0x1332c5=_0x1332c5-0x0;var _0x1a103a=_0x24f9[_0x1332c5];return _0x1a103a;};var _0x1762=['vue',_0x1a10('0xc'),'^3.7.5',_0x1a10('0xb'),'^7.2.3',_0x1a10('0x10'),_0x1a10('0x1'),_0x1a10('0x8'),_0x1a10('0x20'),_0x1a10('0x3'),_0x1a10('0xe'),'\x22^5.1.2\x22','resolvedDependencies','vueEslint',_0x1a10('0x5'),_0x1a10('0x17'),_0x1a10('0x4'),_0x1a10('0x1c'),_0x1a10('0x21'),'hasTypescript','hasMobile'];!function(_0x3849c2){!function(_0x513a12){for(;--_0x513a12;)_0x3849c2[_0x1a10('0x12')](_0x3849c2['shift']());}(0x1c9);}(_0x1762);var _0x354e=function(_0x57ce8f,_0x19ef56){return _0x1762[_0x57ce8f=+_0x57ce8f];};exports[_0x354e(_0x1a10('0x14'))]=!0x0;var cli_shared_utils_1=require(_0x354e(_0x1a10('0x1f'))),resolvedLartplusCliVersion_1=require(_0x354e(_0x1a10('0x13'))),LARTPLUS_VERSION_STR=resolvedLartplusCliVersion_1[_0x354e(_0x1a10('0x16'))](),DEV_DEPENDENCIES={'base':{'@lartplus/cli-service':LARTPLUS_VERSION_STR},'vue':{'@lartplus/cli-generator-vue':LARTPLUS_VERSION_STR,'@lartplus/cli-service-vue':LARTPLUS_VERSION_STR,'@lartplus/cli-babel-vue':LARTPLUS_VERSION_STR,'@lartplus/cli-prettier-vue':LARTPLUS_VERSION_STR},'react':{'@lartplus/cli-generator-react':LARTPLUS_VERSION_STR,'@lartplus/cli-service-react':LARTPLUS_VERSION_STR,'@lartplus/cli-babel-react':LARTPLUS_VERSION_STR},'typescript':{'typescript':_0x354e('0x8'),'@lartplus/cli-babel-typescript':LARTPLUS_VERSION_STR},'vueEslint':{'@lartplus/cli-eslint-vue':LARTPLUS_VERSION_STR},'reactEslint':{'@lartplus/cli-eslint-react':LARTPLUS_VERSION_STR},'mobile':{'@lartplus/cli-postcss':LARTPLUS_VERSION_STR}},DEPENDENCIES={'vue':{'vue':_0x354e(_0x1a10('0x19')),'vue-router':_0x1a10('0x1d')},'react':{'react':_0x354e('0x7'),'@hot-loader/react-dom':_0x354e(_0x1a10('0xf')),'react-router-dom':_0x354e(_0x1a10('0x6'))}};exports[_0x354e(_0x1a10('0x2'))]=function(_0x434028,_0x3ce472){var _0x2e818f=cli_shared_utils_1[_0x354e(_0x1a10('0x1e'))](_0x434028),_0x7b043b=cli_shared_utils_1[_0x354e('0x4')](_0x434028),_0x946e63=cli_shared_utils_1[_0x1a10('0x1b')](_0x434028),_0x152efa=cli_shared_utils_1[_0x354e(_0x1a10('0x0'))](_0x434028),_0x38e877=Object[_0x354e('0x1')]({},DEV_DEPENDENCIES[_0x354e(_0x1a10('0x11'))],DEV_DEPENDENCIES[_0x2e818f]),_0x17a32b=Object[_0x354e(_0x1a10('0xd'))]({},DEPENDENCIES[_0x2e818f]);return _0x7b043b&&(Object[_0x354e('0x1')](_0x38e877,DEV_DEPENDENCIES[_0x1a10('0xa')]),Object[_0x354e('0x1')](_0x17a32b,{'vue-class-component':_0x354e('0xa'),'vue-property-decorator':_0x354e(_0x1a10('0x15'))})),_0x946e63&&Object[_0x354e('0x1')](_0x38e877,_0x354e(_0x1a10('0x1a'))===_0x2e818f?DEV_DEPENDENCIES[_0x354e(_0x1a10('0x7'))]:DEV_DEPENDENCIES[_0x354e(_0x1a10('0x18'))]),_0x152efa&&Object[_0x1a10('0x4')](_0x38e877,DEV_DEPENDENCIES[_0x354e(_0x1a10('0x9'))]),{'dependencies':_0x17a32b,'devDependencies':_0x38e877};};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-28 17:22:08
+ * @LastEditTime : 2020-05-15 11:05:02
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var resolvedLartplusCliVersion_1 = require("./resolvedLartplusCliVersion");
+var LARTPLUS_VERSION_STR = resolvedLartplusCliVersion_1.resolvedLartplusCliVersion();
+var DEV_DEPENDENCIES = {
+    base: {
+        "@lartplus/cli-service": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-postcss": LARTPLUS_VERSION_STR
+    },
+    vue: {
+        "@lartplus/cli-generator-vue": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-service-vue": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-babel-vue": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-prettier-vue": LARTPLUS_VERSION_STR
+    },
+    react: {
+        "@lartplus/cli-generator-react": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-service-react": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-babel-react": LARTPLUS_VERSION_STR
+    },
+    typescript: {
+        "typescript": "^3.7.5",
+        "@lartplus/cli-babel-typescript": LARTPLUS_VERSION_STR
+    },
+    vueEslint: {
+        "@lartplus/cli-eslint-vue": LARTPLUS_VERSION_STR
+    },
+    reactEslint: {
+        "@lartplus/cli-eslint-react": LARTPLUS_VERSION_STR
+    }
+};
+var DEPENDENCIES = {
+    "vue": {
+        "vue": "^2.6.11",
+        "vue-router": "^3.1.6"
+    },
+    "react": {
+        "react": "\"^16.13.1\",",
+        "@hot-loader/react-dom": "\"^16.10.2\",",
+        "react-router-dom": "\"^5.1.2\""
+    }
+};
+exports.resolvedDependencies = function (answers, targetPath) {
+    var framework = cli_shared_utils_1.getFrameworkName(answers);
+    var isTypescript = cli_shared_utils_1.hasTypescript(answers);
+    var isEslint = cli_shared_utils_1.hasEslint(answers);
+    // 开发依赖
+    var devDependencies = Object.assign({}, DEV_DEPENDENCIES.base, DEV_DEPENDENCIES[framework]);
+    // 上线依赖
+    var dependencies = Object.assign({}, DEPENDENCIES[framework]);
+    // typescirpt
+    if (isTypescript) {
+        Object.assign(devDependencies, DEV_DEPENDENCIES.typescript);
+        Object.assign(dependencies, {
+            "vue-class-component": "^7.2.3",
+            "vue-property-decorator": "^8.3.0"
+        });
+    }
+    ;
+    // eslint
+    if (isEslint) {
+        Object.assign(devDependencies, framework === 'vue'
+            ? DEV_DEPENDENCIES.vueEslint
+            : DEV_DEPENDENCIES.reactEslint);
+    }
+    return { dependencies: dependencies, devDependencies: devDependencies };
+};

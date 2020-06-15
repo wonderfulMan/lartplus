@@ -1,1 +1,145 @@
-var _0x7e73=['function','defineProperty','__decorate','decorate','gen_dir_start','apply','gen_package_end','download\x20dependencies...','then','label','chalk','default','push','Service','__importDefault','design:type','__metadata','length','create','trys','getOwnPropertyDescriptor','@lartplus/cli-shared-utils','done','value','projectName','gen_dir_end','下载依赖完毕！','gen_typescriptConfig_end','Generator\x20is\x20already\x20executing.','throw','success','生成tsconfig.json成功！','ora','object','promptFeature','开始生成项目文件','gen_typescriptConfig_start','pop','resolvePrompt','projectCreateEventListener','prototype','resolve_dependencies_end','ops','开始下载依赖','next','开始生成package.json文件成功！','resolve_dependencies_start','gen_package_start','__awaiter','__esModule','generator','notice','targetDir','Inject','call','return','normalLogger','clearConsole','开始生成tsconfig.json','stopAndPersist'];(function(_0x2c0cf5,_0x7e73b9){var _0x3beb2b=function(_0x909492){while(--_0x909492){_0x2c0cf5['push'](_0x2c0cf5['shift']());}};_0x3beb2b(++_0x7e73b9);}(_0x7e73,0x11d));var _0x3beb=function(_0x2c0cf5,_0x7e73b9){_0x2c0cf5=_0x2c0cf5-0x0;var _0x3beb2b=_0x7e73[_0x2c0cf5];return _0x3beb2b;};'use strict';var __decorate=this&&this[_0x3beb('0x11')]||function(_0x2e16fc,_0x234114,_0x10761e,_0x5d69dd){var _0x5a06ce,_0x3d4bd7=arguments['length'],_0x136614=_0x3d4bd7<0x3?_0x234114:null===_0x5d69dd?_0x5d69dd=Object[_0x3beb('0x23')](_0x234114,_0x10761e):_0x5d69dd;if(_0x3beb('0x30')==typeof Reflect&&_0x3beb('0xf')==typeof Reflect[_0x3beb('0x12')])_0x136614=Reflect[_0x3beb('0x12')](_0x2e16fc,_0x234114,_0x10761e,_0x5d69dd);else for(var _0x37e2f6=_0x2e16fc[_0x3beb('0x20')]-0x1;0x0<=_0x37e2f6;_0x37e2f6--)(_0x5a06ce=_0x2e16fc[_0x37e2f6])&&(_0x136614=(_0x3d4bd7<0x3?_0x5a06ce(_0x136614):0x3<_0x3d4bd7?_0x5a06ce(_0x234114,_0x10761e,_0x136614):_0x5a06ce(_0x234114,_0x10761e))||_0x136614);return 0x3<_0x3d4bd7&&_0x136614&&Object[_0x3beb('0x10')](_0x234114,_0x10761e,_0x136614),_0x136614;},__metadata=this&&this[_0x3beb('0x1f')]||function(_0x6cb3b,_0x26854a){if(_0x3beb('0x30')==typeof Reflect&&_0x3beb('0xf')==typeof Reflect['metadata'])return Reflect['metadata'](_0x6cb3b,_0x26854a);},__awaiter=this&&this[_0x3beb('0x3')]||function(_0x56141e,_0x36fc6b,_0x298fc3,_0x2df4e8){return new(_0x298fc3=_0x298fc3||Promise)(function(_0x287269,_0x1a7e18){function _0x2623a9(_0x2e1a5e){try{_0x2d769e(_0x2df4e8[_0x3beb('0x3b')](_0x2e1a5e));}catch(_0x13c011){_0x1a7e18(_0x13c011);}}function _0x33cf56(_0x2ec199){try{_0x2d769e(_0x2df4e8[_0x3beb('0x2c')](_0x2ec199));}catch(_0x40e6d4){_0x1a7e18(_0x40e6d4);}}function _0x2d769e(_0x456861){var _0x19365e;_0x456861[_0x3beb('0x25')]?_0x287269(_0x456861['value']):((_0x19365e=_0x456861['value'])instanceof _0x298fc3?_0x19365e:new _0x298fc3(function(_0x6bd890){_0x6bd890(_0x19365e);}))[_0x3beb('0x17')](_0x2623a9,_0x33cf56);}_0x2d769e((_0x2df4e8=_0x2df4e8[_0x3beb('0x14')](_0x56141e,_0x36fc6b||[]))[_0x3beb('0x3b')]());});},__generator=this&&this['__generator']||function(_0x1012c2,_0x23045e){var _0x2ca08f,_0x186269,_0x37ddb8,_0x2689d0={'label':0x0,'sent':function(){if(0x1&_0x37ddb8[0x0])throw _0x37ddb8[0x1];return _0x37ddb8[0x1];},'trys':[],'ops':[]},_0xbf4dd3={'next':_0x2702f5(0x0),'throw':_0x2702f5(0x1),'return':_0x2702f5(0x2)};return _0x3beb('0xf')==typeof Symbol&&(_0xbf4dd3[Symbol['iterator']]=function(){return this;}),_0xbf4dd3;function _0x2702f5(_0x251b09){return function(_0x428684){return function(_0x2d2ed1){if(_0x2ca08f)throw new TypeError(_0x3beb('0x2b'));for(;_0x2689d0;)try{if(_0x2ca08f=0x1,_0x186269&&(_0x37ddb8=0x2&_0x2d2ed1[0x0]?_0x186269[_0x3beb('0xa')]:_0x2d2ed1[0x0]?_0x186269[_0x3beb('0x2c')]||((_0x37ddb8=_0x186269['return'])&&_0x37ddb8[_0x3beb('0x9')](_0x186269),0x0):_0x186269[_0x3beb('0x3b')])&&!(_0x37ddb8=_0x37ddb8[_0x3beb('0x9')](_0x186269,_0x2d2ed1[0x1]))[_0x3beb('0x25')])return _0x37ddb8;switch(_0x186269=0x0,_0x37ddb8&&(_0x2d2ed1=[0x2&_0x2d2ed1[0x0],_0x37ddb8[_0x3beb('0x26')]]),_0x2d2ed1[0x0]){case 0x0:case 0x1:_0x37ddb8=_0x2d2ed1;break;case 0x4:return _0x2689d0['label']++,{'value':_0x2d2ed1[0x1],'done':!0x1};case 0x5:_0x2689d0[_0x3beb('0x18')]++,_0x186269=_0x2d2ed1[0x1],_0x2d2ed1=[0x0];continue;case 0x7:_0x2d2ed1=_0x2689d0['ops'][_0x3beb('0x34')](),_0x2689d0['trys']['pop']();continue;default:if(!(_0x37ddb8=0x0<(_0x37ddb8=_0x2689d0[_0x3beb('0x22')])['length']&&_0x37ddb8[_0x37ddb8['length']-0x1])&&(0x6===_0x2d2ed1[0x0]||0x2===_0x2d2ed1[0x0])){_0x2689d0=0x0;continue;}if(0x3===_0x2d2ed1[0x0]&&(!_0x37ddb8||_0x2d2ed1[0x1]>_0x37ddb8[0x0]&&_0x2d2ed1[0x1]<_0x37ddb8[0x3])){_0x2689d0['label']=_0x2d2ed1[0x1];break;}if(0x6===_0x2d2ed1[0x0]&&_0x2689d0['label']<_0x37ddb8[0x1]){_0x2689d0[_0x3beb('0x18')]=_0x37ddb8[0x1],_0x37ddb8=_0x2d2ed1;break;}if(_0x37ddb8&&_0x2689d0[_0x3beb('0x18')]<_0x37ddb8[0x2]){_0x2689d0[_0x3beb('0x18')]=_0x37ddb8[0x2],_0x2689d0[_0x3beb('0x39')][_0x3beb('0x1b')](_0x2d2ed1);break;}_0x37ddb8[0x2]&&_0x2689d0['ops'][_0x3beb('0x34')](),_0x2689d0[_0x3beb('0x22')][_0x3beb('0x34')]();continue;}_0x2d2ed1=_0x23045e[_0x3beb('0x9')](_0x1012c2,_0x2689d0);}catch(_0x4d7a2c){_0x2d2ed1=[0x6,_0x4d7a2c],_0x186269=0x0;}finally{_0x2ca08f=_0x37ddb8=0x0;}if(0x5&_0x2d2ed1[0x0])throw _0x2d2ed1[0x1];return{'value':_0x2d2ed1[0x0]?_0x2d2ed1[0x1]:void 0x0,'done':!0x0};}([_0x251b09,_0x428684]);};}},__importDefault=this&&this[_0x3beb('0x1d')]||function(_0x57418f){return _0x57418f&&_0x57418f[_0x3beb('0x4')]?_0x57418f:{'default':_0x57418f};};exports[_0x3beb('0x4')]=!0x0,require('reflect-metadata');var typedi_1=require('typedi'),cli_generator_1=__importDefault(require('@lartplus/cli-generator')),resolvePrompt_1=__importDefault(require('./prompt/resolvePrompt')),cli_shared_utils_1=require(_0x3beb('0x24')),Creator=function(){function _0x3b9316(){}return _0x3b9316[_0x3beb('0x37')][_0x3beb('0x21')]=function(){return __awaiter(this,void 0x0,void 0x0,function(){var _0x2a62a8;return __generator(this,function(_0x388479){switch(_0x388479[_0x3beb('0x18')]){case 0x0:return[0x4,(_0x2a62a8=this)['resolvePrompt']['executePrompt']()];case 0x1:return _0x2a62a8[_0x3beb('0x31')]=_0x388479['sent'](),this['generator']=new cli_generator_1[(_0x3beb('0x1a'))](this[_0x3beb('0x7')],this[_0x3beb('0x27')],this['promptFeature']),this[_0x3beb('0x36')](),cli_shared_utils_1[_0x3beb('0xc')](),this['generator']['create'](),[0x2];}});});},_0x3b9316[_0x3beb('0x37')][_0x3beb('0x36')]=function(){var _0x1f255f=cli_shared_utils_1[_0x3beb('0x2f')]({'text':_0x3beb('0x16')});this['generator']['on'](_0x3beb('0x2'),function(){cli_shared_utils_1[_0x3beb('0x6')][_0x3beb('0x25')](['开始生成package.json文件']);}),this[_0x3beb('0x5')]['on'](_0x3beb('0x15'),function(){cli_shared_utils_1[_0x3beb('0x6')][_0x3beb('0xb')](),cli_shared_utils_1[_0x3beb('0x6')][_0x3beb('0x25')]([_0x3beb('0x0')]);}),this[_0x3beb('0x5')]['on'](_0x3beb('0x1'),function(){cli_shared_utils_1[_0x3beb('0x6')]['normalLogger']('\x0a'),cli_shared_utils_1[_0x3beb('0x6')][_0x3beb('0x25')]([_0x3beb('0x3a')]);}),this['generator']['on'](_0x3beb('0x38'),function(){_0x1f255f[_0x3beb('0xe')]({'symbol':cli_shared_utils_1[_0x3beb('0x19')]['green']('✔'),'text':_0x3beb('0x2d')}),cli_shared_utils_1[_0x3beb('0x6')][_0x3beb('0xb')](),cli_shared_utils_1['notice']['done']([_0x3beb('0x29')]);}),this['generator']['on'](_0x3beb('0x13'),function(){cli_shared_utils_1[_0x3beb('0x6')][_0x3beb('0xb')](),cli_shared_utils_1[_0x3beb('0x6')]['done']([_0x3beb('0x32')]);}),this[_0x3beb('0x5')]['on'](_0x3beb('0x28'),function(){cli_shared_utils_1[_0x3beb('0x6')][_0x3beb('0xb')](),cli_shared_utils_1[_0x3beb('0x6')][_0x3beb('0x25')](['生成项目文件成功！']);}),this[_0x3beb('0x5')]['on'](_0x3beb('0x33'),function(){cli_shared_utils_1[_0x3beb('0x6')][_0x3beb('0xb')](),cli_shared_utils_1[_0x3beb('0x6')]['done']([_0x3beb('0xd')]);}),this[_0x3beb('0x5')]['on'](_0x3beb('0x2a'),function(){cli_shared_utils_1[_0x3beb('0x6')][_0x3beb('0xb')](),cli_shared_utils_1[_0x3beb('0x6')][_0x3beb('0x25')]([_0x3beb('0x2e')]);});},__decorate([typedi_1['Inject']('projectName'),__metadata(_0x3beb('0x1e'),String)],_0x3b9316[_0x3beb('0x37')],'projectName'),__decorate([typedi_1[_0x3beb('0x8')](_0x3beb('0x7')),__metadata('design:type',String)],_0x3b9316[_0x3beb('0x37')],_0x3beb('0x7')),__decorate([typedi_1[_0x3beb('0x8')](),__metadata('design:type',resolvePrompt_1['default'])],_0x3b9316['prototype'],_0x3beb('0x35')),_0x3b9316=__decorate([typedi_1[_0x3beb('0x1c')]()],_0x3b9316);}();exports[_0x3beb('0x1a')]=Creator;
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-20 14:22:01
+ * @LastEditTime : 2020-05-15 14:07:41
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+require("reflect-metadata");
+var typedi_1 = require("typedi");
+var cli_generator_1 = __importDefault(require("@lartplus/cli-generator"));
+var resolvePrompt_1 = __importDefault(require("./prompt/resolvePrompt"));
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var Creator = /** @class */ (function () {
+    function Creator() {
+    }
+    Creator.prototype.create = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        _a = this;
+                        return [4 /*yield*/, this.resolvePrompt.executePrompt()];
+                    case 1:
+                        _a.promptFeature = _b.sent();
+                        this.generator = new cli_generator_1["default"](this.targetDir, this.projectName, this.promptFeature);
+                        this.projectCreateEventListener();
+                        cli_shared_utils_1.clearConsole();
+                        this.generator.create();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    /**
+     * @description 项目生成监听generator对象事件
+     */
+    Creator.prototype.projectCreateEventListener = function () {
+        var or = cli_shared_utils_1.ora({
+            text: 'download dependencies...'
+        });
+        this.generator.on('gen_package_start', function () {
+            cli_shared_utils_1.notice.done(['开始生成package.json文件']);
+        });
+        this.generator.on('gen_package_end', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['开始生成package.json文件成功！']);
+            // or.start()
+        });
+        this.generator.on('resolve_dependencies_start', function () {
+            cli_shared_utils_1.notice.normalLogger('\n');
+            cli_shared_utils_1.notice.done(['开始下载依赖']);
+        });
+        this.generator.on('resolve_dependencies_end', function () {
+            or.stopAndPersist({
+                symbol: cli_shared_utils_1.chalk.green('✔'),
+                text: 'success'
+            });
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['下载依赖完毕！']);
+        });
+        this.generator.on('gen_dir_start', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['开始生成项目文件']);
+        });
+        this.generator.on('gen_dir_end', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['生成项目文件成功！']);
+        });
+        this.generator.on('gen_typescriptConfig_start', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['开始生成tsconfig.json']);
+        });
+        this.generator.on('gen_typescriptConfig_end', function () {
+            cli_shared_utils_1.notice.normalLogger();
+            cli_shared_utils_1.notice.done(['生成tsconfig.json成功！']);
+        });
+    };
+    __decorate([
+        typedi_1.Inject('projectName'),
+        __metadata("design:type", String)
+    ], Creator.prototype, "projectName");
+    __decorate([
+        typedi_1.Inject('targetDir'),
+        __metadata("design:type", String)
+    ], Creator.prototype, "targetDir");
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", resolvePrompt_1["default"])
+    ], Creator.prototype, "resolvePrompt");
+    Creator = __decorate([
+        typedi_1.Service()
+    ], Creator);
+    return Creator;
+}());
+exports["default"] = Creator;
