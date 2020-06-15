@@ -4,3 +4,4 @@ packages/**/src/**/*
 packages/test
 packages/test-inner
 gulpfile.js
+.nvmrc
