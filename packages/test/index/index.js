@@ -1,0 +1,1 @@
+console.error('../../../node_modules/.bin/tsc -w');
