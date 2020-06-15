@@ -6,7 +6,7 @@
     "packages/common/cli*",
     "packages/react/cli*",
     "packages/vue/cli*",
-    "packages/test"
+    "packages/test-inner"
   ],
   "npmClient": "yarn",
   "npmClientArgs": [
