@@ -1,7 +1,7 @@
 node_modules
 packages/**/node_modules/**/*
 packages/**/src/**/*
-packages/test
-packages/test-inner
+# packages/test
+# packages/test-inner
 gulpfile.js
 .nvmrc
