@@ -8,10 +8,11 @@ exports.__esModule = true;
  */
 var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
 exports.hasTypescript = function (answers) {
-    if (answers.feature) {
+    var _a;
+    if ((_a = answers) === null || _a === void 0 ? void 0 : _a.feature) {
         return answers.feature.includes('typescript');
     }
-    else if (typeof answers.typescript === 'boolean') {
+    else if (answers && typeof answers.typescript === 'boolean') {
         return answers.typescript || false;
     }
     else {
@@ -33,10 +34,11 @@ exports.getFrameworkName = function (answers) {
 };
 exports.getEslintConfig = function (answers) { return answers.eslintConfig; };
 exports.hasEslint = function (answers) {
-    if (answers.feature) {
+    var _a;
+    if ((_a = answers) === null || _a === void 0 ? void 0 : _a.feature) {
         return answers.feature.includes('linter');
     }
-    else if (typeof answers.linter === 'boolean') {
+    else if (answers && typeof answers.linter === 'boolean') {
         return answers.linter || false;
     }
     else {

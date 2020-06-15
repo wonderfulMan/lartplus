@@ -15,8 +15,8 @@ var CreateEslintRules = /** @class */ (function () {
     }
     CreateEslintRules.prototype.createRules = function () {
         var _a = this.context, cwdPath = _a.cwdPath, configFile = _a.configFile;
-        var framework = configFile.framework, lintOnSave = configFile.lintOnSave;
-        var eslintModulePath = cli_shared_utils_1.getCliModule(cli_config_1.PATHS.getLartPlusModulePath(cwdPath), 'eslint', framework);
+        var _b = configFile.lintOnSave, lintOnSave = _b === void 0 ? false : _b;
+        var eslintModulePath = cli_shared_utils_1.getCliModule(cli_config_1.PATHS.getLartPlusModulePath(cwdPath), 'eslint', cli_shared_utils_1.getFrameworkName(this.context.configFile));
         var exportExtensions = require(eslintModulePath).exportExtensions;
         var emitWarning = lintOnSave === true || lintOnSave === 'warning';
         var emitError = lintOnSave === 'error';
