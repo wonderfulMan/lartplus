@@ -1,1 +1,47 @@
-var _0x1101=['vue','setVueFile','@lartplus/cli-shared-utils','use','./createCss','chain','CreateStyleVueRules','buildAll','vue-loader','options','buildLint','CreateEslintRules','context','module','plugin','prototype','setEslint','vue-loader/lib/plugin','maybeLoader','setStyle','CreateVueConfig','__esModule'];(function(_0x12b2e8,_0x1101d8){var _0x43676b=function(_0x2d0bf3){while(--_0x2d0bf3){_0x12b2e8['push'](_0x12b2e8['shift']());}};_0x43676b(++_0x1101d8);}(_0x1101,0xb2));var _0x4367=function(_0x12b2e8,_0x1101d8){_0x12b2e8=_0x12b2e8-0x0;var _0x43676b=_0x1101[_0x12b2e8];return _0x43676b;};'use strict';exports[_0x4367('0x13')]=!0x0;var cli_shared_utils_1=require(_0x4367('0x0')),cli_config_1=require('@lartplus/cli-config'),createCss_1=require(_0x4367('0x2')),createEslintRules_1=require('./createEslintRules'),CreateVueConfig=function(){function _0x34f70c(_0x3787b0,_0x3696f1){this[_0x4367('0xa')]=_0x3787b0,this[_0x4367('0x3')]=_0x3696f1;}return _0x34f70c[_0x4367('0xd')][_0x4367('0x11')]=function(){new createCss_1[(_0x4367('0x4'))](this['context'],this[_0x4367('0x3')])['buildStyle']();},_0x34f70c['prototype'][_0x4367('0xe')]=function(){new createEslintRules_1[(_0x4367('0x9'))](this[_0x4367('0xa')],this['chain'])[_0x4367('0x8')]();},_0x34f70c[_0x4367('0xd')][_0x4367('0x15')]=function(){this[_0x4367('0x3')][_0x4367('0xb')]['rule'](_0x4367('0x14'))['test'](cli_config_1['LANGUAGE_TYPE']['VUE'])[_0x4367('0x1')](_0x4367('0x6'))['loader'](cli_shared_utils_1[_0x4367('0x10')](_0x4367('0x6')))[_0x4367('0x7')]({'compilerOptions':{'preserveWhitespace':!0x1}}),this[_0x4367('0x3')][_0x4367('0xc')]('vue-loader-plugin')[_0x4367('0x1')](cli_shared_utils_1[_0x4367('0x10')](_0x4367('0xf')));},_0x34f70c[_0x4367('0xd')][_0x4367('0x5')]=function(){this[_0x4367('0x11')](),this[_0x4367('0xe')](),this['setVueFile']();},_0x34f70c;}();exports[_0x4367('0x12')]=CreateVueConfig;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-10 17:15:48
+ * @LastEditTime : 2020-05-14 10:48:11
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_config_1 = require("@lartplus/cli-config");
+var createCss_1 = require("./createCss");
+var createEslintRules_1 = require("./createEslintRules");
+var CreateVueConfig = /** @class */ (function () {
+    function CreateVueConfig(context, chain) {
+        this.context = context;
+        this.chain = chain;
+    }
+    CreateVueConfig.prototype.setStyle = function () {
+        var createCss = new createCss_1.CreateStyleVueRules(this.context, this.chain);
+        createCss.buildStyle();
+    };
+    CreateVueConfig.prototype.setEslint = function () {
+        var createEslint = new createEslintRules_1.CreateEslintRules(this.context, this.chain);
+        createEslint.buildLint();
+    };
+    CreateVueConfig.prototype.setVueFile = function () {
+        this.chain.module
+            .rule('vue')
+            .test(cli_config_1.LANGUAGE_TYPE.VUE)
+            .use('vue-loader')
+            .loader(cli_shared_utils_1.maybeLoader('vue-loader'))
+            .options({
+            compilerOptions: {
+                preserveWhitespace: false
+            }
+        });
+        this.chain.plugin('vue-loader-plugin')
+            .use(cli_shared_utils_1.maybeLoader('vue-loader/lib/plugin'));
+    };
+    CreateVueConfig.prototype.buildAll = function () {
+        this.setStyle();
+        this.setEslint();
+        this.setVueFile();
+    };
+    return CreateVueConfig;
+}());
+exports.CreateVueConfig = CreateVueConfig;

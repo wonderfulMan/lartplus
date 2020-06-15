@@ -1,1 +1,15 @@
-var _0x3c68=['__esModule','.ts','.vue','.tsx','exportExtensions','.jsx'];(function(_0x3c0913,_0x3c68c2){var _0x10a686=function(_0x14ffc5){while(--_0x14ffc5){_0x3c0913['push'](_0x3c0913['shift']());}};_0x10a686(++_0x3c68c2);}(_0x3c68,0x160));var _0x10a6=function(_0x3c0913,_0x3c68c2){_0x3c0913=_0x3c0913-0x0;var _0x10a686=_0x3c68[_0x3c0913];return _0x10a686;};'use strict';exports[_0x10a6('0x2')]=!0x0;var baseExtensions=['.js',_0x10a6('0x1'),_0x10a6('0x4')];function exportExtensions(_0x49be79){return _0x49be79?baseExtensions['concat'](_0x10a6('0x3'),_0x10a6('0x5')):baseExtensions;}exports[_0x10a6('0x0')]=exportExtensions;
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-06 17:19:43
+ * @LastEditTime : 2020-05-06 17:21:27
+ */
+exports.__esModule = true;
+var baseExtensions = ['.js', '.jsx', '.vue'];
+function exportExtensions(hasTypescript) {
+    return hasTypescript
+        ? baseExtensions.concat('.ts', '.tsx')
+        : baseExtensions;
+}
+exports.exportExtensions = exportExtensions;

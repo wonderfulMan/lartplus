@@ -1,1 +1,23 @@
-var _0x7dd1=['../../template/','genTemplateToTarget','copyTemplate','javascript','__esModule','typescript','resolve','path','hasTypescript'];(function(_0x5ba941,_0x7dd183){var _0x4938fa=function(_0x5d8b86){while(--_0x5d8b86){_0x5ba941['push'](_0x5ba941['shift']());}};_0x4938fa(++_0x7dd183);}(_0x7dd1,0x1e5));var _0x4938=function(_0x5ba941,_0x7dd183){_0x5ba941=_0x5ba941-0x0;var _0x4938fa=_0x7dd1[_0x5ba941];return _0x4938fa;};'use strict';var __importDefault=this&&this['__importDefault']||function(_0x598749){return _0x598749&&_0x598749[_0x4938('0x5')]?_0x598749:{'default':_0x598749};};exports[_0x4938('0x5')]=!0x0;var path_1=__importDefault(require(_0x4938('0x8'))),cli_shared_utils_1=require('@lartplus/cli-shared-utils'),cli_shared_utils_2=require('@lartplus/cli-shared-utils'),choiseTemplateType=function(_0x2a44e9){var _0x48aba7=cli_shared_utils_1[_0x4938('0x0')](_0x2a44e9)?_0x4938('0x6'):_0x4938('0x4');return path_1['default'][_0x4938('0x7')](__dirname,_0x4938('0x1')+_0x48aba7);};exports[_0x4938('0x2')]=function(_0x36e2de,_0x1e4927){var _0x5cb895=choiseTemplateType(_0x36e2de);cli_shared_utils_2[_0x4938('0x3')](_0x1e4927,_0x5cb895);};
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-24 10:17:22
+ * @LastEditTime : 2020-05-02 15:57:26
+ */
+var path_1 = __importDefault(require("path"));
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_shared_utils_2 = require("@lartplus/cli-shared-utils");
+var choiseTemplateType = function (answers) {
+    var isTypescript = cli_shared_utils_1.hasTypescript(answers);
+    var baseDir = isTypescript ? 'typescript' : 'javascript';
+    return path_1["default"].resolve(__dirname, "../../template/" + baseDir);
+};
+exports.genTemplateToTarget = function (answers, target) {
+    var templateDirPath = choiseTemplateType(answers);
+    cli_shared_utils_2.copyTemplate(target, templateDirPath);
+};

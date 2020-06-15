@@ -1,1 +1,46 @@
-var _0x1b3d=['object','eslint格式化与配置','default','includes','config','decorate','list','eslintConfig','defineProperty','__esModule','ESLint\x20+\x20Standard\x20config\x20+\x20Prettier','Service','feature','ESLint\x20+\x20Prettier','prettier','getOwnPropertyDescriptor','typedi','length','__decorate','prototype','standard'];(function(_0x2ca5c2,_0x1b3d88){var _0x1c9f1d=function(_0x34bc99){while(--_0x34bc99){_0x2ca5c2['push'](_0x2ca5c2['shift']());}};_0x1c9f1d(++_0x1b3d88);}(_0x1b3d,0x11f));var _0x1c9f=function(_0x2ca5c2,_0x1b3d88){_0x2ca5c2=_0x2ca5c2-0x0;var _0x1c9f1d=_0x1b3d[_0x2ca5c2];return _0x1c9f1d;};'use strict';var __decorate=this&&this[_0x1c9f('0x4')]||function(_0x3f4815,_0x7d104,_0x38c49f,_0x225df8){var _0x2c6af6,_0x32b097=arguments[_0x1c9f('0x3')],_0xf02a3a=_0x32b097<0x3?_0x7d104:null===_0x225df8?_0x225df8=Object[_0x1c9f('0x1')](_0x7d104,_0x38c49f):_0x225df8;if(_0x1c9f('0x7')==typeof Reflect&&'function'==typeof Reflect[_0x1c9f('0xc')])_0xf02a3a=Reflect[_0x1c9f('0xc')](_0x3f4815,_0x7d104,_0x38c49f,_0x225df8);else for(var _0x23d662=_0x3f4815[_0x1c9f('0x3')]-0x1;0x0<=_0x23d662;_0x23d662--)(_0x2c6af6=_0x3f4815[_0x23d662])&&(_0xf02a3a=(_0x32b097<0x3?_0x2c6af6(_0xf02a3a):0x3<_0x32b097?_0x2c6af6(_0x7d104,_0x38c49f,_0xf02a3a):_0x2c6af6(_0x7d104,_0x38c49f))||_0xf02a3a);return 0x3<_0x32b097&&_0xf02a3a&&Object[_0x1c9f('0xf')](_0x7d104,_0x38c49f,_0xf02a3a),_0xf02a3a;};exports[_0x1c9f('0x10')]=!0x0;var typedi_1=require(_0x1c9f('0x2')),EslintConfig=function(){function _0x3a3388(){}return _0x3a3388[_0x1c9f('0x5')][_0x1c9f('0xb')]=function(){return{'name':_0x1c9f('0xe'),'message':_0x1c9f('0x8'),'type':_0x1c9f('0xd'),'when':function(_0x312352){return _0x312352[_0x1c9f('0x13')][_0x1c9f('0xa')]('linter');},'choices':[{'name':'ESLint\x20+\x20Airbnb\x20config\x20+\x20Prettier','value':'airbnb'},{'name':_0x1c9f('0x11'),'value':_0x1c9f('0x6')},{'name':_0x1c9f('0x14'),'value':_0x1c9f('0x0')}]};},_0x3a3388=__decorate([typedi_1[_0x1c9f('0x12')]()],_0x3a3388);}();exports[_0x1c9f('0x9')]=EslintConfig;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-26 13:31:35
+ * @LastEditTime : 2020-05-02 17:02:26
+ */
+var typedi_1 = require("typedi");
+var EslintConfig = /** @class */ (function () {
+    function EslintConfig() {
+    }
+    EslintConfig.prototype.config = function () {
+        return {
+            name: 'eslintConfig',
+            message: "eslint格式化与配置",
+            type: 'list',
+            when: function (answers) { return answers.feature.includes('linter'); },
+            choices: [
+                {
+                    name: 'ESLint + Airbnb config + Prettier',
+                    value: 'airbnb'
+                },
+                {
+                    name: 'ESLint + Standard config + Prettier',
+                    value: 'standard'
+                },
+                {
+                    name: 'ESLint + Prettier',
+                    value: 'prettier'
+                }
+            ]
+        };
+    };
+    EslintConfig = __decorate([
+        typedi_1.Service()
+    ], EslintConfig);
+    return EslintConfig;
+}());
+exports["default"] = EslintConfig;

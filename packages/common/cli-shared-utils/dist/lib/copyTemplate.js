@@ -1,1 +1,87 @@
-var _0x85ab=['function','default','notice','pipe','throw','forEach','trys','./notice','apply','label','call','return','next','__awaiter','value','exit','isDirectory','iterator','length','then','ops','existsSync','done','__esModule','fs-extra','__importDefault','Generator\x20is\x20already\x20executing.','__generator','copyTemplate','createWriteStream','pop','push'];(function(_0x1524ac,_0x85abcb){var _0x4f3122=function(_0x30915a){while(--_0x30915a){_0x1524ac['push'](_0x1524ac['shift']());}};_0x4f3122(++_0x85abcb);}(_0x85ab,0xbc));var _0x4f31=function(_0x1524ac,_0x85abcb){_0x1524ac=_0x1524ac-0x0;var _0x4f3122=_0x85ab[_0x1524ac];return _0x4f3122;};'use strict';var __awaiter=this&&this[_0x4f31('0x11')]||function(_0x1fe1e2,_0x958238,_0x10aeb4,_0x5b4c7b){return new(_0x10aeb4=_0x10aeb4||Promise)(function(_0xbbc0,_0x262d7e){function _0x26936b(_0x174876){try{_0x295cd2(_0x5b4c7b['next'](_0x174876));}catch(_0x564fff){_0x262d7e(_0x564fff);}}function _0x175ebc(_0x1dc3f2){try{_0x295cd2(_0x5b4c7b[_0x4f31('0x8')](_0x1dc3f2));}catch(_0x3dc7a5){_0x262d7e(_0x3dc7a5);}}function _0x295cd2(_0x178361){var _0x3eaf3e;_0x178361['done']?_0xbbc0(_0x178361[_0x4f31('0x12')]):((_0x3eaf3e=_0x178361[_0x4f31('0x12')])instanceof _0x10aeb4?_0x3eaf3e:new _0x10aeb4(function(_0x214f69){_0x214f69(_0x3eaf3e);}))[_0x4f31('0x17')](_0x26936b,_0x175ebc);}_0x295cd2((_0x5b4c7b=_0x5b4c7b[_0x4f31('0xc')](_0x1fe1e2,_0x958238||[]))[_0x4f31('0x10')]());});},__generator=this&&this[_0x4f31('0x1f')]||function(_0x12b8ea,_0x17776a){var _0x2bc3d4,_0x13072b,_0x3ef3b8,_0x51a800={'label':0x0,'sent':function(){if(0x1&_0x3ef3b8[0x0])throw _0x3ef3b8[0x1];return _0x3ef3b8[0x1];},'trys':[],'ops':[]},_0x5ce968={'next':_0x1e89c4(0x0),'throw':_0x1e89c4(0x1),'return':_0x1e89c4(0x2)};return _0x4f31('0x4')==typeof Symbol&&(_0x5ce968[Symbol[_0x4f31('0x15')]]=function(){return this;}),_0x5ce968;function _0x1e89c4(_0x5ccb1f){return function(_0x4bb399){return function(_0x2ef545){if(_0x2bc3d4)throw new TypeError(_0x4f31('0x1e'));for(;_0x51a800;)try{if(_0x2bc3d4=0x1,_0x13072b&&(_0x3ef3b8=0x2&_0x2ef545[0x0]?_0x13072b['return']:_0x2ef545[0x0]?_0x13072b[_0x4f31('0x8')]||((_0x3ef3b8=_0x13072b[_0x4f31('0xf')])&&_0x3ef3b8[_0x4f31('0xe')](_0x13072b),0x0):_0x13072b[_0x4f31('0x10')])&&!(_0x3ef3b8=_0x3ef3b8[_0x4f31('0xe')](_0x13072b,_0x2ef545[0x1]))[_0x4f31('0x1a')])return _0x3ef3b8;switch(_0x13072b=0x0,_0x3ef3b8&&(_0x2ef545=[0x2&_0x2ef545[0x0],_0x3ef3b8['value']]),_0x2ef545[0x0]){case 0x0:case 0x1:_0x3ef3b8=_0x2ef545;break;case 0x4:return _0x51a800[_0x4f31('0xd')]++,{'value':_0x2ef545[0x1],'done':!0x1};case 0x5:_0x51a800[_0x4f31('0xd')]++,_0x13072b=_0x2ef545[0x1],_0x2ef545=[0x0];continue;case 0x7:_0x2ef545=_0x51a800[_0x4f31('0x18')][_0x4f31('0x2')](),_0x51a800['trys']['pop']();continue;default:if(!(_0x3ef3b8=0x0<(_0x3ef3b8=_0x51a800[_0x4f31('0xa')])[_0x4f31('0x16')]&&_0x3ef3b8[_0x3ef3b8[_0x4f31('0x16')]-0x1])&&(0x6===_0x2ef545[0x0]||0x2===_0x2ef545[0x0])){_0x51a800=0x0;continue;}if(0x3===_0x2ef545[0x0]&&(!_0x3ef3b8||_0x2ef545[0x1]>_0x3ef3b8[0x0]&&_0x2ef545[0x1]<_0x3ef3b8[0x3])){_0x51a800['label']=_0x2ef545[0x1];break;}if(0x6===_0x2ef545[0x0]&&_0x51a800[_0x4f31('0xd')]<_0x3ef3b8[0x1]){_0x51a800['label']=_0x3ef3b8[0x1],_0x3ef3b8=_0x2ef545;break;}if(_0x3ef3b8&&_0x51a800[_0x4f31('0xd')]<_0x3ef3b8[0x2]){_0x51a800[_0x4f31('0xd')]=_0x3ef3b8[0x2],_0x51a800[_0x4f31('0x18')][_0x4f31('0x3')](_0x2ef545);break;}_0x3ef3b8[0x2]&&_0x51a800['ops'][_0x4f31('0x2')](),_0x51a800[_0x4f31('0xa')][_0x4f31('0x2')]();continue;}_0x2ef545=_0x17776a[_0x4f31('0xe')](_0x12b8ea,_0x51a800);}catch(_0x31ee4e){_0x2ef545=[0x6,_0x31ee4e],_0x13072b=0x0;}finally{_0x2bc3d4=_0x3ef3b8=0x0;}if(0x5&_0x2ef545[0x0])throw _0x2ef545[0x1];return{'value':_0x2ef545[0x0]?_0x2ef545[0x1]:void 0x0,'done':!0x0};}([_0x5ccb1f,_0x4bb399]);};}},__importDefault=this&&this[_0x4f31('0x1d')]||function(_0x4d6909){return _0x4d6909&&_0x4d6909[_0x4f31('0x1b')]?_0x4d6909:{'default':_0x4d6909};};exports[_0x4f31('0x1b')]=!0x0;var fs_extra_1=__importDefault(require(_0x4f31('0x1c'))),notice_1=require(_0x4f31('0xb')),mkDirDiff=function(_0x3e61d8){try{fs_extra_1['default'][_0x4f31('0x19')](_0x3e61d8)||fs_extra_1[_0x4f31('0x5')]['mkdirSync'](_0x3e61d8);}catch(_0x169d03){notice_1[_0x4f31('0x6')]['error']([_0x169d03]),process['exit'](0x0);}};exports[_0x4f31('0x0')]=function(_0x436154,_0x542682){return __awaiter(void 0x0,void 0x0,void 0x0,function(){return __generator(this,function(_0x220bfa){try{fs_extra_1['default']['readdirSync'](_0x542682)[_0x4f31('0x9')](function(_0x248840){var _0x57d503,_0x1e6fc6,_0x4cc8d8=_0x542682+'/'+_0x248840,_0x3261ff=_0x436154+'/'+_0x248840;fs_extra_1[_0x4f31('0x5')]['statSync'](_0x4cc8d8)[_0x4f31('0x14')]()?(mkDirDiff(_0x3261ff),exports['copyTemplate'](_0x3261ff,_0x4cc8d8)):(_0x57d503=fs_extra_1[_0x4f31('0x5')]['createReadStream'](_0x4cc8d8),_0x1e6fc6=fs_extra_1['default'][_0x4f31('0x1')](_0x3261ff),_0x57d503[_0x4f31('0x7')](_0x1e6fc6));});}catch(_0x3c526b){notice_1[_0x4f31('0x6')]['error']([_0x3c526b]),process[_0x4f31('0x13')](0x0);}return[0x2];});});};
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-08 14:36:45
+ * @LastEditTime : 2020-04-13 14:59:29
+ */
+var fs_extra_1 = __importDefault(require("fs-extra"));
+var notice_1 = require("./notice");
+var mkDirDiff = function (to) {
+    try {
+        if (!fs_extra_1["default"].existsSync(to)) {
+            fs_extra_1["default"].mkdirSync(to);
+        }
+    }
+    catch (err) {
+        notice_1.notice.error([err]);
+        process.exit(0);
+    }
+};
+exports.copyTemplate = function (to, from) { return __awaiter(void 0, void 0, void 0, function () {
+    var all;
+    return __generator(this, function (_a) {
+        try {
+            all = fs_extra_1["default"].readdirSync(from);
+            all.forEach(function (dir) {
+                var formPath = from + '/' + dir;
+                var toPath = to + '/' + dir;
+                var stat = fs_extra_1["default"].statSync(formPath);
+                if (stat.isDirectory()) {
+                    mkDirDiff(toPath);
+                    exports.copyTemplate(toPath, formPath);
+                }
+                else {
+                    var fsRead = fs_extra_1["default"].createReadStream(formPath);
+                    var fsWrite = fs_extra_1["default"].createWriteStream(toPath);
+                    fsRead.pipe(fsWrite);
+                }
+            });
+        }
+        catch (err) {
+            notice_1.notice.error([err]);
+            process.exit(0);
+        }
+        return [2 /*return*/];
+    });
+}); };

@@ -1,1 +1,132 @@
-var _0x1bc5=['push','cwdPath','Juice','split','trys','label','call','getModuleName','value','catch','workDir','fileTypeName','throw','../../interface','return','__extends','error','mkDirByTarget','iterator','function','getCreateFileConfig','apply','workDirPath','done','__esModule','utf-8','Generator\x20is\x20already\x20executing.','length','exit','mkdirSync','writeFileSync','__generator','filePath','/helloWorld','ops','context','__awaiter','prototype','CreateFileInterface','/index.','createPath','file','strip','next','当前文件已经存在\x20->\x20','then','create','constructor','checkRepeatFile','existsSync','pop','notice'];(function(_0x2d23bc,_0x1bc575){var _0x242656=function(_0x2289c2){while(--_0x2289c2){_0x2d23bc['push'](_0x2d23bc['shift']());}};_0x242656(++_0x1bc575);}(_0x1bc5,0x121));var _0x2426=function(_0x2d23bc,_0x1bc575){_0x2d23bc=_0x2d23bc-0x0;var _0x242656=_0x1bc5[_0x2d23bc];return _0x242656;};'use strict';var __extends=this&&this[_0x2426('0x26')]||function(){var _0x3f2163=function(_0x7e28f9,_0x2f32b1){return(_0x3f2163=Object['setPrototypeOf']||{'__proto__':[]}instanceof Array&&function(_0x327b5e,_0x588043){_0x327b5e['__proto__']=_0x588043;}||function(_0x22ce76,_0xe3fbb0){for(var _0xc2fb02 in _0xe3fbb0)_0xe3fbb0['hasOwnProperty'](_0xc2fb02)&&(_0x22ce76[_0xc2fb02]=_0xe3fbb0[_0xc2fb02]);})(_0x7e28f9,_0x2f32b1);};return function(_0x3f2f96,_0x536c0e){function _0xe81bc3(){this[_0x2426('0x12')]=_0x3f2f96;}_0x3f2163(_0x3f2f96,_0x536c0e),_0x3f2f96[_0x2426('0x8')]=null===_0x536c0e?Object[_0x2426('0x11')](_0x536c0e):(_0xe81bc3[_0x2426('0x8')]=_0x536c0e[_0x2426('0x8')],new _0xe81bc3());};}(),__awaiter=this&&this[_0x2426('0x7')]||function(_0x5d5f4d,_0x3d1ab6,_0xea1755,_0x597388){return new(_0xea1755=_0xea1755||Promise)(function(_0x47bdf0,_0x34b9fd){function _0x59e391(_0x4a3c0e){try{_0x1c6724(_0x597388[_0x2426('0xe')](_0x4a3c0e));}catch(_0x2bcf54){_0x34b9fd(_0x2bcf54);}}function _0x4b961f(_0x4ccdb2){try{_0x1c6724(_0x597388[_0x2426('0x23')](_0x4ccdb2));}catch(_0x2cdfa6){_0x34b9fd(_0x2cdfa6);}}function _0x1c6724(_0x332260){var _0x2d4a99;_0x332260[_0x2426('0x2e')]?_0x47bdf0(_0x332260['value']):((_0x2d4a99=_0x332260['value'])instanceof _0xea1755?_0x2d4a99:new _0xea1755(function(_0x361706){_0x361706(_0x2d4a99);}))[_0x2426('0x10')](_0x59e391,_0x4b961f);}_0x1c6724((_0x597388=_0x597388[_0x2426('0x2c')](_0x5d5f4d,_0x3d1ab6||[]))[_0x2426('0xe')]());});},__generator=this&&this[_0x2426('0x2')]||function(_0x675a22,_0x5a6070){var _0x522929,_0x240769,_0x493def,_0x2922cd={'label':0x0,'sent':function(){if(0x1&_0x493def[0x0])throw _0x493def[0x1];return _0x493def[0x1];},'trys':[],'ops':[]},_0x48c0c7={'next':_0x5332dc(0x0),'throw':_0x5332dc(0x1),'return':_0x5332dc(0x2)};return _0x2426('0x2a')==typeof Symbol&&(_0x48c0c7[Symbol[_0x2426('0x29')]]=function(){return this;}),_0x48c0c7;function _0x5332dc(_0x2e3ef1){return function(_0x265eba){return function(_0x37fc5a){if(_0x522929)throw new TypeError(_0x2426('0x31'));for(;_0x2922cd;)try{if(_0x522929=0x1,_0x240769&&(_0x493def=0x2&_0x37fc5a[0x0]?_0x240769[_0x2426('0x25')]:_0x37fc5a[0x0]?_0x240769[_0x2426('0x23')]||((_0x493def=_0x240769['return'])&&_0x493def[_0x2426('0x1d')](_0x240769),0x0):_0x240769[_0x2426('0xe')])&&!(_0x493def=_0x493def[_0x2426('0x1d')](_0x240769,_0x37fc5a[0x1]))[_0x2426('0x2e')])return _0x493def;switch(_0x240769=0x0,_0x493def&&(_0x37fc5a=[0x2&_0x37fc5a[0x0],_0x493def[_0x2426('0x1f')]]),_0x37fc5a[0x0]){case 0x0:case 0x1:_0x493def=_0x37fc5a;break;case 0x4:return _0x2922cd[_0x2426('0x1c')]++,{'value':_0x37fc5a[0x1],'done':!0x1};case 0x5:_0x2922cd[_0x2426('0x1c')]++,_0x240769=_0x37fc5a[0x1],_0x37fc5a=[0x0];continue;case 0x7:_0x37fc5a=_0x2922cd[_0x2426('0x5')]['pop'](),_0x2922cd['trys'][_0x2426('0x15')]();continue;default:if(!(_0x493def=0x0<(_0x493def=_0x2922cd[_0x2426('0x1b')])['length']&&_0x493def[_0x493def[_0x2426('0x32')]-0x1])&&(0x6===_0x37fc5a[0x0]||0x2===_0x37fc5a[0x0])){_0x2922cd=0x0;continue;}if(0x3===_0x37fc5a[0x0]&&(!_0x493def||_0x37fc5a[0x1]>_0x493def[0x0]&&_0x37fc5a[0x1]<_0x493def[0x3])){_0x2922cd['label']=_0x37fc5a[0x1];break;}if(0x6===_0x37fc5a[0x0]&&_0x2922cd[_0x2426('0x1c')]<_0x493def[0x1]){_0x2922cd[_0x2426('0x1c')]=_0x493def[0x1],_0x493def=_0x37fc5a;break;}if(_0x493def&&_0x2922cd[_0x2426('0x1c')]<_0x493def[0x2]){_0x2922cd[_0x2426('0x1c')]=_0x493def[0x2],_0x2922cd[_0x2426('0x5')][_0x2426('0x17')](_0x37fc5a);break;}_0x493def[0x2]&&_0x2922cd[_0x2426('0x5')][_0x2426('0x15')](),_0x2922cd[_0x2426('0x1b')][_0x2426('0x15')]();continue;}_0x37fc5a=_0x5a6070[_0x2426('0x1d')](_0x675a22,_0x2922cd);}catch(_0x2bcb28){_0x37fc5a=[0x6,_0x2bcb28],_0x240769=0x0;}finally{_0x522929=_0x493def=0x0;}if(0x5&_0x37fc5a[0x0])throw _0x37fc5a[0x1];return{'value':_0x37fc5a[0x0]?_0x37fc5a[0x1]:void 0x0,'done':!0x0};}([_0x2e3ef1,_0x265eba]);};}};exports[_0x2426('0x2f')]=!0x0;var interface_1=require(_0x2426('0x24')),cli_shared_utils_1=require('@lartplus/cli-shared-utils'),CreateFile=function(_0x491985){function _0x5f125b(_0x25f593,_0x503961,_0xcdfbc5){var _0x51381f=_0x491985['call'](this)||this;return _0x51381f[_0x2426('0x6')]=_0x25f593,_0x51381f[_0x2426('0x22')]=_0x503961,_0x51381f[_0x2426('0xc')]=_0xcdfbc5,_0x51381f[_0x2426('0x2d')]=_0x51381f[_0x2426('0x6')][_0x2426('0x18')]+'/'+_0x51381f[_0x2426('0x6')][_0x2426('0x21')],_0x51381f;}return __extends(_0x5f125b,_0x491985),_0x5f125b[_0x2426('0x8')][_0x2426('0x2b')]=function(){var _0x32821c=this['file'][_0x2426('0x1a')]('/'),_0x3ac27e=_0x32821c[_0x2426('0x32')],_0x43ce84=_0x3ac27e?0x1===_0x3ac27e?this[_0x2426('0x22')]+'/'+_0x32821c[0x0]:this[_0x2426('0x22')]+'/'+_0x32821c['join']('/'):this[_0x2426('0x22')]+'/'+this['file'],_0x3b14df=this[_0x2426('0x2d')]+'/'+_0x43ce84;this[_0x2426('0x3')]=_0x43ce84,this[_0x2426('0xb')]=_0x3b14df;},_0x5f125b[_0x2426('0x8')]['checkRepeatFile']=function(){this[_0x2426('0x2b')](),cli_shared_utils_1['fs'][_0x2426('0x14')](this['createPath'])&&(cli_shared_utils_1['notice']['error']([_0x2426('0xf')+this[_0x2426('0x3')]]),process[_0x2426('0x33')](0x0));},_0x5f125b['prototype'][_0x2426('0x1e')]=function(){var _0x1f55b4=this[_0x2426('0x3')][_0x2426('0x1a')]('/');return _0x1f55b4[_0x1f55b4['length']-0x1];},_0x5f125b[_0x2426('0x8')]['writeFile']=function(_0x14c87b,_0x2863b5,_0x38bc4){this[_0x2426('0x28')](this[_0x2426('0xc')])[_0x2426('0x20')](function(_0x187eef){return cli_shared_utils_1[_0x2426('0x16')][_0x2426('0x27')]([_0x187eef]);});var _0x282c96=this[_0x2426('0x2d')]+'/'+this[_0x2426('0x3')]+_0x2426('0xa')+_0x38bc4,_0x2bd273=cli_shared_utils_1['fs']['readFileSync'](_0x14c87b,{'encoding':_0x2426('0x30')});cli_shared_utils_1[_0x2426('0x19')]['set'](_0x2426('0xd'),!0x1);var _0x19027d=cli_shared_utils_1[_0x2426('0x19')](_0x2bd273,{'moduleName':_0x2863b5});cli_shared_utils_1['fs'][_0x2426('0x1')](_0x282c96,_0x19027d);},_0x5f125b[_0x2426('0x8')][_0x2426('0x28')]=function(_0x1d6aee){return __awaiter(this,void 0x0,void 0x0,function(){var _0x121363,_0x1cf0fa,_0x5dbf5a;return __generator(this,function(_0x3083e0){return _0x121363=_0x1d6aee[_0x2426('0x1a')]('/'),_0x1cf0fa=_0x121363[0x0],_0x5dbf5a=this[_0x2426('0x2d')]+'/'+this[_0x2426('0x22')],_0x121363['forEach'](function(_0x15cc49){cli_shared_utils_1['fs'][_0x2426('0x14')](_0x5dbf5a+'/'+_0x1cf0fa)||cli_shared_utils_1['fs'][_0x2426('0x0')](_0x5dbf5a+'/'+_0x1cf0fa),_0x1cf0fa=_0x1cf0fa+'/'+_0x15cc49;}),[0x2];});});},_0x5f125b[_0x2426('0x8')]['validataPath']=function(){return this[_0x2426('0xc')]||(cli_shared_utils_1['notice']['error'](['请输入创建文件名例如\x20'+this[_0x2426('0x22')]+_0x2426('0x4')]),process[_0x2426('0x33')](0x0)),this[_0x2426('0x13')](),!0x0;},_0x5f125b;}(interface_1[_0x2426('0x9')]);exports['CreateFile']=CreateFile;
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+exports.__esModule = true;
+var interface_1 = require("../../interface");
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-18 14:52:27
+ * @LastEditTime : 2020-03-26 18:42:55
+ */
+var CreateFile = /** @class */ (function (_super) {
+    __extends(CreateFile, _super);
+    function CreateFile(context, fileTypeName, file) {
+        var _this = _super.call(this) || this;
+        _this.context = context;
+        _this.fileTypeName = fileTypeName;
+        _this.file = file;
+        _this.workDirPath = _this.context.cwdPath + '/' + _this.context.workDir;
+        return _this;
+    }
+    CreateFile.prototype.getCreateFileConfig = function () {
+        var paths = this.file.split('/');
+        var pathsLen = paths.length;
+        var filePath = !pathsLen
+            ? this.fileTypeName + "/" + this.file
+            : pathsLen === 1
+                ? this.fileTypeName + "/" + paths[0]
+                : this.fileTypeName + "/" + paths.join('/');
+        var createPath = this.workDirPath + "/" + filePath;
+        this.filePath = filePath;
+        this.createPath = createPath;
+    };
+    CreateFile.prototype.checkRepeatFile = function () {
+        this.getCreateFileConfig();
+        // 长度为1 直接在当前components读取文件
+        var isExists = cli_shared_utils_1.fs.existsSync(this.createPath);
+        if (isExists) {
+            cli_shared_utils_1.notice.error(["\u5F53\u524D\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728 -> " + this.filePath]);
+            process.exit(0);
+        }
+    };
+    CreateFile.prototype.getModuleName = function () {
+        var filesArr = this.filePath.split('/');
+        return filesArr[filesArr.length - 1];
+    };
+    CreateFile.prototype.writeFile = function (tplPath, moduleName, suffix) {
+        this.mkDirByTarget(this.file)["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); });
+        var writeDir = this.workDirPath + "/" + this.filePath;
+        var writeFile = writeDir + "/index." + suffix;
+        var template = cli_shared_utils_1.fs.readFileSync(tplPath, { encoding: "utf-8" });
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        cli_shared_utils_1.Juice.set('strip', false);
+        var content = cli_shared_utils_1.Juice(template, { moduleName: moduleName });
+        cli_shared_utils_1.fs.writeFileSync(writeFile, content);
+    };
+    CreateFile.prototype.mkDirByTarget = function (dir) {
+        return __awaiter(this, void 0, void 0, function () {
+            var arr, dirs, baseDir;
+            return __generator(this, function (_a) {
+                arr = dir.split('/');
+                dirs = arr[0];
+                baseDir = this.workDirPath + "/" + this.fileTypeName;
+                arr.forEach(function (it) {
+                    if (!cli_shared_utils_1.fs.existsSync(baseDir + "/" + dirs)) {
+                        cli_shared_utils_1.fs.mkdirSync(baseDir + "/" + dirs);
+                    }
+                    dirs = dirs + '/' + it;
+                });
+                return [2 /*return*/];
+            });
+        });
+    };
+    CreateFile.prototype.validataPath = function () {
+        if (!this.file) {
+            cli_shared_utils_1.notice.error(["\u8BF7\u8F93\u5165\u521B\u5EFA\u6587\u4EF6\u540D\u4F8B\u5982 " + this.fileTypeName + "/helloWorld"]);
+            process.exit(0);
+        }
+        this.checkRepeatFile();
+        return true;
+    };
+    return CreateFile;
+}(interface_1.CreateFileInterface));
+exports.CreateFile = CreateFile;

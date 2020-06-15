@@ -1,1 +1,18 @@
-var _0x5044=['packageName','__esModule','cwd','getPackageModule'];(function(_0x167a4a,_0x50442f){var _0x101d55=function(_0x5dd199){while(--_0x5dd199){_0x167a4a['push'](_0x167a4a['shift']());}};_0x101d55(++_0x50442f);}(_0x5044,0xc2));var _0x101d=function(_0x167a4a,_0x50442f){_0x167a4a=_0x167a4a-0x0;var _0x101d55=_0x5044[_0x167a4a];return _0x101d55;};'use strict';function getPackageModule(_0x1534a6){try{return require(process[_0x101d('0x0')]()+'/package.json')['devDependencies'][_0x101d('0x2')]||!0x1;}catch(_0x1ee8ea){return!0x1;}}exports[_0x101d('0x3')]=!0x0,exports[_0x101d('0x1')]=getPackageModule;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-15 11:13:06
+ * @LastEditTime : 2020-05-15 13:31:00
+ */
+function getPackageModule(string) {
+    try {
+        var requireJson = require(process.cwd() + "/package.json");
+        return requireJson.devDependencies[packageName] || false;
+    }
+    catch (error) {
+        return false;
+    }
+}
+exports.getPackageModule = getPackageModule;

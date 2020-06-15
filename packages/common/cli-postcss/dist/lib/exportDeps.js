@@ -1,1 +1,26 @@
-var _0x4cef=['@lartplus/cli-shared-utils','exportGetDeps','^9.7.5','base','assign','mobile','^4.11.1','hasMobile','__esModule'];(function(_0x295356,_0x4cef80){var _0x324d8c=function(_0x2acd76){while(--_0x2acd76){_0x295356['push'](_0x295356['shift']());}};_0x324d8c(++_0x4cef80);}(_0x4cef,0x111));var _0x324d=function(_0x295356,_0x4cef80){_0x295356=_0x295356-0x0;var _0x324d8c=_0x4cef[_0x295356];return _0x324d8c;};'use strict';exports[_0x324d('0x5')]=!0x0;var cli_shared_utils_1=require(_0x324d('0x6')),DEV_DEPENDENCIES={'base':{'browserslist':_0x324d('0x3'),'autoprefixer':_0x324d('0x8')},'mobile':{'postcss-px-to-viewport':'^1.1.1'}};exports[_0x324d('0x7')]=function(_0x421afb){var _0x31b760=cli_shared_utils_1[_0x324d('0x4')](_0x421afb),_0x25ae97=Object[_0x324d('0x1')]({},DEV_DEPENDENCIES[_0x324d('0x0')]);return _0x31b760&&Object['assign'](_0x25ae97,DEV_DEPENDENCIES[_0x324d('0x2')]),_0x25ae97;};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 15:42:23
+ * @LastEditTime : 2020-05-14 17:51:53
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var DEV_DEPENDENCIES = {
+    base: {
+        "browserslist": "^4.11.1",
+        "autoprefixer": "^9.7.5"
+    },
+    mobile: {
+        "postcss-px-to-viewport": "^1.1.1"
+    }
+};
+exports.exportGetDeps = function (answers) {
+    var isMobile = cli_shared_utils_1.hasMobile(answers);
+    var deps = Object.assign({}, DEV_DEPENDENCIES.base);
+    if (isMobile) {
+        Object.assign(deps, DEV_DEPENDENCIES.mobile);
+    }
+    return deps;
+};

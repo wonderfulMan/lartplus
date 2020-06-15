@@ -1,1 +1,14 @@
-var _0x295b=['htmlPluginFilename','appName','__esModule','/index.html'];(function(_0x248ff6,_0x295bbd){var _0x168588=function(_0x150ba5){while(--_0x150ba5){_0x248ff6['push'](_0x248ff6['shift']());}};_0x168588(++_0x295bbd);}(_0x295b,0xfd));var _0x1685=function(_0x248ff6,_0x295bbd){_0x248ff6=_0x248ff6-0x0;var _0x168588=_0x295b[_0x248ff6];return _0x168588;};'use strict';exports[_0x1685('0x1')]=!0x0;var htmlPluginFilename=function(_0x5f14cc,_0x46afb9,_0x60eec9){return _0x46afb9[_0x1685('0x0')]+_0x1685('0x2');};exports[_0x1685('0x3')]=htmlPluginFilename;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-26 15:01:29
+ * @LastEditTime : 2020-04-14 17:47:50
+ */
+var htmlPluginFilename = function (mode, entriesMapItem, templateConfig) {
+    // const userConfigBaseFilename = `${entriesMapItem.appName}/${templateConfig.filename}`;
+    var innerbaseFilename = entriesMapItem.appName + "/index.html";
+    return innerbaseFilename;
+};
+exports.htmlPluginFilename = htmlPluginFilename;

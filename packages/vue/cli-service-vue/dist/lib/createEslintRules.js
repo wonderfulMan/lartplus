@@ -1,1 +1,57 @@
-var _0x4307=['eslint','/package.json','exportExtensions','typescript','error','linter','PATHS','cwdPath','framework','createRules','module','warning','getLartPlusModulePath','exclude','use','context','add','maybeLoader','lintOnSave','configFile','test','end','prototype','ESLINT','chain','LANGUAGE_TYPE','__esModule','@lartplus/cli-shared-utils','eslint-loader'];(function(_0x116cbe,_0x43079c){var _0x5c607b=function(_0x42480d){while(--_0x42480d){_0x116cbe['push'](_0x116cbe['shift']());}};_0x5c607b(++_0x43079c);}(_0x4307,0xad));var _0x5c60=function(_0x116cbe,_0x43079c){_0x116cbe=_0x116cbe-0x0;var _0x5c607b=_0x4307[_0x116cbe];return _0x5c607b;};'use strict';exports[_0x5c60('0x1b')]=!0x0;var cli_shared_utils_1=require(_0x5c60('0x1c')),cli_config_1=require('@lartplus/cli-config'),CreateEslintRules=function(){function _0x524f1c(_0x4f75c8,_0x306414){this[_0x5c60('0x10')]=_0x4f75c8,this[_0x5c60('0x19')]=_0x306414;}return _0x524f1c[_0x5c60('0x17')][_0x5c60('0xa')]=function(){var _0x55f6ce=this['context'],_0x46ebd3=_0x55f6ce[_0x5c60('0x8')],_0x2a52b4=_0x55f6ce['configFile'],_0x396573=_0x2a52b4[_0x5c60('0x9')],_0x169b50=_0x2a52b4[_0x5c60('0x13')],_0x1d02b2=cli_shared_utils_1['getCliModule'](cli_config_1[_0x5c60('0x7')][_0x5c60('0xd')](_0x46ebd3),_0x5c60('0x1'),_0x396573),_0x2a75de=require(_0x1d02b2)[_0x5c60('0x3')],_0x2b0060=!0x0===_0x169b50||_0x5c60('0xc')===_0x169b50,_0x2fad2c=_0x5c60('0x5')===_0x169b50;this['chain'][_0x5c60('0xb')]['rule'](_0x5c60('0x1'))['pre']()[_0x5c60('0xe')][_0x5c60('0x11')](/node_modules/)[_0x5c60('0x16')]()[_0x5c60('0x15')](cli_config_1[_0x5c60('0x1a')][_0x5c60('0x18')])[_0x5c60('0xf')](_0x5c60('0x0'))['loader'](cli_shared_utils_1[_0x5c60('0x12')](_0x5c60('0x0')))['options']({'fix':!0x0,'extensions':_0x2a75de(this[_0x5c60('0x10')][_0x5c60('0x14')][_0x5c60('0x4')]),'emitWarning':_0x2b0060,'emitError':_0x2fad2c,'eslintPath':cli_shared_utils_1['maybeLoader'](_0x5c60('0x1'))});},_0x524f1c[_0x5c60('0x17')]['buildLint']=function(){(this[_0x5c60('0x10')]['configFile'][_0x5c60('0x6')]||require(this[_0x5c60('0x10')]['cwdPath']+_0x5c60('0x2'))['devDependencies'][_0x5c60('0x1')])&&this['createRules']();},_0x524f1c;}();exports['CreateEslintRules']=CreateEslintRules;
+"use strict";
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_config_1 = require("@lartplus/cli-config");
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-06 16:42:57
+ * @LastEditTime : 2020-05-14 18:00:10
+ */
+var CreateEslintRules = /** @class */ (function () {
+    function CreateEslintRules(context, chain) {
+        this.context = context;
+        this.chain = chain;
+    }
+    CreateEslintRules.prototype.createRules = function () {
+        var _a = this.context, cwdPath = _a.cwdPath, configFile = _a.configFile;
+        var framework = configFile.framework, lintOnSave = configFile.lintOnSave;
+        var eslintModulePath = cli_shared_utils_1.getCliModule(cli_config_1.PATHS.getLartPlusModulePath(cwdPath), 'eslint', framework);
+        var exportExtensions = require(eslintModulePath).exportExtensions;
+        var emitWarning = lintOnSave === true || lintOnSave === 'warning';
+        var emitError = lintOnSave === 'error';
+        this.chain.module
+            .rule('eslint')
+            .pre()
+            .exclude
+            .add(/node_modules/)
+            .end()
+            .test(cli_config_1.LANGUAGE_TYPE.ESLINT)
+            .use('eslint-loader')
+            .loader(cli_shared_utils_1.maybeLoader('eslint-loader'))
+            .options({
+            fix: true,
+            // cache: true,
+            // cacheIdentifier: Hash(new Date()),
+            extensions: exportExtensions(this.context.configFile.typescript),
+            emitWarning: emitWarning,
+            emitError: emitError,
+            eslintPath: cli_shared_utils_1.maybeLoader('eslint')
+        });
+    };
+    CreateEslintRules.prototype.buildLint = function () {
+        if (this.context.configFile.linter) {
+            this.createRules();
+        }
+        else {
+            // 初始化脚手架判断node_modules
+            var cwdPackage = require(this.context.cwdPath + "/package.json");
+            var needEslint = cwdPackage.devDependencies['eslint'];
+            if (needEslint) {
+                this.createRules();
+            }
+        }
+    };
+    return CreateEslintRules;
+}());
+exports.CreateEslintRules = CreateEslintRules;

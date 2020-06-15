@@ -1,1 +1,22 @@
-var _0x4bc9=['LANGUAGE_TYPE','__esModule'];(function(_0x26409e,_0x4bc939){var _0x3191da=function(_0x15629d){while(--_0x15629d){_0x26409e['push'](_0x26409e['shift']());}};_0x3191da(++_0x4bc939);}(_0x4bc9,0x6e));var _0x3191=function(_0x26409e,_0x4bc939){_0x26409e=_0x26409e-0x0;var _0x3191da=_0x4bc9[_0x26409e];return _0x3191da;};'use strict';exports[_0x3191('0x1')]=!0x0,exports[_0x3191('0x0')]={'JS':/\.js$/,'TS':/\.ts$/,'VUE':/\.vue$/,'CSS':/\.css$/,'LESS':/\.less$/,'STYLUS':/\.styl(us)?$/,'SASS':/\.sass$/,'SCSS':/\.scss&/,'POST':/\.p(ost)?css$/,'MODULES':/\.module\.\w+$/,'TSX':/\.tsx$/,'ESLINT':/\.(vue|(j|t)sx?)$/};
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-13 15:17:37
+ * @LastEditTime : 2020-05-06 17:15:42
+ */
+exports.__esModule = true;
+exports.LANGUAGE_TYPE = {
+    JS: /\.js$/,
+    TS: /\.ts$/,
+    VUE: /\.vue$/,
+    CSS: /\.css$/,
+    LESS: /\.less$/,
+    STYLUS: /\.styl(us)?$/,
+    SASS: /\.sass$/,
+    SCSS: /\.scss&/,
+    POST: /\.p(ost)?css$/,
+    MODULES: /\.module\.\w+$/,
+    TSX: /\.tsx$/,
+    ESLINT: /\.(vue|(j|t)sx?)$/
+};

@@ -1,1 +1,22 @@
-var _0x5a21=['checkNodeVersion','node','split','node版本必须大于','error','notice','replace','versions'];(function(_0x57a319,_0x5a2130){var _0x2ec52a=function(_0x583fd2){while(--_0x583fd2){_0x57a319['push'](_0x57a319['shift']());}};_0x2ec52a(++_0x5a2130);}(_0x5a21,0x1d4));var _0x2ec5=function(_0x57a319,_0x5a2130){_0x57a319=_0x57a319-0x0;var _0x2ec52a=_0x5a21[_0x57a319];return _0x2ec52a;};'use strict';exports['__esModule']=!0x0;var notice_1=require('./notice');function checkNodeVersion(_0x4440fd){var _0x437692=_0x4440fd[_0x2ec5('0x2')](/\>=/,''),_0x3a6381=process[_0x2ec5('0x3')][_0x2ec5('0x5')],_0x31ef19=+_0x437692['split']('.')[0x0];return!(+_0x3a6381[_0x2ec5('0x6')]('.')[0x0]<=_0x31ef19)||(notice_1[_0x2ec5('0x1')][_0x2ec5('0x0')]([_0x2ec5('0x7')+_0x437692+'以上']),!0x1);}exports[_0x2ec5('0x4')]=checkNodeVersion;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-11 09:13:41
+ * @LastEditTime : 2020-04-08 15:55:39
+ */
+var notice_1 = require("./notice");
+function checkNodeVersion(projectVersion) {
+    var requireNodeVersion = projectVersion
+        .replace(/\>=/, '');
+    var currentNodeVersion = process.versions.node;
+    var v1 = +requireNodeVersion.split('.')[0];
+    var v2 = +currentNodeVersion.split('.')[0];
+    if (v2 <= v1) {
+        notice_1.notice.error(["node\u7248\u672C\u5FC5\u987B\u5927\u4E8E" + requireNodeVersion + "\u4EE5\u4E0A"]);
+        return false;
+    }
+    return true;
+}
+exports.checkNodeVersion = checkNodeVersion;

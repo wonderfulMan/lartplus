@@ -1,1 +1,12 @@
-var _0x3661=['__esModule'];(function(_0x38e0bf,_0x3661b1){var _0x45fafa=function(_0x1b0270){while(--_0x1b0270){_0x38e0bf['push'](_0x38e0bf['shift']());}};_0x45fafa(++_0x3661b1);}(_0x3661,0x153));var _0x45fa=function(_0x38e0bf,_0x3661b1){_0x38e0bf=_0x38e0bf-0x0;var _0x45fafa=_0x3661[_0x38e0bf];return _0x45fafa;};'use strict';exports[_0x45fa('0x0')]=!0x0;var buildCompileHandler=function(){};exports['buildCompileHandler']=buildCompileHandler;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-24 10:11:12
+ * @LastEditTime : 2020-03-24 10:12:29
+ */
+var buildCompileHandler = function () {
+    return;
+};
+exports.buildCompileHandler = buildCompileHandler;

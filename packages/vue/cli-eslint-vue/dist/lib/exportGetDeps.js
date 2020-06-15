@@ -1,1 +1,47 @@
-var _0xb956=['__esModule','^5.1.2','^10.1.0','eslintConfig','@lartplus/cli-shared-utils','typescript','^5.0.2','exportGetDeps','^2.33.0','^3.1.1','assign','base','^4.2.1','^2.26.0','^2.20.2','^6.0.0','prettier','^6.2.2','^6.7.2','^1.19.1','^11.1.0'];(function(_0x2df5e6,_0xb956e4){var _0xe36a66=function(_0x132e59){while(--_0x132e59){_0x2df5e6['push'](_0x2df5e6['shift']());}};_0xe36a66(++_0xb956e4);}(_0xb956,0x125));var _0xe36a=function(_0x2df5e6,_0xb956e4){_0x2df5e6=_0x2df5e6-0x0;var _0xe36a66=_0xb956[_0x2df5e6];return _0xe36a66;};'use strict';exports[_0xe36a('0x1')]=!0x0;var cli_shared_utils_1=require(_0xe36a('0x5')),DEV_DEPENDENCIES={'base':{'eslint':_0xe36a('0x13'),'eslint-plugin-vue':_0xe36a('0x12')},'airbnb':{'@vue/eslint-config-airbnb':'^5.0.2','eslint-plugin-import':_0xe36a('0xf')},'prettier':{'@vue/eslint-config-prettier':_0xe36a('0x10'),'eslint-plugin-prettier':_0xe36a('0xa'),'prettier':_0xe36a('0x14')},'standard':{'@vue/eslint-config-standard':_0xe36a('0x2'),'eslint-plugin-import':_0xe36a('0xf'),'eslint-plugin-node':_0xe36a('0x0'),'eslint-plugin-promise':_0xe36a('0xd'),'eslint-plugin-standard':'^4.0.0'},'typescript':{'@vue/eslint-config-typescript':_0xe36a('0x7'),'@typescript-eslint/eslint-plugin':_0xe36a('0x9'),'@typescript-eslint/parser':_0xe36a('0xe')}};exports[_0xe36a('0x8')]=function(_0x38a691){var _0x138b8c=_0x38a691[_0xe36a('0x4')],_0x4adbbd=Object[_0xe36a('0xb')]({},DEV_DEPENDENCIES[_0xe36a('0xc')],DEV_DEPENDENCIES[_0xe36a('0x11')],DEV_DEPENDENCIES[_0x138b8c]);return cli_shared_utils_1['hasTypescript'](_0x38a691)?Object['assign'](_0x4adbbd,DEV_DEPENDENCIES[_0xe36a('0x6')]):Object['assign'](_0x4adbbd,{'babel-eslint':_0xe36a('0x3')}),_0x4adbbd;};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-02 16:49:18
+ * @LastEditTime : 2020-06-04 11:55:04
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var DEV_DEPENDENCIES = {
+    base: {
+        eslint: '^6.7.2',
+        'eslint-plugin-vue': '^6.2.2'
+    },
+    airbnb: {
+        '@vue/eslint-config-airbnb': '^5.0.2',
+        'eslint-plugin-import': '^2.20.2'
+    },
+    prettier: {
+        '@vue/eslint-config-prettier': '^6.0.0',
+        'eslint-plugin-prettier': '^3.1.1',
+        prettier: '^1.19.1'
+    },
+    standard: {
+        '@vue/eslint-config-standard': '^5.1.2',
+        'eslint-plugin-import': '^2.20.2',
+        'eslint-plugin-node': '^11.1.0',
+        'eslint-plugin-promise': '^4.2.1',
+        'eslint-plugin-standard': '^4.0.0'
+    },
+    "typescript": {
+        '@vue/eslint-config-typescript': '^5.0.2',
+        '@typescript-eslint/eslint-plugin': '^2.33.0',
+        '@typescript-eslint/parser': '^2.26.0'
+    }
+};
+exports.exportGetDeps = function (answers) {
+    var presets = answers.eslintConfig;
+    var deps = Object.assign({}, DEV_DEPENDENCIES.base, DEV_DEPENDENCIES.prettier, DEV_DEPENDENCIES[presets]);
+    if (cli_shared_utils_1.hasTypescript(answers)) {
+        Object.assign(deps, DEV_DEPENDENCIES.typescript);
+    }
+    else {
+        Object.assign(deps, { 'babel-eslint': '^10.1.0' });
+    }
+    return deps;
+};

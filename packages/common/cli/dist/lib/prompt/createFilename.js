@@ -1,1 +1,44 @@
-var _0x250b=['config','文件名不能超过10个字符，小于1个字符','保存配置文件名','typedi','Service','async','createPresetsFile','defineProperty','length','__decorate','decorate','default','文件名不能为空'];(function(_0x3764bc,_0x250ba7){var _0x1f0c79=function(_0x1047c0){while(--_0x1047c0){_0x3764bc['push'](_0x3764bc['shift']());}};_0x1f0c79(++_0x250ba7);}(_0x250b,0x14c));var _0x1f0c=function(_0x3764bc,_0x250ba7){_0x3764bc=_0x3764bc-0x0;var _0x1f0c79=_0x250b[_0x3764bc];return _0x1f0c79;};'use strict';var __decorate=this&&this[_0x1f0c('0x2')]||function(_0x4b8747,_0x194d43,_0x3f3c48,_0x49f859){var _0x10f444,_0x532ac0=arguments['length'],_0x591802=_0x532ac0<0x3?_0x194d43:null===_0x49f859?_0x49f859=Object['getOwnPropertyDescriptor'](_0x194d43,_0x3f3c48):_0x49f859;if('object'==typeof Reflect&&'function'==typeof Reflect[_0x1f0c('0x3')])_0x591802=Reflect[_0x1f0c('0x3')](_0x4b8747,_0x194d43,_0x3f3c48,_0x49f859);else for(var _0x17194c=_0x4b8747[_0x1f0c('0x1')]-0x1;0x0<=_0x17194c;_0x17194c--)(_0x10f444=_0x4b8747[_0x17194c])&&(_0x591802=(_0x532ac0<0x3?_0x10f444(_0x591802):0x3<_0x532ac0?_0x10f444(_0x194d43,_0x3f3c48,_0x591802):_0x10f444(_0x194d43,_0x3f3c48))||_0x591802);return 0x3<_0x532ac0&&_0x591802&&Object[_0x1f0c('0x0')](_0x194d43,_0x3f3c48,_0x591802),_0x591802;};exports['__esModule']=!0x0;var typedi_1=require(_0x1f0c('0x9')),CreateFilename=function(){function _0x566ff6(){}return _0x566ff6['prototype'][_0x1f0c('0x6')]=function(){return{'name':'createFilename','message':_0x1f0c('0x8'),'when':function(_0x520b68){return _0x520b68[_0x1f0c('0xc')];},'type':'input','validate':function(_0x4973ae){var _0x530639=this[_0x1f0c('0xb')]();return _0x4973ae||_0x530639(_0x1f0c('0x5')),(0xa<_0x4973ae['length']||_0x4973ae[_0x1f0c('0x1')]<0x1)&&_0x530639(_0x1f0c('0x7')),_0x530639(null,!0x0),!0x0;}};},_0x566ff6=__decorate([typedi_1[_0x1f0c('0xa')]()],_0x566ff6);}();exports[_0x1f0c('0x4')]=CreateFilename;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-26 14:12:44
+ * @LastEditTime : 2020-03-26 17:25:19
+ */
+var typedi_1 = require("typedi");
+var CreateFilename = /** @class */ (function () {
+    function CreateFilename() {
+    }
+    CreateFilename.prototype.config = function () {
+        return {
+            name: "createFilename",
+            message: '保存配置文件名',
+            when: function (answers) { return answers.createPresetsFile; },
+            type: 'input',
+            validate: function (input) {
+                var done = this.async();
+                if (!input) {
+                    done('文件名不能为空');
+                }
+                if (input.length > 10 || input.length < 1) {
+                    done('文件名不能超过10个字符，小于1个字符');
+                }
+                done(null, true);
+                return true;
+            }
+        };
+    };
+    CreateFilename = __decorate([
+        typedi_1.Service()
+    ], CreateFilename);
+    return CreateFilename;
+}());
+exports["default"] = CreateFilename;

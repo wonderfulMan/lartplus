@@ -1,1 +1,23 @@
-var _0x50b2=['/postcss.config.js','/.eslintrc.js','PATHS','/template/tsconfig.json.tpl','/node_modules/@lartplus','/template/babel.config.tpl','/template/lartplus.config.tpl','/package.json','/lartplus.config.js','/babel.config.js'];(function(_0x1ab27d,_0x50b24b){var _0x463c44=function(_0x4fd6ec){while(--_0x4fd6ec){_0x1ab27d['push'](_0x1ab27d['shift']());}};_0x463c44(++_0x50b24b);}(_0x50b2,0xd4));var _0x463c=function(_0x1ab27d,_0x50b24b){_0x1ab27d=_0x1ab27d-0x0;var _0x463c44=_0x50b2[_0x1ab27d];return _0x463c44;};'use strict';exports['__esModule']=!0x0,exports[_0x463c('0x0')]={'getLartPlusModulePath':function(_0x35f4e3){return _0x35f4e3+_0x463c('0x2');},'getEslintRcPath':function(_0x157916){return _0x157916+_0x463c('0x9');},'getPrettierRcPath':function(_0x5ebe93){return _0x5ebe93+'/.prettierrc.js';},'getLartPlusFilePath':function(_0x1e1ade){return _0x1e1ade+_0x463c('0x6');},'getBableConfigFilePath':function(_0x50652e){return _0x50652e+_0x463c('0x7');},'getProjectPackagePath':function(_0xe5ce10){return _0xe5ce10+_0x463c('0x5');},'getProjectTsconfigFilePath':function(_0xec7ea6){return _0xec7ea6+'/tsconfig.json';},'getPostcssConfigFilePath':function(_0x38f53a){return _0x38f53a+_0x463c('0x8');},'getLartPlusTemplatePath':function(_0x2fd459){return _0x2fd459+_0x463c('0x4');},'getLartPlusTsconfigTemplatePath':function(_0x676e6e){return _0x676e6e+_0x463c('0x1');},'getLartPlusBabelTemplatePath':function(_0x41d7b4){return _0x41d7b4+_0x463c('0x3');}};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-07 11:09:25
+ * @LastEditTime : 2020-05-14 17:25:31
+ */
+exports.PATHS = {
+    // 目标项目
+    getLartPlusModulePath: function (target) { return target + "/node_modules/@lartplus"; },
+    getEslintRcPath: function (target) { return target + "/.eslintrc.js"; },
+    getPrettierRcPath: function (target) { return target + "/.prettierrc.js"; },
+    getLartPlusFilePath: function (target) { return target + "/lartplus.config.js"; },
+    getBableConfigFilePath: function (target) { return target + "/babel.config.js"; },
+    getProjectPackagePath: function (target) { return target + "/package.json"; },
+    getProjectTsconfigFilePath: function (target) { return target + "/tsconfig.json"; },
+    getPostcssConfigFilePath: function (target) { return target + "/postcss.config.js"; },
+    // 模版
+    getLartPlusTemplatePath: function (target) { return target + "/template/lartplus.config.tpl"; },
+    getLartPlusTsconfigTemplatePath: function (target) { return target + "/template/tsconfig.json.tpl"; },
+    getLartPlusBabelTemplatePath: function (target) { return target + "/template/babel.config.tpl"; }
+};

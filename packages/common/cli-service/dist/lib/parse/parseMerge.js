@@ -1,1 +1,30 @@
-var _0xb1e7=['error','filter','length','__esModule','__assign','notice','apply','forEach','prototype','parseMerge','assign','@lartplus/cli-shared-utils','exit','entires目录下入口文件和public目录下模版文件没有一个与之对应，请检查','hasOwnProperty','dirName','appName','push'];(function(_0x1063b1,_0xb1e720){var _0x5949da=function(_0x19db0a){while(--_0x19db0a){_0x1063b1['push'](_0x1063b1['shift']());}};_0x5949da(++_0xb1e720);}(_0xb1e7,0xa8));var _0x5949=function(_0x1063b1,_0xb1e720){_0x1063b1=_0x1063b1-0x0;var _0x5949da=_0xb1e7[_0x1063b1];return _0x5949da;};'use strict';var __assign=this&&this[_0x5949('0x10')]||function(){return(__assign=Object[_0x5949('0x4')]||function(_0x2fb443){for(var _0xe06961,_0x5cc0dd=0x1,_0x2c56e6=arguments[_0x5949('0xe')];_0x5cc0dd<_0x2c56e6;_0x5cc0dd++)for(var _0x5c4a22 in _0xe06961=arguments[_0x5cc0dd])Object[_0x5949('0x2')][_0x5949('0x8')]['call'](_0xe06961,_0x5c4a22)&&(_0x2fb443[_0x5c4a22]=_0xe06961[_0x5c4a22]);return _0x2fb443;})[_0x5949('0x0')](this,arguments);};exports[_0x5949('0xf')]=!0x0;var cli_shared_utils_1=require(_0x5949('0x5')),parseMerge=function(_0x56a9a9,_0x447154){var _0x273c47=[];return _0x56a9a9[_0x5949('0x1')](function(_0x1bc0dd){var _0x3bfe48=_0x447154[_0x5949('0xd')](function(_0x1dd142){return _0x1dd142[_0x5949('0x9')]===_0x1bc0dd[_0x5949('0xa')];})[0x0];_0x3bfe48&&_0x273c47[_0x5949('0xb')](__assign(__assign({},_0x1bc0dd),{'templatePath':_0x3bfe48['templatePath']}));}),(_0x273c47=_0x273c47['filter'](Boolean))[_0x5949('0xe')]<0x1&&(cli_shared_utils_1[_0x5949('0x11')][_0x5949('0xc')]([_0x5949('0x7')]),process[_0x5949('0x6')](0x0)),_0x273c47[_0x5949('0xd')](Boolean);};exports[_0x5949('0x3')]=parseMerge;
+"use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var parseMerge = function (entries, template) {
+    var result = [];
+    entries.forEach(function (it) {
+        var isTrue = template.filter(function (temp) { return temp.dirName === it.appName; })[0];
+        if (isTrue) {
+            result.push(__assign(__assign({}, it), { templatePath: isTrue.templatePath }));
+        }
+    });
+    result = result.filter(Boolean);
+    if (result.length < 1) {
+        cli_shared_utils_1.notice.error(['entires目录下入口文件和public目录下模版文件没有一个与之对应，请检查']);
+        process.exit(0);
+    }
+    return result.filter(Boolean);
+};
+exports.parseMerge = parseMerge;

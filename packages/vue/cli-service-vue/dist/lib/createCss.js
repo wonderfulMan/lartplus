@@ -1,1 +1,116 @@
-var _0x4be2=['postcss','use','extract-css','chain','stylus','.[contenthash:8]','normal-modules','configFile','cssnano','SCSS','maybeLoader','__esModule','dev','css/[name]','[name]_[local]_[hash:base64:5]','.css','shouldExtract','buildStyle','options','mini-css-extract-plugin','css-loader','vue-style-loader','SASS','minimizer','assign','sass-loader','apploaders','test','loader','modules','createRules','extract-css-plugin','module','resourceQuery','less','vue-module','oneOf','scss','context','rule','optimize-css-assets-webpack-plugin','localIdentName','POST','prototype','STYLUS','setCssPlugin','cssFileNameWithHash','css','CSS','postcss-loader','@lartplus/cli-config','LANGUAGE_TYPE','isProd','optimization','calcCssLoaderOptions','sass','normal'];(function(_0x2d7a8e,_0x4be2bc){var _0x1d7ad0=function(_0x2a878d){while(--_0x2a878d){_0x2d7a8e['push'](_0x2d7a8e['shift']());}};_0x1d7ad0(++_0x4be2bc);}(_0x4be2,0x123));var _0x1d7a=function(_0x2d7a8e,_0x4be2bc){_0x2d7a8e=_0x2d7a8e-0x0;var _0x1d7ad0=_0x4be2[_0x2d7a8e];return _0x1d7ad0;};'use strict';exports[_0x1d7a('0x5')]=!0x0;var cli_shared_utils_1=require('@lartplus/cli-shared-utils'),cli_config_1=require(_0x1d7a('0x2c')),CreateStyleVueRules=function(){function _0x12924b(_0x2843f1,_0x4e0b17){this['context']=_0x2843f1,this['chain']=_0x4e0b17,this[_0x1d7a('0x2e')]=_0x1d7a('0x6')!==this[_0x1d7a('0x20')]['mode'],this['shouldExtract']=!this[_0x1d7a('0x2e')];}return _0x12924b[_0x1d7a('0x25')][_0x1d7a('0x14')]=function(_0x2004d9,_0x40a24b,_0xbdc556,_0x9ac477){var _0x47073d,_0x1ba6ee=(null===(_0x47073d=this['context']['configFile'])||void 0x0===_0x47073d?void 0x0:_0x47073d['cssSouceMap'])||!0x0;this[_0x1d7a('0xa')]?_0x2004d9[_0x1d7a('0x34')](_0x1d7a('0x19'))[_0x1d7a('0x16')](cli_shared_utils_1[_0x1d7a('0x4')]('mini-css-extract-plugin'))['options']({'hmr':!this[_0x1d7a('0xa')]}):_0x2004d9[_0x1d7a('0x34')](_0x1d7a('0xf'))[_0x1d7a('0x16')](cli_shared_utils_1[_0x1d7a('0x4')](_0x1d7a('0xf')))[_0x1d7a('0xc')]({'sourceMap':_0x1ba6ee,'shadowMode':!0x0});var _0x2f87c2=this[_0x1d7a('0x30')](_0x1ba6ee,_0x40a24b);_0x2004d9[_0x1d7a('0x34')](_0x1d7a('0xe'))[_0x1d7a('0x16')](cli_shared_utils_1[_0x1d7a('0x4')](_0x1d7a('0xe')))[_0x1d7a('0xc')](_0x2f87c2),_0x2004d9['use']('postcss-loader')['loader'](cli_shared_utils_1[_0x1d7a('0x4')](_0x1d7a('0x2b')))[_0x1d7a('0xc')]({'sourceMap':_0x1ba6ee}),_0xbdc556&&_0x2004d9[_0x1d7a('0x34')](_0xbdc556)[_0x1d7a('0x16')](cli_shared_utils_1[_0x1d7a('0x4')](_0xbdc556))[_0x1d7a('0xc')](Object[_0x1d7a('0x12')]({'sourceMap':_0x1ba6ee},_0x9ac477));},_0x12924b[_0x1d7a('0x25')][_0x1d7a('0x18')]=function(_0x45b441,_0x111b35,_0x512073,_0x3b5f49){var _0x2dcd74=this[_0x1d7a('0x36')][_0x1d7a('0x1a')][_0x1d7a('0x21')](_0x45b441)[_0x1d7a('0x15')](_0x111b35),_0x4d8b7f=_0x2dcd74[_0x1d7a('0x1e')]('vue-normal')['resourceQuery'](/\?vue/);this[_0x1d7a('0x14')](_0x4d8b7f,!0x1,_0x512073,_0x3b5f49);var _0x4c6d85=_0x2dcd74['oneOf'](_0x1d7a('0x1d'))[_0x1d7a('0x1b')](/module/);this[_0x1d7a('0x14')](_0x4c6d85,!0x0,_0x512073,_0x3b5f49);var _0x2a419f=_0x2dcd74[_0x1d7a('0x1e')](_0x1d7a('0x32'));this[_0x1d7a('0x14')](_0x2a419f,!0x1,_0x512073,_0x3b5f49);var _0x552d6e=_0x2dcd74['oneOf'](_0x1d7a('0x0'))[_0x1d7a('0x15')](cli_config_1[_0x1d7a('0x2d')]['MODULES']);this['apploaders'](_0x552d6e,!0x0,_0x512073,_0x3b5f49);},_0x12924b[_0x1d7a('0x25')][_0x1d7a('0x30')]=function(_0x5a355a,_0x13ba0d){var _0x4ab60f={'sourceMap':_0x5a355a,'importLoaders':0x2};return _0x13ba0d&&(_0x4ab60f[_0x1d7a('0x23')]=_0x1d7a('0x8'),_0x4ab60f[_0x1d7a('0x17')]=!0x0),_0x4ab60f;},_0x12924b[_0x1d7a('0x25')][_0x1d7a('0x27')]=function(){var _0x5e0ea6,_0x342476,_0x1d7fce=_0x1d7a('0x7')+((null===(_0x5e0ea6=this[_0x1d7a('0x20')][_0x1d7a('0x1')])||void 0x0===_0x5e0ea6?void 0x0:_0x5e0ea6[_0x1d7a('0x28')])||!0x0?_0x1d7a('0x38'):'')+_0x1d7a('0x9'),_0x50b43b={'filename':_0x1d7fce,'chunkFilename':_0x1d7fce};this[_0x1d7a('0xa')]&&(this[_0x1d7a('0x36')]['plugin'](_0x1d7a('0x35'))[_0x1d7a('0x34')](cli_shared_utils_1[_0x1d7a('0x4')](_0x1d7a('0xd')),[_0x50b43b]),_0x342476={'cssProcessor':cli_shared_utils_1['maybeLoader'](_0x1d7a('0x2')),'cssProcessorOptions':{'reduceIdents':!0x1,'autoprefixer':!0x1,'safe':!0x0,'discardComments':{'removeAll':!0x0}}},this[_0x1d7a('0x2e')]&&this[_0x1d7a('0x36')][_0x1d7a('0x2f')][_0x1d7a('0x11')](_0x1d7a('0x22'))['use'](cli_shared_utils_1[_0x1d7a('0x4')](_0x1d7a('0x22')),[_0x342476]));},_0x12924b[_0x1d7a('0x25')][_0x1d7a('0xb')]=function(){this[_0x1d7a('0x18')](_0x1d7a('0x29'),cli_config_1[_0x1d7a('0x2d')][_0x1d7a('0x2a')]),this[_0x1d7a('0x18')](_0x1d7a('0x1c'),cli_config_1[_0x1d7a('0x2d')]['LESS'],'less-loader'),this[_0x1d7a('0x18')](_0x1d7a('0x37'),cli_config_1[_0x1d7a('0x2d')][_0x1d7a('0x26')],'stylus-loader'),this['createRules'](_0x1d7a('0x33'),cli_config_1[_0x1d7a('0x2d')][_0x1d7a('0x24')]),this[_0x1d7a('0x18')](_0x1d7a('0x31'),cli_config_1['LANGUAGE_TYPE'][_0x1d7a('0x10')],'sass-loader'),this[_0x1d7a('0x18')](_0x1d7a('0x1f'),cli_config_1[_0x1d7a('0x2d')][_0x1d7a('0x3')],_0x1d7a('0x13'));},_0x12924b;}();exports['CreateStyleVueRules']=CreateStyleVueRules;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-09 16:26:33
+ * @LastEditTime : 2020-04-24 14:36:27
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_config_1 = require("@lartplus/cli-config");
+var CreateStyleVueRules = /** @class */ (function () {
+    function CreateStyleVueRules(context, chain) {
+        this.context = context;
+        this.chain = chain;
+        this.isProd = this.context.mode !== 'dev';
+        this.shouldExtract = !this.isProd;
+    }
+    CreateStyleVueRules.prototype.apploaders = function (rules, isCssModules, loader, loaderOptions) {
+        var _a;
+        var sourceMap = ((_a = this.context.configFile) === null || _a === void 0 ? void 0 : _a.cssSouceMap) || true;
+        if (this.shouldExtract) {
+            rules.use('extract-css-plugin')
+                .loader(cli_shared_utils_1.maybeLoader('mini-css-extract-plugin'))
+                .options({
+                hmr: !this.shouldExtract
+            });
+        }
+        else {
+            rules.use('vue-style-loader')
+                .loader(cli_shared_utils_1.maybeLoader('vue-style-loader'))
+                .options({
+                sourceMap: sourceMap,
+                shadowMode: true
+            });
+        }
+        var cssOptions = this.calcCssLoaderOptions(sourceMap, isCssModules);
+        rules.use('css-loader')
+            .loader(cli_shared_utils_1.maybeLoader('css-loader'))
+            .options(cssOptions);
+        rules
+            .use('postcss-loader')
+            .loader(cli_shared_utils_1.maybeLoader('postcss-loader'))
+            .options({ sourceMap: sourceMap });
+        if (loader) {
+            rules.use(loader)
+                .loader(cli_shared_utils_1.maybeLoader(loader))
+                .options(Object.assign({ sourceMap: sourceMap }, loaderOptions));
+        }
+    };
+    CreateStyleVueRules.prototype.createRules = function (lang, test, loader, loaderOptions) {
+        var baseRule = this.chain.module.rule(lang).test(test);
+        // 单文件组件 普通
+        var vueNormalRule = baseRule.oneOf('vue-normal').resourceQuery(/\?vue/);
+        this.apploaders(vueNormalRule, false, loader, loaderOptions);
+        // 单文件组件 模块
+        var VueModuleRule = baseRule.oneOf('vue-module').resourceQuery(/module/);
+        this.apploaders(VueModuleRule, true, loader, loaderOptions);
+        // 外部文件 普通
+        var normalRule = baseRule.oneOf('normal');
+        this.apploaders(normalRule, false, loader, loaderOptions);
+        // 外部文件 模块
+        var normalModuleRule = baseRule.oneOf('normal-modules').test(cli_config_1.LANGUAGE_TYPE.MODULES);
+        this.apploaders(normalModuleRule, true, loader, loaderOptions);
+    };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    CreateStyleVueRules.prototype.calcCssLoaderOptions = function (sourceMap, isCssModules) {
+        var importLoaders = 2;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        var options = {
+            sourceMap: sourceMap,
+            importLoaders: importLoaders
+        };
+        if (isCssModules) {
+            options['localIdentName'] = '[name]_[local]_[hash:base64:5]';
+            options['modules'] = true;
+        }
+        return options;
+    };
+    CreateStyleVueRules.prototype.setCssPlugin = function () {
+        var _a;
+        var hasHash = ((_a = this.context.configFile) === null || _a === void 0 ? void 0 : _a.cssFileNameWithHash) || true;
+        var filename = "css/[name]" + (hasHash ? '.[contenthash:8]' : '') + ".css";
+        var chunkFilename = filename;
+        var extractOptions = { filename: filename, chunkFilename: chunkFilename };
+        if (this.shouldExtract) {
+            this.chain.plugin('extract-css')
+                .use(cli_shared_utils_1.maybeLoader('mini-css-extract-plugin'), [extractOptions]);
+            var optimizationCssOption = {
+                cssProcessor: cli_shared_utils_1.maybeLoader('cssnano'),
+                cssProcessorOptions: {
+                    reduceIdents: false,
+                    autoprefixer: false,
+                    safe: true,
+                    discardComments: {
+                        removeAll: true
+                    }
+                }
+            };
+            if (this.isProd) {
+                this.chain.optimization
+                    .minimizer('optimize-css-assets-webpack-plugin')
+                    .use(cli_shared_utils_1.maybeLoader('optimize-css-assets-webpack-plugin'), [optimizationCssOption]);
+            }
+        }
+    };
+    CreateStyleVueRules.prototype.buildStyle = function () {
+        this.createRules('css', cli_config_1.LANGUAGE_TYPE.CSS);
+        this.createRules('less', cli_config_1.LANGUAGE_TYPE.LESS, 'less-loader');
+        this.createRules('stylus', cli_config_1.LANGUAGE_TYPE.STYLUS, 'stylus-loader');
+        this.createRules('postcss', cli_config_1.LANGUAGE_TYPE.POST);
+        this.createRules('sass', cli_config_1.LANGUAGE_TYPE.SASS, 'sass-loader');
+        this.createRules('scss', cli_config_1.LANGUAGE_TYPE.SCSS, 'sass-loader');
+    };
+    return CreateStyleVueRules;
+}());
+exports.CreateStyleVueRules = CreateStyleVueRules;

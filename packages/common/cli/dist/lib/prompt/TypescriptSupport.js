@@ -1,1 +1,31 @@
-var _0x4ff7=['prototype','defineProperty','function','Service','getOwnPropertyDescriptor','typescript','__esModule','decorate'];(function(_0x3d2dfe,_0x4ff7f6){var _0x2b6392=function(_0x589716){while(--_0x589716){_0x3d2dfe['push'](_0x3d2dfe['shift']());}};_0x2b6392(++_0x4ff7f6);}(_0x4ff7,0x165));var _0x2b63=function(_0x3d2dfe,_0x4ff7f6){_0x3d2dfe=_0x3d2dfe-0x0;var _0x2b6392=_0x4ff7[_0x3d2dfe];return _0x2b6392;};'use strict';var __decorate=this&&this['__decorate']||function(_0x47761d,_0x283e74,_0x59a11c,_0x6be3fa){var _0x6ced6d,_0x241890=arguments['length'],_0x5dfede=_0x241890<0x3?_0x283e74:null===_0x6be3fa?_0x6be3fa=Object[_0x2b63('0x7')](_0x283e74,_0x59a11c):_0x6be3fa;if('object'==typeof Reflect&&_0x2b63('0x5')==typeof Reflect['decorate'])_0x5dfede=Reflect[_0x2b63('0x2')](_0x47761d,_0x283e74,_0x59a11c,_0x6be3fa);else for(var _0x4d930a=_0x47761d['length']-0x1;0x0<=_0x4d930a;_0x4d930a--)(_0x6ced6d=_0x47761d[_0x4d930a])&&(_0x5dfede=(_0x241890<0x3?_0x6ced6d(_0x5dfede):0x3<_0x241890?_0x6ced6d(_0x283e74,_0x59a11c,_0x5dfede):_0x6ced6d(_0x283e74,_0x59a11c))||_0x5dfede);return 0x3<_0x241890&&_0x5dfede&&Object[_0x2b63('0x4')](_0x283e74,_0x59a11c,_0x5dfede),_0x5dfede;};exports[_0x2b63('0x1')]=!0x0;var typedi_1=require('typedi'),TypescriptSupport=function(){function _0x21c44b(){}return _0x21c44b[_0x2b63('0x3')]['choices']=function(){return{'name':'typescript','value':_0x2b63('0x0'),'short':_0x2b63('0x0')};},_0x21c44b=__decorate([typedi_1[_0x2b63('0x6')]()],_0x21c44b);}();exports['default']=TypescriptSupport;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+var typedi_1 = require("typedi");
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-26 14:01:21
+ * @LastEditTime : 2020-01-26 14:04:49
+ */
+var TypescriptSupport = /** @class */ (function () {
+    function TypescriptSupport() {
+    }
+    TypescriptSupport.prototype.choices = function () {
+        return {
+            name: 'typescript',
+            value: 'typescript',
+            short: 'typescript'
+        };
+    };
+    TypescriptSupport = __decorate([
+        typedi_1.Service()
+    ], TypescriptSupport);
+    return TypescriptSupport;
+}());
+exports["default"] = TypescriptSupport;

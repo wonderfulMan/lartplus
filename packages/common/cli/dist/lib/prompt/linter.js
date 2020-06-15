@@ -1,1 +1,16 @@
-var _0x485d=['Linter\x20/\x20formatter','default','linter','__esModule','choices'];(function(_0x38edaf,_0x485d57){var _0x1d3286=function(_0x127e2c){while(--_0x127e2c){_0x38edaf['push'](_0x38edaf['shift']());}};_0x1d3286(++_0x485d57);}(_0x485d,0x153));var _0x1d32=function(_0x38edaf,_0x485d57){_0x38edaf=_0x38edaf-0x0;var _0x1d3286=_0x485d[_0x38edaf];return _0x1d3286;};'use strict';exports[_0x1d32('0x4')]=!0x0;var Linter=function(){function _0x2924a9(){}return _0x2924a9['prototype'][_0x1d32('0x0')]=function(){return{'name':_0x1d32('0x1'),'value':'linter','short':_0x1d32('0x3'),'checked':!0x0};},_0x2924a9;}();exports[_0x1d32('0x2')]=Linter;
+"use strict";
+exports.__esModule = true;
+var Linter = /** @class */ (function () {
+    function Linter() {
+    }
+    Linter.prototype.choices = function () {
+        return {
+            name: 'Linter / formatter',
+            value: 'linter',
+            short: 'linter',
+            checked: true
+        };
+    };
+    return Linter;
+}());
+exports["default"] = Linter;

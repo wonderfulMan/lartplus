@@ -1,1 +1,12 @@
-var _0x1bfa=['genPostcssConfigFile','./lib/exportDeps','./lib/genPostcssConfigFile','exportGetDeps','__esModule'];(function(_0xda9a2b,_0x1bfadc){var _0x161d3f=function(_0x1e7745){while(--_0x1e7745){_0xda9a2b['push'](_0xda9a2b['shift']());}};_0x161d3f(++_0x1bfadc);}(_0x1bfa,0x9d));var _0x161d=function(_0xda9a2b,_0x1bfadc){_0xda9a2b=_0xda9a2b-0x0;var _0x161d3f=_0x1bfa[_0xda9a2b];return _0x161d3f;};'use strict';exports[_0x161d('0x2')]=!0x0;var exportDeps_1=require(_0x161d('0x4'));exports[_0x161d('0x1')]=exportDeps_1[_0x161d('0x1')];var genPostcssConfigFile_1=require(_0x161d('0x0'));exports[_0x161d('0x3')]=genPostcssConfigFile_1['genPostcssConfigFile'];
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 09:37:15
+ * @LastEditTime : 2020-05-13 16:24:06
+ */
+var exportDeps_1 = require("./lib/exportDeps");
+exports.exportGetDeps = exportDeps_1.exportGetDeps;
+var genPostcssConfigFile_1 = require("./lib/genPostcssConfigFile");
+exports.genPostcssConfigFile = genPostcssConfigFile_1.genPostcssConfigFile;

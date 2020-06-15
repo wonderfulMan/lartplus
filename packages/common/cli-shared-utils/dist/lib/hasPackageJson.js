@@ -1,1 +1,20 @@
-var _0x9752=['PATHS','__esModule'];(function(_0x52c67c,_0x9752fb){var _0x512dfb=function(_0x476a93){while(--_0x476a93){_0x52c67c['push'](_0x52c67c['shift']());}};_0x512dfb(++_0x9752fb);}(_0x9752,0x1c0));var _0x512d=function(_0x52c67c,_0x9752fb){_0x52c67c=_0x52c67c-0x0;var _0x512dfb=_0x9752[_0x52c67c];return _0x512dfb;};'use strict';exports[_0x512d('0x1')]=!0x0;var cli_config_1=require('@lartplus/cli-config');function hasPackageJson(_0x1bf22e){var _0x5a5cfd=!0x1;try{_0x5a5cfd=require(cli_config_1[_0x512d('0x0')]['getProjectPackagePath'](_0x1bf22e));}catch(_0x16d176){_0x5a5cfd=!0x1;}return _0x5a5cfd;}exports['hasPackageJson']=hasPackageJson;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 16:32:44
+ * @LastEditTime : 2020-05-13 17:36:12
+ */
+var cli_config_1 = require("@lartplus/cli-config");
+function hasPackageJson(targetDir) {
+    var jsonContext = false;
+    try {
+        jsonContext = require(cli_config_1.PATHS.getProjectPackagePath(targetDir));
+    }
+    catch (error) {
+        jsonContext = false;
+    }
+    return jsonContext;
+}
+exports.hasPackageJson = hasPackageJson;

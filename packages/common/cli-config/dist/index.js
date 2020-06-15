@@ -1,1 +1,12 @@
-var _0xade6=['PATHS','./common/language','LANGUAGE_TYPE','__esModule'];(function(_0x4f9bd9,_0xade6e3){var _0x3426e6=function(_0x19c94c){while(--_0x19c94c){_0x4f9bd9['push'](_0x4f9bd9['shift']());}};_0x3426e6(++_0xade6e3);}(_0xade6,0x1b2));var _0x3426=function(_0x4f9bd9,_0xade6e3){_0x4f9bd9=_0x4f9bd9-0x0;var _0x3426e6=_0xade6[_0x4f9bd9];return _0x3426e6;};'use strict';exports[_0x3426('0x1')]=!0x0;var language_1=require(_0x3426('0x3'));exports['LANGUAGE_TYPE']=language_1[_0x3426('0x0')];var paths_1=require('./common/paths');exports[_0x3426('0x2')]=paths_1[_0x3426('0x2')];
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-24 13:45:55
+ * @LastEditTime : 2020-05-07 11:09:45
+ */
+var language_1 = require("./common/language");
+exports.LANGUAGE_TYPE = language_1.LANGUAGE_TYPE;
+var paths_1 = require("./common/paths");
+exports.PATHS = paths_1.PATHS;

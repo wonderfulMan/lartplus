@@ -1,1 +1,58 @@
-var _0x388f=['prototype','javascript','@lartplus/cli-shared-utils','configFile','babel-loader','chain','ts-babel-loader','module','loader','tsx-babel-loader','typescript','buildAll','context','use','exclude','tsx','setTypescript','LANGUAGE_TYPE','rule','setJavascript','__esModule','maybeLoader','add','end','applyLoaders'];(function(_0x2b18c3,_0x388fc5){var _0x2d17a0=function(_0x1b4f94){while(--_0x1b4f94){_0x2b18c3['push'](_0x2b18c3['shift']());}};_0x2d17a0(++_0x388fc5);}(_0x388f,0x119));var _0x2d17=function(_0x2b18c3,_0x388fc5){_0x2b18c3=_0x2b18c3-0x0;var _0x2d17a0=_0x388f[_0x2b18c3];return _0x2d17a0;};'use strict';exports[_0x2d17('0xe')]=!0x0;var cli_config_1=require('@lartplus/cli-config'),cli_shared_utils_1=require(_0x2d17('0x15')),CreateScript=function(){function _0x59838a(_0x13aa61,_0x2c5dac){this[_0x2d17('0x6')]=_0x13aa61,this[_0x2d17('0x18')]=_0x2c5dac;}return _0x59838a[_0x2d17('0x13')]['applyLoaders']=function(_0x47092e,_0x2da357,_0x2c1ef2,_0x179c62){_0x47092e['test'](_0x2da357)[_0x2d17('0x7')](_0x179c62)[_0x2d17('0x2')](cli_shared_utils_1[_0x2d17('0xf')](_0x2c1ef2));},_0x59838a[_0x2d17('0x13')][_0x2d17('0xd')]=function(){var _0x3eb3d1=this['chain'][_0x2d17('0x1')]['rule'](_0x2d17('0x14'))[_0x2d17('0x8')]['add'](/\bcore-js\b/)[_0x2d17('0x10')](/\bwebpack\/buildin\b/)[_0x2d17('0x10')](/\node_modules/)[_0x2d17('0x11')]();this[_0x2d17('0x12')](_0x3eb3d1,cli_config_1[_0x2d17('0xb')]['JS'],_0x2d17('0x17'),'js-babel-loader');},_0x59838a['prototype'][_0x2d17('0xa')]=function(){var _0x18cf53=this[_0x2d17('0x18')][_0x2d17('0x1')][_0x2d17('0xc')](_0x2d17('0x4'))[_0x2d17('0x8')]['add'](/\bcore-js\b/)[_0x2d17('0x10')](/\bwebpack\/buildin\b/)[_0x2d17('0x10')](/\node_modules/)[_0x2d17('0x11')]();this[_0x2d17('0x12')](_0x18cf53,cli_config_1[_0x2d17('0xb')]['TS'],_0x2d17('0x17'),_0x2d17('0x0'));var _0x142da0=this[_0x2d17('0x18')][_0x2d17('0x1')]['rule'](_0x2d17('0x9'))['exclude'][_0x2d17('0x10')](/\bcore-js\b/)['add'](/\bwebpack\/buildin\b/)[_0x2d17('0x10')](/\node_modules/)[_0x2d17('0x11')]();this[_0x2d17('0x12')](_0x142da0,cli_config_1[_0x2d17('0xb')]['TSX'],_0x2d17('0x17'),_0x2d17('0x3'));},_0x59838a[_0x2d17('0x13')][_0x2d17('0x5')]=function(){this[_0x2d17('0xd')](),this['context'][_0x2d17('0x16')][_0x2d17('0x4')]&&this[_0x2d17('0xa')]();},_0x59838a;}();exports['CreateScript']=CreateScript;
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-13 15:03:19
+ * @LastEditTime : 2020-05-02 14:17:47
+ */
+exports.__esModule = true;
+var cli_config_1 = require("@lartplus/cli-config");
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var CreateScript = /** @class */ (function () {
+    function CreateScript(context, chain) {
+        this.context = context;
+        this.chain = chain;
+    }
+    CreateScript.prototype.applyLoaders = function (rules, lang, loader, name) {
+        rules
+            .test(lang)
+            .use(name)
+            .loader(cli_shared_utils_1.maybeLoader(loader));
+    };
+    CreateScript.prototype.setJavascript = function () {
+        var jsModule = this.chain.module
+            .rule('javascript')
+            .exclude
+            .add(/\bcore-js\b/)
+            .add(/\bwebpack\/buildin\b/)
+            .add(/\node_modules/) // 预留
+            .end();
+        this.applyLoaders(jsModule, cli_config_1.LANGUAGE_TYPE.JS, 'babel-loader', 'js-babel-loader');
+    };
+    CreateScript.prototype.setTypescript = function () {
+        var typescriptModule = this.chain.module
+            .rule('typescript')
+            .exclude
+            .add(/\bcore-js\b/)
+            .add(/\bwebpack\/buildin\b/)
+            .add(/\node_modules/) // 预留
+            .end();
+        this.applyLoaders(typescriptModule, cli_config_1.LANGUAGE_TYPE.TS, 'babel-loader', 'ts-babel-loader');
+        var tsxModule = this.chain.module
+            .rule('tsx')
+            .exclude
+            .add(/\bcore-js\b/)
+            .add(/\bwebpack\/buildin\b/)
+            .add(/\node_modules/) // 预留
+            .end();
+        this.applyLoaders(tsxModule, cli_config_1.LANGUAGE_TYPE.TSX, 'babel-loader', 'tsx-babel-loader');
+    };
+    CreateScript.prototype.buildAll = function () {
+        this.setJavascript();
+        if (this.context.configFile.typescript) {
+            this.setTypescript();
+        }
+    };
+    return CreateScript;
+}());
+exports.CreateScript = CreateScript;

@@ -1,1 +1,15 @@
-var _0x39e1=['default','prototype','pwa','choices'];(function(_0x459fe9,_0x39e18c){var _0x1dcd5b=function(_0x5e8c0c){while(--_0x5e8c0c){_0x459fe9['push'](_0x459fe9['shift']());}};_0x1dcd5b(++_0x39e18c);}(_0x39e1,0x188));var _0x1dcd=function(_0x459fe9,_0x39e18c){_0x459fe9=_0x459fe9-0x0;var _0x1dcd5b=_0x39e1[_0x459fe9];return _0x1dcd5b;};'use strict';exports['__esModule']=!0x0;var Pwa=function(){function _0x4fa1b2(){}return _0x4fa1b2[_0x1dcd('0x1')][_0x1dcd('0x3')]=function(){return{'name':'pwa\x20support','value':'pwa','short':_0x1dcd('0x2')};},_0x4fa1b2;}();exports[_0x1dcd('0x0')]=Pwa;
+"use strict";
+exports.__esModule = true;
+var Pwa = /** @class */ (function () {
+    function Pwa() {
+    }
+    Pwa.prototype.choices = function () {
+        return {
+            name: 'pwa support',
+            value: 'pwa',
+            short: 'pwa'
+        };
+    };
+    return Pwa;
+}());
+exports["default"] = Pwa;

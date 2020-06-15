@@ -1,1 +1,60 @@
-var _0x316c=['Juice','__importDefault','success','当前目录下已有.haorc','notice','readdirSync','createHaorcFile','utf-8','__esModule','stringify','.haorc','removeSync','../../template/preset.tpl','readFileSync','removeHaorcFile','成功删除','../../template/haorc.tpl','resolve','default','warn','parse','haorcFilePath','homeDir','createPresetTemplate','@lartplus/cli-shared-utils','prototype'];(function(_0x4e4580,_0x316c0c){var _0x371edc=function(_0xa67c7b){while(--_0xa67c7b){_0x4e4580['push'](_0x4e4580['shift']());}};_0x371edc(++_0x316c0c);}(_0x316c,0x1ad));var _0x371e=function(_0x4e4580,_0x316c0c){_0x4e4580=_0x4e4580-0x0;var _0x371edc=_0x316c[_0x4e4580];return _0x371edc;};'use strict';var __importDefault=this&&this[_0x371e('0xe')]||function(_0x4272e2){return _0x4272e2&&_0x4272e2[_0x371e('0x15')]?_0x4272e2:{'default':_0x4272e2};};exports[_0x371e('0x15')]=!0x0;var path_1=__importDefault(require('path')),cli_shared_utils_1=require(_0x371e('0xb')),os_1=__importDefault(require('os')),PRESET_FILE_NAME=_0x371e('0x17'),Generator=function(){function _0x1417c6(){this[_0x371e('0x9')]=os_1[_0x371e('0x5')]['homedir'](),this['haorcFilePath']=path_1[_0x371e('0x5')]['join'](this[_0x371e('0x9')],PRESET_FILE_NAME);}return _0x1417c6[_0x371e('0xc')][_0x371e('0xa')]=function(_0x34534c){var _0x14552c=path_1[_0x371e('0x5')][_0x371e('0x4')](__dirname,_0x371e('0x19')),_0x4df09d=cli_shared_utils_1['fs']['readFileSync'](_0x14552c,{'encoding':_0x371e('0x14')});return JSON[_0x371e('0x7')](cli_shared_utils_1[_0x371e('0xd')](_0x4df09d,_0x34534c));},_0x1417c6[_0x371e('0xc')][_0x371e('0x13')]=function(_0x226442){if(!cli_shared_utils_1['fs'][_0x371e('0x0')](this['haorcFilePath']))throw cli_shared_utils_1['notice'][_0x371e('0x6')]([_0x371e('0x10')]),new Error('repeat\x20file');var _0x5b093e=path_1[_0x371e('0x5')][_0x371e('0x4')](__dirname,_0x371e('0x3')),_0x387ca4=cli_shared_utils_1['fs']['readFileSync'](_0x5b093e,{'encoding':_0x371e('0x14')}),_0x4338ef=JSON['parse'](cli_shared_utils_1[_0x371e('0xd')](_0x387ca4,_0x226442));cli_shared_utils_1['fs']['writeFileSync'](_0x4338ef,JSON[_0x371e('0x16')](_0x4338ef,null,0x2));},_0x1417c6[_0x371e('0xc')][_0x371e('0x1')]=function(){cli_shared_utils_1['fs'][_0x371e('0x12')](this[_0x371e('0x9')])['includes'](PRESET_FILE_NAME)&&(cli_shared_utils_1['fs'][_0x371e('0x18')](this[_0x371e('0x8')]),cli_shared_utils_1[_0x371e('0x11')][_0x371e('0xf')]([_0x371e('0x2')+PRESET_FILE_NAME+'文件']));},_0x1417c6;}();exports[_0x371e('0x5')]=Generator;
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-21 10:53:08
+ * @LastEditTime : 2020-03-21 12:55:36
+ */
+var path_1 = __importDefault(require("path"));
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var os_1 = __importDefault(require("os"));
+var PRESET_FILE_NAME = '.haorc';
+var Generator = /** @class */ (function () {
+    function Generator() {
+        this.homeDir = os_1["default"].homedir();
+        this.haorcFilePath = path_1["default"].join(this.homeDir, PRESET_FILE_NAME);
+    }
+    /**
+     * 创建预设模版
+     * @param presets 预设配置
+     */
+    Generator.prototype.createPresetTemplate = function (presets) {
+        var tplPath = path_1["default"].resolve(__dirname, '../../template/preset.tpl');
+        var presetsTpl = cli_shared_utils_1.fs.readFileSync(tplPath, { encoding: "utf-8" });
+        return JSON.parse(cli_shared_utils_1.Juice(presetsTpl, presets));
+    };
+    /**
+     * 生成.haorc文件
+     * @param presets 预设配置模版字符串
+     */
+    Generator.prototype.createHaorcFile = function (presets) {
+        var hasRepeatFile = cli_shared_utils_1.fs.readFileSync(this.haorcFilePath);
+        if (!hasRepeatFile) {
+            cli_shared_utils_1.notice.warn(['当前目录下已有.haorc']);
+            throw new Error('repeat file');
+        }
+        else {
+            var tplPath = path_1["default"].resolve(__dirname, '../../template/haorc.tpl');
+            var haorcTpl = cli_shared_utils_1.fs.readFileSync(tplPath, { encoding: "utf-8" });
+            var content = JSON.parse(cli_shared_utils_1.Juice(haorcTpl, presets));
+            cli_shared_utils_1.fs.writeFileSync(content, JSON.stringify(content, null, 2));
+        }
+    };
+    /**
+     * 移除。haorc模版文件
+     */
+    Generator.prototype.removeHaorcFile = function () {
+        var files = cli_shared_utils_1.fs.readdirSync(this.homeDir);
+        var hasHaorc = files.includes(PRESET_FILE_NAME);
+        if (hasHaorc) {
+            cli_shared_utils_1.fs.removeSync(this.haorcFilePath);
+            cli_shared_utils_1.notice.success(["\u6210\u529F\u5220\u9664" + PRESET_FILE_NAME + "\u6587\u4EF6"]);
+        }
+    };
+    return Generator;
+}());
+exports["default"] = Generator;

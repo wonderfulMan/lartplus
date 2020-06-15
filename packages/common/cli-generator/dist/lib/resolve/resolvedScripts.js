@@ -1,1 +1,19 @@
-var _0x15d1=['$(npm\x20bin)/lartplus-service\x20start\x20build','$(npm\x20bin)/lartplus-service\x20new\x20model','$(npm\x20bin)/lartplus-service\x20new\x20components','$(npm\x20bin)/lartplus-service\x20new\x20page','$(npm\x20bin)/lartplus-service\x20start\x20lint'];(function(_0x388143,_0x15d1c0){var _0x57c953=function(_0x5af078){while(--_0x5af078){_0x388143['push'](_0x388143['shift']());}};_0x57c953(++_0x15d1c0);}(_0x15d1,0x151));var _0x57c9=function(_0x388143,_0x15d1c0){_0x388143=_0x388143-0x0;var _0x57c953=_0x15d1[_0x388143];return _0x57c953;};'use strict';exports['__esModule']=!0x0,exports['resolvedScripts']=function(){return{'dev':'$(npm\x20bin)/lartplus-service\x20start\x20dev','build':_0x57c9('0x3'),'lint':_0x57c9('0x2'),'create:components':_0x57c9('0x0'),'create:page':_0x57c9('0x1'),'create:model':_0x57c9('0x4')};};
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-28 17:28:22
+ * @LastEditTime : 2020-05-13 17:57:15
+ */
+exports.__esModule = true;
+exports.resolvedScripts = function () {
+    var scripts = {
+        "dev": "$(npm bin)/lartplus-service start dev",
+        "build": "$(npm bin)/lartplus-service start build",
+        "lint": "$(npm bin)/lartplus-service start lint",
+        "create:components": "$(npm bin)/lartplus-service new components",
+        "create:page": "$(npm bin)/lartplus-service new page",
+        "create:model": "$(npm bin)/lartplus-service new model"
+    };
+    return scripts;
+};

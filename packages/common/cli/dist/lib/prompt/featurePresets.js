@@ -1,1 +1,63 @@
-var _0x3835=['__decorate','config','pwa','default','__importDefault','checkbox','design:type','常用功能','Service','object','defineProperty','mobile','./TypescriptSupport','Inject','feature','typescriptConfig','__metadata','__esModule','length','prototype','./mobile','metadata','choices','getOwnPropertyDescriptor','function','decorate'];(function(_0x4944ec,_0x383576){var _0x56dda0=function(_0x271de9){while(--_0x271de9){_0x4944ec['push'](_0x4944ec['shift']());}};_0x56dda0(++_0x383576);}(_0x3835,0x198));var _0x56dd=function(_0x4944ec,_0x383576){_0x4944ec=_0x4944ec-0x0;var _0x56dda0=_0x3835[_0x4944ec];return _0x56dda0;};'use strict';var __decorate=this&&this[_0x56dd('0x8')]||function(_0x27354a,_0x5e390a,_0x1bf3e7,_0xaffbfa){var _0x125431,_0x523aed=arguments[_0x56dd('0x0')],_0x80da4c=_0x523aed<0x3?_0x5e390a:null===_0xaffbfa?_0xaffbfa=Object[_0x56dd('0x5')](_0x5e390a,_0x1bf3e7):_0xaffbfa;if(_0x56dd('0x11')==typeof Reflect&&'function'==typeof Reflect[_0x56dd('0x7')])_0x80da4c=Reflect['decorate'](_0x27354a,_0x5e390a,_0x1bf3e7,_0xaffbfa);else for(var _0x74957e=_0x27354a[_0x56dd('0x0')]-0x1;0x0<=_0x74957e;_0x74957e--)(_0x125431=_0x27354a[_0x74957e])&&(_0x80da4c=(_0x523aed<0x3?_0x125431(_0x80da4c):0x3<_0x523aed?_0x125431(_0x5e390a,_0x1bf3e7,_0x80da4c):_0x125431(_0x5e390a,_0x1bf3e7))||_0x80da4c);return 0x3<_0x523aed&&_0x80da4c&&Object[_0x56dd('0x12')](_0x5e390a,_0x1bf3e7,_0x80da4c),_0x80da4c;},__metadata=this&&this[_0x56dd('0x18')]||function(_0x4628d2,_0x42fa6c){if(_0x56dd('0x11')==typeof Reflect&&_0x56dd('0x6')==typeof Reflect[_0x56dd('0x3')])return Reflect[_0x56dd('0x3')](_0x4628d2,_0x42fa6c);},__importDefault=this&&this[_0x56dd('0xc')]||function(_0xc2b36){return _0xc2b36&&_0xc2b36[_0x56dd('0x19')]?_0xc2b36:{'default':_0xc2b36};};exports[_0x56dd('0x19')]=!0x0;var typedi_1=require('typedi'),pwa_1=__importDefault(require('./pwa')),linter_1=__importDefault(require('./linter')),TypescriptSupport_1=__importDefault(require(_0x56dd('0x14'))),mobile_1=__importDefault(require(_0x56dd('0x2'))),FeaturePresets=function(){function _0x45b600(){}return _0x45b600[_0x56dd('0x1')][_0x56dd('0x9')]=function(){return{'name':_0x56dd('0x16'),'type':_0x56dd('0xd'),'message':_0x56dd('0xf'),'choices':[this[_0x56dd('0xa')][_0x56dd('0x4')](),this['linter']['choices'](),this['typescriptConfig']['choices'](),this[_0x56dd('0x13')][_0x56dd('0x4')]()]};},__decorate([typedi_1[_0x56dd('0x15')](),__metadata(_0x56dd('0xe'),pwa_1[_0x56dd('0xb')])],_0x45b600[_0x56dd('0x1')],'pwa'),__decorate([typedi_1[_0x56dd('0x15')](),__metadata('design:type',linter_1[_0x56dd('0xb')])],_0x45b600[_0x56dd('0x1')],'linter'),__decorate([typedi_1[_0x56dd('0x15')](),__metadata(_0x56dd('0xe'),TypescriptSupport_1[_0x56dd('0xb')])],_0x45b600[_0x56dd('0x1')],_0x56dd('0x17')),__decorate([typedi_1[_0x56dd('0x15')](),__metadata(_0x56dd('0xe'),mobile_1[_0x56dd('0xb')])],_0x45b600[_0x56dd('0x1')],_0x56dd('0x13')),_0x45b600=__decorate([typedi_1[_0x56dd('0x10')]()],_0x45b600);}();exports[_0x56dd('0xb')]=FeaturePresets;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-26 13:15:53
+ * @LastEditTime : 2020-05-13 09:40:24
+ */
+var typedi_1 = require("typedi");
+var pwa_1 = __importDefault(require("./pwa"));
+var linter_1 = __importDefault(require("./linter"));
+var TypescriptSupport_1 = __importDefault(require("./TypescriptSupport"));
+var mobile_1 = __importDefault(require("./mobile"));
+var FeaturePresets = /** @class */ (function () {
+    function FeaturePresets() {
+    }
+    FeaturePresets.prototype.config = function () {
+        return {
+            name: 'feature',
+            type: 'checkbox',
+            message: '常用功能',
+            choices: [
+                this.pwa.choices(),
+                this.linter.choices(),
+                this.typescriptConfig.choices(),
+                this.mobile.choices()
+            ]
+        };
+    };
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", pwa_1["default"])
+    ], FeaturePresets.prototype, "pwa");
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", linter_1["default"])
+    ], FeaturePresets.prototype, "linter");
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", TypescriptSupport_1["default"])
+    ], FeaturePresets.prototype, "typescriptConfig");
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", mobile_1["default"])
+    ], FeaturePresets.prototype, "mobile");
+    FeaturePresets = __decorate([
+        typedi_1.Service()
+    ], FeaturePresets);
+    return FeaturePresets;
+}());
+exports["default"] = FeaturePresets;

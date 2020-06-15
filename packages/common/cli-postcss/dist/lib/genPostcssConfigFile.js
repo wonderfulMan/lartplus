@@ -1,1 +1,32 @@
-var _0x38a7=['genPostcssConfigFile','push','hasMobile','@lartplus/cli-shared-utils','__esModule'];(function(_0x4fde26,_0x38a785){var _0x518502=function(_0x1cda2d){while(--_0x1cda2d){_0x4fde26['push'](_0x4fde26['shift']());}};_0x518502(++_0x38a785);}(_0x38a7,0x1b3));var _0x5185=function(_0x4fde26,_0x38a785){_0x4fde26=_0x4fde26-0x0;var _0x518502=_0x38a7[_0x4fde26];return _0x518502;};'use strict';exports[_0x5185('0x4')]=!0x0;var cli_shared_utils_1=require(_0x5185('0x3')),mobileConfig=function(){return{'postcss-px-to-viewport':{'unitToConvert':'px','viewportWidth':0x2ee,'viewportHeight':0x536,'unitPrecision':0x3,'viewportUnit':'vw','selectorBlackList':['.ignore','.hairlines'],'minPixelValue':0x1,'mediaQuery':!0x1}};};exports[_0x5185('0x0')]=function(_0x4b3abd){var _0x3c10c2={'plugins':[require('autoprefixer')]};return cli_shared_utils_1[_0x5185('0x2')](_0x4b3abd)&&_0x3c10c2['plugins'][_0x5185('0x1')](mobileConfig()),_0x3c10c2;};
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 15:41:02
+ * @LastEditTime : 2020-06-04 11:49:37
+ */
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var mobileConfig = function () {
+    return {
+        "postcss-px-to-viewport": {
+            "unitToConvert": "px",
+            "viewportWidth": 750,
+            "viewportHeight": 1334,
+            "unitPrecision": 3,
+            "viewportUnit": "vw",
+            "selectorBlackList": [".ignore", ".hairlines"],
+            "minPixelValue": 1,
+            "mediaQuery": false
+        }
+    };
+};
+exports.genPostcssConfigFile = function (answers) {
+    var config = {
+        plugins: [
+            require('autoprefixer'),
+        ]
+    };
+    cli_shared_utils_1.hasMobile(answers) && config.plugins.push(mobileConfig());
+    return config;
+};

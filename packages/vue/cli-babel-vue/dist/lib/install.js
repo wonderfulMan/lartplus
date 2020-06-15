@@ -1,1 +1,22 @@
-var _0xf0cf=['install','./getPlugins','isArray','@lartplus/cli-shared-utils','presets','plugins','applyBabelConfig','@vue/transform-vue-jsx','forEach','./getPresets','__esModule'];(function(_0x17c192,_0xf0cfdd){var _0x4ae930=function(_0x757a3c){while(--_0x757a3c){_0x17c192['push'](_0x17c192['shift']());}};_0x4ae930(++_0xf0cfdd);}(_0xf0cf,0xc7));var _0x4ae9=function(_0x17c192,_0xf0cfdd){_0x17c192=_0x17c192-0x0;var _0x4ae930=_0xf0cf[_0x17c192];return _0x4ae930;};'use strict';exports[_0x4ae9('0x9')]=!0x0;var cli_shared_utils_1=require(_0x4ae9('0x2')),getPresets_1=require(_0x4ae9('0x8')),getPlugins_1=require(_0x4ae9('0x0'));function install(_0x1f91a8){return getPlugins_1[_0x4ae9('0x4')][_0x4ae9('0x7')](function(_0x55bed2){return cli_shared_utils_1[_0x4ae9('0x5')](_0x1f91a8,'plugins',Array[_0x4ae9('0x1')](_0x55bed2)?_0x55bed2[0x0]:_0x55bed2,Array[_0x4ae9('0x1')](_0x55bed2)?_0x55bed2[0x1]:null);}),getPresets_1[_0x4ae9('0x3')][_0x4ae9('0x7')](function(_0x519436){return cli_shared_utils_1['applyBabelConfig'](_0x1f91a8,_0x4ae9('0x3'),Array[_0x4ae9('0x1')](_0x519436)?_0x519436[0x0]:_0x519436,Array['isArray'](_0x519436)?_0x519436[0x1]:null);}),cli_shared_utils_1[_0x4ae9('0x5')](_0x1f91a8,_0x4ae9('0x4'),_0x4ae9('0x6'),null);}exports[_0x4ae9('0xa')]=install;
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-16 19:50:41
+ * @LastEditTime : 2020-05-15 13:59:07
+ */
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var getPresets_1 = require("./getPresets");
+var getPlugins_1 = require("./getPlugins");
+function install(babelConfig) {
+    getPlugins_1.plugins.forEach(function (plugin) {
+        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'plugins', Array.isArray(plugin) ? plugin[0] : plugin, Array.isArray(plugin) ? plugin[1] : null);
+    });
+    getPresets_1.presets.forEach(function (preset) {
+        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'presets', Array.isArray(preset) ? preset[0] : preset, Array.isArray(preset) ? preset[1] : null);
+    });
+    return cli_shared_utils_1.applyBabelConfig(babelConfig, 'plugins', '@vue/transform-vue-jsx', null);
+}
+exports.install = install;
+;

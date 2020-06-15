@@ -1,1 +1,92 @@
-var _0x27f1=['@lartplus/cli-shared-utils','resolvedInstallDependencies','boolean','ops','value','../resolve/resolvedInstallDependencies','devDependencies','throw','genEslintByLartplus','assign','done','__awaiter','module.exports\x20=\x20','iterator','label','length','genEslintRcFile','return','eslint','hasOwnProperty','hasPackageJson','sent','pop','writeFileSync','__generator','then','lartplusRequirePath','next','exportGetDeps','trys','prototype','genPkgFile','call','__esModule','answers','apply','stringify','push'];(function(_0x38dacc,_0x27f196){var _0x3daa37=function(_0x49cbac){while(--_0x49cbac){_0x38dacc['push'](_0x38dacc['shift']());}};_0x3daa37(++_0x27f196);}(_0x27f1,0x153));var _0x3daa=function(_0x38dacc,_0x27f196){_0x38dacc=_0x38dacc-0x0;var _0x3daa37=_0x27f1[_0x38dacc];return _0x3daa37;};'use strict';var __assign=this&&this['__assign']||function(){return(__assign=Object[_0x3daa('0xc')]||function(_0x175e50){for(var _0x61565e,_0x50645f=0x1,_0x36b417=arguments[_0x3daa('0x12')];_0x50645f<_0x36b417;_0x50645f++)for(var _0x246fcb in _0x61565e=arguments[_0x50645f])Object[_0x3daa('0x21')][_0x3daa('0x16')][_0x3daa('0x23')](_0x61565e,_0x246fcb)&&(_0x175e50[_0x246fcb]=_0x61565e[_0x246fcb]);return _0x175e50;})[_0x3daa('0x0')](this,arguments);},__awaiter=this&&this[_0x3daa('0xe')]||function(_0x3d6bff,_0x12e5dc,_0x3c9df2,_0x557e89){return new(_0x3c9df2=_0x3c9df2||Promise)(function(_0x3a8dad,_0x37b14a){function _0x43b698(_0x1124bf){try{_0x44554f(_0x557e89[_0x3daa('0x1e')](_0x1124bf));}catch(_0x459693){_0x37b14a(_0x459693);}}function _0x5b85f7(_0x1339ed){try{_0x44554f(_0x557e89[_0x3daa('0xa')](_0x1339ed));}catch(_0x3a382a){_0x37b14a(_0x3a382a);}}function _0x44554f(_0x1e897d){var _0x243e4c;_0x1e897d[_0x3daa('0xd')]?_0x3a8dad(_0x1e897d[_0x3daa('0x7')]):((_0x243e4c=_0x1e897d[_0x3daa('0x7')])instanceof _0x3c9df2?_0x243e4c:new _0x3c9df2(function(_0x13f9fe){_0x13f9fe(_0x243e4c);}))[_0x3daa('0x1c')](_0x43b698,_0x5b85f7);}_0x44554f((_0x557e89=_0x557e89[_0x3daa('0x0')](_0x3d6bff,_0x12e5dc||[]))[_0x3daa('0x1e')]());});},__generator=this&&this[_0x3daa('0x1b')]||function(_0x4ccd12,_0x4336fd){var _0x5230a1,_0x146006,_0x5f2317,_0xff12c8={'label':0x0,'sent':function(){if(0x1&_0x5f2317[0x0])throw _0x5f2317[0x1];return _0x5f2317[0x1];},'trys':[],'ops':[]},_0x181e3c={'next':_0x50efac(0x0),'throw':_0x50efac(0x1),'return':_0x50efac(0x2)};return'function'==typeof Symbol&&(_0x181e3c[Symbol[_0x3daa('0x10')]]=function(){return this;}),_0x181e3c;function _0x50efac(_0x5694dd){return function(_0x2cd13f){return function(_0x3a8662){if(_0x5230a1)throw new TypeError('Generator\x20is\x20already\x20executing.');for(;_0xff12c8;)try{if(_0x5230a1=0x1,_0x146006&&(_0x5f2317=0x2&_0x3a8662[0x0]?_0x146006['return']:_0x3a8662[0x0]?_0x146006[_0x3daa('0xa')]||((_0x5f2317=_0x146006[_0x3daa('0x14')])&&_0x5f2317['call'](_0x146006),0x0):_0x146006[_0x3daa('0x1e')])&&!(_0x5f2317=_0x5f2317[_0x3daa('0x23')](_0x146006,_0x3a8662[0x1]))[_0x3daa('0xd')])return _0x5f2317;switch(_0x146006=0x0,_0x5f2317&&(_0x3a8662=[0x2&_0x3a8662[0x0],_0x5f2317[_0x3daa('0x7')]]),_0x3a8662[0x0]){case 0x0:case 0x1:_0x5f2317=_0x3a8662;break;case 0x4:return _0xff12c8[_0x3daa('0x11')]++,{'value':_0x3a8662[0x1],'done':!0x1};case 0x5:_0xff12c8[_0x3daa('0x11')]++,_0x146006=_0x3a8662[0x1],_0x3a8662=[0x0];continue;case 0x7:_0x3a8662=_0xff12c8[_0x3daa('0x6')]['pop'](),_0xff12c8[_0x3daa('0x20')]['pop']();continue;default:if(!(_0x5f2317=0x0<(_0x5f2317=_0xff12c8['trys'])[_0x3daa('0x12')]&&_0x5f2317[_0x5f2317[_0x3daa('0x12')]-0x1])&&(0x6===_0x3a8662[0x0]||0x2===_0x3a8662[0x0])){_0xff12c8=0x0;continue;}if(0x3===_0x3a8662[0x0]&&(!_0x5f2317||_0x3a8662[0x1]>_0x5f2317[0x0]&&_0x3a8662[0x1]<_0x5f2317[0x3])){_0xff12c8[_0x3daa('0x11')]=_0x3a8662[0x1];break;}if(0x6===_0x3a8662[0x0]&&_0xff12c8[_0x3daa('0x11')]<_0x5f2317[0x1]){_0xff12c8['label']=_0x5f2317[0x1],_0x5f2317=_0x3a8662;break;}if(_0x5f2317&&_0xff12c8[_0x3daa('0x11')]<_0x5f2317[0x2]){_0xff12c8['label']=_0x5f2317[0x2],_0xff12c8['ops'][_0x3daa('0x2')](_0x3a8662);break;}_0x5f2317[0x2]&&_0xff12c8[_0x3daa('0x6')][_0x3daa('0x19')](),_0xff12c8[_0x3daa('0x20')][_0x3daa('0x19')]();continue;}_0x3a8662=_0x4336fd[_0x3daa('0x23')](_0x4ccd12,_0xff12c8);}catch(_0x2c49a2){_0x3a8662=[0x6,_0x2c49a2],_0x146006=0x0;}finally{_0x5230a1=_0x5f2317=0x0;}if(0x5&_0x3a8662[0x0])throw _0x3a8662[0x1];return{'value':_0x3a8662[0x0]?_0x3a8662[0x1]:void 0x0,'done':!0x0};}([_0x5694dd,_0x2cd13f]);};}};exports[_0x3daa('0x24')]=!0x0;var cli_shared_utils_1=require(_0x3daa('0x3')),cli_config_1=require('@lartplus/cli-config'),genPkgFile_1=require('./genPkgFile'),resolvedInstallDependencies_1=require(_0x3daa('0x8'));exports[_0x3daa('0xb')]=function(_0x5c33e6){return __awaiter(void 0x0,void 0x0,void 0x0,function(){var _0x4f26cf,_0x25baea,_0x48104b,_0x3ed969,_0x399223,_0x3cc880,_0x28963c;return __generator(this,function(_0x5b029b){switch(_0x5b029b['label']){case 0x0:return(_0x4f26cf=cli_shared_utils_1['getCliModule'](_0x5c33e6[_0x3daa('0x1d')],_0x3daa('0x15'),cli_shared_utils_1['getFrameworkName'](_0x5c33e6[_0x3daa('0x25')])),_0x25baea=require(_0x4f26cf),_0x48104b=_0x25baea[_0x3daa('0x1f')],_0x3ed969=_0x25baea[_0x3daa('0x13')],(_0x399223=cli_shared_utils_1[_0x3daa('0x17')](_0x5c33e6['targetDir']))&&_0x3daa('0x5')!=typeof _0x399223)?(_0x399223[_0x3daa('0x9')]=__assign(__assign({},_0x399223[_0x3daa('0x9')]),_0x48104b(_0x5c33e6[_0x3daa('0x25')])),[0x4,genPkgFile_1[_0x3daa('0x22')](_0x5c33e6,JSON[_0x3daa('0x1')](_0x399223,null,0x2))]):[0x3,0x4];case 0x1:return _0x5b029b['sent'](),[0x4,resolvedInstallDependencies_1[_0x3daa('0x4')](_0x5c33e6)];case 0x2:return(_0x5b029b[_0x3daa('0x18')](),_0x3cc880=_0x3ed969(_0x5c33e6[_0x3daa('0x25')]))?(_0x28963c=cli_config_1['PATHS']['getEslintRcPath'](_0x5c33e6['targetDir']),[0x4,cli_shared_utils_1['fs'][_0x3daa('0x1a')](_0x28963c,_0x3daa('0xf')+JSON[_0x3daa('0x1')](_0x3cc880,null,0x2))]):[0x3,0x4];case 0x3:_0x5b029b[_0x3daa('0x18')](),_0x5b029b[_0x3daa('0x11')]=0x4;case 0x4:return[0x2];}});});};
+"use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 16:28:52
+ * @LastEditTime : 2020-05-14 17:38:13
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_config_1 = require("@lartplus/cli-config");
+var genPkgFile_1 = require("./genPkgFile");
+var resolvedInstallDependencies_1 = require("../resolve/resolvedInstallDependencies");
+exports.genEslintByLartplus = function (generator) { return __awaiter(void 0, void 0, void 0, function () {
+    var EslintModulePath, _a, exportGetDeps, genEslintRcFile, requireJson, eslintRc, eslintRctargetPath;
+    return __generator(this, function (_b) {
+        switch (_b.label) {
+            case 0:
+                EslintModulePath = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'eslint', cli_shared_utils_1.getFrameworkName(generator.answers));
+                _a = require(EslintModulePath), exportGetDeps = _a.exportGetDeps, genEslintRcFile = _a.genEslintRcFile;
+                requireJson = cli_shared_utils_1.hasPackageJson(generator.targetDir);
+                if (!(requireJson && typeof requireJson != 'boolean')) return [3 /*break*/, 4];
+                requireJson.devDependencies = __assign(__assign({}, requireJson.devDependencies), exportGetDeps(generator.answers));
+                // 重新生成
+                return [4 /*yield*/, genPkgFile_1.genPkgFile(generator, JSON.stringify(requireJson, null, 2))
+                    // 继续下载依赖
+                ];
+            case 1:
+                // 重新生成
+                _b.sent();
+                // 继续下载依赖
+                return [4 /*yield*/, resolvedInstallDependencies_1.resolvedInstallDependencies(generator)];
+            case 2:
+                // 继续下载依赖
+                _b.sent();
+                eslintRc = genEslintRcFile(generator.answers);
+                if (!eslintRc) return [3 /*break*/, 4];
+                eslintRctargetPath = cli_config_1.PATHS.getEslintRcPath(generator.targetDir);
+                return [4 /*yield*/, cli_shared_utils_1.fs.writeFileSync(eslintRctargetPath, 'module.exports = ' + JSON.stringify(eslintRc, null, 2))];
+            case 3:
+                _b.sent();
+                _b.label = 4;
+            case 4: return [2 /*return*/];
+        }
+    });
+}); };

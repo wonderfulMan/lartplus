@@ -1,1 +1,17 @@
-var _0x5585=['@lartplus/cli-shared-utils','install','@babel/preset-typescript','__esModule'];(function(_0x4d032f,_0x55850f){var _0xa73817=function(_0xb8d854){while(--_0xb8d854){_0x4d032f['push'](_0x4d032f['shift']());}};_0xa73817(++_0x55850f);}(_0x5585,0x1a7));var _0xa738=function(_0x4d032f,_0x55850f){_0x4d032f=_0x4d032f-0x0;var _0xa73817=_0x5585[_0x4d032f];return _0xa73817;};'use strict';exports[_0xa738('0x0')]=!0x0;var cli_shared_utils_1=require(_0xa738('0x1'));function install(_0x211d89){return cli_shared_utils_1['applyBabelConfig'](_0x211d89,'presets',_0xa738('0x3'),{'allExtensions':!0x0,'isTSX':!0x0});}exports[_0xa738('0x2')]=install;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-16 19:50:41
+ * @LastEditTime : 2020-04-17 17:31:58
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+function install(babelConfig) {
+    return cli_shared_utils_1.applyBabelConfig(babelConfig, 'presets', '@babel/preset-typescript', {
+        allExtensions: true,
+        isTSX: true
+    });
+}
+exports.install = install;
+;

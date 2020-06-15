@@ -1,1 +1,26 @@
-var _0x3101=['./genProjectSubject','genProjectTypescriptConfig','genPkgFile','./genEslintByLartplus','genBabelConfigFile','./genPrettierRcFile','./genProjectConfigFile','genEslintByLartplus','genPostcssByLartplus','./genProjectTypescriptConfig','genProjectSubject','__esModule','./genProjectName','genProjectConfigFile','genProjectName','./genPkgFile','genPrettierRcFile','./genPostcssByLartplus'];(function(_0x1a31cd,_0x3101d9){var _0x5e2e6b=function(_0x26dbbc){while(--_0x26dbbc){_0x1a31cd['push'](_0x1a31cd['shift']());}};_0x5e2e6b(++_0x3101d9);}(_0x3101,0xd2));var _0x5e2e=function(_0x1a31cd,_0x3101d9){_0x1a31cd=_0x1a31cd-0x0;var _0x5e2e6b=_0x3101[_0x1a31cd];return _0x5e2e6b;};'use strict';exports[_0x5e2e('0x11')]=!0x0;var genProjectName_1=require(_0x5e2e('0x0'));exports[_0x5e2e('0x2')]=genProjectName_1['genProjectName'];var genEslintByLartplus_1=require(_0x5e2e('0x9'));exports['genEslintByLartplus']=genEslintByLartplus_1[_0x5e2e('0xd')];var genPkgFile_1=require(_0x5e2e('0x3'));exports[_0x5e2e('0x8')]=genPkgFile_1['genPkgFile'];var genProjectConfigFile_1=require(_0x5e2e('0xc'));exports['genProjectConfigFile']=genProjectConfigFile_1[_0x5e2e('0x1')];var genBabelConfigFile_1=require('./genBabelConfigFile');exports['genBabelConfigFile']=genBabelConfigFile_1[_0x5e2e('0xa')];var genProjectSubject_1=require(_0x5e2e('0x6'));exports[_0x5e2e('0x10')]=genProjectSubject_1[_0x5e2e('0x10')];var genProjectTypescriptConfig_1=require(_0x5e2e('0xf'));exports[_0x5e2e('0x7')]=genProjectTypescriptConfig_1[_0x5e2e('0x7')];var genPostcssByLartplus_1=require(_0x5e2e('0x5'));exports[_0x5e2e('0xe')]=genPostcssByLartplus_1[_0x5e2e('0xe')];var genPrettierRcFile_1=require(_0x5e2e('0xb'));exports[_0x5e2e('0x4')]=genPrettierRcFile_1[_0x5e2e('0x4')];
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 17:43:07
+ * @LastEditTime : 2020-05-13 20:49:13
+ */
+var genProjectName_1 = require("./genProjectName");
+exports.genProjectName = genProjectName_1.genProjectName;
+var genEslintByLartplus_1 = require("./genEslintByLartplus");
+exports.genEslintByLartplus = genEslintByLartplus_1.genEslintByLartplus;
+var genPkgFile_1 = require("./genPkgFile");
+exports.genPkgFile = genPkgFile_1.genPkgFile;
+var genProjectConfigFile_1 = require("./genProjectConfigFile");
+exports.genProjectConfigFile = genProjectConfigFile_1.genProjectConfigFile;
+var genBabelConfigFile_1 = require("./genBabelConfigFile");
+exports.genBabelConfigFile = genBabelConfigFile_1.genBabelConfigFile;
+var genProjectSubject_1 = require("./genProjectSubject");
+exports.genProjectSubject = genProjectSubject_1.genProjectSubject;
+var genProjectTypescriptConfig_1 = require("./genProjectTypescriptConfig");
+exports.genProjectTypescriptConfig = genProjectTypescriptConfig_1.genProjectTypescriptConfig;
+var genPostcssByLartplus_1 = require("./genPostcssByLartplus");
+exports.genPostcssByLartplus = genPostcssByLartplus_1.genPostcssByLartplus;
+var genPrettierRcFile_1 = require("./genPrettierRcFile");
+exports.genPrettierRcFile = genPrettierRcFile_1.genPrettierRcFile;

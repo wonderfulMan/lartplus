@@ -1,1 +1,57 @@
-var _0x5735=['presets','unambiguous','applyBabelConfig','__esModule','plugins','@babel/plugin-proposal-object-rest-spread','install','@babel/plugin-proposal-class-properties','isArray','@babel/plugin-syntax-dynamic-import','@babel/preset-env','@lartplus/cli-shared-utils','@babel/plugin-proposal-decorators','forEach'];(function(_0x4a0a33,_0x573575){var _0x302e3a=function(_0x2775f3){while(--_0x2775f3){_0x4a0a33['push'](_0x4a0a33['shift']());}};_0x302e3a(++_0x573575);}(_0x5735,0x19b));var _0x302e=function(_0x4a0a33,_0x573575){_0x4a0a33=_0x4a0a33-0x0;var _0x302e3a=_0x5735[_0x4a0a33];return _0x302e3a;};'use strict';exports[_0x302e('0xc')]=!0x0;var cli_shared_utils_1=require(_0x302e('0x6')),plugins=[_0x302e('0x0'),_0x302e('0x4'),[_0x302e('0x7'),{'legacy':!0x0}],[_0x302e('0x2'),{'loose':!0x0}]],presets=[[_0x302e('0x5'),{'corejs':0x3,'modules':!0x1,'useBuiltIns':'usage'}]];function install(){var _0x1f81e4={'sourceType':_0x302e('0xa'),'presets':[],'plugins':[]};return plugins[_0x302e('0x8')](function(_0x53ae50){return cli_shared_utils_1[_0x302e('0xb')](_0x1f81e4,_0x302e('0xd'),Array['isArray'](_0x53ae50)?_0x53ae50[0x0]:_0x53ae50,Array[_0x302e('0x3')](_0x53ae50)?_0x53ae50[0x1]:null);}),presets[_0x302e('0x8')](function(_0x4c6e27){return cli_shared_utils_1[_0x302e('0xb')](_0x1f81e4,_0x302e('0x9'),Array[_0x302e('0x3')](_0x4c6e27)?_0x4c6e27[0x0]:_0x4c6e27,Array[_0x302e('0x3')](_0x4c6e27)?_0x4c6e27[0x1]:null);}),_0x1f81e4;}exports[_0x302e('0x1')]=install;
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-26 16:32:42
+ * @LastEditTime : 2020-05-13 20:33:36
+ */
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-26 16:32:42
+ * @LastEditTime : 2020-04-15 11:06:39
+ */
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+var plugins = [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-syntax-dynamic-import",
+    [
+        "@babel/plugin-proposal-decorators",
+        {
+            "legacy": true
+        }
+    ],
+    ["@babel/plugin-proposal-class-properties",
+        {
+            "loose": true
+        }
+    ]
+];
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+var presets = [
+    [
+        "@babel/preset-env",
+        {
+            "corejs": 3,
+            "modules": false,
+            "useBuiltIns": "usage"
+        }
+    ]
+];
+function install() {
+    var babelConfig = {
+        sourceType: "unambiguous",
+        presets: [],
+        plugins: []
+    };
+    plugins.forEach(function (plugin) {
+        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'plugins', Array.isArray(plugin) ? plugin[0] : plugin, Array.isArray(plugin) ? plugin[1] : null);
+    });
+    presets.forEach(function (preset) {
+        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'presets', Array.isArray(preset) ? preset[0] : preset, Array.isArray(preset) ? preset[1] : null);
+    });
+    return babelConfig;
+}
+exports.install = install;

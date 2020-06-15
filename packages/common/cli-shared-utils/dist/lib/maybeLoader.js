@@ -1,1 +1,17 @@
-var _0x4351=['__esModule','resolve','maybeLoader'];(function(_0x3deb32,_0x435179){var _0x473c36=function(_0x5268d4){while(--_0x5268d4){_0x3deb32['push'](_0x3deb32['shift']());}};_0x473c36(++_0x435179);}(_0x4351,0x168));var _0x473c=function(_0x3deb32,_0x435179){_0x3deb32=_0x3deb32-0x0;var _0x473c36=_0x4351[_0x3deb32];return _0x473c36;};'use strict';function maybeLoader(_0x367d12){try{return require[_0x473c('0x1')](_0x367d12);}catch(_0x2fec49){return _0x367d12;}}exports[_0x473c('0x0')]=!0x0,exports[_0x473c('0x2')]=maybeLoader;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors: hAo
+ * @Date: 2020-04-10 15:03:01
+ * @LastEditTime: 2020-04-10 15:03:49
+ */
+function maybeLoader(loader) {
+    try {
+        return require.resolve(loader);
+    }
+    catch (error) {
+        return loader;
+    }
+}
+exports.maybeLoader = maybeLoader;

@@ -1,1 +1,122 @@
-var _0x1d6e=['then','PATHS','prototype','Generator\x20is\x20already\x20executing.','genBabelConfigFile','push','ops','answers','targetDir','hasOwnProperty','value','exit','pop','trys','next','events','genProjectName','constructor','error','done','notice','buildGenerator','length','./lib/resolve','getLartPlusModulePath','default','iterator','babelConfig','__extends','return','resolvedAndGeneratorByLartplus','genProjectSubject','@lartplus/cli-shared-utils','label','lartplusRequirePath','create','call','__esModule','projectName','sent','setPrototypeOf','genProjectTypescriptConfig','function','__proto__'];(function(_0x375e98,_0x1d6e41){var _0xd0dcc=function(_0x3db634){while(--_0x3db634){_0x375e98['push'](_0x375e98['shift']());}};_0xd0dcc(++_0x1d6e41);}(_0x1d6e,0x72));var _0xd0dc=function(_0x375e98,_0x1d6e41){_0x375e98=_0x375e98-0x0;var _0xd0dcc=_0x1d6e[_0x375e98];return _0xd0dcc;};'use strict';var __extends=this&&this[_0xd0dc('0x2')]||function(){var _0x3a2d41=function(_0x404140,_0x5f44d2){return(_0x3a2d41=Object[_0xd0dc('0xe')]||{'__proto__':[]}instanceof Array&&function(_0x4775a9,_0x12a76d){_0x4775a9[_0xd0dc('0x11')]=_0x12a76d;}||function(_0x4ec4bc,_0x3e069b){for(var _0x4d71b3 in _0x3e069b)_0x3e069b[_0xd0dc('0x1b')](_0x4d71b3)&&(_0x4ec4bc[_0x4d71b3]=_0x3e069b[_0x4d71b3]);})(_0x404140,_0x5f44d2);};return function(_0x24992d,_0x472bc7){function _0x438fb6(){this[_0xd0dc('0x23')]=_0x24992d;}_0x3a2d41(_0x24992d,_0x472bc7),_0x24992d['prototype']=null===_0x472bc7?Object[_0xd0dc('0x9')](_0x472bc7):(_0x438fb6[_0xd0dc('0x14')]=_0x472bc7[_0xd0dc('0x14')],new _0x438fb6());};}(),__awaiter=this&&this['__awaiter']||function(_0x5b9b10,_0x4d56e3,_0x4d2748,_0x3f50c2){return new(_0x4d2748=_0x4d2748||Promise)(function(_0x1f3872,_0x384aa7){function _0x4d897b(_0x258add){try{_0x16c08b(_0x3f50c2[_0xd0dc('0x20')](_0x258add));}catch(_0x18d3ae){_0x384aa7(_0x18d3ae);}}function _0x2669cd(_0x5958c6){try{_0x16c08b(_0x3f50c2['throw'](_0x5958c6));}catch(_0x1cba1c){_0x384aa7(_0x1cba1c);}}function _0x16c08b(_0x1c28f1){var _0x22af76;_0x1c28f1[_0xd0dc('0x25')]?_0x1f3872(_0x1c28f1[_0xd0dc('0x1c')]):((_0x22af76=_0x1c28f1[_0xd0dc('0x1c')])instanceof _0x4d2748?_0x22af76:new _0x4d2748(function(_0x161123){_0x161123(_0x22af76);}))[_0xd0dc('0x12')](_0x4d897b,_0x2669cd);}_0x16c08b((_0x3f50c2=_0x3f50c2['apply'](_0x5b9b10,_0x4d56e3||[]))['next']());});},__generator=this&&this['__generator']||function(_0x3b92aa,_0x3e73d7){var _0x54862b,_0x1bfc1f,_0x35e3dd,_0x33033e={'label':0x0,'sent':function(){if(0x1&_0x35e3dd[0x0])throw _0x35e3dd[0x1];return _0x35e3dd[0x1];},'trys':[],'ops':[]},_0x39a9f8={'next':_0x562191(0x0),'throw':_0x562191(0x1),'return':_0x562191(0x2)};return _0xd0dc('0x10')==typeof Symbol&&(_0x39a9f8[Symbol[_0xd0dc('0x0')]]=function(){return this;}),_0x39a9f8;function _0x562191(_0x4a6b1c){return function(_0x3ceb24){return function(_0x4472dc){if(_0x54862b)throw new TypeError(_0xd0dc('0x15'));for(;_0x33033e;)try{if(_0x54862b=0x1,_0x1bfc1f&&(_0x35e3dd=0x2&_0x4472dc[0x0]?_0x1bfc1f[_0xd0dc('0x3')]:_0x4472dc[0x0]?_0x1bfc1f['throw']||((_0x35e3dd=_0x1bfc1f[_0xd0dc('0x3')])&&_0x35e3dd[_0xd0dc('0xa')](_0x1bfc1f),0x0):_0x1bfc1f[_0xd0dc('0x20')])&&!(_0x35e3dd=_0x35e3dd['call'](_0x1bfc1f,_0x4472dc[0x1]))['done'])return _0x35e3dd;switch(_0x1bfc1f=0x0,_0x35e3dd&&(_0x4472dc=[0x2&_0x4472dc[0x0],_0x35e3dd[_0xd0dc('0x1c')]]),_0x4472dc[0x0]){case 0x0:case 0x1:_0x35e3dd=_0x4472dc;break;case 0x4:return _0x33033e[_0xd0dc('0x7')]++,{'value':_0x4472dc[0x1],'done':!0x1};case 0x5:_0x33033e[_0xd0dc('0x7')]++,_0x1bfc1f=_0x4472dc[0x1],_0x4472dc=[0x0];continue;case 0x7:_0x4472dc=_0x33033e[_0xd0dc('0x18')][_0xd0dc('0x1e')](),_0x33033e[_0xd0dc('0x1f')]['pop']();continue;default:if(!(_0x35e3dd=0x0<(_0x35e3dd=_0x33033e['trys'])[_0xd0dc('0x28')]&&_0x35e3dd[_0x35e3dd[_0xd0dc('0x28')]-0x1])&&(0x6===_0x4472dc[0x0]||0x2===_0x4472dc[0x0])){_0x33033e=0x0;continue;}if(0x3===_0x4472dc[0x0]&&(!_0x35e3dd||_0x4472dc[0x1]>_0x35e3dd[0x0]&&_0x4472dc[0x1]<_0x35e3dd[0x3])){_0x33033e['label']=_0x4472dc[0x1];break;}if(0x6===_0x4472dc[0x0]&&_0x33033e[_0xd0dc('0x7')]<_0x35e3dd[0x1]){_0x33033e[_0xd0dc('0x7')]=_0x35e3dd[0x1],_0x35e3dd=_0x4472dc;break;}if(_0x35e3dd&&_0x33033e[_0xd0dc('0x7')]<_0x35e3dd[0x2]){_0x33033e[_0xd0dc('0x7')]=_0x35e3dd[0x2],_0x33033e['ops'][_0xd0dc('0x17')](_0x4472dc);break;}_0x35e3dd[0x2]&&_0x33033e[_0xd0dc('0x18')]['pop'](),_0x33033e[_0xd0dc('0x1f')][_0xd0dc('0x1e')]();continue;}_0x4472dc=_0x3e73d7[_0xd0dc('0xa')](_0x3b92aa,_0x33033e);}catch(_0x4a7cfe){_0x4472dc=[0x6,_0x4a7cfe],_0x1bfc1f=0x0;}finally{_0x54862b=_0x35e3dd=0x0;}if(0x5&_0x4472dc[0x0])throw _0x4472dc[0x1];return{'value':_0x4472dc[0x0]?_0x4472dc[0x1]:void 0x0,'done':!0x0};}([_0x4a6b1c,_0x3ceb24]);};}};exports[_0xd0dc('0xb')]=!0x0;var events_1=require(_0xd0dc('0x21')),cli_config_1=require('@lartplus/cli-config'),cli_shared_utils_1=require(_0xd0dc('0x6')),generator_1=require('./lib/generator'),resolve_1=require(_0xd0dc('0x29')),catchErrorAndExit=function(_0x2d86ea){cli_shared_utils_1[_0xd0dc('0x26')][_0xd0dc('0x24')]([_0x2d86ea]),process[_0xd0dc('0x1d')](0x0);},Generator=function(_0x11790a){function _0x4f688b(_0x17179e,_0x18e4d3,_0x24705b){var _0x515ef1=_0x11790a['call'](this)||this;return _0x515ef1[_0xd0dc('0x1a')]=_0x17179e,_0x515ef1[_0xd0dc('0xc')]=_0x18e4d3,_0x515ef1[_0xd0dc('0x19')]=_0x24705b,_0x515ef1[_0xd0dc('0x1')]={},_0x515ef1[_0xd0dc('0x8')]=cli_config_1[_0xd0dc('0x13')][_0xd0dc('0x2a')](_0x515ef1['targetDir']),_0x515ef1;}return __extends(_0x4f688b,_0x11790a),_0x4f688b[_0xd0dc('0x14')][_0xd0dc('0x9')]=function(){return __awaiter(this,void 0x0,void 0x0,function(){return __generator(this,function(_0x5482f0){switch(_0x5482f0['label']){case 0x0:return[0x4,this[_0xd0dc('0x27')]()['catch'](catchErrorAndExit)];case 0x1:return _0x5482f0['sent'](),[0x2];}});});},_0x4f688b[_0xd0dc('0x14')]['buildGenerator']=function(){return __awaiter(this,void 0x0,void 0x0,function(){return __generator(this,function(_0x4bdcbb){switch(_0x4bdcbb[_0xd0dc('0x7')]){case 0x0:return[0x4,generator_1[_0xd0dc('0x22')](this)];case 0x1:return _0x4bdcbb[_0xd0dc('0xd')](),[0x4,generator_1['genPkgFile'](this,JSON['stringify'](resolve_1['resolvedPackage'](this[_0xd0dc('0x19')],this[_0xd0dc('0xc')],this[_0xd0dc('0x1a')]),null,0x2))];case 0x2:return _0x4bdcbb['sent'](),[0x4,resolve_1['resolvedInstallDependencies'](this)];case 0x3:return _0x4bdcbb[_0xd0dc('0xd')](),[0x4,generator_1[_0xd0dc('0x16')](this)];case 0x4:return _0x4bdcbb[_0xd0dc('0xd')](),[0x4,resolve_1[_0xd0dc('0x4')](this)];case 0x5:return _0x4bdcbb['sent'](),[0x4,generator_1[_0xd0dc('0xf')](this)];case 0x6:return _0x4bdcbb['sent'](),[0x4,generator_1[_0xd0dc('0x5')](this)];case 0x7:return _0x4bdcbb[_0xd0dc('0xd')](),[0x2];}});});},_0x4f688b;}(events_1['EventEmitter']);exports[_0xd0dc('0x2b')]=Generator;
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-02-01 14:58:57
+ * @LastEditTime : 2020-06-02 22:53:06
+ */
+var events_1 = require("events");
+var cli_config_1 = require("@lartplus/cli-config");
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var generator_1 = require("./lib/generator");
+var resolve_1 = require("./lib/resolve");
+var catchErrorAndExit = function (err) {
+    cli_shared_utils_1.notice.error([err]);
+    process.exit(0);
+};
+var Generator = /** @class */ (function (_super) {
+    __extends(Generator, _super);
+    function Generator(targetDir, projectName, answers) {
+        var _this = _super.call(this) || this;
+        _this.targetDir = targetDir;
+        _this.projectName = projectName;
+        _this.answers = answers;
+        _this.babelConfig = {};
+        _this.lartplusRequirePath = cli_config_1.PATHS.getLartPlusModulePath(_this.targetDir);
+        return _this;
+    }
+    Generator.prototype.create = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.buildGenerator()["catch"](catchErrorAndExit)];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    Generator.prototype.buildGenerator = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, generator_1.genProjectName(this)];
+                    case 1:
+                        _a.sent();
+                        return [4 /*yield*/, generator_1.genPkgFile(this, JSON.stringify(resolve_1.resolvedPackage(this.answers, this.projectName, this.targetDir), null, 2))];
+                    case 2:
+                        _a.sent();
+                        return [4 /*yield*/, resolve_1.resolvedInstallDependencies(this)];
+                    case 3:
+                        _a.sent();
+                        return [4 /*yield*/, generator_1.genBabelConfigFile(this)];
+                    case 4:
+                        _a.sent();
+                        return [4 /*yield*/, resolve_1.resolvedAndGeneratorByLartplus(this)];
+                    case 5:
+                        _a.sent();
+                        return [4 /*yield*/, generator_1.genProjectTypescriptConfig(this)];
+                    case 6:
+                        _a.sent();
+                        return [4 /*yield*/, generator_1.genProjectSubject(this)];
+                    case 7:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    return Generator;
+}(events_1.EventEmitter));
+exports["default"] = Generator;

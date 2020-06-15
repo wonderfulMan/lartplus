@@ -1,1 +1,92 @@
-var _0x19fe=['push','__awaiter','exit','throw','name','value','done','react','validataConfigFile','vue','fileSchema','ops','validate','notice','pop','label','then','iterator','trys','return','length','isIn','校验异常','Generator\x20is\x20already\x20executing.','isNotEmpty','entries','error','map','sent','lartplus.config.js\x20error:\x20','@lartplus/cli-shared-utils','next','constraints','call'];(function(_0x2a670f,_0x19fe93){var _0x104dc5=function(_0x37a0ca){while(--_0x37a0ca){_0x2a670f['push'](_0x2a670f['shift']());}};_0x104dc5(++_0x19fe93);}(_0x19fe,0x116));var _0x104d=function(_0x2a670f,_0x19fe93){_0x2a670f=_0x2a670f-0x0;var _0x104dc5=_0x19fe[_0x2a670f];return _0x104dc5;};'use strict';var __awaiter=this&&this[_0x104d('0x1d')]||function(_0x187ad3,_0x3ac460,_0x3d9a0e,_0x2fc1bf){return new(_0x3d9a0e=_0x3d9a0e||Promise)(function(_0x78d3d1,_0x19fb49){function _0x1debe5(_0x2d87e7){try{_0x18a661(_0x2fc1bf['next'](_0x2d87e7));}catch(_0x3e476d){_0x19fb49(_0x3e476d);}}function _0x5be94a(_0x11119f){try{_0x18a661(_0x2fc1bf[_0x104d('0x1f')](_0x11119f));}catch(_0x99bb49){_0x19fb49(_0x99bb49);}}function _0x18a661(_0x34e703){var _0x2108fb;_0x34e703['done']?_0x78d3d1(_0x34e703['value']):((_0x2108fb=_0x34e703[_0x104d('0x21')])instanceof _0x3d9a0e?_0x2108fb:new _0x3d9a0e(function(_0x53e151){_0x53e151(_0x2108fb);}))[_0x104d('0xa')](_0x1debe5,_0x5be94a);}_0x18a661((_0x2fc1bf=_0x2fc1bf['apply'](_0x187ad3,_0x3ac460||[]))[_0x104d('0x19')]());});},__generator=this&&this['__generator']||function(_0x1e0582,_0x32ca0d){var _0x19c36e,_0x1a41ce,_0x2ebc52,_0x38059e={'label':0x0,'sent':function(){if(0x1&_0x2ebc52[0x0])throw _0x2ebc52[0x1];return _0x2ebc52[0x1];},'trys':[],'ops':[]},_0x3e7095={'next':_0x559750(0x0),'throw':_0x559750(0x1),'return':_0x559750(0x2)};return'function'==typeof Symbol&&(_0x3e7095[Symbol[_0x104d('0xb')]]=function(){return this;}),_0x3e7095;function _0x559750(_0x22770a){return function(_0x29fa7c){return function(_0x366b36){if(_0x19c36e)throw new TypeError(_0x104d('0x11'));for(;_0x38059e;)try{if(_0x19c36e=0x1,_0x1a41ce&&(_0x2ebc52=0x2&_0x366b36[0x0]?_0x1a41ce['return']:_0x366b36[0x0]?_0x1a41ce[_0x104d('0x1f')]||((_0x2ebc52=_0x1a41ce[_0x104d('0xd')])&&_0x2ebc52['call'](_0x1a41ce),0x0):_0x1a41ce[_0x104d('0x19')])&&!(_0x2ebc52=_0x2ebc52[_0x104d('0x1b')](_0x1a41ce,_0x366b36[0x1]))[_0x104d('0x0')])return _0x2ebc52;switch(_0x1a41ce=0x0,_0x2ebc52&&(_0x366b36=[0x2&_0x366b36[0x0],_0x2ebc52[_0x104d('0x21')]]),_0x366b36[0x0]){case 0x0:case 0x1:_0x2ebc52=_0x366b36;break;case 0x4:return _0x38059e['label']++,{'value':_0x366b36[0x1],'done':!0x1};case 0x5:_0x38059e[_0x104d('0x9')]++,_0x1a41ce=_0x366b36[0x1],_0x366b36=[0x0];continue;case 0x7:_0x366b36=_0x38059e[_0x104d('0x5')][_0x104d('0x8')](),_0x38059e[_0x104d('0xc')][_0x104d('0x8')]();continue;default:if(!(_0x2ebc52=0x0<(_0x2ebc52=_0x38059e[_0x104d('0xc')])['length']&&_0x2ebc52[_0x2ebc52[_0x104d('0xe')]-0x1])&&(0x6===_0x366b36[0x0]||0x2===_0x366b36[0x0])){_0x38059e=0x0;continue;}if(0x3===_0x366b36[0x0]&&(!_0x2ebc52||_0x366b36[0x1]>_0x2ebc52[0x0]&&_0x366b36[0x1]<_0x2ebc52[0x3])){_0x38059e[_0x104d('0x9')]=_0x366b36[0x1];break;}if(0x6===_0x366b36[0x0]&&_0x38059e[_0x104d('0x9')]<_0x2ebc52[0x1]){_0x38059e[_0x104d('0x9')]=_0x2ebc52[0x1],_0x2ebc52=_0x366b36;break;}if(_0x2ebc52&&_0x38059e[_0x104d('0x9')]<_0x2ebc52[0x2]){_0x38059e[_0x104d('0x9')]=_0x2ebc52[0x2],_0x38059e[_0x104d('0x5')][_0x104d('0x1c')](_0x366b36);break;}_0x2ebc52[0x2]&&_0x38059e['ops'][_0x104d('0x8')](),_0x38059e[_0x104d('0xc')]['pop']();continue;}_0x366b36=_0x32ca0d['call'](_0x1e0582,_0x38059e);}catch(_0x46814f){_0x366b36=[0x6,_0x46814f],_0x1a41ce=0x0;}finally{_0x19c36e=_0x2ebc52=0x0;}if(0x5&_0x366b36[0x0])throw _0x366b36[0x1];return{'value':_0x366b36[0x0]?_0x366b36[0x1]:void 0x0,'done':!0x0};}([_0x22770a,_0x29fa7c]);};}};exports['__esModule']=!0x0;var cli_shared_utils_1=require(_0x104d('0x18'));function validataConfigFile(_0x3913c5){return __awaiter(this,void 0x0,void 0x0,function(){var _0x499100,_0x2a28d8,_0x1e6b73,_0x3c60d1;return __generator(this,function(_0x19f2fe){switch(_0x19f2fe[_0x104d('0x9')]){case 0x0:_0x499100=!0x1,_0x2a28d8={'name':_0x104d('0x4'),'properties':{'framework':[{'type':_0x104d('0x12')},{'type':_0x104d('0xf'),'constraints':[[_0x104d('0x3'),_0x104d('0x1')]]}]}},cli_shared_utils_1['registerSchema'](_0x2a28d8),_0x19f2fe[_0x104d('0x9')]=0x1;case 0x1:return _0x19f2fe[_0x104d('0xc')][_0x104d('0x1c')]([0x1,0x3,,0x4]),[0x4,cli_shared_utils_1[_0x104d('0x6')](_0x2a28d8[_0x104d('0x20')],_0x3913c5)];case 0x2:return _0x1e6b73=_0x19f2fe[_0x104d('0x16')](),_0x1e6b73[_0x104d('0xe')]&&(_0x3c60d1=_0x1e6b73[0x0][_0x104d('0x1a')],Object[_0x104d('0x13')](_0x3c60d1)[_0x104d('0x15')](function(_0x5568fd){_0x5568fd[0x0];var _0x2a92c6=_0x5568fd[0x1];cli_shared_utils_1[_0x104d('0x7')][_0x104d('0x14')]([_0x104d('0x17')+_0x2a92c6]),process[_0x104d('0x1e')](0x0);})),_0x499100=!0x0,[0x3,0x4];case 0x3:return _0x19f2fe[_0x104d('0x16')](),cli_shared_utils_1['notice']['error']([_0x104d('0x10')]),process[_0x104d('0x1e')](0x0),[0x3,0x4];case 0x4:return[0x2,_0x499100];}});});}exports[_0x104d('0x2')]=validataConfigFile;
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-18 15:57:41
+ * @LastEditTime : 2020-03-20 17:50:56
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+function validataConfigFile(file) {
+    return __awaiter(this, void 0, void 0, function () {
+        var flag, schema, errors, hasError, constraints, err_1;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    flag = false;
+                    schema = {
+                        name: 'fileSchema',
+                        properties: {
+                            framework: [{
+                                    type: 'isNotEmpty'
+                                }, {
+                                    type: 'isIn',
+                                    constraints: [['vue', 'react']]
+                                }]
+                        }
+                    };
+                    cli_shared_utils_1.registerSchema(schema);
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 3, , 4]);
+                    return [4 /*yield*/, cli_shared_utils_1.validate(schema.name, file)];
+                case 2:
+                    errors = _a.sent();
+                    hasError = errors.length;
+                    if (hasError) {
+                        constraints = errors[0].constraints;
+                        Object.entries(constraints).map(function (_a) {
+                            var key = _a[0], value = _a[1];
+                            cli_shared_utils_1.notice.error(["lartplus.config.js error: " + value]);
+                            process.exit(0);
+                        });
+                    }
+                    flag = true;
+                    return [3 /*break*/, 4];
+                case 3:
+                    err_1 = _a.sent();
+                    cli_shared_utils_1.notice.error(['校验异常']);
+                    process.exit(0);
+                    return [3 /*break*/, 4];
+                case 4: return [2 /*return*/, flag];
+            }
+        });
+    });
+}
+exports.validataConfigFile = validataConfigFile;

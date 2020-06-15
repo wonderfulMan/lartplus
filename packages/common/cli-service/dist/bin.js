@@ -1,2 +1,109 @@
 #!/usr/bin/env node
-var _0x494e=['description','new\x20<option>\x20[file]','__assign','components','start\x20<action>','ops','hasOwnProperty','argv','compile','<command>\x20选项','trys','__awaiter','assign','src','command','pop','value','option','notice','./lib/readConfigFile','getPackageVersion','Command','length','__esModule','commander','push','next','__generator','sent','LARTPLUS_CONTEXT','./lib/compile/compile','action','error','page','暂不支持components/page以外的文件创建','/../','env','prototype','then','function','parse','cli-service','done','throw','stringify','apply','label','call'];(function(_0x8f4a5a,_0x494e61){var _0x10b615=function(_0x285d0b){while(--_0x285d0b){_0x8f4a5a['push'](_0x8f4a5a['shift']());}};_0x10b615(++_0x494e61);}(_0x494e,0x89));var _0x10b6=function(_0x8f4a5a,_0x494e61){_0x8f4a5a=_0x8f4a5a-0x0;var _0x10b615=_0x494e[_0x8f4a5a];return _0x10b615;};'use strict';var __assign=this&&this[_0x10b6('0x9')]||function(){return(__assign=Object[_0x10b6('0x13')]||function(_0x1bdd7d){for(var _0x540508,_0x4b950f=0x1,_0x4dc517=arguments[_0x10b6('0x1d')];_0x4b950f<_0x4dc517;_0x4b950f++)for(var _0x3e7425 in _0x540508=arguments[_0x4b950f])Object[_0x10b6('0x2c')][_0x10b6('0xd')][_0x10b6('0x6')](_0x540508,_0x3e7425)&&(_0x1bdd7d[_0x3e7425]=_0x540508[_0x3e7425]);return _0x1bdd7d;})[_0x10b6('0x4')](this,arguments);},__awaiter=this&&this[_0x10b6('0x12')]||function(_0xc38570,_0x4ba422,_0x4a46bb,_0x1220df){return new(_0x4a46bb=_0x4a46bb||Promise)(function(_0x25011d,_0x41b9da){function _0x365052(_0x6c4ce){try{_0x50d5cb(_0x1220df[_0x10b6('0x21')](_0x6c4ce));}catch(_0x5d676a){_0x41b9da(_0x5d676a);}}function _0x5867c4(_0x10cf98){try{_0x50d5cb(_0x1220df[_0x10b6('0x2')](_0x10cf98));}catch(_0x56328c){_0x41b9da(_0x56328c);}}function _0x50d5cb(_0x150607){var _0x42268b;_0x150607[_0x10b6('0x1')]?_0x25011d(_0x150607[_0x10b6('0x17')]):((_0x42268b=_0x150607[_0x10b6('0x17')])instanceof _0x4a46bb?_0x42268b:new _0x4a46bb(function(_0x217775){_0x217775(_0x42268b);}))[_0x10b6('0x2d')](_0x365052,_0x5867c4);}_0x50d5cb((_0x1220df=_0x1220df[_0x10b6('0x4')](_0xc38570,_0x4ba422||[]))[_0x10b6('0x21')]());});},__generator=this&&this[_0x10b6('0x22')]||function(_0x56c1b2,_0x26fa3e){var _0x1cef1c,_0x1aead3,_0x1f28ec,_0x2c1530={'label':0x0,'sent':function(){if(0x1&_0x1f28ec[0x0])throw _0x1f28ec[0x1];return _0x1f28ec[0x1];},'trys':[],'ops':[]},_0x46be73={'next':_0x523217(0x0),'throw':_0x523217(0x1),'return':_0x523217(0x2)};return _0x10b6('0x2e')==typeof Symbol&&(_0x46be73[Symbol['iterator']]=function(){return this;}),_0x46be73;function _0x523217(_0x4be79d){return function(_0x24cd51){return function(_0x216379){if(_0x1cef1c)throw new TypeError('Generator\x20is\x20already\x20executing.');for(;_0x2c1530;)try{if(_0x1cef1c=0x1,_0x1aead3&&(_0x1f28ec=0x2&_0x216379[0x0]?_0x1aead3['return']:_0x216379[0x0]?_0x1aead3[_0x10b6('0x2')]||((_0x1f28ec=_0x1aead3['return'])&&_0x1f28ec['call'](_0x1aead3),0x0):_0x1aead3[_0x10b6('0x21')])&&!(_0x1f28ec=_0x1f28ec[_0x10b6('0x6')](_0x1aead3,_0x216379[0x1]))['done'])return _0x1f28ec;switch(_0x1aead3=0x0,_0x1f28ec&&(_0x216379=[0x2&_0x216379[0x0],_0x1f28ec[_0x10b6('0x17')]]),_0x216379[0x0]){case 0x0:case 0x1:_0x1f28ec=_0x216379;break;case 0x4:return _0x2c1530['label']++,{'value':_0x216379[0x1],'done':!0x1};case 0x5:_0x2c1530[_0x10b6('0x5')]++,_0x1aead3=_0x216379[0x1],_0x216379=[0x0];continue;case 0x7:_0x216379=_0x2c1530[_0x10b6('0xc')][_0x10b6('0x16')](),_0x2c1530['trys'][_0x10b6('0x16')]();continue;default:if(!(_0x1f28ec=0x0<(_0x1f28ec=_0x2c1530[_0x10b6('0x11')])['length']&&_0x1f28ec[_0x1f28ec[_0x10b6('0x1d')]-0x1])&&(0x6===_0x216379[0x0]||0x2===_0x216379[0x0])){_0x2c1530=0x0;continue;}if(0x3===_0x216379[0x0]&&(!_0x1f28ec||_0x216379[0x1]>_0x1f28ec[0x0]&&_0x216379[0x1]<_0x1f28ec[0x3])){_0x2c1530[_0x10b6('0x5')]=_0x216379[0x1];break;}if(0x6===_0x216379[0x0]&&_0x2c1530[_0x10b6('0x5')]<_0x1f28ec[0x1]){_0x2c1530[_0x10b6('0x5')]=_0x1f28ec[0x1],_0x1f28ec=_0x216379;break;}if(_0x1f28ec&&_0x2c1530['label']<_0x1f28ec[0x2]){_0x2c1530[_0x10b6('0x5')]=_0x1f28ec[0x2],_0x2c1530[_0x10b6('0xc')][_0x10b6('0x20')](_0x216379);break;}_0x1f28ec[0x2]&&_0x2c1530[_0x10b6('0xc')]['pop'](),_0x2c1530[_0x10b6('0x11')][_0x10b6('0x16')]();continue;}_0x216379=_0x26fa3e[_0x10b6('0x6')](_0x56c1b2,_0x2c1530);}catch(_0x3f50ac){_0x216379=[0x6,_0x3f50ac],_0x1aead3=0x0;}finally{_0x1cef1c=_0x1f28ec=0x0;}if(0x5&_0x216379[0x0])throw _0x216379[0x1];return{'value':_0x216379[0x0]?_0x216379[0x1]:void 0x0,'done':!0x0};}([_0x4be79d,_0x24cd51]);};}};exports[_0x10b6('0x1e')]=!0x0;var cli_shared_utils_1=require('@lartplus/cli-shared-utils'),readConfigFile_1=require(_0x10b6('0x1a')),createComponents_1=require('./lib/create/createComponents'),compile_1=require(_0x10b6('0x25'));function initSevice(){return __awaiter(this,void 0x0,void 0x0,function(){var _0x4e389a,_0x4993c8,_0x523135,_0x21d7be,_0x45fee5;return __generator(this,function(_0x44d0c1){switch(_0x44d0c1[_0x10b6('0x5')]){case 0x0:return _0x4e389a=new cli_shared_utils_1[(_0x10b6('0x1f'))][(_0x10b6('0x1c'))](),_0x4993c8=cli_shared_utils_1[_0x10b6('0x1b')](_0x10b6('0x0'),__dirname+_0x10b6('0x2a')),[0x4,readConfigFile_1['readConfigFile']()];case 0x1:return _0x523135=_0x44d0c1[_0x10b6('0x23')](),_0x21d7be={'cwdPath':process['cwd'](),'workDir':_0x10b6('0x14')},process[_0x10b6('0x2b')]['LARTPLUS_CONTEXT']=JSON[_0x10b6('0x3')](_0x523135?__assign({'configFile':_0x523135},_0x21d7be):_0x21d7be),_0x45fee5=JSON[_0x10b6('0x2f')](process[_0x10b6('0x2b')][_0x10b6('0x24')]),_0x4e389a['version'](_0x4993c8)['usage'](_0x10b6('0x10')),_0x4e389a[_0x10b6('0x15')](_0x10b6('0x8'))[_0x10b6('0x7')]('创建例如\x20components\x20components/xxxx')[_0x10b6('0x26')](function(_0x5e4301,_0x31719d){switch(_0x5e4301){case _0x10b6('0xa'):case _0x10b6('0x28'):createComponents_1['createComponents'](_0x45fee5,_0x5e4301,_0x31719d);break;default:cli_shared_utils_1[_0x10b6('0x19')][_0x10b6('0x27')]([_0x10b6('0x29')]);}}),_0x4e389a[_0x10b6('0x15')](_0x10b6('0xb'))[_0x10b6('0x7')]('开发模式/打包模式/测试模式')[_0x10b6('0x18')]('-e\x20--env\x20[env]')[_0x10b6('0x26')](function(_0x206766,_0x303abc){compile_1[_0x10b6('0xf')]({'mode':_0x206766,'cutsomEnv':_0x303abc[_0x10b6('0x2b')]},_0x45fee5);}),_0x4e389a['parse'](process[_0x10b6('0xe')]),[0x2];}});});}initSevice();
+"use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-17 15:05:30
+ * @LastEditTime : 2020-05-18 10:15:30
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var readConfigFile_1 = require("./lib/readConfigFile");
+var createComponents_1 = require("./lib/create/createComponents");
+var compile_1 = require("./lib/compile/compile");
+function initSevice() {
+    return __awaiter(this, void 0, void 0, function () {
+        var program, cliVersion, configFile, LARTPLUS_OBJ, contextJson;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    program = new cli_shared_utils_1.commander.Command();
+                    cliVersion = cli_shared_utils_1.getPackageVersion('cli-service', __dirname + '/../');
+                    return [4 /*yield*/, readConfigFile_1.readConfigFile()];
+                case 1:
+                    configFile = _a.sent();
+                    LARTPLUS_OBJ = {
+                        cwdPath: process.cwd(),
+                        workDir: 'src'
+                    };
+                    process.env.LARTPLUS_CONTEXT = JSON.stringify(configFile ? __assign({ configFile: configFile }, LARTPLUS_OBJ) : LARTPLUS_OBJ);
+                    contextJson = JSON.parse(process.env.LARTPLUS_CONTEXT);
+                    program.version(cliVersion)
+                        .usage('<command> 选项');
+                    program
+                        .command('new <option> [file]')
+                        .description('创建例如 components components/xxxx')
+                        .action(function (action, filePath) {
+                        switch (action) {
+                            case 'components':
+                                createComponents_1.createComponents(contextJson, action, filePath);
+                                break;
+                            case 'page':
+                                createComponents_1.createComponents(contextJson, action, filePath);
+                                break;
+                            default:
+                                cli_shared_utils_1.notice.error(['暂不支持components/page以外的文件创建']);
+                                break;
+                        }
+                    });
+                    program
+                        .command('start <action>')
+                        .description('开发模式/打包模式/测试模式')
+                        .option('-e --env [env]')
+                        .action(function (action, cmd) {
+                        compile_1.compile({ mode: action, cutsomEnv: cmd.env }, contextJson);
+                    });
+                    program.parse(process.argv);
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+initSevice();

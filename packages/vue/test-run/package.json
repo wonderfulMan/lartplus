@@ -9,7 +9,7 @@
   "main": "./dist/index.js",
   "types": "./src/typings/global.d.ts",
   "scripts": {
-    "build": "../../../node_modules/.bin/tsc -w"
+    "create": "./node_modules/.bin/lartplus create project"
   },
   "keywords": [
     "hAo",
@@ -27,6 +27,8 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli": "^0.2.15"
+    "@lartplus/cli": "^0.2.15",
+    "@lartplus/cli-babel": "^0.2.15",
+    "@lartplus/cli-postcss": "^0.2.15"
   }
 }

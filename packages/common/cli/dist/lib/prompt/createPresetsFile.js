@@ -1,1 +1,31 @@
-var _0x370d=['length','createPresetsFile','decorate','__decorate','confirm','object','__esModule','prototype','getOwnPropertyDescriptor','typedi','function','default'];(function(_0x204281,_0x370d31){var _0x3ceaf4=function(_0x61712b){while(--_0x61712b){_0x204281['push'](_0x204281['shift']());}};_0x3ceaf4(++_0x370d31);}(_0x370d,0xeb));var _0x3cea=function(_0x204281,_0x370d31){_0x204281=_0x204281-0x0;var _0x3ceaf4=_0x370d[_0x204281];return _0x3ceaf4;};'use strict';var __decorate=this&&this[_0x3cea('0x8')]||function(_0x277a7f,_0xca2f1e,_0x118c61,_0x212815){var _0x592b75,_0x290ff0=arguments[_0x3cea('0x5')],_0x2dee10=_0x290ff0<0x3?_0xca2f1e:null===_0x212815?_0x212815=Object[_0x3cea('0x1')](_0xca2f1e,_0x118c61):_0x212815;if(_0x3cea('0xa')==typeof Reflect&&_0x3cea('0x3')==typeof Reflect[_0x3cea('0x7')])_0x2dee10=Reflect['decorate'](_0x277a7f,_0xca2f1e,_0x118c61,_0x212815);else for(var _0xa92772=_0x277a7f['length']-0x1;0x0<=_0xa92772;_0xa92772--)(_0x592b75=_0x277a7f[_0xa92772])&&(_0x2dee10=(_0x290ff0<0x3?_0x592b75(_0x2dee10):0x3<_0x290ff0?_0x592b75(_0xca2f1e,_0x118c61,_0x2dee10):_0x592b75(_0xca2f1e,_0x118c61))||_0x2dee10);return 0x3<_0x290ff0&&_0x2dee10&&Object['defineProperty'](_0xca2f1e,_0x118c61,_0x2dee10),_0x2dee10;};exports[_0x3cea('0xb')]=!0x0;var typedi_1=require(_0x3cea('0x2')),CreatePresetsFile=function(){function _0x25a6d9(){}return _0x25a6d9[_0x3cea('0x0')]['config']=function(){return{'name':_0x3cea('0x6'),'message':'是否保存本次配置','type':_0x3cea('0x9')};},_0x25a6d9=__decorate([typedi_1['Service']()],_0x25a6d9);}();exports[_0x3cea('0x4')]=CreatePresetsFile;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-26 14:12:44
+ * @LastEditTime : 2020-01-26 14:31:38
+ */
+var typedi_1 = require("typedi");
+var CreatePresetsFile = /** @class */ (function () {
+    function CreatePresetsFile() {
+    }
+    CreatePresetsFile.prototype.config = function () {
+        return {
+            name: "createPresetsFile",
+            message: '是否保存本次配置',
+            type: "confirm"
+        };
+    };
+    CreatePresetsFile = __decorate([
+        typedi_1.Service()
+    ], CreatePresetsFile);
+    return CreatePresetsFile;
+}());
+exports["default"] = CreatePresetsFile;

@@ -1,1 +1,119 @@
-var _0xdecf=['iterator','pop','return','__esModule','value','then','function','ops','extname','sent','notice','__awaiter','entires目录下没有任何入口文件，请检查','cwdPath','push','parseEntries','existsSync','__importDefault','workDir','trys','next','isMultiple','map','/entries','entries目录下入口文件格式错误','enties目录不能删除','length','exit','entriesFiles','call','label','throw','apply','error','readdirSync','__generator','path'];(function(_0x4fbd39,_0xdecf98){var _0x3f8221=function(_0x7871e2){while(--_0x7871e2){_0x4fbd39['push'](_0x4fbd39['shift']());}};_0x3f8221(++_0xdecf98);}(_0xdecf,0x1b3));var _0x3f82=function(_0x4fbd39,_0xdecf98){_0x4fbd39=_0x4fbd39-0x0;var _0x3f8221=_0xdecf[_0x4fbd39];return _0x3f8221;};'use strict';var __awaiter=this&&this[_0x3f82('0x14')]||function(_0x1ff8a1,_0x445e8c,_0x47a49d,_0x21ad8d){return new(_0x47a49d=_0x47a49d||Promise)(function(_0x33da64,_0x38ae90){function _0x172a5c(_0x1fd75e){try{_0x2b2716(_0x21ad8d[_0x3f82('0x1d')](_0x1fd75e));}catch(_0x11c133){_0x38ae90(_0x11c133);}}function _0x4b7d22(_0x1284e0){try{_0x2b2716(_0x21ad8d[_0x3f82('0x3')](_0x1284e0));}catch(_0x24c9bc){_0x38ae90(_0x24c9bc);}}function _0x2b2716(_0x1ba7cb){var _0xd53b14;_0x1ba7cb['done']?_0x33da64(_0x1ba7cb['value']):((_0xd53b14=_0x1ba7cb[_0x3f82('0xd')])instanceof _0x47a49d?_0xd53b14:new _0x47a49d(function(_0x105a1e){_0x105a1e(_0xd53b14);}))[_0x3f82('0xe')](_0x172a5c,_0x4b7d22);}_0x2b2716((_0x21ad8d=_0x21ad8d[_0x3f82('0x4')](_0x1ff8a1,_0x445e8c||[]))[_0x3f82('0x1d')]());});},__generator=this&&this[_0x3f82('0x7')]||function(_0x3383a0,_0x3de13b){var _0x31faa5,_0x45e859,_0x3ac63c,_0x59f3b4={'label':0x0,'sent':function(){if(0x1&_0x3ac63c[0x0])throw _0x3ac63c[0x1];return _0x3ac63c[0x1];},'trys':[],'ops':[]},_0x5297d5={'next':_0x5534e8(0x0),'throw':_0x5534e8(0x1),'return':_0x5534e8(0x2)};return _0x3f82('0xf')==typeof Symbol&&(_0x5297d5[Symbol[_0x3f82('0x9')]]=function(){return this;}),_0x5297d5;function _0x5534e8(_0x15253e){return function(_0x22d315){return function(_0x243509){if(_0x31faa5)throw new TypeError('Generator\x20is\x20already\x20executing.');for(;_0x59f3b4;)try{if(_0x31faa5=0x1,_0x45e859&&(_0x3ac63c=0x2&_0x243509[0x0]?_0x45e859[_0x3f82('0xb')]:_0x243509[0x0]?_0x45e859[_0x3f82('0x3')]||((_0x3ac63c=_0x45e859['return'])&&_0x3ac63c[_0x3f82('0x1')](_0x45e859),0x0):_0x45e859[_0x3f82('0x1d')])&&!(_0x3ac63c=_0x3ac63c[_0x3f82('0x1')](_0x45e859,_0x243509[0x1]))['done'])return _0x3ac63c;switch(_0x45e859=0x0,_0x3ac63c&&(_0x243509=[0x2&_0x243509[0x0],_0x3ac63c[_0x3f82('0xd')]]),_0x243509[0x0]){case 0x0:case 0x1:_0x3ac63c=_0x243509;break;case 0x4:return _0x59f3b4[_0x3f82('0x2')]++,{'value':_0x243509[0x1],'done':!0x1};case 0x5:_0x59f3b4[_0x3f82('0x2')]++,_0x45e859=_0x243509[0x1],_0x243509=[0x0];continue;case 0x7:_0x243509=_0x59f3b4[_0x3f82('0x10')]['pop'](),_0x59f3b4[_0x3f82('0x1c')][_0x3f82('0xa')]();continue;default:if(!(_0x3ac63c=0x0<(_0x3ac63c=_0x59f3b4[_0x3f82('0x1c')])[_0x3f82('0x23')]&&_0x3ac63c[_0x3ac63c[_0x3f82('0x23')]-0x1])&&(0x6===_0x243509[0x0]||0x2===_0x243509[0x0])){_0x59f3b4=0x0;continue;}if(0x3===_0x243509[0x0]&&(!_0x3ac63c||_0x243509[0x1]>_0x3ac63c[0x0]&&_0x243509[0x1]<_0x3ac63c[0x3])){_0x59f3b4[_0x3f82('0x2')]=_0x243509[0x1];break;}if(0x6===_0x243509[0x0]&&_0x59f3b4['label']<_0x3ac63c[0x1]){_0x59f3b4[_0x3f82('0x2')]=_0x3ac63c[0x1],_0x3ac63c=_0x243509;break;}if(_0x3ac63c&&_0x59f3b4['label']<_0x3ac63c[0x2]){_0x59f3b4[_0x3f82('0x2')]=_0x3ac63c[0x2],_0x59f3b4[_0x3f82('0x10')][_0x3f82('0x17')](_0x243509);break;}_0x3ac63c[0x2]&&_0x59f3b4[_0x3f82('0x10')][_0x3f82('0xa')](),_0x59f3b4['trys']['pop']();continue;}_0x243509=_0x3de13b['call'](_0x3383a0,_0x59f3b4);}catch(_0x34bdd4){_0x243509=[0x6,_0x34bdd4],_0x45e859=0x0;}finally{_0x31faa5=_0x3ac63c=0x0;}if(0x5&_0x243509[0x0])throw _0x243509[0x1];return{'value':_0x243509[0x0]?_0x243509[0x1]:void 0x0,'done':!0x0};}([_0x15253e,_0x22d315]);};}},__importDefault=this&&this[_0x3f82('0x1a')]||function(_0x56a5a0){return _0x56a5a0&&_0x56a5a0[_0x3f82('0xc')]?_0x56a5a0:{'default':_0x56a5a0};};exports[_0x3f82('0xc')]=!0x0;var path_1=__importDefault(require(_0x3f82('0x8'))),cli_shared_utils_1=require('@lartplus/cli-shared-utils'),validateDir=function(_0x1b2fac,_0xc1dbdd){var _0x3f074e=cli_shared_utils_1['fs']['existsSync'](_0x1b2fac),_0x5953a6=cli_shared_utils_1['fs'][_0x3f82('0x19')](_0xc1dbdd);return _0x3f074e?!!_0x5953a6||(cli_shared_utils_1[_0x3f82('0x13')]['error']([_0x3f82('0x22')]),!0x1):(cli_shared_utils_1[_0x3f82('0x13')]['error'](['请设置工作目录']),!0x1);},readEntriesDir=function(_0xa6a191){return __awaiter(void 0x0,void 0x0,void 0x0,function(){var _0x3367ef;return __generator(this,function(_0xc7a0e4){return _0x3367ef=cli_shared_utils_1['fs'][_0x3f82('0x6')](_0xa6a191),[0x2,{'isMultiple':0x1<_0x3367ef['length'],'entriesFiles':_0x3367ef}];});});},composeEntries=function(_0x31c66b,_0x2971da){return _0x31c66b[_0x3f82('0x1f')](function(_0x2e2125){var _0x495d2c=_0x2e2125['split']('.')[0x0];return _0x495d2c||(cli_shared_utils_1[_0x3f82('0x13')]['error']([_0x3f82('0x21')]),process['exit'](0x0)),{'appName':_0x495d2c,'fileExtName':path_1['default'][_0x3f82('0x11')](_0x2e2125),'filePath':_0x2971da+'/'+_0x2e2125};});},parseEntries=function(_0x3543d4){return __awaiter(void 0x0,void 0x0,void 0x0,function(){var _0x4a403b,_0x3518c8,_0x226120,_0x42bb0c,_0x4e8a3f,_0x4ee09a,_0x25ede2,_0x2b5c78;return __generator(this,function(_0x5c7898){switch(_0x5c7898[_0x3f82('0x2')]){case 0x0:return _0x4a403b=_0x3543d4[_0x3f82('0x16')],_0x3518c8=_0x4a403b+'/'+_0x3543d4[_0x3f82('0x1b')],_0x226120=_0x4a403b+'/'+_0x3543d4[_0x3f82('0x1b')]+_0x3f82('0x20'),validateDir(_0x3518c8,_0x226120)||process[_0x3f82('0x24')](0x0),[0x4,readEntriesDir(_0x226120)['catch'](function(_0x2f74f7){cli_shared_utils_1[_0x3f82('0x13')][_0x3f82('0x5')]([_0x2f74f7]),process[_0x3f82('0x24')](0x0);})];case 0x1:return _0x42bb0c=_0x5c7898[_0x3f82('0x12')](),null===(_0x25ede2=_0x42bb0c)||void 0x0===_0x25ede2||_0x25ede2[_0x3f82('0x1e')],_0x4e8a3f=null===(_0x2b5c78=_0x42bb0c)||void 0x0===_0x2b5c78?void 0x0:_0x2b5c78[_0x3f82('0x0')],(_0x4ee09a=composeEntries(_0x4e8a3f,_0x226120))[_0x3f82('0x23')]<0x1&&(cli_shared_utils_1[_0x3f82('0x13')]['error']([_0x3f82('0x15')]),process['exit'](0x0)),[0x2,_0x4ee09a];}});});};exports[_0x3f82('0x18')]=parseEntries;
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-17 15:06:34
+ * @LastEditTime : 2020-04-08 17:18:53
+ */
+var path_1 = __importDefault(require("path"));
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var validateDir = function (workDir, entryDir) {
+    var hasWorkDir = cli_shared_utils_1.fs.existsSync(workDir);
+    var hasEntryDir = cli_shared_utils_1.fs.existsSync(entryDir);
+    if (!hasWorkDir) {
+        cli_shared_utils_1.notice.error(['请设置工作目录']);
+        return false;
+    }
+    if (!hasEntryDir) {
+        cli_shared_utils_1.notice.error(['enties目录不能删除']);
+        return false;
+    }
+    return true;
+};
+var readEntriesDir = function (entryDir) { return __awaiter(void 0, void 0, void 0, function () {
+    var entriesFiles, isMultiple;
+    return __generator(this, function (_a) {
+        entriesFiles = cli_shared_utils_1.fs.readdirSync(entryDir);
+        isMultiple = entriesFiles.length > 1;
+        return [2 /*return*/, {
+                isMultiple: isMultiple,
+                entriesFiles: entriesFiles
+            }];
+    });
+}); };
+var composeEntries = function (entriesFiles, entryDir) {
+    return entriesFiles.map(function (it) {
+        var appName = it.split('.')[0];
+        if (!appName) {
+            cli_shared_utils_1.notice.error(['entries目录下入口文件格式错误']);
+            process.exit(0);
+        }
+        var fileExtName = path_1["default"].extname(it);
+        var filePath = entryDir + "/" + it;
+        return {
+            appName: appName,
+            fileExtName: fileExtName,
+            filePath: filePath
+        };
+    });
+};
+var parseEntries = function (context) { return __awaiter(void 0, void 0, void 0, function () {
+    var currentDir, workDir, entryDir, hasDir, readPayload, isMultiple, entriesFiles, entries;
+    var _a, _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                currentDir = context.cwdPath;
+                workDir = currentDir + "/" + context.workDir;
+                entryDir = currentDir + "/" + context.workDir + "/entries";
+                hasDir = validateDir(workDir, entryDir);
+                if (!hasDir)
+                    process.exit(0);
+                return [4 /*yield*/, readEntriesDir(entryDir)["catch"](function (err) {
+                        cli_shared_utils_1.notice.error([err]);
+                        process.exit(0);
+                    })];
+            case 1:
+                readPayload = _c.sent();
+                isMultiple = (_a = readPayload) === null || _a === void 0 ? void 0 : _a.isMultiple;
+                entriesFiles = (_b = readPayload) === null || _b === void 0 ? void 0 : _b.entriesFiles;
+                entries = composeEntries(entriesFiles, entryDir);
+                if (entries.length < 1) {
+                    cli_shared_utils_1.notice.error(['entires目录下没有任何入口文件，请检查']);
+                    process.exit(0);
+                }
+                return [2 /*return*/, entries];
+        }
+    });
+}); };
+exports.parseEntries = parseEntries;

@@ -1,1 +1,34 @@
-var _0x4c3a=['map','parseEnv','mode','__rest','__esModule','entries','stringify','prototype','configFile','indexOf','call','env','getOwnPropertySymbols','cutsomEnv'];(function(_0x35cfd1,_0x4c3a62){var _0x277bb4=function(_0x1ace35){while(--_0x1ace35){_0x35cfd1['push'](_0x35cfd1['shift']());}};_0x277bb4(++_0x4c3a62);}(_0x4c3a,0x146));var _0x277b=function(_0x35cfd1,_0x4c3a62){_0x35cfd1=_0x35cfd1-0x0;var _0x277bb4=_0x4c3a[_0x35cfd1];return _0x277bb4;};'use strict';var __rest=this&&this[_0x277b('0xd')]||function(_0x180cb4,_0xc7d35e){var _0x2e4162={};for(var _0x434795 in _0x180cb4)Object[_0x277b('0x3')]['hasOwnProperty'][_0x277b('0x6')](_0x180cb4,_0x434795)&&_0xc7d35e[_0x277b('0x5')](_0x434795)<0x0&&(_0x2e4162[_0x434795]=_0x180cb4[_0x434795]);if(null!=_0x180cb4&&'function'==typeof Object[_0x277b('0x8')])for(var _0x4245f7=0x0,_0x434795=Object['getOwnPropertySymbols'](_0x180cb4);_0x4245f7<_0x434795['length'];_0x4245f7++)_0xc7d35e[_0x277b('0x5')](_0x434795[_0x4245f7])<0x0&&Object[_0x277b('0x3')]['propertyIsEnumerable'][_0x277b('0x6')](_0x180cb4,_0x434795[_0x4245f7])&&(_0x2e4162[_0x434795[_0x4245f7]]=_0x180cb4[_0x434795[_0x4245f7]]);return _0x2e4162;};exports[_0x277b('0x0')]=!0x0;var parseEnv=function(_0x38f85a,_0x2cef50){var _0x44c511,_0x59e426,_0x372ad1=_0x38f85a[_0x277b('0xc')],_0x3c0688=_0x38f85a[_0x277b('0x9')],_0x141c5b=null===(_0x44c511=_0x2cef50[_0x277b('0x4')])||void 0x0===_0x44c511?void 0x0:_0x44c511[_0x277b('0x7')],_0x2a2cee={};return _0x141c5b&&_0x3c0688&&(_0x59e426=__rest(_0x141c5b,[]),Object[_0x277b('0x1')](_0x59e426)[_0x277b('0xa')](function(_0x3d1e4d){var _0x4e355a=_0x3d1e4d[0x0],_0x59f015=_0x3d1e4d[0x1];_0x4e355a===_0x3c0688&&(_0x2a2cee=_0x59f015);})),{'NODE_ENV':'dev'===_0x372ad1?'\x27development\x27':'\x27production\x27','CUSTOM_ENV':JSON[_0x277b('0x2')](_0x2a2cee)};};exports[_0x277b('0xb')]=parseEnv;
+"use strict";
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+exports.__esModule = true;
+var parseEnv = function (rest, context) {
+    var _a;
+    var mode = rest.mode, cutsomEnv = rest.cutsomEnv;
+    var env = (_a = context.configFile) === null || _a === void 0 ? void 0 : _a.env;
+    var result = {};
+    if (env && cutsomEnv) {
+        var envKey = __rest(env, []);
+        Object.entries(envKey)
+            .map(function (_a) {
+            var key = _a[0], value = _a[1];
+            if (key === cutsomEnv) {
+                result = value;
+            }
+        });
+    }
+    return {
+        NODE_ENV: mode === 'dev' ? "'development'" : "'production'",
+        CUSTOM_ENV: JSON.stringify(result)
+    };
+};
+exports.parseEnv = parseEnv;

@@ -1,1 +1,24 @@
-var _0x14c5=['@babel/plugin-proposal-class-properties','@babel/plugin-syntax-dynamic-import','__esModule','@babel/plugin-proposal-object-rest-spread'];(function(_0x4cb38e,_0x14c5e0){var _0x28117e=function(_0xe5eb81){while(--_0xe5eb81){_0x4cb38e['push'](_0x4cb38e['shift']());}};_0x28117e(++_0x14c5e0);}(_0x14c5,0x1a6));var _0x2811=function(_0x4cb38e,_0x14c5e0){_0x4cb38e=_0x4cb38e-0x0;var _0x28117e=_0x14c5[_0x4cb38e];return _0x28117e;};'use strict';exports[_0x2811('0x0')]=!0x0,exports['plugins']=[_0x2811('0x1'),_0x2811('0x3'),['@babel/plugin-proposal-decorators',{'legacy':!0x0}],[_0x2811('0x2'),{'loose':!0x0}]];
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors: hAo
+ * @Date: 2020-05-15 11:01:18
+ * @LastEditTime: 2020-05-15 11:01:52
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+exports.plugins = [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-syntax-dynamic-import",
+    [
+        "@babel/plugin-proposal-decorators",
+        {
+            "legacy": true
+        }
+    ],
+    ["@babel/plugin-proposal-class-properties",
+        {
+            "loose": true
+        }
+    ]
+];

@@ -1,1 +1,14 @@
-var _0x1fac=['sourceType','applyBabelConfig','plugins','__esModule','unambiguous','presets','push'];(function(_0x2d5a9b,_0x1facd4){var _0x5a366b=function(_0x22d629){while(--_0x22d629){_0x2d5a9b['push'](_0x2d5a9b['shift']());}};_0x5a366b(++_0x1facd4);}(_0x1fac,0x122));var _0x5a36=function(_0x2d5a9b,_0x1facd4){_0x2d5a9b=_0x2d5a9b-0x0;var _0x5a366b=_0x1fac[_0x2d5a9b];return _0x5a366b;};'use strict';function applyBabelConfig(_0x325c02,_0xa4ce1d,_0x2e837c,_0x634069){var _0x116636;return _0x5a36('0x2')!==_0xa4ce1d&&_0x5a36('0x6')!==_0xa4ce1d||(_0x116636=[_0x2e837c],_0x634069&&_0x116636[_0x5a36('0x3')](_0x634069),_0x325c02[_0x5a36('0x4')]=_0x5a36('0x1'),_0x325c02[_0xa4ce1d][_0x5a36('0x3')](_0x116636)),_0x325c02;}exports[_0x5a36('0x0')]=!0x0,exports[_0x5a36('0x5')]=applyBabelConfig;
+"use strict";
+exports.__esModule = true;
+function applyBabelConfig(babelConfig, setType, presetsOrPlugin, options) {
+    if (setType === 'presets' || setType === 'plugins') {
+        var setOptions = [presetsOrPlugin];
+        if (options) {
+            setOptions.push(options);
+        }
+        babelConfig['sourceType'] = "unambiguous";
+        babelConfig[setType].push(setOptions);
+    }
+    return babelConfig;
+}
+exports.applyBabelConfig = applyBabelConfig;

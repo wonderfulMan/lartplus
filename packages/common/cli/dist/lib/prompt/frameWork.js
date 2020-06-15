@@ -1,1 +1,41 @@
-var _0x2245=['decorate','typedi','选择开发框架:','function','Service','__decorate','default','getOwnPropertyDescriptor','vue','Vue','list','React','react','object'];(function(_0x21274e,_0x224553){var _0x2e7659=function(_0x2df9e3){while(--_0x2df9e3){_0x21274e['push'](_0x21274e['shift']());}};_0x2e7659(++_0x224553);}(_0x2245,0xef));var _0x2e76=function(_0x21274e,_0x224553){_0x21274e=_0x21274e-0x0;var _0x2e7659=_0x2245[_0x21274e];return _0x2e7659;};'use strict';var __decorate=this&&this[_0x2e76('0x4')]||function(_0x5a8998,_0x9c0ff6,_0x16eaf4,_0x1747dc){var _0x2a35c4,_0x4c2ff7=arguments['length'],_0x5233c2=_0x4c2ff7<0x3?_0x9c0ff6:null===_0x1747dc?_0x1747dc=Object[_0x2e76('0x6')](_0x9c0ff6,_0x16eaf4):_0x1747dc;if(_0x2e76('0xc')==typeof Reflect&&_0x2e76('0x2')==typeof Reflect[_0x2e76('0xd')])_0x5233c2=Reflect['decorate'](_0x5a8998,_0x9c0ff6,_0x16eaf4,_0x1747dc);else for(var _0x4d037e=_0x5a8998['length']-0x1;0x0<=_0x4d037e;_0x4d037e--)(_0x2a35c4=_0x5a8998[_0x4d037e])&&(_0x5233c2=(_0x4c2ff7<0x3?_0x2a35c4(_0x5233c2):0x3<_0x4c2ff7?_0x2a35c4(_0x9c0ff6,_0x16eaf4,_0x5233c2):_0x2a35c4(_0x9c0ff6,_0x16eaf4))||_0x5233c2);return 0x3<_0x4c2ff7&&_0x5233c2&&Object['defineProperty'](_0x9c0ff6,_0x16eaf4,_0x5233c2),_0x5233c2;};exports['__esModule']=!0x0;var typedi_1=require(_0x2e76('0x0')),FrameWorkPrompt=function(){function _0x27cc6d(){}return _0x27cc6d['prototype']['config']=function(){return{'name':'framework','message':_0x2e76('0x1'),'type':_0x2e76('0x9'),'choices':[{'name':_0x2e76('0x8'),'value':_0x2e76('0x7')},{'name':_0x2e76('0xa'),'value':_0x2e76('0xb')}]};},_0x27cc6d=__decorate([typedi_1[_0x2e76('0x3')]()],_0x27cc6d);}();exports[_0x2e76('0x5')]=FrameWorkPrompt;
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-21 13:27:38
+ * @LastEditTime : 2020-03-20 15:54:52
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+var typedi_1 = require("typedi");
+var FrameWorkPrompt = /** @class */ (function () {
+    function FrameWorkPrompt() {
+    }
+    FrameWorkPrompt.prototype.config = function () {
+        return {
+            name: 'framework',
+            message: '选择开发框架:',
+            type: 'list',
+            choices: [
+                {
+                    name: 'Vue',
+                    value: 'vue'
+                },
+                {
+                    name: 'React',
+                    value: 'react'
+                }
+            ]
+        };
+    };
+    FrameWorkPrompt = __decorate([
+        typedi_1.Service()
+    ], FrameWorkPrompt);
+    return FrameWorkPrompt;
+}());
+exports["default"] = FrameWorkPrompt;

@@ -1,1 +1,13 @@
-var _0x3a7d=['__esModule','GET_HTML_WEBPACK_PLUGIN_FILENAME','lartplus.config','FICTITIOUS'];(function(_0x3835a6,_0x3a7db8){var _0x10812e=function(_0x308988){while(--_0x308988){_0x3835a6['push'](_0x3835a6['shift']());}};_0x10812e(++_0x3a7db8);}(_0x3a7d,0x150));var _0x1081=function(_0x3835a6,_0x3a7db8){_0x3835a6=_0x3835a6-0x0;var _0x10812e=_0x3a7d[_0x3835a6];return _0x10812e;};'use strict';exports[_0x1081('0x0')]=!0x0,exports['CONFIG_FILE_NAME']=_0x1081('0x2'),exports[_0x1081('0x1')]=function(_0x1075dd){return'dev'===_0x1075dd?_0x1081('0x3'):'';};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-18 15:53:33
+ * @LastEditTime : 2020-03-26 15:16:40
+ */
+exports.CONFIG_FILE_NAME = 'lartplus.config';
+// html-webpack-plugin 设置根目录
+exports.GET_HTML_WEBPACK_PLUGIN_FILENAME = function (mode) {
+    return mode === 'dev' ? 'FICTITIOUS' : '';
+};

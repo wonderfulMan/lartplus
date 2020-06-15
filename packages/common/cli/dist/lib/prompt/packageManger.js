@@ -1,1 +1,41 @@
-var _0x46f0=['object','getOwnPropertyDescriptor','__esModule','npm','yarn','decorate','config','function','list','prototype','__decorate','length','default'];(function(_0x5e246a,_0x46f0e6){var _0x42d4ed=function(_0x2bbfb3){while(--_0x2bbfb3){_0x5e246a['push'](_0x5e246a['shift']());}};_0x42d4ed(++_0x46f0e6);}(_0x46f0,0x1ef));var _0x42d4=function(_0x5e246a,_0x46f0e6){_0x5e246a=_0x5e246a-0x0;var _0x42d4ed=_0x46f0[_0x5e246a];return _0x42d4ed;};'use strict';var __decorate=this&&this[_0x42d4('0x9')]||function(_0x307e53,_0x48fa0d,_0x26ba90,_0x1c2217){var _0x4a94a9,_0x1be1fe=arguments[_0x42d4('0xa')],_0x133b51=_0x1be1fe<0x3?_0x48fa0d:null===_0x1c2217?_0x1c2217=Object[_0x42d4('0x0')](_0x48fa0d,_0x26ba90):_0x1c2217;if(_0x42d4('0xc')==typeof Reflect&&_0x42d4('0x6')==typeof Reflect[_0x42d4('0x4')])_0x133b51=Reflect['decorate'](_0x307e53,_0x48fa0d,_0x26ba90,_0x1c2217);else for(var _0x1e9838=_0x307e53[_0x42d4('0xa')]-0x1;0x0<=_0x1e9838;_0x1e9838--)(_0x4a94a9=_0x307e53[_0x1e9838])&&(_0x133b51=(_0x1be1fe<0x3?_0x4a94a9(_0x133b51):0x3<_0x1be1fe?_0x4a94a9(_0x48fa0d,_0x26ba90,_0x133b51):_0x4a94a9(_0x48fa0d,_0x26ba90))||_0x133b51);return 0x3<_0x1be1fe&&_0x133b51&&Object['defineProperty'](_0x48fa0d,_0x26ba90,_0x133b51),_0x133b51;};exports[_0x42d4('0x1')]=!0x0;var typedi_1=require('typedi'),PackageManger=function(){function _0x36bdca(){}return _0x36bdca[_0x42d4('0x8')][_0x42d4('0x5')]=function(){return{'name':'packageManger','type':_0x42d4('0x7'),'message':'选择依赖管理','choices':[{'name':_0x42d4('0x2'),'value':_0x42d4('0x2')},{'name':'yarn','value':_0x42d4('0x3')}]};},_0x36bdca=__decorate([typedi_1['Service']()],_0x36bdca);}();exports[_0x42d4('0xb')]=PackageManger;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-26 14:06:30
+ * @LastEditTime : 2020-01-26 14:09:16
+ */
+var typedi_1 = require("typedi");
+var PackageManger = /** @class */ (function () {
+    function PackageManger() {
+    }
+    PackageManger.prototype.config = function () {
+        return {
+            name: 'packageManger',
+            type: 'list',
+            message: '选择依赖管理',
+            choices: [
+                {
+                    name: 'npm',
+                    value: 'npm'
+                },
+                {
+                    name: 'yarn',
+                    value: 'yarn'
+                }
+            ]
+        };
+    };
+    PackageManger = __decorate([
+        typedi_1.Service()
+    ], PackageManger);
+    return PackageManger;
+}());
+exports["default"] = PackageManger;

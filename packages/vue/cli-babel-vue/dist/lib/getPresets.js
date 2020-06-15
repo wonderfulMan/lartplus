@@ -1,1 +1,19 @@
-var _0x3040=['usage','presets','__esModule'];(function(_0x2a2082,_0x30405f){var _0x704fa3=function(_0x40cc6d){while(--_0x40cc6d){_0x2a2082['push'](_0x2a2082['shift']());}};_0x704fa3(++_0x30405f);}(_0x3040,0x115));var _0x704f=function(_0x2a2082,_0x30405f){_0x2a2082=_0x2a2082-0x0;var _0x704fa3=_0x3040[_0x2a2082];return _0x704fa3;};'use strict';exports[_0x704f('0x1')]=!0x0,exports[_0x704f('0x0')]=[['@babel/preset-env',{'corejs':0x3,'modules':!0x1,'useBuiltIns':_0x704f('0x2')}]];
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors: hAo
+ * @Date: 2020-05-15 11:01:11
+ * @LastEditTime: 2020-05-15 11:01:28
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+exports.presets = [
+    [
+        "@babel/preset-env",
+        {
+            "corejs": 3,
+            "modules": false,
+            "useBuiltIns": "usage"
+        }
+    ]
+];

@@ -1,1 +1,10 @@
-var _0x455c=['__esModule','install','./lib/install'];(function(_0x17b622,_0x455c2e){var _0x138836=function(_0x1b96a6){while(--_0x1b96a6){_0x17b622['push'](_0x17b622['shift']());}};_0x138836(++_0x455c2e);}(_0x455c,0xc7));var _0x1388=function(_0x17b622,_0x455c2e){_0x17b622=_0x17b622-0x0;var _0x138836=_0x455c[_0x17b622];return _0x138836;};'use strict';exports[_0x1388('0x2')]=!0x0;var install_1=require(_0x1388('0x1'));exports[_0x1388('0x0')]=install_1[_0x1388('0x0')];
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-16 19:50:41
+ * @LastEditTime : 2020-05-15 13:58:28
+ */
+var install_1 = require("./lib/install");
+exports.install = install_1.install;

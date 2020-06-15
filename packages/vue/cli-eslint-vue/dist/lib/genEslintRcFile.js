@@ -1,1 +1,48 @@
-var _0x5904=['includes','extends','production','linter','__esModule','feature','eslint:recommended','NODE_ENV','hasTypescript','eslintConfig','prettier','genEslintRcFile','plugin:vue/essential','warn','env','airbnb','push','off','@vue/airbnb','@vue/prettier'];(function(_0x51f625,_0x5904dc){var _0x35acf4=function(_0x113ac2){while(--_0x113ac2){_0x51f625['push'](_0x51f625['shift']());}};_0x35acf4(++_0x5904dc);}(_0x5904,0x1bc));var _0x35ac=function(_0x51f625,_0x5904dc){_0x51f625=_0x51f625-0x0;var _0x35acf4=_0x5904[_0x51f625];return _0x35acf4;};'use strict';exports[_0x35ac('0x0')]=!0x0;var cli_shared_utils_1=require('@lartplus/cli-shared-utils'),baseFile={'root':!0x0,'env':{'node':!0x0},'extends':[_0x35ac('0x8')],'parserOptions':{'ecmaVersion':0x7e4},'rules':{'no-console':'production'===process[_0x35ac('0xa')][_0x35ac('0x3')]?_0x35ac('0x9'):_0x35ac('0xd'),'no-debugger':_0x35ac('0x12')===process[_0x35ac('0xa')][_0x35ac('0x3')]?'warn':_0x35ac('0xd')}};exports[_0x35ac('0x7')]=function(_0x484e17){if(_0x484e17[_0x35ac('0x1')][_0x35ac('0x10')](_0x35ac('0x13'))){var _0x4dc6b5=_0x484e17[_0x35ac('0x5')];return _0x35ac('0xb')===_0x4dc6b5&&baseFile['extends'][_0x35ac('0xc')](_0x35ac('0xe')),'standard'===_0x4dc6b5&&baseFile[_0x35ac('0x11')][_0x35ac('0xc')]('@vue/standard'),_0x35ac('0x6')===_0x4dc6b5&&baseFile['extends'][_0x35ac('0xc')](_0x35ac('0x2')),baseFile[_0x35ac('0x11')][_0x35ac('0xc')](_0x35ac('0xf')),cli_shared_utils_1[_0x35ac('0x4')](_0x484e17)&&(baseFile[_0x35ac('0x11')][_0x35ac('0xc')]('@vue/typescript/recommended'),baseFile[_0x35ac('0x11')][_0x35ac('0xc')]('@vue/prettier/@typescript-eslint')),baseFile;}};
+"use strict";
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-06 14:30:37
+ * @LastEditTime : 2020-05-12 17:16:50
+ */
+var baseFile = {
+    // parser: 'babel-eslint',
+    root: true,
+    env: {
+        node: true
+    },
+    'extends': [
+        'plugin:vue/essential',
+    ],
+    parserOptions: {
+        ecmaVersion: 2020
+    },
+    rules: {
+        'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    }
+};
+exports.genEslintRcFile = function (answers) {
+    var hasLint = answers.feature.includes('linter');
+    if (hasLint) {
+        var presets = answers.eslintConfig;
+        if (presets === 'airbnb') {
+            baseFile["extends"].push('@vue/airbnb');
+        }
+        if (presets === 'standard') {
+            baseFile["extends"].push('@vue/standard');
+        }
+        if (presets === 'prettier') {
+            baseFile["extends"].push('eslint:recommended');
+        }
+        baseFile["extends"].push('@vue/prettier');
+        if (cli_shared_utils_1.hasTypescript(answers)) {
+            // baseFile.parser = '@typescript-eslint/parser';
+            baseFile["extends"].push('@vue/typescript/recommended');
+            baseFile["extends"].push('@vue/prettier/@typescript-eslint');
+        }
+        return baseFile;
+    }
+};

@@ -1,1 +1,48 @@
-var _0x191d=['typescript','__esModule','framework','getFrameworkName','feature','hasTypescript','eslintConfig','boolean','vue','react','linter','getEslintConfig','eslint','getPackageModule','mobile','hasEslint','@lartplus/cli-service-vue','hasMobile','includes'];(function(_0x269d61,_0x191dda){var _0x3b6778=function(_0x3e75d4){while(--_0x3e75d4){_0x269d61['push'](_0x269d61['shift']());}};_0x3b6778(++_0x191dda);}(_0x191d,0x106));var _0x3b67=function(_0x269d61,_0x191dda){_0x269d61=_0x269d61-0x0;var _0x3b6778=_0x191d[_0x269d61];return _0x3b6778;};'use strict';exports[_0x3b67('0x5')]=!0x0;var cli_shared_utils_1=require('@lartplus/cli-shared-utils');exports[_0x3b67('0x9')]=function(_0x50a484){return _0x50a484[_0x3b67('0x8')]?_0x50a484[_0x3b67('0x8')][_0x3b67('0x3')](_0x3b67('0x4')):_0x3b67('0xb')==typeof _0x50a484[_0x3b67('0x4')]?_0x50a484[_0x3b67('0x4')]||!0x1:cli_shared_utils_1[_0x3b67('0x11')](_0x3b67('0x4'));},exports[_0x3b67('0x7')]=function(_0x16a122){return null!==_0x16a122&&void 0x0!==_0x16a122&&_0x16a122[_0x3b67('0x6')]?_0x16a122[_0x3b67('0x6')]:cli_shared_utils_1[_0x3b67('0x11')](_0x3b67('0x1'))?_0x3b67('0xc'):_0x3b67('0xd');},exports[_0x3b67('0xf')]=function(_0x56ce92){return _0x56ce92[_0x3b67('0xa')];},exports[_0x3b67('0x0')]=function(_0x4ab9e1){return _0x4ab9e1[_0x3b67('0x8')]?_0x4ab9e1[_0x3b67('0x8')][_0x3b67('0x3')](_0x3b67('0xe')):'boolean'==typeof _0x4ab9e1[_0x3b67('0xe')]?_0x4ab9e1[_0x3b67('0xe')]||!0x1:cli_shared_utils_1[_0x3b67('0x11')](_0x3b67('0x10'));},exports[_0x3b67('0x2')]=function(_0x544ddb){return _0x544ddb[_0x3b67('0x8')][_0x3b67('0x3')](_0x3b67('0x12'));};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-13 19:14:23
+ * @LastEditTime : 2020-05-18 16:11:15
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+exports.hasTypescript = function (answers) {
+    if (answers.feature) {
+        return answers.feature.includes('typescript');
+    }
+    else if (typeof answers.typescript === 'boolean') {
+        return answers.typescript || false;
+    }
+    else {
+        return cli_shared_utils_1.getPackageModule('typescript');
+    }
+};
+exports.getFrameworkName = function (answers) {
+    var _a;
+    console.log(cli_shared_utils_1.getPackageModule('@lartplus/cli-service-vue'));
+    if ((_a = answers) === null || _a === void 0 ? void 0 : _a.framework) {
+        return answers.framework;
+    }
+    else if (cli_shared_utils_1.getPackageModule('@lartplus/cli-service-vue')) {
+        return 'vue';
+    }
+    else {
+        return 'react';
+    }
+};
+exports.getEslintConfig = function (answers) { return answers.eslintConfig; };
+exports.hasEslint = function (answers) {
+    if (answers.feature) {
+        return answers.feature.includes('linter');
+    }
+    else if (typeof answers.linter === 'boolean') {
+        return answers.linter || false;
+    }
+    else {
+        return cli_shared_utils_1.getPackageModule('eslint');
+    }
+};
+exports.hasMobile = function (answers) {
+    return answers.feature.includes('mobile');
+};

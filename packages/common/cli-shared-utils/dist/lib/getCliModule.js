@@ -1,1 +1,13 @@
-var _0x1ea6=['/cli-','getCliModule'];(function(_0x35feb4,_0x1ea68e){var _0x1b1f30=function(_0x33bf91){while(--_0x33bf91){_0x35feb4['push'](_0x35feb4['shift']());}};_0x1b1f30(++_0x1ea68e);}(_0x1ea6,0x147));var _0x1b1f=function(_0x35feb4,_0x1ea68e){_0x35feb4=_0x35feb4-0x0;var _0x1b1f30=_0x1ea6[_0x35feb4];return _0x1b1f30;};'use strict';function getCliModule(_0x50ed1e,_0x2794b7,_0x319e79){var _0x41413b=_0x50ed1e+_0x1b1f('0x1')+_0x2794b7;return _0x319e79?_0x41413b+'-'+_0x319e79:_0x41413b;}exports['__esModule']=!0x0,exports[_0x1b1f('0x0')]=getCliModule;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-06 10:03:06
+ * @LastEditTime : 2020-05-13 16:26:56
+ */
+function getCliModule(targetPath, presets, framework) {
+    var baseStr = targetPath + "/cli-" + presets;
+    return framework ? baseStr + "-" + framework : baseStr;
+}
+exports.getCliModule = getCliModule;
