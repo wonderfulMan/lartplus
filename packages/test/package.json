@@ -38,6 +38,7 @@
     "@typescript-eslint/parser": "^2.26.0",
     "browserslist": "^4.11.1",
     "autoprefixer": "^9.7.5",
-    "postcss-px-to-viewport": "^1.1.1"
+    "postcss-px-to-viewport": "^1.1.1",
+    "babel-eslint": "^10.1.0"
   }
 }

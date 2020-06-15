@@ -1,1 +1,49 @@
-var _0x3cdf=['0x1a','0x4','typescript','0x9','__esModule','framework','maybeLoader','rule','0xf','test','0x14','PATHS','0x6','0x11','configFile','prototype','module','0xc','exclude','0xa','devDependencies','ESLINT','add','buildLint','0xe','@lartplus/cli-shared-utils','use','0x0','cwdPath','0x2','0xd','error','eslint','0x1d','@lartplus/cli-config','options','0x18','context','shift','CreateEslintRules','warning','0x1c','/package.json','end','0x1b','0x15','LANGUAGE_TYPE','0x10','lintOnSave','0x13','exportExtensions','0x1e'];(function(_0x15dbdc,_0x3cdff2){var _0x2caee4=function(_0x382c0d){while(--_0x382c0d){_0x15dbdc['push'](_0x15dbdc['shift']());}};_0x2caee4(++_0x3cdff2);}(_0x3cdf,0xbf));var _0x2cae=function(_0x15dbdc,_0x3cdff2){_0x15dbdc=_0x15dbdc-0x0;var _0x2caee4=_0x3cdf[_0x15dbdc];return _0x2caee4;};var _0x1401=[_0x2cae('0x8'),_0x2cae('0x2d'),_0x2cae('0x17'),'eslint-loader',_0x2cae('0x4'),_0x2cae('0x0'),_0x2cae('0x1a'),_0x2cae('0x20'),'pre',_0x2cae('0x25'),'chain',_0x2cae('0x31'),_0x2cae('0x16'),_0x2cae('0x28'),'getCliModule',_0x2cae('0x7'),_0x2cae('0xb'),_0x2cae('0x18'),_0x2cae('0x26'),_0x2cae('0x15'),_0x2cae('0x30'),_0x2cae('0x2'),'createRules',_0x2cae('0xf'),'linter',_0x2cae('0x23'),_0x2cae('0x5'),_0x2cae('0xd'),_0x2cae('0x33'),'getLartPlusModulePath',_0x2cae('0x21')];!function(_0x19e778){!function(_0x56ac08){for(;--_0x56ac08;)_0x19e778['push'](_0x19e778[_0x2cae('0x3')]());}(0x17a);}(_0x1401);var _0x3eaa=function(_0x27b41d,_0x9d8e12){return _0x1401[_0x27b41d=+_0x27b41d];};exports[_0x3eaa(_0x2cae('0x29'))]=!0x0;var cli_shared_utils_1=require(_0x2cae('0x2a')),cli_config_1=require(_0x3eaa('0x17')),CreateEslintRules=function(){function _0x2825c3(_0x48dbbf,_0x5ae120){this[_0x3eaa('0x10')]=_0x48dbbf,this[_0x3eaa('0x5')]=_0x5ae120;}return _0x2825c3[_0x3eaa(_0x2cae('0x2e'))][_0x3eaa(_0x2cae('0x1e'))]=function(){var _0x415465=this[_0x2cae('0x2')],_0x4032e8=_0x415465[_0x3eaa(_0x2cae('0x9'))],_0x5af978=_0x415465[_0x2cae('0x1f')],_0x321b4c=_0x5af978[_0x3eaa('0x7')],_0x268c70=_0x5af978[_0x3eaa('0x16')],_0x5038ef=cli_shared_utils_1[_0x3eaa(_0x2cae('0x14'))](cli_config_1[_0x2cae('0x1c')][_0x3eaa(_0x2cae('0x1'))](_0x4032e8),_0x3eaa(_0x2cae('0x1d')),_0x321b4c),_0x397380=require(_0x5038ef)[_0x3eaa('0x12')],_0x3d331b=!0x0===_0x268c70||_0x3eaa(_0x2cae('0xa'))===_0x268c70,_0x5b5b9a=_0x3eaa(_0x2cae('0x19'))===_0x268c70;this['chain'][_0x3eaa('0x19')][_0x3eaa(_0x2cae('0x22'))](_0x3eaa(_0x2cae('0x1d')))[_0x3eaa('0x3')]()[_0x3eaa(_0x2cae('0x1b'))][_0x2cae('0x27')](/node_modules/)[_0x3eaa(_0x2cae('0x11'))]()[_0x3eaa('0x1')](cli_config_1[_0x3eaa('0xb')][_0x3eaa(_0x2cae('0x2f'))])[_0x2cae('0x2b')](_0x3eaa(_0x2cae('0x32')))['loader'](cli_shared_utils_1[_0x3eaa(_0x2cae('0x6'))](_0x3eaa(_0x2cae('0x32'))))[_0x3eaa(_0x2cae('0x2c'))]({'fix':!0x0,'extensions':_0x397380(this[_0x3eaa(_0x2cae('0xc'))][_0x2cae('0x1f')][_0x2cae('0x13')]),'emitWarning':_0x3d331b,'emitError':_0x5b5b9a,'eslintPath':cli_shared_utils_1[_0x3eaa(_0x2cae('0x6'))](_0x2cae('0x31'))});},_0x2825c3[_0x3eaa(_0x2cae('0x2e'))][_0x3eaa('0x8')]=function(){(this[_0x3eaa(_0x2cae('0xc'))]['configFile'][_0x3eaa(_0x2cae('0xe'))]||require(this[_0x2cae('0x2')]['cwdPath']+_0x3eaa(_0x2cae('0x24')))[_0x3eaa(_0x2cae('0x12'))][_0x3eaa(_0x2cae('0x1d'))])&&this[_0x3eaa(_0x2cae('0x1e'))]();},_0x2825c3;}();exports[_0x3eaa(_0x2cae('0x10'))]=CreateEslintRules;
+"use strict";
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_config_1 = require("@lartplus/cli-config");
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-06 16:42:57
+ * @LastEditTime : 2020-05-14 18:00:10
+ */
+var CreateEslintRules = /** @class */ (function () {
+    function CreateEslintRules(context, chain) {
+        this.context = context;
+        this.chain = chain;
+    }
+    CreateEslintRules.prototype.createRules = function () {
+        var _a = this.context, cwdPath = _a.cwdPath, configFile = _a.configFile;
+        var framework = configFile.framework, lintOnSave = configFile.lintOnSave;
+        var eslintModulePath = cli_shared_utils_1.getCliModule(cli_config_1.PATHS.getLartPlusModulePath(cwdPath), 'eslint', framework);
+        var exportExtensions = require(eslintModulePath).exportExtensions;
+        var emitWarning = lintOnSave === true || lintOnSave === 'warning';
+        var emitError = lintOnSave === 'error';
+        this.chain.module
+            .rule('eslint')
+            .pre()
+            .exclude
+            .add(/node_modules/)
+            .end()
+            .test(cli_config_1.LANGUAGE_TYPE.ESLINT)
+            .use('eslint-loader')
+            .loader(cli_shared_utils_1.maybeLoader('eslint-loader'))
+            .options({
+            fix: true,
+            // cache: true,
+            // cacheIdentifier: Hash(new Date()),
+            extensions: exportExtensions(cli_shared_utils_1.hasTypescript(this.context.configFile)),
+            emitWarning: emitWarning,
+            emitError: emitError,
+            eslintPath: cli_shared_utils_1.maybeLoader('eslint')
+        });
+    };
+    CreateEslintRules.prototype.buildLint = function () {
+        if (cli_shared_utils_1.hasEslint(this.context.configFile)) {
+            this.createRules();
+        }
+    };
+    return CreateEslintRules;
+}());
+exports.CreateEslintRules = CreateEslintRules;

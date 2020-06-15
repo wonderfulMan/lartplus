@@ -6,9 +6,7 @@ module.exports = {
   "extends": [
     "plugin:vue/essential",
     "@vue/airbnb",
-    "@vue/prettier",
-    "@vue/typescript/recommended",
-    "@vue/prettier/@typescript-eslint"
+    "@vue/prettier"
   ],
   "parserOptions": {
     "ecmaVersion": 2020
