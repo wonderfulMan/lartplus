@@ -31,5 +31,5 @@
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
     "@vue/babel-plugin-transform-vue-jsx": "^1.1.2"
   },
-  "gitHead": "dab2a782146ae95f4c3d813f2315e9fa665e8440"
+  "gitHead": "88c53d3887ed1dda52fc6c930c962832a7cdad66"
 }
