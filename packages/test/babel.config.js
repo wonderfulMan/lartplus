@@ -10,6 +10,13 @@ module.exports = (api) => {
       "modules": false,
       "useBuiltIns": "usage"
     }
+  ],
+  [
+    "@babel/preset-typescript",
+    {
+      "allExtensions": true,
+      "isTSX": true
+    }
   ]
 ],
         plugins: [

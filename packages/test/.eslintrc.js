@@ -4,13 +4,14 @@ module.exports = {
     "node": true
   },
   "extends": [
-    // "plugin:vue/essential",
-    "plugin:vue-custom/custom",
-    "@vue/standard",
-    "@vue/prettier"
+    "plugin:vue/essential",
+    "@vue/airbnb",
+    "@vue/prettier",
+    "@vue/typescript/recommended",
+    "@vue/prettier/@typescript-eslint"
   ],
   "parserOptions": {
-    "ecmaVersion": 2018
+    "ecmaVersion": 2020
   },
   "rules": {
     "no-console": "off",

@@ -2,6 +2,7 @@
   "name": "test",
   "version": "0.0.1",
   "private": true,
+  "sideEffects": true,
   "scripts": {
     "dev": "$(npm bin)/lartplus-service start dev",
     "build": "$(npm bin)/lartplus-service start build",
@@ -11,31 +12,33 @@
     "create:model": "$(npm bin)/lartplus-service new model"
   },
   "dependencies": {
-    "eslint-plugin-vue": "^6.2.0",
-    "eslint-plugin-vue-custom": "^5.2.2",
     "vue": "^2.6.11",
-    "vue-router": "^3.1.6"
+    "vue-router": "^3.1.6",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.3.0"
   },
   "devDependencies": {
-    "@lartplus/cli-babel-vue": "0.2.20",
-    "@lartplus/cli-eslint-vue": "0.2.20",
-    "@lartplus/cli-generator-vue": "0.2.20",
-    "@lartplus/cli-postcss": "0.2.20",
-    "@lartplus/cli-prettier-vue": "0.2.20",
-    "@lartplus/cli-service": "0.2.20",
-    "@lartplus/cli-service-vue": "0.2.20",
+    "@lartplus/cli-service": "0.2.21",
+    "@lartplus/cli-postcss": "0.2.21",
+    "@lartplus/cli-generator-vue": "0.2.21",
+    "@lartplus/cli-service-vue": "0.2.21",
+    "@lartplus/cli-babel-vue": "0.2.21",
+    "@lartplus/cli-prettier-vue": "0.2.21",
+    "typescript": "^3.7.5",
+    "@lartplus/cli-babel-typescript": "0.2.21",
+    "@lartplus/cli-eslint-vue": "0.2.21",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
     "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/eslint-config-standard": "^5.1.2",
-    "autoprefixer": "^9.7.5",
-    "babel-eslint": "^10.1.0",
-    "browserslist": "^4.11.1",
-    "eslint": "^7.2.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "postcss-px-to-viewport": "^1.1.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "eslint-plugin-import": "^2.20.2",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "browserslist": "^4.11.1",
+    "autoprefixer": "^9.7.5",
+    "postcss-px-to-viewport": "^1.1.1"
   }
 }
