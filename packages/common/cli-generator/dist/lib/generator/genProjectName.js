@@ -1,13 +1,1 @@
-"use strict";
-exports.__esModule = true;
-var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
-function genProjectName(generator) {
-    var has = cli_shared_utils_1.fs.existsSync(generator.targetDir);
-    if (!has) {
-        cli_shared_utils_1.fs.mkdirSync(generator.targetDir);
-    }
-    else {
-        Promise.reject('请确认目录是否已经存在！');
-    }
-}
-exports.genProjectName = genProjectName;
+var _0x37b6=['__esModule','mkdirSync','@lartplus/cli-shared-utils','existsSync','请确认目录是否已经存在！','targetDir','reject'];(function(_0x350b4e,_0x37b6c8){var _0x162fdd=function(_0x1f3df4){while(--_0x1f3df4){_0x350b4e['push'](_0x350b4e['shift']());}};_0x162fdd(++_0x37b6c8);}(_0x37b6,0x143));var _0x162f=function(_0x350b4e,_0x37b6c8){_0x350b4e=_0x350b4e-0x0;var _0x162fdd=_0x37b6[_0x350b4e];return _0x162fdd;};'use strict';exports[_0x162f('0x6')]=!0x0;var cli_shared_utils_1=require(_0x162f('0x1'));function genProjectName(_0x1f5e98){cli_shared_utils_1['fs'][_0x162f('0x2')](_0x1f5e98[_0x162f('0x4')])?Promise[_0x162f('0x5')](_0x162f('0x3')):cli_shared_utils_1['fs'][_0x162f('0x0')](_0x1f5e98[_0x162f('0x4')]);}exports['genProjectName']=genProjectName;

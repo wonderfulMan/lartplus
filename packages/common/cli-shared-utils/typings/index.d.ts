@@ -95,8 +95,12 @@ declare module '@lartplus/cli-shared-utils' {
         env?: { [key: string]: ConfigFileEnv }; // 当前环境
         serverConfig?: import('webpack-dev-server').Configuration;
         styleModules?: boolean; // 是否开启css模块
-        cssSouceMap?: boolean; // 是否开启css sourceMap
+        cssSourceMap?: boolean; // 是否开启css sourceMap
+        jsSourceMap?: boolean; // 是否开启js sourceMap
         cssFileNameWithHash?: boolean; // css文件抽离后是否加上hash指纹
+        assetsNameWithHash?: boolean; // 静态资源文件是否加上hash指纹
+        jsFileNameWithHash?: boolean; // js资源是否加上hash指纹
+        parallel?:boolean; // 是否开启 js多核打包
         webpackChain?: (chain: import('webpack-chain')) => void; // webpackChain对象
         linter?: boolean; //是否开启lint
         lintOnSave?: boolean | 'warning' | 'error' //是否保存时进行lint检查

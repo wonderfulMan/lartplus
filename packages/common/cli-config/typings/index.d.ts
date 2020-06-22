@@ -21,7 +21,11 @@ declare module '@lartplus/cli-config' {
         POST: RegExp,
         MODULES: RegExp,
         TSX: RegExp,
-        ESLINT: RegExp
+        ESLINT: RegExp,
+        IMAGE: RegExp,
+        SVG: RegExp,
+        MEDIA: RegExp,
+        FONT: RegExp
     }
 
     export const PATHS: {

@@ -1,0 +1,1 @@
+'use strict';exports['__esModule']=!0x0,exports['getOptimizeCssOptions']=function(_0x37cf8e){return{'assetNameRegExp':/\.css$/g,'cssProcessorOptions':{'safe':!0x0,'autoprefixer':{'disable':!0x0},'mergeLonghand':!0x1,'discardComments':{'removeAll':!0x0}},'canPrint':!0x0};};

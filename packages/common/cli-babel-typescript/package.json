@@ -30,5 +30,5 @@
     "@babel/preset-typescript": "^7.9.0",
     "@lartplus/cli-shared-utils": "^0.2.20"
   },
-  "gitHead": "88c53d3887ed1dda52fc6c930c962832a7cdad66"
+  "gitHead": "a56d2663ac439ad7c216e698a5ac3fa455cce238"
 }
