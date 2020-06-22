@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-generator-react",
-  "version": "0.2.20",
+  "version": "0.2.21",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
