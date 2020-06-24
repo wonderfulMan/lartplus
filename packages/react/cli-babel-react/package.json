@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-babel-react",
-  "version": "0.2.22",
+  "version": "0.2.23",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
     "@babel/preset-react": "^7.9.4",
-    "@lartplus/cli-shared-utils": "^0.2.22"
+    "@lartplus/cli-shared-utils": "^0.2.23"
   },
   "gitHead": "a56d2663ac439ad7c216e698a5ac3fa455cce238"
 }
