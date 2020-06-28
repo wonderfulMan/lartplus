@@ -1,1 +1,55 @@
-var _0xb726=['0xe','context','namedModules','0x1d','0x14','0xd','concatenateModules','getTerserOptions','0x10','maybeLoader','0x1c','0x18','0x9','terser','0x8','namedChunks','__esModule','0xb','minimize','optimization','prototype','0x16','0x1','manifest','use','0x19','runtimeChunk','initial','0x0','usedExports','0x5','0xf','setScriptOptimization','build','minimizer','0x17','optimize-css-assets-webpack-plugin','0x15','0x1a','getOptimizeCssOptions','chain','0x13','CreateOptimization','0x6','./optimizeCssOptions','chunk-common','chunk-vendors','0xa','setSplitChunks','0x11'];(function(_0x3487a9,_0xb726a6){var _0x315fec=function(_0x21056c){while(--_0x21056c){_0x3487a9['push'](_0x3487a9['shift']());}};_0x315fec(++_0xb726a6);}(_0xb726,0x140));var _0x315f=function(_0x3487a9,_0xb726a6){_0x3487a9=_0x3487a9-0x0;var _0x315fec=_0xb726[_0x3487a9];return _0x315fec;};var _0x281b=[_0x315f('0x2e'),_0x315f('0x0'),_0x315f('0x1a'),_0x315f('0x9'),_0x315f('0x7'),_0x315f('0x16'),'end',_0x315f('0x25'),'./terserOptions','buildAll',_0x315f('0x1f'),'mode','@lartplus/cli-shared-utils',_0x315f('0xe'),'maybeLoader',_0x315f('0x18'),_0x315f('0x31'),'terser-webpack-plugin',_0x315f('0x13'),_0x315f('0x6'),_0x315f('0x14'),'setCssOptimization',_0x315f('0x2d'),_0x315f('0x4'),'optimizeCss',_0x315f('0x1c'),_0x315f('0xd'),_0x315f('0x10'),'splitChunks',_0x315f('0xc'),_0x315f('0x2b')];!function(_0x3e1c3a){!function(_0xc0fb32){for(;--_0xc0fb32;)_0x3e1c3a['push'](_0x3e1c3a['shift']());}(0x118);}(_0x281b);var _0x5105=function(_0xb99af0,_0x3289bd){return _0x281b[_0xb99af0=+_0xb99af0];};exports[_0x5105(_0x315f('0x8'))]=!0x0;var cli_shared_utils_1=require(_0x5105('0xc')),terserOptions_1=require(_0x5105(_0x315f('0x2c'))),optimizeCssOptions_1=require(_0x5105(_0x315f('0xb'))),CreateOptimization=function(){function _0x7a5a6b(_0x55dbb5,_0x5cbbf6){this['context']=_0x55dbb5,this[_0x5105('0x14')]=_0x5cbbf6;}return _0x7a5a6b[_0x5105(_0x315f('0x2'))][_0x5105(_0x315f('0x21'))]=function(){this[_0x5105('0x14')][_0x5105('0x10')][_0x315f('0x30')](_0x5105(_0x315f('0x12'))===this[_0x5105('0xa')][_0x5105(_0x315f('0x2f'))])[_0x5105('0x3')](!0x0)[_0x315f('0x24')](!0x0)[_0x5105(_0x315f('0x15'))]({'name':_0x315f('0x3')})[_0x315f('0x20')](!0x0)[_0x5105(_0x315f('0x1'))](!0x0)[_0x5105(_0x315f('0x23'))](_0x5105('0x1e'))[_0x5105(_0x315f('0xf'))](cli_shared_utils_1[_0x315f('0x27')](_0x5105(_0x315f('0x1d'))),[terserOptions_1[_0x5105('0x7')](this[_0x315f('0x1f')])])[_0x5105(_0x315f('0x17'))]();},_0x7a5a6b[_0x5105('0x1')][_0x5105('0x15')]=function(){this[_0x5105(_0x315f('0x22'))][_0x5105(_0x315f('0x26'))][_0x5105(_0x315f('0x23'))](_0x5105(_0x315f('0x29')))[_0x5105(_0x315f('0xf'))](cli_shared_utils_1[_0x5105(_0x315f('0x1e'))](_0x5105('0x1b')),[optimizeCssOptions_1[_0x5105('0x12')](this[_0x5105(_0x315f('0x1b'))])]);},_0x7a5a6b[_0x5105(_0x315f('0x2'))][_0x5105(_0x315f('0x5'))]=function(){this[_0x315f('0x14')][_0x5105(_0x315f('0x26'))][_0x5105(_0x315f('0x28'))]({'cacheGroups':{'vendors':{'name':_0x5105('0x2'),'test':/[\\/]node_modules[\\/]/,'priority':-0xa,'chunks':_0x5105('0x4')},'common':{'name':_0x315f('0x19'),'minChunks':0x2,'priority':-0x14,'chunks':_0x5105('0x4'),'reuseExistingChunk':!0x0}}});},_0x7a5a6b[_0x5105(_0x315f('0x2'))][_0x5105(_0x315f('0x2a'))]=function(){this[_0x315f('0xc')](),this[_0x5105(_0x315f('0x11'))](),this[_0x5105(_0x315f('0x5'))]();},_0x7a5a6b;}();exports[_0x5105(_0x315f('0xa'))]=CreateOptimization;
+"use strict";
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var terserOptions_1 = require("./terserOptions");
+var optimizeCssOptions_1 = require("./optimizeCssOptions");
+var CreateOptimization = /** @class */ (function () {
+    function CreateOptimization(context, chain) {
+        this.context = context;
+        this.chain = chain;
+    }
+    CreateOptimization.prototype.setScriptOptimization = function () {
+        this.chain.optimization
+            .minimize(this.context.mode === 'build')
+            .usedExports(true)
+            .concatenateModules(true)
+            .runtimeChunk({ name: 'manifest' })
+            .namedModules(true)
+            .namedChunks(true)
+            .minimizer('terser')
+            .use(cli_shared_utils_1.maybeLoader('terser-webpack-plugin'), [terserOptions_1.getTerserOptions(this.context)])
+            .end();
+    };
+    CreateOptimization.prototype.setCssOptimization = function () {
+        this.chain.optimization
+            .minimizer('optimizeCss')
+            .use(cli_shared_utils_1.maybeLoader('optimize-css-assets-webpack-plugin'), [optimizeCssOptions_1.getOptimizeCssOptions(this.context)]);
+    };
+    CreateOptimization.prototype.setSplitChunks = function () {
+        this.chain.optimization
+            .splitChunks({
+            cacheGroups: {
+                vendors: {
+                    name: "chunk-vendors",
+                    test: /[\\/]node_modules[\\/]/,
+                    priority: -10,
+                    chunks: 'initial'
+                },
+                common: {
+                    name: "chunk-common",
+                    minChunks: 2,
+                    priority: -20,
+                    chunks: 'initial',
+                    reuseExistingChunk: true
+                }
+            }
+        });
+    };
+    CreateOptimization.prototype.buildAll = function () {
+        this.setScriptOptimization();
+        this.setCssOptimization();
+        this.setSplitChunks();
+    };
+    return CreateOptimization;
+}());
+exports.CreateOptimization = CreateOptimization;

@@ -1,1 +1,41 @@
-var _0x22b9=['0x8','选择依赖管理','function','0xf','0xb','0x9','typedi','Service','config','__decorate','object','length','0x7','0x5','yarn','decorate','0x4','0x1','prototype','default','0x2','defineProperty','npm','0xd','0xa','__esModule','0xc','list'];(function(_0x3b2d1e,_0x22b931){var _0x46c46a=function(_0x3dca38){while(--_0x3dca38){_0x3b2d1e['push'](_0x3b2d1e['shift']());}};_0x46c46a(++_0x22b931);}(_0x22b9,0x15c));var _0x46c4=function(_0x3b2d1e,_0x22b931){_0x3b2d1e=_0x3b2d1e-0x0;var _0x46c46a=_0x22b9[_0x3b2d1e];return _0x46c46a;};var _0xd601=[_0x46c4('0x11'),_0x46c4('0x2'),_0x46c4('0x18'),_0x46c4('0xd'),_0x46c4('0x16'),'getOwnPropertyDescriptor',_0x46c4('0x3'),_0x46c4('0x19'),_0x46c4('0x1a'),_0x46c4('0xa'),_0x46c4('0x12'),_0x46c4('0x1b'),_0x46c4('0x6'),_0x46c4('0x9'),_0x46c4('0x17'),_0x46c4('0xf')];!function(_0x56e6e7){!function(_0x16bd79){for(;--_0x16bd79;)_0x56e6e7['push'](_0x56e6e7['shift']());}(0x8f);}(_0xd601);var _0x1ab8=function(_0x4e15eb,_0x50ebce){return _0xd601[_0x4e15eb=+_0x4e15eb];},__decorate=this&&this[_0x1ab8(_0x46c4('0x15'))]||function(_0x17805d,_0x181593,_0x28dbd4,_0x2d573a){var _0x537619,_0x2f375b=arguments['length'],_0x3b68b3=_0x2f375b<0x3?_0x181593:null===_0x2d573a?_0x2d573a=Object[_0x1ab8(_0x46c4('0x0'))](_0x181593,_0x28dbd4):_0x2d573a;if(_0x1ab8(_0x46c4('0xc'))==typeof Reflect&&_0x1ab8(_0x46c4('0xe'))==typeof Reflect[_0x1ab8(_0x46c4('0x10'))])_0x3b68b3=Reflect[_0x1ab8('0x8')](_0x17805d,_0x181593,_0x28dbd4,_0x2d573a);else for(var _0x3f3ea9=_0x17805d[_0x1ab8(_0x46c4('0xb'))]-0x1;0x0<=_0x3f3ea9;_0x3f3ea9--)(_0x537619=_0x17805d[_0x3f3ea9])&&(_0x3b68b3=(_0x2f375b<0x3?_0x537619(_0x3b68b3):0x3<_0x2f375b?_0x537619(_0x181593,_0x28dbd4,_0x3b68b3):_0x537619(_0x181593,_0x28dbd4))||_0x3b68b3);return 0x3<_0x2f375b&&_0x3b68b3&&Object[_0x1ab8(_0x46c4('0x13'))](_0x181593,_0x28dbd4,_0x3b68b3),_0x3b68b3;};exports[_0x1ab8(_0x46c4('0x1'))]=!0x0;var typedi_1=require(_0x1ab8('0x6')),PackageManger=function(){function _0x607f6b(){}return _0x607f6b[_0x1ab8('0xe')][_0x1ab8(_0x46c4('0x4'))]=function(){return{'name':'packageManger','type':_0x1ab8(_0x46c4('0x5')),'message':_0x1ab8(_0x46c4('0x8')),'choices':[{'name':'npm','value':_0x1ab8(_0x46c4('0x14'))},{'name':_0x1ab8('0x3'),'value':_0x46c4('0x2')}]};},__decorate([typedi_1[_0x1ab8('0x0')]()],_0x607f6b);}();exports[_0x46c4('0x7')]=PackageManger;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-26 14:06:30
+ * @LastEditTime : 2020-01-26 14:09:16
+ */
+var typedi_1 = require("typedi");
+var PackageManger = /** @class */ (function () {
+    function PackageManger() {
+    }
+    PackageManger.prototype.config = function () {
+        return {
+            name: 'packageManger',
+            type: 'list',
+            message: '选择依赖管理',
+            choices: [
+                {
+                    name: 'npm',
+                    value: 'npm'
+                },
+                {
+                    name: 'yarn',
+                    value: 'yarn'
+                }
+            ]
+        };
+    };
+    PackageManger = __decorate([
+        typedi_1.Service()
+    ], PackageManger);
+    return PackageManger;
+}());
+exports["default"] = PackageManger;

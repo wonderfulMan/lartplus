@@ -1,1 +1,23 @@
-var _0x5e55=['/template/tsconfig.json.tpl','0x6','0x1','/template/lartplus.config.tpl','0x5','push','/node_modules/@lartplus','/.prettierrc.js','__esModule','/postcss.config.js','/tsconfig.json','shift','0x0','0x3','/babel.config.js','/template/babel.config.tpl','/.eslintrc.js','/package.json','0x4'];(function(_0x3f2927,_0x5e550c){var _0x1f2282=function(_0x1ae31a){while(--_0x1ae31a){_0x3f2927['push'](_0x3f2927['shift']());}};_0x1f2282(++_0x5e550c);}(_0x5e55,0x16d));var _0x1f22=function(_0x3f2927,_0x5e550c){_0x3f2927=_0x3f2927-0x0;var _0x1f2282=_0x5e55[_0x3f2927];return _0x1f2282;};var _0x1930=[_0x1f22('0xd'),_0x1f22('0x3'),_0x1f22('0x6'),_0x1f22('0x5'),_0x1f22('0x12'),_0x1f22('0xb'),_0x1f22('0x2'),'/lartplus.config.js'];!function(_0x25a46e){!function(_0x45b583){for(;--_0x45b583;)_0x25a46e[_0x1f22('0x1')](_0x25a46e[_0x1f22('0x7')]());}(0x1ee);}(_0x1930);var _0x3563=function(_0x39ee30,_0x2de0e2){return _0x1930[_0x39ee30=+_0x39ee30];};exports[_0x1f22('0x4')]=!0x0,exports['PATHS']={'getLartPlusModulePath':function(_0x182349){return _0x182349+_0x3563(_0x1f22('0x11'));},'getEslintRcPath':function(_0x4aa2d0){return _0x4aa2d0+_0x1f22('0xc');},'getPrettierRcPath':function(_0x26e3eb){return _0x26e3eb+_0x3563(_0x1f22('0xe'));},'getLartPlusFilePath':function(_0x4a3fe6){return _0x4a3fe6+_0x3563('0x2');},'getBableConfigFilePath':function(_0x3c2d4e){return _0x3c2d4e+_0x1f22('0xa');},'getProjectPackagePath':function(_0x568e36){return _0x568e36+_0x3563(_0x1f22('0x9'));},'getProjectTsconfigFilePath':function(_0x1643e9){return _0x1643e9+_0x3563(_0x1f22('0x0'));},'getPostcssConfigFilePath':function(_0x7a4097){return _0x7a4097+_0x3563(_0x1f22('0x10'));},'getLartPlusTemplatePath':function(_0x57885e){return _0x57885e+_0x3563('0x7');},'getLartPlusTsconfigTemplatePath':function(_0x7a955){return _0x7a955+_0x1f22('0xf');},'getLartPlusBabelTemplatePath':function(_0x3dd438){return _0x3dd438+_0x3563(_0x1f22('0x8'));}};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-07 11:09:25
+ * @LastEditTime : 2020-05-14 17:25:31
+ */
+exports.PATHS = {
+    // 目标项目
+    getLartPlusModulePath: function (target) { return target + "/node_modules/@lartplus"; },
+    getEslintRcPath: function (target) { return target + "/.eslintrc.js"; },
+    getPrettierRcPath: function (target) { return target + "/.prettierrc.js"; },
+    getLartPlusFilePath: function (target) { return target + "/lartplus.config.js"; },
+    getBableConfigFilePath: function (target) { return target + "/babel.config.js"; },
+    getProjectPackagePath: function (target) { return target + "/package.json"; },
+    getProjectTsconfigFilePath: function (target) { return target + "/tsconfig.json"; },
+    getPostcssConfigFilePath: function (target) { return target + "/postcss.config.js"; },
+    // 模版
+    getLartPlusTemplatePath: function (target) { return target + "/template/lartplus.config.tpl"; },
+    getLartPlusTsconfigTemplatePath: function (target) { return target + "/template/tsconfig.json.tpl"; },
+    getLartPlusBabelTemplatePath: function (target) { return target + "/template/babel.config.tpl"; }
+};

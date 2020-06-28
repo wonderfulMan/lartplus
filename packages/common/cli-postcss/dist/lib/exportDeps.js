@@ -1,1 +1,26 @@
-var _0x19cc=['__esModule','0x8','0x2','0x6','mobile','assign','0x0','0x5','^9.7.5','shift','hasMobile','0x3','@lartplus/cli-shared-utils'];(function(_0x4b01f4,_0x19cc3a){var _0x4f1b09=function(_0x46673e){while(--_0x46673e){_0x4b01f4['push'](_0x4b01f4['shift']());}};_0x4f1b09(++_0x19cc3a);}(_0x19cc,0x77));var _0x4f1b=function(_0x4b01f4,_0x19cc3a){_0x4b01f4=_0x4b01f4-0x0;var _0x4f1b09=_0x19cc[_0x4b01f4];return _0x4f1b09;};var _0x4631=[_0x4f1b('0x2'),'exportGetDeps',_0x4f1b('0xa'),'^4.11.1','base',_0x4f1b('0x6'),_0x4f1b('0x8'),'^1.1.1',_0x4f1b('0x3')];!function(_0x3514a7){!function(_0xe2faed){for(;--_0xe2faed;)_0x3514a7['push'](_0x3514a7[_0x4f1b('0x7')]());}(0xbb);}(_0x4631);var _0xc4ef=function(_0x4bb840,_0x2a8c89){return _0x4631[_0x4bb840=+_0x4bb840];};exports[_0x4f1b('0xb')]=!0x0;var cli_shared_utils_1=require(_0xc4ef(_0x4f1b('0x5'))),DEV_DEPENDENCIES={'base':{'browserslist':_0xc4ef(_0x4f1b('0x1')),'autoprefixer':_0xc4ef(_0x4f1b('0xc'))},'mobile':{'postcss-px-to-viewport':_0xc4ef('0x1')}};exports[_0xc4ef('0x4')]=function(_0x40a660){var _0x3f3a8c=cli_shared_utils_1[_0xc4ef(_0x4f1b('0x4'))](_0x40a660),_0x2c4fed=Object[_0xc4ef(_0x4f1b('0x0'))]({},DEV_DEPENDENCIES[_0xc4ef('0x7')]);return _0x3f3a8c&&Object[_0xc4ef('0x2')](_0x2c4fed,DEV_DEPENDENCIES[_0xc4ef(_0x4f1b('0x9'))]),_0x2c4fed;};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 15:42:23
+ * @LastEditTime : 2020-05-14 17:51:53
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var DEV_DEPENDENCIES = {
+    base: {
+        "browserslist": "^4.11.1",
+        "autoprefixer": "^9.7.5"
+    },
+    mobile: {
+        "postcss-px-to-viewport": "^1.1.1"
+    }
+};
+exports.exportGetDeps = function (answers) {
+    var isMobile = cli_shared_utils_1.hasMobile(answers);
+    var deps = Object.assign({}, DEV_DEPENDENCIES.base);
+    if (isMobile) {
+        Object.assign(deps, DEV_DEPENDENCIES.mobile);
+    }
+    return deps;
+};

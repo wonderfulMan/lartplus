@@ -1,1 +1,16 @@
-var _0x1e85=['mobile','0x2','0x0','default','mobile（是否移动端项目）','prototype','0x1'];(function(_0x4d65f4,_0x1e854c){var _0x706207=function(_0x526dd0){while(--_0x526dd0){_0x4d65f4['push'](_0x4d65f4['shift']());}};_0x706207(++_0x1e854c);}(_0x1e85,0x1a9));var _0x7062=function(_0x4d65f4,_0x1e854c){_0x4d65f4=_0x4d65f4-0x0;var _0x706207=_0x1e85[_0x4d65f4];return _0x706207;};var _0x4764=['choices',_0x7062('0x6'),_0x7062('0x0'),_0x7062('0x5')];!function(_0x3cede0){!function(_0x2040c3){for(;--_0x2040c3;)_0x3cede0['push'](_0x3cede0['shift']());}(0x66);}(_0x4764);var _0x19a9=function(_0x1b1027,_0x2e0c84){return _0x4764[_0x1b1027=+_0x1b1027];};exports['__esModule']=!0x0;var Mobile=function(){function _0x278ab1(){}return _0x278ab1[_0x19a9(_0x7062('0x1'))][_0x19a9('0x3')]=function(){return{'name':_0x19a9(_0x7062('0x4')),'value':_0x7062('0x2'),'short':_0x7062('0x2'),'checked':!0x1};},_0x278ab1;}();exports[_0x19a9(_0x7062('0x3'))]=Mobile;
+"use strict";
+exports.__esModule = true;
+var Mobile = /** @class */ (function () {
+    function Mobile() {
+    }
+    Mobile.prototype.choices = function () {
+        return {
+            name: 'mobile（是否移动端项目）',
+            value: 'mobile',
+            short: 'mobile',
+            checked: false
+        };
+    };
+    return Mobile;
+}());
+exports["default"] = Mobile;

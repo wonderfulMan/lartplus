@@ -1,1 +1,34 @@
-var _0x98e3=['\x20SUCCESS\x20','0x4','0x7','0x2','0x5','0x0','0x3','notice','\x20WARN\x20','join','__importDefault','bgGreen','0x8','black','0x11','map','__esModule','0x1','0x9','log','whiteBright','0xd','default','bgYellow','\x20DONE\x20','clear','chalk','0x6','error','\x20ERROR\x20'];(function(_0x1df25e,_0x98e336){var _0x3d7b7b=function(_0x1825db){while(--_0x1825db){_0x1df25e['push'](_0x1df25e['shift']());}};_0x3d7b7b(++_0x98e336);}(_0x98e3,0xe1));var _0x3d7b=function(_0x1df25e,_0x98e336){_0x1df25e=_0x1df25e-0x0;var _0x3d7b7b=_0x98e3[_0x1df25e];return _0x3d7b7b;};var _0x1135=[_0x3d7b('0xf'),_0x3d7b('0xa'),_0x3d7b('0x19'),_0x3d7b('0xb'),_0x3d7b('0x4'),_0x3d7b('0x9'),'__esModule',_0x3d7b('0x7'),'bgGreen',_0x3d7b('0x1c'),'warn',_0x3d7b('0x8'),_0x3d7b('0x0'),_0x3d7b('0x18'),'bgRed',_0x3d7b('0xe'),'whiteBright',_0x3d7b('0xd')];!function(_0xf5b03){!function(_0x478502){for(;--_0x478502;)_0xf5b03['push'](_0xf5b03['shift']());}(0xbc);}(_0x1135);var _0x3b13=function(_0x476c10,_0x3958f8){return _0x1135[_0x476c10=+_0x476c10];},__importDefault=this&&this[_0x3b13(_0x3d7b('0x6'))]||function(_0x3e7982){return _0x3e7982&&_0x3e7982[_0x3d7b('0x1')]?_0x3e7982:{'default':_0x3e7982};};exports[_0x3b13(_0x3d7b('0x1d'))]=!0x0;var chalk_1=__importDefault(require(_0x3b13('0xe'))),warnLogger=console[_0x3b13(_0x3d7b('0x15'))],normalLogger=console[_0x3b13('0xf')],errorLogger=console[_0x3b13('0xa')],clear=console[_0x3b13('0xc')];exports[_0x3d7b('0x16')]={'warn':function(_0x3c8d6d){warnLogger(chalk_1[_0x3b13(_0x3d7b('0x14'))][_0x3b13(_0x3d7b('0x12'))][_0x3b13(_0x3d7b('0x10'))](_0x3d7b('0x17'))+chalk_1[_0x3b13('0x0')][_0x3b13('0x9')]('\x20'+_0x3c8d6d[_0x3b13(_0x3d7b('0x13'))](function(_0x54f9a5){return _0x54f9a5;})[_0x3b13(_0x3d7b('0xc'))]('/n')));},'error':function(_0x4ac304){errorLogger(chalk_1[_0x3b13(_0x3d7b('0x14'))][_0x3b13(_0x3d7b('0x12'))][_0x3b13(_0x3d7b('0x11'))](_0x3b13(_0x3d7b('0x1b')))+chalk_1[_0x3b13(_0x3d7b('0x14'))][_0x3b13(_0x3d7b('0x3'))]('\x20'+_0x4ac304[_0x3b13(_0x3d7b('0x13'))](function(_0x369026){return _0x369026;})[_0x3b13(_0x3d7b('0xc'))]('/n')));},'success':function(_0x5a22db){normalLogger(chalk_1['default'][_0x3b13(_0x3d7b('0x12'))][_0x3d7b('0x1a')](_0x3b13('0xb'))+chalk_1[_0x3d7b('0x7')][_0x3b13(_0x3d7b('0x3'))]('\x20'+_0x5a22db[_0x3b13(_0x3d7b('0x13'))](function(_0x5315ac){return _0x5315ac;})[_0x3b13(_0x3d7b('0xc'))]('/n')));},'done':function(_0x4d3f92){normalLogger(chalk_1[_0x3b13(_0x3d7b('0x14'))][_0x3b13('0x2')][_0x3b13(_0x3d7b('0x2'))](_0x3b13('0x10'))+chalk_1[_0x3b13('0x0')][_0x3d7b('0x5')]('\x20'+_0x4d3f92[_0x3b13(_0x3d7b('0x13'))](function(_0x445715){return _0x445715;})[_0x3b13(_0x3d7b('0xc'))]('/n')));},'clear':clear,'errorLogger':errorLogger,'normalLogger':normalLogger,'warnLogger':warnLogger};
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-20 15:57:42
+ * @LastEditTime : 2020-04-08 15:48:51
+ */
+var chalk_1 = __importDefault(require("chalk"));
+var warnLogger = console.warn;
+var normalLogger = console.log;
+var errorLogger = console.error;
+var clear = console.clear;
+exports.notice = {
+    warn: function (strs) {
+        warnLogger(chalk_1["default"].black.bgYellow(" WARN ") + chalk_1["default"].whiteBright(" " + strs.map(function (it) { return it; }).join('/n')));
+    },
+    error: function (strs) {
+        errorLogger(chalk_1["default"].black.bgRed(" ERROR ") + chalk_1["default"].whiteBright(" " + strs.map(function (it) { return it; }).join('/n')));
+    },
+    success: function (strs) {
+        normalLogger(chalk_1["default"].black.bgGreen(" SUCCESS ") + chalk_1["default"].whiteBright(" " + strs.map(function (it) { return it; }).join('/n')));
+    },
+    done: function (strs) {
+        normalLogger(chalk_1["default"].black.bgGreen(" DONE ") + chalk_1["default"].whiteBright(" " + strs.map(function (it) { return it; }).join('/n')));
+    },
+    clear: clear,
+    errorLogger: errorLogger,
+    normalLogger: normalLogger,
+    warnLogger: warnLogger
+};

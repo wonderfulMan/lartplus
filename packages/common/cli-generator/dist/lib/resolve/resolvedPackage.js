@@ -1,1 +1,17 @@
-var _0x1730=['0x3','devDependencies','0x0','resolvedPackage','0x2','0x1','0x4','0.0.1','__esModule','./resolvedDependencies','./resolvedScripts','push'];(function(_0x486836,_0x173016){var _0x411c33=function(_0x237024){while(--_0x237024){_0x486836['push'](_0x486836['shift']());}};_0x411c33(++_0x173016);}(_0x1730,0x194));var _0x411c=function(_0x486836,_0x173016){_0x486836=_0x486836-0x0;var _0x411c33=_0x1730[_0x486836];return _0x411c33;};var _0x7ff8=[_0x411c('0x1'),'resolvedDependencies',_0x411c('0x2'),_0x411c('0x5'),'dependencies'];!function(_0x462907){!function(_0x307f04){for(;--_0x307f04;)_0x462907[_0x411c('0x3')](_0x462907['shift']());}(0x8a);}(_0x7ff8);var _0x4465=function(_0x241761,_0x5394eb){return _0x7ff8[_0x241761=+_0x241761];};exports[_0x411c('0x0')]=!0x0;var resolvedDependencies_1=require(_0x4465(_0x411c('0x4'))),resolvedScripts_1=require(_0x4465(_0x411c('0x6')));exports[_0x411c('0x7')]=function(_0xbfae2d,_0x25e3e2,_0x1f8c6f){var _0x2003ec=resolvedDependencies_1[_0x4465(_0x411c('0xa'))](_0xbfae2d,_0x1f8c6f),_0x40111b=_0x2003ec[_0x4465(_0x411c('0x8'))],_0x1cc8b0=_0x2003ec[_0x4465(_0x411c('0x9'))];return{'name':_0x25e3e2,'version':_0x411c('0xb'),'private':!0x0,'sideEffects':!0x0,'scripts':resolvedScripts_1['resolvedScripts'](),'dependencies':_0x40111b,'devDependencies':_0x1cc8b0};};
+"use strict";
+exports.__esModule = true;
+var resolvedDependencies_1 = require("./resolvedDependencies");
+var resolvedScripts_1 = require("./resolvedScripts");
+exports.resolvedPackage = function (answers, projectName, targetPath) {
+    var _a = resolvedDependencies_1.resolvedDependencies(answers, targetPath), dependencies = _a.dependencies, devDependencies = _a.devDependencies;
+    var scripts = resolvedScripts_1.resolvedScripts();
+    return {
+        "name": projectName,
+        "version": "0.0.1",
+        "private": true,
+        "sideEffects": true,
+        scripts: scripts,
+        dependencies: dependencies,
+        devDependencies: devDependencies
+    };
+};

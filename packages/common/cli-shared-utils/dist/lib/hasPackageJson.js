@@ -1,1 +1,20 @@
-var _0x175c=['hasPackageJson','@lartplus/cli-config','0x2','__esModule','0x1','0x0','push','shift'];(function(_0x4d1025,_0x175cd6){var _0x5da0af=function(_0x5c57dd){while(--_0x5c57dd){_0x4d1025['push'](_0x4d1025['shift']());}};_0x5da0af(++_0x175cd6);}(_0x175c,0x1a8));var _0x5da0=function(_0x4d1025,_0x175cd6){_0x4d1025=_0x4d1025-0x0;var _0x5da0af=_0x175c[_0x4d1025];return _0x5da0af;};var _0x470a=['PATHS','getProjectPackagePath',_0x5da0('0x3'),_0x5da0('0x1'),_0x5da0('0x0')];!function(_0x8b7278){!function(_0x392076){for(;--_0x392076;)_0x8b7278[_0x5da0('0x6')](_0x8b7278[_0x5da0('0x7')]());}(0x6f);}(_0x470a);var _0x9dee=function(_0x59b12e,_0x3b7632){return _0x470a[_0x59b12e=+_0x59b12e];};exports[_0x9dee(_0x5da0('0x2'))]=!0x0;var cli_config_1=require(_0x9dee('0x3'));function hasPackageJson(_0x1606c7){var _0x1a9c66=!0x1;try{_0x1a9c66=require(cli_config_1[_0x9dee(_0x5da0('0x5'))][_0x9dee(_0x5da0('0x4'))](_0x1606c7));}catch(_0x2ddf7e){_0x1a9c66=!0x1;}return _0x1a9c66;}exports[_0x9dee('0x4')]=hasPackageJson;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 16:32:44
+ * @LastEditTime : 2020-05-13 17:36:12
+ */
+var cli_config_1 = require("@lartplus/cli-config");
+function hasPackageJson(targetDir) {
+    var jsonContext = false;
+    try {
+        jsonContext = require(cli_config_1.PATHS.getProjectPackagePath(targetDir));
+    }
+    catch (error) {
+        jsonContext = false;
+    }
+    return jsonContext;
+}
+exports.hasPackageJson = hasPackageJson;

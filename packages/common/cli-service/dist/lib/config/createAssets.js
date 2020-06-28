@@ -1,1 +1,86 @@
-var _0x4c78=['buildAll','chain','setMedia','setSvg','dev','SVG','prototype','IMAGE','@lartplus/cli-shared-utils','FONT','options','.[ext]','svg','CreateAssets','LANGUAGE_TYPE','string','url-loader','module','media','setImages','rule','maybeLoader','LIMIT','/[name].','default','test','optimization-images','use','context','font','MEDIA','plugin','setImageOptimization','file-loader','genUrlLoaderOptions','end','assetsNameWithHash','__esModule','images','imagemin-webpack-plugin','genAssetSubPath','configFile','loader'];(function(_0x3022a3,_0x4c7888){var _0x5a288b=function(_0x256dbe){while(--_0x256dbe){_0x3022a3['push'](_0x3022a3['shift']());}};_0x5a288b(++_0x4c7888);}(_0x4c78,0x12e));var _0x5a28=function(_0x3022a3,_0x4c7888){_0x3022a3=_0x3022a3-0x0;var _0x5a288b=_0x4c78[_0x3022a3];return _0x5a288b;};'use strict';exports[_0x5a28('0x24')]=!0x0;var cli_shared_utils_1=require(_0x5a28('0x7')),cli_config_1=require('@lartplus/cli-config'),CreateAssets=function(){function _0x18f383(_0x30699,_0x3069bc){var _0x2dcac4;this[_0x5a28('0x1b')]=_0x30699,this['chain']=_0x3069bc,this[_0x5a28('0x23')]=(null===(_0x2dcac4=this['context'][_0x5a28('0x28')])||void 0x0===_0x2dcac4?void 0x0:_0x2dcac4[_0x5a28('0x23')])||!0x0;}return _0x18f383[_0x5a28('0x5')][_0x5a28('0x27')]=function(_0x25b784){return _0x25b784+_0x5a28('0x16')+(this[_0x5a28('0x23')]?'.[hash:8]':'')+_0x5a28('0xa');},_0x18f383[_0x5a28('0x5')][_0x5a28('0x21')]=function(_0x317748){return{'limit':_0x18f383[_0x5a28('0x15')],'fallback':{'loader':cli_shared_utils_1[_0x5a28('0x14')](_0x5a28('0x20')),'name':this['genAssetSubPath'](_0x317748)}};},_0x18f383[_0x5a28('0x5')][_0x5a28('0x12')]=function(){this['chain']['module']['rule'](_0x5a28('0x25'))[_0x5a28('0x18')](cli_config_1['LANGUAGE_TYPE'][_0x5a28('0x6')])[_0x5a28('0x1a')](_0x5a28('0xf'))[_0x5a28('0x29')](cli_shared_utils_1[_0x5a28('0x14')](_0x5a28('0xf')))[_0x5a28('0x9')](this[_0x5a28('0x21')]('image'))['end']();},_0x18f383[_0x5a28('0x5')][_0x5a28('0x2')]=function(){this[_0x5a28('0x0')][_0x5a28('0x10')][_0x5a28('0x13')](_0x5a28('0xb'))[_0x5a28('0x18')](cli_config_1[_0x5a28('0xd')][_0x5a28('0x4')])[_0x5a28('0x1a')](_0x5a28('0x20'))[_0x5a28('0x29')](cli_shared_utils_1['maybeLoader'](_0x5a28('0x20')))[_0x5a28('0x9')]({'name':this['genAssetSubPath'](_0x5a28('0xb'))})[_0x5a28('0x22')]();},_0x18f383[_0x5a28('0x5')][_0x5a28('0x1')]=function(){this[_0x5a28('0x0')][_0x5a28('0x10')][_0x5a28('0x13')](_0x5a28('0x11'))[_0x5a28('0x18')](cli_config_1[_0x5a28('0xd')][_0x5a28('0x1d')])[_0x5a28('0x1a')](_0x5a28('0xf'))[_0x5a28('0x29')](cli_shared_utils_1[_0x5a28('0x14')](_0x5a28('0xf')))['options'](this['genUrlLoaderOptions'](_0x5a28('0x11')))['end']();},_0x18f383['prototype']['setFont']=function(){this[_0x5a28('0x0')][_0x5a28('0x10')][_0x5a28('0x13')](_0x5a28('0x1c'))[_0x5a28('0x18')](cli_config_1[_0x5a28('0xd')][_0x5a28('0x8')])[_0x5a28('0x1a')](_0x5a28('0xf'))[_0x5a28('0x29')](cli_shared_utils_1[_0x5a28('0x14')]('url-loader'))[_0x5a28('0x9')](this[_0x5a28('0x21')](_0x5a28('0x1c')))[_0x5a28('0x22')]();},_0x18f383['prototype'][_0x5a28('0x1f')]=function(){var _0x59a96b=_0x5a28('0xe')==typeof(_0x59a96b=cli_shared_utils_1[_0x5a28('0x14')](_0x5a28('0x26')))?_0x59a96b:require(_0x5a28('0x26'))[_0x5a28('0x17')];this[_0x5a28('0x0')][_0x5a28('0x1e')](_0x5a28('0x19'))['use'](_0x59a96b,[{'disable':_0x5a28('0x3')===this[_0x5a28('0x1b')]['mode'],'pngquant':{'quality':'95-100'},'test':[cli_config_1[_0x5a28('0xd')][_0x5a28('0x6')],cli_config_1[_0x5a28('0xd')][_0x5a28('0x4')]]}]);},_0x18f383[_0x5a28('0x5')][_0x5a28('0x2a')]=function(){this['setImages'](),this['setFont'](),this[_0x5a28('0x1')](),this[_0x5a28('0x2')](),this['setImageOptimization']();},_0x18f383['LIMIT']=0x1000,_0x18f383;}();exports[_0x5a28('0xc')]=CreateAssets;
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_config_1 = require("@lartplus/cli-config");
+var imagemin_webpack_plugin_1 = __importDefault(require("imagemin-webpack-plugin"));
+var CreateAssets = /** @class */ (function () {
+    function CreateAssets(context, chain) {
+        var _a;
+        this.context = context;
+        this.chain = chain;
+        this.assetsNameWithHash = ((_a = this.context.configFile) === null || _a === void 0 ? void 0 : _a.assetsNameWithHash) || true;
+    }
+    CreateAssets.prototype.genAssetSubPath = function (dir) {
+        return dir + "/[name]." + (this.assetsNameWithHash ? '.[hash:8]' : '') + ".[ext]";
+    };
+    CreateAssets.prototype.genUrlLoaderOptions = function (dir) {
+        return {
+            limit: CreateAssets.LIMIT,
+            fallback: {
+                loader: cli_shared_utils_1.maybeLoader('file-loader'),
+                name: this.genAssetSubPath(dir)
+            }
+        };
+    };
+    CreateAssets.prototype.setImages = function () {
+        this.chain.module
+            .rule('images')
+            .test(cli_config_1.LANGUAGE_TYPE.IMAGE)
+            .use('url-loader')
+            .loader(cli_shared_utils_1.maybeLoader('url-loader'))
+            .options(this.genUrlLoaderOptions('image'))
+            .end();
+    };
+    CreateAssets.prototype.setSvg = function () {
+        this.chain.module
+            .rule('svg')
+            .test(cli_config_1.LANGUAGE_TYPE.SVG)
+            .use('file-loader')
+            .loader(cli_shared_utils_1.maybeLoader('file-loader'))
+            .options({
+            name: this.genAssetSubPath('svg')
+        })
+            .end();
+    };
+    CreateAssets.prototype.setMedia = function () {
+        this.chain.module
+            .rule('media')
+            .test(cli_config_1.LANGUAGE_TYPE.MEDIA)
+            .use('url-loader')
+            .loader(cli_shared_utils_1.maybeLoader('url-loader'))
+            .options(this.genUrlLoaderOptions('media'))
+            .end();
+    };
+    CreateAssets.prototype.setFont = function () {
+        this.chain.module
+            .rule('font')
+            .test(cli_config_1.LANGUAGE_TYPE.FONT)
+            .use('url-loader')
+            .loader(cli_shared_utils_1.maybeLoader('url-loader'))
+            .options(this.genUrlLoaderOptions('font'))
+            .end();
+    };
+    CreateAssets.prototype.setImageOptimization = function () {
+        this.chain.plugin('optimization-images')
+            .use(imagemin_webpack_plugin_1["default"], [{
+                disable: this.context.mode === 'dev',
+                pngquant: {
+                    quality: '95-100'
+                },
+                test: [cli_config_1.LANGUAGE_TYPE.IMAGE, cli_config_1.LANGUAGE_TYPE.SVG]
+            }]);
+    };
+    CreateAssets.prototype.buildAll = function () {
+        this.setImages();
+        this.setFont();
+        this.setMedia();
+        this.setSvg();
+        this.setImageOptimization();
+    };
+    CreateAssets.LIMIT = 4096;
+    return CreateAssets;
+}());
+exports.CreateAssets = CreateAssets;

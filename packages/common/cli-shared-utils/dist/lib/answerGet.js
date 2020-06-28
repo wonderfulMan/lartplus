@@ -1,1 +1,50 @@
-var _0x6a6a=['react','0x7','0x2','vue','shift','0x9','getEslintConfig','0x6','getPackageModule','0xd','0xc','feature','0xa','0x5','0x3','includes','0x8','framework','linter','eslintConfig','typescript','mobile','hasMobile','hasEslint','0xe','__esModule','@lartplus/cli-shared-utils','getFrameworkName','0xf','eslint','boolean','0xb'];(function(_0x4eb865,_0x6a6a71){var _0x36fe4f=function(_0x430bd9){while(--_0x430bd9){_0x4eb865['push'](_0x4eb865['shift']());}};_0x36fe4f(++_0x6a6a71);}(_0x6a6a,0x1ae));var _0x36fe=function(_0x4eb865,_0x6a6a71){_0x4eb865=_0x4eb865-0x0;var _0x36fe4f=_0x6a6a[_0x4eb865];return _0x36fe4f;};var _0xac52=[_0x36fe('0xc'),'feature',_0x36fe('0x10'),_0x36fe('0x8'),'log',_0x36fe('0x3'),_0x36fe('0x12'),_0x36fe('0xf'),_0x36fe('0x4'),'hasTypescript',_0x36fe('0x7'),_0x36fe('0x15'),_0x36fe('0x1a'),_0x36fe('0x6'),_0x36fe('0x1'),'@lartplus/cli-service-vue'];!function(_0x575efc){!function(_0x20c23c){for(;--_0x20c23c;)_0x575efc['push'](_0x575efc[_0x36fe('0x16')]());}(0xc6);}(_0xac52);var _0x110c=function(_0x257833,_0x2d7a60){return _0xac52[_0x257833=+_0x257833];};exports[_0x36fe('0xb')]=!0x0;var cli_shared_utils_1=require(_0x110c(_0x36fe('0x11')));exports[_0x110c('0x4')]=function(_0x1553fb){return null!=_0x1553fb&&_0x1553fb[_0x36fe('0x1d')]?_0x1553fb[_0x110c(_0x36fe('0x1c'))][_0x110c(_0x36fe('0x17'))](_0x110c(_0x36fe('0x2'))):_0x1553fb&&_0x36fe('0x10')==typeof _0x1553fb[_0x110c('0x8')]?_0x1553fb[_0x110c(_0x36fe('0x2'))]||!0x1:cli_shared_utils_1[_0x110c('0x7')](_0x110c(_0x36fe('0x2')));},exports[_0x36fe('0xd')]=function(_0xabe7ee){return console[_0x110c(_0x36fe('0xe'))](cli_shared_utils_1[_0x110c('0x7')](_0x110c(_0x36fe('0x1e')))),null!=_0xabe7ee&&_0xabe7ee[_0x36fe('0x3')]?_0xabe7ee[_0x110c('0x0')]:cli_shared_utils_1[_0x110c('0x7')](_0x110c('0xa'))?_0x110c(_0x36fe('0x19')):_0x110c('0x1');},exports[_0x36fe('0x18')]=function(_0x185849){return _0x185849[_0x36fe('0x5')];},exports[_0x36fe('0x9')]=function(_0x113ec3){return null!=_0x113ec3&&_0x113ec3[_0x110c(_0x36fe('0x1c'))]?_0x113ec3[_0x110c(_0x36fe('0x1c'))][_0x36fe('0x1')](_0x110c(_0x36fe('0x0'))):_0x113ec3&&_0x110c(_0x36fe('0x1b'))==typeof _0x113ec3[_0x110c(_0x36fe('0x0'))]?_0x113ec3[_0x36fe('0x4')]||!0x1:cli_shared_utils_1[_0x110c(_0x36fe('0x13'))](_0x110c(_0x36fe('0x14')));},exports[_0x110c(_0x36fe('0xa'))]=function(_0x6f814d){return _0x6f814d[_0x110c(_0x36fe('0x1c'))][_0x110c(_0x36fe('0x17'))](_0x110c(_0x36fe('0x1f')));};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-13 19:14:23
+ * @LastEditTime : 2020-05-18 16:11:15
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+exports.hasTypescript = function (answers) {
+    var _a;
+    if ((_a = answers) === null || _a === void 0 ? void 0 : _a.feature) {
+        return answers.feature.includes('typescript');
+    }
+    else if (answers && typeof answers.typescript === 'boolean') {
+        return answers.typescript || false;
+    }
+    else {
+        return cli_shared_utils_1.getPackageModule('typescript');
+    }
+};
+exports.getFrameworkName = function (answers) {
+    var _a;
+    console.log(cli_shared_utils_1.getPackageModule('@lartplus/cli-service-vue'));
+    if ((_a = answers) === null || _a === void 0 ? void 0 : _a.framework) {
+        return answers.framework;
+    }
+    else if (cli_shared_utils_1.getPackageModule('@lartplus/cli-service-vue')) {
+        return 'vue';
+    }
+    else {
+        return 'react';
+    }
+};
+exports.getEslintConfig = function (answers) { return answers.eslintConfig; };
+exports.hasEslint = function (answers) {
+    var _a;
+    if ((_a = answers) === null || _a === void 0 ? void 0 : _a.feature) {
+        return answers.feature.includes('linter');
+    }
+    else if (answers && typeof answers.linter === 'boolean') {
+        return answers.linter || false;
+    }
+    else {
+        return cli_shared_utils_1.getPackageModule('eslint');
+    }
+};
+exports.hasMobile = function (answers) {
+    return answers.feature.includes('mobile');
+};

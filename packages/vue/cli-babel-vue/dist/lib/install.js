@@ -1,1 +1,22 @@
-var _0x5cf6=['forEach','0x8','0x6','presets','./getPresets','__esModule','shift','0x0','0x5','install','0x1','plugins','applyBabelConfig','@lartplus/cli-shared-utils','0x3','push','0x4','0x7'];(function(_0x30edeb,_0x5cf6be){var _0x26b468=function(_0x5492d2){while(--_0x5492d2){_0x30edeb['push'](_0x30edeb['shift']());}};_0x26b468(++_0x5cf6be);}(_0x5cf6,0x131));var _0x26b4=function(_0x30edeb,_0x5cf6be){_0x30edeb=_0x30edeb-0x0;var _0x26b468=_0x5cf6[_0x30edeb];return _0x26b468;};var _0x5372=['@vue/transform-vue-jsx','applyBabelConfig',_0x26b4('0xc'),_0x26b4('0xe'),'./getPlugins','isArray',_0x26b4('0x4'),_0x26b4('0x5'),_0x26b4('0x1')];!function(_0x49ed26){!function(_0x3de369){for(;--_0x3de369;)_0x49ed26[_0x26b4('0x10')](_0x49ed26[_0x26b4('0x7')]());}(0x1e6);}(_0x5372);var _0x341c=function(_0x5f45e6,_0x287fb3){return _0x5372[_0x5f45e6=+_0x5f45e6];};exports[_0x26b4('0x6')]=!0x0;var cli_shared_utils_1=require(_0x341c(_0x26b4('0x11'))),getPresets_1=require(_0x341c(_0x26b4('0x2'))),getPlugins_1=require(_0x341c(_0x26b4('0x9')));function install(_0x416d7e){return getPlugins_1[_0x26b4('0xc')][_0x341c(_0x26b4('0x8'))](function(_0x26fca6){return cli_shared_utils_1['applyBabelConfig'](_0x416d7e,_0x341c('0x3'),Array[_0x341c(_0x26b4('0x3'))](_0x26fca6)?_0x26fca6[0x0]:_0x26fca6,Array[_0x341c(_0x26b4('0x3'))](_0x26fca6)?_0x26fca6[0x1]:null);}),getPresets_1[_0x341c(_0x26b4('0x0'))][_0x341c(_0x26b4('0x8'))](function(_0x43f37d){return cli_shared_utils_1[_0x341c('0x2')](_0x416d7e,'presets',Array[_0x341c(_0x26b4('0x3'))](_0x43f37d)?_0x43f37d[0x0]:_0x43f37d,Array[_0x341c(_0x26b4('0x3'))](_0x43f37d)?_0x43f37d[0x1]:null);}),cli_shared_utils_1[_0x26b4('0xd')](_0x416d7e,_0x341c(_0x26b4('0xf')),_0x341c(_0x26b4('0xb')),null);}exports[_0x26b4('0xa')]=install;
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-16 19:50:41
+ * @LastEditTime : 2020-05-15 13:59:07
+ */
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var getPresets_1 = require("./getPresets");
+var getPlugins_1 = require("./getPlugins");
+function install(babelConfig) {
+    getPlugins_1.plugins.forEach(function (plugin) {
+        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'plugins', Array.isArray(plugin) ? plugin[0] : plugin, Array.isArray(plugin) ? plugin[1] : null);
+    });
+    getPresets_1.presets.forEach(function (preset) {
+        return cli_shared_utils_1.applyBabelConfig(babelConfig, 'presets', Array.isArray(preset) ? preset[0] : preset, Array.isArray(preset) ? preset[1] : null);
+    });
+    return cli_shared_utils_1.applyBabelConfig(babelConfig, 'plugins', '@vue/transform-vue-jsx', null);
+}
+exports.install = install;
+;

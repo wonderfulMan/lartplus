@@ -1,1 +1,14 @@
-var _0x2641=['version','0x2','../../../package.json','0x0'];(function(_0x10872c,_0x26411d){var _0x597693=function(_0x380a5c){while(--_0x380a5c){_0x10872c['push'](_0x10872c['shift']());}};_0x597693(++_0x26411d);}(_0x2641,0xa9));var _0x5976=function(_0x10872c,_0x26411d){_0x10872c=_0x10872c-0x0;var _0x597693=_0x2641[_0x10872c];return _0x597693;};var _0x46b2=[_0x5976('0x3'),'resolvedLartplusCliVersion','__esModule'];!function(_0xb82c09){!function(_0x19202a){for(;--_0x19202a;)_0xb82c09['push'](_0xb82c09['shift']());}(0x18f);}(_0x46b2);var _0x2041=function(_0x440983,_0xd5d39f){return _0x46b2[_0x440983=+_0x440983];};function resolvedLartplusCliVersion(){return require(_0x5976('0x1'))[_0x2041('0x1')];}exports[_0x2041(_0x5976('0x2'))]=!0x0,exports[_0x2041(_0x5976('0x0'))]=resolvedLartplusCliVersion;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-28 17:30:13
+ * @LastEditTime : 2020-05-14 09:08:42
+ */
+function resolvedLartplusCliVersion() {
+    var cliPackage = require('../../../package.json');
+    var cliVersion = cliPackage.version;
+    return cliVersion;
+}
+exports.resolvedLartplusCliVersion = resolvedLartplusCliVersion;

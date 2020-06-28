@@ -1,1 +1,19 @@
-var _0x4c5d=['presets','__esModule','push','0x1','shift','usage','0x0'];(function(_0x12d4e3,_0x4c5d70){var _0x310ef9=function(_0x10deeb){while(--_0x10deeb){_0x12d4e3['push'](_0x12d4e3['shift']());}};_0x310ef9(++_0x4c5d70);}(_0x4c5d,0xb3));var _0x310e=function(_0x12d4e3,_0x4c5d70){_0x12d4e3=_0x12d4e3-0x0;var _0x310ef9=_0x4c5d[_0x12d4e3];return _0x310ef9;};var _0x22a9=[_0x310e('0x3'),'@babel/preset-env',_0x310e('0x1')];!function(_0x335373){!function(_0x48eaac){for(;--_0x48eaac;)_0x335373[_0x310e('0x5')](_0x335373[_0x310e('0x0')]());}(0xc0);}(_0x22a9);var _0x10ee=function(_0x312e87,_0x5ee858){return _0x22a9[_0x312e87=+_0x312e87];};exports[_0x310e('0x4')]=!0x0,exports[_0x10ee(_0x310e('0x6'))]=[[_0x10ee('0x2'),{'corejs':0x3,'modules':!0x1,'useBuiltIns':_0x10ee(_0x310e('0x2'))}]];
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors: hAo
+ * @Date: 2020-05-15 11:01:11
+ * @LastEditTime: 2020-05-15 11:01:28
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+exports.presets = [
+    [
+        "@babel/preset-env",
+        {
+            "corejs": 3,
+            "modules": false,
+            "useBuiltIns": "usage"
+        }
+    ]
+];

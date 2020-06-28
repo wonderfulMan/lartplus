@@ -1,1 +1,32 @@
-var _0x56e3=['.ignore','0x0','shift','@lartplus/cli-shared-utils','0x7','0x1','0x6','0x5','push','genPostcssConfigFile','__esModule','hasMobile','.hairlines'];(function(_0x846837,_0x56e36d){var _0x23e4ee=function(_0x1085ad){while(--_0x1085ad){_0x846837['push'](_0x846837['shift']());}};_0x23e4ee(++_0x56e36d);}(_0x56e3,0x86));var _0x23e4=function(_0x846837,_0x56e36d){_0x846837=_0x846837-0x0;var _0x23e4ee=_0x56e3[_0x846837];return _0x23e4ee;};var _0x4be1=[_0x23e4('0xc'),'plugins',_0x23e4('0x8'),_0x23e4('0x5'),_0x23e4('0x7'),_0x23e4('0x4'),_0x23e4('0x6'),'autoprefixer'];!function(_0x302472){!function(_0x43899){for(;--_0x43899;)_0x302472['push'](_0x302472[_0x23e4('0xb')]());}(0x1db);}(_0x4be1);var _0x1507=function(_0x2d1331,_0x1366c2){return _0x4be1[_0x2d1331=+_0x2d1331];};exports[_0x1507('0x4')]=!0x0;var cli_shared_utils_1=require(_0x1507(_0x23e4('0x2'))),mobileConfig=function(){return{'postcss-px-to-viewport':{'unitToConvert':'px','viewportWidth':0x2ee,'viewportHeight':0x536,'unitPrecision':0x3,'viewportUnit':'vw','selectorBlackList':[_0x23e4('0x9'),_0x1507(_0x23e4('0xa'))],'minPixelValue':0x1,'mediaQuery':!0x1}};};exports[_0x1507(_0x23e4('0x1'))]=function(_0x44b205){var _0x41ebbd={'plugins':[require(_0x1507(_0x23e4('0x3')))]};return cli_shared_utils_1[_0x1507('0x2')](_0x44b205)&&_0x41ebbd[_0x1507(_0x23e4('0x0'))][_0x1507('0x3')](mobileConfig()),_0x41ebbd;};
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 15:41:02
+ * @LastEditTime : 2020-06-04 11:49:37
+ */
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var mobileConfig = function () {
+    return {
+        "postcss-px-to-viewport": {
+            "unitToConvert": "px",
+            "viewportWidth": 750,
+            "viewportHeight": 1334,
+            "unitPrecision": 3,
+            "viewportUnit": "vw",
+            "selectorBlackList": [".ignore", ".hairlines"],
+            "minPixelValue": 1,
+            "mediaQuery": false
+        }
+    };
+};
+exports.genPostcssConfigFile = function (answers) {
+    var config = {
+        plugins: [
+            require('autoprefixer'),
+        ]
+    };
+    cli_shared_utils_1.hasMobile(answers) && config.plugins.push(mobileConfig());
+    return config;
+};

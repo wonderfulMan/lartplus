@@ -1,1 +1,26 @@
-var _0x3367=['push','shift','0x1','0x0','__esModule','LANGUAGE_TYPE'];(function(_0x51d53f,_0x3367f7){var _0x5668cd=function(_0xfa5750){while(--_0xfa5750){_0x51d53f['push'](_0x51d53f['shift']());}};_0x5668cd(++_0x3367f7);}(_0x3367,0x1bc));var _0x5668=function(_0x51d53f,_0x3367f7){_0x51d53f=_0x51d53f-0x0;var _0x5668cd=_0x3367[_0x51d53f];return _0x5668cd;};var _0x2cda=[_0x5668('0x5'),_0x5668('0x4')];!function(_0x453374){!function(_0x105b3b){for(;--_0x105b3b;)_0x453374[_0x5668('0x0')](_0x453374[_0x5668('0x1')]());}(0x121);}(_0x2cda);var _0x3bec=function(_0x3f2183,_0x1dfef7){return _0x2cda[_0x3f2183=+_0x3f2183];};exports[_0x3bec(_0x5668('0x2'))]=!0x0,exports[_0x3bec(_0x5668('0x3'))]={'JS':/\.js$/,'TS':/\.ts$/,'VUE':/\.vue$/,'CSS':/\.css$/,'LESS':/\.less$/,'STYLUS':/\.styl(us)?$/,'SASS':/\.sass$/,'SCSS':/\.scss&/,'POST':/\.p(ost)?css$/,'MODULES':/\.module\.\w+$/,'TSX':/\.tsx$/,'ESLINT':/\.(vue|(j|t)sx?)$/,'IMAGE':/\.(png|jpe?g|gif|webp)(\?.*)?$/,'SVG':/\.(svg)(\?.*)?$/,'MEDIA':/\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,'FONT':/\.(woff2?|eot|ttf|otf)(\?.*)?$/i};
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-13 15:17:37
+ * @LastEditTime : 2020-05-06 17:15:42
+ */
+exports.__esModule = true;
+exports.LANGUAGE_TYPE = {
+    JS: /\.js$/,
+    TS: /\.ts$/,
+    VUE: /\.vue$/,
+    CSS: /\.css$/,
+    LESS: /\.less$/,
+    STYLUS: /\.styl(us)?$/,
+    SASS: /\.sass$/,
+    SCSS: /\.scss&/,
+    POST: /\.p(ost)?css$/,
+    MODULES: /\.module\.\w+$/,
+    TSX: /\.tsx$/,
+    ESLINT: /\.(vue|(j|t)sx?)$/,
+    IMAGE: /\.(png|jpe?g|gif|webp)(\?.*)?$/,
+    SVG: /\.(svg)(\?.*)?$/,
+    MEDIA: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+    FONT: /\.(woff2?|eot|ttf|otf)(\?.*)?$/i
+};

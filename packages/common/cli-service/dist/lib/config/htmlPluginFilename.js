@@ -1,1 +1,14 @@
-var _0x4e11=['push','__esModule','0x3','0x0','/index.html','shift'];(function(_0x3fe9bf,_0x4e11a1){var _0x207d8d=function(_0x5dc3d6){while(--_0x5dc3d6){_0x3fe9bf['push'](_0x3fe9bf['shift']());}};_0x207d8d(++_0x4e11a1);}(_0x4e11,0x170));var _0x207d=function(_0x3fe9bf,_0x4e11a1){_0x3fe9bf=_0x3fe9bf-0x0;var _0x207d8d=_0x4e11[_0x3fe9bf];return _0x207d8d;};var _0x5920=['appName',_0x207d('0x5'),_0x207d('0x2'),'htmlPluginFilename'];!function(_0x2db56c){!function(_0x31b395){for(;--_0x31b395;)_0x2db56c[_0x207d('0x4')](_0x2db56c[_0x207d('0x3')]());}(0xf0);}(_0x5920);var _0x49ec=function(_0x5f445b,_0x228826){return _0x5920[_0x5f445b=+_0x5f445b];};exports[_0x49ec('0x2')]=!0x0;var htmlPluginFilename=function(_0x372a26,_0x5d2c89,_0x2228e3){return _0x5d2c89[_0x49ec('0x1')]+_0x49ec(_0x207d('0x0'));};exports[_0x49ec(_0x207d('0x1'))]=htmlPluginFilename;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-26 15:01:29
+ * @LastEditTime : 2020-04-14 17:47:50
+ */
+var htmlPluginFilename = function (mode, entriesMapItem, templateConfig) {
+    // const userConfigBaseFilename = `${entriesMapItem.appName}/${templateConfig.filename}`;
+    var innerbaseFilename = entriesMapItem.appName + "/index.html";
+    return innerbaseFilename;
+};
+exports.htmlPluginFilename = htmlPluginFilename;

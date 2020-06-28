@@ -1,1 +1,65 @@
-var _0x3247=['shift','0x0','0xd','@lartplus/cli-shared-utils','0x3','0x7','0x10','0xe','cwdPath','isDirectory','0x2','forEach','error','notice','push','/public','0xc','existsSync','exit','statSync','0x5','/index.ejs','0x11','length','public目录下没有任何与之entries的文件或者目录为空，请检查','appName','parseTemplate','0x6','filter','0x1','0x8'];(function(_0x5688b9,_0x3247da){var _0x95d99d=function(_0x1af022){while(--_0x1af022){_0x5688b9['push'](_0x5688b9['shift']());}};_0x95d99d(++_0x3247da);}(_0x3247,0x1cf));var _0x95d9=function(_0x5688b9,_0x3247da){_0x5688b9=_0x5688b9-0x0;var _0x95d99d=_0x3247[_0x5688b9];return _0x95d99d;};var _0x1cdf=[_0x95d9('0x14'),'__esModule',_0x95d9('0x15'),_0x95d9('0x1b'),_0x95d9('0xf'),'map',_0x95d9('0x11'),_0x95d9('0x5'),_0x95d9('0xd'),'readdirSync',_0x95d9('0x17'),_0x95d9('0x19'),_0x95d9('0x13'),_0x95d9('0x1c'),'filter',_0x95d9('0x10'),_0x95d9('0x1a'),_0x95d9('0xa'),_0x95d9('0xb')];!function(_0x1658d4){!function(_0x5b347d){for(;--_0x5b347d;)_0x1658d4[_0x95d9('0x10')](_0x1658d4[_0x95d9('0x2')]());}(0x185);}(_0x1cdf);var _0x51bc=function(_0x44fafe,_0x42bb76){return _0x1cdf[_0x44fafe=+_0x44fafe];};exports[_0x51bc(_0x95d9('0x12'))]=!0x0;var cli_shared_utils_1=require(_0x51bc('0x12')),readChildDir=function(_0x2525f9,_0x32e7b3){return _0x2525f9[_0x51bc(_0x95d9('0x8'))](function(_0x57e9b8){var _0x31182f=_0x32e7b3+'/'+_0x57e9b8;return cli_shared_utils_1['fs'][_0x51bc(_0x95d9('0x4'))](_0x31182f)[_0x51bc('0xa')]()&&_0x57e9b8;})[_0x51bc(_0x95d9('0x1d'))](Boolean);},diffTemplateDirname=function(_0x3a8ec1,_0x1ea27c){var _0x2e79f9=[];return _0x1ea27c[_0x51bc(_0x95d9('0x3'))](function(_0x285638){var _0x22e6de=_0x3a8ec1[_0x51bc(_0x95d9('0x1d'))](function(_0x3cca75){return _0x3cca75===_0x285638[_0x51bc(_0x95d9('0x9'))];})[0x0];_0x22e6de&&_0x2e79f9[_0x95d9('0x10')](_0x22e6de);}),_0x2e79f9[_0x95d9('0x1e')](Boolean);},getTemplateNames=function(_0x2b319b,_0xb21aa2){var _0x28d150=[];return _0x2b319b[_0x51bc(_0x95d9('0x3'))](function(_0x4b4910){var _0x2025fa=_0xb21aa2+'/'+_0x4b4910+_0x51bc(_0x95d9('0xc'));cli_shared_utils_1['fs'][_0x95d9('0x13')](_0x2025fa)&&_0x28d150[_0x51bc(_0x95d9('0x7'))]({'dirName':_0x4b4910,'templatePath':_0x2025fa});}),_0x28d150[_0x95d9('0x1e')](Boolean);},parseTemplate=function(_0x6dd1fa,_0x3ede01){var _0x325433,_0x4e48cb,_0x1af94a=_0x6dd1fa[_0x51bc('0x9')]+_0x51bc(_0x95d9('0x18')),_0x3277d0=[];return!cli_shared_utils_1['fs'][_0x51bc('0x4')](_0x1af94a)||0x0<(_0x325433=cli_shared_utils_1['fs'][_0x51bc(_0x95d9('0x0'))](_0x1af94a))[_0x51bc(_0x95d9('0x6'))]&&0x0<(_0x4e48cb=readChildDir(_0x325433,_0x1af94a))[_0x51bc(_0x95d9('0x6'))]&&(_0x4e48cb=diffTemplateDirname(_0x4e48cb,_0x3ede01),_0x3277d0=getTemplateNames(_0x4e48cb,_0x1af94a)),_0x3277d0[_0x95d9('0x19')]<0x1&&(cli_shared_utils_1[_0x51bc('0xf')][_0x95d9('0xe')]([_0x51bc(_0x95d9('0x1'))]),process[_0x51bc('0xb')](0x0)),_0x3277d0;};exports[_0x51bc(_0x95d9('0x16'))]=parseTemplate;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-25 13:43:16
+ * @LastEditTime : 2020-03-26 17:20:35
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var readChildDir = function (childDir, templateDir) {
+    return childDir
+        .map(function (it) {
+        var cur = templateDir + "/" + it;
+        var stat = cli_shared_utils_1.fs.statSync(cur);
+        var isDir = stat.isDirectory();
+        return isDir && it;
+    })
+        .filter(Boolean);
+};
+// 获取与enteies文件与之对应的模块目录
+var diffTemplateDirname = function (childDirName, entries) {
+    var result = [];
+    entries.forEach(function (it) {
+        var isTrue = childDirName.filter(function (dir) { return dir === it.appName; })[0];
+        if (isTrue) {
+            result.push(isTrue);
+        }
+    });
+    return result.filter(Boolean);
+};
+var getTemplateNames = function (childDirName, templateDir) {
+    var templateNames = [];
+    childDirName.forEach(function (it) {
+        var basePath = templateDir + "/" + it + "/index.ejs";
+        var exist = cli_shared_utils_1.fs.existsSync(basePath);
+        if (exist) {
+            templateNames.push({
+                dirName: it,
+                templatePath: basePath
+            });
+        }
+    });
+    return templateNames.filter(Boolean);
+};
+var parseTemplate = function (context, entries) {
+    var templateDir = context.cwdPath + "/public";
+    var hasTemplate = cli_shared_utils_1.fs.existsSync(templateDir);
+    var templateNames = [];
+    if (hasTemplate) {
+        var childDir = cli_shared_utils_1.fs.readdirSync(templateDir);
+        if (childDir.length > 0) {
+            var childDirName = readChildDir(childDir, templateDir);
+            if (childDirName.length > 0) {
+                childDirName = diffTemplateDirname(childDirName, entries);
+                templateNames = getTemplateNames(childDirName, templateDir);
+            }
+        }
+    }
+    if (templateNames.length < 1) {
+        cli_shared_utils_1.notice.error(['public目录下没有任何与之entries的文件或者目录为空，请检查']);
+        process.exit(0);
+    }
+    return templateNames;
+};
+exports.parseTemplate = parseTemplate;

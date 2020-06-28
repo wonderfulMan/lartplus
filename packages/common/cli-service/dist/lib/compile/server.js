@@ -1,1 +1,78 @@
-var _0x29ca=['0x15','0x4','0xa','listen','host','__importDefault','0x6','0x18','value','0xc','0x12','chalk','done','0x3','trys','0x8','0x5','function','apply','0x14','0x23','0x7','0x24','__esModule','plugin','0x1a','Generator\x20is\x20already\x20executing.','0x13','0x2','network\x20address:\x20','pop','label','push','0x17','throw','toConfig','shift','webpack','0x25','next','../config/devServceOptions','0x10','friendly-errors-webpack-plugin','http://','use','__generator','0x1f','0x16','greenBright','0x1c','0xf','0x1d','0x1','0xb','then','call','port','@lartplus/cli-shared-utils','ops','iterator','0x1b','0x19','0x11','FriendlyErrorsWebpackPlugin','0x1e','default','return'];(function(_0x8748d2,_0x29cabd){var _0xe5a937=function(_0x245317){while(--_0x245317){_0x8748d2['push'](_0x8748d2['shift']());}};_0xe5a937(++_0x29cabd);}(_0x29ca,0x87));var _0xe5a9=function(_0x8748d2,_0x29cabd){_0x8748d2=_0x8748d2-0x0;var _0xe5a937=_0x29ca[_0x8748d2];return _0xe5a937;};var _0x48e1=[_0xe5a9('0x2'),_0xe5a9('0x40'),_0xe5a9('0x22'),_0xe5a9('0x16'),'webpack-dev-server',_0xe5a9('0x2b'),_0xe5a9('0x21'),_0xe5a9('0x1f'),_0xe5a9('0x2a'),_0xe5a9('0x17'),_0xe5a9('0x2c'),_0xe5a9('0x41'),_0xe5a9('0x7'),_0xe5a9('0x3e'),_0xe5a9('0x4'),'next',_0xe5a9('0xa'),_0xe5a9('0x1d'),_0xe5a9('0x1c'),'call',_0xe5a9('0x2f'),'length','sent',_0xe5a9('0x3a'),'startServer',_0xe5a9('0x39'),_0xe5a9('0x1e'),_0xe5a9('0xb'),_0xe5a9('0x3'),_0xe5a9('0x37'),'getDevServerOptions',_0xe5a9('0xd'),'http://localhost:',_0xe5a9('0x11'),_0xe5a9('0x10'),'local\x20address:\x20',_0xe5a9('0x29'),_0xe5a9('0x35')];!function(_0x71e1a2){!function(_0x58af4b){for(;--_0x58af4b;)_0x71e1a2[_0xe5a9('0x1f')](_0x71e1a2[_0xe5a9('0x23')]());}(0xdb);}(_0x48e1);var _0x5dff=function(_0x4c242b,_0x3bc12c){return _0x48e1[_0x4c242b=+_0x4c242b];},__awaiter=this&&this['__awaiter']||function(_0x2afae9,_0x366b94,_0x11fc6b,_0x523976){return new(_0x11fc6b=_0x11fc6b||Promise)(function(_0x3774b4,_0x1bc639){function _0x17f2fb(_0x246abd){try{_0x2b7d18(_0x523976[_0x5dff(_0xe5a9('0x3c'))](_0x246abd));}catch(_0x293b76){_0x1bc639(_0x293b76);}}function _0x91e1cb(_0xcaf15c){try{_0x2b7d18(_0x523976['throw'](_0xcaf15c));}catch(_0x18710e){_0x1bc639(_0x18710e);}}function _0x2b7d18(_0x5913e1){var _0x1b31fc;_0x5913e1[_0x5dff(_0xe5a9('0x25'))]?_0x3774b4(_0x5913e1[_0x5dff('0x16')]):((_0x1b31fc=_0x5913e1[_0x5dff(_0xe5a9('0x2e'))])instanceof _0x11fc6b?_0x1b31fc:new _0x11fc6b(function(_0x236f27){_0x236f27(_0x1b31fc);}))[_0x5dff('0x9')](_0x17f2fb,_0x91e1cb);}_0x2b7d18((_0x523976=_0x523976[_0x5dff(_0xe5a9('0xf'))](_0x2afae9,_0x366b94||[]))[_0xe5a9('0x26')]());});},__generator=this&&this[_0x5dff(_0xe5a9('0x12'))]||function(_0x7130f2,_0x26b77b){var _0x18d4ea,_0x175fba,_0x3d6995,_0x1d93da={'label':0x0,'sent':function(){if(0x1&_0x3d6995[0x0])throw _0x3d6995[0x1];return _0x3d6995[0x1];},'trys':[],'ops':[]},_0x5dc265={'next':_0xeeb18d(0x0),'throw':_0xeeb18d(0x1),'return':_0xeeb18d(0x2)};return _0x5dff(_0xe5a9('0x5'))==typeof Symbol&&(_0x5dc265[Symbol[_0x5dff('0x21')]]=function(){return this;}),_0x5dc265;function _0xeeb18d(_0x4f2b7a){return function(_0x365f82){return function(_0x10d2bc){if(_0x18d4ea)throw new TypeError(_0xe5a9('0x19'));for(;_0x1d93da;)try{if(_0x18d4ea=0x1,_0x175fba&&(_0x3d6995=0x2&_0x10d2bc[0x0]?_0x175fba[_0x5dff(_0xe5a9('0x42'))]:_0x10d2bc[0x0]?_0x175fba[_0x5dff(_0xe5a9('0x28'))]||((_0x3d6995=_0x175fba['return'])&&_0x3d6995[_0xe5a9('0x36')](_0x175fba),0x0):_0x175fba[_0x5dff(_0xe5a9('0x3c'))])&&!(_0x3d6995=_0x3d6995[_0x5dff(_0xe5a9('0x32'))](_0x175fba,_0x10d2bc[0x1]))[_0xe5a9('0xb')])return _0x3d6995;switch(_0x175fba=0x0,_0x3d6995&&(_0x10d2bc=[0x2&_0x10d2bc[0x0],_0x3d6995[_0xe5a9('0x7')]]),_0x10d2bc[0x0]){case 0x0:case 0x1:_0x3d6995=_0x10d2bc;break;case 0x4:return _0x1d93da[_0x5dff(_0xe5a9('0x15'))]++,{'value':_0x10d2bc[0x1],'done':!0x1};case 0x5:_0x1d93da[_0x5dff(_0xe5a9('0x15'))]++,_0x175fba=_0x10d2bc[0x1],_0x10d2bc=[0x0];continue;case 0x7:_0x10d2bc=_0x1d93da[_0x5dff(_0xe5a9('0x13'))][_0x5dff(_0xe5a9('0x3b'))](),_0x1d93da[_0x5dff('0x3')][_0x5dff('0x1b')]();continue;default:if(!(_0x3d6995=0x0<(_0x3d6995=_0x1d93da[_0x5dff(_0xe5a9('0xc'))])[_0x5dff('0x1f')]&&_0x3d6995[_0x3d6995[_0x5dff(_0xe5a9('0x2d'))]-0x1])&&(0x6===_0x10d2bc[0x0]||0x2===_0x10d2bc[0x0])){_0x1d93da=0x0;continue;}if(0x3===_0x10d2bc[0x0]&&(!_0x3d6995||_0x10d2bc[0x1]>_0x3d6995[0x0]&&_0x10d2bc[0x1]<_0x3d6995[0x3])){_0x1d93da[_0x5dff(_0xe5a9('0x15'))]=_0x10d2bc[0x1];break;}if(0x6===_0x10d2bc[0x0]&&_0x1d93da[_0x5dff(_0xe5a9('0x15'))]<_0x3d6995[0x1]){_0x1d93da[_0x5dff('0x24')]=_0x3d6995[0x1],_0x3d6995=_0x10d2bc;break;}if(_0x3d6995&&_0x1d93da[_0x5dff(_0xe5a9('0x15'))]<_0x3d6995[0x2]){_0x1d93da[_0x5dff('0x24')]=_0x3d6995[0x2],_0x1d93da[_0x5dff('0x23')][_0x5dff(_0xe5a9('0x3d'))](_0x10d2bc);break;}_0x3d6995[0x2]&&_0x1d93da[_0x5dff(_0xe5a9('0x13'))][_0xe5a9('0x1d')](),_0x1d93da[_0x5dff(_0xe5a9('0xc'))][_0x5dff(_0xe5a9('0x3b'))]();continue;}_0x10d2bc=_0x26b77b[_0x5dff('0x1d')](_0x7130f2,_0x1d93da);}catch(_0x1121f6){_0x10d2bc=[0x6,_0x1121f6],_0x175fba=0x0;}finally{_0x18d4ea=_0x3d6995=0x0;}if(0x5&_0x10d2bc[0x0])throw _0x10d2bc[0x1];return{'value':_0x10d2bc[0x0]?_0x10d2bc[0x1]:void 0x0,'done':!0x0};}([_0x4f2b7a,_0x365f82]);};}},__importDefault=this&&this[_0x5dff(_0xe5a9('0x6'))]||function(_0x1dabec){return _0x1dabec&&_0x1dabec[_0x5dff('0xd')]?_0x1dabec:{'default':_0x1dabec};};exports[_0xe5a9('0x16')]=!0x0;var webpack_1=__importDefault(require(_0xe5a9('0x24'))),friendly_errors_webpack_plugin_1=__importDefault(require(_0x5dff(_0xe5a9('0xe')))),webpack_dev_server_1=__importDefault(require(_0x5dff('0xe'))),cli_shared_utils_1=require(_0xe5a9('0x38')),devServceOptions_1=require(_0xe5a9('0x27')),startServer=function(_0x2c7066,_0x558d82,_0x1a1ab6){return __awaiter(void 0x0,void 0x0,void 0x0,function(){var _0x550a42;return __generator(this,function(_0x2d496a){switch(_0x2d496a[_0x5dff(_0xe5a9('0x15'))]){case 0x0:return[0x4,devServceOptions_1[_0x5dff(_0xe5a9('0x1b'))](_0x558d82,_0x1a1ab6)];case 0x1:return _0x550a42=_0x2d496a[_0x5dff('0x20')](),_0x2c7066[_0x5dff(_0xe5a9('0x1a'))](_0x5dff(_0xe5a9('0x20')))[_0x5dff(_0xe5a9('0x31'))](friendly_errors_webpack_plugin_1[_0x5dff(_0xe5a9('0x34'))],[{'compilationSuccessInfo':{'messages':['服务启动成功！'],'notes':[_0x5dff(_0xe5a9('0x30'))+cli_shared_utils_1[_0x5dff('0x1a')]['greenBright'](_0x5dff(_0xe5a9('0x9'))+_0x550a42[_0x5dff('0x0')]+':'+_0x550a42[_0x5dff(_0xe5a9('0x33'))]),_0x5dff(_0xe5a9('0x14'))+cli_shared_utils_1[_0x5dff(_0xe5a9('0x18'))][_0x5dff(_0xe5a9('0x3f'))](_0x5dff(_0xe5a9('0x0'))+_0x550a42[_0x5dff(_0xe5a9('0x33'))])]},'clearConsole':!0x0}])['end'](),new webpack_dev_server_1[(_0x5dff(_0xe5a9('0x34')))](webpack_1[_0x5dff(_0xe5a9('0x34'))](_0x2c7066[_0x5dff(_0xe5a9('0x8'))]()),_0x550a42)[_0x5dff(_0xe5a9('0x1'))](_0x550a42[_0xe5a9('0x37')],_0x550a42['host'],function(_0x14b3fd){if(_0x14b3fd)throw _0x14b3fd;}),[0x2];}});});};exports[_0x5dff('0x22')]=startServer;
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var webpack_1 = __importDefault(require("webpack"));
+var friendly_errors_webpack_plugin_1 = __importDefault(require("friendly-errors-webpack-plugin"));
+var webpack_dev_server_1 = __importDefault(require("webpack-dev-server"));
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var devServceOptions_1 = require("../config/devServceOptions");
+var startServer = function (config, context, entriesMap) { return __awaiter(void 0, void 0, void 0, function () {
+    var serverOptions, devServer;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, devServceOptions_1.getDevServerOptions(context, entriesMap)];
+            case 1:
+                serverOptions = _a.sent();
+                config
+                    .plugin('FriendlyErrorsWebpackPlugin')
+                    .use(friendly_errors_webpack_plugin_1["default"], [
+                    {
+                        compilationSuccessInfo: {
+                            messages: ['服务启动成功！'],
+                            notes: [
+                                "network address: " + cli_shared_utils_1.chalk.greenBright("http://" + serverOptions.host + ":" + serverOptions.port),
+                                "local address: " + cli_shared_utils_1.chalk.greenBright("http://localhost:" + serverOptions.port)
+                            ]
+                        },
+                        clearConsole: true
+                    }
+                ])
+                    .end();
+                devServer = new webpack_dev_server_1["default"](webpack_1["default"](config.toConfig()), serverOptions);
+                devServer.listen(serverOptions.port, serverOptions.host, function (err) {
+                    if (err)
+                        throw err;
+                });
+                return [2 /*return*/];
+        }
+    });
+}); };
+exports.startServer = startServer;

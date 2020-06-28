@@ -1,1 +1,82 @@
-var _0x17c7=['0x1a','0x9','0x12','0xf','shift','0x1c','__generator','0xd','push','trys','throw','sent','exit','apply','0x7','then','done','0x13','iterator','validataConfigFile','Generator\x20is\x20already\x20executing.','0x2','0xb','cwd','0x4','0x17','label','CONFIG_FILE_NAME','0x0','value','existsSync','0x16','0x1','hasOwnProperty','0x11','0x5','.js','0x1b','0xe','@lartplus/cli-shared-utils','ops','0x8','0x14','call','0x1d','return','__esModule','0x19','0xa','resolve','./validateConfigFile','function','length','0x18'];(function(_0x105881,_0x17c7c2){var _0x42c3d7=function(_0x59a5f0){while(--_0x59a5f0){_0x105881['push'](_0x105881['shift']());}};_0x42c3d7(++_0x17c7c2);}(_0x17c7,0xa8));var _0x42c3=function(_0x105881,_0x17c7c2){_0x105881=_0x105881-0x0;var _0x42c3d7=_0x17c7[_0x105881];return _0x42c3d7;};var _0x1cb8=['readConfigFile','.ts',_0x42c3('0x3'),'../config','pop',_0x42c3('0x22'),_0x42c3('0xa'),'__awaiter',_0x42c3('0x1b'),'next',_0x42c3('0x0'),_0x42c3('0x2'),_0x42c3('0x2e'),_0x42c3('0x1e'),_0x42c3('0x28'),_0x42c3('0x2d'),'call',_0x42c3('0x4'),_0x42c3('0xd'),_0x42c3('0xc'),_0x42c3('0x9'),_0x42c3('0xe'),_0x42c3('0x5'),_0x42c3('0x7'),_0x42c3('0x18'),_0x42c3('0x21'),'label','value','default','return'];!function(_0x126cac){!function(_0x103978){for(;--_0x103978;)_0x126cac[_0x42c3('0x2')](_0x126cac[_0x42c3('0x34')]());}(0xc6);}(_0x1cb8);var _0xebbd=function(_0x2b952f,_0x4be0f7){return _0x1cb8[_0x2b952f=+_0x2b952f];},__awaiter=this&&this[_0xebbd(_0x42c3('0x24'))]||function(_0xf8176c,_0x949d1e,_0x2b56b4,_0x236970){return new(_0x2b56b4=_0x2b56b4||Promise)(function(_0x54c614,_0x9cba15){function _0x343e92(_0x56a3b3){try{_0x414755(_0x236970[_0xebbd(_0x42c3('0x19'))](_0x56a3b3));}catch(_0x45fc00){_0x9cba15(_0x45fc00);}}function _0x24dd63(_0x263f33){try{_0x414755(_0x236970[_0xebbd(_0x42c3('0x16'))](_0x263f33));}catch(_0x1ce550){_0x9cba15(_0x1ce550);}}function _0x414755(_0x1f60e1){var _0x1a1624;_0x1f60e1[_0xebbd(_0x42c3('0xb'))]?_0x54c614(_0x1f60e1[_0xebbd('0xa')]):((_0x1a1624=_0x1f60e1[_0xebbd(_0x42c3('0x2a'))])instanceof _0x2b56b4?_0x1a1624:new _0x2b56b4(function(_0x177937){_0x177937(_0x1a1624);}))[_0xebbd('0x3')](_0x343e92,_0x24dd63);}_0x414755((_0x236970=_0x236970[_0xebbd('0x6')](_0xf8176c,_0x949d1e||[]))[_0xebbd(_0x42c3('0x19'))]());});},__generator=this&&this[_0xebbd(_0x42c3('0x13'))]||function(_0x3eef04,_0xa26d07){var _0x3a8b5e,_0xb4ded1,_0x559bc8,_0x5e71bd={'label':0x0,'sent':function(){if(0x1&_0x559bc8[0x0])throw _0x559bc8[0x1];return _0x559bc8[0x1];},'trys':[],'ops':[]},_0x2ee28e={'next':_0x7f9801(0x0),'throw':_0x7f9801(0x1),'return':_0x7f9801(0x2)};return _0xebbd(_0x42c3('0x35'))==typeof Symbol&&(_0x2ee28e[Symbol[_0xebbd(_0x42c3('0xf'))]]=function(){return this;}),_0x2ee28e;function _0x7f9801(_0x1c67ec){return function(_0x19b985){return function(_0x5729d2){if(_0x3a8b5e)throw new TypeError(_0xebbd(_0x42c3('0x12')));for(;_0x5e71bd;)try{if(_0x3a8b5e=0x1,_0xb4ded1&&(_0x559bc8=0x2&_0x5729d2[0x0]?_0xb4ded1[_0x42c3('0x27')]:_0x5729d2[0x0]?_0xb4ded1[_0x42c3('0x4')]||((_0x559bc8=_0xb4ded1[_0xebbd('0xc')])&&_0x559bc8[_0xebbd(_0x42c3('0x26'))](_0xb4ded1),0x0):_0xb4ded1[_0xebbd('0x16')])&&!(_0x559bc8=_0x559bc8[_0xebbd(_0x42c3('0x26'))](_0xb4ded1,_0x5729d2[0x1]))[_0xebbd('0x13')])return _0x559bc8;switch(_0xb4ded1=0x0,_0x559bc8&&(_0x5729d2=[0x2&_0x5729d2[0x0],_0x559bc8[_0x42c3('0x17')]]),_0x5729d2[0x0]){case 0x0:case 0x1:_0x559bc8=_0x5729d2;break;case 0x4:return _0x5e71bd[_0x42c3('0x14')]++,{'value':_0x5729d2[0x1],'done':!0x1};case 0x5:_0x5e71bd[_0xebbd(_0x42c3('0x31'))]++,_0xb4ded1=_0x5729d2[0x1],_0x5729d2=[0x0];continue;case 0x7:_0x5729d2=_0x5e71bd[_0xebbd(_0x42c3('0x32'))][_0xebbd('0x11')](),_0x5e71bd[_0xebbd(_0x42c3('0x33'))][_0xebbd(_0x42c3('0x1c'))]();continue;default:if(!(_0x559bc8=0x0<(_0x559bc8=_0x5e71bd[_0xebbd('0xf')])[_0x42c3('0x2e')]&&_0x559bc8[_0x559bc8[_0xebbd(_0x42c3('0x29'))]-0x1])&&(0x6===_0x5729d2[0x0]||0x2===_0x5729d2[0x0])){_0x5e71bd=0x0;continue;}if(0x3===_0x5729d2[0x0]&&(!_0x559bc8||_0x5729d2[0x1]>_0x559bc8[0x0]&&_0x5729d2[0x1]<_0x559bc8[0x3])){_0x5e71bd[_0xebbd('0x9')]=_0x5729d2[0x1];break;}if(0x6===_0x5729d2[0x0]&&_0x5e71bd[_0xebbd('0x9')]<_0x559bc8[0x1]){_0x5e71bd[_0xebbd('0x9')]=_0x559bc8[0x1],_0x559bc8=_0x5729d2;break;}if(_0x559bc8&&_0x5e71bd[_0xebbd(_0x42c3('0x31'))]<_0x559bc8[0x2]){_0x5e71bd[_0xebbd(_0x42c3('0x31'))]=_0x559bc8[0x2],_0x5e71bd[_0xebbd(_0x42c3('0x32'))][_0xebbd(_0x42c3('0x2f'))](_0x5729d2);break;}_0x559bc8[0x2]&&_0x5e71bd[_0x42c3('0x22')][_0xebbd(_0x42c3('0x1c'))](),_0x5e71bd[_0xebbd('0xf')][_0xebbd(_0x42c3('0x1c'))]();continue;}_0x5729d2=_0xa26d07[_0x42c3('0x25')](_0x3eef04,_0x5e71bd);}catch(_0x2254ec){_0x5729d2=[0x6,_0x2254ec],_0xb4ded1=0x0;}finally{_0x3a8b5e=_0x559bc8=0x0;}if(0x5&_0x5729d2[0x0])throw _0x5729d2[0x1];return{'value':_0x5729d2[0x0]?_0x5729d2[0x1]:void 0x0,'done':!0x0};}([_0x1c67ec,_0x19b985]);};}},__importStar=this&&this['__importStar']||function(_0x4d30f0){if(_0x4d30f0&&_0x4d30f0[_0x42c3('0x28')])return _0x4d30f0;var _0xb00f3b={};if(null!=_0x4d30f0)for(var _0x2c1077 in _0x4d30f0)Object[_0xebbd('0x15')][_0xebbd(_0x42c3('0x26'))](_0x4d30f0,_0x2c1077)&&(_0xb00f3b[_0x2c1077]=_0x4d30f0[_0x2c1077]);return _0xb00f3b[_0xebbd(_0x42c3('0x10'))]=_0x4d30f0,_0xb00f3b;};exports[_0xebbd(_0x42c3('0x1f'))]=!0x0;var config_1=require(_0xebbd('0x10')),cli_shared_utils_1=require(_0xebbd(_0x42c3('0x23'))),validateConfigFile_1=require(_0x42c3('0x2c')),cwd=process[_0x42c3('0x11')]();function readConfigFile(){return __awaiter(this,void 0x0,void 0x0,function(){var _0x5b9cd8,_0x898b66,_0x2e8161,_0x206193;return __generator(this,function(_0x3347b2){switch(_0x3347b2[_0xebbd(_0x42c3('0x31'))]){case 0x0:return _0x5b9cd8=cwd+'/'+config_1[_0x42c3('0x15')],_0x898b66=cli_shared_utils_1['fs'][_0xebbd(_0x42c3('0x8'))](_0x5b9cd8+_0xebbd(_0x42c3('0x30'))),_0x2e8161=cli_shared_utils_1['fs'][_0x42c3('0x18')](_0x5b9cd8+_0xebbd(_0x42c3('0x20'))),_0x898b66||_0x2e8161?(_0x5b9cd8=_0x5b9cd8+'.'+(_0x898b66?'js':'ts'),[0x4,Promise[_0x42c3('0x2b')]()[_0xebbd('0x3')](function(){return __importStar(require(_0x5b9cd8));})]):[0x3,0x2];case 0x1:if(_0x206193=_0x3347b2[_0xebbd(_0x42c3('0x1d'))](),validateConfigFile_1[_0xebbd(_0x42c3('0x1a'))](_0x206193[_0xebbd(_0x42c3('0x10'))]))return[0x2,_0x206193[_0xebbd('0xb')]];process[_0x42c3('0x6')](0x0),_0x3347b2[_0x42c3('0x14')]=0x2;case 0x2:return[0x2];}});});}exports[_0xebbd(_0x42c3('0x1'))]=readConfigFile;
+"use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-18 15:39:11
+ * @LastEditTime : 2020-05-18 10:13:44
+ */
+var config_1 = require("../config");
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var validateConfigFile_1 = require("./validateConfigFile");
+var cwd = process.cwd();
+function readConfigFile() {
+    return __awaiter(this, void 0, void 0, function () {
+        var filePath, isJSConfig, isTsConfig, isExists, file, verify;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    filePath = cwd + "/" + config_1.CONFIG_FILE_NAME;
+                    isJSConfig = cli_shared_utils_1.fs.existsSync(filePath + '.js');
+                    isTsConfig = cli_shared_utils_1.fs.existsSync(filePath + '.ts');
+                    isExists = isJSConfig || isTsConfig;
+                    if (!isExists) return [3 /*break*/, 2];
+                    filePath = filePath + "." + (isJSConfig ? 'js' : 'ts');
+                    return [4 /*yield*/, Promise.resolve().then(function () { return __importStar(require(filePath)); })];
+                case 1:
+                    file = _a.sent();
+                    verify = validateConfigFile_1.validataConfigFile(file["default"]);
+                    if (verify) {
+                        return [2 /*return*/, file["default"]];
+                    }
+                    process.exit(0);
+                    _a.label = 2;
+                case 2: return [2 /*return*/];
+            }
+        });
+    });
+}
+exports.readConfigFile = readConfigFile;

@@ -1,1 +1,31 @@
-var _0x436a=['getOwnPropertyDescriptor','0x9','Service','push','__esModule','object','0x8','0x6','choices','0x2','shift','0x4','0x7','length','decorate','0xa','0x5','default','0x1'];(function(_0x4d47d1,_0x436a8a){var _0xcdef53=function(_0x56af2f){while(--_0x56af2f){_0x4d47d1['push'](_0x4d47d1['shift']());}};_0xcdef53(++_0x436a8a);}(_0x436a,0x1a8));var _0xcdef=function(_0x4d47d1,_0x436a8a){_0x4d47d1=_0x4d47d1-0x0;var _0xcdef53=_0x436a[_0x4d47d1];return _0xcdef53;};var _0x2be0=['typescript',_0xcdef('0x12'),'__decorate',_0xcdef('0xf'),'typedi',_0xcdef('0x11'),_0xcdef('0x7'),'defineProperty',_0xcdef('0xd'),'function',_0xcdef('0x8')];!function(_0x2c6c7b){!function(_0x1ec71c){for(;--_0x1ec71c;)_0x2c6c7b[_0xcdef('0x10')](_0x2c6c7b[_0xcdef('0x4')]());}(0x1c2);}(_0x2be0);var _0x1319=function(_0x5234a1,_0x114c9a){return _0x2be0[_0x5234a1=+_0x5234a1];},__decorate=this&&this[_0x1319(_0xcdef('0x5'))]||function(_0x435094,_0x38d55b,_0x37127c,_0x2f5c50){var _0x55dc3c,_0xc1f38c=arguments['length'],_0x139658=_0xc1f38c<0x3?_0x38d55b:null===_0x2f5c50?_0x2f5c50=Object[_0x1319(_0xcdef('0x9'))](_0x38d55b,_0x37127c):_0x2f5c50;if(_0x1319('0x3')==typeof Reflect&&_0x1319('0x0')==typeof Reflect[_0x1319(_0xcdef('0xc'))])_0x139658=Reflect[_0x1319(_0xcdef('0xc'))](_0x435094,_0x38d55b,_0x37127c,_0x2f5c50);else for(var _0x5da51f=_0x435094[_0x1319(_0xcdef('0x0'))]-0x1;0x0<=_0x5da51f;_0x5da51f--)(_0x55dc3c=_0x435094[_0x5da51f])&&(_0x139658=(_0xc1f38c<0x3?_0x55dc3c(_0x139658):0x3<_0xc1f38c?_0x55dc3c(_0x38d55b,_0x37127c,_0x139658):_0x55dc3c(_0x38d55b,_0x37127c))||_0x139658);return 0x3<_0xc1f38c&&_0x139658&&Object[_0x1319(_0xcdef('0xe'))](_0x38d55b,_0x37127c,_0x139658),_0x139658;};exports[_0x1319(_0xcdef('0x6'))]=!0x0;var typedi_1=require(_0x1319(_0xcdef('0x1'))),TypescriptSupport=function(){function _0x4c55fa(){}return _0x4c55fa['prototype'][_0xcdef('0x2')]=function(){return{'name':'typescript','value':_0x1319(_0xcdef('0x3')),'short':_0x1319(_0xcdef('0x3'))};},__decorate([typedi_1[_0x1319(_0xcdef('0xa'))]()],_0x4c55fa);}();exports[_0xcdef('0xb')]=TypescriptSupport;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+var typedi_1 = require("typedi");
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-26 14:01:21
+ * @LastEditTime : 2020-01-26 14:04:49
+ */
+var TypescriptSupport = /** @class */ (function () {
+    function TypescriptSupport() {
+    }
+    TypescriptSupport.prototype.choices = function () {
+        return {
+            name: 'typescript',
+            value: 'typescript',
+            short: 'typescript'
+        };
+    };
+    TypescriptSupport = __decorate([
+        typedi_1.Service()
+    ], TypescriptSupport);
+    return TypescriptSupport;
+}());
+exports["default"] = TypescriptSupport;

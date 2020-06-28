@@ -1,1 +1,47 @@
-var _0x377b=['0x2','0x11','push','0xe','buildStyle','loader','context','module','0x7','prototype','./createEslintRules','shift','0xb','0xc','0x13','0x3','setStyle','0x15','0x14','0x16','0xf','0x8','vue-loader','0xa','0x12','buildAll','0xd','./createCss','vue-loader/lib/plugin','0x4','0x10','vue','plugin','vue-loader-plugin','@lartplus/cli-shared-utils','use','LANGUAGE_TYPE','0x1','0x9','setVueFile','setEslint','0x5'];(function(_0x53c856,_0x377b7c){var _0x1aa40c=function(_0x1625e4){while(--_0x1625e4){_0x53c856['push'](_0x53c856['shift']());}};_0x1aa40c(++_0x377b7c);}(_0x377b,0x1c4));var _0x1aa4=function(_0x53c856,_0x377b7c){_0x53c856=_0x53c856-0x0;var _0x1aa40c=_0x377b[_0x53c856];return _0x1aa40c;};var _0x3038=[_0x1aa4('0x25'),_0x1aa4('0x29'),_0x1aa4('0x3'),'context',_0x1aa4('0x14'),'CreateEslintRules',_0x1aa4('0x4'),_0x1aa4('0x0'),'rule',_0x1aa4('0x7'),_0x1aa4('0x13'),'maybeLoader',_0x1aa4('0x20'),'buildLint','CreateVueConfig',_0x1aa4('0x8'),'CreateStyleVueRules',_0x1aa4('0xe'),_0x1aa4('0x26'),'test',_0x1aa4('0x2'),_0x1aa4('0x11'),_0x1aa4('0xf'),'chain'];!function(_0x359335){!function(_0x4aade4){for(;--_0x4aade4;)_0x359335[_0x1aa4('0xc')](_0x359335[_0x1aa4('0x15')]());}(0x104);}(_0x3038);var _0x2fb7=function(_0x513681,_0x38d473){return _0x3038[_0x513681=+_0x513681];};exports['__esModule']=!0x0;var cli_shared_utils_1=require(_0x2fb7(_0x1aa4('0x5'))),cli_config_1=require('@lartplus/cli-config'),createCss_1=require(_0x2fb7(_0x1aa4('0x9'))),createEslintRules_1=require(_0x2fb7(_0x1aa4('0x6'))),CreateVueConfig=function(){function _0x22ce0a(_0x4a5ec6,_0x20e006){this[_0x1aa4('0x10')]=_0x4a5ec6,this[_0x2fb7(_0x1aa4('0x27'))]=_0x20e006;}return _0x22ce0a[_0x2fb7(_0x1aa4('0x1e'))]['setStyle']=function(){new createCss_1[(_0x2fb7(_0x1aa4('0x1b')))](this[_0x2fb7(_0x1aa4('0x1f'))],this[_0x2fb7(_0x1aa4('0x27'))])[_0x2fb7(_0x1aa4('0x1d'))]();},_0x22ce0a[_0x1aa4('0x13')][_0x2fb7(_0x1aa4('0x1c'))]=function(){new createEslintRules_1[(_0x2fb7(_0x1aa4('0x21')))](this[_0x2fb7(_0x1aa4('0x1f'))],this[_0x2fb7(_0x1aa4('0x27'))])[_0x2fb7(_0x1aa4('0x22'))]();},_0x22ce0a[_0x1aa4('0x13')][_0x2fb7(_0x1aa4('0xd'))]=function(){this[_0x2fb7(_0x1aa4('0x27'))][_0x2fb7(_0x1aa4('0xa'))][_0x2fb7(_0x1aa4('0x24'))](_0x2fb7('0x6'))[_0x2fb7('0x0')](cli_config_1[_0x2fb7(_0x1aa4('0x16'))]['VUE'])[_0x2fb7(_0x1aa4('0x12'))](_0x2fb7(_0x1aa4('0xb')))[_0x2fb7(_0x1aa4('0x19'))](cli_shared_utils_1[_0x2fb7(_0x1aa4('0x28'))](_0x1aa4('0x20')))['options']({'compilerOptions':{'preserveWhitespace':!0x1}}),this[_0x2fb7('0x4')][_0x2fb7(_0x1aa4('0x17'))](_0x1aa4('0x1'))[_0x2fb7('0x7')](cli_shared_utils_1[_0x2fb7(_0x1aa4('0x28'))](_0x2fb7('0x17')));},_0x22ce0a[_0x2fb7(_0x1aa4('0x1e'))][_0x1aa4('0x23')]=function(){this[_0x1aa4('0x1a')](),this[_0x2fb7('0x14')](),this[_0x2fb7('0xe')]();},_0x22ce0a;}();exports[_0x2fb7(_0x1aa4('0x18'))]=CreateVueConfig;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-10 17:15:48
+ * @LastEditTime : 2020-05-14 10:48:11
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_config_1 = require("@lartplus/cli-config");
+var createCss_1 = require("./createCss");
+var createEslintRules_1 = require("./createEslintRules");
+var CreateVueConfig = /** @class */ (function () {
+    function CreateVueConfig(context, chain) {
+        this.context = context;
+        this.chain = chain;
+    }
+    CreateVueConfig.prototype.setStyle = function () {
+        var createCss = new createCss_1.CreateStyleVueRules(this.context, this.chain);
+        createCss.buildStyle();
+    };
+    CreateVueConfig.prototype.setEslint = function () {
+        var createEslint = new createEslintRules_1.CreateEslintRules(this.context, this.chain);
+        createEslint.buildLint();
+    };
+    CreateVueConfig.prototype.setVueFile = function () {
+        this.chain.module
+            .rule('vue')
+            .test(cli_config_1.LANGUAGE_TYPE.VUE)
+            .use('vue-loader')
+            .loader(cli_shared_utils_1.maybeLoader('vue-loader'))
+            .options({
+            compilerOptions: {
+                preserveWhitespace: false
+            }
+        });
+        this.chain.plugin('vue-loader-plugin')
+            .use(cli_shared_utils_1.maybeLoader('vue-loader/lib/plugin'));
+    };
+    CreateVueConfig.prototype.buildAll = function () {
+        this.setStyle();
+        this.setEslint();
+        this.setVueFile();
+    };
+    return CreateVueConfig;
+}());
+exports.CreateVueConfig = CreateVueConfig;

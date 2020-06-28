@@ -1,1 +1,16 @@
-var _0x1070=['getOptimizeCssOptions','shift','0x0','__esModule','push'];(function(_0x2a2840,_0x1070b9){var _0x1d4d31=function(_0x46a3c9){while(--_0x46a3c9){_0x2a2840['push'](_0x2a2840['shift']());}};_0x1d4d31(++_0x1070b9);}(_0x1070,0x115));var _0x1d4d=function(_0x2a2840,_0x1070b9){_0x2a2840=_0x2a2840-0x0;var _0x1d4d31=_0x1070[_0x2a2840];return _0x1d4d31;};var _0x1b54=[_0x1d4d('0x1')];!function(_0x20f373){!function(_0x3f56da){for(;--_0x3f56da;)_0x20f373[_0x1d4d('0x2')](_0x20f373[_0x1d4d('0x4')]());}(0xc5);}(_0x1b54);var _0x14ac=function(_0x4f4943,_0x4477ac){return _0x1b54[_0x4f4943=+_0x4f4943];};exports[_0x14ac(_0x1d4d('0x0'))]=!0x0,exports[_0x1d4d('0x3')]=function(_0x501cfe){return{'assetNameRegExp':/\.css$/g,'cssProcessorOptions':{'safe':!0x0,'autoprefixer':{'disable':!0x0},'mergeLonghand':!0x1,'discardComments':{'removeAll':!0x0}},'canPrint':!0x0};};
+"use strict";
+exports.__esModule = true;
+exports.getOptimizeCssOptions = function (context) {
+    return ({
+        assetNameRegExp: /\.css$/g,
+        cssProcessorOptions: {
+            safe: true,
+            autoprefixer: { disable: true },
+            mergeLonghand: false,
+            discardComments: {
+                removeAll: true
+            }
+        },
+        canPrint: true
+    });
+};

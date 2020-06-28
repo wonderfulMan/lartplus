@@ -1,1 +1,121 @@
-var _0x3251=['0xb','done','call','0xa','./createPresetsFile','design:type','0x22','trys','length','0xc','then','0x12','0x1b','getOwnPropertyDescriptor','0x1c','0x7','createFilename','packageManger','framwWork','map','0x14','0x2','0xf','0x20','throw','0x2f','0x30','__esModule','0x1','apply','0x1f','0x1d','0x2b','eslintConfig','0x27','0x9','object','metadata','value','default','Inject','0x4','prototype','0x26','pop','0x5','0x2c','prompt','0x2d','0x17','defineProperty','inquirer','0x13','__decorate','0x29','Service','createPresetsFile','push','function','typedi','0x0','0x1e','0x15','iterator','__awaiter','./eslintConfig','config','./createFilename','next','0xd','0x25','shift','getAllPresetsApi','sent','label','ResolvePrompt','0x28','featurePresets','0x24','return','0x18','0x19','0x16','0x1a','0x3','0x21','Generator\x20is\x20already\x20executing.','ops','__importDefault'];(function(_0x149f32,_0x325172){var _0x177631=function(_0x55bf55){while(--_0x55bf55){_0x149f32['push'](_0x149f32['shift']());}};_0x177631(++_0x325172);}(_0x3251,0x69));var _0x1776=function(_0x149f32,_0x325172){_0x149f32=_0x149f32-0x0;var _0x177631=_0x3251[_0x149f32];return _0x177631;};var _0x451b=[_0x1776('0x18'),_0x1776('0x11'),_0x1776('0x1'),_0x1776('0xd'),_0x1776('0x3'),_0x1776('0x27'),_0x1776('0x1c'),'__generator',_0x1776('0x34'),_0x1776('0x14'),_0x1776('0x29'),_0x1776('0x4d'),'@lartplus/cli-shared-utils',_0x1776('0x15'),_0x1776('0x28'),_0x1776('0x30'),_0x1776('0x46'),_0x1776('0x0'),_0x1776('0x1f'),_0x1776('0x38'),_0x1776('0x31'),_0x1776('0x23'),_0x1776('0x8'),_0x1776('0x48'),_0x1776('0x56'),_0x1776('0x3a'),_0x1776('0x2'),_0x1776('0x50'),_0x1776('0x4b'),_0x1776('0x47'),'decorate','__metadata',_0x1776('0x3d'),_0x1776('0x51'),_0x1776('0x25'),_0x1776('0x1a'),'./frameWork','./packageManger','return','./featurePresets',_0x1776('0x17'),'design:type',_0x1776('0x16'),_0x1776('0x2f'),_0x1776('0x2b'),_0x1776('0x33'),_0x1776('0x3b'),_0x1776('0xb'),_0x1776('0x32')];!function(_0x456b38){!function(_0x2fecc9){for(;--_0x2fecc9;)_0x456b38['push'](_0x456b38[_0x1776('0x37')]());}(0x146);}(_0x451b);var _0x47eb=function(_0xb82f2a,_0x29b101){return _0x451b[_0xb82f2a=+_0xb82f2a];},__decorate=this&&this[_0x47eb(_0x1776('0x44'))]||function(_0x487d0a,_0x497b66,_0x348324,_0x28ec6d){var _0x33eb4b,_0x1d1d72=arguments[_0x47eb(_0x1776('0x5'))],_0x466ea4=_0x1d1d72<0x3?_0x497b66:null===_0x28ec6d?_0x28ec6d=Object[_0x47eb('0x2a')](_0x497b66,_0x348324):_0x28ec6d;if(_0x47eb(_0x1776('0x55'))==typeof Reflect&&_0x1776('0x2a')==typeof Reflect[_0x47eb(_0x1776('0xa'))])_0x466ea4=Reflect[_0x47eb('0x30')](_0x487d0a,_0x497b66,_0x348324,_0x28ec6d);else for(var _0x106328=_0x487d0a[_0x47eb(_0x1776('0x5'))]-0x1;0x0<=_0x106328;_0x106328--)(_0x33eb4b=_0x487d0a[_0x106328])&&(_0x466ea4=(_0x1d1d72<0x3?_0x33eb4b(_0x466ea4):0x3<_0x1d1d72?_0x33eb4b(_0x497b66,_0x348324,_0x466ea4):_0x33eb4b(_0x497b66,_0x348324))||_0x466ea4);return 0x3<_0x1d1d72&&_0x466ea4&&Object[_0x1776('0x22')](_0x497b66,_0x348324,_0x466ea4),_0x466ea4;},__metadata=this&&this[_0x47eb(_0x1776('0x2c'))]||function(_0x1df49f,_0x102061){if(_0x47eb('0x1b')==typeof Reflect&&_0x1776('0x2a')==typeof Reflect[_0x47eb(_0x1776('0xe'))])return Reflect[_0x47eb(_0x1776('0xe'))](_0x1df49f,_0x102061);},__awaiter=this&&this[_0x47eb(_0x1776('0x45'))]||function(_0x58a7c0,_0x381c60,_0x53becb,_0xe91e4b){return new(_0x53becb=_0x53becb||Promise)(function(_0x4baad9,_0xd559e1){function _0x413fcd(_0x444e9e){try{_0x27310c(_0xe91e4b[_0x47eb(_0x1776('0x43'))](_0x444e9e));}catch(_0x60ce81){_0xd559e1(_0x60ce81);}}function _0x410199(_0x273221){try{_0x27310c(_0xe91e4b[_0x47eb('0x28')](_0x273221));}catch(_0x4b6f0b){_0xd559e1(_0x4b6f0b);}}function _0x27310c(_0x1fb5ef){var _0x40b103;_0x1fb5ef['done']?_0x4baad9(_0x1fb5ef[_0x1776('0x16')]):((_0x40b103=_0x1fb5ef[_0x47eb(_0x1776('0x49'))])instanceof _0x53becb?_0x40b103:new _0x53becb(function(_0x13121f){_0x13121f(_0x40b103);}))[_0x1776('0x53')](_0x413fcd,_0x410199);}_0x27310c((_0xe91e4b=_0xe91e4b[_0x47eb(_0x1776('0x2e'))](_0x58a7c0,_0x381c60||[]))[_0x47eb('0x1a')]());});},__generator=this&&this[_0x47eb(_0x1776('0x41'))]||function(_0x35db22,_0x341e59){var _0x1cdd79,_0x4c998c,_0x22aae2,_0x4446a1={'label':0x0,'sent':function(){if(0x1&_0x22aae2[0x0])throw _0x22aae2[0x1];return _0x22aae2[0x1];},'trys':[],'ops':[]},_0x22d47e={'next':_0x3ea840(0x0),'throw':_0x3ea840(0x1),'return':_0x3ea840(0x2)};return _0x1776('0x2a')==typeof Symbol&&(_0x22d47e[Symbol[_0x47eb(_0x1776('0x52'))]]=function(){return this;}),_0x22d47e;function _0x3ea840(_0x3dcc0b){return function(_0x166f90){return function(_0x23edd0){if(_0x1cdd79)throw new TypeError(_0x47eb(_0x1776('0x4f')));for(;_0x4446a1;)try{if(_0x1cdd79=0x1,_0x4c998c&&(_0x22aae2=0x2&_0x23edd0[0x0]?_0x4c998c[_0x47eb(_0x1776('0x58'))]:_0x23edd0[0x0]?_0x4c998c[_0x47eb(_0x1776('0x3c'))]||((_0x22aae2=_0x4c998c[_0x1776('0x3f')])&&_0x22aae2[_0x47eb('0x2e')](_0x4c998c),0x0):_0x4c998c[_0x47eb(_0x1776('0x43'))])&&!(_0x22aae2=_0x22aae2[_0x1776('0x4b')](_0x4c998c,_0x23edd0[0x1]))[_0x1776('0x4a')])return _0x22aae2;switch(_0x4c998c=0x0,_0x22aae2&&(_0x23edd0=[0x2&_0x23edd0[0x0],_0x22aae2['value']]),_0x23edd0[0x0]){case 0x0:case 0x1:_0x22aae2=_0x23edd0;break;case 0x4:return _0x4446a1[_0x47eb(_0x1776('0x10'))]++,{'value':_0x23edd0[0x1],'done':!0x1};case 0x5:_0x4446a1[_0x1776('0x3a')]++,_0x4c998c=_0x23edd0[0x1],_0x23edd0=[0x0];continue;case 0x7:_0x23edd0=_0x4446a1[_0x47eb('0x2f')][_0x47eb('0x18')](),_0x4446a1[_0x47eb(_0x1776('0x20'))][_0x47eb(_0x1776('0x40'))]();continue;default:if(!(_0x22aae2=0x0<(_0x22aae2=_0x4446a1[_0x47eb(_0x1776('0x20'))])[_0x1776('0x51')]&&_0x22aae2[_0x22aae2[_0x47eb(_0x1776('0x5'))]-0x1])&&(0x6===_0x23edd0[0x0]||0x2===_0x23edd0[0x0])){_0x4446a1=0x0;continue;}if(0x3===_0x23edd0[0x0]&&(!_0x22aae2||_0x23edd0[0x1]>_0x22aae2[0x0]&&_0x23edd0[0x1]<_0x22aae2[0x3])){_0x4446a1[_0x47eb(_0x1776('0x10'))]=_0x23edd0[0x1];break;}if(0x6===_0x23edd0[0x0]&&_0x4446a1[_0x1776('0x3a')]<_0x22aae2[0x1]){_0x4446a1[_0x1776('0x3a')]=_0x22aae2[0x1],_0x22aae2=_0x23edd0;break;}if(_0x22aae2&&_0x4446a1[_0x47eb('0x2b')]<_0x22aae2[0x2]){_0x4446a1[_0x47eb(_0x1776('0x10'))]=_0x22aae2[0x2],_0x4446a1[_0x47eb(_0x1776('0x9'))][_0x47eb(_0x1776('0x57'))](_0x23edd0);break;}_0x22aae2[0x2]&&_0x4446a1[_0x47eb('0x2f')][_0x47eb(_0x1776('0x40'))](),_0x4446a1[_0x47eb('0x2d')][_0x47eb('0x18')]();continue;}_0x23edd0=_0x341e59[_0x47eb('0x2e')](_0x35db22,_0x4446a1);}catch(_0x2b0dc2){_0x23edd0=[0x6,_0x2b0dc2],_0x4c998c=0x0;}finally{_0x1cdd79=_0x22aae2=0x0;}if(0x5&_0x23edd0[0x0])throw _0x23edd0[0x1];return{'value':_0x23edd0[0x0]?_0x23edd0[0x1]:void 0x0,'done':!0x0};}([_0x3dcc0b,_0x166f90]);};}},__importDefault=this&&this[_0x47eb(_0x1776('0x26'))]||function(_0x12edd9){return _0x12edd9&&_0x12edd9[_0x47eb('0x10')]?_0x12edd9:{'default':_0x12edd9};};exports[_0x1776('0xb')]=!0x0;var typedi_1=require(_0x47eb(_0x1776('0x35'))),cli_shared_utils_1=require(_0x47eb(_0x1776('0x2d'))),frameWork_1=__importDefault(require(_0x47eb(_0x1776('0x1d')))),featurePresets_1=__importDefault(require(_0x47eb('0x8'))),eslintConfig_1=__importDefault(require(_0x47eb(_0x1776('0x1b')))),packageManger_1=__importDefault(require(_0x47eb('0x6'))),createPresetsFile_1=__importDefault(require(_0x47eb(_0x1776('0xf')))),createFilename_1=__importDefault(require(_0x47eb('0xe'))),ResolvePrompt=function(){function _0xfdc5ae(){}return _0xfdc5ae[_0x1776('0x1a')][_0x47eb(_0x1776('0x36'))]=function(){return[this[_0x1776('0x2')],this[_0x47eb(_0x1776('0xc'))],this[_0x47eb(_0x1776('0x24'))],this[_0x47eb(_0x1776('0x4'))],this[_0x47eb(_0x1776('0x7'))],this[_0x47eb('0x23')]][_0x47eb(_0x1776('0x42'))](function(_0x322f6a){return _0x322f6a[_0x47eb('0x11')]();});},_0xfdc5ae[_0x47eb(_0x1776('0x19'))]['executePrompt']=function(){return __awaiter(this,void 0x0,void 0x0,function(){return __generator(this,function(_0x2f7d76){switch(_0x2f7d76[_0x1776('0x3a')]){case 0x0:return[0x4,cli_shared_utils_1[_0x47eb(_0x1776('0x12'))][_0x47eb(_0x1776('0x3e'))](this[_0x47eb('0x25')]())];case 0x1:return[0x2,_0x2f7d76[_0x1776('0x39')]()];}});});},__decorate([typedi_1[_0x1776('0x18')](),__metadata(_0x1776('0x4e'),frameWork_1[_0x47eb(_0x1776('0x13'))])],_0xfdc5ae[_0x1776('0x1a')],_0x47eb(_0x1776('0x1e'))),__decorate([typedi_1[_0x47eb(_0x1776('0x54'))](),__metadata(_0x1776('0x4e'),featurePresets_1[_0x47eb(_0x1776('0x13'))])],_0xfdc5ae[_0x47eb('0x4')],_0x47eb(_0x1776('0xc'))),__decorate([typedi_1['Inject'](),__metadata(_0x47eb(_0x1776('0x4c')),eslintConfig_1['default'])],_0xfdc5ae[_0x47eb(_0x1776('0x19'))],_0x47eb(_0x1776('0x24'))),__decorate([typedi_1[_0x47eb(_0x1776('0x54'))](),__metadata(_0x47eb(_0x1776('0x4c')),packageManger_1[_0x47eb(_0x1776('0x13'))])],_0xfdc5ae[_0x1776('0x1a')],_0x47eb(_0x1776('0x4'))),__decorate([typedi_1[_0x47eb(_0x1776('0x54'))](),__metadata(_0x47eb(_0x1776('0x4c')),createPresetsFile_1[_0x47eb(_0x1776('0x13'))])],_0xfdc5ae[_0x47eb('0x4')],_0x47eb('0x20')),__decorate([typedi_1[_0x47eb(_0x1776('0x54'))](),__metadata(_0x1776('0x4e'),createFilename_1[_0x47eb(_0x1776('0x13'))])],_0xfdc5ae[_0x47eb(_0x1776('0x19'))],_0x47eb('0x23')),__decorate([typedi_1[_0x47eb(_0x1776('0x21'))]()],_0xfdc5ae);}();exports[_0x47eb(_0x1776('0x6'))]=ResolvePrompt,exports[_0x47eb(_0x1776('0x13'))]=ResolvePrompt;
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-21 13:49:53
+ * @LastEditTime : 2020-03-29 16:57:39
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var typedi_1 = require("typedi");
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var frameWork_1 = __importDefault(require("./frameWork"));
+var featurePresets_1 = __importDefault(require("./featurePresets"));
+var eslintConfig_1 = __importDefault(require("./eslintConfig"));
+var packageManger_1 = __importDefault(require("./packageManger"));
+var createPresetsFile_1 = __importDefault(require("./createPresetsFile"));
+var createFilename_1 = __importDefault(require("./createFilename"));
+var ResolvePrompt = /** @class */ (function () {
+    function ResolvePrompt() {
+    }
+    ResolvePrompt.prototype.getAllPresetsApi = function () {
+        return [
+            this.framwWork,
+            this.featurePresets,
+            this.eslintConfig,
+            this.packageManger,
+            this.createPresetsFile,
+            this.createFilename
+        ].map(function (api) { return api.config(); });
+    };
+    ResolvePrompt.prototype.executePrompt = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var answers;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, cli_shared_utils_1.inquirer.prompt(this.getAllPresetsApi())];
+                    case 1:
+                        answers = _a.sent();
+                        return [2 /*return*/, answers];
+                }
+            });
+        });
+    };
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", frameWork_1["default"])
+    ], ResolvePrompt.prototype, "framwWork");
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", featurePresets_1["default"])
+    ], ResolvePrompt.prototype, "featurePresets");
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", eslintConfig_1["default"])
+    ], ResolvePrompt.prototype, "eslintConfig");
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", packageManger_1["default"])
+    ], ResolvePrompt.prototype, "packageManger");
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", createPresetsFile_1["default"])
+    ], ResolvePrompt.prototype, "createPresetsFile");
+    __decorate([
+        typedi_1.Inject(),
+        __metadata("design:type", createFilename_1["default"])
+    ], ResolvePrompt.prototype, "createFilename");
+    ResolvePrompt = __decorate([
+        typedi_1.Service()
+    ], ResolvePrompt);
+    return ResolvePrompt;
+}());
+exports.ResolvePrompt = ResolvePrompt;
+exports["default"] = ResolvePrompt;

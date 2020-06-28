@@ -1,1 +1,22 @@
-var _0x2819=['./notice','0x3','split','notice','replace','checkNodeVersion','0x2','error','shift','__esModule','node','0x0'];(function(_0x2892ce,_0x28190a){var _0x41f278=function(_0x507a25){while(--_0x507a25){_0x2892ce['push'](_0x2892ce['shift']());}};_0x41f278(++_0x28190a);}(_0x2819,0x10e));var _0x41f2=function(_0x2892ce,_0x28190a){_0x2892ce=_0x2892ce-0x0;var _0x41f278=_0x2819[_0x2892ce];return _0x41f278;};var _0x482d=['node版本必须大于',_0x41f2('0x8'),_0x41f2('0x1'),_0x41f2('0x6'),_0x41f2('0x3'),_0x41f2('0xb')];!function(_0x3eba6c){!function(_0x404fc3){for(;--_0x404fc3;)_0x3eba6c['push'](_0x3eba6c[_0x41f2('0x2')]());}(0x100);}(_0x482d);var _0x3987=function(_0x5c5a8e,_0x2cb09f){return _0x482d[_0x5c5a8e=+_0x5c5a8e];};exports[_0x3987('0x1')]=!0x0;var notice_1=require(_0x3987(_0x41f2('0x5')));function checkNodeVersion(_0x5d021d){var _0x166c8a=_0x5d021d[_0x41f2('0xa')](/\>=/,''),_0x1d432e=process['versions'][_0x41f2('0x4')],_0x2064d9=+_0x166c8a[_0x41f2('0x8')]('.')[0x0];return!(+_0x1d432e[_0x3987('0x4')]('.')[0x0]<=_0x2064d9&&(notice_1[_0x41f2('0x9')][_0x3987('0x5')]([_0x3987(_0x41f2('0x7'))+_0x166c8a+'以上']),0x1));}exports[_0x3987(_0x41f2('0x0'))]=checkNodeVersion;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-11 09:13:41
+ * @LastEditTime : 2020-04-08 15:55:39
+ */
+var notice_1 = require("./notice");
+function checkNodeVersion(projectVersion) {
+    var requireNodeVersion = projectVersion
+        .replace(/\>=/, '');
+    var currentNodeVersion = process.versions.node;
+    var v1 = +requireNodeVersion.split('.')[0];
+    var v2 = +currentNodeVersion.split('.')[0];
+    if (v2 <= v1) {
+        notice_1.notice.error(["node\u7248\u672C\u5FC5\u987B\u5927\u4E8E" + requireNodeVersion + "\u4EE5\u4E0A"]);
+        return false;
+    }
+    return true;
+}
+exports.checkNodeVersion = checkNodeVersion;

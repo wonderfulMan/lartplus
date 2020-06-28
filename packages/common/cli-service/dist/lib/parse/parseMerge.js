@@ -1,1 +1,30 @@
-var _0x4cc5=['0x8','0x7','0xe','shift','templatePath','push','0x3','0xf','__esModule','call','0x0','length','0xa','filter','notice','0xb','entires目录下入口文件和public目录下模版文件没有一个与之对应，请检查','0x4','__assign','0x1','hasOwnProperty','dirName','apply','prototype','error','0xd','parseMerge','forEach','0x9'];(function(_0xe7ff57,_0x4cc5a6){var _0x3ab818=function(_0x4479d2){while(--_0x4479d2){_0xe7ff57['push'](_0xe7ff57['shift']());}};_0x3ab818(++_0x4cc5a6);}(_0x4cc5,0xa0));var _0x3ab8=function(_0xe7ff57,_0x4cc5a6){_0xe7ff57=_0xe7ff57-0x0;var _0x3ab818=_0x4cc5[_0xe7ff57];return _0x3ab818;};var _0x46a8=[_0x3ab8('0x1'),_0x3ab8('0x13'),'appName',_0x3ab8('0x3'),_0x3ab8('0x9'),_0x3ab8('0xb'),_0x3ab8('0x17'),_0x3ab8('0x5'),_0x3ab8('0x7'),_0x3ab8('0xc'),_0x3ab8('0x12'),'filter',_0x3ab8('0x8'),_0x3ab8('0x1c'),_0x3ab8('0x6'),'@lartplus/cli-shared-utils'];!function(_0x50b00e){!function(_0x2b097b){for(;--_0x2b097b;)_0x50b00e[_0x3ab8('0x13')](_0x50b00e[_0x3ab8('0x11')]());}(0x12b);}(_0x46a8);var _0x231e=function(_0x348435,_0x2368e2){return _0x46a8[_0x348435=+_0x348435];},__assign=this&&this[_0x231e(_0x3ab8('0xd'))]||function(){return(__assign=Object['assign']||function(_0x30bacb){for(var _0x55ee39,_0x599e7a=0x1,_0x35fc34=arguments['length'];_0x599e7a<_0x35fc34;_0x599e7a++)for(var _0x95cbd2 in _0x55ee39=arguments[_0x599e7a])Object[_0x231e('0x2')][_0x231e(_0x3ab8('0xa'))][_0x231e('0xc')](_0x55ee39,_0x95cbd2)&&(_0x30bacb[_0x95cbd2]=_0x55ee39[_0x95cbd2]);return _0x30bacb;})[_0x231e(_0x3ab8('0x10'))](this,arguments);};exports[_0x3ab8('0x16')]=!0x0;var cli_shared_utils_1=require(_0x231e('0x5')),parseMerge=function(_0x46384a,_0x3883e1){var _0x262e29=[];return _0x46384a[_0x231e(_0x3ab8('0x15'))](function(_0x2fbfd1){var _0x42309e=_0x3883e1[_0x3ab8('0x1b')](function(_0x1f9d57){return _0x1f9d57[_0x231e(_0x3ab8('0x2'))]===_0x2fbfd1[_0x231e(_0x3ab8('0xe'))];})[0x0];_0x42309e&&_0x262e29[_0x231e(_0x3ab8('0xf'))](__assign(__assign({},_0x2fbfd1),{'templatePath':_0x42309e[_0x231e(_0x3ab8('0x18'))]}));}),(_0x262e29=_0x262e29[_0x231e(_0x3ab8('0x4'))](Boolean))[_0x3ab8('0x19')]<0x1&&(cli_shared_utils_1[_0x231e(_0x3ab8('0x14'))][_0x231e(_0x3ab8('0x1a'))]([_0x231e('0x6')]),process['exit'](0x0)),_0x262e29['filter'](Boolean);};exports[_0x231e(_0x3ab8('0x0'))]=parseMerge;
+"use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var parseMerge = function (entries, template) {
+    var result = [];
+    entries.forEach(function (it) {
+        var isTrue = template.filter(function (temp) { return temp.dirName === it.appName; })[0];
+        if (isTrue) {
+            result.push(__assign(__assign({}, it), { templatePath: isTrue.templatePath }));
+        }
+    });
+    result = result.filter(Boolean);
+    if (result.length < 1) {
+        cli_shared_utils_1.notice.error(['entires目录下入口文件和public目录下模版文件没有一个与之对应，请检查']);
+        process.exit(0);
+    }
+    return result.filter(Boolean);
+};
+exports.parseMerge = parseMerge;

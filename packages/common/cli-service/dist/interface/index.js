@@ -1,1 +1,10 @@
-var _0x2462=['push','__esModule','shift','0x0'];(function(_0x4cac7b,_0x2462a1){var _0x391e72=function(_0x5bd681){while(--_0x5bd681){_0x4cac7b['push'](_0x4cac7b['shift']());}};_0x391e72(++_0x2462a1);}(_0x2462,0x1a6));var _0x391e=function(_0x4cac7b,_0x2462a1){_0x4cac7b=_0x4cac7b-0x0;var _0x391e72=_0x2462[_0x4cac7b];return _0x391e72;};var _0x4ffc=['CreateFileInterface',_0x391e('0x3')];!function(_0xac6144){!function(_0x10c073){for(;--_0x10c073;)_0xac6144[_0x391e('0x2')](_0xac6144[_0x391e('0x0')]());}(0x134);}(_0x4ffc);var _0x38cb=function(_0xc85a83,_0x555ed7){return _0x4ffc[_0xc85a83=+_0xc85a83];};exports[_0x38cb(_0x391e('0x1'))]=!0x0;var createFile_abstract_1=require('./createFile.abstract');exports[_0x38cb('0x1')]=createFile_abstract_1[_0x38cb('0x1')];
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-18 14:59:50
+ * @LastEditTime : 2020-03-26 16:44:42
+ */
+var createFile_abstract_1 = require("./createFile.abstract");
+exports.CreateFileInterface = createFile_abstract_1.CreateFileInterface;

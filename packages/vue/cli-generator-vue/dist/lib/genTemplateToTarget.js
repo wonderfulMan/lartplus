@@ -1,1 +1,23 @@
-var _0x50c5=['0x4','0x1','0x6','push','0x2','0x7','__importDefault','0x5','copyTemplate','0x3','typescript','genTemplateToTarget','shift','javascript','0x0','default','__esModule','@lartplus/cli-shared-utils'];(function(_0x500d92,_0x50c585){var _0x1ab35b=function(_0x52fd8d){while(--_0x52fd8d){_0x500d92['push'](_0x500d92['shift']());}};_0x1ab35b(++_0x50c585);}(_0x50c5,0x1b4));var _0x1ab3=function(_0x500d92,_0x50c585){_0x500d92=_0x500d92-0x0;var _0x1ab35b=_0x50c5[_0x500d92];return _0x1ab35b;};var _0x5d71=['../../template/','path',_0x1ab3('0x6'),_0x1ab3('0x4'),_0x1ab3('0x7'),_0x1ab3('0xd'),_0x1ab3('0xc'),_0x1ab3('0xb'),'resolve'];!function(_0x2dd498){!function(_0x39baec){for(;--_0x39baec;)_0x2dd498[_0x1ab3('0x11')](_0x2dd498[_0x1ab3('0x8')]());}(0x129);}(_0x5d71);var _0x1e38=function(_0x5ee893,_0x409cad){return _0x5d71[_0x5ee893=+_0x5ee893];},__importDefault=this&&this[_0x1ab3('0x2')]||function(_0x120142){return _0x120142&&_0x120142[_0x1ab3('0xc')]?_0x120142:{'default':_0x120142};};exports[_0x1e38(_0x1ab3('0x1'))]=!0x0;var path_1=__importDefault(require(_0x1e38(_0x1ab3('0x0')))),cli_shared_utils_1=require(_0x1e38('0x6')),cli_shared_utils_2=require(_0x1e38(_0x1ab3('0x10'))),choiseTemplateType=function(_0x321e6d){var _0x3f0e82=cli_shared_utils_1['hasTypescript'](_0x321e6d)?_0x1e38(_0x1ab3('0x5')):_0x1ab3('0x9');return path_1[_0x1e38('0x8')][_0x1e38(_0x1ab3('0xa'))](__dirname,_0x1e38(_0x1ab3('0xf'))+_0x3f0e82);};exports[_0x1e38(_0x1ab3('0x3'))]=function(_0x17f570,_0x1b7115){var _0x2934c3=choiseTemplateType(_0x17f570);cli_shared_utils_2[_0x1e38(_0x1ab3('0xe'))](_0x1b7115,_0x2934c3);};
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-24 10:17:22
+ * @LastEditTime : 2020-05-02 15:57:26
+ */
+var path_1 = __importDefault(require("path"));
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_shared_utils_2 = require("@lartplus/cli-shared-utils");
+var choiseTemplateType = function (answers) {
+    var isTypescript = cli_shared_utils_1.hasTypescript(answers);
+    var baseDir = isTypescript ? 'typescript' : 'javascript';
+    return path_1["default"].resolve(__dirname, "../../template/" + baseDir);
+};
+exports.genTemplateToTarget = function (answers, target) {
+    var templateDirPath = choiseTemplateType(answers);
+    cli_shared_utils_2.copyTemplate(target, templateDirPath);
+};

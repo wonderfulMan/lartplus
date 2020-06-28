@@ -1,1 +1,48 @@
-var _0x4799=['0x0','@vue/prettier/@typescript-eslint','0x3','0xf','0x6','feature','@vue/airbnb','0xa','0xc','eslintConfig','0x7','0xe','production','includes','warn','0x8','off','prettier','hasTypescript','push','0x5','0xd','__esModule','0x12','0x11','plugin:vue/essential','0xb','airbnb','extends','@vue/prettier','@lartplus/cli-shared-utils','0x4','0x9','standard','NODE_ENV','0x1'];(function(_0x57322b,_0x479904){var _0x62a3f7=function(_0x444f0c){while(--_0x444f0c){_0x57322b['push'](_0x57322b['shift']());}};_0x62a3f7(++_0x479904);}(_0x4799,0x1d2));var _0x62a3=function(_0x57322b,_0x479904){_0x57322b=_0x57322b-0x0;var _0x62a3f7=_0x4799[_0x57322b];return _0x62a3f7;};var _0x3204=[_0x62a3('0xf'),_0x62a3('0xb'),_0x62a3('0x1b'),_0x62a3('0x20'),_0x62a3('0xe'),_0x62a3('0x1e'),'env',_0x62a3('0x1f'),_0x62a3('0x7'),_0x62a3('0x14'),_0x62a3('0x0'),_0x62a3('0x3'),_0x62a3('0x13'),_0x62a3('0x10'),'@vue/standard','linter',_0x62a3('0x15'),_0x62a3('0x12'),_0x62a3('0x8')];!function(_0x36e228){!function(_0x4bfaa8){for(;--_0x4bfaa8;)_0x36e228[_0x62a3('0x15')](_0x36e228['shift']());}(0x10d);}(_0x3204);var _0x1257=function(_0x2b563b,_0x5cc779){return _0x3204[_0x2b563b=+_0x2b563b];};exports[_0x62a3('0x18')]=!0x0;var cli_shared_utils_1=require(_0x1257(_0x62a3('0x1'))),baseFile={'root':!0x0,'env':{'node':!0x0},'extends':[_0x1257(_0x62a3('0x2'))],'parserOptions':{'ecmaVersion':0x7e4},'rules':{'no-console':_0x62a3('0xe')===process[_0x1257(_0x62a3('0x21'))][_0x1257(_0x62a3('0x11'))]?'warn':_0x1257(_0x62a3('0x5')),'no-debugger':_0x1257('0x2')===process[_0x1257(_0x62a3('0x21'))][_0x1257('0x8')]?_0x1257(_0x62a3('0x1c')):'off'}};exports['genEslintRcFile']=function(_0x5bdc1a){if(_0x5bdc1a[_0x1257(_0x62a3('0x6'))][_0x1257(_0x62a3('0x1a'))](_0x1257(_0x62a3('0x17')))){var _0x248317=_0x5bdc1a[_0x1257(_0x62a3('0x19'))];return _0x62a3('0x1d')===_0x248317&&baseFile[_0x62a3('0x1e')][_0x1257('0xe')](_0x1257('0x10')),_0x62a3('0x23')===_0x248317&&baseFile[_0x1257(_0x62a3('0x4'))][_0x1257(_0x62a3('0xd'))](_0x1257(_0x62a3('0xa'))),_0x1257(_0x62a3('0x9'))===_0x248317&&baseFile[_0x62a3('0x1e')][_0x1257('0xe')]('eslint:recommended'),baseFile[_0x1257(_0x62a3('0x4'))][_0x1257(_0x62a3('0xd'))](_0x1257(_0x62a3('0x16'))),cli_shared_utils_1[_0x1257(_0x62a3('0xc'))](_0x5bdc1a)&&(baseFile[_0x1257(_0x62a3('0x4'))][_0x1257(_0x62a3('0xd'))]('@vue/typescript/recommended'),baseFile[_0x1257(_0x62a3('0x4'))][_0x1257('0xe')](_0x1257(_0x62a3('0x22')))),baseFile;}};
+"use strict";
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-06 14:30:37
+ * @LastEditTime : 2020-05-12 17:16:50
+ */
+var baseFile = {
+    // parser: 'babel-eslint',
+    root: true,
+    env: {
+        node: true
+    },
+    'extends': [
+        'plugin:vue/essential',
+    ],
+    parserOptions: {
+        ecmaVersion: 2020
+    },
+    rules: {
+        'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    }
+};
+exports.genEslintRcFile = function (answers) {
+    var hasLint = answers.feature.includes('linter');
+    if (hasLint) {
+        var presets = answers.eslintConfig;
+        if (presets === 'airbnb') {
+            baseFile["extends"].push('@vue/airbnb');
+        }
+        if (presets === 'standard') {
+            baseFile["extends"].push('@vue/standard');
+        }
+        if (presets === 'prettier') {
+            baseFile["extends"].push('eslint:recommended');
+        }
+        baseFile["extends"].push('@vue/prettier');
+        if (cli_shared_utils_1.hasTypescript(answers)) {
+            // baseFile.parser = '@typescript-eslint/parser';
+            baseFile["extends"].push('@vue/typescript/recommended');
+            baseFile["extends"].push('@vue/prettier/@typescript-eslint');
+        }
+        return baseFile;
+    }
+};

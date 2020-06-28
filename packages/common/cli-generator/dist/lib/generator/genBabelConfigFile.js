@@ -1,1 +1,87 @@
-var _0x1973=['sent','0x22','install','0x17','typescript','0x23','function','0x1a','gen_babel_end','babel','getBableConfigFilePath','__importDefault','then','plugins','trys','done','return','0xb','emit','push','0x18','targetDir','getCliModule','0x16','genBabelConfigFile','0x0','getFrameworkName','default','0x5','0x19','0x2','0xe','0x1b','0x4','stringify','lartplusRequirePath','0x24','0x7','getLartPlusBabelTemplatePath','apply','0x1f','throw','babelConfig','shift','0x20','0x1d','0x1','compileTemplate','value','@lartplus/cli-config','__esModule','0x14','presets','iterator','next','sourceType','0x21','0xd','hasTypescript','length','../../../','gen_babel_start','__awaiter','0xa','pop','ops','0xf','unambiguous','resolve','0x10','PATHS','0x1e','0x3','@lartplus/cli-shared-utils','call','0x1c','0x13','label','Generator\x20is\x20already\x20executing.','answers'];(function(_0x4e0e6d,_0x1973de){var _0x11f6de=function(_0x4d95eb){while(--_0x4d95eb){_0x4e0e6d['push'](_0x4e0e6d['shift']());}};_0x11f6de(++_0x1973de);}(_0x1973,0x1ac));var _0x11f6=function(_0x4e0e6d,_0x1973de){_0x4e0e6d=_0x4e0e6d-0x0;var _0x11f6de=_0x1973[_0x4e0e6d];return _0x11f6de;};var _0xaf37=[_0x11f6('0x40'),_0x11f6('0x15'),_0x11f6('0x38'),_0x11f6('0x1f'),_0x11f6('0x25'),'path',_0x11f6('0xa'),_0x11f6('0x1a'),_0x11f6('0x3f'),_0x11f6('0x41'),_0x11f6('0x49'),_0x11f6('0x16'),_0x11f6('0x7'),'babelConfig',_0x11f6('0x1e'),_0x11f6('0x21'),_0x11f6('0x2e'),_0x11f6('0x14'),_0x11f6('0x1b'),_0x11f6('0x27'),_0x11f6('0x42'),_0x11f6('0x24'),_0x11f6('0x44'),_0x11f6('0x43'),'push',_0x11f6('0x4f'),_0x11f6('0x3d'),_0x11f6('0x2a'),_0x11f6('0x34'),_0x11f6('0x4a'),_0x11f6('0x33'),_0x11f6('0x46'),_0x11f6('0x31'),_0x11f6('0xd'),_0x11f6('0x4e'),_0x11f6('0x4c'),_0x11f6('0x3c'),_0x11f6('0x3e')];!function(_0xf6f0e){!function(_0xdabf5f){for(;--_0xdabf5f;)_0xf6f0e[_0x11f6('0x47')](_0xf6f0e[_0x11f6('0xf')]());}(0x187);}(_0xaf37);var _0x8e26=function(_0x12b2bd,_0x1ce111){return _0xaf37[_0x12b2bd=+_0x12b2bd];},__awaiter=this&&this[_0x11f6('0x22')]||function(_0x2e8b2d,_0x10a201,_0x49238c,_0x529582){return new(_0x49238c=_0x49238c||Promise)(function(_0xae2828,_0x23b940){function _0x5eaf1a(_0x3cf2c7){try{_0x393cd4(_0x529582[_0x8e26(_0x11f6('0x39'))](_0x3cf2c7));}catch(_0x330faa){_0x23b940(_0x330faa);}}function _0x25159f(_0x3fe497){try{_0x393cd4(_0x529582[_0x8e26(_0x11f6('0x37'))](_0x3fe497));}catch(_0x9b371d){_0x23b940(_0x9b371d);}}function _0x393cd4(_0xfc9aa9){var _0x25f98a;_0xfc9aa9[_0x8e26(_0x11f6('0x1d'))]?_0xae2828(_0xfc9aa9[_0x8e26(_0x11f6('0x9'))]):((_0x25f98a=_0xfc9aa9[_0x11f6('0x14')])instanceof _0x49238c?_0x25f98a:new _0x49238c(function(_0x2e9996){_0x2e9996(_0x25f98a);}))[_0x8e26(_0x11f6('0x2f'))](_0x5eaf1a,_0x25159f);}_0x393cd4((_0x529582=_0x529582[_0x11f6('0xb')](_0x2e8b2d,_0x10a201||[]))[_0x8e26(_0x11f6('0x39'))]());});},__generator=this&&this['__generator']||function(_0x8f1552,_0x423ac3){var _0x1d6a1a,_0x166079,_0x88a522,_0x4615ed={'label':0x0,'sent':function(){if(0x1&_0x88a522[0x0])throw _0x88a522[0x1];return _0x88a522[0x1];},'trys':[],'ops':[]},_0x2fda0f={'next':_0x340d0d(0x0),'throw':_0x340d0d(0x1),'return':_0x340d0d(0x2)};return _0x11f6('0x3a')==typeof Symbol&&(_0x2fda0f[Symbol[_0x11f6('0x19')]]=function(){return this;}),_0x2fda0f;function _0x340d0d(_0x303bb5){return function(_0x82c968){return function(_0x170067){if(_0x1d6a1a)throw new TypeError(_0x11f6('0x32'));for(;_0x4615ed;)try{if(_0x1d6a1a=0x1,_0x166079&&(_0x88a522=0x2&_0x170067[0x0]?_0x166079['return']:_0x170067[0x0]?_0x166079[_0x8e26(_0x11f6('0x37'))]||((_0x88a522=_0x166079[_0x8e26('0xc')])&&_0x88a522[_0x11f6('0x2e')](_0x166079),0x0):_0x166079[_0x8e26(_0x11f6('0x39'))])&&!(_0x88a522=_0x88a522[_0x8e26('0x6')](_0x166079,_0x170067[0x1]))['done'])return _0x88a522;switch(_0x166079=0x0,_0x88a522&&(_0x170067=[0x2&_0x170067[0x0],_0x88a522[_0x8e26(_0x11f6('0x9'))]]),_0x170067[0x0]){case 0x0:case 0x1:_0x88a522=_0x170067;break;case 0x4:return _0x4615ed[_0x8e26(_0x11f6('0x4b'))]++,{'value':_0x170067[0x1],'done':!0x1};case 0x5:_0x4615ed[_0x8e26(_0x11f6('0x4b'))]++,_0x166079=_0x170067[0x1],_0x170067=[0x0];continue;case 0x7:_0x170067=_0x4615ed[_0x11f6('0x25')][_0x8e26(_0x11f6('0x45'))](),_0x4615ed[_0x8e26('0xa')][_0x8e26(_0x11f6('0x45'))]();continue;default:if(!(_0x88a522=0x0<(_0x88a522=_0x4615ed[_0x11f6('0x42')])[_0x8e26(_0x11f6('0xc'))]&&_0x88a522[_0x88a522[_0x8e26(_0x11f6('0xc'))]-0x1])&&(0x6===_0x170067[0x0]||0x2===_0x170067[0x0])){_0x4615ed=0x0;continue;}if(0x3===_0x170067[0x0]&&(!_0x88a522||_0x170067[0x1]>_0x88a522[0x0]&&_0x170067[0x1]<_0x88a522[0x3])){_0x4615ed[_0x8e26('0x16')]=_0x170067[0x1];break;}if(0x6===_0x170067[0x0]&&_0x4615ed['label']<_0x88a522[0x1]){_0x4615ed[_0x11f6('0x31')]=_0x88a522[0x1],_0x88a522=_0x170067;break;}if(_0x88a522&&_0x4615ed['label']<_0x88a522[0x2]){_0x4615ed[_0x8e26(_0x11f6('0x4b'))]=_0x88a522[0x2],_0x4615ed[_0x11f6('0x25')][_0x8e26(_0x11f6('0x3'))](_0x170067);break;}_0x88a522[0x2]&&_0x4615ed[_0x8e26(_0x11f6('0x10'))]['pop'](),_0x4615ed[_0x8e26(_0x11f6('0x23'))][_0x8e26('0xb')]();continue;}_0x170067=_0x423ac3[_0x8e26('0x6')](_0x8f1552,_0x4615ed);}catch(_0xf75afe){_0x170067=[0x6,_0xf75afe],_0x166079=0x0;}finally{_0x1d6a1a=_0x88a522=0x0;}if(0x5&_0x170067[0x0])throw _0x170067[0x1];return{'value':_0x170067[0x0]?_0x170067[0x1]:void 0x0,'done':!0x0};}([_0x303bb5,_0x82c968]);};}},__importDefault=this&&this[_0x8e26(_0x11f6('0x8'))]||function(_0x4541df){return _0x4541df&&_0x4541df[_0x8e26(_0x11f6('0x12'))]?_0x4541df:{'default':_0x4541df};};exports[_0x11f6('0x16')]=!0x0;var path_1=__importDefault(require(_0x8e26(_0x11f6('0x1c')))),cli_shared_utils_1=require(_0x11f6('0x2d')),cli_config_1=require(_0x8e26(_0x11f6('0x11')));function genBabelConfigFile(_0x44fb7b){return __awaiter(this,void 0x0,void 0x0,function(){var _0x2d254d,_0x45c145,_0x1fc044,_0x4e1e07,_0x35c398,_0x2e1ff9,_0x469a50,_0x7a149f,_0x51a26e,_0x1e525f,_0x4945b9;return __generator(this,function(_0x19d1ff){switch(_0x19d1ff[_0x8e26(_0x11f6('0x4b'))]){case 0x0:return _0x44fb7b[_0x8e26('0x15')](_0x8e26(_0x11f6('0x0'))),_0x2d254d={'sourceType':_0x8e26('0x9'),'presets':[],'plugins':[]},_0x45c145=cli_shared_utils_1[_0x8e26(_0x11f6('0x30'))](_0x44fb7b[_0x8e26(_0x11f6('0x2'))],_0x8e26(_0x11f6('0x29')),cli_shared_utils_1[_0x8e26(_0x11f6('0x48'))](_0x44fb7b['answers'])),_0x1fc044=require(_0x45c145)['install'],_0x44fb7b[_0x8e26(_0x11f6('0x2c'))]=_0x1fc044(_0x2d254d),cli_shared_utils_1[_0x8e26(_0x11f6('0x5'))](_0x44fb7b[_0x8e26(_0x11f6('0x17'))])&&(_0x4e1e07=cli_shared_utils_1[_0x8e26('0x13')](_0x44fb7b[_0x8e26(_0x11f6('0x2'))],_0x8e26(_0x11f6('0x29')),_0x8e26(_0x11f6('0x2b'))),_0x35c398=require(_0x4e1e07)[_0x11f6('0x36')],_0x44fb7b[_0x11f6('0xe')]=_0x35c398(_0x44fb7b[_0x8e26(_0x11f6('0x2c'))])),_0x2e1ff9=_0x44fb7b[_0x8e26(_0x11f6('0x2c'))],_0x469a50=_0x2e1ff9[_0x8e26('0x8')],_0x7a149f=_0x2e1ff9[_0x11f6('0x18')],_0x51a26e=_0x2e1ff9[_0x8e26('0x25')],_0x1e525f=cli_config_1[_0x8e26('0x11')][_0x8e26(_0x11f6('0x4'))](_0x44fb7b[_0x8e26(_0x11f6('0x4d'))]),_0x4945b9={'sourceType':_0x469a50,'presets':JSON[_0x11f6('0x6')](_0x7a149f,null,0x2),'plugins':JSON['stringify'](_0x51a26e,null,0x2)},[0x4,cli_shared_utils_1[_0x11f6('0x13')](cli_config_1[_0x8e26('0x11')][_0x8e26(_0x11f6('0x35'))](path_1[_0x8e26(_0x11f6('0x26'))][_0x11f6('0x28')](__dirname,_0x11f6('0x20'))),_0x4945b9,_0x1e525f,!0x1)];case 0x1:return _0x19d1ff[_0x8e26('0x12')](),_0x44fb7b['emit'](_0x8e26(_0x11f6('0x3b'))),[0x2];}});});}exports[_0x8e26(_0x11f6('0x1'))]=genBabelConfigFile;
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 17:49:03
+ * @LastEditTime : 2020-05-15 14:10:13
+ */
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var path_1 = __importDefault(require("path"));
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_config_1 = require("@lartplus/cli-config");
+function genBabelConfigFile(generator) {
+    return __awaiter(this, void 0, void 0, function () {
+        var babelConfig, moduleBabelPathByFramework, genBabelConfigFile, modulePath, typescriptBabelModule, _a, sourceType, presets, plugins, targetPath, templateData;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    generator.emit('gen_babel_start');
+                    babelConfig = {
+                        sourceType: "unambiguous",
+                        presets: [],
+                        plugins: []
+                    };
+                    moduleBabelPathByFramework = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'babel', cli_shared_utils_1.getFrameworkName(generator.answers));
+                    genBabelConfigFile = require(moduleBabelPathByFramework).install;
+                    generator.babelConfig = genBabelConfigFile(babelConfig);
+                    if (cli_shared_utils_1.hasTypescript(generator.answers)) {
+                        modulePath = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'babel', 'typescript');
+                        typescriptBabelModule = require(modulePath).install;
+                        generator.babelConfig = typescriptBabelModule(generator.babelConfig);
+                    }
+                    _a = generator.babelConfig, sourceType = _a.sourceType, presets = _a.presets, plugins = _a.plugins;
+                    targetPath = cli_config_1.PATHS.getBableConfigFilePath(generator.targetDir);
+                    templateData = {
+                        sourceType: sourceType,
+                        presets: JSON.stringify(presets, null, 2),
+                        plugins: JSON.stringify(plugins, null, 2)
+                    };
+                    return [4 /*yield*/, cli_shared_utils_1.compileTemplate(cli_config_1.PATHS.getLartPlusBabelTemplatePath(path_1["default"].resolve(__dirname, '../../../')), templateData, targetPath, false)];
+                case 1:
+                    _b.sent();
+                    generator.emit('gen_babel_end');
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+exports.genBabelConfigFile = genBabelConfigFile;

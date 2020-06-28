@@ -1,1 +1,42 @@
-var _0x130d=['jsSourceMap','getTerserOptions','configFile','parallel','__esModule','0x0','0x3','0x2','push'];(function(_0x1bd674,_0x130dc6){var _0x3db672=function(_0x2fe7bc){while(--_0x2fe7bc){_0x1bd674['push'](_0x1bd674['shift']());}};_0x3db672(++_0x130dc6);}(_0x130d,0xd9));var _0x3db6=function(_0x1bd674,_0x130dc6){_0x1bd674=_0x1bd674-0x0;var _0x3db672=_0x130d[_0x1bd674];return _0x3db672;};var _0x2269=[_0x3db6('0x0'),_0x3db6('0x8'),_0x3db6('0x1'),_0x3db6('0x2')];!function(_0x1fa114){!function(_0x110ca9){for(;--_0x110ca9;)_0x1fa114[_0x3db6('0x7')](_0x1fa114['shift']());}(0xf5);}(_0x2269);var _0x39e5=function(_0x1b692d,_0x5d1364){return _0x2269[_0x1b692d=+_0x1b692d];};exports[_0x3db6('0x3')]=!0x0,exports[_0x39e5(_0x3db6('0x4'))]=function(_0x5ebee1){return{'terserOptions':{'compress':{'arrows':!0x1,'collapse_vars':!0x1,'comparisons':!0x1,'computed_props':!0x1,'hoist_funs':!0x1,'hoist_props':!0x1,'hoist_vars':!0x1,'inline':!0x1,'loops':!0x1,'negate_iife':!0x1,'properties':!0x1,'reduce_funcs':!0x1,'reduce_vars':!0x1,'switches':!0x1,'toplevel':!0x1,'typeofs':!0x1,'booleans':!0x0,'if_return':!0x0,'sequences':!0x0,'unused':!0x0,'conditionals':!0x0,'dead_code':!0x0,'evaluate':!0x0},'mangle':{'safari10':!0x0}},'sourceMap':_0x5ebee1[_0x3db6('0x1')][_0x39e5('0x1')]||!0x1,'cache':!0x0,'parallel':_0x5ebee1[_0x39e5(_0x3db6('0x6'))][_0x39e5(_0x3db6('0x5'))]||!0x0,'extractComments':!0x1};};
+"use strict";
+exports.__esModule = true;
+exports.getTerserOptions = function (context) { return ({
+    terserOptions: {
+        compress: {
+            // turn off flags with small gains to speed up minification
+            arrows: false,
+            collapse_vars: false,
+            comparisons: false,
+            computed_props: false,
+            hoist_funs: false,
+            hoist_props: false,
+            hoist_vars: false,
+            inline: false,
+            loops: false,
+            negate_iife: false,
+            properties: false,
+            reduce_funcs: false,
+            reduce_vars: false,
+            switches: false,
+            toplevel: false,
+            typeofs: false,
+            // a few flags with noticable gains/speed ratio
+            // numbers based on out of the box vendor bundle
+            booleans: true,
+            if_return: true,
+            sequences: true,
+            unused: true,
+            // required features to drop conditional branches
+            conditionals: true,
+            dead_code: true,
+            evaluate: true
+        },
+        mangle: {
+            safari10: true
+        }
+    },
+    sourceMap: context.configFile.jsSourceMap || false,
+    cache: true,
+    parallel: context.configFile.parallel || true,
+    extractComments: false
+}); };

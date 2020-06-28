@@ -1,1 +1,26 @@
-var _0x26db=['__esModule','wrap','notice','构建完成','speed-measure-webpack-plugin','webpack','startBuild','default','run','@lartplus/cli-shared-utils'];(function(_0x564bd5,_0x26dbd8){var _0x27f2d6=function(_0x5693b2){while(--_0x5693b2){_0x564bd5['push'](_0x564bd5['shift']());}};_0x27f2d6(++_0x26dbd8);}(_0x26db,0x1ce));var _0x27f2=function(_0x564bd5,_0x26dbd8){_0x564bd5=_0x564bd5-0x0;var _0x27f2d6=_0x26db[_0x564bd5];return _0x27f2d6;};'use strict';var __importDefault=this&&this['__importDefault']||function(_0x505555){return _0x505555&&_0x505555[_0x27f2('0x8')]?_0x505555:{'default':_0x505555};};exports[_0x27f2('0x8')]=!0x0;var cli_shared_utils_1=require(_0x27f2('0x7')),webpack_1=__importDefault(require(_0x27f2('0x3'))),speed_measure_webpack_plugin_1=__importDefault(require(_0x27f2('0x2'))),startBuild=function(_0x40c518,_0x1f9aa0,_0x578c71){var _0x235074=new speed_measure_webpack_plugin_1[(_0x27f2('0x5'))]()[_0x27f2('0x9')](_0x40c518['toConfig']());webpack_1['default'](_0x235074)[_0x27f2('0x6')](function(_0x56e370){return null===_0x56e370&&cli_shared_utils_1[_0x27f2('0x0')]['success']([_0x27f2('0x1')]),!0x1;});};exports[_0x27f2('0x4')]=startBuild;
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var webpack_1 = __importDefault(require("webpack"));
+var speed_measure_webpack_plugin_1 = __importDefault(require("speed-measure-webpack-plugin"));
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-24 10:11:12
+ * @LastEditTime : 2020-03-24 10:12:29
+ */
+var startBuild = function (config, context, entriesMap) {
+    var smp = new speed_measure_webpack_plugin_1["default"]();
+    var smpConfig = smp.wrap(config.toConfig());
+    webpack_1["default"](smpConfig)
+        .run(function (err) {
+        if (err === null) {
+            cli_shared_utils_1.notice.success(['构建完成']);
+        }
+        return false;
+    });
+};
+exports.startBuild = startBuild;

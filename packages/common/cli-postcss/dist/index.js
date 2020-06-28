@@ -1,1 +1,12 @@
-var _0x1361=['genPostcssConfigFile','./lib/genPostcssConfigFile','shift','push','0x0','0x1','__esModule','0x3','0x2'];(function(_0x5e2c1b,_0x1361eb){var _0x24c351=function(_0x34fda5){while(--_0x34fda5){_0x5e2c1b['push'](_0x5e2c1b['shift']());}};_0x24c351(++_0x1361eb);}(_0x1361,0x1ef));var _0x24c3=function(_0x5e2c1b,_0x1361eb){_0x5e2c1b=_0x5e2c1b-0x0;var _0x24c351=_0x1361[_0x5e2c1b];return _0x24c351;};var _0x38a9=[_0x24c3('0x6'),'exportGetDeps',_0x24c3('0x0'),_0x24c3('0x1'),'./lib/exportDeps'];!function(_0x521c9a){!function(_0x337d64){for(;--_0x337d64;)_0x521c9a[_0x24c3('0x3')](_0x521c9a[_0x24c3('0x2')]());}(0x1af);}(_0x38a9);var _0x5143=function(_0x5bc70a,_0x5e2230){return _0x38a9[_0x5bc70a=+_0x5bc70a];};exports[_0x5143(_0x24c3('0x4'))]=!0x0;var exportDeps_1=require(_0x5143('0x4'));exports[_0x5143(_0x24c3('0x5'))]=exportDeps_1[_0x5143(_0x24c3('0x5'))];var genPostcssConfigFile_1=require(_0x5143(_0x24c3('0x7')));exports[_0x24c3('0x0')]=genPostcssConfigFile_1[_0x5143(_0x24c3('0x8'))];
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 09:37:15
+ * @LastEditTime : 2020-05-13 16:24:06
+ */
+var exportDeps_1 = require("./lib/exportDeps");
+exports.exportGetDeps = exportDeps_1.exportGetDeps;
+var genPostcssConfigFile_1 = require("./lib/genPostcssConfigFile");
+exports.genPostcssConfigFile = genPostcssConfigFile_1.genPostcssConfigFile;

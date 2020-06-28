@@ -1,1 +1,62 @@
-var _0x14d7=['0x21','copyTemplate','execa','0x23','0x16','hasTypescript','0x10','0x1e','0x1c','class-validator','0x18','0x0','0x17','0x7','fs-extra','shift','0x19','chalk','./lib/getPackageVersion','compileTemplate','applyBabelConfig','0x15','./lib/answerGet','ConfigChain','getPackageVersion','hasMobile','0x11','0x5','0xe','__importDefault','0x12','figlet','0x22','0x2','0xa','webpack-chain','./lib/getPackageModule','juicer','0x24','0x3','0x20','./lib/getCliModule','0x1','hasEslint','./lib/maybeLoader','checkNodeVersion','0x13','0x1f','default','Juice','getPackageModule','./lib/applyBabelconfig','./lib/clear','notice','./lib/hasPackageJson','0x8','maybeLoader','validateProjectName','clearConsole','0x1d','__esModule','0xb','registerSchema','./lib/checkNodeVersion','ora','0xf','validate','getFrameworkName'];(function(_0x226f7d,_0x14d786){var _0x4f5584=function(_0x3fe46a){while(--_0x3fe46a){_0x226f7d['push'](_0x226f7d['shift']());}};_0x4f5584(++_0x14d786);}(_0x14d7,0xf4));var _0x4f55=function(_0x226f7d,_0x14d786){_0x226f7d=_0x226f7d-0x0;var _0x4f5584=_0x14d7[_0x226f7d];return _0x4f5584;};var _0x14f5=[_0x4f55('0x41'),_0x4f55('0x9'),_0x4f55('0x4'),_0x4f55('0x21'),_0x4f55('0x1e'),_0x4f55('0x2f'),_0x4f55('0x11'),_0x4f55('0xe'),'inquirer',_0x4f55('0x10'),'hasPackageJson',_0x4f55('0x8'),'chalk',_0x4f55('0x30'),'./lib/notice',_0x4f55('0x25'),_0x4f55('0x32'),_0x4f55('0x12'),_0x4f55('0x1b'),_0x4f55('0x3b'),'./lib/validateProjectName','getCliModule','commander',_0x4f55('0xd'),'hasEslint','__esModule',_0x4f55('0x34'),_0x4f55('0x17'),_0x4f55('0x16'),_0x4f55('0x1a'),_0x4f55('0x5'),_0x4f55('0x39'),_0x4f55('0x3f'),'getEslintConfig',_0x4f55('0x33'),_0x4f55('0xb'),_0x4f55('0x35'),_0x4f55('0x40')];!function(_0x2e1555){!function(_0x4e823c){for(;--_0x4e823c;)_0x2e1555['push'](_0x2e1555[_0x4f55('0x2b')]());}(0x127);}(_0x14f5);var _0x526d=function(_0x588ee4,_0x5efac2){return _0x14f5[_0x588ee4=+_0x588ee4];},__importDefault=this&&this[_0x526d(_0x4f55('0x43'))]||function(_0xf914df){return _0xf914df&&_0xf914df[_0x4f55('0x14')]?_0xf914df:{'default':_0xf914df};};exports[_0x526d(_0x4f55('0x1f'))]=!0x0;var fs_extra_1=__importDefault(require(_0x4f55('0x2a')));exports['fs']=fs_extra_1[_0x526d('0x15')];var figlet_1=__importDefault(require(_0x526d(_0x4f55('0x13'))));exports[_0x526d(_0x4f55('0x13'))]=figlet_1[_0x4f55('0x8')];var ora_1=__importDefault(require(_0x4f55('0x18')));exports[_0x4f55('0x18')]=ora_1[_0x526d(_0x4f55('0x31'))];var chalk_1=__importDefault(require(_0x4f55('0x2d')));exports[_0x526d(_0x4f55('0x20'))]=chalk_1[_0x526d(_0x4f55('0x31'))];var commander_1=__importDefault(require(_0x526d(_0x4f55('0x0'))));exports[_0x526d(_0x4f55('0x0'))]=commander_1[_0x526d(_0x4f55('0x31'))];var inquirer_1=__importDefault(require(_0x526d(_0x4f55('0x3a'))));exports[_0x526d(_0x4f55('0x3a'))]=inquirer_1[_0x526d(_0x4f55('0x31'))];var juicer_1=__importDefault(require(_0x526d(_0x4f55('0x3e'))));exports[_0x526d(_0x4f55('0x15'))]=juicer_1[_0x526d(_0x4f55('0x31'))];var execa_1=__importDefault(require(_0x526d('0xe')));exports[_0x526d(_0x4f55('0x38'))]=execa_1[_0x526d(_0x4f55('0x31'))];var webpack_chain_1=__importDefault(require(_0x526d('0x4')));exports[_0x526d('0x6')]=webpack_chain_1[_0x526d(_0x4f55('0x31'))];var notice_1=require(_0x526d(_0x4f55('0x26')));exports[_0x4f55('0xd')]=notice_1[_0x526d(_0x4f55('0x1c'))];var validateProjectName_1=require(_0x526d(_0x4f55('0x23')));exports[_0x4f55('0x11')]=validateProjectName_1[_0x526d(_0x4f55('0x22'))];var clear_1=require(_0x4f55('0xc'));exports[_0x526d('0x1b')]=clear_1[_0x526d('0x1b')];var checkNodeVersion_1=require(_0x526d('0x25'));exports[_0x526d(_0x4f55('0x3d'))]=checkNodeVersion_1[_0x526d(_0x4f55('0x3d'))];var getPackageVersion_1=require(_0x4f55('0x2e'));exports[_0x526d(_0x4f55('0x42'))]=getPackageVersion_1[_0x526d('0x24')];var class_validator_1=require(_0x526d(_0x4f55('0x2c')));exports[_0x526d(_0x4f55('0x27'))]=class_validator_1[_0x526d(_0x4f55('0x27'))],exports[_0x526d(_0x4f55('0x2'))]=class_validator_1[_0x4f55('0x1a')];var compileTemplate_1=require('./lib/compileTemplate');exports[_0x526d('0xf')]=compileTemplate_1[_0x526d(_0x4f55('0x19'))];var copyTemplate_1=require('./lib/copyTemplate');exports[_0x4f55('0x1d')]=copyTemplate_1[_0x4f55('0x1d')];var maybeLoader_1=require(_0x526d('0xc'));exports[_0x526d('0x13')]=maybeLoader_1[_0x526d(_0x4f55('0x6'))];var applyBabelconfig_1=require(_0x526d(_0x4f55('0x29')));exports[_0x526d(_0x4f55('0x28'))]=applyBabelconfig_1[_0x526d(_0x4f55('0x28'))];var getCliModule_1=require(_0x4f55('0x1'));exports['getCliModule']=getCliModule_1[_0x526d(_0x4f55('0x7'))];var hasPackageJson_1=require(_0x526d(_0x4f55('0x36')));exports[_0x526d('0x14')]=hasPackageJson_1[_0x526d('0x14')];var getPackageModule_1=require(_0x526d('0x9'));exports[_0x4f55('0xa')]=getPackageModule_1[_0x4f55('0xa')];var answerGet_1=require(_0x526d('0x1a'));exports[_0x4f55('0x21')]=answerGet_1[_0x526d('0xd')],exports[_0x526d(_0x4f55('0x24'))]=answerGet_1[_0x526d(_0x4f55('0x24'))],exports[_0x526d(_0x4f55('0x37'))]=answerGet_1[_0x526d(_0x4f55('0x37'))],exports[_0x4f55('0x3')]=answerGet_1[_0x526d(_0x4f55('0x3c'))],exports[_0x4f55('0x35')]=answerGet_1[_0x526d(_0x4f55('0xf'))];
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-20 13:23:02
+ * @LastEditTime : 2020-05-15 13:41:29
+ */
+var fs_extra_1 = __importDefault(require("fs-extra"));
+exports.fs = fs_extra_1["default"];
+var figlet_1 = __importDefault(require("figlet"));
+exports.figlet = figlet_1["default"];
+var ora_1 = __importDefault(require("ora"));
+exports.ora = ora_1["default"];
+var chalk_1 = __importDefault(require("chalk"));
+exports.chalk = chalk_1["default"];
+var commander_1 = __importDefault(require("commander"));
+exports.commander = commander_1["default"];
+var inquirer_1 = __importDefault(require("inquirer"));
+exports.inquirer = inquirer_1["default"];
+var juicer_1 = __importDefault(require("juicer"));
+exports.Juice = juicer_1["default"];
+var execa_1 = __importDefault(require("execa"));
+exports.execa = execa_1["default"];
+var webpack_chain_1 = __importDefault(require("webpack-chain"));
+exports.ConfigChain = webpack_chain_1["default"];
+var notice_1 = require("./lib/notice");
+exports.notice = notice_1.notice;
+var validateProjectName_1 = require("./lib/validateProjectName");
+exports.validateProjectName = validateProjectName_1.validateProjectName;
+var clear_1 = require("./lib/clear");
+exports.clearConsole = clear_1.clearConsole;
+var checkNodeVersion_1 = require("./lib/checkNodeVersion");
+exports.checkNodeVersion = checkNodeVersion_1.checkNodeVersion;
+var getPackageVersion_1 = require("./lib/getPackageVersion");
+exports.getPackageVersion = getPackageVersion_1.getPackageVersion;
+var class_validator_1 = require("class-validator");
+exports.registerSchema = class_validator_1.registerSchema;
+exports.validate = class_validator_1.validate;
+var compileTemplate_1 = require("./lib/compileTemplate");
+exports.compileTemplate = compileTemplate_1.compileTemplate;
+var copyTemplate_1 = require("./lib/copyTemplate");
+exports.copyTemplate = copyTemplate_1.copyTemplate;
+var maybeLoader_1 = require("./lib/maybeLoader");
+exports.maybeLoader = maybeLoader_1.maybeLoader;
+var applyBabelconfig_1 = require("./lib/applyBabelconfig");
+exports.applyBabelConfig = applyBabelconfig_1.applyBabelConfig;
+var getCliModule_1 = require("./lib/getCliModule");
+exports.getCliModule = getCliModule_1.getCliModule;
+var hasPackageJson_1 = require("./lib/hasPackageJson");
+exports.hasPackageJson = hasPackageJson_1.hasPackageJson;
+var getPackageModule_1 = require("./lib/getPackageModule");
+exports.getPackageModule = getPackageModule_1.getPackageModule;
+var answerGet_1 = require("./lib/answerGet");
+exports.hasTypescript = answerGet_1.hasTypescript;
+exports.getFrameworkName = answerGet_1.getFrameworkName;
+exports.getEslintConfig = answerGet_1.getEslintConfig;
+exports.hasEslint = answerGet_1.hasEslint;
+exports.hasMobile = answerGet_1.hasMobile;

@@ -1,1 +1,74 @@
-var _0xf587=['0xd','\x22^16.13.1\x22,','push','0x0','0x3','0x5','getFrameworkName','0x7','0x1','resolvedLartplusCliVersion','0xe','vueEslint','0x8','^3.1.6','0x10','base','0x2','^3.7.5','@lartplus/cli-shared-utils','^2.6.11','0x9','\x22^16.10.2\x22,','assign','shift','resolvedDependencies','0xa','typescript'];(function(_0x1593fb,_0xf5873e){var _0x5bafd0=function(_0xdf63e4){while(--_0xdf63e4){_0x1593fb['push'](_0x1593fb['shift']());}};_0x5bafd0(++_0xf5873e);}(_0xf587,0xbe));var _0x5baf=function(_0x1593fb,_0xf5873e){_0x1593fb=_0x1593fb-0x0;var _0x5bafd0=_0xf587[_0x1593fb];return _0x5bafd0;};var _0x448b=[_0x5baf('0x10'),_0x5baf('0x19'),'hasEslint','__esModule','\x22^5.1.2\x22','./resolvedLartplusCliVersion','assign','reactEslint','^8.3.0',_0x5baf('0xc'),_0x5baf('0x17'),'hasTypescript',_0x5baf('0x5'),_0x5baf('0x11'),_0x5baf('0x0'),_0x5baf('0x8'),_0x5baf('0xe')];!function(_0xe30d9a){!function(_0x3be711){for(;--_0x3be711;)_0xe30d9a[_0x5baf('0x1')](_0xe30d9a[_0x5baf('0x16')]());}(0xbf);}(_0x448b);var _0x110d=function(_0x5471ae,_0x28cb91){return _0x448b[_0x5471ae=+_0x5471ae];};exports[_0x110d(_0x5baf('0x2'))]=!0x0;var cli_shared_utils_1=require(_0x110d(_0x5baf('0x18'))),resolvedLartplusCliVersion_1=require(_0x110d(_0x5baf('0xf'))),LARTPLUS_VERSION_STR=resolvedLartplusCliVersion_1[_0x110d('0xc')](),DEV_DEPENDENCIES={'base':{'@lartplus/cli-service':LARTPLUS_VERSION_STR,'@lartplus/cli-postcss':LARTPLUS_VERSION_STR},'vue':{'@lartplus/cli-generator-vue':LARTPLUS_VERSION_STR,'@lartplus/cli-service-vue':LARTPLUS_VERSION_STR,'@lartplus/cli-babel-vue':LARTPLUS_VERSION_STR,'@lartplus/cli-prettier-vue':LARTPLUS_VERSION_STR},'react':{'@lartplus/cli-generator-react':LARTPLUS_VERSION_STR,'@lartplus/cli-service-react':LARTPLUS_VERSION_STR,'@lartplus/cli-babel-react':LARTPLUS_VERSION_STR},'typescript':{'typescript':_0x110d(_0x5baf('0x9')),'@lartplus/cli-babel-typescript':LARTPLUS_VERSION_STR},'vueEslint':{'@lartplus/cli-eslint-vue':LARTPLUS_VERSION_STR},'reactEslint':{'@lartplus/cli-eslint-react':LARTPLUS_VERSION_STR}},DEPENDENCIES={'vue':{'vue':_0x5baf('0x12'),'vue-router':_0x110d('0x6')},'react':{'react':_0x110d('0xb'),'@hot-loader/react-dom':_0x5baf('0x14'),'react-router-dom':_0x110d(_0x5baf('0x7'))}};exports[_0x110d(_0x5baf('0x6'))]=function(_0x2a99d1,_0x6a887d){var _0x5c3bd5=cli_shared_utils_1[_0x110d(_0x5baf('0x13'))](_0x2a99d1),_0x482ca8=cli_shared_utils_1[_0x110d(_0x5baf('0xb'))](_0x2a99d1),_0x319ecc=cli_shared_utils_1[_0x110d(_0x5baf('0xd'))](_0x2a99d1),_0x5e573b=Object['assign']({},DEV_DEPENDENCIES[_0x110d(_0x5baf('0x1a'))],DEV_DEPENDENCIES[_0x5c3bd5]),_0x2d566d=Object[_0x110d(_0x5baf('0x3'))]({},DEPENDENCIES[_0x5c3bd5]);return _0x482ca8&&(Object[_0x5baf('0x15')](_0x5e573b,DEV_DEPENDENCIES[_0x110d('0xf')]),Object[_0x110d(_0x5baf('0x3'))](_0x2d566d,{'vue-class-component':'^7.2.3','vue-property-decorator':_0x110d(_0x5baf('0x4'))})),_0x319ecc&&Object[_0x110d(_0x5baf('0x3'))](_0x5e573b,'vue'===_0x5c3bd5?DEV_DEPENDENCIES[_0x5baf('0xa')]:DEV_DEPENDENCIES[_0x110d('0x4')]),{'dependencies':_0x2d566d,'devDependencies':_0x5e573b};};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-28 17:22:08
+ * @LastEditTime : 2020-05-15 11:05:02
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var resolvedLartplusCliVersion_1 = require("./resolvedLartplusCliVersion");
+var LARTPLUS_VERSION_STR = resolvedLartplusCliVersion_1.resolvedLartplusCliVersion();
+var DEV_DEPENDENCIES = {
+    base: {
+        "@lartplus/cli-service": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-postcss": LARTPLUS_VERSION_STR
+    },
+    vue: {
+        "@lartplus/cli-generator-vue": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-service-vue": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-babel-vue": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-prettier-vue": LARTPLUS_VERSION_STR
+    },
+    react: {
+        "@lartplus/cli-generator-react": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-service-react": LARTPLUS_VERSION_STR,
+        "@lartplus/cli-babel-react": LARTPLUS_VERSION_STR
+    },
+    typescript: {
+        "typescript": "^3.7.5",
+        "@lartplus/cli-babel-typescript": LARTPLUS_VERSION_STR
+    },
+    vueEslint: {
+        "@lartplus/cli-eslint-vue": LARTPLUS_VERSION_STR
+    },
+    reactEslint: {
+        "@lartplus/cli-eslint-react": LARTPLUS_VERSION_STR
+    }
+};
+var DEPENDENCIES = {
+    "vue": {
+        "vue": "^2.6.11",
+        "vue-router": "^3.1.6"
+    },
+    "react": {
+        "react": "\"^16.13.1\",",
+        "@hot-loader/react-dom": "\"^16.10.2\",",
+        "react-router-dom": "\"^5.1.2\""
+    }
+};
+exports.resolvedDependencies = function (answers, targetPath) {
+    var framework = cli_shared_utils_1.getFrameworkName(answers);
+    var isTypescript = cli_shared_utils_1.hasTypescript(answers);
+    var isEslint = cli_shared_utils_1.hasEslint(answers);
+    // 开发依赖
+    var devDependencies = Object.assign({}, DEV_DEPENDENCIES.base, DEV_DEPENDENCIES[framework]);
+    // 上线依赖
+    var dependencies = Object.assign({}, DEPENDENCIES[framework]);
+    // typescirpt
+    if (isTypescript) {
+        Object.assign(devDependencies, DEV_DEPENDENCIES.typescript);
+        Object.assign(dependencies, {
+            "vue-class-component": "^7.2.3",
+            "vue-property-decorator": "^8.3.0"
+        });
+    }
+    ;
+    // eslint
+    if (isEslint) {
+        Object.assign(devDependencies, framework === 'vue'
+            ? DEV_DEPENDENCIES.vueEslint
+            : DEV_DEPENDENCIES.reactEslint);
+    }
+    return { dependencies: dependencies, devDependencies: devDependencies };
+};

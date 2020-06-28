@@ -1,1 +1,59 @@
-var _0x4f40=['0x17','vue','shift','action','__proto__','0x14','context','__extends','getModuleName','0xf','suffix','0x9','writeComponentsToTarget','typescript','__importDefault','tsx','moduleName','0xc','jsx','configFile','validataPath','default','0x8','CreateFile','constructor','0x6','0x5','getTmpPathBySuffix','0xd','tmpPath','0xe','prototype','0x18','createComponents','0x19','0x12','push','setPrototypeOf','0x2','0x11','0x7','path','0x16','0x1b','getFileSuffix','0x0'];(function(_0x3f64c0,_0x4f4065){var _0x44b4f7=function(_0x2ab337){while(--_0x2ab337){_0x3f64c0['push'](_0x3f64c0['shift']());}};_0x44b4f7(++_0x4f4065);}(_0x4f40,0x16e));var _0x44b4=function(_0x3f64c0,_0x4f4065){_0x3f64c0=_0x3f64c0-0x0;var _0x44b4f7=_0x4f40[_0x3f64c0];return _0x44b4f7;};var _0xaf08=[_0x44b4('0x1d'),_0x44b4('0x19'),_0x44b4('0x0'),_0x44b4('0xc'),_0x44b4('0x21'),_0x44b4('0x27'),'hasOwnProperty',_0x44b4('0x14'),_0x44b4('0x1f'),'writeFile','__esModule','framework',_0x44b4('0x5'),_0x44b4('0x12'),_0x44b4('0x1a'),'resolve',_0x44b4('0x11'),_0x44b4('0x10'),_0x44b4('0x9'),_0x44b4('0x3'),'../../template','create','./createFile',_0x44b4('0x8'),_0x44b4('0xa'),_0x44b4('0xe'),'call',_0x44b4('0x16')];!function(_0x50e80b){!function(_0x5c3a00){for(;--_0x5c3a00;)_0x50e80b[_0x44b4('0x26')](_0x50e80b[_0x44b4('0x4')]());}(0x17b);}(_0xaf08);var _0x33b7=function(_0x25c43f,_0x5c4823){return _0xaf08[_0x25c43f=+_0x25c43f];},__extends=this&&this[_0x33b7('0x4')]||function(){var _0xe18fc7=function(_0x42cde6,_0x19891e){return(_0xe18fc7=Object[_0x33b7('0x13')]||{'__proto__':[]}instanceof Array&&function(_0x175a23,_0x5e0e07){_0x175a23[_0x44b4('0x6')]=_0x5e0e07;}||function(_0x2dd182,_0x4f099e){for(var _0x3ab4eb in _0x4f099e)_0x4f099e[_0x33b7(_0x44b4('0x7'))](_0x3ab4eb)&&(_0x2dd182[_0x3ab4eb]=_0x4f099e[_0x3ab4eb]);})(_0x42cde6,_0x19891e);};return function(_0x54dd94,_0x3130d5){function _0x28918b(){this[_0x33b7(_0x44b4('0x1'))]=_0x54dd94;}_0xe18fc7(_0x54dd94,_0x3130d5),_0x54dd94[_0x33b7('0x12')]=null===_0x3130d5?Object[_0x33b7(_0x44b4('0x2a'))](_0x3130d5):(_0x28918b[_0x44b4('0x21')]=_0x3130d5[_0x33b7(_0x44b4('0x25'))],new _0x28918b());};}(),__importDefault=this&&this[_0x33b7('0x3')]||function(_0x2f7640){return _0x2f7640&&_0x2f7640[_0x33b7('0x18')]?_0x2f7640:{'default':_0x2f7640};};exports[_0x33b7(_0x44b4('0x22'))]=!0x0;var createFile_1=require(_0x33b7(_0x44b4('0x18'))),path_1=__importDefault(require(_0x44b4('0x2b'))),CreateComponents=function(_0xee173f){function _0x2d4eb8(_0x42cbea,_0x207114,_0x4377e4){var _0x3629cd=_0xee173f[_0x33b7(_0x44b4('0x13'))](this,_0x42cbea,_0x207114,_0x4377e4)||this;_0x3629cd[_0x33b7('0x1a')]=_0x207114;var _0x2b8723=_0x3629cd[_0x33b7('0x10')]();return _0x3629cd[_0x33b7(_0x44b4('0x1e'))](),_0x3629cd[_0x33b7(_0x44b4('0x20'))](_0x2b8723),_0x3629cd;}return __extends(_0x2d4eb8,_0xee173f),_0x2d4eb8[_0x44b4('0x21')][_0x33b7('0x10')]=function(){return _0x33b7(_0x44b4('0x1c'))===this[_0x33b7(_0x44b4('0xd'))][_0x44b4('0x15')][_0x33b7(_0x44b4('0x24'))]?_0x33b7(_0x44b4('0x1c')):this[_0x44b4('0x8')]['configFile'][_0x44b4('0xf')]?_0x33b7(_0x44b4('0x28')):_0x33b7('0x15');},_0x2d4eb8[_0x33b7('0x12')][_0x33b7(_0x44b4('0x20'))]=function(_0x281d96){var _0x373f36=path_1[_0x44b4('0x17')][_0x33b7('0x1')](__dirname,_0x33b7(_0x44b4('0x1b')));this[_0x33b7(_0x44b4('0x29'))]=_0x281d96,this[_0x33b7('0x16')]=_0x373f36+'/'+this[_0x33b7('0x1a')]+'.'+_0x281d96+'.tpl';},_0x2d4eb8[_0x33b7(_0x44b4('0x25'))]['writeComponentsToTarget']=function(){this[_0x33b7('0x1b')]=this[_0x33b7('0xa')](),this[_0x33b7(_0x44b4('0x2'))](this[_0x33b7(_0x44b4('0x2c'))],this[_0x33b7(_0x44b4('0x2d'))],this[_0x33b7('0x11')]);},_0x2d4eb8;}(createFile_1[_0x33b7(_0x44b4('0xb'))]);function createComponents(_0x494e01,_0x1d2273,_0x49f057){new CreateComponents(_0x494e01,_0x1d2273,_0x49f057)[_0x33b7('0xb')]();}exports[_0x44b4('0x23')]=createComponents;
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-17 16:01:39
+ * @LastEditTime : 2020-03-26 17:19:49
+ */
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var createFile_1 = require("./createFile");
+var path_1 = __importDefault(require("path"));
+var CreateComponents = /** @class */ (function (_super) {
+    __extends(CreateComponents, _super);
+    function CreateComponents(context, action, file) {
+        var _this = _super.call(this, context, action, file) || this;
+        _this.action = action;
+        var suffix = _this.getFileSuffix();
+        _this.validataPath();
+        _this.getTmpPathBySuffix(suffix);
+        return _this;
+    }
+    CreateComponents.prototype.getFileSuffix = function () {
+        return this.context.configFile.framework === 'vue'
+            ? 'vue'
+            : this.context.configFile.typescript
+                ? 'tsx'
+                : 'jsx';
+    };
+    CreateComponents.prototype.getTmpPathBySuffix = function (suffix) {
+        var basePath = path_1["default"].resolve(__dirname, '../../template');
+        this.suffix = suffix;
+        this.tmpPath = basePath + "/" + this.action + "." + suffix + ".tpl";
+    };
+    CreateComponents.prototype.writeComponentsToTarget = function () {
+        this.moduleName = this.getModuleName();
+        this.writeFile(this.tmpPath, this.moduleName, this.suffix);
+    };
+    return CreateComponents;
+}(createFile_1.CreateFile));
+function createComponents(context, action, file) {
+    var create = new CreateComponents(context, action, file);
+    create.writeComponentsToTarget();
+}
+exports.createComponents = createComponents;

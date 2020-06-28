@@ -1,1 +1,47 @@
-var _0x2027=['^6.2.2','prettier','0xd','^2.26.0','0x10','^4.2.1','^10.1.0','^2.33.0','0x1','hasTypescript','0x7','^1.19.1','^11.1.0','0x4','^5.1.2','__esModule','^4.0.0','0x9','^3.1.1','^6.0.0','base','push','0x2','0xc','^2.20.2','0xe','shift','@lartplus/cli-shared-utils','exportGetDeps','0xa'];(function(_0xbfefde,_0x2027e9){var _0x4dea16=function(_0x382919){while(--_0x382919){_0xbfefde['push'](_0xbfefde['shift']());}};_0x4dea16(++_0x2027e9);}(_0x2027,0x96));var _0x4dea=function(_0xbfefde,_0x2027e9){_0xbfefde=_0xbfefde-0x0;var _0x4dea16=_0x2027[_0xbfefde];return _0x4dea16;};var _0x273c=[_0x4dea('0x18'),_0x4dea('0xc'),_0x4dea('0x9'),_0x4dea('0x6'),'^6.7.2','typescript',_0x4dea('0x13'),_0x4dea('0x12'),'assign','^5.0.2',_0x4dea('0x1'),_0x4dea('0x0'),_0x4dea('0x10'),'eslintConfig',_0x4dea('0xe'),_0x4dea('0x7'),_0x4dea('0xf')];!function(_0x460a37){!function(_0xfa497c){for(;--_0xfa497c;)_0x460a37[_0x4dea('0x15')](_0x460a37[_0x4dea('0x1a')]());}(0x141);}(_0x273c);var _0x53dc=function(_0x2a0c4b,_0x224274){return _0x273c[_0x2a0c4b=+_0x2a0c4b];};exports[_0x53dc(_0x4dea('0x16'))]=!0x0;var cli_shared_utils_1=require(_0x4dea('0x1b')),DEV_DEPENDENCIES={'base':{'eslint':_0x53dc(_0x4dea('0xa')),'eslint-plugin-vue':_0x53dc(_0x4dea('0x19'))},'airbnb':{'@vue/eslint-config-airbnb':_0x53dc(_0x4dea('0x17')),'eslint-plugin-import':_0x4dea('0x18')},'prettier':{'@vue/eslint-config-prettier':_0x53dc(_0x4dea('0x11')),'eslint-plugin-prettier':_0x53dc(_0x4dea('0x1d')),'prettier':_0x4dea('0xb')},'standard':{'@vue/eslint-config-standard':_0x53dc('0x0'),'eslint-plugin-import':_0x53dc('0x3'),'eslint-plugin-node':_0x53dc(_0x4dea('0xd')),'eslint-plugin-promise':_0x4dea('0x5'),'eslint-plugin-standard':_0x53dc('0xf')},'typescript':{'@vue/eslint-config-typescript':_0x53dc(_0x4dea('0x17')),'@typescript-eslint/eslint-plugin':_0x53dc(_0x4dea('0x8')),'@typescript-eslint/parser':_0x4dea('0x3')}};exports[_0x4dea('0x1c')]=function(_0xe8de5e){var _0xaf84aa=_0xe8de5e[_0x53dc(_0x4dea('0x4'))],_0x23b49b=Object[_0x53dc('0xb')]({},DEV_DEPENDENCIES[_0x4dea('0x14')],DEV_DEPENDENCIES[_0x53dc(_0x4dea('0x2'))],DEV_DEPENDENCIES[_0xaf84aa]);return cli_shared_utils_1[_0x53dc('0x5')](_0xe8de5e)?Object[_0x53dc('0xb')](_0x23b49b,DEV_DEPENDENCIES[_0x53dc('0x8')]):Object[_0x53dc('0xb')](_0x23b49b,{'babel-eslint':_0x53dc('0x6')}),_0x23b49b;};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-02 16:49:18
+ * @LastEditTime : 2020-06-04 11:55:04
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var DEV_DEPENDENCIES = {
+    base: {
+        eslint: '^6.7.2',
+        'eslint-plugin-vue': '^6.2.2'
+    },
+    airbnb: {
+        '@vue/eslint-config-airbnb': '^5.0.2',
+        'eslint-plugin-import': '^2.20.2'
+    },
+    prettier: {
+        '@vue/eslint-config-prettier': '^6.0.0',
+        'eslint-plugin-prettier': '^3.1.1',
+        prettier: '^1.19.1'
+    },
+    standard: {
+        '@vue/eslint-config-standard': '^5.1.2',
+        'eslint-plugin-import': '^2.20.2',
+        'eslint-plugin-node': '^11.1.0',
+        'eslint-plugin-promise': '^4.2.1',
+        'eslint-plugin-standard': '^4.0.0'
+    },
+    "typescript": {
+        '@vue/eslint-config-typescript': '^5.0.2',
+        '@typescript-eslint/eslint-plugin': '^2.33.0',
+        '@typescript-eslint/parser': '^2.26.0'
+    }
+};
+exports.exportGetDeps = function (answers) {
+    var presets = answers.eslintConfig;
+    var deps = Object.assign({}, DEV_DEPENDENCIES.base, DEV_DEPENDENCIES.prettier, DEV_DEPENDENCIES[presets]);
+    if (cli_shared_utils_1.hasTypescript(answers)) {
+        Object.assign(deps, DEV_DEPENDENCIES.typescript);
+    }
+    else {
+        Object.assign(deps, { 'babel-eslint': '^10.1.0' });
+    }
+    return deps;
+};

@@ -1,1 +1,14 @@
-var _0x1cf4=['exportExtensions','genEslintRcFile','shift','0x4','./lib/exportGetDeps','0x0','0x5','0x2','./lib/exportExtensions','./lib/genEslintRcFile','__esModule'];(function(_0x155a03,_0x1cf448){var _0x56fd86=function(_0x5bcaf2){while(--_0x5bcaf2){_0x155a03['push'](_0x155a03['shift']());}};_0x56fd86(++_0x1cf448);}(_0x1cf4,0xbd));var _0x56fd=function(_0x155a03,_0x1cf448){_0x155a03=_0x155a03-0x0;var _0x56fd86=_0x1cf4[_0x155a03];return _0x56fd86;};var _0x5dbe=[_0x56fd('0x8'),_0x56fd('0x9'),_0x56fd('0x2'),_0x56fd('0x6'),_0x56fd('0x7'),'exportGetDeps'];!function(_0x2383e4){!function(_0x3f1a7f){for(;--_0x3f1a7f;)_0x2383e4['push'](_0x2383e4[_0x56fd('0x0')]());}(0x16f);}(_0x5dbe);var _0x242d=function(_0x2b5ca9,_0x5a4185){return _0x5dbe[_0x2b5ca9=+_0x2b5ca9];};exports[_0x242d(_0x56fd('0x3'))]=!0x0;var exportGetDeps_1=require(_0x242d(_0x56fd('0x5')));exports[_0x242d(_0x56fd('0x4'))]=exportGetDeps_1[_0x242d('0x5')];var genEslintRcFile_1=require(_0x242d(_0x56fd('0x1')));exports[_0x56fd('0xa')]=genEslintRcFile_1[_0x56fd('0xa')];var exportExtensions_1=require(_0x242d('0x3'));exports[_0x242d('0x1')]=exportExtensions_1['exportExtensions'];
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-13 15:50:47
+ * @LastEditTime : 2020-05-15 11:03:25
+ */
+var exportGetDeps_1 = require("./lib/exportGetDeps");
+exports.exportGetDeps = exportGetDeps_1.exportGetDeps;
+var genEslintRcFile_1 = require("./lib/genEslintRcFile");
+exports.genEslintRcFile = genEslintRcFile_1.genEslintRcFile;
+var exportExtensions_1 = require("./lib/exportExtensions");
+exports.exportExtensions = exportExtensions_1.exportExtensions;

@@ -1,1 +1,116 @@
-var _0x3528=['assign','css-loader','apploaders','0x3','0x8','0xf','0x1e','0x2b','0x1a','0x11','oneOf','0x29','0x13','plugin','0xe','cssnano','normal-modules','sass','0xc','0x30','shouldExtract','cssFileNameWithHash','@lartplus/cli-config','0x6','0x1f','sass-loader','shift','isProd','mode','CSS','test','0x27','0x25','0x33','0x9','css','createRules','0x2e','minimizer','0x12','stylus','rule','extract-css','0x2d','0x35','0x4','[name]_[local]_[hash:base64:5]','0x19','mini-css-extract-plugin','setCssPlugin','0xd','0x17','0x7','0x18','extract-css-plugin','optimize-css-assets-webpack-plugin','LANGUAGE_TYPE','postcss','0x2c','0x34','use','0x10','0x32','0x24','0x1','0x1d','@lartplus/cli-shared-utils','optimization','STYLUS','0x14','0x20','options','0x21','modules','vue-style-loader','push','dev','0x15','0xb','cssSourceMap','SASS','SCSS','0x36','chain','0x0','normal','LESS','0x23','0x28','resourceQuery','vue-module','MODULES','configFile','CreateStyleVueRules','0x2a','loader','0x1c','0x1b'];(function(_0x215874,_0x35287d){var _0x5bbf0b=function(_0x45719a){while(--_0x45719a){_0x215874['push'](_0x215874['shift']());}};_0x5bbf0b(++_0x35287d);}(_0x3528,0xf0));var _0x5bbf=function(_0x215874,_0x35287d){_0x215874=_0x215874-0x0;var _0x5bbf0b=_0x3528[_0x215874];return _0x5bbf0b;};var _0x4ef6=[_0x5bbf('0x20'),_0x5bbf('0x47'),'prototype','POST',_0x5bbf('0x5a'),_0x5bbf('0x4f'),'postcss-loader','calcCssLoaderOptions',_0x5bbf('0x52'),'scss',_0x5bbf('0x2a'),_0x5bbf('0x2d'),'.css',_0x5bbf('0x10'),_0x5bbf('0x2'),_0x5bbf('0x27'),_0x5bbf('0x5f'),_0x5bbf('0x33'),_0x5bbf('0x54'),'optimize-css-assets-webpack-plugin',_0x5bbf('0x51'),_0x5bbf('0x53'),_0x5bbf('0x60'),_0x5bbf('0x1b'),_0x5bbf('0x2f'),_0x5bbf('0x36'),'localIdentName',_0x5bbf('0x1d'),_0x5bbf('0x43'),'maybeLoader',_0x5bbf('0x38'),_0x5bbf('0x4'),_0x5bbf('0xc'),_0x5bbf('0x4b'),_0x5bbf('0x40'),_0x5bbf('0x30'),_0x5bbf('0x23'),_0x5bbf('0x37'),_0x5bbf('0x1e'),'context',_0x5bbf('0x4a'),'buildStyle','stylus-loader',_0x5bbf('0x46'),_0x5bbf('0x18'),_0x5bbf('0x45'),'.[contenthash:8]',_0x5bbf('0x5c'),_0x5bbf('0x24'),_0x5bbf('0x29'),_0x5bbf('0x16'),'__esModule','vue-normal',_0x5bbf('0x31'),_0x5bbf('0xa')];!function(_0xcc8095){!function(_0x5e36a2){for(;--_0x5e36a2;)_0xcc8095[_0x5bbf('0x1f')](_0xcc8095[_0x5bbf('0x50')]());}(0x16c);}(_0x4ef6);var _0x43c6=function(_0x4ae0a8,_0x571a98){return _0x4ef6[_0x4ae0a8=+_0x4ae0a8];};exports[_0x43c6(_0x5bbf('0x5d'))]=!0x0;var cli_shared_utils_1=require(_0x43c6(_0x5bbf('0x3f'))),cli_config_1=require(_0x5bbf('0x4c')),CreateStyleVueRules=function(){function _0x1e62a3(_0x37653c,_0x831dee){this[_0x43c6(_0x5bbf('0x4d'))]=_0x37653c,this[_0x43c6(_0x5bbf('0x56'))]=_0x831dee,this[_0x43c6(_0x5bbf('0x32'))]=_0x43c6('0x16')!==this[_0x43c6(_0x5bbf('0x4d'))][_0x43c6(_0x5bbf('0x3c'))],this[_0x43c6(_0x5bbf('0x8'))]=!this[_0x5bbf('0x51')];}return _0x1e62a3['prototype'][_0x43c6(_0x5bbf('0xf'))]=function(_0x1acc1a,_0x2f7727,_0x4ee616,_0x48f449){var _0x3e1461,_0x1fca5a=(null===(_0x3e1461=this[_0x43c6(_0x5bbf('0x4d'))]['configFile'])||void 0x0===_0x3e1461?void 0x0:_0x3e1461[_0x43c6(_0x5bbf('0x39'))])||!0x0;this[_0x5bbf('0x4a')]?_0x1acc1a[_0x5bbf('0x10')](_0x43c6(_0x5bbf('0x21')))[_0x43c6('0x27')](cli_shared_utils_1[_0x43c6('0x33')](_0x5bbf('0x4')))[_0x43c6('0x2d')]({'hmr':!this[_0x43c6(_0x5bbf('0x8'))]}):_0x1acc1a[_0x43c6('0x23')](_0x43c6('0x5'))[_0x43c6(_0x5bbf('0x55'))](cli_shared_utils_1[_0x43c6(_0x5bbf('0x57'))](_0x5bbf('0x1e')))[_0x43c6(_0x5bbf('0x61'))]({'sourceMap':_0x1fca5a,'shadowMode':!0x0});var _0x5f4278=this[_0x43c6('0x1d')](_0x1fca5a,_0x2f7727);_0x1acc1a[_0x43c6(_0x5bbf('0x2b'))](_0x43c6('0x4'))[_0x43c6(_0x5bbf('0x55'))](cli_shared_utils_1[_0x43c6(_0x5bbf('0x57'))](_0x43c6(_0x5bbf('0x1'))))[_0x43c6('0x2d')](_0x5f4278),_0x1acc1a[_0x5bbf('0x10')](_0x43c6(_0x5bbf('0x34')))[_0x43c6(_0x5bbf('0x55'))](cli_shared_utils_1[_0x43c6('0x33')](_0x43c6('0x1c')))[_0x43c6(_0x5bbf('0x61'))]({'sourceMap':_0x1fca5a}),_0x4ee616&&_0x1acc1a[_0x43c6('0x23')](_0x4ee616)[_0x5bbf('0x33')](cli_shared_utils_1[_0x43c6(_0x5bbf('0x57'))](_0x4ee616))[_0x43c6('0x2d')](Object[_0x43c6('0x2f')]({'sourceMap':_0x1fca5a},_0x48f449));},_0x1e62a3[_0x43c6(_0x5bbf('0x9'))][_0x43c6(_0x5bbf('0x3e'))]=function(_0x340807,_0x275340,_0x374f2c,_0x20411b){var _0x145326=this[_0x43c6(_0x5bbf('0x56'))]['module'][_0x43c6('0x26')](_0x340807)[_0x5bbf('0x54')](_0x275340),_0x1aff01=_0x145326[_0x43c6(_0x5bbf('0x14'))](_0x43c6(_0x5bbf('0x42')))[_0x43c6(_0x5bbf('0x1c'))](/\?vue/);this[_0x5bbf('0x38')](_0x1aff01,!0x1,_0x374f2c,_0x20411b);var _0x589784=_0x145326[_0x43c6(_0x5bbf('0x14'))](_0x5bbf('0x2e'))[_0x43c6(_0x5bbf('0x1c'))](/module/);this[_0x43c6(_0x5bbf('0xf'))](_0x589784,!0x0,_0x374f2c,_0x20411b);var _0x4da3ff=_0x145326[_0x43c6(_0x5bbf('0x14'))](_0x43c6(_0x5bbf('0x11')));this[_0x5bbf('0x38')](_0x4da3ff,!0x1,_0x374f2c,_0x20411b);var _0x26242b=_0x145326[_0x43c6(_0x5bbf('0x14'))](_0x43c6('0xa'))[_0x43c6(_0x5bbf('0x2c'))](cli_config_1[_0x43c6('0x36')][_0x43c6(_0x5bbf('0x5b'))]);this[_0x43c6('0x34')](_0x26242b,!0x0,_0x374f2c,_0x20411b);},_0x1e62a3[_0x43c6(_0x5bbf('0x9'))][_0x43c6(_0x5bbf('0x15'))]=function(_0x4f1679,_0x475f6a){var _0x5e7416={'sourceMap':_0x4f1679,'importLoaders':0x2};return _0x475f6a&&(_0x5e7416[_0x43c6(_0x5bbf('0x49'))]=_0x43c6(_0x5bbf('0x13')),_0x5e7416[_0x43c6('0x31')]=!0x0),_0x5e7416;},_0x1e62a3[_0x43c6(_0x5bbf('0x9'))][_0x5bbf('0x5')]=function(){var _0x38ce61,_0x8f5416,_0x26396b='css/[name]'+(null!==(_0x38ce61=this['context'][_0x43c6('0x2')])&&void 0x0!==_0x38ce61&&_0x38ce61[_0x43c6(_0x5bbf('0x28'))],_0x43c6(_0x5bbf('0x6')))+_0x43c6('0x22'),_0x507177={'filename':_0x26396b,'chunkFilename':_0x26396b};this[_0x43c6('0x7')]&&(this[_0x5bbf('0x27')][_0x43c6(_0x5bbf('0x12'))](_0x43c6(_0x5bbf('0xe')))['use'](cli_shared_utils_1[_0x43c6(_0x5bbf('0x57'))](_0x43c6(_0x5bbf('0x0'))),[_0x507177]),_0x8f5416={'cssProcessor':cli_shared_utils_1[_0x43c6(_0x5bbf('0x57'))](_0x43c6(_0x5bbf('0x48'))),'cssProcessorOptions':{'reduceIdents':!0x1,'autoprefixer':!0x1,'safe':!0x0,'discardComments':{'removeAll':!0x0}}},this[_0x5bbf('0x51')]&&this[_0x43c6(_0x5bbf('0x56'))][_0x5bbf('0x17')][_0x43c6(_0x5bbf('0x44'))](_0x43c6(_0x5bbf('0x41')))[_0x43c6('0x23')](cli_shared_utils_1[_0x43c6(_0x5bbf('0x57'))](_0x5bbf('0xb')),[_0x8f5416]));},_0x1e62a3[_0x43c6(_0x5bbf('0x9'))][_0x43c6(_0x5bbf('0x3a'))]=function(){this[_0x43c6('0x1a')](_0x5bbf('0x59'),cli_config_1[_0x43c6('0x36')][_0x43c6(_0x5bbf('0x3d'))]),this[_0x43c6(_0x5bbf('0x3e'))]('less',cli_config_1[_0x5bbf('0xc')][_0x43c6(_0x5bbf('0x1a'))],'less-loader'),this[_0x43c6(_0x5bbf('0x3e'))](_0x5bbf('0x5e'),cli_config_1[_0x43c6(_0x5bbf('0x26'))][_0x43c6(_0x5bbf('0x22'))],_0x43c6(_0x5bbf('0x58'))),this[_0x43c6(_0x5bbf('0x3e'))](_0x5bbf('0xd'),cli_config_1[_0x43c6(_0x5bbf('0x26'))][_0x43c6(_0x5bbf('0x3'))]),this[_0x43c6(_0x5bbf('0x3e'))](_0x43c6(_0x5bbf('0x7')),cli_config_1[_0x43c6(_0x5bbf('0x26'))][_0x43c6(_0x5bbf('0x3b'))],_0x43c6(_0x5bbf('0x35'))),this[_0x43c6(_0x5bbf('0x3e'))](_0x43c6(_0x5bbf('0x4e')),cli_config_1[_0x43c6(_0x5bbf('0x26'))][_0x5bbf('0x25')],_0x43c6('0x1b'));},_0x1e62a3;}();exports[_0x43c6(_0x5bbf('0x19'))]=CreateStyleVueRules;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-09 16:26:33
+ * @LastEditTime : 2020-04-24 14:36:27
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_config_1 = require("@lartplus/cli-config");
+var CreateStyleVueRules = /** @class */ (function () {
+    function CreateStyleVueRules(context, chain) {
+        this.context = context;
+        this.chain = chain;
+        this.isProd = this.context.mode !== 'dev';
+        this.shouldExtract = !this.isProd;
+    }
+    CreateStyleVueRules.prototype.apploaders = function (rules, isCssModules, loader, loaderOptions) {
+        var _a;
+        var sourceMap = ((_a = this.context.configFile) === null || _a === void 0 ? void 0 : _a.cssSourceMap) || true;
+        if (this.shouldExtract) {
+            rules.use('extract-css-plugin')
+                .loader(cli_shared_utils_1.maybeLoader('mini-css-extract-plugin'))
+                .options({
+                hmr: !this.shouldExtract
+            });
+        }
+        else {
+            rules.use('vue-style-loader')
+                .loader(cli_shared_utils_1.maybeLoader('vue-style-loader'))
+                .options({
+                sourceMap: sourceMap,
+                shadowMode: true
+            });
+        }
+        var cssOptions = this.calcCssLoaderOptions(sourceMap, isCssModules);
+        rules.use('css-loader')
+            .loader(cli_shared_utils_1.maybeLoader('css-loader'))
+            .options(cssOptions);
+        rules
+            .use('postcss-loader')
+            .loader(cli_shared_utils_1.maybeLoader('postcss-loader'))
+            .options({ sourceMap: sourceMap });
+        if (loader) {
+            rules.use(loader)
+                .loader(cli_shared_utils_1.maybeLoader(loader))
+                .options(Object.assign({ sourceMap: sourceMap }, loaderOptions));
+        }
+    };
+    CreateStyleVueRules.prototype.createRules = function (lang, test, loader, loaderOptions) {
+        var baseRule = this.chain.module.rule(lang).test(test);
+        // 单文件组件 普通
+        var vueNormalRule = baseRule.oneOf('vue-normal').resourceQuery(/\?vue/);
+        this.apploaders(vueNormalRule, false, loader, loaderOptions);
+        // 单文件组件 模块
+        var VueModuleRule = baseRule.oneOf('vue-module').resourceQuery(/module/);
+        this.apploaders(VueModuleRule, true, loader, loaderOptions);
+        // 外部文件 普通
+        var normalRule = baseRule.oneOf('normal');
+        this.apploaders(normalRule, false, loader, loaderOptions);
+        // 外部文件 模块
+        var normalModuleRule = baseRule.oneOf('normal-modules').test(cli_config_1.LANGUAGE_TYPE.MODULES);
+        this.apploaders(normalModuleRule, true, loader, loaderOptions);
+    };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    CreateStyleVueRules.prototype.calcCssLoaderOptions = function (sourceMap, isCssModules) {
+        var importLoaders = 2;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        var options = {
+            sourceMap: sourceMap,
+            importLoaders: importLoaders
+        };
+        if (isCssModules) {
+            options['localIdentName'] = '[name]_[local]_[hash:base64:5]';
+            options['modules'] = true;
+        }
+        return options;
+    };
+    CreateStyleVueRules.prototype.setCssPlugin = function () {
+        var _a;
+        var hasHash = ((_a = this.context.configFile) === null || _a === void 0 ? void 0 : _a.cssFileNameWithHash) || true;
+        var filename = "css/[name]" + (hasHash ? '.[contenthash:8]' : '') + ".css";
+        var chunkFilename = filename;
+        var extractOptions = { filename: filename, chunkFilename: chunkFilename };
+        if (this.shouldExtract) {
+            this.chain.plugin('extract-css')
+                .use(cli_shared_utils_1.maybeLoader('mini-css-extract-plugin'), [extractOptions]);
+            var optimizationCssOption = {
+                cssProcessor: cli_shared_utils_1.maybeLoader('cssnano'),
+                cssProcessorOptions: {
+                    reduceIdents: false,
+                    autoprefixer: false,
+                    safe: true,
+                    discardComments: {
+                        removeAll: true
+                    }
+                }
+            };
+            if (this.isProd) {
+                this.chain.optimization
+                    .minimizer('optimize-css-assets-webpack-plugin')
+                    .use(cli_shared_utils_1.maybeLoader('optimize-css-assets-webpack-plugin'), [optimizationCssOption]);
+            }
+        }
+    };
+    CreateStyleVueRules.prototype.buildStyle = function () {
+        this.createRules('css', cli_config_1.LANGUAGE_TYPE.CSS);
+        this.createRules('less', cli_config_1.LANGUAGE_TYPE.LESS, 'less-loader');
+        this.createRules('stylus', cli_config_1.LANGUAGE_TYPE.STYLUS, 'stylus-loader');
+        this.createRules('postcss', cli_config_1.LANGUAGE_TYPE.POST);
+        this.createRules('sass', cli_config_1.LANGUAGE_TYPE.SASS, 'sass-loader');
+        this.createRules('scss', cli_config_1.LANGUAGE_TYPE.SCSS, 'sass-loader');
+    };
+    return CreateStyleVueRules;
+}());
+exports.CreateStyleVueRules = CreateStyleVueRules;

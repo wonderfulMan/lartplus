@@ -1,1 +1,17 @@
-var _0x2449=['resolve','0x1','maybeLoader','__esModule','0x0'];(function(_0x43b182,_0x244946){var _0xd143d=function(_0x41683e){while(--_0x41683e){_0x43b182['push'](_0x43b182['shift']());}};_0xd143d(++_0x244946);}(_0x2449,0x180));var _0xd143=function(_0x43b182,_0x244946){_0x43b182=_0x43b182-0x0;var _0xd143d=_0x2449[_0x43b182];return _0xd143d;};var _0x2bc5=[_0xd143('0x4'),_0xd143('0x3')];!function(_0x3bcf9d){!function(_0x4fb294){for(;--_0x4fb294;)_0x3bcf9d['push'](_0x3bcf9d['shift']());}(0x1d0);}(_0x2bc5);var _0x2dbf=function(_0x4fc22e,_0x2e731c){return _0x2bc5[_0x4fc22e=+_0x4fc22e];};function maybeLoader(_0x6346c){try{return require[_0xd143('0x1')](_0x6346c);}catch(_0x545e60){return _0x6346c;}}exports[_0x2dbf(_0xd143('0x2'))]=!0x0,exports[_0x2dbf(_0xd143('0x0'))]=maybeLoader;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors: hAo
+ * @Date: 2020-04-10 15:03:01
+ * @LastEditTime: 2020-04-10 15:03:49
+ */
+function maybeLoader(loader) {
+    try {
+        return require.resolve(loader);
+    }
+    catch (error) {
+        return loader;
+    }
+}
+exports.maybeLoader = maybeLoader;

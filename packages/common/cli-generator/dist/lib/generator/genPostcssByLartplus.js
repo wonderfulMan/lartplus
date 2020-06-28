@@ -1,1 +1,92 @@
-var _0xd63d=['writeFileSync','return','trys','ops','0x3','@lartplus/cli-config','0x7','answers','0x11','0xa','0x9','0x1c','genPkgFile','0xc','0x24','0x10','throw','0xb','0x1d','0x1b','next','0xe','__generator','hasPackageJson','module.exports\x20=\x20','getPostcssConfigFilePath','label','hasOwnProperty','0x18','0x4','targetDir','0x12','__assign','0x21','lartplusRequirePath','resolvedInstallDependencies','0x1e','exportGetDeps','0x20','done','@lartplus/cli-shared-utils','0x0','PATHS','0x22','apply','pop','0x2','function','postcss','0xd','boolean','0x23','length','0x5','../resolve/resolvedInstallDependencies','0x14','0x27','genPostcssConfigFile','0x13','./genPkgFile','0x26','stringify','0x1f','shift','0x25','call','iterator','then','0x8'];(function(_0x508cf4,_0xd63d21){var _0x1b2446=function(_0x2f8c25){while(--_0x2f8c25){_0x508cf4['push'](_0x508cf4['shift']());}};_0x1b2446(++_0xd63d21);}(_0xd63d,0x1b6));var _0x1b24=function(_0x508cf4,_0xd63d21){_0x508cf4=_0x508cf4-0x0;var _0x1b2446=_0xd63d[_0x508cf4];return _0x1b2446;};var _0x5825=[_0x1b24('0x2b'),'assign',_0x1b24('0x2e'),'genPostcssByLartplus',_0x1b24('0x32'),_0x1b24('0x41'),_0x1b24('0x1'),_0x1b24('0x15'),'Generator\x20is\x20already\x20executing.',_0x1b24('0xb'),_0x1b24('0x43'),'call','getCliModule',_0x1b24('0x21'),'prototype','__awaiter',_0x1b24('0x2d'),'value',_0x1b24('0x34'),_0x1b24('0x12'),_0x1b24('0x23'),'sent',_0x1b24('0x0'),_0x1b24('0x8'),_0x1b24('0x2f'),_0x1b24('0x17'),_0x1b24('0x10'),'push',_0x1b24('0x1a'),'devDependencies',_0x1b24('0x44'),'targetDir',_0x1b24('0x2'),_0x1b24('0x18'),_0x1b24('0x3'),_0x1b24('0x14'),_0x1b24('0x30'),_0x1b24('0x3d'),_0x1b24('0x25'),'length'];!function(_0xdae09b){!function(_0x2bf774){for(;--_0x2bf774;)_0xdae09b['push'](_0xdae09b[_0x1b24('0x27')]());}(0x86);}(_0x5825);var _0x1003=function(_0x317c0c,_0x5413d4){return _0x5825[_0x317c0c=+_0x317c0c];},__assign=this&&this[_0x1003(_0x1b24('0x36'))]||function(){return(__assign=Object[_0x1003(_0x1b24('0x38'))]||function(_0x56b818){for(var _0x19eac7,_0x2c64ec=0x1,_0x2c4255=arguments[_0x1003('0x1a')];_0x2c64ec<_0x2c4255;_0x2c64ec++)for(var _0x286237 in _0x19eac7=arguments[_0x2c64ec])Object[_0x1003('0x1')][_0x1003('0x15')][_0x1b24('0x29')](_0x19eac7,_0x286237)&&(_0x56b818[_0x286237]=_0x19eac7[_0x286237]);return _0x56b818;})[_0x1003('0x16')](this,arguments);},__awaiter=this&&this[_0x1003(_0x1b24('0x16'))]||function(_0x323021,_0x2734f3,_0x5d8055,_0x9cd8c8){return new(_0x5d8055=_0x5d8055||Promise)(function(_0x41f725,_0x216f8d){function _0x351cf7(_0x83630a){try{_0x1cd69d(_0x9cd8c8[_0x1003('0x20')](_0x83630a));}catch(_0xae0cd4){_0x216f8d(_0xae0cd4);}}function _0x576007(_0x50196f){try{_0x1cd69d(_0x9cd8c8[_0x1003(_0x1b24('0x4'))](_0x50196f));}catch(_0x3b36a4){_0x216f8d(_0x3b36a4);}}function _0x1cd69d(_0x4cf73b){var _0x4e2171;_0x4cf73b[_0x1b24('0xf')]?_0x41f725(_0x4cf73b[_0x1003('0x4')]):((_0x4e2171=_0x4cf73b[_0x1003(_0x1b24('0x5'))])instanceof _0x5d8055?_0x4e2171:new _0x5d8055(function(_0x1ee2cd){_0x1ee2cd(_0x4e2171);}))[_0x1003(_0x1b24('0x40'))](_0x351cf7,_0x576007);}_0x1cd69d((_0x9cd8c8=_0x9cd8c8[_0x1b24('0x14')](_0x323021,_0x2734f3||[]))[_0x1b24('0x41')]());});},__generator=this&&this[_0x1003(_0x1b24('0x28'))]||function(_0x3e97e5,_0x1d14d0){var _0x27a987,_0x2128b6,_0xd4b045,_0x34273e={'label':0x0,'sent':function(){if(0x1&_0xd4b045[0x0])throw _0xd4b045[0x1];return _0xd4b045[0x1];},'trys':[],'ops':[]},_0xf5170b={'next':_0x35e92f(0x0),'throw':_0x35e92f(0x1),'return':_0x35e92f(0x2)};return _0x1003(_0x1b24('0x3a'))==typeof Symbol&&(_0xf5170b[Symbol[_0x1b24('0x2a')]]=function(){return this;}),_0xf5170b;function _0x35e92f(_0x6c9a73){return function(_0x36fcd2){return function(_0x3e3d5d){if(_0x27a987)throw new TypeError(_0x1003(_0x1b24('0x1b')));for(;_0x34273e;)try{if(_0x27a987=0x1,_0x2128b6&&(_0xd4b045=0x2&_0x3e3d5d[0x0]?_0x2128b6[_0x1003(_0x1b24('0x3f'))]:_0x3e3d5d[0x0]?_0x2128b6[_0x1003(_0x1b24('0x4'))]||((_0xd4b045=_0x2128b6[_0x1003(_0x1b24('0x3f'))])&&_0xd4b045[_0x1003(_0x1b24('0x24'))](_0x2128b6),0x0):_0x2128b6[_0x1003(_0x1b24('0xe'))])&&!(_0xd4b045=_0xd4b045[_0x1003('0x26')](_0x2128b6,_0x3e3d5d[0x1]))['done'])return _0xd4b045;switch(_0x2128b6=0x0,_0xd4b045&&(_0x3e3d5d=[0x2&_0x3e3d5d[0x0],_0xd4b045[_0x1003(_0x1b24('0x5'))]]),_0x3e3d5d[0x0]){case 0x0:case 0x1:_0xd4b045=_0x3e3d5d;break;case 0x4:return _0x34273e[_0x1003(_0x1b24('0x22'))]++,{'value':_0x3e3d5d[0x1],'done':!0x1};case 0x5:_0x34273e[_0x1003(_0x1b24('0x22'))]++,_0x2128b6=_0x3e3d5d[0x1],_0x3e3d5d=[0x0];continue;case 0x7:_0x3e3d5d=_0x34273e[_0x1003('0x17')][_0x1003(_0x1b24('0x13'))](),_0x34273e[_0x1003('0xb')][_0x1003(_0x1b24('0x13'))]();continue;default:if(!(_0xd4b045=0x0<(_0xd4b045=_0x34273e[_0x1003(_0x1b24('0x3e'))])['length']&&_0xd4b045[_0xd4b045[_0x1b24('0x1c')]-0x1])&&(0x6===_0x3e3d5d[0x0]||0x2===_0x3e3d5d[0x0])){_0x34273e=0x0;continue;}if(0x3===_0x3e3d5d[0x0]&&(!_0xd4b045||_0x3e3d5d[0x1]>_0xd4b045[0x0]&&_0x3e3d5d[0x1]<_0xd4b045[0x3])){_0x34273e[_0x1003(_0x1b24('0x22'))]=_0x3e3d5d[0x1];break;}if(0x6===_0x3e3d5d[0x0]&&_0x34273e[_0x1003(_0x1b24('0x22'))]<_0xd4b045[0x1]){_0x34273e[_0x1003('0x13')]=_0xd4b045[0x1],_0xd4b045=_0x3e3d5d;break;}if(_0xd4b045&&_0x34273e[_0x1003(_0x1b24('0x22'))]<_0xd4b045[0x2]){_0x34273e['label']=_0xd4b045[0x2],_0x34273e['ops'][_0x1003(_0x1b24('0x42'))](_0x3e3d5d);break;}_0xd4b045[0x2]&&_0x34273e[_0x1b24('0x30')][_0x1003(_0x1b24('0x13'))](),_0x34273e[_0x1003(_0x1b24('0x3e'))][_0x1b24('0x15')]();continue;}_0x3e3d5d=_0x1d14d0[_0x1003(_0x1b24('0x24'))](_0x3e97e5,_0x34273e);}catch(_0x2b722e){_0x3e3d5d=[0x6,_0x2b722e],_0x2128b6=0x0;}finally{_0x27a987=_0xd4b045=0x0;}if(0x5&_0x3e3d5d[0x0])throw _0x3e3d5d[0x1];return{'value':_0x3e3d5d[0x0]?_0x3e3d5d[0x1]:void 0x0,'done':!0x0};}([_0x6c9a73,_0x36fcd2]);};}};exports['__esModule']=!0x0;var cli_shared_utils_1=require(_0x1003(_0x1b24('0x19'))),cli_config_1=require(_0x1003(_0x1b24('0x26'))),genPkgFile_1=require(_0x1003(_0x1b24('0x33'))),resolvedInstallDependencies_1=require(_0x1b24('0x1e'));exports[_0x1003(_0x1b24('0xc'))]=function(_0x5441cc){return __awaiter(void 0x0,void 0x0,void 0x0,function(){var _0x4d82eb,_0x23fdfc,_0x3461ab,_0x2222d6,_0x161d67,_0x407aed,_0x3e9b9a;return __generator(this,function(_0x35e72a){switch(_0x35e72a[_0x1003(_0x1b24('0x22'))]){case 0x0:return _0x4d82eb=cli_shared_utils_1[_0x1003(_0x1b24('0x20'))](_0x5441cc[_0x1b24('0xa')],_0x1003(_0x1b24('0x1f'))),_0x23fdfc=require(_0x4d82eb),_0x3461ab=_0x23fdfc[_0x1003(_0x1b24('0x11'))],_0x2222d6=_0x23fdfc[_0x1b24('0xd')],(_0x161d67=cli_shared_utils_1[_0x1003(_0x1b24('0x35'))](_0x5441cc[_0x1003(_0x1b24('0x7'))]))&&_0x1003('0xf')!=typeof _0x161d67?(_0x161d67[_0x1003('0x10')]=__assign(__assign({},_0x161d67[_0x1003(_0x1b24('0x3c'))]),_0x2222d6(_0x5441cc[_0x1003('0x5')])),[0x4,genPkgFile_1[_0x1b24('0x39')](_0x5441cc,JSON[_0x1003('0x19')](_0x161d67,null,0x2))]):[0x3,0x4];case 0x1:return _0x35e72a[_0x1003(_0x1b24('0x2c'))](),[0x4,resolvedInstallDependencies_1[_0x1003(_0x1b24('0x3b'))](_0x5441cc)];case 0x2:return _0x35e72a[_0x1003(_0x1b24('0x2c'))](),(_0x407aed=_0x3461ab(_0x5441cc[_0x1003(_0x1b24('0x1d'))]))?(_0x3e9b9a=cli_config_1[_0x1003('0x6')][_0x1003(_0x1b24('0x9'))](_0x5441cc[_0x1b24('0x6')]),[0x4,cli_shared_utils_1['fs'][_0x1003(_0x1b24('0x31'))](_0x3e9b9a,_0x1003(_0x1b24('0x37'))+_0x407aed)]):[0x3,0x4];case 0x3:_0x35e72a[_0x1003('0x8')](),_0x35e72a[_0x1b24('0x2')]=0x4;case 0x4:return[0x2];}});});};
+"use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-05-13 16:28:52
+ * @LastEditTime : 2020-06-02 23:25:49
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var cli_config_1 = require("@lartplus/cli-config");
+var genPkgFile_1 = require("./genPkgFile");
+var resolvedInstallDependencies_1 = require("../resolve/resolvedInstallDependencies");
+exports.genPostcssByLartplus = function (generator) { return __awaiter(void 0, void 0, void 0, function () {
+    var PostCssModulePath, _a, genPostcssConfigFile, exportGetDeps, requireJson, postcssConfig, postcssConfigTargetPath;
+    return __generator(this, function (_b) {
+        switch (_b.label) {
+            case 0:
+                PostCssModulePath = cli_shared_utils_1.getCliModule(generator.lartplusRequirePath, 'postcss');
+                _a = require(PostCssModulePath), genPostcssConfigFile = _a.genPostcssConfigFile, exportGetDeps = _a.exportGetDeps;
+                requireJson = cli_shared_utils_1.hasPackageJson(generator.targetDir);
+                if (!(requireJson && typeof requireJson != 'boolean')) return [3 /*break*/, 4];
+                requireJson.devDependencies = __assign(__assign({}, requireJson.devDependencies), exportGetDeps(generator.answers));
+                // 重新生成
+                return [4 /*yield*/, genPkgFile_1.genPkgFile(generator, JSON.stringify(requireJson, null, 2))
+                    // 继续下载依赖
+                ];
+            case 1:
+                // 重新生成
+                _b.sent();
+                // 继续下载依赖
+                return [4 /*yield*/, resolvedInstallDependencies_1.resolvedInstallDependencies(generator)];
+            case 2:
+                // 继续下载依赖
+                _b.sent();
+                postcssConfig = genPostcssConfigFile(generator.answers);
+                if (!postcssConfig) return [3 /*break*/, 4];
+                postcssConfigTargetPath = cli_config_1.PATHS.getPostcssConfigFilePath(generator.targetDir);
+                return [4 /*yield*/, cli_shared_utils_1.fs.writeFileSync(postcssConfigTargetPath, 'module.exports = ' + ("" + postcssConfig))];
+            case 3:
+                _b.sent();
+                _b.label = 4;
+            case 4: return [2 /*return*/];
+        }
+    });
+}); };

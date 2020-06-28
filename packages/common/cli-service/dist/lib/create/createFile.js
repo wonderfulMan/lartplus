@@ -1,1 +1,132 @@
-var _0x5b18=['0xc','0x29','join','0x13','workDirPath','shift','context','0x1f','0x32','iterator','fileTypeName','__proto__','strip','0x0','0x2e','0x28','0x24','0xf','0x35','0x19','writeFile','done','0x1','hasOwnProperty','next','mkdirSync','/helloWorld','0x5','Generator\x20is\x20already\x20executing.','cwdPath','0x10','workDir','0x2','0x4','function','mkDirByTarget','0x1e','0x16','/index.','trys','create','0x18','0x6','Juice','set','0x12','then','0x27','prototype','0x2a','0x26','0x2c','utf-8','constructor','length','0x8','0xd','split','0x25','0x31','call','getModuleName','0x2f','../../interface','file','0x21','0xb','filePath','0x11','0x2b','0x23','createPath','value','0x14','0x17','push','label','0x15','0x33','0x2d','当前文件已经存在\x20->\x20','0xa','0x7','validataPath','@lartplus/cli-shared-utils','0xe','CreateFile','throw','getCreateFileConfig','ops','0x3','CreateFileInterface','0x36','0x1d','notice','0x1c','请输入创建文件名例如\x20','return','forEach','__awaiter','exit'];(function(_0x17470c,_0x5b18f5){var _0x411264=function(_0x34df2c){while(--_0x34df2c){_0x17470c['push'](_0x17470c['shift']());}};_0x411264(++_0x5b18f5);}(_0x5b18,0xc5));var _0x4112=function(_0x17470c,_0x5b18f5){_0x17470c=_0x17470c-0x0;var _0x411264=_0x5b18[_0x17470c];return _0x411264;};var _0x52c4=[_0x4112('0x1'),'fileTypeName',_0x4112('0x1e'),_0x4112('0x0'),_0x4112('0x5c'),'readFileSync',_0x4112('0x22'),'setPrototypeOf',_0x4112('0x24'),_0x4112('0x7'),_0x4112('0x58'),_0x4112('0x63'),_0x4112('0x55'),_0x4112('0x10'),'filePath',_0x4112('0xb'),'apply',_0x4112('0xe'),_0x4112('0x33'),_0x4112('0x2'),_0x4112('0x2c'),_0x4112('0x27'),_0x4112('0x35'),'writeFileSync',_0x4112('0x1c'),'__esModule',_0x4112('0x3e'),_0x4112('0x1d'),_0x4112('0x5d'),_0x4112('0x44'),_0x4112('0x1f'),_0x4112('0x1a'),_0x4112('0x41'),_0x4112('0x51'),'existsSync',_0x4112('0x21'),_0x4112('0x4d'),_0x4112('0x4c'),_0x4112('0x5b'),'pop','error',_0x4112('0x5e'),'length',_0x4112('0x19'),_0x4112('0x9'),_0x4112('0x31'),_0x4112('0x42'),'__generator',_0x4112('0x2d'),_0x4112('0x28'),_0x4112('0x30'),'checkRepeatFile',_0x4112('0x4'),_0x4112('0x39'),_0x4112('0x45')];!function(_0x159b51){!function(_0x46ec7e){for(;--_0x46ec7e;)_0x159b51[_0x4112('0x50')](_0x159b51[_0x4112('0xa')]());}(0x12e);}(_0x52c4);var _0x5cb7=function(_0x1cccc9,_0x5134f6){return _0x52c4[_0x1cccc9=+_0x1cccc9];},__extends=this&&this['__extends']||function(){var _0x365c34=function(_0x426942,_0x5a2fad){return(_0x365c34=Object[_0x5cb7(_0x4112('0x15'))]||{'__proto__':[]}instanceof Array&&function(_0x41c46d,_0x23aa33){_0x41c46d[_0x5cb7(_0x4112('0x36'))]=_0x23aa33;}||function(_0x2822a5,_0x1df1cb){for(var _0x2a2ccb in _0x1df1cb)_0x1df1cb[_0x5cb7(_0x4112('0x17'))](_0x2a2ccb)&&(_0x2822a5[_0x2a2ccb]=_0x1df1cb[_0x2a2ccb]);})(_0x426942,_0x5a2fad);};return function(_0x289a12,_0x588f67){function _0x3c7e75(){this[_0x4112('0x3a')]=_0x289a12;}_0x365c34(_0x289a12,_0x588f67),_0x289a12[_0x5cb7('0x33')]=null===_0x588f67?Object[_0x5cb7(_0x4112('0x2a'))](_0x588f67):(_0x3c7e75[_0x5cb7(_0x4112('0x53'))]=_0x588f67[_0x5cb7(_0x4112('0x53'))],new _0x3c7e75());};}(),__awaiter=this&&this[_0x4112('0x3')]||function(_0x2cf896,_0x42a1ce,_0x909741,_0x3bc1df){return new(_0x909741=_0x909741||Promise)(function(_0x197fc6,_0x10532d){function _0x1d9e8a(_0x517525){try{_0x229c61(_0x3bc1df['next'](_0x517525));}catch(_0x10cc20){_0x10532d(_0x10cc20);}}function _0x594af6(_0x533897){try{_0x229c61(_0x3bc1df[_0x4112('0x5c')](_0x533897));}catch(_0x5b972b){_0x10532d(_0x5b972b);}}function _0x229c61(_0x274cf8){var _0x40dc4c;_0x274cf8[_0x5cb7(_0x4112('0x20'))]?_0x197fc6(_0x274cf8[_0x5cb7(_0x4112('0x56'))]):((_0x40dc4c=_0x274cf8[_0x4112('0x4d')])instanceof _0x909741?_0x40dc4c:new _0x909741(function(_0x5958d9){_0x5958d9(_0x40dc4c);}))[_0x5cb7(_0x4112('0x43'))](_0x1d9e8a,_0x594af6);}_0x229c61((_0x3bc1df=_0x3bc1df[_0x5cb7(_0x4112('0x54'))](_0x2cf896,_0x42a1ce||[]))[_0x5cb7(_0x4112('0x1b'))]());});},__generator=this&&this[_0x5cb7(_0x4112('0x52'))]||function(_0x5559c8,_0x47974b){var _0x47bb02,_0x4820d1,_0x6b040,_0x154d03={'label':0x0,'sent':function(){if(0x1&_0x6b040[0x0])throw _0x6b040[0x1];return _0x6b040[0x1];},'trys':[],'ops':[]},_0x20c4ff={'next':_0x16b9b6(0x0),'throw':_0x16b9b6(0x1),'return':_0x16b9b6(0x2)};return _0x5cb7(_0x4112('0xd'))==typeof Symbol&&(_0x20c4ff[Symbol[_0x5cb7(_0x4112('0x13'))]]=function(){return this;}),_0x20c4ff;function _0x16b9b6(_0x1cf580){return function(_0x5b6cc9){return function(_0x161955){if(_0x47bb02)throw new TypeError(_0x5cb7('0x9'));for(;_0x154d03;)try{if(_0x47bb02=0x1,_0x4820d1&&(_0x6b040=0x2&_0x161955[0x0]?_0x4820d1[_0x5cb7(_0x4112('0x62'))]:_0x161955[0x0]?_0x4820d1[_0x5cb7(_0x4112('0x46'))]||((_0x6b040=_0x4820d1[_0x5cb7(_0x4112('0x62'))])&&_0x6b040[_0x5cb7('0x6')](_0x4820d1),0x0):_0x4820d1[_0x4112('0x1d')])&&!(_0x6b040=_0x6b040[_0x5cb7('0x6')](_0x4820d1,_0x161955[0x1]))[_0x5cb7(_0x4112('0x20'))])return _0x6b040;switch(_0x4820d1=0x0,_0x6b040&&(_0x161955=[0x2&_0x161955[0x0],_0x6b040[_0x5cb7(_0x4112('0x56'))]]),_0x161955[0x0]){case 0x0:case 0x1:_0x6b040=_0x161955;break;case 0x4:return _0x154d03[_0x5cb7('0x7')]++,{'value':_0x161955[0x1],'done':!0x1};case 0x5:_0x154d03[_0x5cb7(_0x4112('0x57'))]++,_0x4820d1=_0x161955[0x1],_0x161955=[0x0];continue;case 0x7:_0x161955=_0x154d03[_0x5cb7(_0x4112('0x16'))][_0x5cb7(_0x4112('0x3d'))](),_0x154d03[_0x5cb7('0x31')][_0x5cb7('0xd')]();continue;default:if(!(_0x6b040=0x0<(_0x6b040=_0x154d03[_0x5cb7('0x31')])[_0x5cb7(_0x4112('0x23'))]&&_0x6b040[_0x6b040[_0x4112('0x3b')]-0x1])&&(0x6===_0x161955[0x0]||0x2===_0x161955[0x0])){_0x154d03=0x0;continue;}if(0x3===_0x161955[0x0]&&(!_0x6b040||_0x161955[0x1]>_0x6b040[0x0]&&_0x161955[0x1]<_0x6b040[0x3])){_0x154d03[_0x5cb7(_0x4112('0x57'))]=_0x161955[0x1];break;}if(0x6===_0x161955[0x0]&&_0x154d03[_0x5cb7(_0x4112('0x57'))]<_0x6b040[0x1]){_0x154d03[_0x5cb7('0x7')]=_0x6b040[0x1],_0x6b040=_0x161955;break;}if(_0x6b040&&_0x154d03[_0x5cb7(_0x4112('0x57'))]<_0x6b040[0x2]){_0x154d03[_0x5cb7('0x7')]=_0x6b040[0x2],_0x154d03[_0x5cb7(_0x4112('0x16'))]['push'](_0x161955);break;}_0x6b040[0x2]&&_0x154d03[_0x5cb7(_0x4112('0x16'))]['pop'](),_0x154d03[_0x5cb7(_0x4112('0x40'))][_0x5cb7(_0x4112('0x3d'))]();continue;}_0x161955=_0x47974b[_0x5cb7('0x6')](_0x5559c8,_0x154d03);}catch(_0x1f7fbf){_0x161955=[0x6,_0x1f7fbf],_0x4820d1=0x0;}finally{_0x47bb02=_0x6b040=0x0;}if(0x5&_0x161955[0x0])throw _0x161955[0x1];return{'value':_0x161955[0x0]?_0x161955[0x1]:void 0x0,'done':!0x0};}([_0x1cf580,_0x5b6cc9]);};}};exports[_0x5cb7(_0x4112('0x61'))]=!0x0;var interface_1=require(_0x5cb7(_0x4112('0x5f'))),cli_shared_utils_1=require(_0x4112('0x59')),CreateFile=function(_0x4abd1d){function _0x5489a6(_0x27ed5f,_0x3c1492,_0x2ce088){var _0x200997=_0x4abd1d[_0x5cb7(_0x4112('0x2f'))](this)||this;return _0x200997[_0x4112('0xb')]=_0x27ed5f,_0x200997[_0x5cb7(_0x4112('0x29'))]=_0x3c1492,_0x200997['file']=_0x2ce088,_0x200997[_0x5cb7(_0x4112('0x32'))]=_0x200997['context'][_0x5cb7(_0x4112('0x4b'))]+'/'+_0x200997[_0x5cb7(_0x4112('0x38'))][_0x5cb7(_0x4112('0x3f'))],_0x200997;}return __extends(_0x5489a6,_0x4abd1d),_0x5489a6[_0x5cb7(_0x4112('0x53'))][_0x5cb7(_0x4112('0x25'))]=function(){var _0x2047dd=this[_0x4112('0x45')][_0x5cb7(_0x4112('0x12'))]('/'),_0x33ba5b=_0x2047dd[_0x5cb7(_0x4112('0x23'))],_0x399d5e=_0x33ba5b?0x1===_0x33ba5b?this[_0x4112('0xf')]+'/'+_0x2047dd[0x0]:this[_0x5cb7(_0x4112('0x29'))]+'/'+_0x2047dd[_0x5cb7(_0x4112('0x37'))]('/'):this[_0x4112('0xf')]+'/'+this[_0x5cb7(_0x4112('0x64'))],_0x15f3af=this[_0x4112('0x9')]+'/'+_0x399d5e;this[_0x5cb7(_0x4112('0x4a'))]=_0x399d5e,this[_0x5cb7('0xb')]=_0x15f3af;},_0x5489a6[_0x5cb7(_0x4112('0x53'))][_0x5cb7(_0x4112('0x18'))]=function(){this[_0x5cb7(_0x4112('0x25'))](),cli_shared_utils_1['fs'][_0x5cb7('0x8')](this[_0x5cb7(_0x4112('0x47'))])&&(cli_shared_utils_1[_0x5cb7(_0x4112('0x14'))][_0x5cb7(_0x4112('0x5a'))]([_0x5cb7(_0x4112('0x6'))+this[_0x5cb7(_0x4112('0x4a'))]]),process[_0x5cb7('0x1a')](0x0));},_0x5489a6[_0x5cb7(_0x4112('0x53'))][_0x5cb7(_0x4112('0x4e'))]=function(){var _0x1e5881=this[_0x4112('0x48')][_0x5cb7(_0x4112('0x12'))]('/');return _0x1e5881[_0x1e5881[_0x5cb7(_0x4112('0x23'))]-0x1];},_0x5489a6[_0x4112('0x35')][_0x5cb7(_0x4112('0x49'))]=function(_0x7ce730,_0x357400,_0x4cfdaa){this[_0x5cb7(_0x4112('0x4f'))](this[_0x5cb7('0x1c')])['catch'](function(_0x19f8cb){return cli_shared_utils_1[_0x5cb7(_0x4112('0x14'))][_0x5cb7(_0x4112('0x5a'))]([_0x19f8cb]);});var _0x2bb257=this[_0x5cb7('0x12')]+'/'+this[_0x4112('0x48')]+_0x4112('0x2b')+_0x4cfdaa,_0x5d13c8=cli_shared_utils_1['fs'][_0x5cb7('0x22')](_0x7ce730,{'encoding':_0x5cb7('0x1b')});cli_shared_utils_1[_0x5cb7(_0x4112('0x2e'))][_0x5cb7(_0x4112('0x8'))](_0x4112('0x11'),!0x1);var _0x20e4ba=cli_shared_utils_1[_0x5cb7('0x18')](_0x5d13c8,{'moduleName':_0x357400});cli_shared_utils_1['fs'][_0x5cb7('0x34')](_0x2bb257,_0x20e4ba);},_0x5489a6[_0x5cb7(_0x4112('0x53'))][_0x5cb7('0x17')]=function(_0x55fd0c){return __awaiter(this,void 0x0,void 0x0,function(){var _0x1f5815,_0x2edb3b,_0x5e87ee;return __generator(this,function(_0xfdda82){return _0x1f5815=_0x55fd0c[_0x5cb7(_0x4112('0x12'))]('/'),_0x2edb3b=_0x1f5815[0x0],_0x5e87ee=this[_0x4112('0x9')]+'/'+this[_0x5cb7(_0x4112('0x29'))],_0x1f5815[_0x5cb7('0x30')](function(_0x371c7e){cli_shared_utils_1['fs'][_0x5cb7(_0x4112('0x3c'))](_0x5e87ee+'/'+_0x2edb3b)||cli_shared_utils_1['fs'][_0x5cb7(_0x4112('0xc'))](_0x5e87ee+'/'+_0x2edb3b),_0x2edb3b=_0x2edb3b+'/'+_0x371c7e;}),[0x2];});});},_0x5489a6[_0x5cb7('0x33')][_0x5cb7(_0x4112('0x34'))]=function(){return this[_0x5cb7('0x1c')]||(cli_shared_utils_1[_0x5cb7(_0x4112('0x14'))][_0x5cb7(_0x4112('0x5a'))]([_0x5cb7('0x20')+this[_0x5cb7(_0x4112('0x29'))]+_0x5cb7(_0x4112('0x26'))]),process[_0x4112('0x4')](0x0)),this[_0x5cb7(_0x4112('0x18'))](),!0x0;},_0x5489a6;}(interface_1[_0x4112('0x60')]);exports[_0x5cb7(_0x4112('0x5'))]=CreateFile;
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+exports.__esModule = true;
+var interface_1 = require("../../interface");
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-18 14:52:27
+ * @LastEditTime : 2020-03-26 18:42:55
+ */
+var CreateFile = /** @class */ (function (_super) {
+    __extends(CreateFile, _super);
+    function CreateFile(context, fileTypeName, file) {
+        var _this = _super.call(this) || this;
+        _this.context = context;
+        _this.fileTypeName = fileTypeName;
+        _this.file = file;
+        _this.workDirPath = _this.context.cwdPath + '/' + _this.context.workDir;
+        return _this;
+    }
+    CreateFile.prototype.getCreateFileConfig = function () {
+        var paths = this.file.split('/');
+        var pathsLen = paths.length;
+        var filePath = !pathsLen
+            ? this.fileTypeName + "/" + this.file
+            : pathsLen === 1
+                ? this.fileTypeName + "/" + paths[0]
+                : this.fileTypeName + "/" + paths.join('/');
+        var createPath = this.workDirPath + "/" + filePath;
+        this.filePath = filePath;
+        this.createPath = createPath;
+    };
+    CreateFile.prototype.checkRepeatFile = function () {
+        this.getCreateFileConfig();
+        // 长度为1 直接在当前components读取文件
+        var isExists = cli_shared_utils_1.fs.existsSync(this.createPath);
+        if (isExists) {
+            cli_shared_utils_1.notice.error(["\u5F53\u524D\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728 -> " + this.filePath]);
+            process.exit(0);
+        }
+    };
+    CreateFile.prototype.getModuleName = function () {
+        var filesArr = this.filePath.split('/');
+        return filesArr[filesArr.length - 1];
+    };
+    CreateFile.prototype.writeFile = function (tplPath, moduleName, suffix) {
+        this.mkDirByTarget(this.file)["catch"](function (err) { return cli_shared_utils_1.notice.error([err]); });
+        var writeDir = this.workDirPath + "/" + this.filePath;
+        var writeFile = writeDir + "/index." + suffix;
+        var template = cli_shared_utils_1.fs.readFileSync(tplPath, { encoding: "utf-8" });
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        cli_shared_utils_1.Juice.set('strip', false);
+        var content = cli_shared_utils_1.Juice(template, { moduleName: moduleName });
+        cli_shared_utils_1.fs.writeFileSync(writeFile, content);
+    };
+    CreateFile.prototype.mkDirByTarget = function (dir) {
+        return __awaiter(this, void 0, void 0, function () {
+            var arr, dirs, baseDir;
+            return __generator(this, function (_a) {
+                arr = dir.split('/');
+                dirs = arr[0];
+                baseDir = this.workDirPath + "/" + this.fileTypeName;
+                arr.forEach(function (it) {
+                    if (!cli_shared_utils_1.fs.existsSync(baseDir + "/" + dirs)) {
+                        cli_shared_utils_1.fs.mkdirSync(baseDir + "/" + dirs);
+                    }
+                    dirs = dirs + '/' + it;
+                });
+                return [2 /*return*/];
+            });
+        });
+    };
+    CreateFile.prototype.validataPath = function () {
+        if (!this.file) {
+            cli_shared_utils_1.notice.error(["\u8BF7\u8F93\u5165\u521B\u5EFA\u6587\u4EF6\u540D\u4F8B\u5982 " + this.fileTypeName + "/helloWorld"]);
+            process.exit(0);
+        }
+        this.checkRepeatFile();
+        return true;
+    };
+    return CreateFile;
+}(interface_1.CreateFileInterface));
+exports.CreateFile = CreateFile;

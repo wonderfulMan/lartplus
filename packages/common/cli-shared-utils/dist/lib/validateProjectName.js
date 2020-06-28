@@ -1,1 +1,24 @@
-var _0x390a=['./exit','0xa','0x3','validateProjectName','0x8','0x6','0x0','0x9','error','0xb','warn','validate-npm-package-name','__esModule','shift','__importDefault','push','errors','无效的命名，请遵循npm包命名规范\x20--\x20','0xc','warnings','0x4','./notice','exit','0x5','validForNewPackages','0x2','notice'];(function(_0x2357bf,_0x390a3f){var _0xb90def=function(_0x2d4eb6){while(--_0x2d4eb6){_0x2357bf['push'](_0x2357bf['shift']());}};_0xb90def(++_0x390a3f);}(_0x390a,0xf8));var _0xb90d=function(_0x2357bf,_0x390a3f){_0x2357bf=_0x2357bf-0x0;var _0xb90def=_0x390a[_0x2357bf];return _0xb90def;};var _0x5911=[_0xb90d('0x10'),'default',_0xb90d('0x11'),_0xb90d('0xc'),'notice',_0xb90d('0x3'),_0xb90d('0xb'),_0xb90d('0x16'),_0xb90d('0x9'),_0xb90d('0x7'),_0xb90d('0x13'),_0xb90d('0x5'),_0xb90d('0xe')];!function(_0x278920){!function(_0x5386de){for(;--_0x5386de;)_0x278920[_0xb90d('0xa')](_0x278920[_0xb90d('0x8')]());}(0x186);}(_0x5911);var _0x14ce=function(_0x40d659,_0x3325fd){return _0x5911[_0x40d659=+_0x40d659];},__importDefault=this&&this[_0x14ce(_0xb90d('0x2'))]||function(_0x2fceb9){return _0x2fceb9&&_0x2fceb9[_0x14ce(_0xb90d('0x17'))]?_0x2fceb9:{'default':_0x2fceb9};};exports[_0x14ce('0xa')]=!0x0;var validate_npm_package_name_1=__importDefault(require(_0xb90d('0x6'))),notice_1=require(_0x14ce('0x1')),exit_1=require(_0x14ce(_0xb90d('0x1a')));function validateProjectName(_0x133848){var _0x3688bf=validate_npm_package_name_1[_0x14ce(_0xb90d('0x14'))](_0x133848);_0x3688bf[_0x14ce(_0xb90d('0x4'))]||(notice_1[_0xb90d('0x15')]['error']([_0x14ce(_0xb90d('0xf'))+_0x133848]),_0x3688bf[_0x14ce('0x7')]&&notice_1[_0x14ce('0x5')][_0x14ce(_0xb90d('0x0'))](_0x3688bf[_0x14ce('0x7')]),_0x3688bf[_0x14ce(_0xb90d('0x1'))]&&notice_1[_0x14ce(_0xb90d('0x12'))][_0x14ce(_0xb90d('0xd'))](_0x3688bf[_0xb90d('0xe')]),exit_1[_0x14ce(_0xb90d('0x18'))](0x0));}exports[_0xb90d('0x19')]=validateProjectName;
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-20 15:52:10
+ * @LastEditTime : 2020-04-08 15:49:07
+ */
+var validate_npm_package_name_1 = __importDefault(require("validate-npm-package-name"));
+var notice_1 = require("./notice");
+var exit_1 = require("./exit");
+function validateProjectName(name) {
+    var ret = validate_npm_package_name_1["default"](name);
+    if (!ret.validForNewPackages) {
+        notice_1.notice.error(["\u65E0\u6548\u7684\u547D\u540D\uFF0C\u8BF7\u9075\u5FAAnpm\u5305\u547D\u540D\u89C4\u8303 -- " + name]);
+        ret.errors && notice_1.notice.error(ret.errors);
+        ret.warnings && notice_1.notice.warn(ret.warnings);
+        exit_1.exit(0);
+    }
+}
+exports.validateProjectName = validateProjectName;

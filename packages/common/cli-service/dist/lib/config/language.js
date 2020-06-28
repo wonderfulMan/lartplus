@@ -1,1 +1,21 @@
-var _0x3b90=['0x1','language','push','__esModule','0x0','shift'];(function(_0x17d0a0,_0x3b90ea){var _0x137019=function(_0x3d5a5f){while(--_0x3d5a5f){_0x17d0a0['push'](_0x17d0a0['shift']());}};_0x137019(++_0x3b90ea);}(_0x3b90,0xc8));var _0x1370=function(_0x17d0a0,_0x3b90ea){_0x17d0a0=_0x17d0a0-0x0;var _0x137019=_0x3b90[_0x17d0a0];return _0x137019;};var _0x2c32=[_0x1370('0x5'),_0x1370('0x1')];!function(_0x5ee10d){!function(_0x172855){for(;--_0x172855;)_0x5ee10d[_0x1370('0x0')](_0x5ee10d[_0x1370('0x3')]());}(0xbb);}(_0x2c32);var _0x44b1=function(_0x278e46,_0x10aecb){return _0x2c32[_0x278e46=+_0x278e46];};exports[_0x44b1(_0x1370('0x4'))]=!0x0,exports[_0x44b1(_0x1370('0x2'))]={'JS':/\.js$/,'TS':/\.ts$/,'VUE':/\.vue$/,'CSS':/\.css$/,'LESS':/\.less$/,'STYLUS':/\.styl(us)?$/,'SASS':/\.sass$/,'SCSS':/\.scss&/,'POST':/\.p(ost)?css$/,'MODULES':/\.module\.\w+$/,'TSX':/\.tsx$/};
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-04-13 15:17:37
+ * @LastEditTime : 2020-04-15 09:43:59
+ */
+exports.language = {
+    JS: /\.js$/,
+    TS: /\.ts$/,
+    VUE: /\.vue$/,
+    CSS: /\.css$/,
+    LESS: /\.less$/,
+    STYLUS: /\.styl(us)?$/,
+    SASS: /\.sass$/,
+    SCSS: /\.scss&/,
+    POST: /\.p(ost)?css$/,
+    MODULES: /\.module\.\w+$/,
+    TSX: /\.tsx$/
+};

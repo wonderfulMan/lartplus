@@ -1,1 +1,101 @@
-var _0x51ec=['0x18','next','0x9','0x23','0x11','family','0x1a','0x1d','value','127.0.0.1','0xa','0xb','Generator\x20is\x20already\x20executing.','__esModule','configFile','throw','pop','0x12','0x14','function','0x22','0x1f','0x3','push','networkInterfaces','localhost','0x5','getNetworkIp','__awaiter','0x6','serverConfig','label','0x8','default','0x19','0xd','portfinder','getNetworkPort','Google\x20Chrome','0x24','call','0x1e','0x1c','then','ops','__generator','IPv4','0xe','internal','htmlFilenamePath','0x10','trys','return','0x17','address','0x0','0x21','none','0x2','sent','done','0x7'];(function(_0x495d81,_0x51ec9a){var _0x53c78d=function(_0x5998d7){while(--_0x5998d7){_0x495d81['push'](_0x495d81['shift']());}};_0x53c78d(++_0x51ec9a);}(_0x51ec,0x198));var _0x53c7=function(_0x495d81,_0x51ec9a){_0x495d81=_0x495d81-0x0;var _0x53c78d=_0x51ec[_0x495d81];return _0x53c78d;};var _0x90e7=['getDevServerOptions',_0x53c7('0x2a'),_0x53c7('0x39'),_0x53c7('0x36'),_0x53c7('0x10'),'iterator',_0x53c7('0x8'),'length',_0x53c7('0x1b'),_0x53c7('0xa'),_0x53c7('0x9'),'basePort',_0x53c7('0xc'),'map',_0x53c7('0x29'),'value',_0x53c7('0x1f'),_0x53c7('0x28'),_0x53c7('0x12'),_0x53c7('0x32'),_0x53c7('0x7'),_0x53c7('0xf'),_0x53c7('0x33'),_0x53c7('0x2'),'apply',_0x53c7('0x18'),_0x53c7('0x15'),_0x53c7('0x27'),_0x53c7('0x38'),'default',_0x53c7('0x0'),'sent',_0x53c7('0xd'),_0x53c7('0x4'),_0x53c7('0x35'),_0x53c7('0x31'),'assign'];!function(_0x8c808){!function(_0x1c97ff){for(;--_0x1c97ff;)_0x8c808[_0x53c7('0x31')](_0x8c808['shift']());}(0x7f);}(_0x90e7);var _0x354b=function(_0x36b678,_0x2b1434){return _0x90e7[_0x36b678=+_0x36b678];},__awaiter=this&&this[_0x354b(_0x53c7('0x3c'))]||function(_0x21807e,_0x3a286f,_0xdd4c9c,_0x1582ff){return new(_0xdd4c9c=_0xdd4c9c||Promise)(function(_0x1be04d,_0x366619){function _0x4f96d7(_0x38bd58){try{_0x1bb491(_0x1582ff[_0x354b(_0x53c7('0x5'))](_0x38bd58));}catch(_0x4cb399){_0x366619(_0x4cb399);}}function _0x5868d0(_0x30f546){try{_0x1bb491(_0x1582ff[_0x354b(_0x53c7('0x3'))](_0x30f546));}catch(_0x4d7cb4){_0x366619(_0x4d7cb4);}}function _0x1bb491(_0x1d4e30){var _0x7885b;_0x1d4e30[_0x53c7('0x18')]?_0x1be04d(_0x1d4e30[_0x354b(_0x53c7('0x13'))]):((_0x7885b=_0x1d4e30[_0x53c7('0x22')])instanceof _0xdd4c9c?_0x7885b:new _0xdd4c9c(function(_0x213be5){_0x213be5(_0x7885b);}))[_0x354b(_0x53c7('0x34'))](_0x4f96d7,_0x5868d0);}_0x1bb491((_0x1582ff=_0x1582ff[_0x354b(_0x53c7('0x1c'))](_0x21807e,_0x3a286f||[]))[_0x53c7('0x1b')]());});},__generator=this&&this[_0x354b('0x20')]||function(_0x45a30d,_0x372337){var _0x16532b,_0x2e3fac,_0xfb34ef,_0x10275c={'label':0x0,'sent':function(){if(0x1&_0xfb34ef[0x0])throw _0xfb34ef[0x1];return _0xfb34ef[0x1];},'trys':[],'ops':[]},_0x1ba6f3={'next':_0x46f59d(0x0),'throw':_0x46f59d(0x1),'return':_0x46f59d(0x2)};return _0x53c7('0x2d')==typeof Symbol&&(_0x1ba6f3[Symbol[_0x354b('0x1b')]]=function(){return this;}),_0x1ba6f3;function _0x46f59d(_0x2109dc){return function(_0x3aec63){return function(_0x32c362){if(_0x16532b)throw new TypeError(_0x53c7('0x26'));for(;_0x10275c;)try{if(_0x16532b=0x1,_0x2e3fac&&(_0xfb34ef=0x2&_0x32c362[0x0]?_0x2e3fac[_0x354b(_0x53c7('0x20'))]:_0x32c362[0x0]?_0x2e3fac[_0x354b('0x24')]||((_0xfb34ef=_0x2e3fac[_0x354b(_0x53c7('0x20'))])&&_0xfb34ef[_0x354b('0x12')](_0x2e3fac),0x0):_0x2e3fac[_0x354b(_0x53c7('0x5'))])&&!(_0xfb34ef=_0xfb34ef[_0x354b(_0x53c7('0x2b'))](_0x2e3fac,_0x32c362[0x1]))[_0x354b(_0x53c7('0x24'))])return _0xfb34ef;switch(_0x2e3fac=0x0,_0xfb34ef&&(_0x32c362=[0x2&_0x32c362[0x0],_0xfb34ef['value']]),_0x32c362[0x0]){case 0x0:case 0x1:_0xfb34ef=_0x32c362;break;case 0x4:return _0x10275c[_0x354b('0x18')]++,{'value':_0x32c362[0x1],'done':!0x1};case 0x5:_0x10275c[_0x354b(_0x53c7('0x1a'))]++,_0x2e3fac=_0x32c362[0x1],_0x32c362=[0x0];continue;case 0x7:_0x32c362=_0x10275c[_0x354b(_0x53c7('0x6'))][_0x354b(_0x53c7('0x11'))](),_0x10275c['trys'][_0x354b('0x17')]();continue;default:if(!(_0xfb34ef=0x0<(_0xfb34ef=_0x10275c[_0x354b(_0x53c7('0x37'))])[_0x354b(_0x53c7('0x21'))]&&_0xfb34ef[_0xfb34ef[_0x354b(_0x53c7('0x21'))]-0x1])&&(0x6===_0x32c362[0x0]||0x2===_0x32c362[0x0])){_0x10275c=0x0;continue;}if(0x3===_0x32c362[0x0]&&(!_0xfb34ef||_0x32c362[0x1]>_0xfb34ef[0x0]&&_0x32c362[0x1]<_0xfb34ef[0x3])){_0x10275c[_0x354b(_0x53c7('0x1a'))]=_0x32c362[0x1];break;}if(0x6===_0x32c362[0x0]&&_0x10275c[_0x354b('0x18')]<_0xfb34ef[0x1]){_0x10275c[_0x354b(_0x53c7('0x1a'))]=_0xfb34ef[0x1],_0xfb34ef=_0x32c362;break;}if(_0xfb34ef&&_0x10275c[_0x354b(_0x53c7('0x1a'))]<_0xfb34ef[0x2]){_0x10275c[_0x354b('0x18')]=_0xfb34ef[0x2],_0x10275c['ops'][_0x354b(_0x53c7('0x2c'))](_0x32c362);break;}_0xfb34ef[0x2]&&_0x10275c[_0x53c7('0x8')][_0x354b(_0x53c7('0x11'))](),_0x10275c['trys']['pop']();continue;}_0x32c362=_0x372337[_0x53c7('0x4')](_0x45a30d,_0x10275c);}catch(_0x54ea1e){_0x32c362=[0x6,_0x54ea1e],_0x2e3fac=0x0;}finally{_0x16532b=_0xfb34ef=0x0;}if(0x5&_0x32c362[0x0])throw _0x32c362[0x1];return{'value':_0x32c362[0x0]?_0x32c362[0x1]:void 0x0,'done':!0x0};}([_0x2109dc,_0x3aec63]);};}},__importDefault=this&&this['__importDefault']||function(_0x2ed693){return _0x2ed693&&_0x2ed693['__esModule']?_0x2ed693:{'default':_0x2ed693};};exports[_0x354b('0xc')]=!0x0;var os_1=__importDefault(require('os')),portfinder_1=__importDefault(require(_0x354b('0xf')));exports[_0x354b('0x13')]=function(){var _0x57d3d9='';try{var _0x1447f6=os_1[_0x53c7('0x3b')][_0x354b('0x4')]();for(var _0x2c70f8 in _0x1447f6)for(var _0x3a1a62=_0x1447f6[_0x2c70f8],_0x678fcf=0x0;_0x678fcf<_0x3a1a62[_0x354b(_0x53c7('0x21'))];_0x678fcf++){var _0xe470fe=_0x3a1a62[_0x678fcf];_0x354b(_0x53c7('0x2f'))!==_0xe470fe[_0x354b('0x1')]||_0x53c7('0x23')===_0xe470fe[_0x354b('0x3')]||_0xe470fe[_0x354b(_0x53c7('0x2e'))]||(_0x57d3d9=_0xe470fe[_0x354b(_0x53c7('0x30'))]);}}catch(_0x2eb491){_0x57d3d9=_0x354b(_0x53c7('0x19'));}return _0x57d3d9;},exports[_0x53c7('0x1')]=function(){return __awaiter(void 0x0,void 0x0,void 0x0,function(){return __generator(this,function(_0x3dfbdf){switch(_0x3dfbdf[_0x354b(_0x53c7('0x1a'))]){case 0x0:return portfinder_1[_0x354b(_0x53c7('0xb'))][_0x354b(_0x53c7('0x14'))]=0x1f90,[0x4,portfinder_1[_0x354b('0xe')]['getPortPromise']({'port':0xbb8,'stopPort':0x2328})];case 0x1:return[0x2,_0x3dfbdf[_0x53c7('0x17')]()];}});});},exports[_0x354b('0x16')]=function(_0x4321b0,_0x5e867b){return __awaiter(void 0x0,void 0x0,void 0x0,function(){var _0x1e9299,_0x58374e,_0x100a2f;return __generator(this,function(_0x133efc){switch(_0x133efc[_0x354b(_0x53c7('0x1a'))]){case 0x0:return _0x1e9299=exports[_0x53c7('0x35')](),[0x4,exports[_0x53c7('0x1')]()];case 0x1:return _0x58374e=_0x133efc[_0x354b(_0x53c7('0xe'))](),[0x2,Object[_0x354b('0x15')]({'host':_0x1e9299,'port':_0x58374e,'quiet':!0x0,'clientLogLevel':_0x354b(_0x53c7('0x25')),'contentBase':'./','openPage':_0x5e867b[_0x354b(_0x53c7('0x1d'))](function(_0x5dadf9){return _0x5dadf9[_0x354b(_0x53c7('0x1e'))];}),'open':_0x354b(_0x53c7('0x3a'))},null===(_0x100a2f=_0x4321b0[_0x354b(_0x53c7('0x16'))])||void 0x0===_0x100a2f?void 0x0:_0x100a2f[_0x354b(_0x53c7('0x3d'))])];}});});};
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-26 15:18:18
+ * @LastEditTime : 2020-05-18 10:31:34
+ */
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var os_1 = __importDefault(require("os"));
+var portfinder_1 = __importDefault(require("portfinder"));
+exports.getNetworkIp = function () {
+    var needHost = ''; // 打开的host
+    try {
+        // 获得网络接口列表
+        var network = os_1["default"].networkInterfaces();
+        for (var dev in network) {
+            var iface = network[dev];
+            for (var i = 0; i < iface.length; i++) {
+                var alias = iface[i];
+                if (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal) {
+                    needHost = alias.address;
+                }
+            }
+        }
+    }
+    catch (e) {
+        needHost = 'localhost';
+    }
+    return needHost;
+};
+exports.getNetworkPort = function () { return __awaiter(void 0, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                portfinder_1["default"].basePort = 8080;
+                return [4 /*yield*/, portfinder_1["default"].getPortPromise({ port: 3000, stopPort: 9000 })];
+            case 1: return [2 /*return*/, _a.sent()];
+        }
+    });
+}); };
+exports.getDevServerOptions = function (context, entriesMap) { return __awaiter(void 0, void 0, void 0, function () {
+    var host, port;
+    var _a;
+    return __generator(this, function (_b) {
+        switch (_b.label) {
+            case 0:
+                host = exports.getNetworkIp();
+                return [4 /*yield*/, exports.getNetworkPort()];
+            case 1:
+                port = _b.sent();
+                return [2 /*return*/, Object.assign({
+                        host: host,
+                        port: port,
+                        quiet: true,
+                        clientLogLevel: 'none',
+                        contentBase: "./",
+                        openPage: entriesMap.map(function (it) { return it.htmlFilenamePath; }),
+                        open: 'Google Chrome'
+                    }, (_a = context.configFile) === null || _a === void 0 ? void 0 : _a.serverConfig)];
+        }
+    });
+}); };

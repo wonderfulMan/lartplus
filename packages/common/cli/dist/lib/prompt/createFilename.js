@@ -1,1 +1,44 @@
-var _0x13c7=['input','0xf','decorate','0x1','async','default','__decorate','__esModule','config','getOwnPropertyDescriptor','0x5','0xe','function','shift','0x6','0xc','defineProperty','prototype','Service','文件名不能为空','typedi','0x9','保存配置文件名','0x3','0x8','push','0xd','0x7','0xa','length','0x4'];(function(_0x30dbe7,_0x13c78c){var _0x18d322=function(_0x5636bf){while(--_0x5636bf){_0x30dbe7['push'](_0x30dbe7['shift']());}};_0x18d322(++_0x13c78c);}(_0x13c7,0x131));var _0x18d3=function(_0x30dbe7,_0x13c78c){_0x30dbe7=_0x30dbe7-0x0;var _0x18d322=_0x13c7[_0x30dbe7];return _0x18d322;};var _0xbc59=['createFilename',_0x18d3('0x1b'),_0x18d3('0xe'),_0x18d3('0x18'),'文件名不能超过10个字符，小于1个字符',_0x18d3('0x11'),_0x18d3('0x17'),_0x18d3('0x19'),_0x18d3('0xd'),_0x18d3('0x5'),_0x18d3('0x15'),_0x18d3('0x7'),'object',_0x18d3('0x9'),_0x18d3('0xc'),'length'];!function(_0x211da5){!function(_0x4ea68d){for(;--_0x4ea68d;)_0x211da5[_0x18d3('0x1e')](_0x211da5[_0x18d3('0x12')]());}(0x96);}(_0xbc59);var _0x16e9=function(_0x350e2b,_0x1fa8d6){return _0xbc59[_0x350e2b=+_0x350e2b];},__decorate=this&&this[_0x18d3('0xb')]||function(_0x894528,_0x6ec197,_0x44f113,_0x379f6b){var _0x1f5c11,_0x516e9d=arguments[_0x18d3('0x3')],_0x147c87=_0x516e9d<0x3?_0x6ec197:null===_0x379f6b?_0x379f6b=Object[_0x16e9(_0x18d3('0x0'))](_0x6ec197,_0x44f113):_0x379f6b;if(_0x16e9(_0x18d3('0x1'))==typeof Reflect&&_0x16e9('0x0')==typeof Reflect[_0x16e9(_0x18d3('0x13'))])_0x147c87=Reflect[_0x16e9(_0x18d3('0x13'))](_0x894528,_0x6ec197,_0x44f113,_0x379f6b);else for(var _0x4633f7=_0x894528[_0x16e9(_0x18d3('0x2'))]-0x1;0x0<=_0x4633f7;_0x4633f7--)(_0x1f5c11=_0x894528[_0x4633f7])&&(_0x147c87=(_0x516e9d<0x3?_0x1f5c11(_0x147c87):0x3<_0x516e9d?_0x1f5c11(_0x6ec197,_0x44f113,_0x147c87):_0x1f5c11(_0x6ec197,_0x44f113))||_0x147c87);return 0x3<_0x516e9d&&_0x147c87&&Object[_0x16e9(_0x18d3('0xf'))](_0x6ec197,_0x44f113,_0x147c87),_0x147c87;};exports[_0x16e9(_0x18d3('0x1a'))]=!0x0;var typedi_1=require(_0x16e9('0x2')),CreateFilename=function(){function _0x8ca713(){}return _0x8ca713[_0x18d3('0x16')][_0x16e9(_0x18d3('0x1c'))]=function(){return{'name':_0x16e9('0xb'),'message':_0x16e9(_0x18d3('0x14')),'when':function(_0x4af4cc){return _0x4af4cc['createPresetsFile'];},'type':_0x16e9(_0x18d3('0x4')),'validate':function(_0x5e3b86){var _0x5e0c83=this[_0x16e9(_0x18d3('0x1d'))]();return _0x5e3b86||_0x5e0c83(_0x16e9(_0x18d3('0x10'))),(0xa<_0x5e3b86[_0x16e9(_0x18d3('0x2'))]||_0x5e3b86[_0x16e9(_0x18d3('0x2'))]<0x1)&&_0x5e0c83(_0x16e9(_0x18d3('0x6'))),_0x5e0c83(null,!0x0),!0x0;}};},__decorate([typedi_1[_0x16e9(_0x18d3('0x8'))]()],_0x8ca713);}();exports[_0x18d3('0xa')]=CreateFilename;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-01-26 14:12:44
+ * @LastEditTime : 2020-03-26 17:25:19
+ */
+var typedi_1 = require("typedi");
+var CreateFilename = /** @class */ (function () {
+    function CreateFilename() {
+    }
+    CreateFilename.prototype.config = function () {
+        return {
+            name: "createFilename",
+            message: '保存配置文件名',
+            when: function (answers) { return answers.createPresetsFile; },
+            type: 'input',
+            validate: function (input) {
+                var done = this.async();
+                if (!input) {
+                    done('文件名不能为空');
+                }
+                if (input.length > 10 || input.length < 1) {
+                    done('文件名不能超过10个字符，小于1个字符');
+                }
+                done(null, true);
+                return true;
+            }
+        };
+    };
+    CreateFilename = __decorate([
+        typedi_1.Service()
+    ], CreateFilename);
+    return CreateFilename;
+}());
+exports["default"] = CreateFilename;

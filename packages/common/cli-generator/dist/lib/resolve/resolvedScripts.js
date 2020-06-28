@@ -1,1 +1,19 @@
-var _0x147c=['0x3','$(npm\x20bin)/lartplus-service\x20start\x20build','__esModule','0x5','$(npm\x20bin)/lartplus-service\x20new\x20page','$(npm\x20bin)/lartplus-service\x20new\x20model','$(npm\x20bin)/lartplus-service\x20new\x20components','$(npm\x20bin)/lartplus-service\x20start\x20lint','shift','0x1'];(function(_0x5896b0,_0x147c59){var _0x2a1dd4=function(_0x36fc2b){while(--_0x36fc2b){_0x5896b0['push'](_0x5896b0['shift']());}};_0x2a1dd4(++_0x147c59);}(_0x147c,0x1d8));var _0x2a1d=function(_0x5896b0,_0x147c59){_0x5896b0=_0x5896b0-0x0;var _0x2a1dd4=_0x147c[_0x5896b0];return _0x2a1dd4;};var _0x4950=[_0x2a1d('0x4'),_0x2a1d('0x3'),_0x2a1d('0x0'),_0x2a1d('0x2'),_0x2a1d('0x9'),'resolvedScripts','$(npm\x20bin)/lartplus-service\x20start\x20dev'];!function(_0x2a7020){!function(_0x1d8581){for(;--_0x1d8581;)_0x2a7020['push'](_0x2a7020[_0x2a1d('0x6')]());}(0xc5);}(_0x4950);var _0x1154=function(_0x15c15f,_0x4e4ba5){return _0x4950[_0x15c15f=+_0x15c15f];};exports[_0x1154('0x2')]=!0x0,exports[_0x1154(_0x2a1d('0x1'))]=function(){return{'dev':_0x1154('0x6'),'build':_0x1154('0x4'),'lint':_0x2a1d('0x5'),'create:components':_0x1154('0x0'),'create:page':_0x1154(_0x2a1d('0x8')),'create:model':_0x1154(_0x2a1d('0x7'))};};
+"use strict";
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-28 17:28:22
+ * @LastEditTime : 2020-05-13 17:57:15
+ */
+exports.__esModule = true;
+exports.resolvedScripts = function () {
+    var scripts = {
+        "dev": "$(npm bin)/lartplus-service start dev",
+        "build": "$(npm bin)/lartplus-service start build",
+        "lint": "$(npm bin)/lartplus-service start lint",
+        "create:components": "$(npm bin)/lartplus-service new components",
+        "create:page": "$(npm bin)/lartplus-service new page",
+        "create:model": "$(npm bin)/lartplus-service new model"
+    };
+    return scripts;
+};

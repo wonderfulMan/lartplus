@@ -1,1 +1,16 @@
-var _0x4552=['Linter\x20/\x20formatter','shift','linter','push','__esModule'];(function(_0x1d5cee,_0x455226){var _0x549e6c=function(_0x191123){while(--_0x191123){_0x1d5cee['push'](_0x1d5cee['shift']());}};_0x549e6c(++_0x455226);}(_0x4552,0xdf));var _0x549e=function(_0x1d5cee,_0x455226){_0x1d5cee=_0x1d5cee-0x0;var _0x549e6c=_0x4552[_0x1d5cee];return _0x549e6c;};var _0x2f13=[_0x549e('0x2')];!function(_0x237240){!function(_0x414e0e){for(;--_0x414e0e;)_0x237240[_0x549e('0x0')](_0x237240[_0x549e('0x3')]());}(0xee);}(_0x2f13);var _0x19c8=function(_0xcbde5,_0x12541c){return _0x2f13[_0xcbde5=+_0xcbde5];};exports[_0x549e('0x1')]=!0x0;var Linter=function(){function _0x37309b(){}return _0x37309b['prototype']['choices']=function(){return{'name':_0x19c8('0x0'),'value':_0x549e('0x4'),'short':_0x549e('0x4'),'checked':!0x0};},_0x37309b;}();exports['default']=Linter;
+"use strict";
+exports.__esModule = true;
+var Linter = /** @class */ (function () {
+    function Linter() {
+    }
+    Linter.prototype.choices = function () {
+        return {
+            name: 'Linter / formatter',
+            value: 'linter',
+            short: 'linter',
+            checked: true
+        };
+    };
+    return Linter;
+}());
+exports["default"] = Linter;
