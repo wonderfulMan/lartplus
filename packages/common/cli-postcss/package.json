@@ -26,8 +26,8 @@
     "url": "https://github.com/wonderfulMan/@lartplus/cli-postcss/issues"
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
+  "gitHead": "a56d2663ac439ad7c216e698a5ac3fa455cce238",
   "dependencies": {
     "@lartplus/cli-shared-utils": "^0.2.25"
-  },
-  "gitHead": "a56d2663ac439ad7c216e698a5ac3fa455cce238"
+  }
 }

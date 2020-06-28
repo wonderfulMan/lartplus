@@ -1,1 +1,65 @@
-var _0x378a=['parseTemplate','__esModule','isDirectory','cwdPath','exit','appName','push','filter','/public','@lartplus/cli-shared-utils','/index.ejs','existsSync','forEach','public目录下没有任何与之entries的文件或者目录为空，请检查','length','map','error','notice'];(function(_0x5af7fd,_0x378a20){var _0x528a0c=function(_0x16e8e3){while(--_0x16e8e3){_0x5af7fd['push'](_0x5af7fd['shift']());}};_0x528a0c(++_0x378a20);}(_0x378a,0x1e2));var _0x528a=function(_0x5af7fd,_0x378a20){_0x5af7fd=_0x5af7fd-0x0;var _0x528a0c=_0x378a[_0x5af7fd];return _0x528a0c;};'use strict';exports[_0x528a('0x5')]=!0x0;var cli_shared_utils_1=require(_0x528a('0xd')),readChildDir=function(_0x307a8c,_0x190716){return _0x307a8c[_0x528a('0x1')](function(_0x598a3e){var _0x14304c=_0x190716+'/'+_0x598a3e;return cli_shared_utils_1['fs']['statSync'](_0x14304c)[_0x528a('0x6')]()&&_0x598a3e;})['filter'](Boolean);},diffTemplateDirname=function(_0x35c7b3,_0x4aa1cc){var _0x2c7b2a=[];return _0x4aa1cc[_0x528a('0x10')](function(_0x18dc1a){var _0x2b158e=_0x35c7b3['filter'](function(_0x547da7){return _0x547da7===_0x18dc1a[_0x528a('0x9')];})[0x0];_0x2b158e&&_0x2c7b2a[_0x528a('0xa')](_0x2b158e);}),_0x2c7b2a[_0x528a('0xb')](Boolean);},getTemplateNames=function(_0x31fad4,_0x16c766){var _0x4de507=[];return _0x31fad4['forEach'](function(_0x42fdc6){var _0x11bc6c=_0x16c766+'/'+_0x42fdc6+_0x528a('0xe');cli_shared_utils_1['fs'][_0x528a('0xf')](_0x11bc6c)&&_0x4de507['push']({'dirName':_0x42fdc6,'templatePath':_0x11bc6c});}),_0x4de507[_0x528a('0xb')](Boolean);},parseTemplate=function(_0x464273,_0x410ae1){var _0x149ac1,_0x2dcfa9,_0x4dd7a2=_0x464273[_0x528a('0x7')]+_0x528a('0xc'),_0x6c6ca0=[];return!cli_shared_utils_1['fs'][_0x528a('0xf')](_0x4dd7a2)||0x0<(_0x149ac1=cli_shared_utils_1['fs']['readdirSync'](_0x4dd7a2))[_0x528a('0x0')]&&(0x0<(_0x2dcfa9=readChildDir(_0x149ac1,_0x4dd7a2))[_0x528a('0x0')]&&(_0x2dcfa9=diffTemplateDirname(_0x2dcfa9,_0x410ae1),_0x6c6ca0=getTemplateNames(_0x2dcfa9,_0x4dd7a2))),_0x6c6ca0[_0x528a('0x0')]<0x1&&(cli_shared_utils_1[_0x528a('0x3')][_0x528a('0x2')]([_0x528a('0x11')]),process[_0x528a('0x8')](0x0)),_0x6c6ca0;};exports[_0x528a('0x4')]=parseTemplate;
+"use strict";
+exports.__esModule = true;
+/*
+ * @Author: hAo
+ * @LastEditors  : hAo
+ * @Date: 2020-03-25 13:43:16
+ * @LastEditTime : 2020-03-26 17:20:35
+ */
+var cli_shared_utils_1 = require("@lartplus/cli-shared-utils");
+var readChildDir = function (childDir, templateDir) {
+    return childDir
+        .map(function (it) {
+        var cur = templateDir + "/" + it;
+        var stat = cli_shared_utils_1.fs.statSync(cur);
+        var isDir = stat.isDirectory();
+        return isDir && it;
+    })
+        .filter(Boolean);
+};
+// 获取与enteies文件与之对应的模块目录
+var diffTemplateDirname = function (childDirName, entries) {
+    var result = [];
+    entries.forEach(function (it) {
+        var isTrue = childDirName.filter(function (dir) { return dir === it.appName; })[0];
+        if (isTrue) {
+            result.push(isTrue);
+        }
+    });
+    return result.filter(Boolean);
+};
+var getTemplateNames = function (childDirName, templateDir) {
+    var templateNames = [];
+    childDirName.forEach(function (it) {
+        var basePath = templateDir + "/" + it + "/index.ejs";
+        var exist = cli_shared_utils_1.fs.existsSync(basePath);
+        if (exist) {
+            templateNames.push({
+                dirName: it,
+                templatePath: basePath
+            });
+        }
+    });
+    return templateNames.filter(Boolean);
+};
+var parseTemplate = function (context, entries) {
+    var templateDir = context.cwdPath + "/public";
+    var hasTemplate = cli_shared_utils_1.fs.existsSync(templateDir);
+    var templateNames = [];
+    if (hasTemplate) {
+        var childDir = cli_shared_utils_1.fs.readdirSync(templateDir);
+        if (childDir.length > 0) {
+            var childDirName = readChildDir(childDir, templateDir);
+            if (childDirName.length > 0) {
+                childDirName = diffTemplateDirname(childDirName, entries);
+                templateNames = getTemplateNames(childDirName, templateDir);
+            }
+        }
+    }
+    if (templateNames.length < 1) {
+        cli_shared_utils_1.notice.error(['public目录下没有任何与之entries的文件或者目录为空，请检查']);
+        process.exit(0);
+    }
+    return templateNames;
+};
+exports.parseTemplate = parseTemplate;
