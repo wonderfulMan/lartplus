@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/cli-generator",
-  "version": "0.2.24",
+  "version": "0.2.25",
   "description": "构建lartplus-cli生态",
   "scripts": {
     "build": "../../../node_modules/.bin/tsc -w"
@@ -27,9 +27,9 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli-babel": "^0.2.24",
-    "@lartplus/cli-config": "^0.2.24",
-    "@lartplus/cli-shared-utils": "^0.2.24"
+    "@lartplus/cli-babel": "^0.2.25",
+    "@lartplus/cli-config": "^0.2.25",
+    "@lartplus/cli-shared-utils": "^0.2.25"
   },
   "gitHead": "a56d2663ac439ad7c216e698a5ac3fa455cce238"
 }
