@@ -1,14 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-03-26 15:01:29
- * @LastEditTime : 2020-04-14 17:47:50
- */
-var htmlPluginFilename = function (mode, entriesMapItem, templateConfig) {
-    // const userConfigBaseFilename = `${entriesMapItem.appName}/${templateConfig.filename}`;
-    var innerbaseFilename = entriesMapItem.appName + "/index.html";
-    return innerbaseFilename;
-};
-exports.htmlPluginFilename = htmlPluginFilename;
+var _0x2c65=['appName','__esModule','htmlPluginFilename','/index.html'];(function(_0x1d5157,_0x2c65dc){var _0x1bcfbf=function(_0x25f994){while(--_0x25f994){_0x1d5157['push'](_0x1d5157['shift']());}};_0x1bcfbf(++_0x2c65dc);}(_0x2c65,0xdf));var _0x1bcf=function(_0x1d5157,_0x2c65dc){_0x1d5157=_0x1d5157-0x0;var _0x1bcfbf=_0x2c65[_0x1d5157];return _0x1bcfbf;};'use strict';exports[_0x1bcf('0x2')]=!0x0;var htmlPluginFilename=function(_0x95cba1,_0x453e37,_0x2bf8c5){return _0x453e37[_0x1bcf('0x1')]+_0x1bcf('0x0');};exports[_0x1bcf('0x3')]=htmlPluginFilename;

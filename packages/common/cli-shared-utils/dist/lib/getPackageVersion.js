@@ -1,17 +1,1 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-03-17 15:08:49
- * @LastEditTime : 2020-04-08 15:47:20
- */
-var path_1 = __importDefault(require("path"));
-function getPackageVersion(pkgName, packagePath, prefix) {
-    if (prefix === void 0) { prefix = '@lartplus'; }
-    return prefix + "/" + pkgName + " " + require(path_1["default"].resolve(packagePath, 'package.json')).version;
-}
-exports.getPackageVersion = getPackageVersion;
+var _0x5086=['getPackageVersion','@lartplus','version','package.json','__esModule','default'];(function(_0x3cdda2,_0x5086d7){var _0x4fbba8=function(_0x548e1a){while(--_0x548e1a){_0x3cdda2['push'](_0x3cdda2['shift']());}};_0x4fbba8(++_0x5086d7);}(_0x5086,0x163));var _0x4fbb=function(_0x3cdda2,_0x5086d7){_0x3cdda2=_0x3cdda2-0x0;var _0x4fbba8=_0x5086[_0x3cdda2];return _0x4fbba8;};'use strict';var __importDefault=this&&this['__importDefault']||function(_0x43e9b6){return _0x43e9b6&&_0x43e9b6[_0x4fbb('0x3')]?_0x43e9b6:{'default':_0x43e9b6};};exports[_0x4fbb('0x3')]=!0x0;var path_1=__importDefault(require('path'));function getPackageVersion(_0x699bec,_0x502bba,_0x3498b6){return void 0x0===_0x3498b6&&(_0x3498b6=_0x4fbb('0x0')),_0x3498b6+'/'+_0x699bec+'\x20'+require(path_1[_0x4fbb('0x4')]['resolve'](_0x502bba,_0x4fbb('0x2')))[_0x4fbb('0x1')];}exports[_0x4fbb('0x5')]=getPackageVersion;

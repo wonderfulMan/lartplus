@@ -1,18 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-05-15 11:13:06
- * @LastEditTime : 2020-05-15 13:31:00
- */
-function getPackageModule(packageName) {
-    try {
-        var requireJson = require(process.cwd() + "/package.json");
-        return requireJson.devDependencies[packageName] || false;
-    }
-    catch (error) {
-        return false;
-    }
-}
-exports.getPackageModule = getPackageModule;
+var _0x1504=['devDependencies','cwd','/package.json','__esModule','getPackageModule'];(function(_0x37fc10,_0x1504ad){var _0x5f31c2=function(_0x3b85e1){while(--_0x3b85e1){_0x37fc10['push'](_0x37fc10['shift']());}};_0x5f31c2(++_0x1504ad);}(_0x1504,0x14f));var _0x5f31=function(_0x37fc10,_0x1504ad){_0x37fc10=_0x37fc10-0x0;var _0x5f31c2=_0x1504[_0x37fc10];return _0x5f31c2;};'use strict';function getPackageModule(_0x26e8ae){try{return require(process[_0x5f31('0x1')]()+_0x5f31('0x2'))[_0x5f31('0x0')][_0x26e8ae]||!0x1;}catch(_0x474649){return!0x1;}}exports[_0x5f31('0x3')]=!0x0,exports[_0x5f31('0x4')]=getPackageModule;

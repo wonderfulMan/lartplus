@@ -1,4 +1,1 @@
-"use strict";
-exports.__esModule = true;
-var genPrettierRcFile_1 = require("./lib/genPrettierRcFile");
-exports.genPrettierRcFile = genPrettierRcFile_1.genPrettierRcFile;
+var _0x5bc4=['__esModule','genPrettierRcFile'];(function(_0x168bdb,_0x5bc48f){var _0x545fea=function(_0x97fc6){while(--_0x97fc6){_0x168bdb['push'](_0x168bdb['shift']());}};_0x545fea(++_0x5bc48f);}(_0x5bc4,0xc2));var _0x545f=function(_0x168bdb,_0x5bc48f){_0x168bdb=_0x168bdb-0x0;var _0x545fea=_0x5bc4[_0x168bdb];return _0x545fea;};'use strict';exports[_0x545f('0x0')]=!0x0;var genPrettierRcFile_1=require('./lib/genPrettierRcFile');exports['genPrettierRcFile']=genPrettierRcFile_1[_0x545f('0x1')];

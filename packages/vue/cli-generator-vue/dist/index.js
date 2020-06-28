@@ -1,4 +1,1 @@
-"use strict";
-exports.__esModule = true;
-var genTemplateToTarget_1 = require("./lib/genTemplateToTarget");
-exports.genTemplateToTarget = genTemplateToTarget_1.genTemplateToTarget;
+var _0xe592=['__esModule','./lib/genTemplateToTarget'];(function(_0x39b3b3,_0xe5920a){var _0x3dc6d1=function(_0x20373a){while(--_0x20373a){_0x39b3b3['push'](_0x39b3b3['shift']());}};_0x3dc6d1(++_0xe5920a);}(_0xe592,0x156));var _0x3dc6=function(_0x39b3b3,_0xe5920a){_0x39b3b3=_0x39b3b3-0x0;var _0x3dc6d1=_0xe592[_0x39b3b3];return _0x3dc6d1;};'use strict';exports[_0x3dc6('0x0')]=!0x0;var genTemplateToTarget_1=require(_0x3dc6('0x1'));exports['genTemplateToTarget']=genTemplateToTarget_1['genTemplateToTarget'];

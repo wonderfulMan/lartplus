@@ -1,10 +1,1 @@
-"use strict";
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-03-31 10:33:34
- * @LastEditTime : 2020-06-03 16:39:57
- */
-exports.__esModule = true;
-var createVueConfig_1 = require("./lib/createVueConfig");
-exports.CreateConfig = createVueConfig_1.CreateVueConfig;
+var _0x2373=['__esModule','./lib/createVueConfig','CreateConfig'];(function(_0x3c4fdf,_0x2373d8){var _0x3fef9d=function(_0xc102ac){while(--_0xc102ac){_0x3c4fdf['push'](_0x3c4fdf['shift']());}};_0x3fef9d(++_0x2373d8);}(_0x2373,0x161));var _0x3fef=function(_0x3c4fdf,_0x2373d8){_0x3c4fdf=_0x3c4fdf-0x0;var _0x3fef9d=_0x2373[_0x3c4fdf];return _0x3fef9d;};'use strict';exports[_0x3fef('0x1')]=!0x0;var createVueConfig_1=require(_0x3fef('0x2'));exports[_0x3fef('0x0')]=createVueConfig_1['CreateVueConfig'];

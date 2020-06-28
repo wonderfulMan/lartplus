@@ -1,16 +1,1 @@
-"use strict";
-exports.__esModule = true;
-exports.getOptimizeCssOptions = function (context) {
-    return ({
-        assetNameRegExp: /\.css$/g,
-        cssProcessorOptions: {
-            safe: true,
-            autoprefixer: { disable: true },
-            mergeLonghand: false,
-            discardComments: {
-                removeAll: true
-            }
-        },
-        canPrint: true
-    });
-};
+var _0xc9d1=['getOptimizeCssOptions'];(function(_0x356f82,_0xc9d139){var _0x5b4022=function(_0x4a8be9){while(--_0x4a8be9){_0x356f82['push'](_0x356f82['shift']());}};_0x5b4022(++_0xc9d139);}(_0xc9d1,0x144));var _0x5b40=function(_0x356f82,_0xc9d139){_0x356f82=_0x356f82-0x0;var _0x5b4022=_0xc9d1[_0x356f82];return _0x5b4022;};'use strict';exports['__esModule']=!0x0,exports[_0x5b40('0x0')]=function(_0x3eb405){return{'assetNameRegExp':/\.css$/g,'cssProcessorOptions':{'safe':!0x0,'autoprefixer':{'disable':!0x0},'mergeLonghand':!0x1,'discardComments':{'removeAll':!0x0}},'canPrint':!0x0};};

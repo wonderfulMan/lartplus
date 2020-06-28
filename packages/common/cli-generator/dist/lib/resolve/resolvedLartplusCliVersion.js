@@ -1,14 +1,1 @@
-"use strict";
-exports.__esModule = true;
-/*
- * @Author: hAo
- * @LastEditors  : hAo
- * @Date: 2020-03-28 17:30:13
- * @LastEditTime : 2020-05-14 09:08:42
- */
-function resolvedLartplusCliVersion() {
-    var cliPackage = require('../../../package.json');
-    var cliVersion = cliPackage.version;
-    return cliVersion;
-}
-exports.resolvedLartplusCliVersion = resolvedLartplusCliVersion;
+var _0x15be=['resolvedLartplusCliVersion','__esModule','../../../package.json'];(function(_0x37c042,_0x15beb2){var _0x32209e=function(_0x43d9f8){while(--_0x43d9f8){_0x37c042['push'](_0x37c042['shift']());}};_0x32209e(++_0x15beb2);}(_0x15be,0x14e));var _0x3220=function(_0x37c042,_0x15beb2){_0x37c042=_0x37c042-0x0;var _0x32209e=_0x15be[_0x37c042];return _0x32209e;};'use strict';function resolvedLartplusCliVersion(){return require(_0x3220('0x1'))['version'];}exports[_0x3220('0x0')]=!0x0,exports[_0x3220('0x2')]=resolvedLartplusCliVersion;

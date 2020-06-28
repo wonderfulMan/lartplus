@@ -1,16 +1,1 @@
-"use strict";
-exports.__esModule = true;
-var Mobile = /** @class */ (function () {
-    function Mobile() {
-    }
-    Mobile.prototype.choices = function () {
-        return {
-            name: 'mobile（是否移动端项目）',
-            value: 'mobile',
-            short: 'mobile',
-            checked: false
-        };
-    };
-    return Mobile;
-}());
-exports["default"] = Mobile;
+var _0xb5b3=['mobile（是否移动端项目）','mobile','prototype','choices','default'];(function(_0x4725c1,_0xb5b368){var _0x424fe1=function(_0x5398fc){while(--_0x5398fc){_0x4725c1['push'](_0x4725c1['shift']());}};_0x424fe1(++_0xb5b368);}(_0xb5b3,0x18f));var _0x424f=function(_0x4725c1,_0xb5b368){_0x4725c1=_0x4725c1-0x0;var _0x424fe1=_0xb5b3[_0x4725c1];return _0x424fe1;};'use strict';exports['__esModule']=!0x0;var Mobile=function(){function _0x5ca442(){}return _0x5ca442[_0x424f('0x3')][_0x424f('0x4')]=function(){return{'name':_0x424f('0x1'),'value':'mobile','short':_0x424f('0x2'),'checked':!0x1};},_0x5ca442;}();exports[_0x424f('0x0')]=Mobile;
