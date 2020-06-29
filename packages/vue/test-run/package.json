@@ -1,6 +1,6 @@
 {
   "name": "@lartplus/test-run",
-  "version": "0.2.26",
+  "version": "0.2.27",
   "description": "构建lartplus-cli生态",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/wonderfulMan/hAo-cli",
   "dependencies": {
-    "@lartplus/cli": "^0.2.26"
+    "@lartplus/cli": "^0.2.27"
   },
   "gitHead": "a56d2663ac439ad7c216e698a5ac3fa455cce238"
 }
